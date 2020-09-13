@@ -1,0 +1,1681 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Open-Source Libraries | Readability Studio 2021 Manual</title>
+  <meta name="description" content="Open-Source Libraries | Readability Studio 2021 Manual" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Open-Source Libraries | Readability Studio 2021 Manual" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="images/NonGenerated/cover.png" />
+  <meta property="og:description" content="Open-Source Libraries | Readability Studio 2021 Manual" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Open-Source Libraries | Readability Studio 2021 Manual" />
+  
+  <meta name="twitter:description" content="Open-Source Libraries | Readability Studio 2021 Manual" />
+  <meta name="twitter:image" content="images/NonGenerated/cover.png" />
+
+<meta name="author" content="Blake Madden" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="acknowledgements.html"/>
+<link rel="next" href="open-source-tools-content.html"/>
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="css\style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./index.html">Readability Studio 2021 Manual</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="" data-path="about-the-author.html"><a href="about-the-author.html"><i class="fa fa-check"></i>About the Author</a></li>
+<li class="part"><span><b>I Introduction</b></span></li>
+<li class="chapter" data-level="1" data-path="overviews.html"><a href="overviews.html"><i class="fa fa-check"></i><b>1</b> Overviews</a>
+<ul>
+<li class="chapter" data-level="" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i>Introductory Overview</a></li>
+<li class="chapter" data-level="" data-path="program-offering.html"><a href="program-offering.html"><i class="fa fa-check"></i>What Readability Studio Offers</a>
+<ul>
+<li class="chapter" data-level="" data-path="program-offering.html"><a href="program-offering.html#program-unique-features"><i class="fa fa-check"></i>Readability Studio’s Unique Features</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="new-features.html"><a href="new-features.html"><i class="fa fa-check"></i>New Features and Enhancements</a>
+<ul>
+<li class="chapter" data-level="" data-path="new-features.html"><a href="new-features.html#readability-studio-20202021"><i class="fa fa-check"></i>Readability Studio 2020/2021</a></li>
+<li class="chapter" data-level="" data-path="new-features.html"><a href="new-features.html#readability-studio-2019"><i class="fa fa-check"></i>Readability Studio 2019</a></li>
+<li class="chapter" data-level="" data-path="new-features.html"><a href="new-features.html#readability-studio-2015"><i class="fa fa-check"></i>Readability Studio 2015</a></li>
+<li class="chapter" data-level="" data-path="new-features.html"><a href="new-features.html#readability-studio-2012"><i class="fa fa-check"></i>Readability Studio 2012</a></li>
+<li class="chapter" data-level="" data-path="new-features.html"><a href="new-features.html#readability-studio-3.03.13.2-2009-2010"><i class="fa fa-check"></i>Readability Studio 3.0/3.1/3.2 (2009-2010)</a></li>
+<li class="chapter" data-level="" data-path="new-features.html"><a href="new-features.html#readability-studio-2.0-2008"><i class="fa fa-check"></i>Readability Studio 2.0 (2008)</a></li>
+<li class="chapter" data-level="" data-path="new-features.html"><a href="new-features.html#readability-studio-1.2-2007"><i class="fa fa-check"></i>Readability Studio 1.2 (2007)</a></li>
+<li class="chapter" data-level="" data-path="new-features.html"><a href="new-features.html#readability-studio-1.01.1-2006"><i class="fa fa-check"></i>Readability Studio 1.0/1.1 (2006)</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>II Projects &amp; Features</b></span></li>
+<li class="chapter" data-level="2" data-path="creating-a-new-project.html"><a href="creating-a-new-project.html"><i class="fa fa-check"></i><b>2</b> Creating a New Project</a>
+<ul>
+<li class="chapter" data-level="" data-path="creating-standard-project.html"><a href="creating-standard-project.html"><i class="fa fa-check"></i>Standard Project</a></li>
+<li class="chapter" data-level="" data-path="creating-batch-project.html"><a href="creating-batch-project.html"><i class="fa fa-check"></i>Batch Projects</a>
+<ul>
+<li class="chapter" data-level="" data-path="creating-batch-project.html"><a href="creating-batch-project.html#select-directory"><i class="fa fa-check"></i>Select Directory</a></li>
+<li class="chapter" data-level="" data-path="creating-batch-project.html"><a href="creating-batch-project.html#select-archive"><i class="fa fa-check"></i>Select Archive File</a></li>
+<li class="chapter" data-level="" data-path="creating-batch-project.html"><a href="creating-batch-project.html#worksheet-preview"><i class="fa fa-check"></i>Worksheet Preview</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="reviewing-standard-projects.html"><a href="reviewing-standard-projects.html"><i class="fa fa-check"></i><b>3</b> Reviewing Standard Projects</a>
+<ul>
+<li class="chapter" data-level="" data-path="reviewing-test-scores.html"><a href="reviewing-test-scores.html"><i class="fa fa-check"></i>Reviewing the Test Scores</a></li>
+<li class="chapter" data-level="" data-path="reviewing-readability-graphs.html"><a href="reviewing-readability-graphs.html"><i class="fa fa-check"></i>Reviewing the Readability Graphs</a></li>
+<li class="chapter" data-level="" data-path="reviewing-statistics.html"><a href="reviewing-statistics.html"><i class="fa fa-check"></i>Reviewing the Statistics</a></li>
+<li class="chapter" data-level="" data-path="reviewing-word-breakdowns.html"><a href="reviewing-word-breakdowns.html"><i class="fa fa-check"></i>Reviewing the Words Breakdown</a></li>
+<li class="chapter" data-level="" data-path="reviewing-sentences-breakdown.html"><a href="reviewing-sentences-breakdown.html"><i class="fa fa-check"></i>Reviewing the Sentences Breakdown</a></li>
+<li class="chapter" data-level="" data-path="reviewing-standard-grammar.html"><a href="reviewing-standard-grammar.html"><i class="fa fa-check"></i>Grammar</a>
+<ul>
+<li class="chapter" data-level="" data-path="reviewing-standard-grammar.html"><a href="reviewing-standard-grammar.html#reviewing-lowercased-sentences"><i class="fa fa-check"></i>Reviewing Lowercased Sentences</a></li>
+<li class="chapter" data-level="" data-path="reviewing-standard-grammar.html"><a href="reviewing-standard-grammar.html#reviewing-conjunction-sentences"><i class="fa fa-check"></i>Reviewing Conjunction-starting Sentences</a></li>
+<li class="chapter" data-level="" data-path="reviewing-standard-grammar.html"><a href="reviewing-standard-grammar.html#reviewing-repeated-words"><i class="fa fa-check"></i>Reviewing Repeated Words</a></li>
+<li class="chapter" data-level="" data-path="reviewing-standard-grammar.html"><a href="reviewing-standard-grammar.html#reviewing-article-mismatches"><i class="fa fa-check"></i>Reviewing Article Mismatches</a></li>
+<li class="chapter" data-level="" data-path="reviewing-standard-grammar.html"><a href="reviewing-standard-grammar.html#reviewing-misspellings"><i class="fa fa-check"></i>Reviewing Misspellings</a></li>
+<li class="chapter" data-level="" data-path="reviewing-standard-grammar.html"><a href="reviewing-standard-grammar.html#reviewing-wording-errors"><i class="fa fa-check"></i>Reviewing Wording Errors</a></li>
+<li class="chapter" data-level="" data-path="reviewing-standard-grammar.html"><a href="reviewing-standard-grammar.html#reviewing-redundant-phrases"><i class="fa fa-check"></i>Reviewing Redundant Phrases</a></li>
+<li class="chapter" data-level="" data-path="reviewing-standard-grammar.html"><a href="reviewing-standard-grammar.html#reviewing-wordy-items"><i class="fa fa-check"></i>Reviewing Wordy Items</a></li>
+<li class="chapter" data-level="" data-path="reviewing-standard-grammar.html"><a href="reviewing-standard-grammar.html#reviewing-passive-voice"><i class="fa fa-check"></i>Reviewing Passive Voice</a></li>
+<li class="chapter" data-level="" data-path="reviewing-standard-grammar.html"><a href="reviewing-standard-grammar.html#reviewing-cliches"><i class="fa fa-check"></i>Reviewing Clichés</a></li>
+<li class="chapter" data-level="" data-path="reviewing-standard-grammar.html"><a href="reviewing-standard-grammar.html#reviewing-overused-by-sentence"><i class="fa fa-check"></i>Reviewing Overused Words (x Sentence)</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="reviewing-dolch.html"><a href="reviewing-dolch.html"><i class="fa fa-check"></i>Dolch Sight Words</a>
+<ul>
+<li class="chapter" data-level="" data-path="reviewing-dolch.html"><a href="reviewing-dolch.html#reviewing-dolch-stats"><i class="fa fa-check"></i>Reviewing the Dolch Statistics</a></li>
+<li class="chapter" data-level="" data-path="reviewing-dolch.html"><a href="reviewing-dolch.html#reviewing-dolch-graphs"><i class="fa fa-check"></i>Reviewing the Dolch Graphs</a></li>
+<li class="chapter" data-level="" data-path="reviewing-dolch.html"><a href="reviewing-dolch.html#reviewing-dolch-text"><i class="fa fa-check"></i>Reviewing the Dolch Highlighted Text</a></li>
+<li class="chapter" data-level="" data-path="reviewing-dolch.html"><a href="reviewing-dolch.html#reviewing-dolch-lists"><i class="fa fa-check"></i>Reviewing the Dolch Word Lists</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="reviewing-batch-projects.html"><a href="reviewing-batch-projects.html"><i class="fa fa-check"></i><b>4</b> Reviewing Batch Projects</a>
+<ul>
+<li class="chapter" data-level="" data-path="reviewing-batch-scores.html"><a href="reviewing-batch-scores.html"><i class="fa fa-check"></i>Reviewing the Readability Scores</a></li>
+<li class="chapter" data-level="" data-path="reviewing-batch-histograms.html"><a href="reviewing-batch-histograms.html"><i class="fa fa-check"></i>Reviewing the Histograms</a></li>
+<li class="chapter" data-level="" data-path="reviewing-batch-box-plots.html"><a href="reviewing-batch-box-plots.html"><i class="fa fa-check"></i>Reviewing the Box Plots</a></li>
+<li class="chapter" data-level="" data-path="batch-readability-graphs.html"><a href="batch-readability-graphs.html"><i class="fa fa-check"></i>Readability Graphs</a></li>
+<li class="chapter" data-level="" data-path="reviewing-batch-words.html"><a href="reviewing-batch-words.html"><i class="fa fa-check"></i>Reviewing the Words Breakdown</a></li>
+<li class="chapter" data-level="" data-path="reviewing-batch-long-sentences.html"><a href="reviewing-batch-long-sentences.html"><i class="fa fa-check"></i>Reviewing Long Sentences</a></li>
+<li class="chapter" data-level="" data-path="reviewing-batch-grammar.html"><a href="reviewing-batch-grammar.html"><i class="fa fa-check"></i>Grammar</a>
+<ul>
+<li class="chapter" data-level="" data-path="reviewing-batch-grammar.html"><a href="reviewing-batch-grammar.html#reviewing-batch-conjunction-sentences"><i class="fa fa-check"></i>Reviewing Conjunction-Starting Sentences</a></li>
+<li class="chapter" data-level="" data-path="reviewing-batch-grammar.html"><a href="reviewing-batch-grammar.html#reviewing-batch-lowercased-sentences"><i class="fa fa-check"></i>Reviewing Lowercased Sentences</a></li>
+<li class="chapter" data-level="" data-path="reviewing-batch-grammar.html"><a href="reviewing-batch-grammar.html#reviewing-batch-repeated-words"><i class="fa fa-check"></i>Reviewing Repeated Words</a></li>
+<li class="chapter" data-level="" data-path="reviewing-batch-grammar.html"><a href="reviewing-batch-grammar.html#reviewing-batch-articles"><i class="fa fa-check"></i>Reviewing Article Mismatches</a></li>
+<li class="chapter" data-level="" data-path="reviewing-batch-grammar.html"><a href="reviewing-batch-grammar.html#reviewing-batch-misspellings"><i class="fa fa-check"></i>Reviewing Misspellings</a></li>
+<li class="chapter" data-level="" data-path="reviewing-batch-grammar.html"><a href="reviewing-batch-grammar.html#reviewing-batch-wording-errors"><i class="fa fa-check"></i>Reviewing Wording Errors</a></li>
+<li class="chapter" data-level="" data-path="reviewing-batch-grammar.html"><a href="reviewing-batch-grammar.html#reviewing-batch-redundant-phrases"><i class="fa fa-check"></i>Reviewing Redundant Phrases</a></li>
+<li class="chapter" data-level="" data-path="reviewing-batch-grammar.html"><a href="reviewing-batch-grammar.html#reviewing-batch-wordiness"><i class="fa fa-check"></i>Reviewing Wordy Items</a></li>
+<li class="chapter" data-level="" data-path="reviewing-batch-grammar.html"><a href="reviewing-batch-grammar.html#reviewing-batch-cliches"><i class="fa fa-check"></i>Reviewing Clichés</a></li>
+<li class="chapter" data-level="" data-path="reviewing-batch-grammar.html"><a href="reviewing-batch-grammar.html#reviewing-batch-passive-voices"><i class="fa fa-check"></i>Reviewing Passive Voice</a></li>
+<li class="chapter" data-level="" data-path="reviewing-batch-grammar.html"><a href="reviewing-batch-grammar.html#reviewing-batch-overused-words"><i class="fa fa-check"></i>Reviewing Overused Words (x Sentence)</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="reviewing-batch-dolch.html"><a href="reviewing-batch-dolch.html"><i class="fa fa-check"></i>Reviewing the Dolch Section</a></li>
+<li class="chapter" data-level="" data-path="reviewing-batch-warnings.html"><a href="reviewing-batch-warnings.html"><i class="fa fa-check"></i>Reviewing the Warnings</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="customizing-the-results.html"><a href="customizing-the-results.html"><i class="fa fa-check"></i><b>5</b> Customizing the Results</a>
+<ul>
+<li class="chapter" data-level="" data-path="customizing-the-scores.html"><a href="customizing-the-scores.html"><i class="fa fa-check"></i>Customizing the Scores</a></li>
+<li class="chapter" data-level="" data-path="customizing-the-summary-statistics.html"><a href="customizing-the-summary-statistics.html"><i class="fa fa-check"></i>Customizing the Summary Statistics</a></li>
+<li class="chapter" data-level="" data-path="customizing-the-highlighted-text-windows.html"><a href="customizing-the-highlighted-text-windows.html"><i class="fa fa-check"></i>Customizing the Highlighted Text Windows</a></li>
+<li class="chapter" data-level="" data-path="column-sorting.html"><a href="column-sorting.html"><i class="fa fa-check"></i>Column Sorting</a></li>
+<li class="chapter" data-level="" data-path="customizing-graphs.html"><a href="customizing-graphs.html"><i class="fa fa-check"></i>Customizing Graphs</a></li>
+<li class="chapter" data-level="" data-path="customizing-how-documents-are-analyzed.html"><a href="customizing-how-documents-are-analyzed.html"><i class="fa fa-check"></i>Customizing How Documents are Analyzed</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="publishing-the-results.html"><a href="publishing-the-results.html"><i class="fa fa-check"></i><b>6</b> Publishing the Results</a>
+<ul>
+<li class="chapter" data-level="" data-path="exporting.html"><a href="exporting.html"><i class="fa fa-check"></i>Exporting</a></li>
+<li class="chapter" data-level="" data-path="scores-export.html"><a href="scores-export.html"><i class="fa fa-check"></i>Scores Export Options</a>
+<ul>
+<li class="chapter" data-level="" data-path="scores-export.html"><a href="scores-export.html#select-which-section-to-save"><i class="fa fa-check"></i>Select which section to save</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="text-window-export.html"><a href="text-window-export.html"><i class="fa fa-check"></i>Text Window Export Options</a></li>
+<li class="chapter" data-level="" data-path="image-export.html"><a href="image-export.html"><i class="fa fa-check"></i>Image Export Options</a>
+<ul>
+<li class="chapter" data-level="" data-path="image-export.html"><a href="image-export.html#image-size"><i class="fa fa-check"></i>Image Size</a></li>
+<li class="chapter" data-level="" data-path="image-export.html"><a href="image-export.html#color-mode"><i class="fa fa-check"></i>Color Mode</a></li>
+<li class="chapter" data-level="" data-path="image-export.html"><a href="image-export.html#tiff-options"><i class="fa fa-check"></i>TIFF options</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="export-list.html"><a href="export-list.html"><i class="fa fa-check"></i>List Export Options</a>
+<ul>
+<li class="chapter" data-level="" data-path="export-list.html"><a href="export-list.html#range"><i class="fa fa-check"></i>Range</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="export-all-options.html"><a href="export-all-options.html"><i class="fa fa-check"></i>Export All Options</a>
+<ul>
+<li class="chapter" data-level="" data-path="export-all-options.html"><a href="export-all-options.html#sections-to-export"><i class="fa fa-check"></i>Sections to export</a></li>
+<li class="chapter" data-level="" data-path="export-all-options.html"><a href="export-all-options.html#export-file-types"><i class="fa fa-check"></i>Export file types</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="printing.html"><a href="printing.html"><i class="fa fa-check"></i>Printing</a></li>
+<li class="chapter" data-level="" data-path="filtering-export.html"><a href="filtering-export.html"><i class="fa fa-check"></i>Exporting Filtered Documents</a>
+<ul>
+<li class="chapter" data-level="" data-path="filtering-export.html"><a href="filtering-export.html#exporting-filtered-documents"><i class="fa fa-check"></i>Exporting Filtered Documents</a></li>
+<li class="chapter" data-level="" data-path="filtering-export.html"><a href="filtering-export.html#additional-filtering-options"><i class="fa fa-check"></i>Additional Filtering Options</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="options-overview.html"><a href="options-overview.html"><i class="fa fa-check"></i><b>7</b> Program &amp; Project Options</a>
+<ul>
+<li class="chapter" data-level="" data-path="general-settings.html"><a href="general-settings.html"><i class="fa fa-check"></i>General Settings</a>
+<ul>
+<li class="chapter" data-level="" data-path="general-settings.html"><a href="general-settings.html#settings-management"><i class="fa fa-check"></i>Settings Management</a></li>
+<li class="chapter" data-level="" data-path="general-settings.html"><a href="general-settings.html#private-data"><i class="fa fa-check"></i>Private Data</a></li>
+<li class="chapter" data-level="" data-path="general-settings.html"><a href="general-settings.html#WarningsDisplay"><i class="fa fa-check"></i>Warnings</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="project-settings.html"><a href="project-settings.html"><i class="fa fa-check"></i>Project</a>
+<ul>
+<li class="chapter" data-level="" data-path="project-settings.html"><a href="project-settings.html#project"><i class="fa fa-check"></i>Project</a></li>
+<li class="chapter" data-level="" data-path="project-settings.html"><a href="project-settings.html#options-document"><i class="fa fa-check"></i>Document</a></li>
+<li class="chapter" data-level="" data-path="project-settings.html"><a href="project-settings.html#additional-document"><i class="fa fa-check"></i>Additional Document (e.g., policies, license agreements)</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="document-analysis.html"><a href="document-analysis.html"><i class="fa fa-check"></i>Document Indexing</a>
+<ul>
+<li class="chapter" data-level="" data-path="document-analysis.html"><a href="document-analysis.html#consider-sentences-overly-long-if"><i class="fa fa-check"></i>Consider Sentences Overly Long If</a></li>
+<li class="chapter" data-level="" data-path="document-analysis.html"><a href="document-analysis.html#options-sentence-deduction"><i class="fa fa-check"></i>Sentence/Paragraph Deduction</a></li>
+<li class="chapter" data-level="" data-path="document-analysis.html"><a href="document-analysis.html#options-text-exclusion"><i class="fa fa-check"></i>Text Exclusion</a></li>
+<li class="chapter" data-level="" data-path="document-analysis.html"><a href="document-analysis.html#numsyllable"><i class="fa fa-check"></i>Numerals</a></li>
+<li class="chapter" data-level="" data-path="document-analysis.html"><a href="document-analysis.html#edit-word-list-dialog"><i class="fa fa-check"></i>Edit Word/Phrase List</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="readability-test-options.html"><a href="readability-test-options.html"><i class="fa fa-check"></i>Readability Scores</a>
+<ul>
+<li class="chapter" data-level="" data-path="readability-test-options.html"><a href="readability-test-options.html#options-test-options"><i class="fa fa-check"></i>Test Options</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="scores.html"><a href="scores.html"><i class="fa fa-check"></i>Scores</a></li>
+<li class="chapter" data-level="" data-path="options-readability-graphs.html"><a href="options-readability-graphs.html"><i class="fa fa-check"></i>Readability Graphs</a></li>
+<li class="chapter" data-level="" data-path="options-statistics.html"><a href="options-statistics.html"><i class="fa fa-check"></i>Statistics</a>
+<ul>
+<li class="chapter" data-level="" data-path="options-statistics.html"><a href="options-statistics.html#results"><i class="fa fa-check"></i>Results</a></li>
+<li class="chapter" data-level="" data-path="options-statistics.html"><a href="options-statistics.html#options-summary-report"><i class="fa fa-check"></i>Summary Report</a></li>
+<li class="chapter" data-level="" data-path="options-statistics.html"><a href="options-statistics.html#options-dolch-report"><i class="fa fa-check"></i>Dolch Report</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="words-breakdown.html"><a href="words-breakdown.html"><i class="fa fa-check"></i>Words Breakdown</a>
+<ul>
+<li class="chapter" data-level="" data-path="words-breakdown.html"><a href="words-breakdown.html#results-1"><i class="fa fa-check"></i>Results</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="options-sentences-breakdown.html"><a href="options-sentences-breakdown.html"><i class="fa fa-check"></i>Sentences Breakdown</a>
+<ul>
+<li class="chapter" data-level="" data-path="options-sentences-breakdown.html"><a href="options-sentences-breakdown.html#results-2"><i class="fa fa-check"></i>Results</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="options-grammar.html"><a href="options-grammar.html"><i class="fa fa-check"></i>Grammar</a>
+<ul>
+<li class="chapter" data-level="" data-path="options-grammar.html"><a href="options-grammar.html#results-3"><i class="fa fa-check"></i>Results</a></li>
+<li class="chapter" data-level="" data-path="options-grammar.html"><a href="options-grammar.html#options-spell-check"><i class="fa fa-check"></i>Spell Checker</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="options-highlighted-reports.html"><a href="options-highlighted-reports.html"><i class="fa fa-check"></i>Highlighted Reports</a>
+<ul>
+<li class="chapter" data-level="" data-path="options-highlighted-reports.html"><a href="options-highlighted-reports.html#general"><i class="fa fa-check"></i>General</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="dolch-options.html"><a href="dolch-options.html"><i class="fa fa-check"></i>Dolch Sight Words</a></li>
+<li class="chapter" data-level="" data-path="options-graphs.html"><a href="options-graphs.html"><i class="fa fa-check"></i>Test Graphs</a>
+<ul>
+<li class="chapter" data-level="" data-path="options-graphs.html"><a href="options-graphs.html#general-1"><i class="fa fa-check"></i>General</a></li>
+<li class="chapter" data-level="" data-path="options-graphs.html"><a href="options-graphs.html#axes"><i class="fa fa-check"></i>Axes</a></li>
+<li class="chapter" data-level="" data-path="options-graphs.html"><a href="options-graphs.html#titles"><i class="fa fa-check"></i>Titles</a></li>
+<li class="chapter" data-level="" data-path="options-graphs.html"><a href="options-graphs.html#options-bar-charts"><i class="fa fa-check"></i>Bar Charts</a></li>
+<li class="chapter" data-level="" data-path="options-graphs.html"><a href="options-graphs.html#options-histograms"><i class="fa fa-check"></i>Histograms</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="options-box-plots.html"><a href="options-box-plots.html"><i class="fa fa-check"></i>Box Plots</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="additional-features.html"><a href="additional-features.html"><i class="fa fa-check"></i><b>8</b> Additional Features</a>
+<ul>
+<li class="chapter" data-level="" data-path="web-harvester.html"><a href="web-harvester.html"><i class="fa fa-check"></i>Web Harvester</a></li>
+<li class="chapter" data-level="" data-path="command-line-options.html"><a href="command-line-options.html"><i class="fa fa-check"></i>Command Line Options</a></li>
+<li class="chapter" data-level="" data-path="log-report.html"><a href="log-report.html"><i class="fa fa-check"></i>Log Report</a></li>
+</ul></li>
+<li class="part"><span><b>III Readability Tests</b></span></li>
+<li class="chapter" data-level="9" data-path="english-readability-tests.html"><a href="english-readability-tests.html"><i class="fa fa-check"></i><b>9</b> English Readability Tests</a>
+<ul>
+<li class="chapter" data-level="" data-path="ari-test.html"><a href="ari-test.html"><i class="fa fa-check"></i>Automated Readability Index</a>
+<ul>
+<li class="chapter" data-level="" data-path="ari-test.html"><a href="ari-test.html#the-ari-formula"><i class="fa fa-check"></i>The ARI Formula</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="bormuth-cloze-mean-machine-passage.html"><a href="bormuth-cloze-mean-machine-passage.html"><i class="fa fa-check"></i>Bormuth Cloze Mean</a></li>
+<li class="chapter" data-level="" data-path="bormuth-grade-placement-35-machine-passage.html"><a href="bormuth-grade-placement-35-machine-passage.html"><i class="fa fa-check"></i>Bormuth Grade Placement (GP35)</a></li>
+<li class="chapter" data-level="" data-path="coleman-liau-test.html"><a href="coleman-liau-test.html"><i class="fa fa-check"></i>Coleman-Liau</a>
+<ul>
+<li class="chapter" data-level="" data-path="coleman-liau-test.html"><a href="coleman-liau-test.html#the-coleman-liau-formula"><i class="fa fa-check"></i>The Coleman-Liau Formula</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="dale-chall-test.html"><a href="dale-chall-test.html"><i class="fa fa-check"></i>New Dale-Chall</a></li>
+<li class="chapter" data-level="" data-path="danielson-bryan-1.html"><a href="danielson-bryan-1.html"><i class="fa fa-check"></i>Danielson-Bryan 1</a></li>
+<li class="chapter" data-level="" data-path="danielson-bryan-2.html"><a href="danielson-bryan-2.html"><i class="fa fa-check"></i>Danielson-Bryan 2</a>
+<ul>
+<li class="chapter" data-level="" data-path="danielson-bryan-2.html"><a href="danielson-bryan-2.html#flesch-reading-ease-index-table"><i class="fa fa-check"></i>Flesch Reading Ease Index Table</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="degrees-of-reading-power.html"><a href="degrees-of-reading-power.html"><i class="fa fa-check"></i>Degrees of Reading Power</a>
+<ul>
+<li class="chapter" data-level="" data-path="degrees-of-reading-power.html"><a href="degrees-of-reading-power.html#degrees-of-reading-power-formula"><i class="fa fa-check"></i>Degrees of Reading Power Formula</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="degrees-of-reading-power-grade-equivalent.html"><a href="degrees-of-reading-power-grade-equivalent.html"><i class="fa fa-check"></i>Degrees of Reading Power (GE)</a>
+<ul>
+<li class="chapter" data-level="" data-path="degrees-of-reading-power-grade-equivalent.html"><a href="degrees-of-reading-power-grade-equivalent.html#degrees-of-reading-power-ge-instructions"><i class="fa fa-check"></i>Degrees of Reading Power (GE) Instructions</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="easy-listening-formula.html"><a href="easy-listening-formula.html"><i class="fa fa-check"></i>Easy Listening Formula</a>
+<ul>
+<li class="chapter" data-level="" data-path="easy-listening-formula.html"><a href="easy-listening-formula.html#calculating-elf"><i class="fa fa-check"></i>Calculating ELF</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="eflaw-test.html"><a href="eflaw-test.html"><i class="fa fa-check"></i>McAlpine EFLAW</a>
+<ul>
+<li class="chapter" data-level="" data-path="eflaw-test.html"><a href="eflaw-test.html#the-mcalpine-eflaw-formula"><i class="fa fa-check"></i>The McAlpine EFLAW Formula</a></li>
+<li class="chapter" data-level="" data-path="eflaw-test.html"><a href="eflaw-test.html#mcalpine-eflaw-index-table"><i class="fa fa-check"></i>McAlpine EFLAW Index Table</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="farr-jenkins-paterson.html"><a href="farr-jenkins-paterson.html"><i class="fa fa-check"></i>Farr, Jenkins, Paterson</a></li>
+<li class="chapter" data-level="" data-path="flesch-kincaid-test.html"><a href="flesch-kincaid-test.html"><i class="fa fa-check"></i>Flesch-Kincaid</a></li>
+<li class="chapter" data-level="" data-path="flesch-kincaid-test-simplified.html"><a href="flesch-kincaid-test-simplified.html"><i class="fa fa-check"></i>Flesch-Kincaid (Simplified)</a></li>
+<li class="chapter" data-level="" data-path="flesch-test.html"><a href="flesch-test.html"><i class="fa fa-check"></i>Flesch Reading Ease</a>
+<ul>
+<li class="chapter" data-level="" data-path="flesch-test.html"><a href="flesch-test.html#the-flesch-reading-ease-formula"><i class="fa fa-check"></i>The Flesch Reading Ease Formula</a></li>
+<li class="chapter" data-level="" data-path="flesch-test.html"><a href="flesch-test.html#flesch-reading-ease-index-table-1"><i class="fa fa-check"></i>Flesch Reading Ease Index Table</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="forcast-test.html"><a href="forcast-test.html"><i class="fa fa-check"></i>FORCAST</a></li>
+<li class="chapter" data-level="" data-path="fry-test.html"><a href="fry-test.html"><i class="fa fa-check"></i>Fry Graph</a></li>
+<li class="chapter" data-level="" data-path="gunning-fog-test.html"><a href="gunning-fog-test.html"><i class="fa fa-check"></i>Gunning Fog</a>
+<ul>
+<li class="chapter" data-level="" data-path="gunning-fog-test.html"><a href="gunning-fog-test.html#the-gunning-fog-formula"><i class="fa fa-check"></i>The Gunning Fog Formula</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="harris-jacobson.html"><a href="harris-jacobson.html"><i class="fa fa-check"></i>Harris-Jacobson Wide Range</a></li>
+<li class="chapter" data-level="" data-path="lix-test.html"><a href="lix-test.html"><i class="fa fa-check"></i>Lix</a>
+<ul>
+<li class="chapter" data-level="" data-path="lix-test.html"><a href="lix-test.html#the-lix-formula"><i class="fa fa-check"></i>The Lix Formula</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="modified-smog.html"><a href="modified-smog.html"><i class="fa fa-check"></i>Modified SMOG</a></li>
+<li class="chapter" data-level="" data-path="new-ari.html"><a href="new-ari.html"><i class="fa fa-check"></i>New Automated Readability Index</a></li>
+<li class="chapter" data-level="" data-path="new-ari-simplified.html"><a href="new-ari-simplified.html"><i class="fa fa-check"></i>New Automated Readability Index (Simplified)</a></li>
+<li class="chapter" data-level="" data-path="new-farr-jenkins-paterson.html"><a href="new-farr-jenkins-paterson.html"><i class="fa fa-check"></i>New Farr, Jenkins, Paterson</a></li>
+<li class="chapter" data-level="" data-path="new-fog-count-test.html"><a href="new-fog-count-test.html"><i class="fa fa-check"></i>New Fog Count</a></li>
+<li class="chapter" data-level="" data-path="psk-dale-chall.html"><a href="psk-dale-chall.html"><i class="fa fa-check"></i>(Powers, Sumner, Kearl) Dale-Chall</a></li>
+<li class="chapter" data-level="" data-path="psk-farr-jenkins-paterson.html"><a href="psk-farr-jenkins-paterson.html"><i class="fa fa-check"></i>(Powers, Sumner, Kearl) Farr, Jenkins, Paterson</a></li>
+<li class="chapter" data-level="" data-path="psk-fog.html"><a href="psk-fog.html"><i class="fa fa-check"></i>(Powers, Sumner, Kearl) Gunning Fog</a></li>
+<li class="chapter" data-level="" data-path="psk-test.html"><a href="psk-test.html"><i class="fa fa-check"></i>(Powers, Sumner, Kearl) Flesch</a></li>
+<li class="chapter" data-level="" data-path="raygor-test.html"><a href="raygor-test.html"><i class="fa fa-check"></i>Raygor Estimate Graph</a></li>
+<li class="chapter" data-level="" data-path="rix-test.html"><a href="rix-test.html"><i class="fa fa-check"></i>Rix</a>
+<ul>
+<li class="chapter" data-level="" data-path="rix-test.html"><a href="rix-test.html#the-rix-formula"><i class="fa fa-check"></i>The Rix Formula</a></li>
+<li class="chapter" data-level="" data-path="rix-test.html"><a href="rix-test.html#rix-to-grade-level"><i class="fa fa-check"></i>Rix Index to Grade Level Table</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="smog-test.html"><a href="smog-test.html"><i class="fa fa-check"></i>SMOG</a></li>
+<li class="chapter" data-level="" data-path="smog-test-simplified.html"><a href="smog-test-simplified.html"><i class="fa fa-check"></i>SMOG (Simplified)</a></li>
+<li class="chapter" data-level="" data-path="spache-test.html"><a href="spache-test.html"><i class="fa fa-check"></i>Spache Revised</a>
+<ul>
+<li class="chapter" data-level="" data-path="spache-test.html"><a href="spache-test.html#the-spache-revised-formula"><i class="fa fa-check"></i>The Spache Revised Formula</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="stocker-catholic-supplement.html"><a href="stocker-catholic-supplement.html"><i class="fa fa-check"></i>Stocker’s Catholic Supplement</a></li>
+<li class="chapter" data-level="" data-path="wheeler-smith.html"><a href="wheeler-smith.html"><i class="fa fa-check"></i>Wheeler-Smith</a>
+<ul>
+<li class="chapter" data-level="" data-path="wheeler-smith.html"><a href="wheeler-smith.html#the-wheeler-smith-formula"><i class="fa fa-check"></i>The Wheeler-Smith Formula</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="spanish-readability-tests.html"><a href="spanish-readability-tests.html"><i class="fa fa-check"></i><b>10</b> Spanish Readability Tests</a>
+<ul>
+<li class="chapter" data-level="" data-path="crawford.html"><a href="crawford.html"><i class="fa fa-check"></i>Crawford</a></li>
+<li class="chapter" data-level="" data-path="frase.html"><a href="frase.html"><i class="fa fa-check"></i>FRASE Graph</a></li>
+<li class="chapter" data-level="" data-path="gilliam-pena-mountain-fry-graph.html"><a href="gilliam-pena-mountain-fry-graph.html"><i class="fa fa-check"></i>Gilliam-Peña-Mountain Graph</a></li>
+<li class="chapter" data-level="" data-path="lix-spanish.html"><a href="lix-spanish.html"><i class="fa fa-check"></i>Lix</a></li>
+<li class="chapter" data-level="" data-path="rix-spanish.html"><a href="rix-spanish.html"><i class="fa fa-check"></i>Rix</a></li>
+<li class="chapter" data-level="" data-path="sol-spanish.html"><a href="sol-spanish.html"><i class="fa fa-check"></i>SOL</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="german-readability-tests.html"><a href="german-readability-tests.html"><i class="fa fa-check"></i><b>11</b> German Readability Tests</a>
+<ul>
+<li class="chapter" data-level="" data-path="amstad.html"><a href="amstad.html"><i class="fa fa-check"></i>Amstad</a>
+<ul>
+<li class="chapter" data-level="" data-path="amstad.html"><a href="amstad.html#amstad-formula"><i class="fa fa-check"></i>Amstad Formula</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="lix-german.html"><a href="lix-german.html"><i class="fa fa-check"></i>Lix</a></li>
+<li class="chapter" data-level="" data-path="lix-german-childrens-literature.html"><a href="lix-german-childrens-literature.html"><i class="fa fa-check"></i>Lix (German children’s literature)</a>
+<ul>
+<li class="chapter" data-level="" data-path="lix-german-childrens-literature.html"><a href="lix-german-childrens-literature.html#bamberger-vaneceks-lix-index-to-grade-level"><i class="fa fa-check"></i>Bamberger &amp; Vanecek’s Lix Index to Grade Level</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="lix-german-technical.html"><a href="lix-german-technical.html"><i class="fa fa-check"></i>Lix (German technical literature)</a>
+<ul>
+<li class="chapter" data-level="" data-path="lix-german-technical.html"><a href="lix-german-technical.html#bamberger-vaneceks-lix-index-to-grade-level-1"><i class="fa fa-check"></i>Bamberger &amp; Vanecek’s Lix Index to Grade Level</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="neue-wiener-sachtextformel1.html"><a href="neue-wiener-sachtextformel1.html"><i class="fa fa-check"></i>Neue Wiener Sachtextformel 1</a>
+<ul>
+<li class="chapter" data-level="" data-path="neue-wiener-sachtextformel1.html"><a href="neue-wiener-sachtextformel1.html#the-neue-wiener-sachtextformel-1-formula"><i class="fa fa-check"></i>The Neue Wiener Sachtextformel 1 Formula</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="neue-wiener-sachtextformel2.html"><a href="neue-wiener-sachtextformel2.html"><i class="fa fa-check"></i>Neue Wiener Sachtextformel 2</a>
+<ul>
+<li class="chapter" data-level="" data-path="neue-wiener-sachtextformel2.html"><a href="neue-wiener-sachtextformel2.html#the-neue-wiener-sachtextformel-2-formula"><i class="fa fa-check"></i>The Neue Wiener Sachtextformel 2 Formula</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="neue-wiener-sachtextformel3.html"><a href="neue-wiener-sachtextformel3.html"><i class="fa fa-check"></i>Neue Wiener Sachtextformel 3</a>
+<ul>
+<li class="chapter" data-level="" data-path="neue-wiener-sachtextformel3.html"><a href="neue-wiener-sachtextformel3.html#the-neue-wiener-sachtextformel-3-formula"><i class="fa fa-check"></i>The Neue Wiener Sachtextformel 3 Formula</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="qu-bamberger-vanecek.html"><a href="qu-bamberger-vanecek.html"><i class="fa fa-check"></i>Quadratwurzelverfahren</a>
+<ul>
+<li class="chapter" data-level="" data-path="qu-bamberger-vanecek.html"><a href="qu-bamberger-vanecek.html#the-quadratwurzelverfahren-formula"><i class="fa fa-check"></i>The Quadratwurzelverfahren Formula</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="rix-german.html"><a href="rix-german.html"><i class="fa fa-check"></i>Rix</a></li>
+<li class="chapter" data-level="" data-path="rix-german-fiction.html"><a href="rix-german-fiction.html"><i class="fa fa-check"></i>Rix (German fiction)</a>
+<ul>
+<li class="chapter" data-level="" data-path="rix-german-fiction.html"><a href="rix-german-fiction.html#the-rix-german-fiction-formula"><i class="fa fa-check"></i>The Rix (German fiction) Formula</a></li>
+<li class="chapter" data-level="" data-path="rix-german-fiction.html"><a href="rix-german-fiction.html#rix-to-grade-level-german"><i class="fa fa-check"></i>Rix Index to Grade Level Table</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="rix-german-nonfiction.html"><a href="rix-german-nonfiction.html"><i class="fa fa-check"></i>Rix (German non-fiction)</a>
+<ul>
+<li class="chapter" data-level="" data-path="rix-german-nonfiction.html"><a href="rix-german-nonfiction.html#the-rix-german-non-fiction-formula"><i class="fa fa-check"></i>The Rix (German non-fiction) Formula</a></li>
+<li class="chapter" data-level="" data-path="rix-german-nonfiction.html"><a href="rix-german-nonfiction.html#rix-to-grade-level-german2"><i class="fa fa-check"></i>Rix Index to Grade Level Table</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="smog-bamberger-vanecek.html"><a href="smog-bamberger-vanecek.html"><i class="fa fa-check"></i>SMOG (Bamberger-Vanecek)</a>
+<ul>
+<li class="chapter" data-level="" data-path="smog-bamberger-vanecek.html"><a href="smog-bamberger-vanecek.html#the-smog-bamberger-vanecek-formula"><i class="fa fa-check"></i>The SMOG (Bamberger-Vanecek) Formula</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="wheeler-smith-bamberger-vanecek.html"><a href="wheeler-smith-bamberger-vanecek.html"><i class="fa fa-check"></i>Wheeler-Smith (Bamberger-Vanecek)</a>
+<ul>
+<li class="chapter" data-level="" data-path="wheeler-smith-bamberger-vanecek.html"><a href="wheeler-smith-bamberger-vanecek.html#the-wheeler-smith-bamberger-vanecek-formula"><i class="fa fa-check"></i>The Wheeler-Smith (Bamberger-Vanecek) Formula</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="custom-tests-bundles.html"><a href="custom-tests-bundles.html"><i class="fa fa-check"></i><b>12</b> Custom Tests &amp; Bundles</a>
+<ul>
+<li class="chapter" data-level="" data-path="creating-custom-test.html"><a href="creating-custom-test.html"><i class="fa fa-check"></i>Creating a Custom Test</a></li>
+<li class="chapter" data-level="" data-path="custom-test-functions.html"><a href="custom-test-functions.html"><i class="fa fa-check"></i>Custom Test Functions</a></li>
+<li class="chapter" data-level="" data-path="custom-test-dialog.html"><a href="custom-test-dialog.html"><i class="fa fa-check"></i>Custom Test Dialog</a>
+<ul>
+<li class="chapter" data-level="" data-path="custom-test-dialog.html"><a href="custom-test-dialog.html#custom-test-general-settings"><i class="fa fa-check"></i>General Settings</a></li>
+<li class="chapter" data-level="" data-path="custom-test-dialog.html"><a href="custom-test-dialog.html#formula"><i class="fa fa-check"></i>Formula</a></li>
+<li class="chapter" data-level="" data-path="custom-test-dialog.html"><a href="custom-test-dialog.html#word-lists"><i class="fa fa-check"></i>Word Lists</a></li>
+<li class="chapter" data-level="" data-path="custom-test-dialog.html"><a href="custom-test-dialog.html#custom-proper-numerals"><i class="fa fa-check"></i>Proper Nouns &amp; Numerals</a></li>
+<li class="chapter" data-level="" data-path="custom-test-dialog.html"><a href="custom-test-dialog.html#classification"><i class="fa fa-check"></i>Classification</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="add-custom-word-test.html"><a href="add-custom-word-test.html"><i class="fa fa-check"></i>Adding a Custom-word Test</a></li>
+<li class="chapter" data-level="" data-path="test-bundles.html"><a href="test-bundles.html"><i class="fa fa-check"></i>Test Bundles</a></li>
+</ul></li>
+<li class="part"><span><b>IV Examples</b></span></li>
+<li class="chapter" data-level="13" data-path="getting-started.html"><a href="getting-started.html"><i class="fa fa-check"></i><b>13</b> Getting Started</a>
+<ul>
+<li class="chapter" data-level="" data-path="book-example.html"><a href="book-example.html"><i class="fa fa-check"></i>Analyzing a Book</a></li>
+<li class="chapter" data-level="" data-path="VocabBuilderExample.html"><a href="VocabBuilderExample.html"><i class="fa fa-check"></i>Improving Students’ Vocabulary</a></li>
+<li class="chapter" data-level="" data-path="analyzing-a-work-in-progress.html"><a href="analyzing-a-work-in-progress.html"><i class="fa fa-check"></i>Analyzing a Work in Progress</a></li>
+<li class="chapter" data-level="" data-path="analyzing-a-webpage.html"><a href="analyzing-a-webpage.html"><i class="fa fa-check"></i>Analyzing a Webpage</a></li>
+<li class="chapter" data-level="" data-path="searching-for-overly-long-sentences.html"><a href="searching-for-overly-long-sentences.html"><i class="fa fa-check"></i>Searching for Overly Long Sentences</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="advanced-examples.html"><a href="advanced-examples.html"><i class="fa fa-check"></i><b>14</b> Advanced Examples</a>
+<ul>
+<li class="chapter" data-level="" data-path="ExcludingTextFromAnalysis.html"><a href="ExcludingTextFromAnalysis.html"><i class="fa fa-check"></i>Excluding Text from an Analysis</a></li>
+<li class="chapter" data-level="" data-path="excluding-placeholders.html"><a href="excluding-placeholders.html"><i class="fa fa-check"></i>Excluding Placeholders and Blocks of Text</a></li>
+<li class="chapter" data-level="" data-path="customizing-a-graph.html"><a href="customizing-a-graph.html"><i class="fa fa-check"></i>Customizing a Graph</a></li>
+<li class="chapter" data-level="" data-path="creating-a-test-bundle.html"><a href="creating-a-test-bundle.html"><i class="fa fa-check"></i>Creating a Test Bundle</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="creating-custom-tests.html"><a href="creating-custom-tests.html"><i class="fa fa-check"></i><b>15</b> Creating Custom Tests</a>
+<ul>
+<li class="chapter" data-level="" data-path="creating-a-modified-flesch-test.html"><a href="creating-a-modified-flesch-test.html"><i class="fa fa-check"></i>Creating a Modified Flesch Test</a></li>
+<li><a href="creating-a-custom-new-dale-chall-test.html#creating-a-custom-new-dale-chall-test">Creating a Custom <strong>New Dale-Chall</strong> Test</a></li>
+<li class="chapter" data-level="" data-path="creating-a-custom-index-test.html"><a href="creating-a-custom-index-test.html"><i class="fa fa-check"></i>Creating a Custom Index Test</a></li>
+</ul></li>
+<li class="part"><span><b>V Notes</b></span></li>
+<li class="chapter" data-level="16" data-path="analysis-notes.html"><a href="analysis-notes.html"><i class="fa fa-check"></i><b>16</b> Analysis Notes</a>
+<ul>
+<li class="chapter" data-level="" data-path="how-text-is-excluded.html"><a href="how-text-is-excluded.html"><i class="fa fa-check"></i>How Text is Excluded</a>
+<ul>
+<li class="chapter" data-level="" data-path="how-text-is-excluded.html"><a href="how-text-is-excluded.html#additional-items"><i class="fa fa-check"></i>Additional Items</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="how-sentences-are-counted.html"><a href="how-sentences-are-counted.html"><i class="fa fa-check"></i>How Sentences are Counted</a></li>
+<li class="chapter" data-level="" data-path="line-chaining.html"><a href="line-chaining.html"><i class="fa fa-check"></i>Line (Sentence) Chaining</a></li>
+<li class="chapter" data-level="" data-path="controlling-how-sentences-are-deduced.html"><a href="controlling-how-sentences-are-deduced.html"><i class="fa fa-check"></i>Controlling How Sentences are Deduced</a></li>
+<li class="chapter" data-level="" data-path="how-syllables-are-counted.html"><a href="how-syllables-are-counted.html"><i class="fa fa-check"></i>How Syllables are Counted</a>
+<ul>
+<li class="chapter" data-level="" data-path="how-syllables-are-counted.html"><a href="how-syllables-are-counted.html#how-numbers-are-syllabized"><i class="fa fa-check"></i>How Numbers are Syllabized</a></li>
+<li class="chapter" data-level="" data-path="how-syllables-are-counted.html"><a href="how-syllables-are-counted.html#how-symbols-are-syllabized"><i class="fa fa-check"></i>How Symbols are Syllabized</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="repeated-word-exceptions.html"><a href="repeated-word-exceptions.html"><i class="fa fa-check"></i>Repeated Word Exceptions</a></li>
+<li class="chapter" data-level="" data-path="article-mismatching.html"><a href="article-mismatching.html"><i class="fa fa-check"></i>Article Mismatching</a></li>
+<li class="chapter" data-level="" data-path="framented-text.html"><a href="framented-text.html"><i class="fa fa-check"></i>Non-narrative/Fragmented Text</a></li>
+<li class="chapter" data-level="" data-path="joining-hyphenated-words.html"><a href="joining-hyphenated-words.html"><i class="fa fa-check"></i>Joining Hyphenated Words</a></li>
+<li class="chapter" data-level="" data-path="option-changes-that-require-reanalyzing-the-document.html"><a href="option-changes-that-require-reanalyzing-the-document.html"><i class="fa fa-check"></i>Option Changes that Require Reanalyzing the Document</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="scoring-notes.html"><a href="scoring-notes.html"><i class="fa fa-check"></i><b>17</b> Scoring Notes</a>
+<ul>
+<li class="chapter" data-level="" data-path="grade-level-results.html"><a href="grade-level-results.html"><i class="fa fa-check"></i>Grade Level Results</a></li>
+<li class="chapter" data-level="" data-path="grade-scales.html"><a href="grade-scales.html"><i class="fa fa-check"></i>Grade Scales</a>
+<ul>
+<li><a href="grade-scales.html#united-states-of-america"><img src="images/NonGenerated/usa.png" /> United States of America</a></li>
+<li><a href="grade-scales.html#england-and-wales"><img src="images/NonGenerated/gb.png" /> England and Wales</a></li>
+<li><a href="grade-scales.html#canada"><img src="images/NonGenerated/ca.png" /> <strong>Canada</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="cloze.html"><a href="cloze.html"><i class="fa fa-check"></i>Cloze Scores and Readability Formulas</a></li>
+<li class="chapter" data-level="" data-path="proper-nouns-in-lists.html"><a href="proper-nouns-in-lists.html"><i class="fa fa-check"></i>Proper Nouns in the Difficult Word Lists</a></li>
+<li class="chapter" data-level="" data-path="adding-words-to-familiar-word-tests.html"><a href="adding-words-to-familiar-word-tests.html"><i class="fa fa-check"></i>Adding Words to Familiar-Word Tests</a></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="technical-notes.html"><a href="technical-notes.html"><i class="fa fa-check"></i><b>18</b> Technical Notes</a>
+<ul>
+<li class="chapter" data-level="" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i>Glossary</a></li>
+<li class="chapter" data-level="" data-path="stat-terms.html"><a href="stat-terms.html"><i class="fa fa-check"></i>Statistical Terminology</a>
+<ul>
+<li class="chapter" data-level="" data-path="stat-terms.html"><a href="stat-terms.html#stats-range"><i class="fa fa-check"></i>Range</a></li>
+<li class="chapter" data-level="" data-path="stat-terms.html"><a href="stat-terms.html#dispersion"><i class="fa fa-check"></i>Dispersion</a></li>
+<li class="chapter" data-level="" data-path="stat-terms.html"><a href="stat-terms.html#distribution"><i class="fa fa-check"></i>Distribution</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="box-plots.html"><a href="box-plots.html"><i class="fa fa-check"></i>Box Plots</a></li>
+</ul></li>
+<li class="part"><span><b>VI Appendix</b></span></li>
+<li class="chapter" data-level="19" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>19</b> References</a>
+<ul>
+<li class="chapter" data-level="" data-path="bibliography.html"><a href="bibliography.html"><i class="fa fa-check"></i>Bibliography</a></li>
+</ul></li>
+<li class="chapter" data-level="20" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i><b>20</b> Acknowledgements</a>
+<ul>
+<li class="chapter" data-level="" data-path="open-source-libraries.html"><a href="open-source-libraries.html"><i class="fa fa-check"></i>Open-Source Libraries</a>
+<ul>
+<li class="chapter" data-level="" data-path="open-source-libraries.html"><a href="open-source-libraries.html#cyoencode"><i class="fa fa-check"></i>CyoEncode</a></li>
+<li class="chapter" data-level="" data-path="open-source-libraries.html"><a href="open-source-libraries.html#easy-exif"><i class="fa fa-check"></i>Easy Exif</a></li>
+<li class="chapter" data-level="" data-path="open-source-libraries.html"><a href="open-source-libraries.html#libcurl"><i class="fa fa-check"></i>libCurl</a></li>
+<li class="chapter" data-level="" data-path="open-source-libraries.html"><a href="open-source-libraries.html#libjpeg"><i class="fa fa-check"></i>libjpeg</a></li>
+<li class="chapter" data-level="" data-path="open-source-libraries.html"><a href="open-source-libraries.html#libpng"><i class="fa fa-check"></i>libpng</a></li>
+<li class="chapter" data-level="" data-path="open-source-libraries.html"><a href="open-source-libraries.html#libtiff"><i class="fa fa-check"></i>LibTIFF</a></li>
+<li class="chapter" data-level="" data-path="open-source-libraries.html"><a href="open-source-libraries.html#lily-of-the-valley"><i class="fa fa-check"></i>Lily of the Valley</a></li>
+<li class="chapter" data-level="" data-path="open-source-libraries.html"><a href="open-source-libraries.html#lua"><i class="fa fa-check"></i>Lua</a></li>
+<li class="chapter" data-level="" data-path="open-source-libraries.html"><a href="open-source-libraries.html#oleander-stemming-library"><i class="fa fa-check"></i>Oleander Stemming Library</a></li>
+<li class="chapter" data-level="" data-path="open-source-libraries.html"><a href="open-source-libraries.html#scintilla"><i class="fa fa-check"></i>Scintilla</a></li>
+<li class="chapter" data-level="" data-path="open-source-libraries.html"><a href="open-source-libraries.html#tinyxml2"><i class="fa fa-check"></i>Tinyxml2</a></li>
+<li class="chapter" data-level="" data-path="open-source-libraries.html"><a href="open-source-libraries.html#utf8-cpp"><i class="fa fa-check"></i>UTF8-CPP</a></li>
+<li class="chapter" data-level="" data-path="open-source-libraries.html"><a href="open-source-libraries.html#wxwidgets"><i class="fa fa-check"></i>wxWidgets</a></li>
+<li class="chapter" data-level="" data-path="open-source-libraries.html"><a href="open-source-libraries.html#zlib"><i class="fa fa-check"></i>zlib</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="open-source-tools-content.html"><a href="open-source-tools-content.html"><i class="fa fa-check"></i>Open-Source Tools &amp; Content</a>
+<ul>
+<li class="chapter" data-level="" data-path="open-source-tools-content.html"><a href="open-source-tools-content.html#documentation-project-management-software"><i class="fa fa-check"></i>Documentation &amp; Project Management Software</a></li>
+<li class="chapter" data-level="" data-path="open-source-tools-content.html"><a href="open-source-tools-content.html#software-development-quality-assurance-packaging-software"><i class="fa fa-check"></i>Software Development, Quality Assurance &amp; Packaging Software</a></li>
+<li class="chapter" data-level="" data-path="open-source-tools-content.html"><a href="open-source-tools-content.html#artwork-editing-software"><i class="fa fa-check"></i>Artwork Editing Software</a></li>
+<li class="chapter" data-level="" data-path="open-source-tools-content.html"><a href="open-source-tools-content.html#data-analysis-software"><i class="fa fa-check"></i>Data Analysis Software</a></li>
+<li class="chapter" data-level="" data-path="open-source-tools-content.html"><a href="open-source-tools-content.html#content"><i class="fa fa-check"></i>Content</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="research-assistance.html"><a href="research-assistance.html"><i class="fa fa-check"></i>Research Assistance</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Readability Studio 2021 Manual</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="open-source-libraries" class="section level2 unnumbered">
+<h2>Open-Source Libraries</h2>
+<p>The 3rd party, open-source libraries included in <strong>Readability Studio</strong> are listed below (along with their respective licenses).</p>
+<div id="cyoencode" class="section level3 unnumbered">
+<h3>CyoEncode</h3>
+<p>Base16, Base32, and Base64 encoding/decoding library.</p>
+<blockquote>
+<p>Developed by Graham Bull for Cyotec Systems Limited.</p>
+<p><a href="http://www.cyotec.com" class="uri">http://www.cyotec.com</a></p>
+<p>Copyright (c) 2004 by Cyotec Systems Limited. All Rights Reserved.
+This source code may be used, modified, compiled, duplicated, and/or
+distributed without restriction provided this copyright notice remains intact.
+Cyotec Systems Limited and/or its employees cannot be held responsible for any
+direct or indirect damage or loss of any kind that may result from using this
+code, and provides no warranty, guarantee, or support.</p>
+</blockquote>
+</div>
+<div id="easy-exif" class="section level3 unnumbered">
+<h3>Easy Exif</h3>
+<p>A simple ISO C++ library to parse basic EXIF information from a JPEG file.</p>
+<blockquote>
+<p>Copyright (c) 2010-2015 Mayank Lahiri</p>
+<p><a href="mailto:mlahiri@gmail.com" class="email">mlahiri@gmail.com</a></p>
+<p>All rights reserved (BSD License).</p>
+<p>See exif.h for version history.</p>
+<p>Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:</p>
+<p>– Redistributions of source code must retain the above copyright notice,
+this list of conditions and the following disclaimer.</p>
+<p>– Redistributions in binary form must reproduce the above copyright notice,
+this list of conditions and the following disclaimer in the documentation
+and/or other materials provided with the distribution.</p>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS ‘’AS IS’’ AND ANY EXPRESS
+OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN
+NO EVENT SHALL THE FREEBSD PROJECT OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
+INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
+OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
+EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+</blockquote>
+</div>
+<div id="libcurl" class="section level3 unnumbered">
+<h3>libCurl</h3>
+<p>A free and easy-to-use client-side URL transfer library, supporting DICT, FILE, FTP, FTPS, Gopher, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, Telnet and TFTP.</p>
+<blockquote>
+<p>COPYRIGHT AND PERMISSION NOTICE</p>
+<p>Copyright (c) 1996 - 2017, Daniel Stenberg, <a href="mailto:daniel@haxx.se" class="email">daniel@haxx.se</a>, and many contributors.</p>
+<p>All rights reserved.</p>
+<p>Permission to use, copy, modify, and distribute this software for any purpose
+with or without fee is hereby granted, provided that the above copyright
+notice and this permission notice appear in all copies.</p>
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN NO EVENT SHALL
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+<p>Except as contained in this notice, the name of a copyright holder shall not
+be used in advertising or otherwise to promote the sale, use or other dealings
+in this Software without prior written authorization of the copyright holder.</p>
+</blockquote>
+</div>
+<div id="libjpeg" class="section level3 unnumbered">
+<h3>libjpeg</h3>
+<p>Independent JPEG Group’s free JPEG software.</p>
+<blockquote>
+<p>The Independent JPEG Group’s JPEG software</p>
+<p>==========================================</p>
+<p>README for release 6b of 27-Mar-1998</p>
+<p>====================================</p>
+<p>This distribution contains the sixth public release of the Independent JPEG
+Group’s free JPEG software. You are welcome to redistribute this software and
+to use it for any purpose, subject to the conditions under LEGAL ISSUES, below.
+Serious users of this software (particularly those incorporating it into
+larger programs) should contact IJG at <a href="mailto:jpeg-info@uunet.uu.net" class="email">jpeg-info@uunet.uu.net</a> to be added to
+our electronic mailing list. Mailing list members are notified of updates
+and have a chance to participate in technical discussions, etc.</p>
+<p>This software is the work of Tom Lane, Philip Gladstone, Jim Boucher,
+Lee Crocker, Julian Minguillon, Luis Ortiz, George Phillips, Davide Rossi,
+Guido Vollbeding, Ge’ Weijers, and other members of the Independent JPEG
+Group.</p>
+<p>IJG is not affiliated with the official ISO JPEG standards committee.</p>
+<p>OVERVIEW</p>
+<p>========</p>
+<p>This package contains C software to implement JPEG image compression and
+decompression. JPEG (pronounced “jay-peg”) is a standardized compression
+method for full-color and gray-scale images. JPEG is intended for compressing
+“real-world” scenes; line drawings, cartoons and other non-realistic images
+are not its strong suit. JPEG is lossy, meaning that the output image is not
+exactly identical to the input image. Hence you must not use JPEG if you
+have to have identical output bits. However, on typical photographic images,
+very good compression levels can be obtained with no visible change, and
+remarkably high compression levels are possible if you can tolerate a
+low-quality image. For more details, see the references, or just experiment
+with various compression settings.</p>
+<p>This software implements JPEG baseline, extended-sequential, and progressive
+compression processes. Provision is made for supporting all variants of these
+processes, although some uncommon parameter settings aren’t implemented yet.
+For legal reasons, we are not distributing code for the arithmetic-coding
+variants of JPEG; see LEGAL ISSUES. We have made no provision for supporting
+the hierarchical or lossless processes defined in the standard.
+We provide a set of library routines for reading and writing JPEG image files,
+plus two sample applications “cjpeg” and “djpeg”, which use the library to
+perform conversion between JPEG and some other popular image file formats.
+The library is intended to be reused in other applications.</p>
+<p>In order to support file conversion and viewing software, we have included
+considerable functionality beyond the bare JPEG coding/decoding capability;
+for example, the color quantization modules are not strictly part of JPEG
+decoding, but they are essential for output to colormapped file formats or
+colormapped displays. These extra functions can be compiled out of the
+library if not required for a particular application. We have also included
+“jpegtran”, a utility for lossless transcoding between different JPEG
+processes, and “rdjpgcom” and “wrjpgcom”, two simple applications for
+inserting and extracting textual comments in JFIF files.</p>
+<p>The emphasis in designing this software has been on achieving portability and
+flexibility, while also making it fast enough to be useful. In particular,
+the software is not intended to be read as a tutorial on JPEG. (See the
+REFERENCES section for introductory material.) Rather, it is intended to
+be reliable, portable, industrial-strength code. We do not claim to have
+achieved that goal in every aspect of the software, but we strive for it.
+We welcome the use of this software as a component of commercial products.
+No royalty is required, but we do ask for an acknowledgement in product
+documentation, as described under LEGAL ISSUES.</p>
+<p>LEGAL ISSUES</p>
+<p>============</p>
+<p>In plain English:</p>
+<ol style="list-style-type: decimal">
+<li><p>We don’t promise that this software works. (But if you find any bugs,
+please let us know!)</p></li>
+<li><p>You can use this software for whatever you want. You don’t have to pay us.</p></li>
+<li><p>You may not pretend that you wrote this software. If you use it in a
+program, you must acknowledge somewhere in your documentation that
+you’ve used the IJG code.</p></li>
+</ol>
+<p>In legalese:</p>
+<p>The authors make NO WARRANTY or representation, either express or implied,
+with respect to this software, its quality, accuracy, merchantability, or
+fitness for a particular purpose. This software is provided “AS IS”, and you,
+its user, assume the entire risk as to its quality and accuracy.</p>
+<p>This software is copyright (C) 1991-1998, Thomas G. Lane.</p>
+<p>All Rights Reserved except as specified below.</p>
+<p>Permission is hereby granted to use, copy, modify, and distribute this
+software (or portions thereof) for any purpose, without fee, subject to these
+conditions:</p>
+<ol style="list-style-type: decimal">
+<li><p>If any part of the source code for this software is distributed, then this
+README file must be included, with this copyright and no-warranty notice
+unaltered; and any additions, deletions, or changes to the original files
+must be clearly indicated in accompanying documentation.</p></li>
+<li><p>If only executable code is distributed, then the accompanying
+documentation must state that “this software is based in part on the work of
+the Independent JPEG Group”.</p></li>
+<li><p>Permission for use of this software is granted only if the user accepts
+full responsibility for any undesirable consequences; the authors accept
+NO LIABILITY for damages of any kind.</p></li>
+</ol>
+<p>These conditions apply to any software derived from or based on the IJG code,
+not just to the unmodified library. If you use our work, you ought to
+acknowledge us.</p>
+<p>Permission is NOT granted for the use of any IJG author’s name or company name
+in advertising or publicity relating to this software or products derived from
+it. This software may be referred to only as “the Independent JPEG Group’s
+software”.</p>
+<p>We specifically permit and encourage the use of this software as the basis of
+commercial products, provided that all warranty or liability claims are
+assumed by the product vendor.</p>
+<p>ansi2knr.c is included in this distribution by permission of L. Peter Deutsch,
+sole proprietor of its copyright holder, Aladdin Enterprises of Menlo Park, CA.
+ansi2knr.c is NOT covered by the above copyright and conditions, but instead
+by the usual distribution terms of the Free Software Foundation; principally,
+that you must include source code if you redistribute it. (See the file
+ansi2knr.c for full details.) However, since ansi2knr.c is not needed as part
+of any program generated from the IJG code, this does not limit you more than
+the foregoing paragraphs do.</p>
+<p>The Unix configuration script “configure” was produced with GNU Autoconf.
+It is copyright by the Free Software Foundation but is freely distributable.
+The same holds for its supporting scripts (config.guess, config.sub,
+ltconfig, ltmain.sh). Another support script, install-sh, is copyright
+by M.I.T. but is also freely distributable.</p>
+<p>It appears that the arithmetic coding option of the JPEG spec is covered by
+patents owned by IBM, AT&amp;T, and Mitsubishi. Hence arithmetic coding cannot
+legally be used without obtaining one or more licenses. For this reason,
+support for arithmetic coding has been removed from the free JPEG software.
+(Since arithmetic coding provides only a marginal gain over the unpatented
+Huffman mode, it is unlikely that very many implementations will support it.)
+So far as we are aware, there are no patent restrictions on the remaining
+code.</p>
+<p>The IJG distribution formerly included code to read and write GIF files.
+To avoid entanglement with the Unisys LZW patent, GIF reading support has
+been removed altogether, and the GIF writer has been simplified to produce
+“uncompressed GIFs”. This technique does not use the LZW algorithm; the
+resulting GIF files are larger than usual, but are readable by all standard
+GIF decoders.</p>
+<p>We are required to state that</p>
+<p>“The Graphics Interchange Format(c) is the Copyright property of
+CompuServe Incorporated. GIF(sm) is a Service Mark property of
+CompuServe Incorporated.”</p>
+</blockquote>
+</div>
+<div id="libpng" class="section level3 unnumbered">
+<h3>libpng</h3>
+<p>PNG reference library.</p>
+<blockquote>
+<p>This copy of the libpng notices is provided for your convenience. In case of
+any discrepancy between this copy and the notices in the file png.h that is
+included in the libpng distribution, the latter shall prevail.</p>
+<p>COPYRIGHT NOTICE, DISCLAIMER, and LICENSE:</p>
+<p>If you modify libpng you may insert additional notices immediately following
+this sentence.</p>
+<p>This code is released under the libpng license.</p>
+<p>libpng versions 1.0.7, July 1, 2000, through 1.6.21, January 15, 2016, are
+Copyright (c) 2000-2002, 2004, 2006-2016 Glenn Randers-Pehrson, are
+derived from libpng-1.0.6, and are distributed according to the same
+disclaimer and license as libpng-1.0.6 with the following individuals
+added to the list of Contributing Authors:</p>
+<p>Simon-Pierre Cadieux</p>
+<p>Eric S. Raymond</p>
+<p>Mans Rullgard</p>
+<p>Cosmin Truta</p>
+<p>Gilles Vollant</p>
+<p>James Yu</p>
+<p>and with the following additions to the disclaimer:</p>
+<p>There is no warranty against interference with your enjoyment of the
+library or against infringement. There is no warranty that our
+efforts or the library will fulfill any of your particular purposes
+or needs. This library is provided with all faults, and the entire
+risk of satisfactory quality, performance, accuracy, and effort is with
+the user.</p>
+<p>libpng versions 0.97, January 1998, through 1.0.6, March 20, 2000, are
+Copyright (c) 1998-2000 Glenn Randers-Pehrson, are derived from
+libpng-0.96, and are distributed according to the same disclaimer and
+license as libpng-0.96, with the following individuals added to the list
+of Contributing Authors:</p>
+<p>Tom Lane</p>
+<p>Glenn Randers-Pehrson</p>
+<p>Willem van Schaik</p>
+<p>libpng versions 0.89, June 1996, through 0.96, May 1997, are
+Copyright (c) 1996-1997 Andreas Dilger, are derived from libpng-0.88,
+and are distributed according to the same disclaimer and license as
+libpng-0.88, with the following individuals added to the list of
+Contributing Authors:</p>
+<p>John Bowler</p>
+<p>Kevin Bracey</p>
+<p>Sam Bushell</p>
+<p>Magnus Holmgren</p>
+<p>Greg Roelofs</p>
+<p>Tom Tanner</p>
+<p>libpng versions 0.5, May 1995, through 0.88, January 1996, are
+Copyright (c) 1995-1996 Guy Eric Schalnat, Group 42, Inc.</p>
+<p>For the purposes of this copyright and license, “Contributing Authors”
+is defined as the following set of individuals:</p>
+<p>Andreas Dilger</p>
+<p>Dave Martindale</p>
+<p>Guy Eric Schalnat</p>
+<p>Paul Schmidt</p>
+<p>Tim Wegner</p>
+<p>The PNG Reference Library is supplied “AS IS”. The Contributing Authors
+and Group 42, Inc. disclaim all warranties, expressed or implied,
+including, without limitation, the warranties of merchantability and of
+fitness for any purpose. The Contributing Authors and Group 42, Inc.
+assume no liability for direct, indirect, incidental, special, exemplary,
+or consequential damages, which may result from the use of the PNG
+Reference Library, even if advised of the possibility of such damage.</p>
+<p>Permission is hereby granted to use, copy, modify, and distribute this
+source code, or portions hereof, for any purpose, without fee, subject
+to the following restrictions:</p>
+<ol style="list-style-type: decimal">
+<li><p>The origin of this source code must not be misrepresented.</p></li>
+<li><p>Altered versions must be plainly marked as such and must not
+be misrepresented as being the original source.</p></li>
+<li><p>This Copyright notice may not be removed or altered from any
+source or altered source distribution.</p></li>
+</ol>
+<p>The Contributing Authors and Group 42, Inc. specifically permit, without
+fee, and encourage the use of this source code as a component to
+supporting the PNG file format in commercial products. If you use this
+source code in a product, acknowledgment is not required but would be
+appreciated.</p>
+<p>END OF COPYRIGHT NOTICE, DISCLAIMER, and LICENSE.</p>
+<p>A “png_get_copyright” function is available, for convenient use in “about”
+boxes and the like:</p>
+<p>printf(“%s”, png_get_copyright(NULL));</p>
+<p>Also, the PNG logo (in PNG format, of course) is supplied in the
+files “pngbar.png” and “pngbar.jpg (88x31) and”pngnow.png" (98x31).
+Libpng is OSI Certified Open Source Software. OSI Certified Open Source is
+a certification mark of the Open Source Initiative. OSI has not addressed
+the additional disclaimers inserted at version 1.0.7.</p>
+<p>Glenn Randers-Pehrson</p>
+<p>glennrp at users.sourceforge.net</p>
+<p>January 15, 2016</p>
+</blockquote>
+</div>
+<div id="libtiff" class="section level3 unnumbered">
+<h3>LibTIFF</h3>
+<p>A set of C functions (a library) that support the manipulation of TIFF image files.</p>
+<blockquote>
+<p>Copyright (c) 1988-1997 Sam Leffler</p>
+<p>Copyright (c) 1991-1997 Silicon Graphics, Inc.</p>
+<p>Permission to use, copy, modify, distribute, and sell this software and
+its documentation for any purpose is hereby granted without fee, provided
+that (i) the above copyright notices and this permission notice appear in
+all copies of the software and related documentation, and (ii) the names of
+Sam Leffler and Silicon Graphics may not be used in any advertising or
+publicity relating to the software without the specific, prior written
+permission of Sam Leffler and Silicon Graphics.</p>
+<p>THE SOFTWARE IS PROVIDED “AS-IS” AND WITHOUT WARRANTY OF ANY KIND,
+EXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY
+WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.<br />
+IN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR
+ANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND,
+OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
+WHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF
+LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE
+OF THIS SOFTWARE.</p>
+</blockquote>
+</div>
+<div id="lily-of-the-valley" class="section level3 unnumbered">
+<h3>Lily of the Valley</h3>
+<p>Library for converting various file formats to plain text.</p>
+<blockquote>
+<p>Copyright (c) 2020, Oleander Software, Ltd.</p>
+<p>All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with
+or without modification, are permitted provided that the
+following conditions are met:</p>
+<ul>
+<li><p>Redistributions of source code must retain the above
+copyright notice, this list of conditions and the
+following disclaimer.</p></li>
+<li><p>Redistributions in binary form must reproduce th
+above copyright notice, this list of conditions
+and the following disclaimer in the documentation
+and/or other materials provided with the distribution.</p></li>
+<li><p>Neither the name of Oleander Software nor the names
+of its contributors may be used to endorse or promote
+products derived from this software without specific
+prior written permission.</p></li>
+</ul>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES,
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+</blockquote>
+</div>
+<div id="lua" class="section level3 unnumbered">
+<h3>Lua</h3>
+<p>A powerful, efficient, lightweight, embeddable scripting language.</p>
+<blockquote>
+<p>Copyright (c) 1994-2017 Lua.org, PUC-Rio.</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the “Software”),
+to deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.</p>
+</blockquote>
+</div>
+<div id="oleander-stemming-library" class="section level3 unnumbered">
+<h3>Oleander Stemming Library</h3>
+<p>Library for stemming words down to their root words.</p>
+<blockquote>
+<p>Copyright (c) 2020, Oleander Software, Ltd.</p>
+<p>All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with
+or without modification, are permitted provided that the
+following conditions are met:</p>
+<ul>
+<li><p>Redistributions of source code must retain the above
+copyright notice, this list of conditions and the
+following disclaimer.</p></li>
+<li><p>Redistributions in binary form must reproduce th
+above copyright notice, this list of conditions
+and the following disclaimer in the documentation
+and/or other materials provided with the distribution.</p></li>
+<li><p>Neither the name of Oleander Software nor the names
+of its contributors may be used to endorse or promote
+products derived from this software without specific
+prior written permission.</p></li>
+</ul>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES,
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+</blockquote>
+</div>
+<div id="scintilla" class="section level3 unnumbered">
+<h3>Scintilla</h3>
+<p>A free source code editing component.</p>
+<blockquote>
+<p>License for Scintilla and SciTE</p>
+<p>Copyright 1998-2003 by Neil Hodgson All Rights Reserved</p>
+<p>Permission to use, copy, modify, and distribute this software and its
+documentation for any purpose and without fee is hereby granted,
+provided that the above copyright notice appear in all copies and that
+both that copyright notice and this permission notice appear in
+supporting documentation.</p>
+<p>NEIL HODGSON DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS
+SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS, IN NO EVENT SHALL NEIL HODGSON BE LIABLE FOR ANY
+SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
+WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE
+OR PERFORMANCE OF THIS SOFTWARE.</p>
+</blockquote>
+</div>
+<div id="tinyxml2" class="section level3 unnumbered">
+<h3>Tinyxml2</h3>
+<p>XML parsing library.</p>
+<blockquote>
+<p>This software is provided ‘as-is’, without any express or implied
+warranty. In no event will the authors be held liable for any
+damages arising from the use of this software.</p>
+<p>Permission is granted to anyone to use this software for any
+purpose, including commercial applications, and to alter it and
+redistribute it freely, subject to the following restrictions:</p>
+<ol style="list-style-type: decimal">
+<li><p>The origin of this software must not be misrepresented; you must
+not claim that you wrote the original software. If you use this
+software in a product, an acknowledgment in the product documentation
+would be appreciated but is not required.</p></li>
+<li><p>Altered source versions must be plainly marked as such, and
+must not be misrepresented as being the original software.</p></li>
+<li><p>This notice may not be removed or altered from any source
+distribution.</p></li>
+</ol>
+</blockquote>
+</div>
+<div id="utf8-cpp" class="section level3 unnumbered">
+<h3>UTF8-CPP</h3>
+<p>UTF-8 with C++ in a portable way.</p>
+<blockquote>
+<p>Copyright 2006 Nemanja Trifunovic</p>
+<p>Permission is hereby granted, free of charge, to any person or organization
+obtaining a copy of the software and accompanying documentation covered by
+this license (the “Software”) to use, reproduce, display, distribute,
+execute, and transmit the Software, and to prepare derivative works of the
+Software, and to permit third-parties to whom the Software is furnished to
+do so, all subject to the following:</p>
+<p>The copyright notices in the Software and this entire statement, including
+the above license grant, this restriction and the following disclaimer,
+must be included in all copies of the Software, in whole or in part, and
+all derivative works of the Software, unless such copies or derivative
+works are solely in the form of machine-executable object code generated by
+a source language processor.</p>
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.</p>
+</blockquote>
+</div>
+<div id="wxwidgets" class="section level3 unnumbered">
+<h3>wxWidgets</h3>
+<p>A stable and powerful open source framework for developing native cross-platform GUI applications in C++.</p>
+<blockquote>
+<p>wxWindows Library Licence, Version 3.1</p>
+<p>======================================</p>
+<p>Copyright (c) 1998-2005 Julian Smart, Robert Roebling et al
+Everyone is permitted to copy and distribute verbatim copies
+of this licence document, but changing it is not allowed.</p>
+<p>WXWINDOWS LIBRARY LICENCE</p>
+<p>TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION</p>
+<p>This library is free software; you can redistribute it and/or modify it
+under the terms of the GNU Library General Public Licence as published by
+the Free Software Foundation; either version 2 of the Licence, or (at
+your option) any later version.</p>
+<p>This library is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Library
+General Public Licence for more details.</p>
+<p>You should have received a copy of the GNU Library General Public Licence
+along with this software, usually in a file named COPYING.LIB. If not,
+write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+Boston, MA 02110-1301 USA.</p>
+<p>EXCEPTION NOTICE</p>
+<ol style="list-style-type: decimal">
+<li><p>As a special exception, the copyright holders of this library give
+permission for additional uses of the text contained in this release of
+the library as licenced under the wxWindows Library Licence, applying
+either version 3.1 of the Licence, or (at your option) any later version of
+the Licence as published by the copyright holders of version
+3.1 of the Licence document.</p></li>
+<li><p>The exception is that you may use, copy, link, modify and distribute
+under your own terms, binary object code versions of works based
+on the Library.</p></li>
+<li><p>If you copy code from files distributed under the terms of the GNU
+General Public Licence or the GNU Library General Public Licence into a
+copy of this library, as this licence permits, the exception does not
+apply to the code that you add in this way. To avoid misleading anyone as
+to the status of such modified files, you must delete this exception
+notice from such code and/or adjust the licensing conditions notice
+accordingly.</p></li>
+<li><p>If you write modifications of your own for this library, it is your
+choice whether to permit this exception to apply to your modifications.
+If you do not wish that, you must delete the exception notice from such
+code and/or adjust the licensing conditions notice accordingly.</p></li>
+</ol>
+<p>GNU LIBRARY GENERAL PUBLIC LICENSE</p>
+<p>==================================</p>
+<p>Version 2, June 1991</p>
+<p>Copyright (C) 1991 Free Software Foundation, Inc.</p>
+<p>675 Mass Ave, Cambridge, MA 02139, USA
+Everyone is permitted to copy and distribute verbatim copies
+of this license document, but changing it is not allowed.
+[This is the first released version of the library GPL. It is
+numbered 2 because it goes with version 2 of the ordinary GPL.]</p>
+<p>Preamble</p>
+<p>The licenses for most software are designed to take away your
+freedom to share and change it. By contrast, the GNU General
+Public Licenses are intended to guarantee your freedom to share
+and change free software–to make sure the software is free for
+all its users.</p>
+<p>This license, the Library General Public License, applies to
+some specially designated Free Software Foundation software, and
+to any other libraries whose authors decide to use it. You can
+use it for your libraries, too.</p>
+<p>When we speak of free software, we are referring to freedom, not
+price. Our General Public Licenses are designed to make sure
+that you have the freedom to distribute copies of free software
+(and charge for this service if you wish), that you receive
+source code or can get it if you want it, that you can change
+the software or use pieces of it in new free programs; and that
+you know you can do these things.</p>
+<p>To protect your rights, we need to make restrictions that forbid
+anyone to deny you these rights or to ask you to surrender the
+rights. These restrictions translate to certain responsibilities
+for you if you distribute copies of the library, or if you
+modify it.</p>
+<p>For example, if you distribute copies of the library, whether
+gratis or for a fee, you must give the recipients all the rights
+that we gave you. You must make sure that they, too, receive or
+can get the source code. If you link a program with the
+library, you must provide complete object files to the
+recipients so that they can relink them with the library, after
+making changes to the library and recompiling it. And you must
+show them these terms so they know their rights.</p>
+<p>Our method of protecting your rights has two steps: (1)
+copyright the library, and (2) offer you this license which
+gives you legal permission to copy, distribute and/or modify the
+library.</p>
+<p>Also, for each distributor’s protection, we want to make certain
+that everyone understands that there is no warranty for this
+free library. If the library is modified by someone else and
+passed on, we want its recipients to know that what they have is
+not the original version, so that any problems introduced by
+others will not reflect on the original authors’ reputations.
+Finally, any free program is threatened constantly by software
+patents. We wish to avoid the danger that companies
+distributing free software will individually obtain patent
+licenses, thus in effect transforming the program into
+proprietary software. To prevent this, we have made it clear
+that any patent must be licensed for everyone’s free use or not
+licensed at all.</p>
+<p>Most GNU software, including some libraries, is covered by the
+ordinary GNU General Public License, which was designed for
+utility programs. This license, the GNU Library General Public
+License, applies to certain designated libraries. This license
+is quite different from the ordinary one; be sure to read it in
+full, and don’t assume that anything in it is the same as in the
+ordinary license.</p>
+<p>The reason we have a separate public license for some libraries
+is that they blur the distinction we usually make between
+modifying or adding to a program and simply using it. Linking a
+program with a library, without changing the library, is in some
+sense simply using the library, and is analogous to running a
+utility program or application program. However, in a textual
+and legal sense, the linked executable is a combined work, a
+derivative of the original library, and the ordinary General
+Public License treats it as such.</p>
+<p>Because of this blurred distinction, using the ordinary General
+Public License for libraries did not effectively promote
+software sharing, because most developers did not use the
+libraries. We concluded that weaker conditions might promote
+sharing better.</p>
+<p>However, unrestricted linking of non-free programs would deprive
+the users of those programs of all benefit from the free status
+of the libraries themselves. This Library General Public
+License is intended to permit developers of non-free programs to
+use free libraries, while preserving your freedom as a user of
+such programs to change the free libraries that are incorporated
+in them. (We have not seen how to achieve this as regards
+changes in header files, but we have achieved it as regards
+changes in the actual functions of the Library.) The hope is
+that this will lead to faster development of free libraries.
+The precise terms and conditions for copying, distribution and
+modification follow. Pay close attention to the difference
+between a “work based on the library” and a “work that uses the
+library”. The former contains code derived from the library,
+while the latter only works together with the library.
+Note that it is possible for a library to be covered by the
+ordinary General Public License rather than by this special one.</p>
+<p>GNU LIBRARY GENERAL PUBLIC LICENSE</p>
+<p>TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+0. This License Agreement applies to any software library which
+contains a notice placed by the copyright holder or other
+authorized party saying it may be distributed under the terms of
+this Library General Public License (also called “this
+License”). Each licensee is addressed as “you”.</p>
+<p>A “library” means a collection of software functions and/or data
+prepared so as to be conveniently linked with application
+programs (which use some of those functions and data) to form
+executables.</p>
+<p>The “Library”, below, refers to any such software library or
+work which has been distributed under these terms. A “work
+based on the Library” means either the Library or any derivative
+work under copyright law: that is to say, a work containing the
+Library or a portion of it, either verbatim or with
+modifications and/or translated straightforwardly into another
+language. (Hereinafter, translation is included without
+limitation in the term “modification”.)</p>
+<p>“Source code” for a work means the preferred form of the work
+for making modifications to it. For a library, complete source
+code means all the source code for all modules it contains, plus
+any associated interface definition files, plus the scripts used
+to control compilation and installation of the library.</p>
+<p>Activities other than copying, distribution and modification are
+not covered by this License; they are outside its scope. The
+act of running a program using the Library is not restricted,
+and output from such a program is covered only if its contents
+constitute a work based on the Library (independent of the use
+of the Library in a tool for writing it). Whether that is true
+depends on what the Library does and what the program that uses
+the Library does.</p>
+<ol style="list-style-type: decimal">
+<li>You may copy and distribute verbatim copies of the Library’s
+complete source code as you receive it, in any medium, provided
+that you conspicuously and appropriately publish on each copy an
+appropriate copyright notice and disclaimer of warranty; keep
+intact all the notices that refer to this License and to the
+absence of any warranty; and distribute a copy of this License
+along with the Library.</li>
+</ol>
+<p>You may charge a fee for the physical act of transferring a
+copy, and you may at your option offer warranty protection in
+exchange for a fee.</p>
+<ol start="2" style="list-style-type: decimal">
+<li>You may modify your copy or copies of the Library or any
+portion of it, thus forming a work based on the Library, and
+copy and distribute such modifications or work under the terms
+of Section 1 above, provided that you also meet all of these
+conditions:</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li>The modified work must itself be a software library.</li>
+<li>You must cause the files modified to carry prominent notices
+stating that you changed the files and the date of any change.</li>
+<li>You must cause the whole of the work to be licensed at no
+charge to all third parties under the terms of this License.</li>
+<li>If a facility in the modified Library refers to a function or a
+table of data to be supplied by an application program that uses
+the facility, other than as an argument passed when the facility
+is invoked, then you must make a good faith effort to ensure that,
+in the event an application does not supply such function or
+table, the facility still operates, and performs whatever part of
+its purpose remains meaningful.
+(For example, a function in a library to compute square roots has
+a purpose that is entirely well-defined independent of the
+application. Therefore, Subsection 2d requires that any
+application-supplied function or table used by this function must
+be optional: if the application does not supply it, the square
+root function must still compute square roots.)</li>
+</ol>
+<p>These requirements apply to the modified work as a whole. If
+identifiable sections of that work are not derived from the
+Library, and can be reasonably considered independent and
+separate works in themselves, then this License, and its terms,
+do not apply to those sections when you distribute them as
+separate works. But when you distribute the same sections as
+part of a whole which is a work based on the Library, the
+distribution of the whole must be on the terms of this License,
+whose permissions for other licensees extend to the entire
+whole, and thus to each and every part regardless of who wrote
+it.</p>
+<p>Thus, it is not the intent of this section to claim rights or
+contest your rights to work written entirely by you; rather, the
+intent is to exercise the right to control the distribution of
+derivative or collective works based on the Library.
+In addition, mere aggregation of another work not based on the
+Library with the Library (or with a work based on the Library)
+on a volume of a storage or distribution medium does not bring
+the other work under the scope of this License.</p>
+<ol start="3" style="list-style-type: decimal">
+<li><p>You may opt to apply the terms of the ordinary GNU General
+Public License instead of this License to a given copy of the
+Library. To do this, you must alter all the notices that refer
+to this License, so that they refer to the ordinary GNU General
+Public License, version 2, instead of to this License. (If a
+newer version than version 2 of the ordinary GNU General Public
+License has appeared, then you can specify that version instead
+if you wish.) Do not make any other change in these notices.
+Once this change is made in a given copy, it is irreversible for
+that copy, so the ordinary GNU General Public License applies to
+all subsequent copies and derivative works made from that copy.
+This option is useful when you wish to copy part of the code of
+the Library into a program that is not a library.</p></li>
+<li><p>You may copy and distribute the Library (or a portion or
+derivative of it, under Section 2) in object code or executable
+form under the terms of Sections 1 and 2 above provided that you
+accompany it with the complete corresponding machine-readable
+source code, which must be distributed under the terms of
+Sections 1 and 2 above on a medium customarily used for software
+interchange.</p></li>
+</ol>
+<p>If distribution of object code is made by offering access to
+copy from a designated place, then offering equivalent access to
+copy the source code from the same place satisfies the
+requirement to distribute the source code, even though third
+parties are not compelled to copy the source along with the
+object code.</p>
+<ol start="5" style="list-style-type: decimal">
+<li>A program that contains no derivative of any portion of the
+Library, but is designed to work with the Library by being
+compiled or linked with it, is called a “work that uses the
+Library”. Such a work, in isolation, is not a derivative work
+of the Library, and therefore falls outside the scope of this
+License.</li>
+</ol>
+<p>However, linking a “work that uses the Library” with the Library
+creates an executable that is a derivative of the Library
+(because it contains portions of the Library), rather than a
+“work that uses the library”. The executable is therefore
+covered by this License. Section 6 states terms for distribution
+of such executables.</p>
+<p>When a “work that uses the Library” uses material from a header
+file that is part of the Library, the object code for the work
+may be a derivative work of the Library even though the source
+code is not. Whether this is true is especially significant if
+the work can be linked without the Library, or if the work is
+itself a library. The threshold for this to be true is not
+precisely defined by law.</p>
+<p>If such an object file uses only numerical parameters, data
+structure layouts and accessors, and small macros and small
+inline functions (ten lines or less in length), then the use of
+the object file is unrestricted, regardless of whether it is
+legally a derivative work. (Executables containing this object
+code plus portions of the Library will still fall under Section
+6.)</p>
+<p>Otherwise, if the work is a derivative of the Library, you may
+distribute the object code for the work under the terms of
+Section 6. Any executables containing that work also fall under
+Section 6, whether or not they are linked directly with the
+Library itself.</p>
+<ol start="6" style="list-style-type: decimal">
+<li>As an exception to the Sections above, you may also compile
+or link a “work that uses the Library” with the Library to
+produce a work containing portions of the Library, and
+distribute that work under terms of your choice, provided that
+the terms permit modification of the work for the customer’s own
+use and reverse engineering for debugging such modifications.
+You must give prominent notice with each copy of the work that
+the Library is used in it and that the Library and its use are
+covered by this License. You must supply a copy of this
+License. If the work during execution displays copyright
+notices, you must include the copyright notice for the Library
+among them, as well as a reference directing the user to the
+copy of this License. Also, you must do one of these things:</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li><p>Accompany the work with the complete corresponding
+machine-readable source code for the Library including whatever
+changes were used in the work (which must be distributed under
+Sections 1 and 2 above); and, if the work is an executable linked
+with the Library, with the complete machine-readable “work that
+uses the Library”, as object code and/or source code, so that the
+user can modify the Library and then relink to produce a modified
+executable containing the modified Library. (It is understood
+that the user who changes the contents of definitions files in the
+Library will not necessarily be able to recompile the application
+to use the modified definitions.)</p></li>
+<li><p>Accompany the work with a written offer, valid for at
+least three years, to give the same user the materials
+specified in Subsection 6a, above, for a charge no more
+than the cost of performing this distribution.</p></li>
+<li><p>If distribution of the work is made by offering access to copy
+from a designated place, offer equivalent access to copy the above
+specified materials from the same place.</p></li>
+<li><p>Verify that the user has already received a copy of these
+materials or that you have already sent this user a copy.</p></li>
+</ol>
+<p>For an executable, the required form of the “work that uses the
+Library” must include any data and utility programs needed for
+reproducing the executable from it. However, as a special
+exception, the source code distributed need not include anything
+that is normally distributed (in either source or binary form)
+with the major components (compiler, kernel, and so on) of the
+operating system on which the executable runs, unless that
+component itself accompanies the executable.</p>
+<p>It may happen that this requirement contradicts the license
+restrictions of other proprietary libraries that do not normally
+accompany the operating system. Such a contradiction means you
+cannot use both them and the Library together in an executable
+that you distribute.</p>
+<ol start="7" style="list-style-type: decimal">
+<li>You may place library facilities that are a work based on the
+Library side-by-side in a single library together with other
+library facilities not covered by this License, and distribute
+such a combined library, provided that the separate distribution
+of the work based on the Library and of the other library
+facilities is otherwise permitted, and provided that you do
+these two things:</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li><p>Accompany the combined library with a copy of the same work
+based on the Library, uncombined with any other library
+facilities. This must be distributed under the terms of the
+Sections above.</p></li>
+<li><p>Give prominent notice with the combined library of the fact
+that part of it is a work based on the Library, and explaining
+where to find the accompanying uncombined form of the same work.</p></li>
+</ol>
+<ol start="8" style="list-style-type: decimal">
+<li><p>You may not copy, modify, sublicense, link with, or
+distribute the Library except as expressly provided under this
+License. Any attempt otherwise to copy, modify, sublicense,
+link with, or distribute the Library is void, and will
+automatically terminate your rights under this License.
+However, parties who have received copies, or rights, from you
+under this License will not have their licenses terminated so
+long as such parties remain in full compliance.</p></li>
+<li><p>You are not required to accept this License, since you have
+not signed it. However, nothing else grants you permission to
+modify or distribute the Library or its derivative works. These
+actions are prohibited by law if you do not accept this
+License. Therefore, by modifying or distributing the Library
+(or any work based on the Library), you indicate your acceptance
+of this License to do so, and all its terms and conditions for
+copying, distributing or modifying the Library or works based on
+it.</p></li>
+<li><p>Each time you redistribute the Library (or any work based on
+the Library), the recipient automatically receives a license
+from the original licensor to copy, distribute, link with or
+modify the Library subject to these terms and conditions. You
+may not impose any further restrictions on the recipients’
+exercise of the rights granted herein. You are not responsible
+for enforcing compliance by third parties to this License.</p></li>
+<li><p>If, as a consequence of a court judgment or allegation of
+patent infringement or for any other reason (not limited to
+patent issues), conditions are imposed on you (whether by court
+order, agreement or otherwise) that contradict the conditions of
+this License, they do not excuse you from the conditions of this
+License. If you cannot distribute so as to satisfy
+simultaneously your obligations under this License and any other
+pertinent obligations, then as a consequence you may not
+distribute the Library at all. For example, if a patent license
+would not permit royalty-free redistribution of the Library by
+all those who receive copies directly or indirectly through you,
+then the only way you could satisfy both it and this License
+would be to refrain entirely from distribution of the Library.
+If any portion of this section is held invalid or unenforceable
+under any particular circumstance, the balance of the section is
+intended to apply, and the section as a whole is intended to
+apply in other circumstances.</p></li>
+</ol>
+<p>It is not the purpose of this section to induce you to infringe
+any patents or other property right claims or to contest
+validity of any such claims; this section has the sole purpose
+of protecting the integrity of the free software distribution
+system which is implemented by public license practices. Many
+people have made generous contributions to the wide range of
+software distributed through that system in reliance on
+consistent application of that system; it is up to the
+author/donor to decide if he or she is willing to distribute
+software through any other system and a licensee cannot impose
+that choice.</p>
+<p>This section is intended to make thoroughly clear what is
+believed to be a consequence of the rest of this License.</p>
+<ol start="12" style="list-style-type: decimal">
+<li><p>If the distribution and/or use of the Library is restricted
+in certain countries either by patents or by copyrighted
+interfaces, the original copyright holder who places the Library
+under this License may add an explicit geographical distribution
+limitation excluding those countries, so that distribution is
+permitted only in or among countries not thus excluded. In such
+case, this License incorporates the limitation as if written in
+the body of this License.</p></li>
+<li><p>The Free Software Foundation may publish revised and/or new
+versions of the Library General Public License from time to
+time. Such new versions will be similar in spirit to the present
+version, but may differ in detail to address new problems or
+concerns.</p></li>
+</ol>
+<p>Each version is given a distinguishing version number. If the
+Library specifies a version number of this License which applies
+to it and “any later version”, you have the option of following
+the terms and conditions either of that version or of any later
+version published by the Free Software Foundation. If the
+Library does not specify a license version number, you may
+choose any version ever published by the Free Software
+Foundation.</p>
+<ol start="14" style="list-style-type: decimal">
+<li><p>If you wish to incorporate parts of the Library into other
+free programs whose distribution conditions are incompatible
+with these, write to the author to ask for permission. For
+software which is copyrighted by the Free Software Foundation,
+write to the Free Software Foundation; we sometimes make
+exceptions for this. Our decision will be guided by the two
+goals of preserving the free status of all derivatives of our
+free software and of promoting the sharing and reuse of software
+generally.</p>
+<p>NO WARRANTY</p></li>
+<li><p>BECAUSE THE LIBRARY IS LICENSED FREE OF CHARGE, THERE IS NO
+WARRANTY FOR THE LIBRARY, TO THE EXTENT PERMITTED BY APPLICABLE LAW.
+EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR
+OTHER PARTIES PROVIDE THE LIBRARY “AS IS” WITHOUT WARRANTY OF ANY KIND,
+EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE
+LIBRARY IS WITH YOU. SHOULD THE LIBRARY PROVE DEFECTIVE, YOU ASSUME
+THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.</p></li>
+<li><p>IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN
+WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY
+AND/OR REDISTRIBUTE THE LIBRARY AS PERMITTED ABOVE, BE LIABLE TO YOU
+FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL
+DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE
+LIBRARY (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING
+RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A
+FAILURE OF THE LIBRARY TO OPERATE WITH ANY OTHER SOFTWARE), EVEN IF
+SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p></li>
+</ol>
+<p>END OF TERMS AND CONDITIONS</p>
+<p>Appendix: How to Apply These Terms to Your New Libraries
+If you develop a new library, and you want it to be of the
+greatest possible use to the public, we recommend making it free
+software that everyone can redistribute and change. You can do
+so by permitting redistribution under these terms (or,
+alternatively, under the terms of the ordinary General Public
+License).</p>
+<p>To apply these terms, attach the following notices to the
+library. It is safest to attach them to the start of each
+source file to most effectively convey the exclusion of
+warranty; and each file should have at least the “copyright”
+line and a pointer to where the full notice is found.</p>
+<p>&lt;one line to give the library’s name and a brief idea of what it does.&gt;</p>
+<p>Copyright (C) <year> <name of author></p>
+<p>This library is free software; you can redistribute it and/or
+modify it under the terms of the GNU Library General Public
+License as published by the Free Software Foundation; either
+version 2 of the License, or (at your option) any later version.
+This library is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+Library General Public License for more details.</p>
+<p>You should have received a copy of the GNU Library General Public
+License along with this library; if not, write to the Free
+Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.</p>
+<p>Also add information on how to contact you by electronic and paper mail.
+You should also get your employer (if you work as a programmer) or your
+school, if any, to sign a “copyright disclaimer” for the library, if
+necessary. Here is a sample; alter the names:</p>
+<p>Yoyodyne, Inc., hereby disclaims all copyright interest in the
+library ‘Frob’ (a library for tweaking knobs) written by James Random Hacker.</p>
+<p>&lt;signature of Ty Coon&gt;, 1 April 1990</p>
+<p>Ty Coon, President of Vice</p>
+<p>That’s all there is to it!</p>
+</blockquote>
+</div>
+<div id="zlib" class="section level3 unnumbered">
+<h3>zlib</h3>
+<p>A general purpose data compression library.</p>
+<blockquote>
+<p>Copyright (C) 1995-2013 Jean-loup Gailly and Mark Adler</p>
+<p>This software is provided ‘as-is’, without any express or implied
+warranty. In no event will the authors be held liable for any damages
+arising from the use of this software.</p>
+<p>Permission is granted to anyone to use this software for any purpose,
+including commercial applications, and to alter it and redistribute it
+freely, subject to the following restrictions:</p>
+<ol style="list-style-type: decimal">
+<li><p>The origin of this software must not be misrepresented; you must not
+claim that you wrote the original software. If you use this software
+in a product, an acknowledgment in the product documentation would be
+appreciated but is not required.</p></li>
+<li><p>Altered source versions must be plainly marked as such, and must not be
+misrepresented as being the original software.</p></li>
+<li><p>This notice may not be removed or altered from any source distribution.
+Jean-loup Gailly Mark Adler</p></li>
+</ol>
+<p><a href="mailto:jloup@gzip.org" class="email">jloup@gzip.org</a> <a href="mailto:madler@alumni.caltech.edu" class="email">madler@alumni.caltech.edu</a></p>
+<p>The data format used by the zlib library is described by RFCs (Request for
+Comments) 1950 to 1952 in the files <a href="http://tools.ietf.org/html/rfc1950" class="uri">http://tools.ietf.org/html/rfc1950</a>
+(zlib format), rfc1951 (deflate format) and rfc1952 (gzip format).</p>
+</blockquote>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="acknowledgements.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="open-source-tools-content.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": false,
+"linkedin": true,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section"
+},
+"info": false
+});
+});
+</script>
+
+</body>
+
+</html>
