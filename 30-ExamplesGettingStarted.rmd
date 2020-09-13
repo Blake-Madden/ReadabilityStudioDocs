@@ -1,0 +1,283 @@
+# (PART) Examples {-}
+
+# Getting Started
+
+In this chapter, we will step through some simple examples demonstrating how to analyze, review, and improve a document. After that, we will continue with examples showing how to analyze a webpage and how to review difficult sentences.
+
+## Analyzing a Book {-#book-example}
+
+In this example, we will analyze a literary novel to help determine which age group it is most appropriate for (in terms of readability, not content). The first step is to open the **New Project** wizard and choose the book. Click the **New** button on the **Home** tab to open the **New Project Wizard**. First, select **English** as the document language (if this option is available). Then, select the option **Read text from a file or webpage**. Click the button next to the file path field to browse for it:
+
+![](Images/exampleselectfile.png)
+
+::: {.note}
+
+The language option is only available in the **Language Pack** and **Professional** editions of **Readability Studio**.
+:::
+
+This will open the **Select Document to Analyze** dialog. Choose the file that you want to analyze and click the **Open** button to accept.
+
+You will then return to the **Document** page. Click the **Forward** button to proceed to the **Test Selection** dialog, as shown below:
+
+![](Images/wizardreadabilitymethods.png)
+
+Because this is a literary work, select the **Recommend tests based on document type**. Then select the **Literature (young adult and adult)** option (because we believe that this book is meant for older children), as shown below:
+
+![](Images/wizarddoctypelitselected.png)
+
+Finally, click the **Finish** button to begin analyzing the project.
+
+At this point we can review the test scores of the book (by clicking on the **Readability Scores** icon on the project sidebar) to help determine its reading level. As we can see below, Charles Dickens's A Christmas Carol appears to be readable for at least readers in the 10-13 age (or above) range. This implies that it may be too difficult for younger readers due to longer sentences and/or difficult words.
+
+![](Images/scores.png)
+
+To help understand why this book may be difficult for younger readers, click on the **Words Breakdown** icon on the project sidebar to display various lists of difficult words. Select the **3+ syllable words** subitem to view the list of complex words.
+
+Next, we will sort this list, going from highest to lowest syllable count. Click the **Sort** button on the ribbon and select **Sort Descending** from the button's menu. On the **Sort Columns Descending** dialog, double click on the first row in the grid and select the column **Syllable Count**. Then double click on the row below that and select **Frequency**. These options will tell the program to sort the words from highest to lowest syllable count, and in the case of any ties to sort by frequency. Click **OK** to sort the list.
+
+Now the words will be sorted by syllable count and then by frequency. As illustrated below, there are many words containing five or more syllables, which can be very difficult for most readers of any age.
+
+![](Images/difficultwords.png)
+
+If you are an educator assigning this book to your students, you can export the more difficult words to a report. You can hand this report out to your students and ask them to define these terms before reading the book. This will help prepare them for the book and make it easier and more enjoyable to read.
+
+To do this, click the **Save** button on the **Home** tab and use the **Save As...** dialog to save this list to either an HTML or text file. You can also do this with any of the other difficult word lists, such as the **Spache unfamiliar words** list. Refer to the [Improving Students' Vocabulary](#VocabBuilderExample) example for further details.
+
+## Improving Students' Vocabulary {-#VocabBuilderExample}
+
+In this example, we will save a list of the more complex words from a book. If you are an educator, you can send this list to your students and ask them to define these words prior to reading the book. This can be a great way to prepare them for future readings, as well as helping them build their overall vocabulary.
+
+Continuing from the [previous example](#book-example), select the top item in the hard word list. Now scroll down to the last word that has five syllables, hold down the `SHIFT` key, and select this word. Now you will have all the words with five or more syllables selected. If there are any words that you want to add or remove from your selection, hold down the `CTRL` key and click on them. Your word list will look like this:
+
+![](Images/difficultwords2.png)
+
+Now that you have selected the words that you want to save, click the **Save** button on the **Home** tab.
+
+A **Save As** dialog will appear and you will have the option to save as either HTML or text. Select where you want to save the file and click **Save**.
+
+Next, the [List Export Options](#export-list) dialog will appear. (Note that by default, all the words will be exported.) To export just the words that you have highlighted, select the checkbox **Only export selected rows**. Also, because we are only interested in saving the **Word** column—not the **Syllable Count** or **Frequency Count** columns—enter 1 in the **Columns: from** and **to:** fields. Finally, uncheck the option **Include column headers** because we are only exporting one column. Your **List Export Options** will look like this:
+
+![](Images/exportoptions.png)
+
+Click **OK** to export the word list to distribute to your students to help prepare them for their reading assignments.
+
+:::{.small-table}
+```{r, echo=FALSE}
+library(knitr)
+words <- c("involuntarily", "extraordinary",
+           "self-accusatory", "emphatically",
+           "petrification", "associated",
+           "unprofitable", "satisfactory",
+           "administrator", "supernatural", "corroborated")
+kable(x=words, caption="Example of exported words", col.names="")
+```
+:::
+
+## Analyzing a Work in Progress {-}
+
+In this example, we will analyze recipes that we are working on for a middle-school home economics class. Our target audience will be seventh-eighth graders and we will use **Readability Studio** to meet their reading level. The first step is to open the **New Project Wizard** and select the recipe file. Click the **New** button on the **Home** tab to open the **New Project Wizard**. Next, select **English** as the document language (if this option is available). Then, select the option **Read text from a file or webpage**. Click the button next to the file path field to browse for it:
+
+![](Images/exampleselectfile.png)
+
+::: {.note}
+
+The language option is only available in the **Language Pack** and **Professional** editions of **Readability Studio**.
+:::
+
+This will open the **Select Document to Analyze** dialog. Choose the file that you want to analyze and click the **Open** button to accept.
+
+::: {.note}
+
+The original and revised versions of this recipe are available from the **Example Documents** menu. From the **Help** tab, click the **Example Documents** button and then select either **Cocoa Desserts** or **Cocoa Desserts (Revised)** from the menu.
+:::
+
+You will then return to the **Document** page. Click the **Forward** button to proceed to the **Document Structure** page, as shown below:
+
+![](Images/wizarddocstructure.png)
+
+On this page, we will specify how this document is formatted. The first option, **Narrative text**, is meant for documents that consist of the standard sentence and paragraph structure. The second option, [Non-narrative, fragmented text](#framented-text), is meant for documents that contain very few sentences and mostly consist of sentence fragments. This document contains narrative text, so select **Narrative text**.
+
+Our recipe file does not have any special formatting (e.g., text centering), so keep both options in the **Layout** section unchecked. Now that we have specified the structure of the document, click the **Forward** button to proceed to the **Test Selection** page, as shown below:
+
+![](Images/wizardreadabilitymethods.png)
+
+This file does not belong to any particular industry, but we do know that it is an instructional document. Select the **Recommend tests based on document type**:
+
+![](Images/wizarddoctypetechselected.png)
+
+Because this is an instructional document containing small narrative blocks, we will consider this to be a technical document. Select **Technical document or form** and click the **Finish** button to begin analyzing the project.
+
+If you are excluding [incomplete sentences](#how-text-is-excluded) (the default) then this warning message will be displayed.
+
+![](Images/NonGenerated/sentencewarning.png)
+
+Because this file contains numerous incomplete sentences, the program will ask you if excluding them is what you truly intend. In this case, these sentences are just list items that we should ignore, so select **No**.
+
+At this point we can review the test scores of the recipe to determine which reading age it is appropriate for. Click on the **Readability Scores** icon on the project sidebar to display the scores. As we can see below, it appears to be readable for at least readers in the upper eighth grade. This is higher than our target audience and we may need to make some improvements to this recipe to make it easier to read.
+
+![](Images/testscores.png)
+
+To help understand why this recipe may be difficult for younger readers, click on the **Summary Statistics** icon to review the [statistics](#reviewing-statistics) and see if the program has any advice for us. In this section, any statistics that may be problematic will be highlighted in red, along with a warning being displayed. As we can see below, there are a lot of long sentences (with the longest being 54 words long):
+
+![](Images/examplestats.png)
+
+Click on the “difficult sentences” link in this section to go to the [Long Sentences](#reviewing-sentences-breakdown) subitem of the **Sentences Breakdown** section. This window will display a list of all the overly-long sentences in our recipes. As we can see, there are a few rather long sentences that are adversely affecting our scores.
+
+![](Images/examplelongsentences.png)
+
+Long sentences can seem unfocused and difficult to read, and it is recommended to shorten or split them. To view any of these sentences in its original context, double-click on it in this list. The program will switch to the [Grammar](#reviewing-standard-grammar) page with this sentence highlighted:
+
+![](Images/longsentenceselected.png)
+
+Now that we have found the difficult sentences, let us begin splitting them up so that they are easier to read. From the **Home** tab, click the **Edit Document** button to open the recipes file for editing. Find one of the long sentences and review it. For example, consider this sentence:
+
+![](Images/NonGenerated/sentencetoimprove.png)
+
+Not only is it long, but it is a little confusing. It is unclear what was mixed with the cold milk because there are so many steps in this sentence. What we should do is make it easier to follow by splitting this sentence into two and rewording it:
+
+![](Images/NonGenerated/improvedsentence.png)
+
+Continue this process for as many of the long sentences as you can. Sentences in the 20-word range are normally acceptable, but sentences over 30 words should be revised.
+
+Other useful tools for shortening sentences in **Readability Studio** are the other pages in the **Grammar** section. Click on the **Grammar** icon on the project sidebar. Click on the [Repeated Words](#reviewing-repeated-words) page and note how the phrase “and and” is in the file (obviously a typo). Next, click on the [Redundant Phrases](#reviewing-redundant-phrases) page. Note how the phrase “mixed together” is redundant and the program is suggesting that it be replaced with “mixed.” A [Wordy Items](#reviewing-wordy-items) and [Clichés](#reviewing-cliches) page may also appear, but there do not seem to be any of these in this file. By fixing these items, we can shorten sentences and improve the overall document.
+
+Although there are not many difficult words in this file, it may be worthwhile to at least review them. Click on the **Words Breakdown** icon on the project sidebar. This will display various lists of difficult words. Select the **3+ syllable words** page and click on the **Syllable Count** column header twice to [sort](#column-sorting) the words into descending order. As illustrated below, there are a few words containing four syllables, which can be difficult for most readers.
+
+![](Images/exampledifficultwords.png)
+
+To view these words in their original context, double-click on any word in this list. The program will switch to the **3+ syllable words** page in the **Highlighted Reports** section, as illustrated below:
+
+![](Images/difficultwordselected.png)
+
+You can click on any of the other pages to view other difficult words in their original context, such as 6+ character words or unfamiliar [Dale-Chall](#dale-chall-test) words.
+
+To continue simplifying this recipe, we will replace some of these difficult words. Words such as “incorporate,” “consequently,” and “gradually” could also be replaced with shorter, simpler synonyms. As illustrated below, we have replaced a few words, such as substituting “incorporate” with “add” and “gradually” with “slowly.”
+
+![](Images/NonGenerated/improvedwords.png)
+
+After we finish reworking the original document, we will want to analyze it again to see if it now meets our target audience. Rather than starting all over by making a new project, we will link this project directly to the recipe document. Whenever we open the project again, it will reanalyze the recipe document. To do this, click the **Properties** button on the **Home** tab to open the **Project Properties** dialog. Select the **Project Settings** icon and then select the option **Reload the source document when opening project**. Click the **OK** button to accept.
+
+![](Images/linktofile.png)
+
+Click the **Reload** button on the **Home** tab.
+
+The program will now reload the recipe document, meaning that all the improvements that we just made will be imported into the project. As we can see below, our grade level scores now meet our target audience and this recipe will be easier and more enjoyable to read for our home economics class.
+
+![](Images/improvedscores.png)
+
+::: {.tip}
+
+You can click the **Reload** button at anytime to reanalyze the source document as you edit it externally. Also, whenever you open this project, it will automatically reload the source document (in this case the recipe file).
+:::
+
+## Analyzing a Webpage {-}
+
+In this example, we will create a project that reads and analyzes a webpage. Although you can save a webpage from your web browser and load the HTML file, **Readability Studio** can also directly connect to a webpage.
+
+First, click on the **New** button (on the **Home** tab). The **New Project Wizard** dialog will appear, as shown below:
+
+![](Images/wizard1.png)
+
+First, select **English** as the document language.
+
+::: {.note}
+
+The language option is only available in the **Language Pack** and **Professional** editions of **Readability Studio**.
+:::
+
+Next, open any web browser, go to the webpage, and copy its URL (i.e., address) onto the clipboard.
+
+![](Images/NonGenerated/webbrowser.png)
+
+Now, go back to the project wizard and select **Read text from a file or webpage**. Paste the URL into the file-path field, as illustrated below.
+
+![](Images/webpath.png)
+
+After specifying the URL, choose to analyze the page by document type and then select **Technical document**. Most webpages would fall under the category of either general or technical document. Because this page discusses the subject of the Linux operating system, we will select technical.
+
+![](Images/wizarddoctypetechselected.png)
+
+Next, accept the rest of the defaults on the **New Project** wizard by clicking the **Finish** button. Once the project is finished loading, click on the **View Document** icon to display the highlighted content of the webpage.
+
+![](Images/incompletesentences.png)
+
+Note how some text is highlighted gray. These are [incomplete sentences](#how-text-is-excluded), and because **Readability Studio**, by default, ignores incomplete sentences, nothing highlighted gray is factored into the analysis. That is, nothing highlighted gray here counts towards the overall sentence, paragraph, and word totals and are also not included in any readability test calculation. Aside from non-narrative forms, it is normally recommended to ignore incomplete sentences. This is especially true for webpages, because often HTML tables and lists are used on websites to display menus—items that are not normally part of the page's narrative.
+
+If you wish to include incomplete sentences in the analysis, click the **Properties** button on the **Home** tab to display the **Project Properties** dialog. Next, click the **Document Indexing** icon, and select the **Do not exclude any text** option.
+
+![](Images/excludeincompletesentences.png)
+
+Note that this option is also available on the [Options](#options-overview) dialog (from the **Tools** tab) if you wish to change this behavior for all future projects.
+
+One last item to discuss about loading a webpage is whether you want to reanalyze it later as it changes. By default, the project will directly link to the webpage, although you can change this to embed a “snapshot” of the page into the project. To toggle this behavior, click the **Properties** button on the **Home** tab to display the **Project Properties** dialog. Then click the **Project Settings** icon. Here, we can see that **Reload the source document when opening project** is selected.
+
+![](Images/reloadwebpage.png)
+
+By having this option selected, you will reload the page's content whenever you reopen the project (or at anytime by pressing **F5**). If you prefer to embed the current version of this page into the project, then select **Embed the source document's original text in the project file**. Refer to the [Project Settings](#project-settings) overview for more information about these options.
+
+Note that webpages requiring authentication (i.e., requiring a user name and password) are not currently supported. To work around this, log into the webpage from any browser, save the page as a local HTML file, and then load that into a new project.
+
+## Searching for Overly Long Sentences {-}
+
+In this example, we will review a document for overly-long sentences. This example will demonstrate the available methods for defining an overly-long sentence. In addition, it will also demonstrate how to search for and review these sentences.
+
+The first step is to open the example file **Features**. From the **Help** tab, click the **Example Documents** button and then select **Features** from the menu.
+
+You will then be presented with the **New Project Wizard** dialog, as shown below:
+
+![](Images/wizard1.png)
+
+Select **English** as the document language (if this option is available) and click the **Forward** button until you reach the **Test Selection** page, as shown below:
+
+![](Images/wizardreadabilitymethods.png)
+
+::: {.note}
+
+The language option is only available in the **Language Pack** and **Professional** editions of **Readability Studio**.
+:::
+
+Select the **Recommend tests based on document type** and select the **Technical document** option, as shown below:
+
+![](Images/wizarddoctypetechselected.png)
+
+Click the **Finish** button to begin analyzing the project.
+
+If you are excluding [incomplete sentences](#how-text-is-excluded) (the default) then this warning message will be displayed.
+
+![](Images/NonGenerated/sentencewarning.png)
+
+Because this file contains numerous incomplete sentences, the program will ask you if excluding them is what you truly intend. In this case, these sentences are just list items that we should ignore, so select **No**.
+
+Once the project is loaded, the readability scores will be presented. As we can see below, this document scores high within the collegiate range.
+
+![](Images/featuresscores.png)
+
+This document should be an easy-to-read list of software features intended for a broad range of readers. These scores are a bit too high, so now we will explore the results to understand why it is so difficult to read. Select the **Summary Statistics** icon in the project sidebar to view the document's [statistics](#reviewing-statistics).
+
+![](Images/featuresstats.png)
+
+As we can see, there are some very long sentences in this document and they are the biggest factor in our high scores. To view a list of these sentences, click the **difficult sentences** link. You can also click the **Sentences Breakdown** icon in the sidebar and select the [Long Sentences](#reviewing-sentences-breakdown) page.
+
+![](Images/featuressentencelist.png)
+
+This list can be sorted alphabetically, by word count, or by location. To view any sentence in its original context, double-click on it. This will take you to the [Grammar](#reviewing-standard-grammar) section. In this window, all the overly-long sentences and wordy items are highlighted and each sentence is followed by its respective word count (in parentheses).
+
+![](Images/featuressentences.png)
+
+By default, the program considers sentences overly long if they contain more than 22 words. As we can see, there are a few sentences that are barely over 22 words that are not problematic. However, there are a few clustered sentences which exceed 40 words. At this point, we will want to temporarily filter out the smaller of these long sentences and search for the “worst offenders.” From the **Home** tab, click the **Properties** button and then select **Analysis**. As shown below, we have a couple of different ways to determine if a sentence is overly long:
+
+![](Images/featuressentoptions.png)
+
+The first option is to define a specific word count as the long sentence boundary. Enter “25” where it says **Longer than [22] words** and click the **OK** button. The program will now reanalyze the file, classifying any sentences longer than 25 (instead of 22) as overly long. As shown below, sentences that are between 23-25 words are no longer being considered overly long:
+
+![](Images/featuressentences25.png)
+
+The second option is to consider sentences overly long if they are comparatively longer than the other sentences in the document. From the **Home** tab, click the **Properties** button and then select **Analysis**. Select the option **Outside sentence-length outlier range** and click the **OK** button. At this point, the boundary for overly-long sentences will be calculated based on the outlier range of the sentence lengths. After reanalyzing the file, note how there are only two highlighted sentences. One sentence contains 45 words and the other 48 words. These are the two “worst offenders” and should be either reworded or split into small sentences.
+
+![](Images/featuressentencesoutliers.png)
+
+To see what the outlier range is, click on the **Summary Statistics** icon in the project sidebar. Here we can see that any sentence more than 43 words is considered overly long.
+
+![](Images/featuressentences43.png)
+
+This option is only recommended for situations where most of the sentences are an acceptable length, but a few (very) long sentences skew the average. This option is useful for finding these extreme sentences.

@@ -1,0 +1,423 @@
+# Custom Tests & Bundles
+
+## Creating a Custom Test {-#creating-custom-test}
+
+Along with offering standard tests, such as [New Dale Chall](#dale-chall-test) and [Revised Spache](#spache-test), **Readability Studio** also includes the ability to create your own tests. Many customizable features are offered for new tests, such as being able to select your own familiar-word list and which formula to use.
+
+To create a custom test, go to the **Readability** tab, click the arrow beneath the **Custom Tests** button and select **Add Test...** from the menu. At this point, the **Add Custom Test** dialog will be displayed:
+
+![](Images/AddCustomTest.png)
+
+In the **General Settings** section, enter a name for this test (e.g., **NDC Computer**) in the **Test name** field. This will be the name of the test as it appears in your results and on the menu.
+
+Next, enter the test's formula in the **Formula** field. Essentially, there are two types of formulas: predefined familiar-word formulas and custom-built formulas. A predefined familiar-word formula will use a standard test's formula along with your own familiar-word criteria. This is useful for expanding a standard test (such as **New Dale-Chall**) by including your own word list. The available predefined formulas are:
+
+-   `CustomNewDaleChall()`: this will use the **New Dale-Chall** formula.
+-   `CustomSpache()`: this will use the **Spache Revised** formula.
+-   `CustomHarrisJacobson()`: this will use the **Harris Jacobson** formula.
+
+The second type of formula is a custom-built formula. For example, the formula for Lix is:
+
+`SevenCharacterPlusWordCount() / SentenceCount()`
+
+To create a new formula based on Lix that treats 6+ character words as difficult, enter this:
+
+`SixCharacterPlusWordCount() / SentenceCount()`
+
+To view the available functions, click the function browser button ![](Images/NonGenerated/FunctionBroswerButton.png)  to display the **Function Browser** dialog:
+
+![](Images/FunctionBrowser.png)
+
+Refer to the [Custom-Test Functions](#custom-test-functions) overview for a list of available functions.
+
+After entering your formula, you will need to specify what type of test this will be from the **Test type** combobox. This will determine which column the test's score will appear in the [Readability Scores](#reviewing-test-scores) window. The following types of tests are available:
+
+-   Grade level
+-   Index value
+-   [Predicted cloze score](#cloze)
+
+If your test is using any of the predefined familiar-word formulas (`CustomNewDaleChall()`, `CustomSpache()`, `CustomHarrisJacobson()`) or using the functions `UnfamiliarWordCount()` or `UniqueUnfamiliarWordCount()`, then you will need to define how familiar words are detected. Expand **Familiar Words** to view two sections: [Word Lists](#custom-word-list) and [Proper Nouns & Numerals](#custom-proper-numerals).
+
+If you want to include a list of your own familiar words, then check the option **Include custom familiar word list**. Next, enter the path to the familiar-word file in the **File containing familiar words** field. This file must be a text file and each word must be separated by a space, tab, comma, semicolon, or new line. An example file would look like this:
+
+`apple orange pear`
+
+or like this:
+
+`apple  
+orange  
+pear`
+
+After entering the file path, the words from the file will be shown in the familiar words grid.
+
+Next, you can specify which type of stemming (if any) to use. Stemming compares words based on their roots and is useful for finding words that appear in different forms. This comparison is performed when words from a document are being matched against your familiar-word list. For example, let us say that you have the word “open” in your list and have English stemming selected. When you analyze a document, words such as “opened” and “opening” will be considered familiar, even if they are not explicitly in your word list.
+
+If you are not using stemming, then it is recommended that you enter each inflected form of your words (e.g., possessive, plural) in your familiar-word list. For example, you would need “open,” “opens,” “opening,” etc. explicitly in your list for each form of “open” to be considered familiar.
+
+Along with your own word list, you can also use the **New Dale-Chall**, **Spache**, and **Harris-Jacobson** word lists. This enables you to make your word list an appendage to any of these standard tests, therefore creating your own extended version of these tests. This behavior can be toggled with the options shown below:
+
+![](Images/CustomTestIncludeLists.png)
+
+Standard familiar-word tests normally consider numbers and proper nouns as familiar. This is the default behavior for a custom test as well, but these can be toggled on the **Proper Nouns** and **Numbers** sections (shown below):
+
+![](Images/CustomTestTreat.png)
+
+Finally, you can specify how this test interacts with the [New Project Wizard](#creating-standard-project) by associating it with document types and industries. Click the **Classification** icon to display these options. Then select all the documents and industries that this test should relate to.
+
+For example, select the **Children's literature** and **Children's healthcare** check boxes (as shown below) and click **OK**.
+
+![](Images/CustomTestWizardSettings.png)
+
+Now create a new project and select **Children's healthcare** as the industry type. Once the program loads the document, your custom test will be automatically included in the results.
+
+## Custom Test Functions {-#custom-test-functions}
+
+The following functions and operators are available for use in [custom test](#creating-custom-test) formulas.
+
+| Operators|     |
+| :-- | :-- |
+| \* | Multiplication. |
+| / | Division. |
+| % | Modulus: Divides two values and returns the remainder. |
+| + | Addition. |
+| \- | Subtraction. |
+| ^ | Exponentiation. The number in front of ^ is the base, the number after it is the power to raise it to. |
+| \= | Equals. |
+| < | Less than. |
+| \> | Greater than. |
+| <> | Not equal to. |
+| \>= | Greater than or equal to. |
+| <= | Less than or equal to. |
+| ! | Logical negation. |
+| & | Logical conjunction. |
+| \| | Logical alternative. |
+| ( ) | Overrides the order of operations. |
+
+For operators, the order of precedence is:
+
+|     |     |
+| :-- | :-- |
+| ( ) | Instructions in parentheses are executed first. |
+| ^   | Exponentiation. |
+| \* and / | Multiplication and division. |
+| \+ and - | Addition and subtraction. |
+
+For example, the following:
+
+```{r, eval=F, echo=T}
+5+5+5/2
+```
+
+Will yield “12.5.” “5/2“ is executed first, then added to the other fives. However, by using parentheses:
+
+```{r, eval=F, echo=T}
+(5+5+5)/2
+```
+
+We can override it so that the additions happen first (resulting in “15”), followed by the division (finally yielding “7.5”). Likewise, “(2+5)^2” will yield “49” (“7” squared), while “2+5^2” will yield “27” (“5” squared, plus “2”).
+
+| Logic |     |
+| :-- | :-- |
+| IF(condition,value_if_true,value_if_false) | If “condition” is true (non-zero), then “value\_if\_true” is returned; otherwise, “value\_if\_false” is returned.
+
+| Math |     |
+| :-- | :-- |
+| SQR(x) | Square of x. |
+| SIN(x) | Sine of x, which returns the sine of the angle X in radians. |
+| COS(x) | Cosine of x, returns the cosine of the angle X in radians. |
+| ATAN(x) | Arc tangent of x. |
+| SINH(x) | Hyperbolic sine of x. |
+| COSH(x) | Hyperbolic cosine of x. |
+| COTAN(x) | Cotangent of x. |
+| TAN(x) | Tangent of x. |
+| EXP(x) | Exponential function (Euler to the power of x). |
+| LN(x) | Natural logarithm of x (base Euler). |
+| LOG(x) | Common logarithm of x (base 10). |
+| SQRT(x) | Square root of x. |
+| ABS(x) | Absolute value of x. |
+| SIGN(x) | Returns the sign of x. x<0 returns -1 , x=0 returns 0, and x>0 returns 1). |
+| TRUNC(x) | Discards the fractional part of a number (e.g., TRUNC(-3.2) is -3, TRUNC(3.2) is 3). |
+| CEIL(x) | Returns the smallest integer not less than x. CEIL(-3.2) = -3, CEIL(3.2) = 4. |
+| FLOOR(x) | Returns the largest integer not greater than x. FLOOR(-3.2) = -4, FLOOR(3.2) = 3. |
+| ROUND(x, n) | Returns the number x rounded to n decimal places. ROUND(-11.6, 0) = 12, ROUND(1.5, 0) = 2, ROUND(1.55, 1) = 1.6, ROUND(3.1415, 3) = 3.142. |
+| RND(x) | Generates a random integer number within the range of 0 and X. |
+| RANDOM(x) | Generates a random floating point number within the range of 0 and X. |
+| INTPOW(base,exponent) | Raises Base to an integral power (e.g., INTPOW(2, 3) = 8). Note that result of INTPOW(2, 3.4) = 8 as well. |
+| POW(base,exponent) | The Power function raises Base to any power. For fractional exponents, Base must be greater than 0. |
+| LOGN(x,n) | Returns the log base N of X. For example, LOGN(10, 100) = 2. |
+| MIN(value,value2,...) | Returns the lowest value from a specified range of values. |
+| MAX(value,value2,...) | Returns the highest value from a specified range of values. |
+
+| Statistics |     |
+| :-- | :-- |
+| SUM(value,value2,...) | Returns the sum of a specified range of values. |
+| AVG(value,value2,...) | Returns the average of a specified range of values. |
+
+| Custom Familiar Word Tests |     |
+| :-- | :-- |
+| CustomNewDaleChall() | Performs a New Dale-Chall test with a custom familiar word list. Note that this test will use the same text exclusion rules as the Dale-Chall test (overriding your system defaults). |
+| CustomSpache() | Performs a Spache Revised test with a custom familiar word list. |
+| CustomHarrisJacobson() | Performs a Harris-Jacobson test with a custom familiar word list. Note that this test will use the same text exclusion rules as the Harris-Jacobson test (overriding your system defaults). |
+
+| General Document Statistics |     |
+| :-- | :-- |
+| SyllableCount() | Returns the number of syllables from the document.  
+  
+This function can optionally take an argument specifying which numeral syllabizing method to use. These values are:
+
+-   `Default`: uses the system default method.
+-   `NumeralsFullySyllabized`: sounds out each digit when syllabizing numerals.
+-   `NumeralsAreOneSyllable`: treats all numerals as monosyllabic words.
+
+|     |     |
+| --- | --- |
+| CharacterCount() | Returns the number of characters (i.e., letters and numbers) from the document.  
+  
+This function can optionally take an argument specifying which text exclusion method to use. These values are:
+
+-   `Default`: uses the system default text-exclusion method.
+-   `DaleChall`: uses the [Dale-Chall text-exclusion method](#options-dale-chall). This is recommended if your formula is using Dale-Chall familiar word functions (e.g., FamiliarDaleChallWordCount()).
+-   `HarrisJacobson`: uses the [Harris-Jacobson text-exclusion method](#options-harris-jacobson). This is recommended if your formula is using Harris-Jacobson familiar word functions (e.g., `FamiliarHarrisJacobsonWordCount()`).
+
+|     |     |
+| --- | --- |
+| CharacterPlusPunctuationCount() | Returns the number of characters (i.e., letters and numbers) and punctuation from the document. Note that sentence-ending punctuation is not included in this count. |
+
+| Sentences |     |
+| :-- | :-- |
+| SentenceCount() | Returns the number of sentences from the document.  
+  
+This function can optionally take an argument specifying which text exclusion method to use. These values are:
+
+-   `Default`: uses the system default text-exclusion method.
+-   `DaleChall`: uses the [Dale-Chall text-exclusion method](#options-dale-chall). This is recommended if your formula is using **Dale-Chall** familiar word functions (e.g., `FamiliarDaleChallWordCount()`).
+-   `HarrisJacobson`: uses the [Harris-Jacobson text-exclusion method](#options-harris-jacobson). This is recommended if your formula is using **Harris-Jacobson** familiar word functions (e.g., `FamiliarHarrisJacobsonWordCount()`).
+
+|     |     |
+| --- | --- |
+| IndependentClauseCount() | Returns the number of units/independent clauses from the document. A unit is a section of text ending with a period, exclamation mark, question mark, interrobang, colon, semicolon, or dash. |
+
+| Words |     |
+| :-- | :-- |
+| FamiliarWordCount() | Returns the number of familiar words (from a custom list) the document. |
+| UnfamiliarWordCount() | Returns the number of unfamiliar words (from a custom list) the document. |
+| UniqueUnfamiliarWordCount() | Returns the number of unique unfamiliar words (from a custom list) from the document. |
+| UnfamiliarHarrisJacobsonWordCount() | Returns the number of unfamiliar Harris-Jacobson words from the document. |
+| UniqueUnfamiliarHarrisJacobsonWordCount() | Returns the number of unique unfamiliar Harris-Jacobson words from the document. |
+| FamiliarHarrisJacobsonWordCount() | Returns the number of familiar Harris-Jacobson words from the document. |
+| UnfamiliarDaleChallWordCount() | Returns the number of unfamiliar New Dale-Chall words from the document. |
+| UniqueUnfamiliarDaleChallWordCount() | Returns the number of unique unfamiliar New Dale-Chall words from the document. |
+| FamiliarDaleChallWordCount() | Returns the number of familiar Dale-Chall words from the document. |
+| UnfamiliarSpacheWordCount() | Returns the number of unfamiliar Spache words from the document. |
+| UniqueUnfamiliarSpacheWordCount() | Returns the number of unique unfamiliar Spache words from the document. |
+| FamiliarSpacheWordCount() | Returns the number of familiar Spache words from the document. |
+| SixCharacterPlusWordCount() | Returns the number of words consisting of six or more characters from the document. |
+| UniqueSixCharacterPlusWordCount() | Returns the number of unique words consisting of six or more characters from the document. |
+| SevenCharacterPlusWordCount() | Returns the number of words consisting of seven or more characters from the document. |
+| OneSyllableWordCount() | Returns the number of monosyllabic words from the document. |
+| UniqueOneSyllableWordCount() | Returns the number of unique monosyllabic words from the document. |
+| ThreeSyllablePlusWordCount() | Returns the number of words consisting of three or more syllables from the document.  
+  
+This function can optionally take an argument specifying which numeral syllabizing method to use. These values are:
+
+-   `Default`: uses the system default method.
+-   `NumeralsFullySyllabized`: sounds out each digit when syllabizing numerals.
+
+|     |     |
+| --- | --- |
+| UniqueThreeSyllablePlusWordCount() | Returns the number of unique words consisting of three or more syllables from the document.  
+  
+This function can optionally take an argument specifying which numeral syllabizing method to use. These values are:
+
+-   `Default`: uses the system default method.
+-   `NumeralsFullySyllabized`: sounds out each digit when syllabizing numerals.
+
+|     |     |
+| --- | --- |
+| WordCount() | Returns the number of words from the document.  
+  
+This function can optionally take an argument specifying which text exclusion method to use. These values are:
+
+-   `Default`: uses the system default text-exclusion method.
+-   `DaleChall`: uses the [Dale-Chall text-exclusion method](#options-dale-chall). This is recommended if your formula is using Dale-Chall familiar word functions (e.g., FamiliarDaleChallWordCount()).
+-   `HarrisJacobson`: uses the [Harris-Jacobson text-exclusion method](#options-harris-jacobson). This is recommended if your formula is using Harris-Jacobson familiar word functions (e.g., FamiliarHarrisJacobsonWordCount()).
+
+|     |     |
+| --- | --- |
+| UniqueWordCount() | Returns the number of unique words from the document. |
+| NumeralCount() | Returns the number of numerals from the document. |
+| ProperNounCount() | Returns the number of proper nouns from the document. |
+
+::: {.note}
+
+**Dale-Chall** and **Harris-Jacobson** familiar word functions will take their respective test's [text exclusion](#readability-test-options) options into account.
+:::
+
+| Shortcuts |     |
+| :-- | :-- |
+| B | Shortcut for SyllableCount(). |
+| C | Shortcut for ThreeSyllablePlusWordCount(). |
+| D | Shortcut for FamiliarDaleChallWordCount(). |
+| L | Shortcut for SixCharacterPlusWordCount(). |
+| M | Shortcut for OneSyllableWordCount(). |
+| R | Shortcut for CharacterCount(). |
+| RP | Shortcut for CharacterPlusPunctuationCount(). |
+| S | Shortcut for SentenceCount(). |
+| U | Shortcut for IndependentClauseCount(). |
+| UDC | Shortcut for UnfamiliarDaleChallWordCount(). |
+| UUS | Shortcut for UniqueUnfamiliarSpacheWordCount(). |
+| W | Shortcut for WordCount(). |
+| X | Shortcut for SevenCharacterPlusWordCount(). |
+
+## Custom Test Dialog {-#custom-test-dialog}
+
+### General Settings {-#custom-test-general-settings}
+
+From the **Readability** tab, click the **Custom Test** button and then select **Add Test...** to display the **Add Custom Test** dialog. This dialog is used to edit or create a [custom test](#creating-custom-test).
+
+**Test name**: If creating a new test, enter its name into this field.
+
+**Test type**: Select from this list the type of result this test returns. This will determine which column the test's score will appear in the [Readability Scores](#reviewing-test-scores) window. The following types of tests are available:
+
+-   Grade level
+-   Index value
+-   [Predicted cloze score](#cloze)
+
+### Formula {-}
+
+![](Images/NonGenerated/FunctionBroswerButton.png)  Click this button to display the **Function Browser** dialog. In this dialog, you can browse the available functions and insert them into your formula. Refer to the [Custom-Test Functions](#custom-test-functions) overview for a list of available functions.
+
+![](Images/NonGenerated/FunctionValidate.png)  Click this button to validate the formula. You will be alerted if your formula contains any syntax errors.
+
+**Formula**: Enter the test's formula into this field. As you type, a list of available functions will appear beneath the cursor. To select a function from this list, first use the arrow keys on your keyboard to navigate through the list. Once you have selected the desired function, hit the `SPACEBAR` on your keyboard to insert it into your formula. You can also insert functions from the **Function Browser**.
+
+### Word Lists {-}
+
+#### Custom familiar word list {-#custom-word-list}
+
+**Include custom familiar word list**: Check this option to use your own word list to determine if a word is familiar.
+
+**File containing familiar words**: Enter the path to the familiar-word list into this field. This list must be a text file where each word is separated by a space, tab, comma, semicolon, or new line. An example file would look like this:
+
+```{r, eval=F, echo=T}
+computer install program videogame
+```
+
+or like this:
+
+```{r, eval=F, echo=T}
+computer,install,program,videogame
+```
+
+or like this:
+
+```{r, eval=F, echo=T}
+computer
+install
+program
+videogame
+```
+
+**Use stemming to search for similar words**: Select from this list the stemming method (if any) to use when comparing your familiar words with the words in a document.
+
+Stemming compares words based on their root. This is useful for finding words that appear in different forms from how they are entered in your word list. For example, let us say that you enter the word “installation” in your familiar word file. If you select English as your stemming type, then occurrences of the words “installation,” “install,” “installed,” “installs,” etc. found in your document will be considered familiar. This is because each of these words shares the same root, “install.” The benefit of this is that you do not need to enter every form of every word into your familiar word file.
+
+If you are not stemming, then it is recommended to enter each inflected form of your words (e.g., possessive, plural) in your word list.
+
+#### Standard familiar word lists {-}
+
+**Include New Dale-Chall familiar word list**: Check this option to use the [New Dale-Chall](#dale-chall-test) word list (along with any other selected word lists) to determine if a word is familiar.
+
+**Include Spache Revised familiar word list**: Check this option to use the [Spache Revised](#spache-test) word list (along with any other selected word lists) to determine if a word is familiar.
+
+**Include Harris-Jacobson familiar word list**: Check this option to use the [Harris-Jacobson](#harris-jacobson) word list (along with any other selected word lists) to determine if a word is familiar.
+
+**Include Stocker's Catholic supplement**: Check this option to include [Stocker's supplementary word list](#stocker-catholic-supplement) for Catholic students (along with any other selected word lists) to determine if a word is familiar.
+
+#### Other {-}
+
+**Only use words common to all lists**: Check this option to consider words familiar only if they appear on your custom list **and** other selected lists.
+
+::: {.warning}
+
+This option is only recommended for when you want to find words that appear within a union of your word list and a standard list(s) (e.g., **Spache**).
+:::
+
+::: {.note}
+
+This option is only available if you are including two or more word lists.
+:::
+
+### Proper Nouns & Numerals {-#custom-proper-numerals}
+
+#### Proper Nouns {-}
+
+**Familiarity**:
+
+**Count as unfamiliar**: Select this option to consider all proper nouns (that do not appear on any familiar-word list) as unfamiliar.
+
+**Count as familiar**: Select this option to consider all proper nouns as familiar.
+
+**Count only first occurrence of each as unfamiliar**: Select this option to consider only the first occurrence of each proper noun (that does not appear on any familiar-word list) as unfamiliar.
+
+#### Numerals {-}
+
+**Treat numerals as familiar**: Check this to also consider numeric words as familiar.
+
+### Classification {-}
+
+**Associate with document type**: Select the document types that you want this test to be associated with when creating a [new project](#creating-standard-project). This will only take effect if the project wizard selects tests for you based on document type.
+
+**Associate with industry**: Select the industries that you want this test to be associated with when creating a new project. This will only take effect if the project wizard selects tests for you based on industry or field.
+
+## Adding a Custom-word Test {-#add-custom-word-test}
+
+From the **Readability** tab, click the **Custom Test** button and then select **Add Custom [Test]...** to display the **Add Custom [Test]** dialog. The following tests available are: **New Dale-Chall**, **Spache Revised**, and **Harris-Jacobson**. This dialog is used to create a [custom word test](#creating-custom-test) and is a simplified version of the standard [Custom Test](#creating-custom-test) dialog.
+
+**Test name**: Enter the name of the new test (e.g., “Harris-Jacobson (Social Studies)”) into this field.
+
+**File containing familiar words**: Enter the path to the familiar-word list into this field. This list must be a text file where each word is separated by a space, tab, comma, semicolon, or new line. An example file would look like this:
+
+`computer install program videogame`
+
+or like this:
+
+`computer,install,program,videogame`
+
+or like this:
+
+`computer  
+install  
+program  
+videogame`
+
+## Test Bundles {-#test-bundles}
+
+Test bundles enable you to organize tests into collections that you can quickly add to a project. Rather than selecting numerous tests from the menus one-by-one, you can simply select a test bundle from the menu. From there, all tests within the bundle will be added to the project.
+
+To access the test bundles, select the **Readability** tab and click the **Bundles** button. A menu will appear which contains all the available bundles, as well as options to add, edit, and remove them.
+
+By default, the industry and document-type bundles used in the [New Project](#creating-standard-project) Wizard will be available. This includes:
+
+-   General document
+-   Technical document
+-   Structured form
+-   Literature
+-   Children's literature
+-   Children's publishing
+-   Young adult and adult publishing
+-   Children's healthcare
+-   Adult healthcare
+-   Military and government
+-   Second language education
+-   Broadcasting
+
+Select any of these bundles from the menu and all the tests within it will be added to the active project. Note that when you add a bundle to a project, all other tests currently in the project will be removed. This ensures that only the tests relevant to the bundle will be in the project after it is applied.
+
+You can also create your own bundles. To do this, select **Add...** from the **Bundles** menu to open the **Add Test Bundle** dialog:
+
+![](Images/TestBundle.png)
+
+On the **General** page of this dialog, you will first enter a name for the bundle. (This name is how it will appear in the **Bundles** menu.) Next, you will select all the tests that you wish to include in this bundle. (Tests are available on the **Standard Tests**, **Custom Tests**, and **Vocabulary Tools** pages.) After you are done, click the **OK** button to add the bundle to the menu.
+
+Once this bundle is added, select it from the menu and all the tests in the bundle will be added to the active project.

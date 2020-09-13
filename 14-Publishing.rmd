@@ -1,0 +1,296 @@
+# Publishing the Results
+
+## Exporting {-#exporting}
+
+All graphs, lists, statistical summaries, and highlighted text windows can be exported from **Readability Studio**. This is useful for reviewing the results outside the program, as well as publishing and sharing them with colleagues.
+
+To export any window, go to the **Home** tab and click the **Save** button, or right click on the window and select **Save**.
+
+Numerous formats are available for each type of window:
+
+- [Highlighted text](#text-window-export): HTML and RTF
+- Statistic summaries: HTML
+- [Test results](#scores-export): HTML
+- Word, phrase, and sentence [lists](#export-list): HTML and Text
+- [Graphs](#image-export): PNG, BMP, TIFF, JPEG, GIF, TARGA, and SVG
+
+All windows can also be exported at once by clicking the arrow beneath **Save** and selecting [Export All...](#export-all-options).
+
+## Scores Export Options{-#scores-export}
+
+When [exporting](#exporting) readability scores from a standard project, the following export options are available:
+
+### Select which section to save {-}
+
+**Grid**: Saves the grid of readability scores.
+
+**Explanations**: Saves a report of the explanations associated with the scores.
+
+**Both**: Saves the scores grid and explanations.
+
+## Text Window Export Options {-#text-window-export}
+
+When [exporting](#exporting) a text window, the following export formats are available:
+
+**HTML**: A format that can be displayed in Internet browsers and most word-processing programs.
+
+**RTF**: A format that can be displayed in most word-processing programs.
+
+::: {.tip}
+
+If you plan to edit this output, then **RTF** is recommended. (Most word processors support editing this format.)
+:::
+
+## Image Export Options {-#image-export}
+
+When [exporting](#exporting) a graph, you will first be prompted for an image format to export as. The following formats are available to choose from:
+
+- **PNG**: A lossless-compressed image format. The image can be compressed to a smaller size without any loss of quality.
+- **JPG**: A lossy-compressed image format. Some image quality may be lost, compared to other formats such as PNG.
+- **BMP**: An uncompressed raster (i.e., pixel based) image format.
+- **TIFF**: This format can either be compressed or uncompressed and offers both lossy and lossless compression. This format is generally preferred for desktop publishing.
+- **TARGA**: A raster (i.e., pixel based) image format.
+- **GIF**: A raster (i.e., pixel based) image format. Note that this image format is limited to 256 colors.
+- **SVG**: A format that uses vector (rather than raster) drawing. Vector-based images can be scaled to much larger sizes, without the loss of quality that raster images would experience.
+
+After selecting the image format, these additional options will be provided:
+
+### Image Size {-}
+
+**Width**: Enter the width of the exported image into this field.
+
+**Height**: Enter the height of the exported image into this field.
+
+::: {.note}
+
+When you change the width or height, the other measurement will be adjusted automatically to maintain the aspect ratio.
+:::
+
+### Color Mode {-}
+
+**RGB (Color)**: Select this option to save the image in color.
+
+**Grayscale**: Select this option to save the image in shades of gray.
+
+### TIFF options {-}
+
+This option is available only when exporting as a TIFF file.
+
+**Compression**: This option specifies the compression level of the TIFF file and includes the following options:
+
+-   None: do not compress the image
+-   Lempel-Ziv & Welch: lossless compression, but may generate larger images than other compression methods.
+-   JPEG: lossy compression method. Suitable for high-color images, but some quality may be lost.
+-   Deflate: lossless, high-compression method.
+
+## List Export Options {-#export-list}
+
+When [exporting](#exporting) a list, you will be provided with the following formats to export as:
+
+- **HTML**: A format that includes formatting and can be opened in browsers and spreadsheet programs.
+- **TXT**: A tab-delimited file with no formatting (i.e., colors will be lost).
+
+After selecting the file format, these additional options will be provided.
+
+**Include column headers**: Check this option to include the column headers in the output.
+
+**Only export selected rows**: Check this option to only export the selected rows in the list.
+
+**Insert page breaks**: Check this option to split the list into smaller tables with page breaks between them. These tables will be sized to fit your current [printer](#printing) paper size and orientation. Additionally, a page break will be inserted between each table, which will appear when you print this output from a web browser. To change either your paper size or orientation, select **Page Setup** from the **Print** button's menu.
+
+This option only applies to HTML exporting.
+
+### Range {-}
+
+The options here specify the range of columns and rows to export.
+
+**Rows: from**: Enter the starting row to export into this field.
+
+**Columns: from**: Enter the starting column to export into this field.
+
+**Rows: to**: Enter the ending row to export into this field.
+
+**Columns: to**: Enter the ending column to export into this field.
+
+## Export All Options {-#export-all-options}
+
+Select **Export All** from the **Save** button's menu to display the **Export All Options** dialog.
+
+This dialog provides options for [exporting](#exporting) an entire project into a single report or folder of separate files.
+
+**Folder to export to**: Enter the folder path where you want to export the project to into this field. (Only applies if you are exporting as separate files.)
+
+### Sections to export {-}
+
+**Export test scores**: Select this option to export all the windows from the [Readability Scores](#reviewing-test-scores) section.
+
+**Export summary statistics**: Select this option to export all the windows from the [Summary Statistics](#reviewing-statistics) section. This option only applies to standard projects.
+
+**Export histograms/box plots**: Select this option to export all [histograms](#reviewing-batch-histograms) and [box plots](#reviewing-batch-box-plots). This option only applies to batch projects.
+
+**Export words breakdown**: Select this option to export all the windows from the [Words Breakdown](#reviewing-word-breakdowns) section.
+
+**Export sentences breakdown**: Select this option to export all the windows from the [Sentences Breakdown](#reviewing-sentences-breakdown) section.
+
+**Export grammar section**: Select this option to export all the windows from the **Grammar** section.
+
+**Export Dolch sight words section**: Select this option to export all the windows from the [Dolch Sight Words](#reviewing-dolch) section. This option only applies if **Dolch Sight Words** is included in the project.
+
+**Export warnings section**: Select this option to export all the project's [warnings](#reviewing-batch-warnings). This option only applies to batch projects.
+
+### Export file types {-}
+
+**Export lists as**: Select the file type that you want to save list windows as from this list. This option only applies when exporting as separate files.
+
+**Export text windows as**: Select the file type that you want to save text windows as from this list. This option only applies to standard projects, and when exporting as separate files.
+
+**Export graphs as**: Select the image type that you want to save graphs as from this list.
+
+**Image Options**: Click this button to further customize how to save the graphs as images. This includes options such as color mode and image size. Note that the options available on this dialog will depend on which image type is selected.
+
+**Include lists and text windows**: Select this option to include lists and highlighted text windows in the output. It is recommended to unselect this option for larger documents. This option only applies to standard projects.
+
+## Printing {-#printing}
+
+All graphs, lists, statistical summaries, and highlighted text windows can be printed from **Readability Studio**. This is useful for reviewing the results outside the program, and for publishing and sharing them with colleagues.
+
+To print any window, go to the **Home** tab and click the **Print** button, or right click on the window and select **Print**.
+
+Clicking the arrow beneath the **Print** button will open a menu containing additional printing options. For example, to change the paper size or orientation of your printouts, select **Page Setup** from this menu:
+
+![](Images/NonGenerated/pagesetup.png)
+
+To add headers or footers to your printouts, select **Headers & Footers** from this menu:
+
+![](Images/printerheadersfooters.png)
+
+Predefined values such as the page number, title, and date can be added, as well as custom values.
+
+To preview a window before printing it, select **Print Preview** from this menu:
+
+![](Images/NonGenerated/printpreview.png)
+
+Note that this preview option is only available on Windows. On macOS, the preview option on the print dialog can be used for previewing.
+
+## Exporting Filtered Documents {-#filtering-export}
+
+“Document filtering” (or “cleaning”) is the removal of items from a document to assist a textual analysis. This includes items that are not meant to be analyzed, such as:
+
+-   Headers
+-   Footers
+-   Captions
+-   Copyright notices
+-   Citations
+-   (Short) list items
+
+Also, items that may cause issues with legacy programs:
+
+-   Non-English letters (e.g., ‘é’)
+-   Advanced punctuation (e.g., ‘—’)
+-   Non-sentence-ending periods (e.g., ellipses and abbreviations)
+
+The first set of items are normally excluded from analysis because they a.) are not part of the narrative text and b.) skew the average sentence length.
+
+By default, **Readability Studio** will automatically ignore these items, rather than requiring you to manually remove them from your document. This is helpful by saving time and by not having to maintain two copies of your document: the original and the “cleansed” version used for analysis.
+
+The second set of items do not cause issue with **Readability Studio**. It can recognize extended characters (e.g., ‘é’, ‘—’, etc.) and can properly deduce sentence endings. For these reasons, document cleaning is generally not necessary within **Readability Studio**.
+
+Refer to [Text Exclusion](#how-text-is-excluded) to learn how **Readability Studio** automatically filters documents.
+
+### Exporting Filtered Documents {-}
+
+There may be times when you would need a filtered copy of your document. For example, you might need to process your document through another program which does not have auto-filtering. In this situation, you can export a copy of your document with these aforementioned items removed. Then you can analyze your document with other software without needing to manually filter it.
+
+To do this, click on the **Home** tab of the ribbon, click on the arrow below the **Save** button, and select **Export Filtered Document**. After excluding incomplete sentences\* from your document, you will be presented with additional options. Once you have specified your filtering options, the **Preview Filtered Document** dialog (shown below) will display a preview:
+
+![](Images/FilterTextPreview.png)
+
+Finally, click **OK** to save the file.
+
+::: {.tip}
+
+Which incomplete-sentence removal method used is controlled by your project's [text exclusion options](#options-text-exclusion).
+:::
+
+### Additional Filtering Options {-}
+
+When exporting a filtered version of your document, the program will first remove incomplete sentences (if applicable). This removal will be based on your project's [text exclusion](#options-text-exclusion) settings. After this text exclusion is applied, additional conversion options will be available from the **Additional Filtering Options** dialog. From this dialog, you can apply the following filters to the exported copy of your document.
+
+**Romanize (replace special characters)**: Check this option to replace accented and extended characters with their ASCII equivalents. This option is required if you are needing the filtered document to be in ASCII (7-bit) format. The following Romanization replacements are used:
+
+| Extended ASCII character | Replacement |
+| :-- | :-- |
+| ö | oe |
+| ü | ue |
+| ä | ae |
+| ß | ss |
+| ñ | nn |
+| å | aa |
+| æ | ae |
+| œ | oe |
+| à | a |
+| á | a |
+| â | a |
+| ã | a |
+| å | a |
+| ç | c |
+| è | e |
+| é | e |
+| ê | e |
+| ë | e |
+| ì | i |
+| í | i |
+| î | i |
+| ï | i |
+| ò | o |
+| ó | o |
+| ô | o |
+| õ | o |
+| ø | o |
+| ù | u |
+| ú | u |
+| û | u |
+| ý | y |
+| ÿ | y |
+| • | · |
+| ‚ | ' |
+| ‹ | ' |
+| › | ' |
+| ‘ | ' |
+| ’ | ' |
+| \` | ' |
+| „ | " |
+| “ | " |
+| ” | " |
+| « | " |
+| » | " |
+| … | ... |
+| ‒ | \-- |
+| – | \-- |
+| — | \-- |
+| ― | \-- |
+| © | (c) |
+| ® | (r) |
+| ™ | (tm) |
+| ¼ | 1/4 |
+| ½ | 1/2 |
+| ¾ | 3/4 |
+| ± | +- |
+
+Any extended ASCII character not listed above will be removed from the document.
+
+**Remove ellipses**: Check this option to remove ellipses (if in the middle of a sentence) or replace with a ‘.’ (if at the end of a sentence).
+
+**Remove bullets and list-item numbering**: Check this option to remove bullet symbols and numbers that appear in front of list items.
+
+**Remove Internet and file addresses**: Check this option to remove Internet URLs and file paths.
+
+**Remove trailing periods from abbreviations and acronyms**: Check this option to remove the last period from abbreviations and acronyms. For example:
+
+> “Dr. Jones has requested a copy of the S.T.A.R.T. report.”
+
+will be exported as:
+
+> “Dr Jones has requested a copy of the S.T.A.R.T report.”
+
+This option is recommended for other programs that may have difficulty deducing sentences properly because of these periods.

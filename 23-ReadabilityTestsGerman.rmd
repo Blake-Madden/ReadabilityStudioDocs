@@ -1,0 +1,336 @@
+# German Readability Tests {#german-readability-tests}
+
+## Amstad {-#amstad}
+
+The **Amstad** test is a recalculation of [Flesch Reading Ease](#flesch-test) for German text. Its formula is adjusted from the original **Flesch** to take into account German's comparatively longer words. It also uses a lower weighting for the sentence-length factor, placing most of the influence on word length.
+
+The factors used for this test are syllables per word (“Silben pro Wort”) and words per sentence (“Wörter pro Satz”). (The same factors used for **Flesch Reading Ease**).
+
+**Amstad** (78-81) is best suited for school textbooks and technical manuals. Scores range from 0-100 (the higher the score, the easier to read) and average documents should be within the range of 60-70.
+
+### Amstad Formula {-}
+
+```{r, eval=F, echo=T}
+I = 180 - (B/W) - (58.5*(W/S))
+```
+
+Where:
+
+|     |     |
+| --- | --- |
+| I   | Amstad (i.e., Flesch) index score |
+| W   | Number of words |
+| B   | Number of syllables |
+| S   | Number of sentences |
+
+Amstad offered these interpretations for scoring:
+
+| Reading Ease Score | Description of Style | Typical Magazine |
+| :-- | :-- | :-- |
+| 90-100 | Very easy | comics |
+| 80-89 | Easy | pulp-fiction |
+| 70-79 | Fairly easy | slick-fiction |
+| 60-69 | Standard | digest |
+| 50-59 | Fairly difficult | quality |
+| 30-49 | Difficult | academic |
+| 0-29 | Very difficult | scientific |
+
+::: {.note}
+
+Like **Flesch Reading Ease**, this test treats numerals as monosyllabic words by default. This behavior can be changed from the [Readability Options](#readability-test-options) dialog.
+:::
+
+## Lix {-#lix-german}
+
+Please refer to [Lix](#lix-test).
+
+## Lix (German children's literature) {-#lix-german-childrens-literature}
+
+This test is a German variation of [Läsbarhetsindex (Lix)](#lix-test) designed for children's literature. It uses the same index-score formula as **Lix**, but uses different scales for assigning the difficulty and grade-level scores. This adjustment was developed by Renström (152-153) and Bamberger & Vanecek (64, 187) for use with German literature ranging from 1st to 8th grade. (Renström developed the adjusted difficulty gauge; Bamberger & Vanecek developed the grade-level conversion.)
+
+Note that this test differs from the original **Lix** approach of using the same scoring for any document, regardless of language. Instead, this test is designed specifically for German materials, adjusting the grade-level score and classification of the index value.
+
+Regarding the index score, the following variation of the **Lix** guage is used classify the difficulty (Renström 153; Bamberger and Vanecek 65; Schulz 53):
+
+```{r, echo=F, fig.cap='German Lix Guage', fig.align='center'}
+knitr::include_graphics("Images/GermanLixGuage.png")
+```
+
+This version adjusts the scaling of the score, assuming that German text is inheriently more difficult than other languages. It also includes additional levels of difficulty (e.g., “children and young adult”).
+
+To convert the **Lix** index score to a grade, this test uses the following table:
+
+### Bamberger & Vanecek’s Lix Index to Grade Level {-}
+
+|     |     |
+| --- | --- |
+| 0-23 | 1st grade |
+| 24-26 | 2nd grade |
+| 27-29 | 3rd grade |
+| 30-31 | 4th grade |
+| 32-33 | 5th grade |
+| 34-35 | 6th grade |
+| 36-37 | 7th grade |
+| 38+ | 8th grade |
+
+## Lix (German technical literature) {-#lix-german-technical}
+
+This test is a German variation of [Läsbarhetsindex (Lix)](#lix-test) designed for technical literature. It uses the same index-score formula as **Lix**, but uses different scales for assigning the difficulty and grade-level scores. This adjustment was developed by Renström (152-153) and Bamberger & Vanecek (64, 187) for use with German literature ranging from 3rd to 15th grade. (Renström developed the adjusted difficulty gauge; Bamberger & Vanecek developed the grade-level conversion.)
+
+Note that this test differs from the original **Lix** approach of using the same scoring for any document, regardless of language. Instead, this test is designed specifically for German materials, adjusting the grade-level score and classification of the index value.
+
+Regarding the index score, the following variation of the **Lix** guage is used classify the difficulty (Renström 153; Bamberger and Vanecek 65; Schulz 53):
+
+```{r, echo=F, fig.cap='German Lix Guage', fig.align='center'}
+knitr::include_graphics("Images/GermanLixGuage.png")
+```
+
+This version adjusts the scaling of the score, assuming that German text is inheriently more difficult than other languages. It also includes additional levels of difficulty (e.g., “children and young adult”).
+
+To convert the **Lix** index score to a grade, this test uses the following table:
+
+### Bamberger & Vanecek’s Lix Index to Grade Level {-}
+
+|     |     |
+| --- | --- |
+| 0-30 | 3rd grade |
+| 31-33 | 4th grade |
+| 34-37 | 5th grade |
+| 38-40 | 6th grade |
+| 41-43 | 7th grade |
+| 44-47 | 8th grade |
+| 48-50 | 9th grade |
+| 51-53 | 10th grade |
+| 54-56 | 11th grade |
+| 57-59 | 12th grade |
+| 60-63 | 13th grade |
+| 64-69 | 14th grade |
+| 70+ | 15th grade |
+
+## Neue Wiener Sachtextformel 1 {-#neue-wiener-sachtextformel1}
+
+**Neue Wiener Sachtextformel 1** (1.nWS) (Bamberger-Vanecek 83, 187) is used for evaluating German nonfiction (specifically, 6th-10th grade materials). This test returns a grade-level score based on word length/complexity and sentence length.
+
+### The Neue Wiener Sachtextformel 1 Formula {-}
+
+```{r, eval=F, echo=T}
+G = 0.1935*((C/W)*100) + 0.1672*(W/S) + 0.1297*((X/W)*100) - 0.0327*((M/W)*100) - 0.875
+```
+
+Where:
+
+|     |     |
+| --- | --- |
+| G   | Grade level |
+| C   | Number of 3+ syllable (“drei- und mehrsilbigen”) words |
+| X   | Number of 7+ character (“mehr als sechs buchstaben”) words |
+| M   | Number of monosyllabic (“einsilbigen”) words |
+| S   | Number of sentences |
+| W   | Number of words |
+
+## Neue Wiener Sachtextformel 2 {-#neue-wiener-sachtextformel2}
+
+**Neue Wiener Sachtextformel 2** (2.nWS) (Bamberger-Vanecek 84, 187) is used for evaluating German nonfiction (specifically, very light materials up to 5th grade). This test returns a grade-level score based on word length/complexity and sentence length.
+
+### The Neue Wiener Sachtextformel 2 Formula {-}
+
+```{r, eval=F, echo=T}
+G = 0.2007*((C/W)*100) + 0.1682*(W/S) + 0.1373*((X/W)*100) - 2.779
+```
+
+Where:
+
+|     |     |
+| --- | --- |
+| G   | Grade level |
+| C   | Number of 3+ syllable (“drei- und mehrsilbigen”) words |
+| X   | Number of 7+ character (“mehr als sechs buchstaben”) words |
+| M   | Number of monosyllabic (“einsilbigen”) words |
+| S   | Number of sentences |
+| W   | Number of words |
+
+## Neue Wiener Sachtextformel 3 {-#neue-wiener-sachtextformel3}
+
+**Neue Wiener Sachtextformel 3** (3.nWS) (Bamberger-Vanecek 84, 187) is used for evaluating German nonfiction (specifically, very light materials up to 5th grade). This test returns a grade-level score based on word length and sentence length.
+
+### The Neue Wiener Sachtextformel 3 Formula {-}
+
+```{r, eval=F, echo=T}
+G = 0.2963*((C/W)*100) + 0.1905*(W/S) - 1.1144
+```
+
+Where:
+
+|     |     |
+| --- | --- |
+| G   | Grade level |
+| C   | Number of 3+ syllable (“drei- und mehrsilbigen”) words |
+| X   | Number of 7+ character (“mehr als sechs buchstaben”) words |
+| M   | Number of monosyllabic (“einsilbigen”) words |
+| S   | Number of sentences |
+| W   | Number of words |
+
+## Quadratwurzelverfahren {-#qu-bamberger-vanecek}
+
+**Quadratwurzelverfahren** (“Square root method”) (78) is an alternative method for calculating [SMOG (Bamberger-Vanecek)](#smog-bamberger-vanecek). Where **SMOG (Bamberger-Vanecek)** uses a 30-sentence sample, **Quadratwurzelverfahren** uses a 100-word sample; otherwise, they produce the same results.
+
+### The Quadratwurzelverfahren Formula {-}
+
+```{r, eval=F, echo=T}
+G = √((C*(100/W))/(S*(100/W))*30) - 2
+```
+
+Where:
+
+|     |     |
+| --- | --- |
+| G   | Grade level |
+| C   | Number of 3+ syllables (“Drei- und Mehrsilber”) words |
+| S   | Number of sentences |
+| W   | Number of words |
+
+::: {.note}
+
+Based on the examples from **Bamberger-Vanecek** (78), the grade-level score should be truncated to one-point precision, not rounded.
+:::
+
+## Rix {-#rix-german}
+
+Please refer to [Rix](#rix-test).
+
+## Rix (German fiction) {-#rix-german-fiction}
+
+This test is a German variation of [Rix](#rix-test) designed for fiction books. It uses a modified index-score formula from **Rix**, as well as different logic for assigning a grade-level score. This test was developed by Bamberger & Vanecek (64, 187) for use with German fiction ranging from 1st to 11th grade.
+
+### The Rix (German fiction) Formula {-}
+
+```{r, eval=F, echo=T}
+I = ((100*(X/W))/(U*(100/W))) * 10
+```
+
+Where:
+
+|     |     |
+| --- | --- |
+| I   | Rix index score |
+| W   | Number words |
+| X   | Number of long words (7+ characters) |
+| U   | Number of sentence units |
+
+### Rix Index to Grade Level Table {-#rix-to-grade-level-german}
+
+|     |     |
+| --- | --- |
+| 0-13.5 | 1st grade |
+| 13.51-17 | 2nd grade |
+| 17.1-20.5 | 3rd grade |
+| 20.51-24 | 4th grade |
+| 24.1-27.5 | 5th grade |
+| 27.51-31 | 6th grade |
+| 31.1-34.5 | 7th grade |
+| 34.51-38 | 8th grade |
+| 38.1-41.5 | 9th grade |
+| 41.51-45 | 10th grade |
+| 45.1+ | 11th grade |
+
+## Rix (German non-fiction) {-#rix-german-nonfiction}
+
+This test is a German variation of [Rix](#rix-test) designed for non-fiction books. It uses a modified index-score formula from **Rix**, as well as different logic for assigning a grade-level score. This test was developed by Bamberger & Vanecek (64, 187) for use with German non-fiction ranging from 4th to 14th grade.
+
+### The Rix (German non-fiction) Formula {-}
+
+```{r, eval=F, echo=T}
+I = ((100*(X/W))/(U*(100/W))) * 10
+```
+
+Where:
+
+|     |     |
+| --- | --- |
+| I   | Rix index score |
+| W   | Number words |
+| X   | Number of long words (7+ characters) |
+| U   | Number of sentence units |
+
+### Rix Index to Grade Level Table {-#rix-to-grade-level-german2}
+
+|     |     |
+| --- | --- |
+| 0-26 | 4th grade |
+| 26.1-32 | 5th grade |
+| 32.1-38 | 6th grade |
+| 38.1-45 | 7th grade |
+| 45.1-52 | 8th grade |
+| 52.1-57 | 9th grade |
+| 57.1-66 | 10th grade |
+| 66.1-75 | 11th grade |
+| 75.1-84 | 12th grade |
+| 84.1-100 | 13th grade |
+| 100+ | 14th grade |
+
+## SMOG (Bamberger-Vanecek) {-#smog-bamberger-vanecek}
+
+**SMOG (Bamberger-Vanecek)** (78) is a German variation of [SMOG](#smog-test) designed for secondary-age readers. This test calculates the grade level of a document based on complex-word density.
+
+Note that numerals are fully syllabized (i.e., sounded out) for this test, so the program overrides your [numeral syllabication](#numsyllable) setting when calculating it.
+
+### The SMOG (Bamberger-Vanecek) Formula {-}
+
+```{r, eval=F, echo=T}
+G = √C - 2
+```
+
+Where:
+
+|     |     |
+| --- | --- |
+| G   | Grade level |
+| C   | Number of 3+ syllables (“drei- und mehrsilbigen”) words from 30 sentences |
+
+This test requires a 10-sentence sample, with 3 samples being recommended for best results. ([Normalization](#glossary) can also be used to analyze larger samples or entire documents.)
+
+::: {.note}
+
+Based on the examples from **Bamberger-Vanecek** (78), the grade-level score should be truncated to one-point precision, not rounded.
+:::
+
+## Wheeler-Smith (Bamberger-Vanecek) {-#wheeler-smith-bamberger-vanecek}
+
+**Wheeler-Smith (Bamberger-Vanecek)** (77, 186) is a German variation of [Wheeler-Smith](#wheeler-smith) designed for both primary and secondary-age reading material. It calculates the grade level of a document based on [unit](#glossary) length (see below) and number of complex words.
+
+### The Wheeler-Smith (Bamberger-Vanecek) Formula {-}
+
+```{r, eval=F, echo=T}
+I = ((W/U)*((P/W)*100)) / 10
+```
+
+Where:
+
+|     |     |
+| --- | --- |
+| I   | Index value (see below) |
+| P   | Number of 3+ syllable (“drei- und mehrsilbigen”) words |
+| W   | Number of words |
+| U   | Number of units |
+
+Then, find the index value in the following chart to acquire the final readability score:
+
+|     |     |
+| --- | --- |
+| First grade | 2.5 to 6 |
+| Second grade | 6.1 to 9 |
+| Third grade | 9.1 to 12 |
+| Fourth grade | 12.1 to 16 |
+| Fifth grade | 16.1 to 20 |
+| Sixth grade | 20.1 to 24 |
+| Seventh grade | 24.1 to 29 |
+| Eighth grade | 29.1 to 34 |
+| Ninth grade | 34.1 to 38 |
+| Tenth grade | 38.1 to 42 |
+
+::: {.note}
+
+Although **Bamberger-Vanecek** (77, 186) does not specify using units instead of sentences, the use of units is assumed to match **Wheeler-Smith**.
+
+Based on the examples from **Bamberger-Vanecek** (77, 186), index values should be truncated to one-point precision, not rounded.
+:::

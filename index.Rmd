@@ -1,0 +1,32 @@
+--- 
+title: "Readability Studio 2021 Manual"
+description: "Readability Studio 2021 Manual"
+author: "Blake Madden"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+biblio-style: mlalike
+link-citations: yes
+cover-image: "images/NonGenerated/cover.png"
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(message=F, warning=F, dev='svg')
+```
+
+# Preface {#cover .unnumbered}
+
+::: {.note}
+
+This is preliminary documentation for an upcoming release of Readability Studio. If you have any feedback, please feel free to file an issue on Github. Thank you.
+:::
+
+```{asis, echo=!knitr::is_latex_output()}
+<p style="text-align: center; padding: 10px;"><img src="images/NonGenerated/cover.png" alt="Readability Studio 2021 Manual cover" /></p>
+```
+
+This book is a guide to using the software product **Readability Studio**, as well as a reference for readability formulas. For those interested in the formulas, please refer to the [English](#english-readability-tests), [Spanish](#spanish-readability-tests), and [German](#german-readability-tests) formula overviews. For further reading, refer to the [bibliography](#bibliography) for a concise list of articles discussing these formulas.
+
+![](images/NonGenerated/CC_BY-NC-ND.png)
+
+This book is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivs 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/).

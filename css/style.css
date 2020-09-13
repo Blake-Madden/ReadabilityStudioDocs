@@ -1,0 +1,107 @@
+.note {
+  padding: 1em 1em 1em 1em;
+  display:inline-block;
+  position:relative;
+  color: black;
+  background: #FCF8E3;
+  border-radius: 15px;
+  width: 100%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.note::before {
+  content: "📝Note";
+  font-weight: bold;  
+}
+.tip {
+  padding: 1em 1em 1em 1em;
+  display:inline-block;
+  position:relative;
+  color: black;
+  background: #FCF8E3;
+  border-radius: 15px;
+  width: 100%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.tip::before {
+  content: "💡Tip";
+  font-weight: bold;  
+}
+.warning {
+  padding: 1em 1em 1em 1em;
+  display:inline-block;
+  position:relative;
+  color: black;
+  background: rgba(255,130,162,.25);
+  border-radius: 15px;
+  width: 100%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.warning::before {
+  content: "⚠️Warning";
+  font-weight: bold;  
+}
+/* prevent note sections from being split by a page break.*/
+@media print {
+.note, .tip, .warning {
+       break-inside: avoid-page;
+       page-break-inside: avoid;
+    }
+}
+
+.small-table {
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.figure {
+    text-align: center;
+}
+.caption {
+  color: #777;
+  margin-top: 10px;
+  text-align: center;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+.flushright {
+  text-align: right;
+}
+pre.numberSource code > span > a:first-child::before {
+  left: -0.3em;
+}
+.header-section-number {
+  padding-right: .2em;
+  font-weight: 500;
+}
+.level1 .header-section-number {
+  display: inline-block;
+  border-bottom: 3px solid;
+}
+.level1 h1 {
+  border-bottom: 1px solid;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+h1.title {
+  font-weight: 700;
+}
+.book .book-body .page-wrapper .page-inner section.normal {
+  font-weight: 500;
+}
+.book .book-body .page-wrapper .page-inner section.normal pre a {
+  color: inherit;
+}

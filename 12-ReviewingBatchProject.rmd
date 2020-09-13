@@ -1,0 +1,515 @@
+# Reviewing Batch Projects
+
+## Reviewing the Readability Scores {-#reviewing-batch-scores}
+
+After opening a project, click on the **Readability Scores** icon on the project sidebar. There will be up to four lists available: **Raw Scores**, **Score Summary**, **Grade Score Summary (x Document)**, and **Cloze Score Summary (x Document)**.
+
+The **Raw Scores** subitem will display the scores for each document:
+
+![](Images/batchrawscores.png)
+
+Next to each document name, all of its respective test scores are displayed. In the above example, we can see that the file “NewProject.md” has an [ARI](#ari-test) score of 12.1, a [New Dale-Chall](#dale-chall-test) score of 16+, and a [Flesch-Kincaid](#flesch-kincaid-test) score of 12. To view any document's scores in a vertical layout, double-click on it to display the **View Item** dialog:
+
+![](Images/viewitemrawscores.png)
+
+The **Score Summary** subitem will display the aggregated statistics for each test:
+
+![](Images/batchscorestats.png)
+
+By default, the following statistics for each test are included:
+
+-   [Valid N](#stat-terms): the number of valid scores.
+-   [Minimum](#stat-terms): the lowest test score.
+-   [Maximum](#stat-terms): the highest test score.
+-   [Range](#stat-terms): the distance between the lowest and highest test scores.
+-   [Mode(s)](#stat-terms): the most frequently occurring score. In the case of a tie, all modes will be listed. Note that grade scores are rounded down when searching for the mode.
+-   [Means](#stat-terms): the average test score. This is calculated by adding all the scores and dividing the total by the number of scores.
+
+If [Extended Information](#options-summary-report) is enabled, then these additional statistics will be included:
+
+-   [Median](#stat-terms): the middle test score. This represents the middle point separating the lower and upper halves of the scores. This is calculated by sorting the scores and taking the score in middle if the number of scores is odd. If the number of scores is even, then the means of the two middle points is taken.
+-   [Skewness](#stat-terms): the asymmetry of the scores' distribution.
+-   [Kurtosis](#stat-terms): the peakedness of the scores' distribution.
+-   [Standard Deviation](#stat-terms): the variability (or spread) of the scores. Note that sample std. dev. is used here because it is assumed that the batch contains a sampling of a larger document collection.
+-   [Variance](#stat-terms): another measurement of the scores' variability, which is std. dev. squared.
+-   [Lower quartile](#stat-terms): the test score at the 25% percentile. This is the score separating the lower quarter of the scores from the rest of the scores.
+-   [Upper quartile](#stat-terms): the test score at the 75% percentile. This is the score separating the upper quarter of the scores from the rest of the scores.
+
+Note that when calculating these statistics, failed test scores are treated as missing observations and not included. For example, let us say that you analyze 100 documents, but 3 of them cannot calculate [Fry](#fry-test) because their average sentence length is too high. In this case, the valid 97 **Fry** scores will be added and divided by 97 (not 100) to get the means.
+
+Some special scores will be converted when being aggregated into these statistics. For example, grade ranges such as “5-6” (from [New Dale-Chall](#dale-chall-test)) will be converted to its own average (e.g., “5-6” will be 5.5).
+
+To remove any test in this list from the project, select it and press `CTRL+DELETE` (`⌘+DELETE` on macOS) on your keyboard.
+
+The **Grade Score Summary (x Document)** subitem will display aggregated statistics for all grade-level scores, grouped by document:
+
+![](Images/BatchGradeScoresByDocument.png)
+
+The **Valid N** column represents the number of grade-level tests that were successfully ran against each document. After this column are additional columns displaying grade-level score statistics, document-by-document. In the above example, we can see that the document “CustomWordTest.md” had 5 different grade tests ran against it, with 9.5 being the lowest score and 10.9 being the highest.
+
+Note that this subitem will only be available if at least one grade-level test is included in the project.
+
+The **Cloze Score Summary (x Document)** subitem will display aggregated statistics for all [predicted cloze](#cloze) scores, grouped by document:
+
+![](Images/BatchClozeScoresByDocument.png)
+
+This subitem is interpreted in the same manner as the **Grade Score Summary (x Document)** page.
+
+Note that this subitem will only be available if at least one predicted **cloze** test is included in the project.
+
+Both of these tabs will include the same statistics as the **Score Summary** page.
+
+## Reviewing the Histograms {-#reviewing-batch-histograms}
+
+After opening a project, click on the **Histograms** icon on the project sidebar to view your documents' test scores graphically plotted as histograms.
+
+A histogram will be created for each test. For grade level tests, the bins (i.e., bars) will represent either a grade or range of grades. The height of each bar will reflect the number of documents that scored within the bar's range. In the histogram below, we can see that 21 documents scored within the 8th-9th grade range for the [Flesch-Kincaid](#flesch-kincaid-test) test:
+
+![](Images/histogrades.png)
+
+We interpret this first by looking at the highest bar. The label above it displays “21,” which is the number of documents in that category. Now, to see the category, we look at the x-axis labels below the bar. Because we are using [cutpoints](#options-histograms) here, there will be two labels to review. The “7” on the left side of the bar indicates the end of the **previous** bar's range. The “9” on the right side of the bar indicates the end of this bar's range. This means that this bar includes scores > 7 and ≤ 9. Because we are [rounding](#options-histograms) our scores down (the default), scores such as 7.7 will be rounded down and fall into the previous bin (i.e., bar). Scores between 8.0 and 9.9 will fall into this bin; therefore, this bar will represent the 8th-9th grade range.
+
+Note that if [binning](#options-histograms) is set to **unique values**, then selecting a bar will display the first 25 documents within that grade-level group.
+
+Continuing on, this batch has quite a few difficult documents. There are 21 documents in the 8th-9th grade range, 22 documents in the 10th-11th grade range, etc. In contrast, there are few easy documents, with only 2 in the 6th-7th grade range and only 1 in the 2nd-3rd and 4th-5th ranges. From this, we can surmise that the readability of this batch needs improving.
+
+Index tests (such as [Flesch](#flesch-test)) will also have histograms, where the bins are ranges in the index. For example, in the histogram below we can see how most of the documents are in the lower range of the **Flesch** scale:
+
+![](Images/histoindex.png)
+
+From this histogram we can also conclude that this batch has too many difficult documents.
+
+If we begin to revise these documents and reload the project (`F5` on your keyboard), then the test scores will show improvement in these graphs:
+
+![](Images/histoimproved.png)
+
+The binning method, label display, and general appearance of these histograms can be customized from the [Histogram](#options-histograms) page of either the [Options](#options-overview) or [Project Properties](#options-overview) dialog.
+
+## Reviewing the Box Plots {-#reviewing-batch-box-plots}
+
+After opening a project, click on the **Score Box Plots** icon on the project sidebar to view the documents' test scores graphically shown as [box plots](#box-plots).
+
+One box plot will be created for all the grade-level tests, where the boxes represent each test. In the box plot below, we can see that the tests place most of the documents within the high school range:
+
+![](Images/boxgrades.png)
+
+Note that the boxes are somewhat small and range from the 7th to 12th grade. This means that the middle half of our documents fit nicely within the junior high to high school range.
+
+In contrast, the whiskers are large compared to their respective boxes. This means that their upper and lower quartile ranges have a lot of variance. For our purposes, we should mostly be concerned with the upper whiskers because these represent the documents with higher grade-level scores. In this plot, all the tests have upper whiskers extending through the collegiate level.
+
+From this, we can conclude that there are a few high-scoring documents that should be revised. As you lower the scores for some of these documents, the smaller the whiskers will become. Ultimately, your goal should be to have the boxes only cover the range of your target audience and to have the whisker not stretch very far beyond the boxes.
+
+Along with the grade-level box plot, a separate box plot for each index test will also be included. Index tests require their own plots because their scaling differs from each other and from grade level tests. Below is a box plot of [Flesch](#flesch-test) scores from a batch:
+
+![](Images/boxindex.png)
+
+As we can see above, the middle half of the documents fall within a marginally acceptable range of 46-61 (60-80 is normally preferred). The upper whisker goes up to 75, meaning that there are a decent number of document in the 61-75 range. Unfortunately, the lower whisker extends all the way to 33—this indicates a fair amount of difficult documents. As with the grade-level plot, this graph helps us conclude that some documents in this batch should be revised to lower their scores.
+
+## Readability Graphs {-#batch-readability-graphs}
+
+Please refer to [Reviewing the Readability Graphs](#reviewing-readability-graphs).
+
+## Reviewing the Words Breakdown {-#reviewing-batch-words}
+
+After opening a project, click on the **Words Breakdown** icon on the project sidebar, then click any of the following subitems:
+
+**Difficult Words**: This list displays percentages of difficult words throughout the documents.
+
+![](Images/batchdifficultwords.png)
+
+Next to each document name, the respective percentages and raw word counts of the following are displayed:
+
+-   Complex (3+ syllable) words
+-   Long (6+ character) words
+-   **SMOG** hard words
+-   **Fog** hard words
+-   **Dale-Chall** unfamiliar words
+-   **Spache** unfamiliar words
+-   **Harris-Jacobson** unfamiliar words
+-   Unfamiliar words for any custom tests
+
+Note that test-specific word counts/percentages (e.g., **Dale-Chall** unfamiliar words) are only included if the respective test is included in the project.
+
+![](Images/batchdifficultwordsverbose.png)
+
+To create a [standard project](#creating-standard-project) for any document in this list, select it and click the **Subproject** button on the **Home** tab.
+
+This is useful for reviewing a particular document in greater detail. Note that when this standard project is created, it will copy all the project settings from the batch project. These options may differ from your [global configurations](#options-overview).
+
+To remove any document in this list from the project, select it and press `CTRL+DELETE` (`⌘+DELETE` on macOS) on your keyboard.
+
+**All Words**: This list displays all the words from the documents and their respective frequency counts.
+
+**All Words (Condensed)**: This list is the same as **All Words**, except that is excludes common words and combines others. In regards to combining words, words with the same root will be merged into a single row. For example, “report,” “reports,” and “reporting” will be combined into one row, with the frequency counts for all three words also combined. As for excluding words, common words (e.g., “the”), numerals, and filenames are not included in this list. (If no words can be combined and there are no common words to ignore, then this list will not be shown.)
+
+## Reviewing Long Sentences {-#reviewing-batch-long-sentences}
+
+After opening a project, click on the **Sentences Breakdown** icon on the project sidebar and click on the **Long Sentences** subitem. This window will display a list of the difficult sentences from your documents.
+
+![](Images/batchlongsentences.png)
+
+Note that if you are ignoring incomplete sentences, then this list will only include the complete sentences. If you need to review all the sentences from the documents, then select the option [Include in analysis and treat as full sentences](#document-analysis). Refer to the [Incomplete Sentences](#how-text-is-excluded) overview to learn more about how **Readability Studio** handles incomplete sentences.
+
+To find the longest sentence, [sort](#column-sorting) the **Longest Sentence Length** column into descending order. As we can see below, the longest sentence is now shown at the top of the list.
+
+![](Images/batchlongestsentence.png)
+
+If the test scores are indicating that the documents are too difficult for your target audience, then review the overly-long sentences. You should consider splitting these sentences into smaller ones and revising any [wordy items](#reviewing-batch-wordiness).
+
+To view a specific document's longest sentence, double-click on its row in this list. A vertical display of that document's longest sentence will be shown:
+
+![](Images/batchlongestsentenceviewitem.png)
+
+To create a [standard project](#creating-standard-project) for any document in this list, select it and click the **Subproject** button on the **Home** tab.
+
+This is useful for reviewing a particular document in greater detail. Note that when this standard project is created, it will copy all the project settings from the batch project. These options may differ from your [global configurations](#options-overview).
+
+To remove any document in this list from the project, select it and press `CTRL+DELETE` (`⌘+DELETE` on macOS) on your keyboard.
+
+Note that if there are no long sentences in your documents, then this window will not be included.
+
+## Grammar {-#reviewing-batch-grammar}
+
+### Reviewing Conjunction-Starting Sentences {-#reviewing-batch-conjunction-sentences}
+
+After opening a project, click on the **Grammar** icon on the project sidebar and select the **Conjunction-Starting Sentences** subitem. This window will display a list of all sentences that begin with coordinating conjunctions.
+
+![](Images/batchconjunctionstart.png)
+
+Beginning sentences with conjunctions is not an issue for most writing, but should be avoided with professional publications. This feature is provided to grammatically improve professional documents.
+
+The conjunctions that **Readability Studio** searches for are the most common coordinating conjunctions. These are: **and**, **nor**, **but**, **or**, **yet**, and **so**. Generally for technical writing, only separate clauses should begin with these words, not sentences. Any sentence that begins with these words should be combined with the previous sentence. Another option would be to replace the conjunction. For example, “and” could be replaced by “In addition.”
+
+This search does not affect readability calculations, so this analysis is applied to all sentences. [Incomplete sentences](#how-text-is-excluded) will be reviewed for this, even if they are excluded from the analysis.
+
+To view a specific document's conjunction-starting sentences, double-click on its row in this list. A vertical display of that document's conjunction-starting sentences will be shown:
+
+![](Images/batchconjunctionviewitem.png)
+
+To create a [standard project](#creating-standard-project) for any document in this list, select it and click the **Subproject** button on the **Home** tab.
+
+This is useful for reviewing a particular document in greater detail. Note that when this standard project is created, it will copy all the project settings from the batch project. These options may differ from your [global configurations](#options-overview).
+
+To remove any document in this list from the project, select it and press `CTRL+DELETE` (`⌘+DELETE` on macOS) on your keyboard.
+
+Note that if there are no conjunction-starting sentences in your documents, then this window will not be included.
+
+### Reviewing Lowercased Sentences {-#reviewing-batch-lowercased-sentences}
+
+After opening a project, click on the **Grammar** icon on the project sidebar and select the **Lowercased Sentences** subitem. This window will display a list of all sentences that begin with lowercased words (which is usually a typo).
+
+![](Images/batchlowersentences.png)
+
+Lowercased-sentence searching does not affect readability calculations, so this analysis is applied to all sentences. [Incomplete sentences](#how-text-is-excluded) will be reviewed for this, even if they are excluded from the analysis.
+
+Also note that if the option [Sentences must begin with capitalized words](#options-sentence-deduction) is enabled, then this feature will be limited to sentences that begin new paragraphs. If you want to search for any possible sentences that begin with lowercased words, then you should leave this option unchecked.
+
+To view a specific document's lowercased sentences, double-click on its row in this list. A vertical display of that document's lowercased sentences will be shown:
+
+![](Images/batchlowersentenceviewitem.png)
+
+To create a [standard project](#creating-standard-project) for any document in this list, select it and click the **Subproject** button on the **Home** tab.
+
+This is useful for reviewing a particular document in greater detail. Note that when this standard project is created, it will copy all the project settings from the batch project. These options may differ from your [global configurations](#options-overview).
+
+To remove any document in this list from the project, select it and press `CTRL+DELETE` (`⌘+DELETE` on macOS) on your keyboard.
+
+Note that if there are no lowercased sentences in your documents, then this window will not be included.
+
+### Reviewing Repeated Words {-#reviewing-batch-repeated-words}
+
+After opening a project, click on the **Grammar** icon on the project sidebar and select the **Repeated Words** subitem. This window will display a list of all repeated words from each document.
+
+![](Images/batchrepeatedwords.png)
+
+A repeated word is when the same word appears after itself (which is usually a typo). For example:
+
+> “Gabi gave her report **to to** the manager.”
+
+In this case, the word “to” was accidentally typed twice. **Readability Studio** will consider this a repeated word and include it in this list.
+
+Repeated words are bound to the sentence level. If the same word ends one sentence and begins the next, then it will not be considered a repeated word. For example, “Nancy” would not be considered a repeated word here:
+
+> “Gabi gave her sales report to **Nancy. Nancy** really appreciated Gabi's promptness.”
+
+Repeated word searching does not affect readability calculations, so this analysis is applied to all sentences. [Incomplete sentences](#how-text-is-excluded) will be reviewed for this, even if they are excluded from the analysis.
+
+If a repeated word occurs more than once in a document, then a multiplication factor will be shown next to it. For example, if “the the” occurs two separate times in a given document, then this will be displayed as “the the*2”:
+
+![](Images/batchrepeatedmultiple.png)
+
+To view a specific document's repeated words, double-click on its row in this list. A vertical display of that document's repeated words will be shown:
+
+![](Images/batchrepeatedviewitem.png)
+
+To create a [standard project](#creating-standard-project) for any document in this list, select it and click the **Subproject** button on the **Home** tab.
+
+This is useful for reviewing a particular document in greater detail. Note that when this standard project is created, it will copy all the project settings from the batch project. These options may differ from your [global configurations](#options-overview).
+
+To remove any document in this list from the project, select it and press `CTRL+DELETE` (`⌘+DELETE` on macOS) on your keyboard.
+
+Note that if there are no repeated words in your documents, then this window will not be included.
+
+Refer to [Repeated Word Exceptions](#repeated-word-exceptions) for more information on how repeated words are detected.
+
+### Reviewing Article Mismatches {-#reviewing-batch-articles}
+
+After opening a project, click on the **Grammar** icon on the project sidebar and select the **Article Mismatches** subitem. This window will display a list of articles (i.e., “a” and “an”) that do not match their following noun.
+
+![](Images/batcharticlemismatches.png)
+
+Article mismatch searching does not affect readability calculations, so this analysis is applied to all sentences. [Incomplete sentences](#how-text-is-excluded) will be reviewed for this, even if they are excluded from the analysis.
+
+If an article mismatch occurs more than once in a document, then a multiplication factor will be shown next to it. For example, if “a electronic” occurs twice in a given document, then this will be displayed as “a electronic*2.”
+
+To view a specific document's article mismatches, double-click on its row in this list. A vertical display of that item will be shown:
+
+![](Images/viewitemarticlemismatch.png)
+
+To create a [standard project](#creating-standard-project) for any document in this list, select it and click the **Subproject** button on the **Home** tab.
+
+This is useful for reviewing a particular document in greater detail. Note that when this standard project is created, it will copy all the project settings from the batch project. These options may differ from your [global configurations](#options-overview).
+
+To remove any document in this list from the project, select it and press `CTRL+DELETE` (`⌘+DELETE` on macOS) on your keyboard.
+
+Note that if there are no article mismatches in your documents, then this window will not be included.
+
+Refer to [Article Mismatching](#article-mismatching) to learn more.
+
+### Reviewing Misspellings {-#reviewing-batch-misspellings}
+
+After opening a project, click on the **Grammar** icon on the project sidebar and select the **Misspellings** subitem. This window will display a list of all misspellings from each document.
+
+![](Images/batchmisspellings.png)
+
+This search is applied to all sentences. [Incomplete sentences](#how-text-is-excluded) will be reviewed for this, even if they are excluded from the analysis.
+
+If a misspelling occurs more than once in a document, then a multiplication factor will be shown next to it. For example, if “specfy” occurs two separate times in a given document, then this will be displayed as “specfy*2.”
+
+To view a specific document's misspellings, right click on its row and select **View Item**. A vertical display of that document's misspellings will be shown:
+
+![](Images/batchmisspellingsviewitem.png)
+
+To add any document's misspellings to your dictionary, double click on its row to show the **Add to Dictionary** dialog. From here, you can add any (or all) reported misspellings to your dictionary. Afterwards, these words will no longer be reported as misspelled.
+
+To create a [standard project](#creating-standard-project) for any document in this list, select it and click the **Subproject** button on the **Home** tab.
+
+This is useful for reviewing a particular document in greater detail. Note that when this standard project is created, it will copy all the project settings from the batch project. These options may differ from your [global configurations](#options-overview).
+
+To remove any document in this list from the project, select it and press `CTRL+DELETE` (`⌘+DELETE` on macOS) on your keyboard.
+
+Note that if there are no misspellings in your documents, then this window will not be included.
+
+### Reviewing Wording Errors {-#reviewing-batch-wording-errors}
+
+After opening a project, click on the **Grammar** icon on the project sidebar and select the **Wording Errors** subitem. This window will display a list of misused phrases and possible grammatically incorrect wording from each document.
+
+![](Images/batchwordingerrors.png)
+
+This search is applied to all sentences. [Incomplete sentences](#how-text-is-excluded) will be reviewed for this, even if they are excluded from the analysis.
+
+If a wording error occurs more than once in a document, then a multiplication factor will be shown next to it. For example, if “other then” occurs two separate times in a given document, then this will be displayed as “other then*2.”
+
+To view a specific document's wording errors, double click on its row. A vertical display of that document's wording errors will be shown:
+
+![](Images/batchwordingerrorsviewitem.png)
+
+To create a [standard project](#creating-standard-project) for any document in this list, select it and click the **Subproject** button on the **Home** tab.
+
+This is useful for reviewing a particular document in greater detail. Note that when this standard project is created, it will copy all the project settings from the batch project. These options may differ from your [global configurations](#options-overview).
+
+To remove any document in this list from the project, select it and press `CTRL+DELETE` (`⌘+DELETE` on macOS) on your keyboard.
+
+Note that if there are no wording errors in your documents, then this window will not be included.
+
+### Reviewing Redundant Phrases {-#reviewing-batch-redundant-phrases}
+
+After opening a project, click on the **Grammar** icon on the project sidebar and select the **Redundant Phrases** subitem. This window will display a list of redundant phrases from the documents. Suggested replacements will also be shown next to each phrase in this list.
+
+![](Images/batchredundantphrases.png)
+
+A redundant phrase is when a modifier expresses something that is already implied by the noun it is modifying. For example:
+
+> “Gabi and Nancy **collaborated together** on the report. They should have a **brief summary** ready later today.”
+
+In this case, “collaborated together” and “brief summary” are redundant. Collaboration already implies two or more people working together. The “together” in this phrase adds nothing and just makes this sentence wordy. As for “brief summary,” summaries are always brief; hence, the redundancy in that phrase. **Readability Studio** will consider these as redundant phrases and include them in this list.
+
+Redundant phrases are bound to the sentence level. If part of a phrase ends one sentence and begins the next, then it will not be considered a redundant phrase. For example, “brief. Summaries” would not be considered a redundant phrase here:
+
+> “Gabi and Nancy need to be **brief. Summaries** are very important before presenting a report.”
+
+Redundant-phrase searching does not affect readability calculations, so this analysis is applied to all sentences. [Incomplete sentences](#how-text-is-excluded) will be reviewed for this, even if they are excluded from the analysis.
+
+If a redundant phrase occurs more than once in a document, then a multiplication factor will be shown next to it. For example, if “brief summary” occurs three separate times in a given document, then this will be displayed as “brief summary*3”:
+
+![](Images/batchredundantphrasesmultiple.png)
+
+To view a specific document's redundant phrases, double-click on its row in this list. A vertical display of that document's redundant phrases will be shown:
+
+![](Images/batchredundantphrasesviewitem.png)
+
+To create a [standard project](#creating-standard-project) for any document in this list, select it and click the **Subproject** button on the **Home** tab.
+
+This is useful for reviewing a particular document in greater detail. Note that when this standard project is created, it will copy all the project settings from the batch project. These options may differ from your [global configurations](#options-overview).
+
+To remove any document in this list from the project, select it and press `CTRL+DELETE` (`⌘+DELETE` on macOS) on your keyboard.
+
+Note that if there are no redundant phrases in your documents, then this window will not be included.
+
+### Reviewing Wordy Items {-#reviewing-batch-wordiness}
+
+After opening a project, click on the **Grammar** icon on the project sidebar and select the **Wordy Items** subitem. This window will display a list of wordy phrases and difficult words from the documents. Suggested replacements will also be shown next to each phrase in this list.
+
+![](Images/batchwordyphrases.png)
+
+A phrase is wordy if it contains too many words or contains complex words that could be replaced by simpler ones. For example:
+
+> “**Over the course of** the season, Nancy's batting average improved.”
+
+In this case, “Over the course of” is wordy. **Readability Studio** will consider this a wordy phrase and offer “during” or “throughout” as replacements.
+
+Wordy phrases are bound to the sentence level. If part of a phrase ends one sentence and begins the next, then it will not be considered a wordy phrase. For example, “a host of” would not be considered a wordy phrase here because it is in two separate sentences:
+
+> “For the party, we need **a host. Of** course he should be very funny.”
+
+Wordy-item searching does not affect readability calculations, so this analysis is applied to all sentences. [Incomplete sentences](#how-text-is-excluded) will be reviewed for this, even if they are excluded from the analysis.
+
+If a wordy item occurs more than once in a document, then a multiplication factor will be shown next to it. For example, if “result in” occurs two separate times in a given document, then this will be displayed as “result in*2”:
+
+![](Images/batchwordyphrasesmultiple.png)
+
+To view a specific document's wordy item, double-click on its row in this list. A vertical display of that item will be shown:
+
+![](Images/viewitemwordyphrase.png)
+
+To create a [standard project](#creating-standard-project) for any document in this list, select it and click the **Subproject** button on the **Home** tab.
+
+This is useful for reviewing a particular document in greater detail. Note that when this standard project is created, it will copy all of the project settings from the batch project. These options may differ from your [global configurations](#options-overview).
+
+To remove any document in this list from the project, select it and press `CTRL+DELETE` (`⌘+DELETE` on macOS) on your keyboard.
+
+Note that if there are no wordy items in your documents, then this window will not be included.
+
+### Reviewing Clichés {-#reviewing-batch-cliches}
+
+After opening a project, click on the **Grammar** icon on the project sidebar and select the **Clichés** subitem. This window will display a list of clichés from the documents. Suggested replacements will be shown next to each cliché in this list.
+
+![](Images/batchcliches.png)
+
+A cliché is an overused phrase that should be avoided if you are writing professional documents. In the context of readability, clichés can be unfamiliar to early (young or ESL) readers. For example:
+
+> “He is acting very **off the wall**.”
+
+In this case, “off the wall” is a cliché and will be listed with “unusual” being offered as a replacement. A phrase such as this is considered “tired” and would not appear professional in a business report or technical document. Also, those new to English may not understand what this expression means. If you are targeting early readers, then you should avoid clichés for clarity.
+
+Clichés are bound to the sentence level. If part of a phrase ends one sentence and begins the next, then it will not be considered a cliché.
+
+Cliché searching does not affect readability calculations, so this analysis is applied to all sentences. [Incomplete sentences](#how-text-is-excluded) will be reviewed for this, even if they are excluded from the analysis.
+
+If a cliché occurs more than once in a document, then a multiplication factor will be shown next to it. For example, if “off the wall” occurs four separate times in a given document, then this will be displayed as “off the wall*4”:
+
+![](Images/batchclichemultiple.png)
+
+To view a specific document's clichés, double-click on its row in this list. A vertical display of that document's clichés will be shown:
+
+![](Images/batchclichesviewitem.png)
+
+To create a [standard project](#creating-standard-project) for any document in this list, select it and click the **Subproject** button on the **Home** tab.
+
+This is useful for reviewing a particular document in greater detail. Note that when this standard project is created, it will copy all the project settings from the batch project. These options may differ from your [global configurations](#options-overview).
+
+To remove any document in this list from the project, select it and press `CTRL+DELETE` (`⌘+DELETE` on macOS) on your keyboard.
+
+Note that if there are no clichés in your documents, then this window will not be included.
+
+### Reviewing Passive Voice {-#reviewing-batch-passive-voices}
+
+After opening a project, click on the **Grammar** icon on the project sidebar and select the **Passive Voice** subitem. This window will display a list of all passive phrases from each document.
+
+![](Images/batchpassivevoice.png)
+
+This search is applied to all sentences. [Incomplete sentences](#how-text-is-excluded) will be reviewed for this, even if they are excluded from the analysis.
+
+If a passive phrase occurs more than once in a document, then a multiplication factor will be shown next to it. For example, if “be chosen” occurs twice in a given document, then this will be displayed as “be chosen*2.”
+
+To view a specific document's passive phrases, right click on its row and select **View Item**. A vertical display of that document's passive phrases will be shown:
+
+![](Images/batchpassivevoiceviewitem.png)
+
+To create a [standard project](#creating-standard-project) for any document in this list, select it and click the **Subproject** button on the **Home** tab.
+
+This is useful for reviewing a particular document in greater detail. Note that when this standard project is created, it will copy all the project settings from the batch project. These options may differ from your [global configurations](#options-overview).
+
+To remove any document in this list from the project, select it and press `CTRL+DELETE` (`⌘+DELETE` on macOS) on your keyboard.
+
+Note that if there are no passive phrases in your documents, then this window will not be included.
+
+### Reviewing Overused Words (x Sentence) {-#reviewing-batch-overused-words}
+
+After opening a project, click on the **Grammar** icon on the project sidebar and select the **Overused Words (x Sentence)** subitem. This window will display a list of all sentences that use the same word multiple times from each document. (These are more of style suggestions, rather than grammar issues.) When reviewing these, it is recommended to change some of the repeated words to add more variety to your content.
+
+![](Images/batchoverusedwordsbysentence.png)
+
+This search is applied to all sentences. [Incomplete sentences](#how-text-is-excluded) will be reviewed for this, even if they are excluded from the analysis.
+
+Numeric words, proper nouns, single-letter words, and common words (e.g., “the”) are excluded from this review.
+
+Note that if there are no sentences with overused words in your document, then this window will not be included.
+
+To view a specific document's overused words, right click on its row and select **View Item**. A vertical display of that document's overused words will be shown.
+
+To create a [standard project](#creating-standard-project) for any document in this list, select it and click the **Subproject** button on the **Home** tab.
+
+This is useful for reviewing a particular document in greater detail. Note that when this standard project is created, it will copy all the project settings from the batch project. These options may differ from your [global configurations](#options-overview).
+
+To remove any document in this list from the project, select it and press `CTRL+DELETE` (`⌘+DELETE` on macOS) on your keyboard.
+
+Note that if there are no passive phrases in your documents, then this window will not be included.
+
+## Reviewing the Dolch Section {-#reviewing-batch-dolch}
+
+After opening a project, click on the **Dolch Sight Words** icon on the project sidebar. There will be three lists available: **Dolch Word Coverage**, **Dolch Words**, and **Non-Dolch Words**.
+
+The **Dolch Word Coverage** subitem will display the **Dolch** word [coverage](#reviewing-dolch-stats) for each document:
+
+![](Images/batchdolchcoverage.png)
+
+Next to each document name, the respective coverage percentage for each category is displayed.
+
+The **Dolch Words** subitem will display the percentages of **Dolch** words used in each document:
+
+![](Images/batchdolchwords.png)
+
+Note that the raw counts of these words will also be included if [Extended Information](#options-summary-report) is enabled.
+
+The **Non-Dolch Words** subitem will display the percentages of words from each document that do not appear on any of the **Dolch** lists:
+
+![](Images/batchdolchnonwords.png)
+
+Note that the raw counts of these words will also be included if [Extended Information](#options-summary-report) is enabled.
+
+To create a [standard project](#creating-standard-project) for any document in this list, select it and click the **Subproject** button on the **Home** tab.
+
+This is useful for reviewing a particular document in greater detail. Note that when this standard project is created, it will copy all the project settings from the batch project. These options may differ from your [global configurations](#options-overview).
+
+To remove any document in this list from the project, select it and press `CTRL+DELETE` (`⌘+DELETE` on macOS) on your keyboard.
+
+## Reviewing the Warnings {-#reviewing-batch-warnings}
+
+After opening a project, click on the **Warnings** icon on the project sidebar to view any warnings issued while loading the documents:
+
+![](Images/Warnings.png)
+
+Warnings that may occur are:
+
+-   A document could not be found.
+-   A document was not analyzed because it did not contain enough text.
+-   A test could not be run for a particular document.
+
+To create a [standard project](#creating-standard-project) for any document in this list, select it and click the **Subproject** button on the **Home** tab.
+
+This is useful for reviewing a particular document in greater detail. Note that when this standard project is created, it will copy all the project settings from the batch project. These options may differ from your [global configurations](#options-overview).
+
+To remove any document in this list from the project, select it and press `CTRL+DELETE` (`⌘+DELETE` on macOS) on your keyboard.
+
+Note that if no warnings occurred while loading the project, then this window will not be included.

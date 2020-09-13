@@ -1,0 +1,90 @@
+# Additional Features {#additional-features}
+
+This chapter discusses additional features not directly related to readability. This includes features such crawling and downloading documents from a website, as well as logging and command line options.
+
+## Web Harvester {-#web-harvester}
+
+The **Web Harvester** dialog enables you to gather (and optionally download) links from a website.
+
+#### Harvesting {-}
+
+**Websites to Harvest**: Enter the base webpage(s) to begin your search into this list.
+
+**Depth Level**: Enter the depth of the website that you want to crawl. A level of 1 will gather only the links from the main page, whereas a level of 2 will gather all the links from the main page and then gather all links from those pages.
+
+**File types to include**: Select from this list the types of documents to include from the website.
+
+**Verify pages' mimetypes before harvesting**: Check this option to verify each page's content type as you crawl. This is useful for when a webpage's file extension is different from its content type. For example, an URL with the file extension “.doc” that is actually an HTML page will not be crawled as an HTML page. Checking this option will fix this by having the harvester explicitly verify the page's content, even if it has a known file extension. The drawback of selecting this option is that it will degrade harvesting performance.
+
+**Domain Restriction**: Select from this list the domain restriction that you want to use.
+
+- **Not restricted to any domain**: Select this option to harvest all links from the website, regardless of domain.
+- **Domain restricted**: Select this option to only harvest links with the same domain as the webpage you specify (e.g., "company.com").
+- **Subdomain restricted**: Select this option to only harvest links with the same subdomain as the base webpage (e.g., "sales.company.com").
+- **Restricted to user-defined domain(s)**: Select this option to only harvest links from a provided list of domains. If folders are included in a specified domain, then the harvesting will be restricted to that folder. For example, if “www.news.mybusiness.com/articles” is specified, then only files from the folder “articles” in the subdomain “www.news.mybusiness.com” will be harvested.
+- **Restricted to external domains**: Select this option to only harvest links from domains other than the webpage that you specify.
+
+**User-defined Domain(s)**: Enter all user-defined domains in this list. This option is only applicable if domain restriction is set to user-defined domains.
+
+**User Agent**: Enter into this field your user agent. The user agent is the name of the client program that is sent to a website as you crawl it.
+
+#### Download {-}
+
+These options enable you to download the files from the website prior to analyzing them. Rather than analyzing the files directly from the website, the application will analyze the local files. If [file linking](#options-document) is enabled, then the project will link to these local files instead of the website.
+
+This option is recommended if you need to make edits to the files before analyzing them. It may also be recommended to improve performance, as analyzing local files will be faster than reading them from a website.
+
+If you intend to review a website and need to always analyze its latest changes, then it is not recommended to download the website. Rather, you should analyze the website directly and enable file linking. To directly analyze the website, uncheck the option **Download files locally**.
+
+**Download files locally**: Select this option to download the files from the website locally.
+
+**Folder to download files to**: Enter in this field the folder path where the website's files should be downloaded.
+
+**Use website's folder structure**: Select this option to organize the downloaded files into a folder structure similar to the website's folder structure. Deselecting this option will download the files into a flat folder structure.
+
+**Minimum file size to download (in Kbs.)**: Enter into this field the minimum size (in kilobytes) that a file must be for it to be downloaded.
+
+## Command Line Options {-#command-line-options}
+
+The following command line options are available for **Readability Studio**:
+
+|     |     |
+| --- | --- |
+| \"**filename**\" | Opens **filename**, which can be the path to a project or document. If the path supplied is a folder, then a [batch project](#creating-batch-project) will be created using all documents found recursively within the folder. |
+| `-bg` | Path to an image file to use as **filename**'s graph background. (This option only applies if a **filename** parameter is supplied.) Also, **filename** must refer to a document or folder (i.e., not a **Readabilty Studio** project file) that will be used to create a new project. |
+| `-loglevel=n` | This parameter specifies how much information to [log](#log-report) while the program is running, where **n** is a value between 0-2 (0 = none, 1 = standard, 2 = verbose). |
+| `-help` | Displays the help. |
+
+The following example would open the document “PatientAgreement.rtf” and use the image “Sunset.png” as the graphs' background:
+
+`ReadStudio "C:\Documents\PatientAgreement.rtf" -bg "C:\Images\Sunset.png"`
+
+This example would tell the program to log the maximum level of information while running:
+
+`ReadStudio -loglevel=2`
+
+Note that verbose logging can also be enabled by holding down the `SHIFT` button on your keyboard while the program opens.
+
+## Log Report {-#log-report}
+
+While it is running, **Readability Studio** logs various diagnostic information. This information can provide details such as:
+
+-   The location of where the program is loading its license and settings files
+-   Parsing errors encountered while reading documents (e.g., malformed HTML files)
+-   Warnings and errors encountered while performing analyses
+-   The paths of documents being analyzed (verbose mode only)
+-   Information about the operating system (e.g., OS version, default font, etc.)
+
+The log's level of detail is controlled by either the [command line](#command-line-options) or by holding down the `SHIFT` button on your keyword while the program starts. (Holding `SHIFT` instructs the program to use maximum, verbose logging.)
+
+To view this diagnostic information, go to the **Tools** tab on the ribbon, then click **Log Report** under the **Tools & Settings** section. From the **Log Report** dialog, you can review, save, and print any of this information.
+
+The messages in this report are displayed such that:
+
+-   General messages have a plain (white) background
+-   Warnings have a yellow background
+-   Errors have a red background
+
+This information can be useful if you are experiencing issues with loading a document.
+
+Please note that this log is neither saved nor transmitted by the program, and does not include personal information. Also, this log is cleared from memory when the program closes. If you wish to save your current session's log report, you must save it from this dialog before exiting the application.

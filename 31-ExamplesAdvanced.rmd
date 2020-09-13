@@ -1,0 +1,201 @@
+# Advanced Examples
+
+In this chapter, we will step through how to exclude text from an analysis. After that, we will continue with examples showing how to customize graphs and create test bundles.
+
+## Excluding Text from an Analysis {-#ExcludingTextFromAnalysis}
+
+When reviewing a document, it is usually preferable to ignore certain items, such as headers and citations (refer to the [Text Exclusion](#how-text-is-excluded) topic for more information). In this example, we will discuss the various methods for excluding these items.
+
+The first step is to open the example file **Danielson-Bryan**. From the **Help** tab, click the **Example Documents** button and then select **Danielson-Bryan** from the menu. When the **New Project Wizard** appears, leave the defaults and click **Finish**. A warning about an incomplete sentence being included because of its length will appear:
+
+![](Images/NonGenerated/ExclusionExampleIncompleteSentWarning.png)
+
+For now click **OK**, we will review this sentence later in this example.
+
+Once the project is loaded, on the **Home** tab click the **Properties** button under the **Project** section. On the **Properties** dialog, click **Analysis** on the sidebar and select **Document Indexing**. Uncheck all the options shown below and click **OK**:
+
+![](Images/ExclusionExampleAllExcluded.png)
+
+Next, click **Grammar** on the project's sidebar and then click **Highlighted Report**. In this window, any text that is being excluded will be highlighted gray. For example, note that the header “Danielson-Bryan 1 Test” is excluded, as shown below:
+
+![](Images/ExclusionExampleHeaderExcluded.png)
+
+Scroll midway down the document and note how another header, an equation, and a table are also excluded. However, a couple of items in this block are being included that shouldn't be:
+
+![](Images/ExclusionExamplePartialExcluded.png)
+
+The first is the sentence “Where:.” Sentences that end with a semicolon and are followed by a list will normally be considered valid. In this case though, we will want to exclude this sentence too. Open the **Properties** dialog again, click **Analysis** and select **Document Indexing**. Check the option **Aggressively deduce lists**, as shown below:
+
+![](Images/ExclusionExampleAggressiveList.png)
+
+Checking this option will exclude any valid sentence (containing less than 10 words) that is inside of a block of incomplete sentences. Click **OK** and note how “Where:” is now excluded:
+
+![](Images/ExclusionExampleWhereExcluded.png)
+
+The next item to note is the sentence “Number of characters...”. This is really an item in a table that is missing a period, so we should be excluding it. However, currently it is being included because it contains more than 15 words. To adjust this, go back to the **Document Indexing** options for this project. Change the value for **Include incomplete sentences containing more than [15] words** to a higher value (e.g., “20”) and click **OK**:
+
+![](Images/ExclusionExampleIncompLengthValue.png)
+
+Note how the “Number of characters...” sentence is now excluded:
+
+![](Images/ExclusionExampleLongSentenceExcluded.png)
+
+Now scroll to the bottom of the report window and note the copyright notice:
+
+![](Images/ExclusionExampleCopyrightIncluded.png)
+
+Go to the **Document Indexing** options, check **Also exclude copyright notices**, and click **OK**:
+
+![](Images/ExclusionExampleCopyrightExcluded.png)
+
+Now this copyright notice will be excluded from the analysis:
+
+![](Images/ExclusionExampleCopyrightExcludedNow.png)
+
+Along with incomplete sentences, specific types of words can also be excluded. For example, at the bottom of this window note the hyperlink “http://www.jstor.org/.” To exclude this, go to the **Document Indexing** options, check **Also exclude Internet and file addresses**, and click **OK**:
+
+![](Images/ExclusionExampleUrlExcluded.png)
+
+Note how “http://www.jstor.org/” is now excluded:
+
+![](Images/ExclusionExampleUrlExcludedNow.png)
+
+Other items, such as proper nouns and numbers can also be excluded. Go to the **Document Indexing** options, check **Also exclude numerals** and **Also exclude proper nouns**, and click **OK**. Then scroll to the top of the report window. First note how numbers, such as the page citation and computer series, are now excluded:
+
+![](Images/ExclusionExampleNumbersExcludedNow.png)
+
+Also note how proper nouns, such as “Danielson-Bryan” and “UNIVAC,” are now excluded:
+
+![](Images/ExclusionExampleProperExcludedNow.png)
+
+You can also exclude specific words and phrases. From the **Document Indexing** options, click the edit button in the **Words & phrases to exclude** section:
+
+![](Images/ExclusionExampleEditListButton.png)
+
+In the **Edit Phrase List** dialog, either double click the grid or click the add item button to begin adding words or phrases to exclude. In one line enter “punctuation,” and in another line enter “sentence length”:
+
+![](Images/ExclusionExampleCustomWords.png)
+
+Click **OK** and all instances of “punctuation” and “sentence length” are now excluded:
+
+![](Images/ExclusionExampleCustomWordsExcludedNow.png)
+
+Separate instances of “sentence” and “length” will still be included, they will only be excluded if they appear together to form the phrase “sentence length.” Refer to [document indexing options](#document-analysis) for more on how custom word/phrase exclusion works.
+
+Note that when excluding individual words, these words are treated as if they are not in the document at all. This means that excluding words will affect the sentences that they appear in. For example, by excluding “Danielson-Bryan,” “1,” and “206”, the first sentence will have a word count of 20 instead of 23.
+
+Another section of text that could be excluded is the citation at the bottom. Go to the **Document Indexing** options, check **Also exclude trailing citations** and click **OK**. Scroll to the bottom of the document and note how everything below the header “Citations” is now excluded:
+
+![](Images/ExclusionExampleCitationExcluded.png)
+
+At this point, all that remains in the analysis is the actual prose—all “noise” from the document has been filtered out.
+
+::: {.tip}
+
+All the options discussed here are also available on the **Document** tab of the ribbon.
+:::
+
+## Excluding Placeholders and Blocks of Text {-#excluding-placeholders}
+
+Continuing from the [previous example](#ExcludingTextFromAnalysis), we will now discuss how to exclude specific blocks of text.
+
+The first step is to open the example file **Press Release**. From the **Help** tab, click the **Example Documents** button and then select **Press Release** from the menu. When the **New Project Wizard** appears, leave the defaults and click **Finish**.
+
+Once the project is loaded, click **Grammar** on the project's sidebar and then click **Highlighted Report**. In this window, any text that is being excluded will be highlighted gray. For example, an indented list is being excluded, as shown below:
+
+![](Images/ExclusionTagsExampleListExcluded.png)
+
+However, note that are a few placeholders in this file, such as “<Product>”:
+
+![](Images/ExclusionTagsExampleNotExcluding.png)
+
+We will want to exclude these items because they will not be in the final draft. However, because these are valid words and sentences (i.e., they are not headers, list items, etc.), then the [standard exclusion features](#options-text-exclusion) will not remove them. Also, using a list of exclusion words may be too aggressive. For example, adding “product” to an exclusion list will remove the “<Product>,” but it will also exclude any other instance of “product.” Also, the last paragraph is valid, but because it is just a comment we will want to exclude this also. For these situations, will we need to use tagged-block exclusion.
+
+Open the **Properties** dialog, click **Analysis** and select **Document Indexing**. Set the option **Exclude text between** to **< and >**, as shown below:
+
+![](Images/ExclusionTagsExampleOptions.png)
+
+Selecting this option will exclude text in between pairs of angle brackets. Click **OK** and note how the placeholders and final paragraph are now excluded:
+
+![](Images/ExclusionTagsExampleExcluding.png)
+
+::: {.tip}
+
+All the options discussed here are also offered on the **Document** tab of the ribbon.
+:::
+
+## Customizing a Graph {-#customizing-a-graph}
+
+In this example, we will discuss the various ways to change the appearance of a graph.
+
+The first step is to open the example file **Chocolate Eclairs**. From the **Help** tab on the ribbon, click the **Example Documents** button and then select **Chocolate Eclairs** from the menu. When the **New Project Wizard** appears, leave the defaults and click **Finish**.
+
+Once the project has finished loading, select **Words Breakdown** on the sidebar, then click **Word Counts** beneath that. A bar chart showing a breakdown of word categories will be displayed:
+
+![](Images/ExampleGraphDefault.png)
+
+Now we will customize the appearance of this graph. One change that we can make is to reorder the columns in this bar chart. On the **Home** tab, click the **Sort** button under the **Edit** section. Select **Sort Descending** from the menu and note that the bars are now shown from largest to smallest from the origin:
+
+![](Images/ExampleGraphSorted.png)
+
+Next, let's change the background of the graph. On the **Home** tab, click the **Background** button under the **Edit** section. Select **Color...** from the menu. When the color selection dialog appears, select a new color (e.g., purple) and click **OK**. After selecting your new color, check the option **Apply Fade** from this menu.
+
+Now the graph will have a purple background with a gradient effect:
+
+![](Images/ExampleGraphBackgroundColorChanged.png)
+
+Next, click the **Background** button again and select **Image** from the menu. When the image selection dialog appears, choose an image and click **OK**.
+
+Now this image will be shown as the background for your graphs:
+
+![](Images/ExampleGraphBackgroundImageChangedTooOpaque.png)
+
+By default, the image will be shown fully opaque. For lighter images this will look fine, but darker images (like the one shown above) will make it difficult to read the graph. Click the **Background** button and select **Image Opacity...** from the menu. On the **Set Opacity** dialog, slide the opacity down to 100. Click **OK**.
+
+Now this image will be translucent and the graph labels will be much easier to read:
+
+![](Images/ExampleGraphBackgroundImageChanged.png)
+
+Next, we will want to apply a light color to the plot area. Click the **Background** button and select **Plot Area Color...** from the menu and select a new color. Then, select **Opacity...** from this menu and set it to 40. Click **OK**.
+
+Now the plot area of the graph will have a light blue applied to it:
+
+![](Images/ExamplePlotBackgroundColorChanged.png)
+
+Next, let's put a [watermark](#watermark-and-logo) across our graph. Click the **Watermark** button in the **Edit** section. Enter “INTERNAL USE ONLY” in the **Watermark** dialog and click **OK**.
+
+Note how this label is now lightly written across the graph:
+
+![](Images/ExampleWatermarkChanged.png)
+
+Now let's put a company logo on our graph. Click the **Logo** button in the **Edit** section. Select an image and click **OK**.
+
+Now this image will be shown in the bottom right corner of the graph:
+
+![](Images/ExampleLogoChanged.png)
+
+Next, we can change the direction of the bars. Click the **Orientation** button in the **Edit** section. Select **Vertical** from the menu.
+
+Now the bars will be arranged vertically:
+
+![](Images/ExampleBarChartOrientationChanged.png)
+
+Finally, let's change how the bars are drawn. Click the **Bar Style** button in the **Edit** section and select **Color fade, bottom to top**.
+
+The bars will now have a fading color painted across them, rather than the default glassy look:
+
+![](Images/ExampleBarChartEffectsChanged.png)
+
+## Creating a Test Bundle {-}
+
+[Test bundles](#test-bundles) are a convenient way to add multiple tests to a project at once. In this example, we will create a test bundle named “4F” which includes the [**F**ry](#fry-test), [**F**ORCAST](#forcast-test), [**F**og](#gunning-fog-test), and [**F**lesch-Kincaid](#flesch-kincaid-test) tests. The first step is to select the **Readability** tab, click the **Bundles** button, and select **Add...** from the menu. This will open the **Add Test Bundle** dialog:
+
+![](Images/TestBundle.png)
+
+Enter the name “4F” into the **Bundle Name** text field. Next, select the **Standard Tests** page and check the **Fry**, **FORCAST**, **Fog**, and **Flesch-Kincaid** tests, as shown below:
+
+![](Images/TestBundle4F.png)
+
+Click the **OK** button to accept.
+
+To use the bundle, first open any project. Next, select the **Readability** tab, click the **Bundles** button, and select **4F** from the menu. Now the program will replace all tests within the project with the tests from the “4F” bundle.

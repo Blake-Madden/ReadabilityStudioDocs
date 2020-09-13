@@ -1,0 +1,115 @@
+# (PART) Appendix {-}
+
+# References
+
+## Bibliography {-#bibliography}
+
+Amstad, Toni. “Wie Verstandlich Sind Unsere Zeitungen?” Diss. Universitat Zurich, 1978.
+
+Anderson, Jonathan. *Analysing the Readability of English and Non-English Texts in the Classroom with Lix*. Australian Reading Association, 1981.
+
+———. “Lix and Rix: Variations of a Little-Known Readability Index.” *Journal of Reading*, vol. 26, no. 6, 1983, pp. 490-96.
+
+Aquino, Milagros R. “The Validity of the Miller-Coleman Readability Scale.” *Reading Research Quarterly*, vol. 4, no. 3, Spring 1969, pp. 342-57.
+
+Baldwin, R. Scott and Rhonda K. Kaufman. “A Concurrent Validity Study of the Raygor Readability Estimate.” *Journal of Reading*, vol. 23, no. 2, 1979, pp. 148-53.
+
+Bamberger, Richard, and Erich Vanecek. *Lesen-Verstehen-Lernen-Schreiben: Die Schwierigkeitsstufen von Texten in deutscher Sprache*. Jugend und Volk/Diesterweg/Sauerländer, 1984.
+
+Björnsson, C.H. “Readability of Newspapers in 11 Languages.” *Reading Research Quarterly*, vol. 18, no. 4, 1983, pp. 480-97.
+
+Björnsson, C.H., and Birgit Hård af Segerstad. *Lix på franska och tio andra språk*. Stockholm: Pedagogiskt centrum Stockholms skolförvaltning, 1979.
+
+Bormuth, John R. “Readability: A New Approach.” *Reading Research Quarterly*, vol. 1, no. 3, Spring 1966, pp. 79-132.
+
+———, comp. United States. Department of Health, Education, & Welfare. *Development of Readability Analyses*. University of Chicago, 1969.
+
+Carver, Ronald P. “Measuring Readability Using DPR Units.” *Journal of Reading*, vol. 27, no. 4, 1985, pp. 303-16.
+
+Caylor, John S., Thomas G. Sticht, Lynn C. Fox, and J. Patrick Ford, comp. United States. Office of the Chief of Research and Development. *Methodologies for Determining Reading Requirements of Military Occupational Specialties*. Human Resources Research Organization, 1973.
+
+Chall, Jeanne S., and Edgar Dale. *Manual for the New Dale-Chall Readability Formula*. Brookline Books, 1995.
+
+———. *Readability Revisited: The New Dale-Chall Readability Formula*. Brookline Books, 1995.
+
+Coleman, Meri, and T.L. Liau. “A computer readability formula designed for machine scoring.” *Journal of Applied Psychology*, vol. 60, no. 2, 1975, pp. 283-84.
+
+Contreras, Alfonso, Rafael García-Alonso, Marta Echenique, and Fedora Daye-Contreras. “The SOL Formulas for Converting SMOG Readability Scores Between Health Education Materials Written in Spanish, English, and French.” *Journal of Health Communications*, vol. 4, 1999, pp. 21-29.
+
+Crawford, Alan. “A Spanish Language Fry-Type Readability Procedure: Elementary Level.” *Bilingual Education Paper Series*, vol. 7, no. 8, 1984, pp. 1-17.
+
+Cuayáhuitl, Heriberto. “A Syllabification Algorithm for Spanish.” *Lecture Notes in Computer Science*, vol. 2945, 2004, pp. 412-15.
+
+Danielson, Wayne A., and Sam Dunn Bryan. “Computer Automation of Two Readability Formulas.” *Journalism Quarterly*, vol. 40, 1963, pp. 201-06.
+
+Dale, Edgar and Jeanne S. Chall. “A Formula for Predicting Readability.” *Educational Research Bulletin*, vol. 27, no. 1, 1948, pp. 11-20, 28
+
+DeCicco, Laura. “Exploring ggplot2 Boxplots - Defining Limits and Adjusting Style.” *Water Data For The Nation Blog*, 10 Aug. 2018, waterdata.usgs.gov/blog/boxplots/. Accessed 28 Aug. 2020.
+
+Dolch, E.W. “A Basic Sight Vocabulary.” *Elementary School Journal*, vol. 36, no. 6, 1936, pp. 456-460.
+
+Fang, Irving. “The ‘Easy Listening Formula’.” *Journal of Broadcasting*, vol. 10, no. 1, 1966-1967, pp. 63-68.
+
+Farr, James N., James J. Jenkins, and Donald G. Paterson. “Simplification of the Flesch Reading Ease Formula.” *Journal of Applied Psychology*, vol. 35, no. 5, 1951, pp. 333-37.
+
+Flesch, Rudolf Franz. *The Art of Readable Writing*. Harper & Row, 1949.
+
+———. *How to Write Plain English: A Book for Lawyers and Consumers*. Harper & Row, 1979.
+
+Fry, Edward. “A Readability Formula That Saves Time.” *Journal of Reading*, vol. 11, no. 7, 1968, pp. 513-16, 575-78.
+
+———. *Elementary Reading Instruction*. McGraw Hill, 1977.
+
+———. “Fry's Readability Graph: Clarifications, Validity, and Extension to Level 17.” *Journal of Reading*, vol. 21, no. 3, 1977, pp. 242-52.
+
+Gilliam, Bettye, Sylvia C. Peña, and Lee Mountain. “The Fry Graph Applied to Spanish Readability.” *Reading Teacher*, vol. 33, 1980, pp. 426-30.
+
+Gunning, Robert. *The Technique of Clear Writing*. Rev. ed., McGraw-Hill, 1968.
+
+Harris, A. J., and M. D. Jacobson. *Basic Reading Vocabularies*. Macmillan, 1982.
+
+Hooke, Lydia R., Philip J. DeLeo, and Capt. Sharon L. Slaughter. United States. Air Force Human Resources Lab. *Readability of Air Force Publications: A Criterion Referenced Evaluation. Final Report*. USAF Systems Command, 1979.
+
+Kibby, Michael W. “Test Review: The Degrees of Reading Power.” *Journal of Reading*, vol. 24, no. 5, 1981, pp. 416-27.
+
+Kincaid, J. Peter, Lt. Robert P. Fishburne, Jr., Richard L. Rogers, and Brad S. Chissom. United States. Naval Air Station Memphis, Research Branch. *Derivation of New Readability Formulas (Automated Readability Index, Fog Count and Flesch Reading Ease Formula) for Navy Enlisted Personnel*. Naval Technical Training Command, 1975.
+
+Kincaid, J. Peter, James A. Aagard, and John W. O'Hara. United States. Naval Training Analysis and Evaluation Group. *Development and Test of a Computer Readability Editing System (CRES). Final Report, June 1978 through December 1979.* Naval Training Analysis and Evaluation Group, 1980.
+
+Kincaid, J. Peter, John Van Deusen, Georgelle Thomas, Robert Lewis, Patricia Tanner Anderson, Linda Moody. United States. Department of Health, Education, & Welfare and Office of Education. *Use of the Automated Readability Index for Evaluating Peer-Prepared Material for Use in Adult Reading Education*. Georgia Southern College, 1972.
+
+McCall, W.A., and L.M. Crabbs. *Standard Test Lessons in Reading*. Columbia University Teachers College, 1926.
+
+———. *Standard Test Lessons in Reading*. Rev. ed., Columbia University Teachers College, 1950.
+
+———. *Standard Test Lessons in Reading*. Rev. ed., Columbia University Teachers College, 1961.
+
+Miller, G.R., and E.B. Coleman “A Set of Thirty-Six Prose Passages Calibrated for Complexity.” *Journal of Verbal Learning and Verbal Behavior*, vol. 6, 1967, pp. 851-54.
+
+McAlpine, Rachel. “From Plain English to Global English.” *Quality Web Content*. 2006. www.webpagecontent.com/arc\_archive/139/5/. Accessed 22 Aug. 2010.
+
+McLaughlin, Harry. “SMOG grading - a new readability formula.” *Journal of Reading*, vol. 12, no. 8, 1969, pp. 639-46.
+
+Powers, R.D., W.A. Sumner, and B.E. Kearl. “A recalculation of four adult readability formulas.” *Journal of Educational Psychology*, vol. 49, no. 2, 1958, pp. 99-105.
+
+Raygor, Alton L. *The Raygor Readability Estimate: A Quick and Easy Way to Determine Difficulty*, National Reading Conference, Inc., 1977.
+
+Renström, Jan. “Texte und Textbehandlung im Deutschunterricht.” *Die Unterrichtspraxis / Teaching German*, vol. 13, no. 2, Autumn 1980, pp. 150-55.
+
+Schulz, Renate A. “Literature and Readability: Bridging the Gap in Foreign Language Reading.” *The Modern Language Journal*, vol. 65, no. 1, Spring 1981, pp. 43-53.
+
+Smith, E. A., and R. J. Senter. United States. Air Force. *Automated Readability Index*. Wright-Patterson AFB, Aerospace Medical Division, 1967.
+
+Smith, Lawrence L. “Using a Modified SMOG in Primary and Intermediate Grades.” *Reading Horizons*, vol. 24, no. 2, 1984, pp. 129-32.
+
+Spache, George. “A new readability formula for primary-grade reading materials.” *The Elementary School Journal*, vol. 53, no. 7, 1953, pp. 410-13.
+
+———. *Good Reading for Poor Readers*. Garrard Publishing Company, 1974.
+
+Stocker, Leonard P. “Increasing the Precision of the Dale-Chall Readability Formula.” *Reading Improvement*, vol. 8, no. 3, Winter 1971-1972, pp. 87-89.
+
+Vari-Cartier, Patricia. “Development and Validation of a New Instrument to Assess the Readability of Spanish Prose.” *The Modern Language Journal*, vol. 65, no. 2, 1981, pp. 141-48.
+
+Wheeler, Lester R., and Edwin H. Smith. “A Practical Readability Formula for the Classroom Teacher in Elementary Grades.” *Elementary English*, vol. 31, 1954, pp. 397-99.
+
+Wolinski, John T., and Maurice W. Bozman. “Using the Raygor Readability Estimate for Social Studies.” *The Social Studies*, vol. 74, no. 5, 1983, pp. 215-19.

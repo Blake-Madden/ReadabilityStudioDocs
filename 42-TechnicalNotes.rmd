@@ -1,0 +1,197 @@
+# Technical Notes
+
+## Glossary {-#glossary}
+
+**Cloze test**: A [cloze](#cloze) procedure is a test given to a student to measure his/her comprehension ability.
+
+**Interrobang**: The combination of a question mark and exclamation point at the end of a sentence. Interrobongs are shown as either two separate characters (“?!” or “!?”) or a single character (‽).
+
+**Normalization**: The adjustment of values from different scales into a common scale.
+
+For example, say that a test requires a 100-word sample, but your document is 200 words and contains 22 sentences. Rather than taking a 100-word sample, the full document's measurements can be normalized and used instead. In this case, we need to normalize 200 words to be 100 words, which we can do by multiplying it by 0.5.
+
+```{r, eval=F, echo=T}
+200 * 0.5 = 100
+```
+
+Next, we multiply the 22 sentences by the same factor of 0.5 and arrive at a measure of 11 sentences.
+
+```{r, eval=F, echo=T}
+22 * 0.5 = 11
+```
+
+Now that the document's measurements have been normalized to the required sample's scale, we can use these values (100 words and 11 sentences) with the test.
+
+**Polysyllabic**: Technically speaking, this means any word containing more than 1 syllable. In the case of some tests (e.g., **Wheeler-Smith**), this term is used in this context. Other tests’ sources, however, tend to use this term to describe words of 3 or more syllables. Because of this inconsistency, it is recommended to avoid using this term and instead state explicitly the intention of a given test.
+
+**Unit**: A section of text ending with a period, exclamation mark, question mark, interrobang, colon, semicolon, or dash. Lengthy, complex sentences generally contain more than one unit.
+
+Please refer to [Statistical Terminology](#stat-terms) for information regarding statistics.
+
+## Statistical Terminology {-#stat-terms}
+
+### Range {-#stats-range}
+
+-   **Minimum**: the lowest value in a range of data.
+-   **Maximum**: the highest value in a range of data.
+-   **Range**: the distance between the lowest and highest values in a range of data.
+-   **Valid N**: the number of valid values in a range of data.
+
+### Dispersion {-}
+
+-   **Lower quartile**: the value at the 25% percentile. This is the value separating the lower quarter of the values from the rest of the values.
+-   **Mean**: the average value of a range of data. This is calculated by adding all the values and dividing the total by N.
+-   **Median**: the middle point separating the lower and upper halves of a range of data. This is calculated by sorting the values and taking the value in middle if the number of values is odd. If the number of values is even, then the means of the two middle points is taken.
+-   **Mode**: the most frequently occurring value in a range of data. Note that a range can have multiple modes if two or more unique values appear the same number of times.
+-   **Outlier**: an extreme (high or low) value that is numerically distant from the rest of the data.
+-   ***r***: The correlation between two factors (e.g., sentence length vs. reading level). *r* values range from -1.0 to 1.0, where -1.0 is a perfect negative correlation and 1.0 is a perfect positive correlation.
+-   ***r²***: The correlation between two factors (e.g., sentence length vs. reading level) when more than one independent factor is tested against the dependent (i.e., a multiple regression). *r²* values range from 0.0 to 1.0, where 0.0 indicates no correlation and 1.0 is a perfect positive correlation.
+-   **Standard deviation**: the variability (or spread) of the values. A low standard deviation indicates that most values are close to the data's mean. In contrast, a high standard deviation indicates values that stray far from the mean.
+-   **Upper quartile**: the value at the 75% percentile. This is the value separating the upper quarter of the values from the rest of the values.
+-   **Variance**: another measurement of variability, which is standard deviation squared.
+
+### Distribution {-}
+
+-   **Kurtosis**: the peakedness of a distribution. Zero indicates a normal distribution, a negative value indicates a flat distribution, and a positive value indicates a sharp curve.  
+
+```{r, echo=F, fig.cap='Negative and positive kurtosis', fig.align='center'}
+knitr::include_graphics("Images/NonGenerated/Kurtosis.svg")
+```
+
+-   **Skewness**: the asymmetry of the probability distribution. A zero skew indicates a symmetrical balance in the distribution. A negative skew indicates that the left side of the distribution is longer and most of the values are concentrated on the right. A positive skew indicates that the right side of the distribution is longer and most of the values are concentrated on the left.  
+
+```{r, echo=F, fig.cap='Negative and positive skewness', fig.align='center'}
+knitr::include_graphics("Images/NonGenerated/Skewness.svg")
+```
+
+## Box Plots {-#box-plots}
+
+Box plots are used to display the distribution of data, where:
+
+-   The middle point is the median.
+-   The box is the 25th-75th percentile range.
+-   The whiskers are the non-outlier range.
+
+Outlier values that do not fall within these areas are plotted outside of the whiskers.
+
+```{r, echo=F, fig.cap="Visual representation of a box plot's layout,<br />adapted from DeCicco (“Exploring ggplot2 boxplots”)", fig.align='center'}
+
+# translatable content
+WhiskerLabel1 <- "Largest value within 1.5 times\ninterquartile range above\n75th percentile"
+WhiskerLabel2 <- "Smallest value within 1.5 times\ninterquartile range below\n25th percentile"
+Outlier <- "Outlier value"
+QuartileLabels <- c("25th percentile", "50th percentile\n(median)", "75th percentile")
+IQRLabel <- "Interquartile\nrange"
+# end translatable content
+
+library(tidyverse)
+library(cowplot)
+
+# Code adapted from https://waterdata.usgs.gov/blog/boxplots/, by Laura DeCicco
+
+ggplot_box_legend <- function(family = "serif"){
+
+  # Create data to use in the boxplot legend:
+  set.seed(100)
+
+  sample_df <- data.frame(parameter = "test",
+                          values = sample(500))
+
+  # Extend the top whisker a bit:
+  sample_df$values[1:100] <- 701:800
+  # Make sure there's only 1 lower outlier:
+  sample_df$values[1] <- -350
+
+  # Function to calculate important values:
+  ggplot2_boxplot <- function(x){
+
+    quartiles <- as.numeric(quantile(x,
+                                     probs = c(0.25, 0.5, 0.75)))
+
+    names(quartiles) <- QuartileLabels
+
+    IQR <- diff(quartiles[c(1,3)])
+
+    upper_whisker <- max(x[x < (quartiles[3] + 1.5 * IQR)])
+    lower_whisker <- min(x[x > (quartiles[1] - 1.5 * IQR)])
+
+    upper_dots <- x[x > (quartiles[3] + 1.5*IQR)]
+    lower_dots <- x[x < (quartiles[1] - 1.5*IQR)]
+
+    return(list("quartiles" = quartiles,
+                "25th_pct" = as.numeric(quartiles[1]),
+                "50th_pct" = as.numeric(quartiles[2]),
+                "75th_pct" = as.numeric(quartiles[3]),
+                "IQR" = IQR,
+                "upper_whisker" = upper_whisker,
+                "lower_whisker" = lower_whisker,
+                "upper_dots" = upper_dots,
+                "lower_dots" = lower_dots))
+  }
+
+  # Get those values:
+  ggplot_output <- ggplot2_boxplot(sample_df$values)
+
+  # Lots of text in the legend, make it smaller and consistent font:
+  update_geom_defaults("text",
+                       list(size = 3,
+                            hjust = 0,
+                            family = family))
+  # Labels don't inherit text:
+  update_geom_defaults("label",
+                       list(size = 3,
+                            hjust = 0,
+                            family = family))
+
+  # Create the legend:
+  # The main elements of the plot (the boxplot, error bars, and count)
+  # are the easy part.
+  # The text describing each of those takes a lot of fiddling to
+  # get the location and style just right:
+  explain_plot <- ggplot() +
+    stat_boxplot(data = sample_df,
+                 aes(x = parameter, y=values),
+                 geom ='errorbar', width = 0.3) +
+    geom_boxplot(data = sample_df,
+                 aes(x = parameter, y=values),
+                 width = 0.3, fill = "lavenderblush2") +
+    theme_minimal(base_size = 5, base_family = family) +
+    geom_segment(aes(x = 2.3, xend = 2.3,
+                     y = ggplot_output[[2]],
+                     yend = ggplot_output[[4]])) +
+    geom_segment(aes(x = 1.2, xend = 2.3,
+                     y = ggplot_output[[2]],
+                     yend = ggplot_output[[2]])) +
+    geom_segment(aes(x = 1.2, xend = 2.3,
+                     y = ggplot_output[[4]],
+                     yend = ggplot_output[[4]])) +
+    geom_text(aes(x = 2.4, y = ggplot_output[[3]]),
+              label = IQRLabel, fontface = "bold",
+              vjust = 0.4) +
+    geom_text(aes(x = c(1.17,1.17),
+                  y = c(ggplot_output[["upper_whisker"]],
+                        ggplot_output[["lower_whisker"]]),
+                  label = c(WhiskerLabel1,
+                            WhiskerLabel2)),
+              fontface = "bold", vjust = 0.9) +
+    geom_text(aes(x = c(1.17),
+                  y =  ggplot_output[["lower_dots"]],
+                  label = Outlier),
+              vjust = 0.5, fontface = "bold") +
+    geom_label(aes(x = 1.17, y = ggplot_output[["quartiles"]],
+                   label = names(ggplot_output[["quartiles"]])),
+               vjust = c(0.4,0.85,0.4),
+               fill = "white", label.size = 0) +
+    ylab("") + xlab("") +
+    theme(axis.text = element_blank(),
+          axis.ticks = element_blank(),
+          panel.grid = element_blank(),
+          aspect.ratio = 4/3,
+          plot.title = element_text(hjust = 0.5, size = 10)) +
+    coord_cartesian(xlim = c(1.4,3.1), ylim = c(-600, 900))
+  
+  return(explain_plot)
+}
+
+plot(ggplot_box_legend())
+```
