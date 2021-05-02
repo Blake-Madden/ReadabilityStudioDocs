@@ -1,0 +1,17 @@
+# Prerequisites
+*.d
+
+# build and output files
+*.log
+obj/
+html/
+_raw/
+
+
+# Executables and temp files
+*.exe
+*.out
+*.app
+*.pdf
+.Rproj.user
+

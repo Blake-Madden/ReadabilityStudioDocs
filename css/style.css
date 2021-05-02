@@ -43,6 +43,24 @@
   content: "⚠️Warning";
   font-weight: bold;  
 }
+
+/* displays a label as a keyboard button.*/
+.key {
+  display: inline-block;
+  margin: 0 .1em;
+  padding: .1em .6em;
+  font-family: var(--ff-sans);
+  font-size: 11px;
+  line-height: var(--s-prose-line-height);
+  color: black;
+  text-shadow: 0 1px 0 white;
+  background-color: #ededed;
+  border: 1px solid black;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px rgb(12 13 14 / 15%), inset 0 1px 0 0 #fff;
+  overflow-wrap: break-word;
+}
+
 /* prevent note sections from being split by a page break.*/
 @media print {
 .note, .tip, .warning {

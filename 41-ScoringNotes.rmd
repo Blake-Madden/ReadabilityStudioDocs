@@ -192,6 +192,6 @@ Note that this also applies to any [custom tests](#creating-custom-test) that tr
 
 ## Adding Words to Familiar-Word Tests {-}
 
-Although both [Dale-Chall](#dale-chall-test) and [Spache](#spache-test) were updated in recent years, some may find that these tests lack contemporary words known by young readers. For example, some computer terms that 4th graders are fluent in are not considered familiar by these tests. Proper nouns such as **Microsoft** and **Macbook** will be considered familiar, but some non-proper computer words (e.g., megabyte) will not.
+Although both [Dale-Chall](#dale-chall-test) and [Spache](#spache-test) were updated in recent years, some may find that these tests lack contemporary words known by young readers. For example, some computer terms that 4^th^ graders are fluent in are not considered familiar by these tests. Proper nouns such as **Microsoft** and **Macbook** will be considered familiar, but some non-proper computer words (e.g., megabyte) will not.
 
 **Readability Studio** offers [custom tests](#creating-custom-test) as a solution for extending these tests. You can create a new test with **Dale-Chall**, **Spache**, or **Harris-Jacobson** as a template, and append your own word list to it. When you perform this custom test, any word on the standard word list or your word list will be considered familiar. Refer to the [Creating a Custom Test](#creating-custom-test) overview for more information.

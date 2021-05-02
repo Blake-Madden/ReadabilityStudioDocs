@@ -2,9 +2,9 @@
 
 **Readability Studio** offers many customizable features, including:
 
--   How documents are parsed and analyzed.
--   How results (e.g., statistics and graphs) are displayed.
--   How projects connect to the documents they are analyzing.
+- How documents are parsed and analyzed.
+- How results (e.g., statistics and graphs) are displayed.
+- How projects connect to the documents they are analyzing.
 
 These options can be configured both globally and for individual projects. Note that changing options globally will affect all future projects, but will not affect currently existing projects.
 
@@ -16,48 +16,54 @@ If you wish to change options for an individual project, then click the **Proper
 
 ![](Images/linktofile.png)
 
-## General Settings {-}
+## General Settings {-#options-general-settings}
 
 The options on this page manage the program's general settings.
 
-### Settings Management {-}
+### Settings {-}
 
 **Import**: Click this button to import program settings and defaults from a file.
 
 **Export**: Click this button to export the current program settings to a file. This includes all your settings on the [Options](#options-overview) dialog, your defaults for the [New Project Wizard](#creating-standard-project), and your printer headers & footers.
 
-### Private Data {-}
+**Reset**: Click this button to reset the program settings to the defaults.
 
-**Clear**: Click this button to clear private data (e.g., most recently used files).
+### Themes {-}
 
-### Warnings {-#WarningsDisplay}
+Select a theme from this list to apply custom colors to the program. On macOS and Windows, this can include colors for the summary report windows. On Windows, this can also affect the colors for the ribbon, sidebars, and start page.
 
-**Customize**: Click this button to display the **Warnings Display** dialog. This dialog enables you to display or suppress various warnings, including:
+Note that selecting **System** will reset the program colors to the system's defaults.
 
--   **Warn about projects being opened as read-only.** This warning is shown when a project will be opened as read-only. If a project is read-only, then you cannot save any changes to it.
--   **Prompt when removing a test from a project.** When removing a readability test from a project, a prompt will be shown to confirm this action.
--   **Prompt about documents containing less than 20 words.** If you attempt to analyze a document containing less than 20 valid words, then you will be prompted whether you wish to continue. If a document contains such a low amount of text, then most tests will produce questionable results.
--   **Warn about documents containing less than 100 words.** This warning is shown when a document being analyzed contains less than 100 valid words. If a document contains a low amount of text, then some factors (e.g., word and syllable counts) will be standardized for some tests.
--   **Warn about documents that contain sentences split by paragraph breaks.** This warning is shown when a document being analyzed contains what appears to be sentences with paragraph breaks in them. In this situation, the sentences will not be indexed properly, and it is recommended to fix to the document.
--   **Warn about documents that contain long incomplete sentences that will be included in the analysis.** This warning is shown when a document being analyzed contains sentences that, although missing terminating punctuation, will be included in the analysis because of their length. To change this behavior, adjust the option [Include incomplete sentences containing more than [15] words](#options-text-exclusion).
--   **Prompt if a document should switch to include sentences in the analysis.** If a document is excluding a high volume of incomplete sentences, then you will be prompted about switching to include those sentences in the analysis.
--   **Prompt if a custom NDC test's proper noun settings differ from the standard NDC test.** By default, [New Dale-Chall](#dale-chall-test) requires that the first instance of each proper noun be seen as unfamiliar. If you are creating a custom **New Dale-Chall** test which uses different proper-noun logic, then you will be prompted whether this is your intent.
--   **Prompt about New Dale-Chall using a different text exclusion method from the system default.** By default, **New Dale-Chall** uses its own method for excluding text, which may differ from the system default's method. This message will be shown to warn about this.
--   **Prompt about Harris-Jacobson using a different text exclusion method from the system default.** By default, **Harris-Jacobson** uses its own method for excluding text, which may differ from the system default's method. This message will be shown to warn about this.
--   **Warn when a custom test's numeral settings will be adjusted.** Some tests (e.g., [Harris-Jacobson](#harris-jacobson)) require numerals to be excluded from the analysis. This warning will be shown if a custom test needs its numeral settings adjusted to take such rules into account.
--   **Warn about German stemming not supporting proper noun detection.** This warning is shown when creating a custom test that uses German stemming and treats proper nouns as familiar.
--   **Warn about unique-value histograms requiring midpoint axis labels.** If you specify **unique values** as your histogram [bin sorting](#options-histograms) method, then midpoint interval display will need to be used. Because each bin (i.e., bar) will represent only one value, the histograms will not have ranges of values for its intervals. Therefore, cutpoints will not be applicable and midpoint axis labels will be used instead. If you have cutpoints as the interval type and choose unique-value bin sorting, then this warning will be shown before adjusting the interval display.
--   **Prompt about auto-searching for missing files.** By default, projects link to the documents that they analyze. When you open a project, the document will be reanalyzed to include any recent changes. If the document cannot be found, then the program will ask if it should search for a document by the same name. This search will be relative to the project file's location. Unchecking this option will suppress this prompt and the program will automatically search for and load the document.
--   **Prompt about re-linking to a document that has been embedded.** By default, a project will link to the document it is analyzing. When you click the **Edit Document** button (on the **Home** tab), the document will be opened in its default editor. However, if you have chosen to embed the document into the project, then this prompt will appear. It will ask you whether you want to change this setting to link to the document and then edit it, or it continue embedding the document and then edit the embedded text. Note that if you continue to embed the document and edit the embedded text, then your changes will only be reflected in your project—your changes will not appear in the original document.
--   **Prompt about failing to load a project that is missing its embedded text.** When opening a project which embeds the document's text, then an error message will be shown if the embedded text is not found within the project.
--   **Check to see if ClearType is turned on.** If ClearType is turned off, then the program will ask you about enabling it. ClearType makes fonts smoother and easier to read. This applies to the Windows^®^ edition of **Readability Studio** only.
+### Warnings & Prompts {-#WarningsDisplay}
+
+**Customize**: Click this button to display the **Warnings & Prompts Display** dialog. This dialog enables you to display or suppress various warnings and prompts, including:
+
+- **Warn about projects being opened as read-only.** This warning is shown when a project will be opened as read-only. If a project is read-only, then you cannot save any changes to it.
+- **Prompt when removing a test from a project.** When removing a readability test from a project, a prompt will be shown to confirm this action.
+- **Prompt about documents containing less than 20 words.** If you attempt to analyze a document containing less than 20 valid words, then you will be prompted whether you wish to continue. If a document contains such a low amount of text, then most tests will produce questionable results.
+- **Warn about documents containing less than 100 words.** This warning is shown when a document being analyzed contains less than 100 valid words. If a document contains a low amount of text, then some factors (e.g., word and syllable counts) will be standardized for some tests.
+- **Warn about documents that contain sentences split by paragraph breaks.** This warning is shown when a document being analyzed contains what appears to be sentences with paragraph breaks in them. In this situation, the sentences will not be indexed properly, and it is recommended to fix to the document.
+- **Warn about documents that contain long incomplete sentences that will be included in the analysis.** This warning is shown when a document being analyzed contains sentences that, although missing terminating punctuation, will be included in the analysis because of their length. To change this behavior, adjust the option [Include incomplete sentences containing more than [15] words](#options-text-exclusion).
+- **Prompt if a document should switch to include sentences in the analysis.** If a document is excluding a high volume of incomplete sentences, then you will be prompted about switching to include those sentences in the analysis.
+- **Prompt if a custom NDC test's proper noun settings differ from the standard NDC test.** By default, [New Dale-Chall](#dale-chall-test) requires that the first instance of each proper noun be seen as unfamiliar. If you are creating a custom **New Dale-Chall** test which uses different proper-noun logic, then you will be prompted whether this is your intent.
+- **Prompt about New Dale-Chall using a different text exclusion method from the system default.** By default, **New Dale-Chall** uses its own method for excluding text, which may differ from the system default's method. This message will be shown to warn about this.
+- **Prompt about Harris-Jacobson using a different text exclusion method from the system default.** By default, **Harris-Jacobson** uses its own method for excluding text, which may differ from the system default's method. This message will be shown to warn about this.
+- **Warn when a custom test's numeral settings will be adjusted.** Some tests (e.g., [Harris-Jacobson](#harris-jacobson)) require numerals to be excluded from the analysis. This warning will be shown if a custom test needs its numeral settings adjusted to take such rules into account.
+- **Warn about German stemming not supporting proper noun detection.** This warning is shown when creating a custom test that uses German stemming and treats proper nouns as familiar.
+- **Warn about unique-value histograms requiring midpoint axis labels.** If you specify **unique values** as your histogram [bin sorting](#options-histograms) method, then midpoint interval display will need to be used. Because each bin (i.e., bar) will represent only one value, the histograms will not have ranges of values for its intervals. Therefore, cutpoints will not be applicable and midpoint axis labels will be used instead. If you have cutpoints as the interval type and choose unique-value bin sorting, then this warning will be shown before adjusting the interval display.
+- **Prompt about auto-searching for missing files.** By default, projects link to the documents that they analyze. When you open a project, the document will be reanalyzed to include any recent changes. If the document cannot be found, then the program will ask if it should search for a document by the same name. This search will be relative to the project file's location. Unchecking this option will suppress this prompt and the program will automatically search for and load the document.
+- **Prompt about re-linking to a document that has been embedded.** By default, a project will link to the document it is analyzing. When you click the **Edit Document** button (on the **Home** tab), the document will be opened in its default editor. However, if you have chosen to embed the document into the project, then this prompt will appear. It will ask you whether you want to change this setting to link to the document and then edit it, or it continue embedding the document and then edit the embedded text. Note that if you continue to embed the document and edit the embedded text, then your changes will only be reflected in your project—your changes will not appear in the original document.
+- **Prompt about failing to load a project that is missing its embedded text.** When opening a project which embeds the document's text, then an error message will be shown if the embedded text is not found within the project.
+- **Check to see if ClearType is turned on.** If ClearType is turned off, then the program will ask you about enabling it. ClearType makes fonts smoother and easier to read. This applies to the Windows^®^ edition of **Readability Studio** only.
+- **Prompt for labels when adding documents to a batch project.** When creating a batch project, you have the option of applying either a custom label or the documents' descriptions to a set of files. If this prompt is disabled, then the documents' descriptions will always be used.
 
 The following are informational messages shown interactively in the program:
 
--   Prompt about how windows can be exported from the **Save** button.
--   Prompt about how double-clicking a test can show its help.
--   Prompt about how background images will not be upscaled beyond their original size when zooming into a graph.
--   Prompt about how settings are embedded in projects and how to edit them.
+- Prompt about how windows can be exported from the **Save** button.
+- Prompt about how double-clicking a test can show its help.
+- Prompt about how background images will not be upscaled beyond their original size when zooming into a graph.
+- Prompt about how settings are embedded in projects and how to edit them.
+
 
 ## Project {-#project-settings}
 
@@ -113,7 +119,7 @@ The options here specify how your documents should be parsed and analyzed.
 
 **Longer than [22] words**: Select this option to consider sentences overly long if they exceed the word count specified in this field. The default word count is 22, but can be changed as needed.
 
-Considering sentences with more than 22 words to be overly long is based on research from Kincaid (*Developement*, 19).
+Considering sentences with more than 22 words to be overly long is based on research from Kincaid (*Development*, 19).
 
 **Outside sentence outlier range**: Select this option to consider sentences overly long if they are comparatively longer than other sentences in the document. This option is only recommended for situations where most of the sentences have an acceptable length, but a few (very) long sentences skew the average. This option is useful for finding these extreme sentences.
 
@@ -162,7 +168,7 @@ The options **Ignore blank lines** and **Ignore indenting** are disabled if **Li
 
 ::: {.note}
 
-Lines of text that resemble equations will continue to be marked as incomplete.
+Lines of text that resemble equations will continue to be marked as incomplete. Also, if **Aggressively exclude** is enabled, then list items with more words than this threshold will also continue to be excluded.
 :::
 
 Note that if you are not excluding any text, this option will still take effect for tests which explicitly exclude headers (e.g., **Harris-Jacobson**).
@@ -177,29 +183,34 @@ By default, the question mark would cause the second sentence to be included in 
 
 If **Also exclude trailing citations** is enabled, then checking this option will also cause citation deduction to be more aggressive. By default, only citation blocks in the lower half of the document are excluded. Enabling this option will tell the program to search for citations in the lower three-fourth of the document.
 
-**Also exclude copyright notices**: Select this option to ignore copyright/trademark notices when calculating statistics. Throughout the document, any paragraph consisting of one or two sentences which has a ‘©’ symbol near the beginning is considered a copyright notice.
+**Also exclude copyright notices**: Select this option to ignore copyright and trademark notices when calculating statistics. Throughout the document, any paragraph consisting of one or two sentences which has a ‘©’ symbol near the beginning is considered a copyright notice.
 
 Near the end of the document, the final paragraphs will be more aggressively reviewed. If the last two paragraphs contain one or two sentences and contain phrases such as “All rights reserved” or “copyright” or symbols such as ‘©’ or ‘®’, then they will be considered copyright notices.
 
 **Also exclude trailing citations**: Select this option to ignore a citation section at the end of the document when calculating statistics. If this option is selected, then the program will search for a citation header near the end of the document and exclude any paragraphs after it. A citation header will be any header which contains 5 (or less) words and any of the following labels:
 
--   “Anmerkungen”
--   “Bibliographie”
--   “Bibliography”
--   “Bibliografía”
--   “Citations”
--   “Einzelnachweise”
--   “For More Information”
--   “Literatur”
--   “Literaturverzeichnis”
--   “Para Mas Informacion”
--   “Reference”
--   “References”
--   “Referencias”
--   “Related Publications”
--   “Relación de los Trabajos Publicados”
--   “Textbooks and Cirricula”
--   “Works Cited”
+- “Anmerkungen”
+- “Bibliographie”
+- “Bibliography”
+- “Bibliografía”
+- “Citations”
+- “Einzelnachweise”
+- “For More Information”
+- “Literatur”
+- “Literaturverzeichnis”
+- “Para Mas Informacion”
+- “Reference”
+- “References”
+- “Referencias”
+- “Related Publications”
+- “Relación de los Trabajos Publicados”
+- “Textbooks and Cirricula”
+- “Works Cited”
+
+::: {.note}
+
+The program will stop excluding text after a “References” header if it detects a paragraph that does not appear to be a citation. This is useful for when a references section is in the middle of a document, followed by other content.
+:::
 
 **Also exclude Internet and file addresses**: Select this option to ignore URLs (i.e., Internet addresses) and filepaths. Note that this applies to words inside of complete sentences, not just incomplete. For example:
 
@@ -251,7 +262,10 @@ Note that these options are not available if **Do not exclude any text** is sele
 
 **Sound out each digit**: Select this option to have the program sound out each digit when counting the syllables of numeric words. For example, the word “555-4778” will be considered nine syllables–read as “five-five-five-four-sev-en-sev-en-eight.” As another example, “$52” will be considered four syllables (read as “five-two-doll-ars”).
 
-Note that these options are not applicable if **Also exclude numerals** is checked.
+::: {.note}
+
+These options are not applicable if **Also exclude numerals** is checked.
+:::
 
 ### Edit Word/Phrase List {-#edit-word-list-dialog}
 
@@ -261,9 +275,9 @@ This dialog can edit either a word or phrase list.
 
 After selecting your list file, its words/phrases will be displayed in the grid below the file-path field. In this grid, you can edit your list with the following keyboard commands:
 
--   `DELETE`—removes the selected item(s) from the list.
--   `INSERT`—edits the selected item in the list. Double-clicking an item with the mouse will also edit it.
--   `CTRL+INSERT` (`⌘+INSERT` on macOS) —adds a new item to the list.
+- `r KeyboardButton("DELETE")`—removes the selected item(s) from the list.
+- `r KeyboardButton("INSERT")`—edits the selected item in the list. Double-clicking an item with the mouse will also edit it.
+- `r KeyboardButton("CTRL")`+`r KeyboardButton("INSERT")` (`r macOSCmdButton()`+`r KeyboardButton("INSERT")` on macOS) —adds a new item to the list.
 
 **Add**, **Edit**, and **Remove** buttons are also available above the grid.
 
@@ -339,7 +353,7 @@ These options affect both the [New Dale-Chall](#dale-chall-test) and [PSK Dale-C
 The **text exclusion** option will affect any custom test using the `CustomHarrisJacobson()`, `UnfamiliarHarrisJacobsonWordCount()`, `UniqueUnfamiliarHarrisJacobsonWordCount()`, or `FamiliarHarrisJacobsonWordCount()` functions.
 :::
 
-## Scores {-}
+## Scores {-#options-scores}
 
 The options on this page customize which results to include in the **Readability Scores** section and how grade-level scores and reading ages are displayed. Most readability tests use U.S. K-12 (+college) grade levels to represent their scores; however, **Readability Studio** can display these scores in other formats as well. For example, a score of 4 could be shown as “Key stage 2 (year 5)” if using the **Key Stages** grade scale.
 
@@ -351,16 +365,16 @@ The options on this page customize which results to include in the **Readability
 
 **Grade scale**: Select from this list the grade scale that you wish to use. This will affect:
 
--   The score explanations shown in the [Readability Scores](#reviewing-test-scores) window.
--   The score display shown in the **Readability Scores** window (if **long format** is selected).
--   Selection labels on the **Fry**, **Raygor**, and **GPM** graphs.
--   The [raw and aggregated score](#reviewing-batch-scores) display in **Batch Projects** (if **long format** is selected).
--   The labels on the grade-level [box plot](#reviewing-batch-box-plots).
--   The bin labels on the grade-level [histograms](#reviewing-batch-histograms).
+- The score explanations shown in the [Readability Scores](#reviewing-test-scores) window.
+- The score display shown in the **Readability Scores** window (if **long format** is selected).
+- Selection labels on the **Fry**, **Raygor**, and **GPM** graphs.
+- The [raw and aggregated score](#reviewing-batch-scores) display in **Batch Projects** (if **long format** is selected).
+- The labels on the grade-level [box plot](#reviewing-batch-box-plots).
+- The bin labels on the grade-level [histograms](#reviewing-batch-histograms).
 
 Refer to [Grade Scales](#grade-scales) for a list of available scales.
 
-**Display scores in long format**: Check this to display readability scores in long format (e.g., “2nd grade”) within the score grid.
+**Display scores in long format**: Check this to display readability scores in long format (e.g., “2^nd^ grade”) within the score grid.
 
 #### Reading Age Display {-#reading-age}
 
@@ -388,7 +402,7 @@ The options on this page customize various readability graph settings.
 
 #### Lix Gauge {-#options-lix-gauge}
 
-**Use English translations for German Lix gauge**: Check this to display Schulz’s (53) English translated bracket labels on the [German Lix](#lix-german-technical) guage.
+**Use English translations for German Lix gauge**: Check this to display Schulz’s (53) English translated bracket labels on the [German Lix](#lix-german-technical) gauge.
 
 ## Statistics {-#options-statistics}
 
@@ -424,7 +438,7 @@ The options on this page customize which statistics to include in your reports a
 
 **Explanation**: Check this to include the **Dolch** explanation in the report.
 
-## Words Breakdown {-}
+## Words Breakdown {-#options-words-breakdown}
 
 The options on this page customize which results are included in the [Words Breakdown](#reviewing-word-breakdowns) section.
 
@@ -458,9 +472,11 @@ The options on this page customize which results are included in the [Sentences 
 
 **Long Sentences**: Check this to include the overly-long sentences list in the results.
 
-**Lengths (Spread)**: Check this to include the sentence-lengths box plot in the results.
+**Lengths (Spread)**: Check this to include a sentence-lengths box plot in the results.
 
-**Lengths (Density)**: Check this to include the sentence-lengths [heatmap](#reviewing-sentences-breakdown) in the results.
+**Lengths (Distribution)**: Check this to include a sentence-lengths histogram in the results.
+
+**Lengths (Density)**: Check this to include a sentence-lengths [heatmap](#reviewing-sentences-breakdown) in the results.
 
 ## Grammar {-#options-grammar}
 
@@ -522,6 +538,8 @@ Checking this option will instruct the program to not spell check words such as 
 > He's been takin' that test for five hours. He ain't never goin' to finish.
 
 Checking this option will instruct the program to not consider words such as “takin'” and “goin'” as misspellings.
+
+**Ignore social media hashtags**: Check this to ignore hashtags, such as `#ReadabilityFormulasRock`.
 
 ## Highlighted Reports {-#options-highlighted-reports}
 
@@ -637,7 +655,7 @@ The options on this page customize the title fonts of your graphs.
 
 **Right titles**: Click this button to select the font for the right title in your graphs.
 
-### Bar Charts {-#options-bar-charts}
+## Bar Charts {-#options-bar-charts}
 
 The options on this page customize your bar charts' settings.
 
@@ -667,7 +685,7 @@ The options on this page customize your bar charts' settings.
 
 **Display labels on bars**: Check this to display labels on the bars.
 
-### Histograms {-#options-histograms}
+## Histograms {-#options-histograms}
 
 The options on this page customize the test score histograms included in [batch projects](#creating-batch-project) and the **Syllable Counts** in [standard projects](#creating-standard-project).
 
@@ -707,12 +725,10 @@ Also note that if data for a particular histogram contain four or less unique va
 
 **Grade level/index value rounding**: This option controls how [floating-point](#grade-level-results) values are rounded when being sorted into bins. You may choose from the following options:
 
--   **Round**: Select this option to round grade-level scores up or down (based on their fractional part) when sorting them into the histogram's bins. Values such as 4 and 4.3 will be sorted as 4, whereas 4.5 and 4.9 will be sorted as 5.
--   **Round down**: Select this option to round grade-level scores down when sorting them into the histogram's bins. Values such as 4, 4.3, and 4.9 will be sorted as 4. This selection is recommended.
--   **Round up**: Select this option to round grade-level scores up when sorting them into the histogram's bins. Values such as 4 will be sorted as 4, whereas 4.1, 4.3, and 4.9 will be sorted as 5. This selection is not recommended and should only be used for special cases.
--   **Do not round**: Select this option to not round any grade-level scores. Scores will be sorted into the bins exactly as they appear with their fractional parts. This selection is not recommended and should only be used for special cases.
-
-**Cumulative bins**: Check this for the bars to represent the cumulative number of observations in all the bins up to (and including) the current bin.
+- **Round**: Select this option to round grade-level scores up or down (based on their fractional part) when sorting them into the histogram's bins. Values such as 4 and 4.3 will be sorted as 4, whereas 4.5 and 4.9 will be sorted as 5.
+- **Round down**: Select this option to round grade-level scores down when sorting them into the histogram's bins. Values such as 4, 4.3, and 4.9 will be sorted as 4. This selection is recommended.
+- **Round up**: Select this option to round grade-level scores up when sorting them into the histogram's bins. Values such as 4 will be sorted as 4, whereas 4.1, 4.3, and 4.9 will be sorted as 5. This selection is not recommended and should only be used for special cases.
+- **Do not round**: Select this option to not round any grade-level scores. Scores will be sorted into the bins exactly as they appear with their fractional parts. This selection is not recommended and should only be used for special cases.
 
 #### Bin Display {-}
 
@@ -764,4 +780,4 @@ The options on this page customize the test-score box plots included in [batch p
 
 **Show all data points**: Check this to display all data points on the box and whiskers. If this is unchecked, then only outliers will be shown.
 
-**Box coefficient**: Enter the coefficient here to specify the percentiles range used for the upper and lower control limits. For example, a coefficient of 25 will use the 25th and 75th percentiles range (i.e., the quartiles range).
+**Box coefficient**: Enter the coefficient here to specify the percentiles range used for the upper and lower control limits. For example, a coefficient of 25 will use the 25^th^ and 75^th^ percentiles range (i.e., the quartiles range).

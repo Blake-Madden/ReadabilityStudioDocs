@@ -54,11 +54,17 @@ Your second option is to tell **Readability Studio** which type of industry your
 
 ![](Images/wizardindustry.png)
 
-Your final option is to manually select the tests yourself. To do this, select the **Manually select tests** option. You will then be presented with the **Standard tests** options, where you can select any of the tests that **Readability Studio** has to offer, as shown below:
+Your third option is to manually select the tests yourself. To do this, select the **Manually select tests** option. You will then be presented with the **Standard tests** options, where you can select any of the tests that **Readability Studio** has to offer, as shown below:
 
 ![](Images/wizardtests.png)
 
 The tests available on this page will depend on the project's language. For example, if you are manually selecting Spanish tests, then tests such as [Crawford](#crawford) will be available, but English tests (e.g., [Spache](#spache-test)) will not. Also, some industry and document-type options may not have tests associated with them depending on the selected language.
+
+Your final option is to select a [test bundle](#test-bundles).
+
+![](Images/wizardbundles.png)
+
+Along with adding tests to a project, test bundles also can include [goals](#reviewing-goals) to help with reviewing your scores.
 
 Note that you can always add or remove tests from your project at any time. If you select either the document type or industry options, you are not bound to the tests that **Readability Studio** recommends.
 
@@ -171,6 +177,6 @@ This dialog enables you to import a worksheet (from a spreadsheet) for [batch](#
 
 **All text cells**: Select this option to import the entire worksheet.
 
-**Only highlighted cells**: Select this option to only import the selected cells (which will be highlighted blue). A block of cells can be selected by holding down the left mouse button and dragging the cursor around the block. Individual cells can be selected by holding down the `CTRL` (`⌘` on macOS) button on the keyboard and clicking the cells. Also, entire columns and rows can be selected by clicking the column header or row label, respectively.
+**Only highlighted cells**: Select this option to only import the selected cells (which will be highlighted blue). A block of cells can be selected by holding down the left mouse button and dragging the cursor around the block. Individual cells can be selected by holding down the `r KeyboardButton("CTRL")` (`r macOSCmdButton()` on macOS) button on the keyboard and clicking the cells. Also, entire columns and rows can be selected by clicking the column header or row label, respectively.
 
-Note that selections can also be discontiguous. For example, if you hold down the `CTRL` button and click the column headers “A” and then “D,” then these two columns will be imported.
+Note that selections can also be discontiguous. For example, if you hold down the `r KeyboardButton("CTRL")`` button and click the column headers “A” and then “D,” then these two columns will be imported.

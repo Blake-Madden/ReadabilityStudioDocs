@@ -212,7 +212,7 @@ Finally, click **OK** to save the file.
 Which incomplete-sentence removal method used is controlled by your project's [text exclusion options](#options-text-exclusion).
 :::
 
-### Additional Filtering Options {-}
+### Additional Filtering Options {-#additional-filtering-options}
 
 When exporting a filtered version of your document, the program will first remove incomplete sentences (if applicable). This removal will be based on your project's [text exclusion](#options-text-exclusion) settings. After this text exclusion is applied, additional conversion options will be available from the **Additional Filtering Options** dialog. From this dialog, you can apply the following filters to the exported copy of your document.
 
@@ -294,3 +294,11 @@ will be exported as:
 > “Dr Jones has requested a copy of the S.T.A.R.T report.”
 
 This option is recommended for other programs that may have difficulty deducing sentences properly because of these periods.
+
+**Narrow full-width characters**: Check this option to convert full-width characters to their narrow counterparts. For example:
+
+> “Ｈｅｌｌｏ”
+
+will be exported as:
+
+> “Hello”

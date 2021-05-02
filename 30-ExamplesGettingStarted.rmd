@@ -41,13 +41,13 @@ Now the words will be sorted by syllable count and then by frequency. As illustr
 
 If you are an educator assigning this book to your students, you can export the more difficult words to a report. You can hand this report out to your students and ask them to define these terms before reading the book. This will help prepare them for the book and make it easier and more enjoyable to read.
 
-To do this, click the **Save** button on the **Home** tab and use the **Save As...** dialog to save this list to either an HTML or text file. You can also do this with any of the other difficult word lists, such as the **Spache unfamiliar words** list. Refer to the [Improving Students' Vocabulary](#VocabBuilderExample) example for further details.
+To do this, click the **Save** button on the **Home** tab and use the **Save As...** dialog to save this list to either an HTML or text file. You can also do this with any of the other difficult word lists, such as the **Spache unfamiliar words** list. Refer to the [Improving Students' Vocabulary](#vocab-builder-example) example for further details.
 
-## Improving Students' Vocabulary {-#VocabBuilderExample}
+## Improving Students' Vocabulary {-#vocab-builder-example}
 
 In this example, we will save a list of the more complex words from a book. If you are an educator, you can send this list to your students and ask them to define these words prior to reading the book. This can be a great way to prepare them for future readings, as well as helping them build their overall vocabulary.
 
-Continuing from the [previous example](#book-example), select the top item in the hard word list. Now scroll down to the last word that has five syllables, hold down the `SHIFT` key, and select this word. Now you will have all the words with five or more syllables selected. If there are any words that you want to add or remove from your selection, hold down the `CTRL` key and click on them. Your word list will look like this:
+Continuing from the [previous example](#book-example), select the top item in the hard word list. Now scroll down to the last word that has five syllables, hold down the `r KeyboardButton("SHIFT")` key, and select this word. Now you will have all the words with five or more syllables selected. If there are any words that you want to add or remove from your selection, hold down the `r KeyboardButton("CTRL")` key and click on them. Your word list will look like this:
 
 ![](Images/difficultwords2.png)
 
@@ -88,7 +88,7 @@ This will open the **Select Document to Analyze** dialog. Choose the file that y
 
 ::: {.note}
 
-The original and revised versions of this recipe are available from the **Example Documents** menu. From the **Help** tab, click the **Example Documents** button and then select either **Cocoa Desserts** or **Cocoa Desserts (Revised)** from the menu.
+The original and revised versions of this recipe are available from the **Example Documents** menu. From the **Help** tab, click the **Example Documents** button and then select either **Cocoa Desserts** or **Cocoa Desserts (Revised)** from the menu. When prompted about how to open the document, select **Create a new project**.
 :::
 
 You will then return to the **Document** page. Click the **Forward** button to proceed to the **Document Structure** page, as shown below:
@@ -221,7 +221,7 @@ Note that webpages requiring authentication (i.e., requiring a user name and pas
 
 In this example, we will review a document for overly-long sentences. This example will demonstrate the available methods for defining an overly-long sentence. In addition, it will also demonstrate how to search for and review these sentences.
 
-The first step is to open the example file **Features**. From the **Help** tab, click the **Example Documents** button and then select **Features** from the menu.
+The first step is to open the example file **Features**. From the **Help** tab, click the **Example Documents** button and then select **Features** from the menu. Next, when prompted about how to open the document, select **Create a new project**.
 
 You will then be presented with the **New Project Wizard** dialog, as shown below:
 
@@ -281,3 +281,74 @@ To see what the outlier range is, click on the **Summary Statistics** icon in th
 ![](Images/featuressentences43.png)
 
 This option is only recommended for situations where most of the sentences are an acceptable length, but a few (very) long sentences skew the average. This option is useful for finding these extreme sentences.
+
+## Customizing a Graph {-#customizing-a-graph}
+
+In this example, we will discuss the various ways to change the appearance of a graph.
+
+The first step is to open the example file **Chocolate Eclairs**. From the **Help** tab on the ribbon, click the **Example Documents** button and then select **Chocolate Eclairs** from the menu. (When prompted about how to open the document, select **Create a new project**.) When the **New Project Wizard** appears, leave the defaults and click **Finish**.
+
+Once the project has finished loading, select **Words Breakdown** on the sidebar, then click **Word Counts** beneath that. A bar chart showing a breakdown of word categories will be displayed:
+
+![](Images/ExampleGraphDefault.png)
+
+Now we will customize the appearance of this graph. One change that we can make is to reorder the columns in this bar chart. On the **Home** tab, click the **Sort** button under the **Edit** section. Select **Sort Descending** from the menu and note that the bars are now shown from largest to smallest from the origin:
+
+![](Images/ExampleGraphSorted.png)
+
+Next, let's change the background of the graph. On the **Home** tab, click the **Background** button under the **Edit** section. Select **Color...** from the menu. When the color selection dialog appears, select a new color (e.g., purple) and click **OK**. After selecting your new color, check the option **Apply Fade** from this menu.
+
+Now the graph will have a purple background with a gradient effect:
+
+![](Images/ExampleGraphBackgroundColorChanged.png)
+
+Next, click the **Background** button again and select **Image** from the menu. When the image selection dialog appears, choose an image and click **OK**.
+
+Now this image will be shown as the background for your graphs:
+
+![](Images/ExampleGraphBackgroundImageChangedTooOpaque.png)
+
+By default, the image will be shown fully opaque. For lighter images this will look fine, but darker images (like the one shown above) will make it difficult to read the graph. Click the **Background** button and select **Image Opacity...** from the menu. On the **Set Opacity** dialog, slide the opacity down to 100. Click **OK**.
+
+Now this image will be translucent and the graph labels will be much easier to read:
+
+![](Images/ExampleGraphBackgroundImageChanged.png)
+
+Next, we will want to apply a light color to the plot area. Click the **Background** button and select **Plot Area Color...** from the menu and select a new color. Then, select **Opacity...** from this menu and set it to 40. Click **OK**.
+
+Now the plot area of the graph will have a light blue applied to it:
+
+![](Images/ExamplePlotBackgroundColorChanged.png)
+
+Next, let's put a [watermark](#watermark-and-logo) across our graph. Click the **Watermark** button in the **Edit** section. Enter the following into the **Watermark** dialog and click **OK**:
+
+> INTERNAL USE ONLY
+>
+> Printed on [DATE]
+
+Note how this label is now lightly written across the graph:
+
+![](Images/ExampleWatermarkChanged.png)
+
+::: {.tip}
+
+Entering “[DATE]” in the watermark will show the current date when the graph is rendered.
+:::
+
+Now let's put a company logo on our graph. Click the **Logo** button in the **Edit** section. Select an image and click **OK**.
+
+Now this image will be shown in the bottom right corner of the graph:
+
+![](Images/ExampleLogoChanged.png)
+
+Next, we can change the direction of the bars. Click the **Orientation** button in the **Edit** section. Select **Vertical** from the menu.
+
+Now the bars will be arranged vertically:
+
+![](Images/ExampleBarChartOrientationChanged.png)
+
+Finally, let's change how the bars are drawn. Click the **Bar Style** button in the **Edit** section and select **Color fade, bottom to top**.
+
+The bars will now have a fading color painted across them, rather than the default glassy look:
+
+![](Images/ExampleBarChartEffectsChanged.png)

@@ -6,11 +6,11 @@ After opening a project, click on the **Readability Scores** icon on the project
 
 The top area of the **Scores** window is the score grid. In here there are four columns:
 
--   **Test**: the name of the readability test.
--   **Grade Level**: the minimum grade level that the test determined the document is suitable for.
--   **Reader Age**: the minimum reader age that the test determined the document is suitable for. The reader age is determined from the test's score. It can be shown as either a [range](#reading-age) for the entire grade, or be rounded to the semester that the grade score falls into.
--   **Scale Value**: the index value for tests that use special scales.
--   [Predicted Cloze Score](#cloze): the estimated score if the document were to be used for a cloze test. Note that cloze scores will be displayed in percentage format (i.e., 0-100) instead of floating-point format (i.e., .0-1.0) for easier reading.
+- **Test**: the name of the readability test.
+- **Grade Level**: the minimum grade level that the test determined the document is suitable for.
+- **Reader Age**: the minimum reader age that the test determined the document is suitable for. The reader age is determined from the test's score. It can be shown as either a [range](#reading-age) for the entire grade, or be rounded to the semester that the grade score falls into.
+- **Scale Value**: the index value for tests that use special scales.
+- [Predicted Cloze Score](#cloze): the estimated score if the document were to be used for a cloze test. Note that cloze scores will be displayed in percentage format (i.e., 0-100) instead of floating-point format (i.e., .0-1.0) for easier reading.
 
 Note that most tests have just one type of result (e.g., grade level), so non-applicable columns are left blank. For example, note below that the [Gunning Fog](#gunning-fog-test) result is a grade level of 8.3. This translates to an eighth grade level reader (in his or her third month of class). Because this test only returns a grade level and age, the **Scale Value** and **Predicted Cloze Score** columns are empty. Another example is the result for the [Flesch Reading Ease](#flesch-test) test, which has a scale value of 79. This test has its own scale (instead of a grade level) so its age, grade level, and cloze columns are empty.
 
@@ -26,7 +26,7 @@ Finally, the averages (means) of your test scores and ages are displayed at the 
 
 When calculating these statistics, failed test scores are treated as missing observations and not included. For example, let us say that you included 5 tests, but one of them could not be calculated. In this case, the valid 4 scores will be added and divided by 4 (not 5) to acquire the means. Also, grade range scores–such as “5-6” from [New Dale-Chall](#dale-chall-test)–will be converted to its own average (e.g., “5-6” will be 5.5).
 
-To remove any test from this list, select it and press `CTRL+DELETE` (`⌘+DELETE` on macOS) on your keyboard. To edit a [custom test](#creating-custom-test), double click on it in this list. To view the help for a standard test, double click on it in this list.
+To remove any test from this list, select it and press `r KeyboardButton("CTRL")`+`r KeyboardButton("DELETE")` (`r macOSCmdButton()`+`r KeyboardButton("DELETE")` on macOS) on your keyboard. To edit a [custom test](#creating-custom-test), double click on it in this list. To view the help for a standard test, double click on it in this list.
 
 There will also be graphs in this section if you had included the [Fry](#reviewing-readability-graphs) , [Gilliam-Peña-Mountain](#gilliam-pena-mountain-fry-graph), [Raygor](#reviewing-readability-graphs), [Flesch](#flesch-test), or [FRASE](#frase) tests. Please refer to the [Readability Graphs Overview](#reviewing-readability-graphs) for further information.
 
@@ -42,7 +42,7 @@ Let us first review a **Fry** graph:
 knitr::include_graphics("Images/frygraph.png")
 ```
 
-To read this graph, search for the red data point–this value represents the document's score. Note that there are numbers 1 through 17+ on this chart, each partitioned into small slices. The “slice” that the data point falls into is the grade level of this document. In the example above, the data point is inside of the 8th grade slice (notice that the 8 is marked in red).
+To read this graph, search for the red data point–this value represents the document's score. Note that there are numbers 1 through 17+ on this chart, each partitioned into small slices. The “slice” that the data point falls into is the grade level of this document. In the example above, the data point is inside of the 8^th^ grade slice (notice that the 8 is marked in red).
 
 Running through each slice is a gray line, which is a separator to help show the most predominate cause of the document's difficulty. If the data point is above the gray line, then the strongest influence on the document's difficulty is high-syllable words. If it is below the line, then the strongest influence is long sentences. In the above example, it is above the line, implying that it is slightly more influenced by high-syllable words. However, because it is fairly close to the line, this document is well balanced between difficult words and difficult sentences.
 
@@ -52,7 +52,7 @@ If the data point does not fall inside of a slice then the test will fail. For e
 knitr::include_graphics("Images/raygorbadgrade.png")
 ```
 
-The document was almost classified as 11th grade level material, but its long sentences make it too difficult to be assigned to any grade. At this point, you would want to review the document's lengthy sentences (select [Highlighted Report](#reviewing-standard-grammar) under the **Grammar** sidebar item) and try to shorten some of them.
+The document was almost classified as 11^th^ grade level material, but its long sentences make it too difficult to be assigned to any grade. At this point, you would want to review the document's lengthy sentences (select [Highlighted Report](#reviewing-standard-grammar) under the **Grammar** sidebar item) and try to shorten some of them.
 
 The **Gilliam-Peña-Mountain** graph is a variation of **Fry** designed for Spanish text. It is identical to **Fry**, except that its X axis begins at 175 (instead of 108). This enables this graph to plot Spanish text, which usually has a much higher syllable count than its English counterpart. Below is an example of a **Gilliam-Peña-Mountain** graph:
 
@@ -66,7 +66,7 @@ The **Schwartz** graph is another **Fry**-like graph, which is designed for Germ
 knitr::include_graphics("Images/Schwartz.png")
 ```
 
-The **Fry** and **Raygor** graphs are very similar and are both interpreted in the same manner; however, there are a few differences between them. The **Fry** graph classifies documents within the 1st grade to doctorate level. In contrast, **Raygor** concentrates on the range of 3rd grade to the sophomore collegiate level. It is recommended to only use **Raygor** graphs for secondary-age materials.
+The **Fry** and **Raygor** graphs are very similar and are both interpreted in the same manner; however, there are a few differences between them. The **Fry** graph classifies documents within the 1^st^ grade to doctorate level. In contrast, **Raygor** concentrates on the range of 3^rd^ grade to the sophomore collegiate level. It is recommended to only use **Raygor** graphs for secondary-age materials.
 
 Another difference is that the **Fry** graph is influenced by high-syllable words, while the **Raygor** graph is influenced by long words. Long sentences remain a key factor for both of these graphs, though.
 
@@ -100,21 +100,21 @@ knitr::include_graphics("Images/FleschChart.png")
 knitr::include_graphics("Images/DB2Plot.png")
 ```
 
-Similar to a **Flesch** chart, the **Lix** guage plots a document's **Lix** index score on a chart showing its difficulty level:
+Similar to a **Flesch** chart, the **Lix** gauge plots a document's **Lix** index score on a chart showing its difficulty level:
 
-```{r, echo=F, fig.cap='Lix Guage', fig.align='center'}
-knitr::include_graphics("Images/LixGuage.png")
+```{r, echo=F, fig.cap='Lix Gauge', fig.align='center'}
+knitr::include_graphics("Images/LixGauge.png")
 ```
 
 In the above chart, we can see that **Lix** scores can range from 0 (“very easy”) to 60+ (“very difficult”).
 
-There is also a variation of the **Lix** guage that is adjusted for German materials:
+There is also a variation of the **Lix** gauge that is adjusted for German materials:
 
-```{r, echo=F, fig.cap='German Lix Guage', fig.align='center'}
-knitr::include_graphics("Images/GermanLixGuage.png")
+```{r, echo=F, fig.cap='German Lix Gauge', fig.align='center'}
+knitr::include_graphics("Images/GermanLixGauge.png")
 ```
 
-This version adjusts the scaling of the score, assuming that German text is inheriently more difficult than other languages. It also includes additional levels of difficulty (e.g., “children and young adult”).
+This version adjusts the scaling of the score, assuming that German text is inherently more difficult than other languages. It also includes additional levels of difficulty (e.g., “children and young adult”).
 
 Note that if you plot any of these graphs, its score can also be viewed in the [Readability Scores](#reviewing-test-scores) area.
 
@@ -127,6 +127,24 @@ knitr::include_graphics("Images/MultipleFry.png")
 Here, we can see that an entire collection of documents are plotted onto a single **Fry** graph. This is useful for visualizing the grade-level layout of a group of documents. In the above example, we can see that the documents are clustering in the high-school region. We can also interpret that complex words are heavily influencing the documents' difficulty.
 
 You can also print or save a blank copy of any of these graphs. This is useful for printing handouts for instructors or students to use. To print a blank graph, go to the **Readability** tab on the ribbon, click the **Blank Graphs** button, and select the graph that you wish to save.
+
+## Reviewing the Goals {-#reviewing-goals}
+
+Goals are recommended score ranges that a document should fall within.
+
+If a project contains goals, then a **Goals** section will be available to show whether they were met. For example:
+
+![](Images/StandardProjectGoals.png)
+
+In the above image, we can see that this project is recommending:
+
+- **Fry** should not be higher than 10
+- **Flesch Reading Ease** should be higher than 60
+- **ELF** should not be higher than 12
+
+Also, the warning icons indicate that currently the document is failing to meet all these criteria.
+
+Goals can be created through a [test bundle](#test-bundles). When the bundle is applied, both its tests and goals will be added to the project.
 
 ## Reviewing the Statistics {-#reviewing-statistics}
 
@@ -268,6 +286,11 @@ Next, note the line drawn across the box—this represents the [median](#stat-te
 The last items to review are the whiskers, which represent the non-outlier range. The datapoints in this range are outside of the middle half the data, but still within a reasonable limit. Above, we can see that the remaining sentences are skewed towards having longer sentences, with the largest being 33 words. Although 33 words is reasonable (compared to the box's range), you may want to review some of these longer sentences.
 
 Finally, any sentence lengths outside of the non-outlier range will be displayed as red dots. These points represent sentences which are significantly longer (or shorter) than the others. Clicking on an outlier will display the sentence's number, along with a preview of it.
+
+A histogram is also available to visualize how the sentence lengths are distributed:
+
+![](Images/SentencesHistogram.png)
+In the above graph, we can see a large portion of short sentences, with the rest falling into a normal distribution.
 
 A heatmap of these sentence lengths is also included:
 

@@ -10,7 +10,7 @@ Options for customizing their display are made available on the **Edit** section
 
 ![](Images/RibbonEditScores.png)
 
-**Long format**: Click this button to toggle readability scores in long (e.g., “2nd grade”) or short (e.g., “2”) format within the score grid.
+**Long format**: Click this button to toggle readability scores in long (e.g., “2^nd^ grade”) or short (e.g., “2”) format within the score grid.
 
 **Grade scale**: Click this button to choose from a list of grade scales to display your scores in.
 
@@ -84,5 +84,5 @@ After creating or opening a project, you can customize how the program analyzes 
 
 ::: {.tip}
 
-With a standard project, you can review these changes in realtime by selecting any highlighted text window in the [Words Breakdown](#reviewing-word-breakdowns) or [Grammar](#reviewing-standard-grammar) sections. As you make changes, the program will reanalyze your document and these changes will be visible in this window. For example, changing how words are being excluded or how sentence endings are deduced will become appearant as you make changes from the ribbon.
+With a standard project, you can review these changes in realtime by selecting any highlighted text window in the [Words Breakdown](#reviewing-word-breakdowns) or [Grammar](#reviewing-standard-grammar) sections. As you make changes, the program will reanalyze your document and these changes will be visible in this window. For example, changing how words are being excluded or how sentence endings are deduced will become apparent as you make changes from the ribbon.
 :::

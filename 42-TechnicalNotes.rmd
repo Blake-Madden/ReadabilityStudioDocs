@@ -4,7 +4,7 @@
 
 **Cloze test**: A [cloze](#cloze) procedure is a test given to a student to measure his/her comprehension ability.
 
-**Interrobang**: The combination of a question mark and exclamation point at the end of a sentence. Interrobongs are shown as either two separate characters (“?!” or “!?”) or a single character (‽).
+**Interrobang**: The combination of a question mark and exclamation point at the end of a sentence. Interrobangs are shown as either two separate characters (“?!” or “!?”) or a single character (‽).
 
 **Normalization**: The adjustment of values from different scales into a common scale.
 
@@ -55,13 +55,49 @@ Please refer to [Statistical Terminology](#stat-terms) for information regarding
 -   **Kurtosis**: the peakedness of a distribution. Zero indicates a normal distribution, a negative value indicates a flat distribution, and a positive value indicates a sharp curve.  
 
 ```{r, echo=F, fig.cap='Negative and positive kurtosis', fig.align='center'}
-knitr::include_graphics("Images/NonGenerated/Kurtosis.svg")
+knitr::include_graphics("Images/NonGenerated/Kurtosis.png")
 ```
 
 -   **Skewness**: the asymmetry of the probability distribution. A zero skew indicates a symmetrical balance in the distribution. A negative skew indicates that the left side of the distribution is longer and most of the values are concentrated on the right. A positive skew indicates that the right side of the distribution is longer and most of the values are concentrated on the left.  
 
 ```{r, echo=F, fig.cap='Negative and positive skewness', fig.align='center'}
-knitr::include_graphics("Images/NonGenerated/Skewness.svg")
+knitr::include_graphics("Images/NonGenerated/Skewness.png")
+```
+
+### Issues {-#stats-issues}
+
+- **Overplotting**: When visualizing points along a single dimension (e.g., the y axis of a box plot), points with the same score will overlap each other. Because of this, it becomes difficult to fully see the distribution of the data. Considering the following box plot:
+
+```{r echo=F, fig.align='center', fig.cap="Box plot with no jittering", out.width='75%'}
+boxplot(len ~ dose, data = ToothGrowth,
+              main = "Guinea Pigs' Tooth Growth",
+              xlab = "Vitamin C dose mg",
+              ylab = "Tooth length")
+stripchart(len ~ dose, data = ToothGrowth, method='overplot', add=T, pch=20, col=2, vertical=T)
+```
+
+Although we can interpret the quartile ranges, it is not obvious how the data “clumps” together overall.
+
+To correct this, a technique called **jittering** is used to adjust the x axis values of overlapping points. Traditionally, jittering uses randomness to adjust the points’ position around both sides of the axis, as such:
+
+```{r, echo=F, fig.cap="Box plot with random jittering", fig.align='center', out.width='75%'}
+boxplot(len ~ dose, data = ToothGrowth,
+              main = "Guinea Pigs' Tooth Growth",
+              xlab = "Vitamin C dose mg",
+              ylab = "Tooth length")
+stripchart(len ~ dose, data = ToothGrowth, method='jitter', add=T, pch=20, col=2, vertical=T)
+```
+
+Because of this randomness, some points may still overlap. To improve this, a newer technique known as beeswarm jittering instead adjusts points the minimal distance from the axis. This ensures that each point is seen and more tightly packed (offering a more accurate view of how the data are distributed). And example of this is as follows:
+
+```{r, echo=F, fig.cap="Box plot with beeswarm jittering", fig.align='center', out.width='75%'}
+library(beeswarm)
+
+boxplot(len ~ dose, data = ToothGrowth,
+              main = "Guinea Pigs' Tooth Growth",
+              xlab = "Vitamin C dose mg",
+              ylab = "Tooth length")  
+beeswarm(len ~ dose, data = ToothGrowth, col = 2, add = TRUE)
 ```
 
 ## Box Plots {-#box-plots}
@@ -69,7 +105,7 @@ knitr::include_graphics("Images/NonGenerated/Skewness.svg")
 Box plots are used to display the distribution of data, where:
 
 -   The middle point is the median.
--   The box is the 25th-75th percentile range.
+-   The box is the 25^th^-75^th^ percentile range.
 -   The whiskers are the non-outlier range.
 
 Outlier values that do not fall within these areas are plotted outside of the whiskers.

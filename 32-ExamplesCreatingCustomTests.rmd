@@ -4,21 +4,19 @@ In this chapter, we will step through examples showing how to create different t
 
 With custom tests, you can create enhanced versions of existing tests like **New Dale-Chall** that include your own word list. You can also create entirely new tests with your own formulas, and design them to return either grade-level, predicted cloze, or index scores.
 
-## Creating a Modified Flesch Test {-}
+## Creating a Modified **Flesch** Test {-#creating-custom-flesch-test}
 
 In this example, we will create a custom test. Custom tests are useful for either creating an entirely new formula or a new one based on an existing formula.
 
 For this example, we will use the [Flesch](#flesch-test) formula for our basis. We will take the standard **Flesch** formula and substitute its sentence count factor with independent clause count. This will effectively create a formula which does not penalize documents for containing numerous compound sentences.
 
-The first step to creating a new test is to click the **Custom Tests** button on the **Readability** tab and select **Add Test...** from the menu. This will present the **Add Custom Test** dialog, as shown below:
+The first step to creating a new test is to click the **Custom Tests** button on the **Readability** tab and select **Add Test Based on...** from the menu. This will present a dialog containing formula-based tests; select **Flesch Reading Ease** and click OK.
 
-![](Images/AddCustomTest.png)
-
-Because this test will use independent clauses, we will enter the name “Flesch (IC)” for our new test:
+Because this test will use independent clauses, change the name to “Flesch (IC)”:
 
 ![](Images/CustomTestExample1TestName.png)
 
-Next, we will enter the formula. The formula for **Flesch** is defined as:
+Next, we will change the formula. The formula for **Flesch** is defined as:
 
 ```{r, eval=F, echo=T}
 I = 206.835 - (84.6*(B/W)) - (1.015*(W/S))
@@ -33,7 +31,7 @@ Where:
 | B   | Number of syllables |
 | S   | Number of sentences |
 
-Formulas can either be typed into the **Formula** field, or you can use the [Function Browser](#creating-custom-test). Enter the following formula:
+Formulas can either be typed into the **Formula** field, or you can use the [Function Browser](#creating-custom-test). For example:
 
 ```{r, eval=F, echo=T}
 206.835 - (84.6*(SyllableCount()/WordCount())) -  
@@ -65,7 +63,7 @@ ROUND(206.835 - (84.6*(SyllableCount()/WordCount())) -
     (1.015*(WordCount()/IndependentClauseCount())), 0)
 ```
 
-The final step is to specify the type of test that this is. By default, new tests will be defined as grade-level tests, which means that the result will be truncated to be within the 0 (Kindergarten) to 19 (doctorate) range. Because **Flesch** is an index test (ranging from 0-100), we will change this option to **index value**. This will prevent the result from being truncated. It will also instruct the program to place the result into the **Scale Value** column (see below).
+The final step is to specify the type of test that this is. **Flesch Reading Ease** is an index test, so verify that the test type is set to **Index**. This will instruct the program to place the result into the **Scale Value** column (see below).
 
 Once finished, the dialog will look like this:
 
@@ -157,11 +155,11 @@ We can also review these words in their original context. Click on the **Highlig
 
 At this point, we have a couple of options. The first is to replace some of these unfamiliar words so that our students can better understand the recipe. If the reading level of this recipe was higher, this would be recommended. However, because this recipe already has a low reading level and contains few unfamiliar words, this may not be necessary.
 
-The other option is to export these unfamiliar words and use that output to review these new words with our students. Not only will this ease the students' comprehension of the recipe, but it will serve as a helpful [vocabulary-building exercise](#VocabBuilderExample).
+The other option is to export these unfamiliar words and use that output to review these new words with our students. Not only will this ease the students' comprehension of the recipe, but it will serve as a helpful [vocabulary-building exercise](#vocab-builder-example).
 
 ::: {.tip}
 
-The recipe used in this example is available from the **Example Documents** menu. From the **Help** tab, click the **Example Documents** button, and then select **Chocolate Eclairs**.
+The recipe used in this example is available from the **Example Documents** menu. From the **Help** tab, click the **Example Documents** button, and then select **Chocolate Eclairs**. When prompted about how to open the document, select **Create a new project**.
 :::
 
 ## Creating a Custom Index Test {-}

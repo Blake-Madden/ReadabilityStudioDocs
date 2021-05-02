@@ -14,19 +14,27 @@ The **Web Harvester** dialog enables you to gather (and optionally download) lin
 
 **File types to include**: Select from this list the types of documents to include from the website.
 
-**Verify pages' mimetypes before harvesting**: Check this option to verify each page's content type as you crawl. This is useful for when a webpage's file extension is different from its content type. For example, an URL with the file extension “.doc” that is actually an HTML page will not be crawled as an HTML page. Checking this option will fix this by having the harvester explicitly verify the page's content, even if it has a known file extension. The drawback of selecting this option is that it will degrade harvesting performance.
+**Log broken links**: Check this option to check for broken links while harvesting and save them to the [log report](#log-report).
+
+::: {.warning}
+
+Checking this option will degrade performance as each web link must be connected to and verified.
+:::
+
+**User Agent**: Enter into this field your user agent. The user agent is the name of the client program that is sent to a website as you crawl it.
+
+#### Domain Restriction {-}
 
 **Domain Restriction**: Select from this list the domain restriction that you want to use.
 
 - **Not restricted to any domain**: Select this option to harvest all links from the website, regardless of domain.
-- **Domain restricted**: Select this option to only harvest links with the same domain as the webpage you specify (e.g., "company.com").
-- **Subdomain restricted**: Select this option to only harvest links with the same subdomain as the base webpage (e.g., "sales.company.com").
+- **Domain restricted**: Select this option to only harvest links with the same domain as the webpage you specify (e.g., “company.com”).
+- **Subdomain restricted**: Select this option to only harvest links with the same subdomain as the base webpage (e.g., “sales.company.com”).
 - **Restricted to user-defined domain(s)**: Select this option to only harvest links from a provided list of domains. If folders are included in a specified domain, then the harvesting will be restricted to that folder. For example, if “www.news.mybusiness.com/articles” is specified, then only files from the folder “articles” in the subdomain “www.news.mybusiness.com” will be harvested.
 - **Restricted to external domains**: Select this option to only harvest links from domains other than the webpage that you specify.
+- **Restricted to same folder**: Select this option to only harvest links from the same web folder as the base URL. For example, if your base webpage is “www.mybusiness.com/history/aboutus.html,” then only links from “www.mybusiness.com/history/” will be harvested.
 
 **User-defined Domain(s)**: Enter all user-defined domains in this list. This option is only applicable if domain restriction is set to user-defined domains.
-
-**User Agent**: Enter into this field your user agent. The user agent is the name of the client program that is sent to a website as you crawl it.
 
 #### Download {-}
 
@@ -51,7 +59,7 @@ The following command line options are available for **Readability Studio**:
 |     |     |
 | --- | --- |
 | \"**filename**\" | Opens **filename**, which can be the path to a project or document. If the path supplied is a folder, then a [batch project](#creating-batch-project) will be created using all documents found recursively within the folder. |
-| `-bg` | Path to an image file to use as **filename**'s graph background. (This option only applies if a **filename** parameter is supplied.) Also, **filename** must refer to a document or folder (i.e., not a **Readabilty Studio** project file) that will be used to create a new project. |
+| `-bg` | Path to an image file to use as **filename**'s graph background. (This option only applies if a **filename** parameter is supplied.) Also, **filename** must refer to a document or folder (i.e., not a **Readability Studio** project file) that will be used to create a new project. |
 | `-loglevel=n` | This parameter specifies how much information to [log](#log-report) while the program is running, where **n** is a value between 0-2 (0 = none, 1 = standard, 2 = verbose). |
 | `-help` | Displays the help. |
 
@@ -63,7 +71,7 @@ This example would tell the program to log the maximum level of information whil
 
 `ReadStudio -loglevel=2`
 
-Note that verbose logging can also be enabled by holding down the `SHIFT` button on your keyboard while the program opens.
+Note that verbose logging can also be enabled by holding down the `r KeyboardButton("SHIFT")` button on your keyboard while the program opens.
 
 ## Log Report {-#log-report}
 
@@ -75,7 +83,7 @@ While it is running, **Readability Studio** logs various diagnostic information.
 -   The paths of documents being analyzed (verbose mode only)
 -   Information about the operating system (e.g., OS version, default font, etc.)
 
-The log's level of detail is controlled by either the [command line](#command-line-options) or by holding down the `SHIFT` button on your keyword while the program starts. (Holding `SHIFT` instructs the program to use maximum, verbose logging.)
+The log's level of detail is controlled by either the [command line](#command-line-options) or by holding down the `r KeyboardButton("SHIFT")` button on your keyword while the program starts. (Holding `SHIFT` instructs the program to use maximum, verbose logging.)
 
 To view this diagnostic information, go to the **Tools** tab on the ribbon, then click **Log Report** under the **Tools & Settings** section. From the **Log Report** dialog, you can review, save, and print any of this information.
 
@@ -87,4 +95,12 @@ The messages in this report are displayed such that:
 
 This information can be useful if you are experiencing issues with loading a document.
 
-Please note that this log is neither saved nor transmitted by the program, and does not include personal information. Also, this log is cleared from memory when the program closes. If you wish to save your current session's log report, you must save it from this dialog before exiting the application.
+## Select Labelling {-#select-labelling}
+
+On this dialog, you can select whether to use your documents' descriptions as their labels, or to use a single label to group them by.
+
+**Use documents' descriptions (will be loaded during import)**: Select this to use each document's own description as its label. This is useful when document names may not be descriptive enough; this will show the document's description next to its name.
+
+**Use a grouping label**: Select this to use your provided label as a grouping label for the selected documents. This is useful when you want to cluster the documents in you batch into subgroups. (These subgroups are visualized on various graphs, such as **Fry** and the histograms.)
+
+**Do not show this again (always use document descriptions)**: Check this to no longer prompt for how to label batch documents; document descriptions will always be used instead.

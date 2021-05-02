@@ -16,6 +16,7 @@ bookdown::gitbook:
       facebook: no
       twitter: no
     info: no
+    search: no
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex

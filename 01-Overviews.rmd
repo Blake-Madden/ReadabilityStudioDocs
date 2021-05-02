@@ -179,22 +179,38 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 
 #### General Enhancements {-}
 
-- Added **Line ends mark the start of a new paragraph** layout option to the [Project Wizard](#creating-standard-project).
+- Added **Line ends mark the start of a new paragraph** layout option to the [project wizard](#creating-standard-project).
+- Added test bundles option to the project wizard.
 - Added ability to include descriptions for any document included in a batch project. (The program will fill in these descriptions automatically, based on the document's title.)
 - Added option to include a document description in standard projects.
 - Added dark theme support (macOS).
+- Added theming (Windows).
 - Improved program's appearance on high-resolution displays.
 - Added browse button to **Project Settings** dialog to add document(s) to a batch project.
-- Improved appearance of **Test Bundle** dialog.
+- Redesigned **Test Bundle** dialog.
+- Reorganized test bundles menu and added icons.
 - Added buttons to add and delete items from the batch project wizard's file list.
 - Added summation button for **Passive Phrases** list in standard projects.
+- When validating a formula on the **Custom Test** dialog, the calculated value will be displayed based on the active project (if a standard project).
+- Functions are now highlighted in the custom test editor.
 - Refreshed numerous icons.
+- Improved Web Harvester:
+  - Cancel button is more responsive now.
+  - Improved dialog appearance.
+  - Added an option to log broken links.
+  - Image files can now be downloaded.
+  - Improved error reporting when unable to connect to the root webpage.
+  - When downloading webpages without file extensions, the program will now append an extension based on its MIME type.
+  - Added **Restricted to same folder** domain-restriction option.
+  - Removed the **Verify pages' mimetypes before harvesting** option. Program will now determine whether checking MIME types is necessary.
 - Added **Function** column to log report.
 - Added sort button to log report.
 - Improved **About** dialog.
+- Most-recently-used file list can now be cleared on the start page.
 
 #### Analysis/Test Enhancements {-}
 
+- Added [goals](#reviewing-goals) feature to warn if a document's scores do not fall within a certain range.
 - Added [Schwartz test](#scwartz) (German projects only).
 - Added a graph to visualize **Lix** index scores.
 - Added a graph to visualize German **Lix** index scores.
@@ -202,24 +218,64 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - **Rix** now uses sentence units in its calculation to better match the test's recommendations.
 - Expanded the difficulty-level descriptions for the German **Lix** tests.
 - Instruction label now shown on all **Flesch** charts (not just blank ones).
+- Added custom test features:
+  - Added feature to create custom tests based on any existing formula-based test. Refer to [Creating a Modified Flesch Test](#creating-custom-flesch-test) for an example.
+  - Added `GunningFog` option to `SentenceCount()` function. This will return the sentence count using the system's [Gunning Fog method](#options-gunning-fog).
+  - Added `MiniWordCount()` function.
+  - Added `HardFogWordCount()` function.
+- [Farr-Jenkins-Paterson](#farr-jenkins-paterson) now includes floating-point precision in its results.
+- Added sentence-lengths histogram (standard projects).
+- Bins in the syllable, sentence-length, grade-level, and predicted cloze score histograms now begin at 1^st^ grade or Kindergarten.
 - Improved document indexing performance.
+- Improved detection of Unicode spaces and line separators when indexing sentences.
+- Improved detection of longer internet address.
+- Triangle bullet points (&#8227;) are now detected.
+- '@' can now be seen as a full word (or prefix/suffix of a word).
+- Improved detection of sentence endings when followed by a citation (e.g., “End of sentence.^17^ A new sentence.”).
+- Improved article-mismatch detection.
 - Improved English syllabizer.
+- [Trailing citation](#options-text-exclusion) exclusion is now less aggressive when a references section may be in the middle of a document.
+- The [Aggressively exclude](#options-text-exclusion) option will now override the **Include incomplete sentences containing more than [15] words** option when reviewing list items.
+- Sentences that contain only numbers and single-letter words are now more aggressively excluded.
+- Improved detection of website URLs when indexing text.
+- Fractions (½, ¼, and ¾), superscripts (^0^-^9^), and subscripts (~0~-~9~) are now recognized by syllable counters.
+- Full-width (Ｆｕｌｌ－ｗｉｄｔｈ) English letters, numbers, and punctuation are now recognized.
 - Expanded words ignored by spell checker when **ignore programming words** is selected.
 - [Overused words (x Sentence)](#reviewing-overused-by-sentence) now excludes acronyms.
 - [All Words (Condensed)](#reviewing-word-breakdowns) now excludes common words (e.g., “the”), numerals, and filenames.
 - **Lix** and **Rix** are now available in the **Adult** readability tests menu.
+- Added **Ignore social media hashtags** option to spell-checker.
+- Expanded spell-checker to include government, economics, business, accounting, biology, and psychology terminology.
+- New formula-parsing engine used for custom tests. This includes the following changes:
+  - `AVG` function has been renamed `AVERAGE`.
+  - `COTAN` function has been renamed `COT`.
+  - `RANDOM` function has been renamed `RAND` and always returns a value between 0 and 1 (same as Excel).
+  - `INTPOW` function has been removed; use `POWER` instead.
+  - `LOGN` function has been removed.
+  - Logical `!` operator has been removed; use new `NOT` function instead.
+  - Added new logical functions `NOT`, `AND`, and `OR`.
 
 #### Importing/Exporting Enhancements {-}
 
-- Loading a spreadsheet into batch project can now import each cell as either a document or a filepath.
+- Loading a spreadsheet into a batch project can now import each cell as either a document or a filepath.
 - Added an option to the batch project wizard for entering individual web pages.
 - Added **Image options** for graphs when selecting **Export All** for a project.
 - Added **Include lists and text windows** option to **Export All** for projects.
 - Improved the appearance of output report when exporting a project as a single HTML file.
-- Improvements to HTML importer when file contains malformed title, style, and script sections.
+- Improvements to HTML importer:
+  - Improved handling of malformed title, style, and script sections.
+  - Added support for superscripts and subscripts.
+  - Annotations are now removed from the text.
+  - `${}` Javascript placeholders are now removed from the text.
+- Improvements to Word 97-2003 importer to better handle Unicode and corrupted files.
+- Improvements to RTF importer (improved Unicode and footnote support).
+- Improvements to C++ source file importer (improved handling of escaped quotes).
+- Added **Narrow full-width characters** option to [document filtering](#additional-filtering-options).
+- When exporting filtered documents from a batch project, the folder structure of the original documents will be recreated in the output folder. This will prevent files with the same name overwriting each other.
 
 #### Graph Enhancements {-}
 
+- Added [beeswarm jittering](#stats-issues) to box, **Danielson-Bryan 2**, **Flesch Reading Ease**, **Lix**, and **German Lix** plots (in batch projects).
 - Improved graph rendering performance.
 - Added option to not include labels on histograms.
 - Added option to not include labels on barcharts.
@@ -231,6 +287,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - Expanded documentation for all tests.
 - Expanded the glossary.
 - Updated citations to MLA 8^th^ edition format.
+- Added option to either open example documents as new projects or view them in your default editor.
 
 #### Bug Fixes {-}
 
@@ -241,6 +298,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - Office 2007 filepaths (e.g., “documents\\import.xlsx”) mentioned in a document are now seen as file names.
 - Fixed crash when trying to analyze a document that is on OneDrive but not properly synced on the local file system.
 - Fixed outdated menubar options on macOS.
+- **New Project from Clipboard** option will more intelligently determine whether the clipboard content is a file path or plain text.
 
 ### Readability Studio 2019 {-}
 ***
@@ -274,7 +332,6 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 
 #### Analysis/Test Enhancements {-}
 
-- Expanded spell-checker to include medical terminology.
 - Improved article-mismatch detection when the following word is a year or time.
 - Improved article-mismatch detection for acronyms.
 - Improvements to bullet point detection.
@@ -285,6 +342,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - The option **Aggressively deduce lists** is now **Aggressively exclude**. Enabling this will now make citation-section exclusion more aggressive.
 - Updated **Portuguese** stemmer to latest standard.
 - Two single quotes after a word are now seen as a double quote.
+- Expanded spell-checker to include medical terminology.
 
 #### Importing/Exporting Enhancements {-}
 

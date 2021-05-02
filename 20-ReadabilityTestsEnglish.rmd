@@ -8,9 +8,9 @@ The **Automated Readability Index**– also called “ARI” or “auto”– (E
 
 Kincaid et al. (*Evaluating* 3, 6-15) also used this test for evaluating peered-prepared reading materials for three studies involving:
 
--   33 remedial high school students
--   22 graduate students from Southern Georgia College
--   14 trainees participating in a Public Service Careers project at Southern Georgia College
+- 33 remedial high school students
+- 22 graduate students from Southern Georgia College
+- 14 trainees participating in a Public Service Careers project at Southern Georgia College
 
 They noted that for the high school study, the materials with lower **ARI** scores yielded better comprehension rates “as reflected in cloze scores” (Kincaid et al. 3). The graduate students and trainees from the other studies stated that the materials may not be appropriate for remedial high school readers (13, 15), but did agree that the stories was “authentic” and “interesting.”
 
@@ -35,12 +35,12 @@ The **Bormuth Cloze Mean (Machine Computation for Passage Readability) Formula**
 
 This test is influenced by three variables (word length, sentence length, and word familiarity). Because it uses both word familiarity and syntactic complexity for its analysis, it is often recommended for student documents.
 
-For this formula, a study involving 2,600 students ranging from 4th-12th grade (*Development* 97) was conducted. The students completed 330 110-word cloze passages, and their scores were correlated against numerous linguistic factors from the passages. After a series of factor analyses and multiple regressions, a series of formulas were created to predict cloze and grade-level scores for a passage. These formulas were then cross validated against 20 250-300 word passages (*Development* 105). These formulas correlated with between *r²* = 0.81 to 0.83 with the original test data and between *r²* = 0.92 to 0.93 with the cross validation data.
+For this formula, a study involving 2,600 students ranging from 4^th^-12^th^ grade (*Development* 97) was conducted. The students completed 330 110-word cloze passages, and their scores were correlated against numerous linguistic factors from the passages. After a series of factor analyses and multiple regressions, a series of formulas were created to predict cloze and grade-level scores for a passage. These formulas were then cross validated against 20 250-300 word passages (*Development* 105). These formulas correlated with between *r²* = 0.81 to 0.83 with the original test data and between *r²* = 0.92 to 0.93 with the cross validation data.
 
 Of these formulas, the predicted cloze formula is as follows:
 
 ```{r, eval=F, echo=T}
-C = .886593 - .083640*(L/W) + .161911*(D/W)³ -  
+C = .886593 - .083640*(R/W) + .161911*(D/W)³ -  
      .021401*(W/S) + .000577*(W/S)² - .000005*(W/S)³
 ```
 
@@ -49,7 +49,7 @@ Where:
 |     |     |
 | --- | --- |
 | C   | Estimated cloze score |
-| L   | Number of characters |
+| R   | Number of characters |
 | W   | Number of words |
 | D   | Number of familiar [Dale-Chall](#dale-chall-test) words |
 | S   | Number of sentences |
@@ -65,12 +65,12 @@ The **Bormuth Grade Placement (Machine Computation for Passage Readability) Form
 
 This test is influenced by three variables (word length, sentence length, and word familiarity). Because it uses both word familiarity and syntactic complexity for its analysis, it is often recommended for student documents.
 
-For this formula, a study involving 2,600 students ranging from 4th-12th grade (*Development* 97) was conducted. The students completed 330 110-word cloze passages, and their scores were correlated against numerous linguistic factors from the passages. After a series of factor analyses and multiple regressions, a series of formulas were created to predict cloze and grade-level scores for a passage. These formulas were then cross validated against 20 250-300 word passages (*Development* 105). These formulas correlated with between *r²* = 0.81 to 0.83 with the original test data and between *r²* = 0.92 to 0.93 with the cross validation data.
+For this formula, a study involving 2,600 students ranging from 4^th^-12^th^ grade (*Development* 97) was conducted. The students completed 330 110-word cloze passages, and their scores were correlated against numerous linguistic factors from the passages. After a series of factor analyses and multiple regressions, a series of formulas were created to predict cloze and grade-level scores for a passage. These formulas were then cross validated against 20 250-300 word passages (*Development* 105). These formulas correlated with between *r²* = 0.81 to 0.83 with the original test data and between *r²* = 0.92 to 0.93 with the cross validation data.
 
 Of these formulas, the grade-placement formula is as follows:
 
 ```{r, eval=F, echo=T}
-G = 3.761864 + 1.053153*(L/W) - 2.138595*(D/W)³ +  
+G = 3.761864 + 1.053153*(R/W) - 2.138595*(D/W)³ +  
      .152832*(W/S) - .002077*(W/S)²
 ```
 
@@ -79,7 +79,7 @@ Where:
 |     |     |
 | --- | --- |
 | G   | Grade level |
-| L   | Number of characters |
+| R   | Number of characters |
 | W   | Number of words |
 | D   | Number of familiar [Dale-Chall](#dale-chall-test) words |
 | S   | Number of sentences |
@@ -118,20 +118,18 @@ Where:
 Though not explicitly mentioned in their article (284), the estimated cloze % from the first equation must be converted to a fraction (i.e., divided by 100) to produce the expected results. For this reason, “(E/100)” is shown in the second equation, rather than just “estimated cloze %” as it appears in the source article. As an example, an estimated cloze % of 51.3 should yield a grade level of 9:
 
 ```{r, eval=F, echo=T}
-9 = (-27.4004*(**51.3**/100)) + 23.06395
+9 = (-27.4004*(51.3/100)) + 23.06395
 ```
-
-This test is designed for 100-word samples, with 3 samples being recommended for best results. Note that **Readability Studio** analyzes your entire document and does not use subsamples for its test calculations. If a formula requires a subsample of a specific size, then normalization is used.
 
 ## New Dale-Chall {-#dale-chall-test}
 
-The **New Dale-Chall** readability test (Chall *Manual*, 1-7) calculates the grade level of a document based on sentence length and number of unfamiliar words. Words are unfamiliar if they do not appear on a list of 3,000 common words that are known to most 4th-grade students. The following are also considered familiar:
+The **New Dale-Chall** readability test (Chall *Manual*, 1-7) calculates the grade level of a document based on sentence length and number of unfamiliar words. Words are unfamiliar if they do not appear on a list of 3,000 common words that are known to most 4^th^-grade students. The following are also considered familiar:
 
--   Regular plural and possessive forms of common words (i.e., “s,” “es,” and “ies” endings). Irregular forms (e.g., “oxen”) are not familiar.
--   Adjectival and verb forms of common words with the following endings: “d,” “ed,” “ied,” “ing,” “s,” “es,” “ies,” “r,” “er,” “est,” “ier,” “iest.”
--   Compound and hyphenated words if both parts of the word are common words. For example, “long-haired” and “and/or” would be familiar. Note that forward slashes (‘/’) are also treated as compound-word punctuation.
--   The [first instance of any proper noun](#options-dale-chall)—all subsequent occurrences are considered familiar.
--   All numerals.
+- Regular plural and possessive forms of common words (i.e., “s,” “es,” and “ies” endings). Irregular forms (e.g., “oxen”) are not familiar.
+- Adjectival and verb forms of common words with the following endings: “d,” “ed,” “ied,” “ing,” “s,” “es,” “ies,” “r,” “er,” “est,” “ier,” “iest.”
+- Compound and hyphenated words if both parts of the word are common words. For example, “long-haired” and “and/or” would be familiar. Note that forward slashes (‘/’) are also treated as compound-word punctuation.
+- The [first instance of any proper noun](#options-dale-chall)—all subsequent occurrences are considered familiar.
+- All numerals.
 
 ::: {.note}
 
@@ -219,7 +217,7 @@ This test is based on the [Bormuth Cloze](#bormuth-cloze-mean-machine-passage) t
 ### Degrees of Reading Power Formula {-}
 
 ```{r, eval=F, echo=T}
-U = 100 - 100*(.886593 - .083640*(L/W) + .161911*(D/W)³ -  
+U = 100 - 100*(.886593 - .083640*(R/W) + .161911*(D/W)³ -  
      .021401*(W/S) + .000577*(W/S)² - .000005*(W/S)³)
 ```
 
@@ -228,7 +226,7 @@ Where:
 |     |     |
 | --- | --- |
 | U   | Units score |
-| L   | Number of characters |
+| R   | Number of characters |
 | W   | Number of words |
 | D   | Number of familiar [Dale-Chall](#dale-chall-test) words |
 | S   | Number of sentences |
@@ -239,9 +237,9 @@ The **Degrees of Reading Power (grade equivalent)** (Carver 303-316) test calcul
 
 This test was trained on the same 330 110-word passages used to build the [Bormuth](#bormuth-cloze-mean-machine-passage) test, along with an additional 30 samples. These additional samples were 100-word passages tested by students from the graduate library at the University of Maryland (Carver 305-306). Using these samples (and their cloze and **Rauding** scores), Carver built a table to convert between **DRP** units and grade levels (see below). Next, he compared the **DRP-GE** results against **DRP** units, **Rauding Scale** scores, and cloze scores. The **DRP-GE** (grade equivalency) results strongly correlated with these other scores:
 
--   DRP: *r* = 0.98
--   Rauding Scale-GE: *r* = 0.84
--   cloze: *r* = -0.81
+- DRP: *r* = 0.98
+- Rauding Scale-GE: *r* = 0.84
+- cloze: *r* = -0.81
 
 ### Degrees of Reading Power (GE) Instructions {-}
 
@@ -297,37 +295,37 @@ The **Easy Listening Formula** is designed for “listenability” and is meant 
 
 This test was trained on 36 television scripts from the following:
 
--   ABC
--   CBS
--   NBC
--   Local newscasts from the Los Angeles network stations KABC-TV, KNXT, and KNBC
+- ABC
+- CBS
+- NBC
+- Local newscasts from the Los Angeles network stations KABC-TV, KNXT, and KNBC
 
 To compare listenability to readability, the study was also trained on 36 newspaper samples from the following:
 
--   *The New York Times*
--   *The Wall Street Journal*
--   *The Christian Science Monitor*
--   *The Los Angeles Times*
--   *The Chicago Tribune*
--   *The St. Louis Post-Dispatch*
+- *The New York Times*
+- *The Wall Street Journal*
+- *The Christian Science Monitor*
+- *The Los Angeles Times*
+- *The Chicago Tribune*
+- *The St. Louis Post-Dispatch*
 
 The newscasts yielded the following **ELF** ranges:
 
--   ABC: 9.9 to 12.0
--   CBS: 9.6 to 11.9
--   NBC: 8.7 to 10.7
--   KNXT: 11.5 to 13.1
--   KNBC: 10.2 to 12.3
--   KABC-TV: 6.4 to 9.0
+- ABC: 9.9 to 12.0
+- CBS: 9.6 to 11.9
+- NBC: 8.7 to 10.7
+- KNXT: 11.5 to 13.1
+- KNBC: 10.2 to 12.3
+- KABC-TV: 6.4 to 9.0
 
 While the newspaper samples yielded the following:
 
--   *The New York Times*: 16.8 to 18.2
--   *The Wall Street Journal*: 13.8 to 15.1
--   *The Christian Science Monitor*: 10.3 to 13.1
--   *The Los Angeles Times*: 14.7 to 18.0
--   *The Chicago Tribune*: 14.2 to 18.6
--   *The St. Louis Post-Dispatch*: 11.3 to 17.1
+- *The New York Times*: 16.8 to 18.2
+- *The Wall Street Journal*: 13.8 to 15.1
+- *The Christian Science Monitor*: 10.3 to 13.1
+- *The Los Angeles Times*: 14.7 to 18.0
+- *The Chicago Tribune*: 14.2 to 18.6
+- *The St. Louis Post-Dispatch*: 11.3 to 17.1
 
 Note the stark difference between the printed and televised-material scores. This indicates a much higher complex-word density in printed news versus televised news.
 
@@ -364,12 +362,12 @@ Where most other formulas penalize longer words, this test does the opposite, pe
 
 To improve a score, McAlpine recommends lowering the use of miniwords and shortening all sentences to 20 words or less. She also recommends avoiding the following:
 
--   double negatives
--   negative questions (e.g., “Are you *not* currently an Ohio resident?”)
--   idioms/clichés (e.g., “tip of the iceberg”)
--   helper (auxiliary) verbs (e.g., “can,” “may”)
--   abstract nouns (e.g., “peace,” “tension”)
--   use of pronouns that may be unclear (e.g., “Gabi visited her mother after *she* was released from the hospital.”)
+- double negatives
+- negative questions (e.g., “Are you *not* currently an Ohio resident?”)
+- idioms/clichés (e.g., “tip of the iceberg”)
+- helper (auxiliary) verbs (e.g., “can,” “may”)
+- abstract nouns (e.g., “peace,” “tension”)
+- use of pronouns that may be unclear (e.g., “Gabi visited her mother after *she* was released from the hospital.”)
 
 ### The McAlpine EFLAW Formula {-}
 
@@ -535,23 +533,23 @@ The name **FORCAST** is a pseudo acronym for its authors: J. Patrick **FOR**d, J
 
 The original version of this graph included grade levels 1-12 and college (Fry, “Formula That Saves Time” 513-516; *Instruction*, 217). It was trained against samples from the following books:
 
--   *Light in the Forest*
--   *Of Mice and Men*
--   *The Pearl*
--   *Shane*
--   *Death be Not Proud*
--   *Moon is Down*
--   *To Kill a Mockingbird*
--   *Tale of Two Cities*
--   *Silas Marner*
--   *Act One*
+- *Light in the Forest*
+- *Of Mice and Men*
+- *The Pearl*
+- *Shane*
+- *Death be Not Proud*
+- *Moon is Down*
+- *To Kill a Mockingbird*
+- *Tale of Two Cities*
+- *Silas Marner*
+- *Act One*
 
 The graph's results were compared to other tests, yielding the following correlations:
 
--   **Dale-Chall**: *r* = 0.94
--   **Flesch Reading Ease**: *r* = 0.96
--   **Botel**: *r* = 0.78
--   **SRA**: *r* = 0.98
+- **Dale-Chall**: *r* = 0.94
+- **Flesch Reading Ease**: *r* = 0.96
+- **Botel**: *r* = 0.78
+- **SRA**: *r* = 0.98
 
 In 1977, Fry extended the graph to include grades 13-16 by extrapolating the averages from the preceding 3 years on the graph (*Extension* 251).
 
@@ -563,18 +561,18 @@ knitr::include_graphics("Images/frygraph.png")
 
 Note the following aspects of this graph:
 
--   Grade levels from 1 to 17+ are represented by bands along the middle. If a score falls within one of these bands, then that will be the document's grade level.
--   A curved line running through the middle of the grade-level bands. This represents the “smoothed mean of the sample passages. If you plot a large number of passages with a wide range, they will tend to fall somewhere near the line” (“Clarifications, Validity, and Extension” 243).
--   Shaded areas in the bottom-left and top-right corners. These represent the long-sentences and long-words regions, respectively. If a document's score falls into either of these regions, then one of these factors is making the document too difficult to fit into a grade level.
+- Grade levels from 1 to 17+ are represented by bands along the middle. If a score falls within one of these bands, then that will be the document's grade level.
+- A curved line running through the middle of the grade-level bands. This represents the “smoothed mean of the sample passages. If you plot a large number of passages with a wide range, they will tend to fall somewhere near the line” (“Clarifications, Validity, and Extension” 243).
+- Shaded areas in the bottom-left and top-right corners. These represent the long-sentences and long-words regions, respectively. If a document's score falls into either of these regions, then one of these factors is making the document too difficult to fit into a grade level.
 
 The **Fry Graph** instructions are:
 
--   Extract a 100-word passage from the selection. If the material is long, take subsamples from the beginning, middle, and end.
--   Count the number of sentences in each passage. Count a half sentence as .5.
--   Count the number of syllables in each passage.
--   Find the point on the chart.
--   If the sample's syllable or sentence count is too low or high for it to be plotted, then adjust that factor so that it can fit onto the chart. For example, if a sample has 187 syllables per 100 words, then this will need to be adjusted to 182.
--   Repeat this process for each sample, and then average the samples.
+- Extract a 100-word passage from the selection. If the material is long, take subsamples from the beginning, middle, and end.
+- Count the number of sentences in each passage. Count a half sentence as .5.
+- Count the number of syllables in each passage.
+- Find the point on the chart.
+- If the sample's syllable or sentence count is too low or high for it to be plotted, then adjust that factor so that it can fit onto the chart. For example, if a sample has 187 syllables per 100 words, then this will need to be adjusted to 182.
+- Repeat this process for each sample, and then average the samples.
 
 This test is designed for 100-word samples, with 3 samples being recommended for best results. ([Normalization](#glossary) can also be used to analyze larger samples or entire documents.)
 
@@ -586,20 +584,20 @@ The **Gunning Fog** readability formula (39-41) calculates the grade level of a 
 
 Complex words are words that contain three or more syllables, with the exception of:
 
--   Proper nouns.
--   Words made three syllables by adding “ed” or “es” (e.g., “created” or “trespasses”).
--   Compound words composed of simpler words. **Readability Studio** considers hyphenated words to be compound words (e.g., “horse-power” or “and/or”). Note that forward slashes (‘/’) are treated like hyphens in this context.
+- Proper nouns.
+- Words made three syllables by adding “ed” or “es” (e.g., “created” or “trespasses”).
+- Compound words composed of simpler words. **Readability Studio** considers hyphenated words to be compound words (e.g., “horse-power” or “and/or”). Note that forward slashes (‘/’) are treated like hyphens in this context.
 
-This test can optionally count independent clauses as separate sentences, as The Technique of Clear Writing instructs. It should be noted, however, that this can cause misleadingly low scores for documents that contain run-on sentences. Consider the follow:
+This test can optionally count independent clauses as separate sentences, as *The Technique of Clear Writing* instructs. It should be noted, however, that this can cause misleadingly low scores for documents that contain run-on sentences. Consider the follow:
 
 > “The Meldorf^®^ statistical library is available in C++ source code–a low-level programming language–and in the form of a COM library–a Microsoft^®^ technology for inter-program communication; the COM library can be called from numerous languages, such as: Visual Basic, C#, and Delphi.”
 
-If you treat independent clauses as separate sentences, then this will be seen as six small sentences and produce a **Fog** score of 10.2. If you count sentences just by looking for `.?!`, then this will be counted as a single 44-word sentence and produce a Fog score of 19. To penalize run-on sentences (which is recommended), then leave the option [count independent clauses as separate sentences](#readability-test-options) unchecked for this test.
+If you treat independent clauses as separate sentences, then this will be seen as six small sentences and produce a **Fog** score of 10.2. If you count sentences just by looking for `.?!`, then this will be counted as a single 44-word sentence and produce a **Fog** score of 19. To penalize run-on sentences (which is recommended), then leave the option [count independent clauses as separate sentences](#readability-test-options) unchecked for this test.
 
 ### The Gunning Fog Formula {-}
 
 ```{r, eval=F, echo=T}
-G = .4*(W/S+((C/W)*100))
+G = .4*(W/S+((F/W)*100))
 ```
 
 Where:
@@ -608,18 +606,18 @@ Where:
 | --- | --- |
 | G   | Grade level |
 | W   | Number of words |
-| C   | Number of complex words |
+| F   | Number of complex words |
 | S   | Number of sentences |
 
 ## Harris-Jacobson Wide Range {-#harris-jacobson}
 
 The **Harris-Jacobson** readability test (19-30; Chapter 3) calculates the grade level of a document based on sentence length and number of unique unfamiliar words. Words are unfamiliar if they do not appear on a list of common words that are known to most second-grade students. The following are also considered familiar:
 
--   Regular verb forms of any common word (i.e., “ing,” “es,” “s,” “ed,” and “ies” endings). Irregular forms are not familiar.
--   Regular plural and possessive forms of any common word (i.e., “s,” “es,” and “ies” endings). Irregular forms are not familiar.
--   Adjectival or adverbial forms of common words. This includes forms with endings such as “ly,” “est,” “er,” and “ily.”
--   Hyphenated words if both parts of the word are common words. For example, “apple-tree” and “and/or” would be familiar. (Note that forward slashes (‘/’) are treated like hyphens in this context.) Although this rule is not explicitly stated in Basic Reading Vocabularies, it is recommended because both [Spache](#spache-test) and [New Dale-Chall](#dale-chall-test) apply it.
--   All proper nouns.
+- Regular verb forms of any common word (i.e., “ing,” “es,” “s,” “ed,” and “ies” endings). Irregular forms are not familiar.
+- Regular plural and possessive forms of any common word (i.e., “s,” “es,” and “ies” endings). Irregular forms are not familiar.
+- Adjectival or adverbial forms of common words. This includes forms with endings such as “ly,” “est,” “er,” and “ily.”
+- Hyphenated words if both parts of the word are common words. For example, “apple-tree” and “and/or” would be familiar. (Note that forward slashes (‘/’) are treated like hyphens in this context.) Although this rule is not explicitly stated in Basic Reading Vocabularies, it is recommended because both [Spache](#spache-test) and [New Dale-Chall](#dale-chall-test) apply it.
+- All proper nouns.
 
 Note that numerals are entirely excluded from this test and are considered neither familiar nor unfamiliar.
 
@@ -743,17 +741,17 @@ The philosophy behind using one formula for multiple languages is that, at their
 
 This test was originally designed for Danish, English, French, German, and Finnish and trained on “thousands of books and reading passages” (481) during 1968, 1969, 1974, 1975, and 1979. During the 1974 English study, the formula was tested with:
 
--   20 children’s books
--   30 fiction books
--   30 non-fiction books
--   20 technical books
+- 20 children’s books
+- 30 fiction books
+- 30 non-fiction books
+- 20 technical books
 
 Other language studies were conducted later using newspaper articles as their training material. These languages included Danish, English, Finnish, French, German, Italian, Norwegian, Portuguese, Russian, Spanish, and Swedish. (Anderson conducted a separate study with Greek material in 1981.) The researchers’ findings noted the following average scores across the languages:
 
--   Swedish (47), Norwegian (48), and Danish (51) were the lowest scoring (i.e., easiest to read)
--   ...followed by English (52), French (55), and German (59)
--   ...then Italian (65), Spanish (67), and Portuguese (70)
--   ...and Finnish (72) and Russian (65) being the most difficult
+- Swedish (47), Norwegian (48), and Danish (51) were the lowest scoring (i.e., easiest to read)
+- ...followed by English (52), French (55), and German (59)
+- ...then Italian (65), Spanish (67), and Portuguese (70)
+- ...and Finnish (72) and Russian (65) being the most difficult
 
 The researchers conjectured these differences had more to do with use of language than with the languages themselves (495).
 
@@ -769,8 +767,8 @@ The index score of **Lix** can be summarized as follows:
 
 Note that **Lix** also includes a chart to visualize the meaning of its index score:
 
-```{r, echo=F, fig.cap='Lix Guage', fig.align='center'}
-knitr::include_graphics("Images/LixGuage.png")
+```{r, echo=F, fig.cap='Lix Gauge', fig.align='center'}
+knitr::include_graphics("Images/LixGauge.png")
 ```
 
 ### The Lix Formula {-}
@@ -812,9 +810,9 @@ The **Modified SMOG** test (L. Smith 129-132) calculates the grade level of a do
 
 **Modified SMOG** differs from [SMOG](#smog-test) in the following ways:
 
--   It uses the unique number of difficult words (rather than the total).
--   It uses a smaller constant in its formula.
--   The score is rounded, rather than floored.
+- It uses the unique number of difficult words (rather than the total).
+- It uses a smaller constant in its formula.
+- The score is rounded, rather than floored.
 
 Because of these adjustments, it will generally produce scores closer to other tests than **SMOG** does—in particular, the **Fry** graph (L. Smith 129).
 
@@ -822,10 +820,10 @@ The author's decision to not count repeated polysyllabic words was a major facto
 
 The steps for calculating **Modified SMOG** are:
 
--   Take 3 10-sentence samples.
--   Count the number of **unique** words containing 3 or more syllables.
--   Calculate the square root of this count and round it.
--   If this square root is 4 or more, then add 1. Otherwise, the square root should remain the same. This will be the grade level score.
+- Take 3 10-sentence samples.
+- Count the number of **unique** words containing 3 or more syllables.
+- Calculate the square root of this count and round it.
+- If this square root is 4 or more, then add 1. Otherwise, the square root should remain the same. This will be the grade level score.
 
 Note that numerals are fully syllabized (i.e., sounded out) for this test, so the program overrides your [numeral syllabication](#numsyllable) setting when calculating it.
 
@@ -893,7 +891,7 @@ The **New Fog Count** (Kincaid et al., *Derivation* 14) readability formula is a
 This test was trained against reading-test results from 531 U.S. Navy personnel from four Naval technical training schools. Using these results, the following multiple regression equation was derived:
 
 ```{r, eval=F, echo=T}
-G = (((E + (3 * C)) / S ) - 3) / 2
+G = (((Z + (3 * F)) / S ) - 3) / 2
 ```
 
 Where:
@@ -901,11 +899,14 @@ Where:
 |     |     |
 | --- | --- |
 | G   | Grade level |
-| C   | Number of complex words |
-| E   | Number of easy words |
+| F   | Number of complex words |
+| Z   | Number of easy words |
 | S   | Number of sentences |
 
-Note that numerals and proper nouns are always treated as easy words for this test, regardless of their syllable count.
+::: {.note}
+
+This test uses the same easy-word and sentence counting methods as the [Gunning Fog](#gunning-fog-test) test.
+:::
 
 ## (Powers, Sumner, Kearl) Dale-Chall {-#psk-dale-chall}
 
@@ -915,10 +916,10 @@ The goal of Powers, Sumner, and Kearl was to develop updated versions of four po
 
 The training materials used to build the regression formulas were 383 prose passages from the 1950 edition of McCall-Crabbs's *Standard Test Lessons in Reading*. For validation, the formulas were tested against 113 samples from “various publications” (Powers, Sumner, and Kearl 100). Their results (shown below) implied somewhat strong correlations for their **Dale-Chall** and **Flesch** formulas and mild correlations for their **FJP** and **Gunning Fog** formulas:
 
--   recalcuated Dale-Chall: *r² = 0.5092*
--   recalcuated Flesch: *r² = 0.4034*
--   recalcuated Gunning Fog: *r² = 0.3440*
--   recalcuated Far-Jenkins-Paterson: *r² = 0.3407*
+- recalculated Dale-Chall: *r² = 0.5092*
+- recalculated Flesch: *r² = 0.4034*
+- recalculated Gunning Fog: *r² = 0.3440*
+- recalculated Far-Jenkins-Paterson: *r² = 0.3407*
 
 The recalculated **Dale-Chall** formula is as follows:
 
@@ -945,10 +946,10 @@ The goal of Powers, Sumner, and Kearl was to develop updated versions of four po
 
 The training materials used to build the regression formulas were 383 prose passages from the 1950 edition of McCall-Crabbs's *Standard Test Lessons in Reading*. For validation, the formulas were tested against 113 samples from “various publications” (Powers, Sumner, and Kearl 100). Their results (shown below) implied somewhat strong correlations for their **Dale-Chall** and **Flesch** formulas and mild correlations for their **FJP** and **Gunning Fog** formulas:
 
--   recalcuated Dale-Chall: *r² = 0.5092*
--   recalcuated Flesch: *r² = 0.4034*
--   recalcuated Gunning Fog: *r² = 0.3440*
--   recalcuated Far-Jenkins-Paterson: *r² = 0.3407*
+- recalculated Dale-Chall: *r² = 0.5092*
+- recalculated Flesch: *r² = 0.4034*
+- recalculated Gunning Fog: *r² = 0.3440*
+- recalculated Far-Jenkins-Paterson: *r² = 0.3407*
 
 The recalculated **Farr, Jenkins, Paterson** formula is as follows:
 
@@ -973,15 +974,15 @@ The goal of Powers, Sumner, and Kearl was to develop updated versions of four po
 
 The training materials used to build the regression formulas were 383 prose passages from the 1950 edition of McCall-Crabbs's *Standard Test Lessons in Reading*. For validation, the formulas were tested against 113 samples from “various publications” (Powers, Sumner, and Kearl 100). Their results (shown below) implied somewhat strong correlations for their **Dale-Chall** and **Flesch** formulas and mild correlations for their **FJP** and **Gunning Fog** formulas:
 
--   recalcuated Dale-Chall: *r² = 0.5092*
--   recalcuated Flesch: *r² = 0.4034*
--   recalcuated Gunning Fog: *r² = 0.3440*
--   recalcuated Far-Jenkins-Paterson: *r² = 0.3407*
+- recalculated Dale-Chall: *r² = 0.5092*
+- recalculated Flesch: *r² = 0.4034*
+- recalculated Gunning Fog: *r² = 0.3440*
+- recalculated Far-Jenkins-Paterson: *r² = 0.3407*
 
 The recalculated **Gunning Fog** formula is as follows:
 
 ```{r, eval=F, echo=T}
-G = 3.0680 + (.0877*(W/S)) + (.0984*((C/W)*100))
+G = 3.0680 + (.0877*(W/S)) + (.0984*((F/W)*100))
 ```
 
 Where:
@@ -990,8 +991,13 @@ Where:
 | --- | --- |
 | G   | Grade level |
 | W   | Number of words |
-| C   | Number of 3+ syllable words |
+| F   | Number of complex words |
 | S   | Number of sentences |
+
+::: {.note}
+
+This test uses the same easy-word and sentence counting methods as the [Gunning Fog](#gunning-fog-test) test.
+:::
 
 ## (Powers, Sumner, Kearl) Flesch {-#psk-test}
 
@@ -1001,15 +1007,15 @@ The goal of Powers, Sumner, and Kearl was to develop updated versions of four po
 
 The training materials used to build the regression formulas were 383 prose passages from the 1950 edition of McCall-Crabbs's *Standard Test Lessons in Reading*. For validation, the formulas were tested against 113 samples from “various publications” (Powers, Sumner, and Kearl 100). Their results (shown below) implied somewhat strong correlations for their **Dale-Chall** and **Flesch** formulas and mild correlations for their **FJP** and **Gunning Fog** formulas:
 
--   recalcuated Dale-Chall: *r² = 0.5092*
--   recalcuated Flesch: *r² = 0.4034*
--   recalcuated Gunning Fog: *r² = 0.3440*
--   recalcuated Far-Jenkins-Paterson: *r² = 0.3407*
+- recalculated Dale-Chall: *r² = 0.5092*
+- recalculated Flesch: *r² = 0.4034*
+- recalculated Gunning Fog: *r² = 0.3440*
+- recalculated Far-Jenkins-Paterson: *r² = 0.3407*
 
 The recalculated **Flesch** formula is as follows:
 
 ```{r, eval=F, echo=T}
-G = (S * .0778) + (B * .0455) - 2.2029
+G = (ASL * .0778) + (SY * .0455) - 2.2029
 ```
 
 Where:
@@ -1017,8 +1023,8 @@ Where:
 |     |     |
 | --- | --- |
 | G   | Grade level |
-| S   | Average sentence length |
-| B   | Number of syllables per 100 words |
+| ASL   | Average sentence length |
+| SY   | Number of syllables per 100 words |
 
 Note that this test treats numerals as monosyllabic words, in conjunction with the original **Flesch** test.
 
@@ -1038,12 +1044,12 @@ knitr::include_graphics("Images/raygorgraph.png")
 
 The **Raygor Estimate Graph** formula is:
 
--   Extract a 100-word passage from the selection. If the material is long, take subsamples from the beginning, middle, and end. Numerals should be skipped.
--   Count the number of sentences, estimated to the nearest tenth.
--   Count the number of words that are six or more letters.
--   Find the point on the chart.
--   If the sample's character or sentence count is too low or high for it to be plotted, then adjust that factor so that it can fit onto the chart. For example, if a sample has 30 sentences per 100 words, then this will need to be adjusted to 28.
--   Repeat this process for each sample, and then average the samples.
+- Extract a 100-word passage from the selection. If the material is long, take subsamples from the beginning, middle, and end. Numerals should be skipped.
+- Count the number of sentences, estimated to the nearest tenth.
+- Count the number of words that are six or more letters.
+- Find the point on the chart.
+- If the sample's character or sentence count is too low or high for it to be plotted, then adjust that factor so that it can fit onto the chart. For example, if a sample has 30 sentences per 100 words, then this will need to be adjusted to 28.
+- Repeat this process for each sample, and then average the samples.
 
 This test is designed for 3 100-word samples, with 3 samples being recommended for best results. ([Normalization](#glossary) can also be used to analyze larger samples or entire documents.)
 
@@ -1059,9 +1065,9 @@ As for defining long words, Anderson recommended “excluding hyphens, punctuati
 
 Prior to creating this formula, Anderson conducted a validation study for **Lix**, using a set of 36 prose passages. These 150-word passages were originally scored from a cloze study (Miller and Coleman 851). Later, they were scored in another study involving judged-rankings and word-recollection tests (Aquino 346-356). (Both portions of Aquino’s study used 14 *Southwest Regional Laboratory for Educational Research and Development* employees.) Anderson analyzed the **Lix** scores against these other measurements and found significant correlations, as shown below:
 
--   against the Miller and Coleman’s cloze scores, *r* = 0.89
--   against word-recall scores, *r* = 0.82
--   against the judges’ rankings, *r* = 0.88
+- against the Miller and Coleman’s cloze scores, *r* = 0.89
+- against word-recall scores, *r* = 0.82
+- against the judges’ rankings, *r* = 0.88
 
 After validating **Lix**, Anderson created **Rix** and compared the two tests’ results. He found that they almost perfectly correlated (*r* = 0.99). Afterwards, he validated **Rix** against the aforementioned 36-passage studies and found similarly strong correlations.
 
@@ -1103,7 +1109,7 @@ The **SMOG** readability formula (McLaughlin 639-646) calculates the grade level
 
 **SMOG** attempts to predict “full comprehension” (L. Smith 129), whereas most other formulas predict 50%-75% comprehension. Because of this, **SMOG** will generally produce higher scores comparatively (usually 1-2 grade levels higher).
 
-This test was trained on 390 passages from the 1961 edition of *McCall-Crabbs Standard Tests Lesssons in Reading*. The following regression equation was derived with a correlation of *r* = 0.985:
+This test was trained on 390 passages from the 1961 edition of *McCall-Crabbs Standard Tests Lessons in Reading*. The following regression equation was derived with a correlation of *r* = 0.985:
 
 ```{r, eval=F, echo=T}
 G = 1.0430*√C + 3.1291
@@ -1115,13 +1121,16 @@ Where:
 | --- | --- |
 | G   | Grade level |
 | C   | Number of complex (3+ syllables) words from 30 sentences |
-| FLOOR | Round the result of **(√C)** down to the closest perfect square |
 
 A simplified variation is also available (McLaughlin 643):
 
 ```{r, eval=F, echo=T}
 G = FLOOR(√C) + 3
 ```
+
+Where:
+
+| FLOOR | Round the result of **(√C)** down to the closest perfect square |
 
 ::: {.note}
 
@@ -1140,17 +1149,17 @@ Please refer to [SMOG](#smog-test).
 
 ## Spache Revised {-#spache-test}
 
-The **Spache Revised** test (Spache, *Good* 195-2003) calculates the grade level of a document based on sentence length and number of unique unfamiliar words. This test uses a list of 1041 common words that are known to younger readers (4th grade and below). Any word that does not appear on this list is considered unfamiliar. The following are also considered familiar:
+The **Spache Revised** test (Spache, *Good* 195-2003) calculates the grade level of a document based on sentence length and number of unique unfamiliar words. This test uses a list of 1041 common words that are known to younger readers (4^th^ grade and below). Any word that does not appear on this list is considered unfamiliar. The following are also considered familiar:
 
--   Regular verb forms of any common word (i.e., “ing,” “es,” “s,” “ed,” and “ies” endings). Irregular forms are not familiar.
--   Regular plural and possessive forms of any common word (i.e., “s,” “es,” and “ies” endings). Irregular forms are not familiar.
--   Adjectival or adverbial forms of common words. This includes forms with endings such as “ly,” “est,” “er,” and “ily.”
--   Derivatives of common words where the function changes (e.g., an adjective changed to function as a noun) are not familiar unless explicitly on the common word list. For example, “brave” is a common word, but “bravery” would not be considered familiar.
--   Hyphenated words if both parts of the word are common words. For example, “apple-tree” and “and/or” would be familiar. Note that forward slashes (‘/’) are treated like hyphens in this context.
--   All proper nouns.
--   All numerals.
+- Regular verb forms of any common word (i.e., “ing,” “es,” “s,” “ed,” and “ies” endings). Irregular forms are not familiar.
+- Regular plural and possessive forms of any common word (i.e., “s,” “es,” and “ies” endings). Irregular forms are not familiar.
+- Adjectival or adverbial forms of common words. This includes forms with endings such as “ly,” “est,” “er,” and “ily.”
+- Derivatives of common words where the function changes (e.g., an adjective changed to function as a noun) are not familiar unless explicitly on the common word list. For example, “brave” is a common word, but “bravery” would not be considered familiar.
+- Hyphenated words if both parts of the word are common words. For example, “apple-tree” and “and/or” would be familiar. Note that forward slashes (‘/’) are treated like hyphens in this context.
+- All proper nouns.
+- All numerals.
 
-**Spache Revised** is generally used for primary age (i.e., Kindergarten to 7th grade) readers to help classify school textbooks and literature. This differs from [New Dale-Chall](#dale-chall-test), which is better meant for secondary age readers.
+**Spache Revised** is generally used for primary age (i.e., Kindergarten to 7^th^ grade) readers to help classify school textbooks and literature. This differs from [New Dale-Chall](#dale-chall-test), which is better meant for secondary age readers.
 
 Because this formula uses familiar words (rather than syllable or letter counts), it is often regarded as a more accurate test for younger readers.
 
@@ -1178,7 +1187,7 @@ Spache recommends not counting the same unfamiliar word more than once if it app
 
 ## Stocker's Catholic Supplement {-#stocker-catholic-supplement}
 
-Stocker's Catholic supplement (87-89) is an extension to the [Dale-Chall](#dale-chall-test) word list designed for Catholic students. Based on a 1971 study of 4th-grade Catholic students\*, this list represents over 200 words (not on the standard **Dale-Chall** list) familiar to 80% of them.
+Stocker's Catholic supplement (87-89) is an extension to the [Dale-Chall](#dale-chall-test) word list designed for Catholic students. Based on a 1971 study of 4^th^-grade Catholic students\*, this list represents over 200 words (not on the standard **Dale-Chall** list) familiar to 80% of them.
 
 This list is used along with the **Dale-Chall** list and offers more accurate scoring with materials meant for Catholic schools.
 
@@ -1190,7 +1199,7 @@ To include this list as part of your **New Dale-Chall** scoring, select the **To
 
 ## Wheeler-Smith {-#wheeler-smith}
 
-The **Wheeler-Smith** (397-399) test is designed for primary-age materials (Kindergarten to 4th grade). This test calculates the grade level of a document based on [unit](#glossary) length and number of polysyllabic (2+ syllable) words. It should be noted that this differs from most other tests that use 3+ syllable words as a difficulty factor. The researchers selected 2+ syllable words because primary readers will have more difficulty with them than secondary and adult readers.
+The **Wheeler-Smith** (397-399) test is designed for primary-age materials (Kindergarten to 4^th^ grade). This test calculates the grade level of a document based on [unit](#glossary) length and number of polysyllabic (2+ syllable) words. It should be noted that this differs from most other tests that use 3+ syllable words as a difficulty factor. The researchers selected 2+ syllable words because primary readers will have more difficulty with them than secondary and adult readers.
 
 Although not explicitly stated in the article, the authors' definition of “polysyllabic” as being 2+ syllable can be inferred from the example\* that they provided:
 

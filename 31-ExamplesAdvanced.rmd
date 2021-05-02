@@ -2,11 +2,11 @@
 
 In this chapter, we will step through how to exclude text from an analysis. After that, we will continue with examples showing how to customize graphs and create test bundles.
 
-## Excluding Text from an Analysis {-#ExcludingTextFromAnalysis}
+## Excluding Text from an Analysis {-#excluding-text-from-analysis}
 
 When reviewing a document, it is usually preferable to ignore certain items, such as headers and citations (refer to the [Text Exclusion](#how-text-is-excluded) topic for more information). In this example, we will discuss the various methods for excluding these items.
 
-The first step is to open the example file **Danielson-Bryan**. From the **Help** tab, click the **Example Documents** button and then select **Danielson-Bryan** from the menu. When the **New Project Wizard** appears, leave the defaults and click **Finish**. A warning about an incomplete sentence being included because of its length will appear:
+The first step is to open the example file **Danielson-Bryan**. From the **Help** tab, click the **Example Documents** button and then select **Danielson-Bryan** from the menu. (When prompted about how to open the document, select **Create a new project**.) When the **New Project Wizard** appears, leave the defaults and click **Finish**. A warning about an incomplete sentence being included because of its length will appear:
 
 ![](Images/NonGenerated/ExclusionExampleIncompleteSentWarning.png)
 
@@ -97,19 +97,19 @@ All the options discussed here are also available on the **Document** tab of the
 
 ## Excluding Placeholders and Blocks of Text {-#excluding-placeholders}
 
-Continuing from the [previous example](#ExcludingTextFromAnalysis), we will now discuss how to exclude specific blocks of text.
+Continuing from the [previous example](#excluding-text-from-analysis), we will now discuss how to exclude specific blocks of text.
 
-The first step is to open the example file **Press Release**. From the **Help** tab, click the **Example Documents** button and then select **Press Release** from the menu. When the **New Project Wizard** appears, leave the defaults and click **Finish**.
+The first step is to open the example file **Press Release**. From the **Help** tab, click the **Example Documents** button and then select **Press Release** from the menu. (When prompted about how to open the document, select **Create a new project**.) When the **New Project Wizard** appears, leave the defaults and click **Finish**.
 
 Once the project is loaded, click **Grammar** on the project's sidebar and then click **Highlighted Report**. In this window, any text that is being excluded will be highlighted gray. For example, an indented list is being excluded, as shown below:
 
 ![](Images/ExclusionTagsExampleListExcluded.png)
 
-However, note that are a few placeholders in this file, such as “<Product>”:
+However, note that are a few placeholders in this file, such as “\<Product\>”:
 
 ![](Images/ExclusionTagsExampleNotExcluding.png)
 
-We will want to exclude these items because they will not be in the final draft. However, because these are valid words and sentences (i.e., they are not headers, list items, etc.), then the [standard exclusion features](#options-text-exclusion) will not remove them. Also, using a list of exclusion words may be too aggressive. For example, adding “product” to an exclusion list will remove the “<Product>,” but it will also exclude any other instance of “product.” Also, the last paragraph is valid, but because it is just a comment we will want to exclude this also. For these situations, will we need to use tagged-block exclusion.
+We will want to exclude these items because they will not be in the final draft. However, because these are valid words and sentences (i.e., they are not headers, list items, etc.), then the [standard exclusion features](#options-text-exclusion) will not remove them. Also, using a list of exclusion words may be too aggressive. For example, adding “product” to an exclusion list will remove the “\<Product\>,” but it will also exclude any other instance of “product.” Also, the last paragraph is valid, but because it is just a comment we will want to exclude this also. For these situations, will we need to use tagged-block exclusion.
 
 Open the **Properties** dialog, click **Analysis** and select **Document Indexing**. Set the option **Exclude text between** to **< and >**, as shown below:
 
@@ -123,68 +123,6 @@ Selecting this option will exclude text in between pairs of angle brackets. Clic
 
 All the options discussed here are also offered on the **Document** tab of the ribbon.
 :::
-
-## Customizing a Graph {-#customizing-a-graph}
-
-In this example, we will discuss the various ways to change the appearance of a graph.
-
-The first step is to open the example file **Chocolate Eclairs**. From the **Help** tab on the ribbon, click the **Example Documents** button and then select **Chocolate Eclairs** from the menu. When the **New Project Wizard** appears, leave the defaults and click **Finish**.
-
-Once the project has finished loading, select **Words Breakdown** on the sidebar, then click **Word Counts** beneath that. A bar chart showing a breakdown of word categories will be displayed:
-
-![](Images/ExampleGraphDefault.png)
-
-Now we will customize the appearance of this graph. One change that we can make is to reorder the columns in this bar chart. On the **Home** tab, click the **Sort** button under the **Edit** section. Select **Sort Descending** from the menu and note that the bars are now shown from largest to smallest from the origin:
-
-![](Images/ExampleGraphSorted.png)
-
-Next, let's change the background of the graph. On the **Home** tab, click the **Background** button under the **Edit** section. Select **Color...** from the menu. When the color selection dialog appears, select a new color (e.g., purple) and click **OK**. After selecting your new color, check the option **Apply Fade** from this menu.
-
-Now the graph will have a purple background with a gradient effect:
-
-![](Images/ExampleGraphBackgroundColorChanged.png)
-
-Next, click the **Background** button again and select **Image** from the menu. When the image selection dialog appears, choose an image and click **OK**.
-
-Now this image will be shown as the background for your graphs:
-
-![](Images/ExampleGraphBackgroundImageChangedTooOpaque.png)
-
-By default, the image will be shown fully opaque. For lighter images this will look fine, but darker images (like the one shown above) will make it difficult to read the graph. Click the **Background** button and select **Image Opacity...** from the menu. On the **Set Opacity** dialog, slide the opacity down to 100. Click **OK**.
-
-Now this image will be translucent and the graph labels will be much easier to read:
-
-![](Images/ExampleGraphBackgroundImageChanged.png)
-
-Next, we will want to apply a light color to the plot area. Click the **Background** button and select **Plot Area Color...** from the menu and select a new color. Then, select **Opacity...** from this menu and set it to 40. Click **OK**.
-
-Now the plot area of the graph will have a light blue applied to it:
-
-![](Images/ExamplePlotBackgroundColorChanged.png)
-
-Next, let's put a [watermark](#watermark-and-logo) across our graph. Click the **Watermark** button in the **Edit** section. Enter “INTERNAL USE ONLY” in the **Watermark** dialog and click **OK**.
-
-Note how this label is now lightly written across the graph:
-
-![](Images/ExampleWatermarkChanged.png)
-
-Now let's put a company logo on our graph. Click the **Logo** button in the **Edit** section. Select an image and click **OK**.
-
-Now this image will be shown in the bottom right corner of the graph:
-
-![](Images/ExampleLogoChanged.png)
-
-Next, we can change the direction of the bars. Click the **Orientation** button in the **Edit** section. Select **Vertical** from the menu.
-
-Now the bars will be arranged vertically:
-
-![](Images/ExampleBarChartOrientationChanged.png)
-
-Finally, let's change how the bars are drawn. Click the **Bar Style** button in the **Edit** section and select **Color fade, bottom to top**.
-
-The bars will now have a fading color painted across them, rather than the default glassy look:
-
-![](Images/ExampleBarChartEffectsChanged.png)
 
 ## Creating a Test Bundle {-}
 

@@ -5,20 +5,52 @@ author: "Blake Madden"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
+papersize: a4
+links-as-notes: true
+linestretch: 1.15
+geometry: "left=4cm, right=3cm, top=2.5cm, bottom=2.5cm"
 biblio-style: mlalike
 link-citations: yes
 cover-image: "images/NonGenerated/cover.png"
 ---
 
 ```{r, include=FALSE}
-knitr::opts_chunk$set(message=F, warning=F, dev='svg')
+knitr::opts_chunk$set(message=F, warning=F)
+
+library(glue)
+
+# Displays the macOS CMD button symbol (as a keyboard button)
+macOSCmdButton <- function()
+  {
+  if (knitr::is_latex_output())
+    {
+    knitr::asis_output("\\keys{\\cmd}")
+    }
+  else if (knitr::is_html_output())
+    {
+    knitr::asis_output("<span class='key'>&#8984;</span>")
+    }
+  }
+
+# Displays a label as a keyboard button
+KeyboardButton <- function(label)
+  {
+  if (knitr::is_latex_output())
+    {
+    knitr::asis_output(paste0("\\keys{", label, "}"))
+    }
+  else if (knitr::is_html_output())
+    {
+    knitr::asis_output(glue("<span class='key'>{label}</span>"))
+    }
+  }
 ```
 
 # Preface {#cover .unnumbered}
 
 ::: {.note}
 
-This is preliminary documentation for an upcoming release of Readability Studio. If you have any feedback, please feel free to file an issue on Github. Thank you.
+This is preliminary documentation for an upcoming release of Readability Studio. If you have any feedback, please feel free to file an issue on [Github](https://github.com/Blake-Madden/ReadabilityStudioDocs). Thank you.
 :::
 
 ```{asis, echo=!knitr::is_latex_output()}
