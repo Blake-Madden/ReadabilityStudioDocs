@@ -10,15 +10,15 @@
 
 For example, say that a test requires a 100-word sample, but your document is 200 words and contains 22 sentences. Rather than taking a 100-word sample, the full document's measurements can be normalized and used instead. In this case, we need to normalize 200 words to be 100 words, which we can do by multiplying it by 0.5.
 
-```{r, eval=F, echo=T}
+$$
 200 * 0.5 = 100
-```
+$$
 
 Next, we multiply the 22 sentences by the same factor of 0.5 and arrive at a measure of 11 sentences.
 
-```{r, eval=F, echo=T}
+$$
 22 * 0.5 = 11
-```
+$$
 
 Now that the document's measurements have been normalized to the required sample's scale, we can use these values (100 words and 11 sentences) with the test.
 
@@ -32,33 +32,33 @@ Please refer to [Statistical Terminology](#stat-terms) for information regarding
 
 ### Range {-#stats-range}
 
--   **Minimum**: the lowest value in a range of data.
--   **Maximum**: the highest value in a range of data.
--   **Range**: the distance between the lowest and highest values in a range of data.
--   **Valid N**: the number of valid values in a range of data.
+- **Minimum**: the lowest value in a range of data.
+- **Maximum**: the highest value in a range of data.
+- **Range**: the distance between the lowest and highest values in a range of data.
+- **Valid N**: the number of valid values in a range of data.
 
 ### Dispersion {-}
 
--   **Lower quartile**: the value at the 25% percentile. This is the value separating the lower quarter of the values from the rest of the values.
--   **Mean**: the average value of a range of data. This is calculated by adding all the values and dividing the total by N.
--   **Median**: the middle point separating the lower and upper halves of a range of data. This is calculated by sorting the values and taking the value in middle if the number of values is odd. If the number of values is even, then the means of the two middle points is taken.
--   **Mode**: the most frequently occurring value in a range of data. Note that a range can have multiple modes if two or more unique values appear the same number of times.
--   **Outlier**: an extreme (high or low) value that is numerically distant from the rest of the data.
--   ***r***: The correlation between two factors (e.g., sentence length vs. reading level). *r* values range from -1.0 to 1.0, where -1.0 is a perfect negative correlation and 1.0 is a perfect positive correlation.
--   ***r²***: The correlation between two factors (e.g., sentence length vs. reading level) when more than one independent factor is tested against the dependent (i.e., a multiple regression). *r²* values range from 0.0 to 1.0, where 0.0 indicates no correlation and 1.0 is a perfect positive correlation.
--   **Standard deviation**: the variability (or spread) of the values. A low standard deviation indicates that most values are close to the data's mean. In contrast, a high standard deviation indicates values that stray far from the mean.
--   **Upper quartile**: the value at the 75% percentile. This is the value separating the upper quarter of the values from the rest of the values.
--   **Variance**: another measurement of variability, which is standard deviation squared.
+- **Lower quartile**: the value at the 25% percentile. This is the value separating the lower quarter of the values from the rest of the values.
+- **Mean**: the average value of a range of data. This is calculated by adding all the values and dividing the total by N.
+- **Median**: the middle point separating the lower and upper halves of a range of data. This is calculated by sorting the values and taking the value in middle if the number of values is odd. If the number of values is even, then the means of the two middle points is taken.
+- **Mode**: the most frequently occurring value in a range of data. Note that a range can have multiple modes if two or more unique values appear the same number of times.
+- **Outlier**: an extreme (high or low) value that is numerically distant from the rest of the data.
+- ***r***: The correlation between two factors (e.g., sentence length vs. reading level). *r* values range from -1.0 to 1.0, where -1.0 is a perfect negative correlation and 1.0 is a perfect positive correlation.
+- ***r²***: The correlation between two factors (e.g., sentence length vs. reading level) when more than one independent factor is tested against the dependent (i.e., a multiple regression). *r²* values range from 0.0 to 1.0, where 0.0 indicates no correlation and 1.0 is a perfect positive correlation.
+- **Standard deviation**: the variability (or spread) of the values. A low standard deviation indicates that most values are close to the data's mean. In contrast, a high standard deviation indicates values that stray far from the mean.
+- **Upper quartile**: the value at the 75% percentile. This is the value separating the upper quarter of the values from the rest of the values.
+- **Variance**: another measurement of variability, which is standard deviation squared.
 
 ### Distribution {-}
 
--   **Kurtosis**: the peakedness of a distribution. Zero indicates a normal distribution, a negative value indicates a flat distribution, and a positive value indicates a sharp curve.  
+- **Kurtosis**: the peakedness of a distribution. Zero indicates a normal distribution, a negative value indicates a flat distribution, and a positive value indicates a sharp curve.  
 
 ```{r, echo=F, fig.cap='Negative and positive kurtosis', fig.align='center'}
 knitr::include_graphics("Images/NonGenerated/Kurtosis.png")
 ```
 
--   **Skewness**: the asymmetry of the probability distribution. A zero skew indicates a symmetrical balance in the distribution. A negative skew indicates that the left side of the distribution is longer and most of the values are concentrated on the right. A positive skew indicates that the right side of the distribution is longer and most of the values are concentrated on the left.  
+- **Skewness**: the asymmetry of the probability distribution. A zero skew indicates a symmetrical balance in the distribution. A negative skew indicates that the left side of the distribution is longer and most of the values are concentrated on the right. A positive skew indicates that the right side of the distribution is longer and most of the values are concentrated on the left.  
 
 ```{r, echo=F, fig.cap='Negative and positive skewness', fig.align='center'}
 knitr::include_graphics("Images/NonGenerated/Skewness.png")
@@ -104,9 +104,9 @@ beeswarm(len ~ dose, data = ToothGrowth, col = 2, add = TRUE)
 
 Box plots are used to display the distribution of data, where:
 
--   The middle point is the median.
--   The box is the 25^th^-75^th^ percentile range.
--   The whiskers are the non-outlier range.
+- The middle point is the median.
+- The box is the 25^th^-75^th^ percentile range.
+- The whiskers are the non-outlier range.
 
 Outlier values that do not fall within these areas are plotted outside of the whiskers.
 
