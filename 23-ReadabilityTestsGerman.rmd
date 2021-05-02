@@ -4,7 +4,7 @@
 
 The **Amstad** test is a recalculation of [Flesch Reading Ease](#flesch-test) for German text. Its formula is adjusted from the original **Flesch** to take into account German's comparatively longer words. It also uses a lower weighting for the sentence-length factor, placing most of the influence on word length.
 
-The factors used for this test are syllables per word (“Silben pro Wort”) and words per sentence (“Wörter pro Satz”). (The same factors used for **Flesch Reading Ease**).
+The factors used for this test are syllables per word (“*Silben pro Wort*”) and words per sentence (“*Wörter pro Satz*”). (The same factors used for **Flesch Reading Ease**).
 
 **Amstad** (78-81) is best suited for school textbooks and technical manuals. Scores range from 0-100 (the higher the score, the easier to read) and average documents should be within the range of 60-70.
 
@@ -16,7 +16,7 @@ Where:
 
 |     |     |
 | --- | --- |
-| I   | Amstad (i.e., Flesch) index score |
+| I   | **Amstad** (i.e., **Flesch**) index score |
 | W   | Number of words |
 | B   | Number of syllables |
 | S   | Number of sentences |
@@ -121,9 +121,9 @@ Where:
 |     |     |
 | --- | --- |
 | G   | Grade level |
-| C   | Number of 3+ syllable (“drei- und mehrsilbigen”) words |
-| X   | Number of 7+ character (“mehr als sechs buchstaben”) words |
-| M   | Number of monosyllabic (“einsilbigen”) words |
+| C   | Number of 3+ syllable (“*drei- und mehrsilbigen*”) words |
+| X   | Number of 7+ character (“*mehr als sechs buchstaben*”) words |
+| M   | Number of monosyllabic (“*einsilbigen*”) words |
 | S   | Number of sentences |
 | W   | Number of words |
 
@@ -133,18 +133,19 @@ Where:
 
 ### The Neue Wiener Sachtextformel 2 Formula {-}
 
-```{r, eval=F, echo=T}
-G = 0.2007*((C/W)*100) + 0.1682*(W/S) + 0.1373*((X/W)*100) - 2.779
-```
+\begin{align*}
+  G = & 0.2007*((C/W)*100) + 0.1682*(W/S) + \\
+      & 0.1373*((X/W)*100) - 2.779
+\end{align*}
 
 Where:
 
 |     |     |
 | --- | --- |
 | G   | Grade level |
-| C   | Number of 3+ syllable (“drei- und mehrsilbigen”) words |
-| X   | Number of 7+ character (“mehr als sechs buchstaben”) words |
-| M   | Number of monosyllabic (“einsilbigen”) words |
+| C   | Number of 3+ syllable (“*drei- und mehrsilbigen*”) words |
+| X   | Number of 7+ character (“*mehr als sechs buchstaben*”) words |
+| M   | Number of monosyllabic (“*einsilbigen*”) words |
 | S   | Number of sentences |
 | W   | Number of words |
 
@@ -154,18 +155,18 @@ Where:
 
 ### The Neue Wiener Sachtextformel 3 Formula {-}
 
-```{r, eval=F, echo=T}
+$$
 G = 0.2963*((C/W)*100) + 0.1905*(W/S) - 1.1144
-```
+$$
 
 Where:
 
 |     |     |
 | --- | --- |
 | G   | Grade level |
-| C   | Number of 3+ syllable (“drei- und mehrsilbigen”) words |
-| X   | Number of 7+ character (“mehr als sechs buchstaben”) words |
-| M   | Number of monosyllabic (“einsilbigen”) words |
+| C   | Number of 3+ syllable (“*drei- und mehrsilbigen*”) words |
+| X   | Number of 7+ character (“*mehr als sechs buchstaben*”) words |
+| M   | Number of monosyllabic (“*einsilbigen*”) words |
 | S   | Number of sentences |
 | W   | Number of words |
 
@@ -184,7 +185,7 @@ Where:
 |     |     |
 | --- | --- |
 | G   | Grade level |
-| C   | Number of 3+ syllables (“Drei- und Mehrsilber”) words |
+| C   | Number of 3+ syllables (“*drei- und mehrsilber*”) words |
 | S   | Number of sentences |
 | W   | Number of words |
 
@@ -203,9 +204,9 @@ This test is a German variation of [Rix](#rix-test) designed for fiction books. 
 
 ### The Rix (German fiction) Formula {-}
 
-```{r, eval=F, echo=T}
+$$
 I = ((100*(X/W))/(U*(100/W))) * 10
-```
+$$
 
 Where:
 
@@ -238,9 +239,9 @@ This test is a German variation of [Rix](#rix-test) designed for non-fiction boo
 
 ### The Rix (German non-fiction) Formula {-}
 
-```{r, eval=F, echo=T}
+$$
 I = ((100*(X/W))/(U*(100/W))) * 10
-```
+$$
 
 Where:
 
@@ -275,16 +276,16 @@ Note that numerals are fully syllabized (i.e., sounded out) for this test, so th
 
 ### The SMOG (Bamberger-Vanecek) Formula {-}
 
-```{r, eval=F, echo=T}
-G = √C - 2
-```
+$$
+G = \sqrt{C} - 2
+$$
 
 Where:
 
 |     |     |
 | --- | --- |
 | G   | Grade level |
-| C   | Number of 3+ syllables (“drei- und mehrsilbigen”) words from 30 sentences |
+| C   | Number of 3+ syllables (“*drei- und mehrsilbigen*”) words from 30 sentences |
 
 This test requires a 10-sentence sample, with 3 samples being recommended for best results. ([Normalization](#glossary) can also be used to analyze larger samples or entire documents.)
 
@@ -299,16 +300,16 @@ Based on the examples from **Bamberger-Vanecek** (78), the grade-level score sho
 
 ### The Wheeler-Smith (Bamberger-Vanecek) Formula {-}
 
-```{r, eval=F, echo=T}
+$$
 I = ((W/U)*((C/W)*100)) / 10
-```
+$$
 
 Where:
 
 |     |     |
 | --- | --- |
 | I   | Index value (see below) |
-| C   | Number of 3+ syllable (“drei- und mehrsilbigen”) words |
+| C   | Number of 3+ syllable (“*drei- und mehrsilbigen*”) words |
 | W   | Number of words |
 | U   | Number of units |
 
