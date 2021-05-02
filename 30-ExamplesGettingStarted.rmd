@@ -165,10 +165,7 @@ The program will now reload the recipe document, meaning that all the improvemen
 
 ![](Images/improvedscores.png)
 
-::: {.tip}
-
-You can click the **Reload** button at anytime to reanalyze the source document as you edit it externally. Also, whenever you open this project, it will automatically reload the source document (in this case the recipe file).
-:::
+`r TipSection("You can click the **Reload** button at anytime to reanalyze the source document as you edit it externally. Also, whenever you open this project, it will automatically reload the source document (in this case the recipe file).")`
 
 ## Analyzing a Webpage {-}
 
@@ -330,10 +327,7 @@ Note how this label is now lightly written across the graph:
 
 ![](Images/ExampleWatermarkChanged.png)
 
-::: {.tip}
-
-Entering “[DATE]” in the watermark will show the current date when the graph is rendered.
-:::
+`r TipSection("Entering “[DATE]” in the watermark will show the current date when the graph is rendered.")`
 
 Now let's put a company logo on our graph. Click the **Logo** button in the **Edit** section. Select an image and click **OK**.
 
