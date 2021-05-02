@@ -18,6 +18,7 @@ cover-image: "images/NonGenerated/cover.png"
 knitr::opts_chunk$set(message=F, warning=F)
 
 library(glue)
+library(stringr)
 
 # Displays the macOS CMD button symbol (as a keyboard button)
 macOSCmdButton <- function()
@@ -42,6 +43,60 @@ KeyboardButton <- function(label)
   else if (knitr::is_html_output())
     {
     knitr::asis_output(glue("<span class='key'>{label}</span>"))
+    }
+  }
+
+MarkdownSectionLabelToLaTeX <- function(label)
+  {
+  # convert text inside of ** pair into \textbf{}
+  stringr::str_replace_all(label, "\\*\\*([\\w ]{1,})\\*\\*", "\\\\textbf{\\1}")
+  }
+
+# Displays a label inside of a "Warning" section
+WarningSection <- function(label)
+  {
+  if (knitr::is_latex_output())
+    {
+    knitr::asis_output(paste(
+      "\\begin{tcolorbox}[colframe=lightgray,colback=lightpink,arc=3mm]",
+      "\n\\faExclamationTriangle \\textbf{Warning} \\newline\n",
+      MarkdownSectionLabelToLaTeX(label), "\n\\end{tcolorbox}"))
+    }
+  else if (knitr::is_html_output())
+    {
+    knitr::asis_output(paste("::: {.warning}", label, ":::", sep="\n"))
+    }
+  }
+
+# Displays a label inside of a "Tip" section
+TipSection <- function(label)
+  {
+  if (knitr::is_latex_output())
+    {
+    knitr::asis_output(paste(
+      "\\begin{tcolorbox}[colframe=lightgray,colback=lightyellow,arc=3mm]",
+      "\n\\faLightbulb[regular] \\textbf{Tip} \\newline\n",
+      MarkdownSectionLabelToLaTeX(label), "\n\\end{tcolorbox}"))
+    }
+  else if (knitr::is_html_output())
+    {
+    knitr::asis_output(paste("::: {.tip}", label, ":::", sep="\n"))
+    }
+  }
+
+# Displays a label inside of a "Note" section
+NoteSection <- function(label)
+  {
+  if (knitr::is_latex_output())
+    {
+    knitr::asis_output(paste(
+      "\\begin{tcolorbox}[colframe=lightgray,colback=lightyellow,arc=3mm]",
+      "\n\\faComment*[regular] \\textbf{Note} \\newline\n",
+      MarkdownSectionLabelToLaTeX(label), "\n\\end{tcolorbox}"))
+    }
+  else if (knitr::is_html_output())
+    {
+    knitr::asis_output(paste("::: {.note}", label, ":::", sep="\n"))
     }
   }
 ```
