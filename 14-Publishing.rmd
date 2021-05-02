@@ -36,10 +36,7 @@ When [exporting](#exporting) a text window, the following export formats are ava
 
 **RTF**: A format that can be displayed in most word-processing programs.
 
-::: {.tip}
-
-If you plan to edit this output, then **RTF** is recommended. (Most word processors support editing this format.)
-:::
+`r TipSection("If you plan to edit this output, then **RTF** is recommended. (Most word processors support editing this format.)")`
 
 ## Image Export Options {-#image-export}
 
