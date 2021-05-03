@@ -204,7 +204,10 @@ To do this, click on the **Home** tab of the ribbon, click on the arrow below th
 
 Finally, click **OK** to save the file.
 
-`r TipSection("Which incomplete-sentence removal method used is controlled by your project's text exclusion options.")`
+::: {.tip}
+
+Which incomplete-sentence removal method used is controlled by your project's [text exclusion options](#options-text-exclusion).
+:::
 
 ### Additional Filtering Options {-#additional-filtering-options}
 

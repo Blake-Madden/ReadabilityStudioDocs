@@ -37,7 +37,10 @@ After you have selected your file, click the **Forward** button to continue to t
 
 On this page, you will specify the format that best describes your document. The compositions that you can select are either narrative text or [non-narrative/fragmented text](#framented-text). These options describe the content of your document and will help the program select the appropriate [text exclusion](#options-text-exclusion) method. The layout options are used to describe the format of the document and will help the program select the appropriate [sentence deduction](#options-sentence-deduction) method. For example, if your document is formatted to fit a page and also wraps its text around illustrations, then it is recommended to check both of the **Layout** options.
 
-`r TipSection("Previews of these document formats are shown next to each option. To view the full-size image of any preview, click on it with your mouse.")`
+::: {.tip}
+
+Previews of these document formats are shown next to each option. To view the full-size image of any preview, click on it with your mouse.
+:::
 
 After specifying your document structure, click the **Forward** button to continue to the **Test Selection** page, as shown below:
 
@@ -117,7 +120,10 @@ Click the **Forward** button to continue to the **Document Structure** page, as 
 
 On this page, you will specify the format that best describes your document. The compositions that you can select are either narrative text or [non-narrative/fragmented text](#framented-text). These options describe the content of your document and will help the program select the appropriate [text exclusion](#options-text-exclusion) method. The layout options are used to describe the format of the document and will help the program select the appropriate [sentence deduction](#options-sentence-deduction) method. For example, if your document is formatted to fit a page and also wraps its text around illustrations, then it is recommended to check both of the **Layout** options.
 
-`r TipSection("Previews of these document formats are shown next to each option. To view the full-size image of any preview, click on it with your mouse.")`
+::: {.tip}
+
+Previews of these document formats are shown next to each option. To view the full-size image of any preview, click on it with your mouse.
+:::
 
 After specifying your documents' structure, click the **Forward** button to continue to the **Test Selection** page, as shown below:
 

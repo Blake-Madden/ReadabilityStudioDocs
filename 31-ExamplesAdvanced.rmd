@@ -90,7 +90,10 @@ Another section of text that could be excluded is the citation at the bottom. Go
 
 At this point, all that remains in the analysis is the actual prose—all “noise” from the document has been filtered out.
 
-`r TipSection("All the options discussed here are also available on the **Document** tab of the ribbon.")`
+::: {.tip}
+
+All the options discussed here are also available on the **Document** tab of the ribbon.
+:::
 
 ## Excluding Placeholders and Blocks of Text {-#excluding-placeholders}
 
@@ -116,7 +119,10 @@ Selecting this option will exclude text in between pairs of angle brackets. Clic
 
 ![](Images/ExclusionTagsExampleExcluding.png)
 
-`r TipSection("All the options discussed here are also offered on the **Document** tab of the ribbon.")`
+::: {.tip}
+
+All the options discussed here are also offered on the **Document** tab of the ribbon.
+:::
 
 ## Creating a Test Bundle {-}
 
