@@ -54,10 +54,9 @@ Where:
 | D   | Number of familiar [Dale-Chall](#dale-chall-test) words |
 | S   | Number of sentences |
 
-::: {.note}
-
-The program will display the **cloze** score returned by this test in percentage format (e.g., 75) rather than fractal format (e.g., .75) to be consistent with other tests.
-:::
+`r BeginNoteSection()`
+`r MarkdownSectionFormatLabel("The program will display the **cloze** score returned by this test in percentage format (e.g., 75) rather than fractal format (e.g., .75) to be consistent with other tests.")`
+`r EndSection()`
 
 ## Bormuth Grade Placement (GP35) {-#bormuth-grade-placement-35-machine-passage}
 
@@ -131,10 +130,9 @@ The **New Dale-Chall** readability test (Chall *Manual*, 1-7) calculates the gra
 - The [first instance of any proper noun](#options-dale-chall)—all subsequent occurrences are considered familiar.
 - All numerals.
 
-::: {.note}
-
-This test treats headers and subheaders as full sentences, but excludes lists and tables. The default [text exclusion](#options-text-exclusion) method will be overridden for this specific test, although this behavior can be customized from the [**Test-Options**](#readability-test-options) dialog.
-:::
+`r BeginNoteSection()`
+`r MarkdownSectionFormatLabel("This test treats headers and subheaders as full sentences, but excludes lists and tables. The default text exclusion method will be overridden for this specific test, although this behavior can be customized from the **Test-Options** dialog.")`
+`r EndSection()`
 
 The initial version of this test (Dale and Chall, “A Formula for Predicting Readability”) was a multiple regression trained against 376 passages from McCall-Crabbs *Standard Test Lessons in Reading*. After comparing the results of this formula against other tests (such as **Flesch** and **Lorge**), it was validated against manually judged reading levels from other materials. These materials included “fifty-passages of health-education materials” (18) with a correlation of $r = 0.92$. Also included were “78 passages on foreign affairs from current-events magazines, government pamphlets, and newspapers” (18) with a correlation of $r = 0.90$.
 
@@ -446,10 +444,9 @@ Initially, this test was named **New Reading Ease Formula** (Kincaid et al., *De
 
 Note that this test sounds out numerals' digits when syllabizing. For example, “1918” will be counted as four syllables (“one”-“nine”-“one”-“eight”). This behavior can be adjusted from the [**Readability Options**](#readability-test-options) if you prefer a different numeral syllabizing method.
 
-::: {.note}
-
+`r BeginNoteSection()`
 The simplified version of this formula uses a lower precision calculation. It was originally offered for making a manual calculation of this test easier. It is recommended to use the higher-precision formula, but the simplified version is also available in the program.
-:::
+`r EndSection()`
 
 ## Flesch-Kincaid (Simplified) {-#flesch-kincaid-test-simplified}
 
@@ -523,10 +520,9 @@ Note that **FORCAST** results may be slightly different from other tests because
 
 This test is designed for a 150-word sample, but [normalization](#glossary) can be used to analyze entire documents.
 
-::: {.note}
-
-The name **FORCAST** is a pseudo acronym for its authors: J. Patrick **FOR**d, John S. **CA**ylor, and Thomas G. **ST**icht.
-:::
+`r BeginNoteSection()`
+`r MarkdownSectionFormatLabel("The name **FORCAST** is a pseudo acronym for its authors: J. Patrick **FOR**d, John S. **CA**ylor, and Thomas G. **ST**icht.")`
+`r EndSection()`
 
 ## Fry Graph {-#fry-test}
 
@@ -642,10 +638,9 @@ The **Wide Range Readability Formula** is based on previous **Harris-Jacobson** 
 
 Using these new basal readers as the test's criterion, a new regression equation and expanded word list were built for the **Wide Range Formula**. This new formula could significantly correlate samples from these books to their reported reading levels. Further, to predict readability scores for materials beyond the eighth-grade level, the look-up table used by the test (see below) was extrapolated to include secondary and adult-level materials.
 
-::: {.note}
-
-This test treats headers and subheaders as full sentences, but excludes lists and tables. The default [text exclusion](#options-text-exclusion) method will be overridden for this specific test.
-:::
+`r BeginNoteSection()`
+`r MarkdownSectionFormatLabel("This test treats headers and subheaders as full sentences, but excludes lists and tables. The default text exclusion method will be overridden for this specific test.")`
+`r EndSection()`
 
 **Harris-Jacobson** is calculated from the following steps:
 
@@ -845,7 +840,7 @@ Where:
 |     |     |
 | --- | --- |
 | G   | Grade level |
-| RP  | Number of strokes. Strokes are characters and punctuation (except for sentence terminating punctuation). |
+| RP  | Number of strokes* |
 | W   | Number of words |
 | S   | Number of sentences |
 
@@ -855,10 +850,11 @@ $$
 G = (6*(RP/W)) + (.4*(W/S)) - 27.4
 $$
 
-::: {.note}
-
+`r BeginNoteSection()`
 The simplified version of this formula uses lower precision. It was originally offered to make manual calculations of this test easier. It is recommended to use the higher-precision formula, but the simplified version is also available in the program.
-:::
+`r EndSection()`
+
+\* Strokes are characters and punctuation (except for sentence-terminating punctuation).
 
 ## New Automated Readability Index (Simplified) {-#new-ari-simplified}
 
@@ -904,10 +900,9 @@ Where:
 | Z   | Number of easy words |
 | S   | Number of sentences |
 
-::: {.note}
-
-This test uses the same easy-word and sentence counting methods as the [Gunning Fog](#gunning-fog-test) test.
-:::
+`r BeginNoteSection()`
+`r MarkdownSectionFormatLabel("This test uses the same easy-word and sentence counting methods as the **Gunning Fog** test.")`
+`r EndSection()`
 
 ## (Powers, Sumner, Kearl) Dale-Chall {-#psk-dale-chall}
 
@@ -998,10 +993,9 @@ Where:
 | F   | Number of complex words |
 | S   | Number of sentences |
 
-::: {.note}
-
-This test uses the same easy-word and sentence counting methods as the [Gunning Fog](#gunning-fog-test) test.
-:::
+`r BeginNoteSection()`
+`r MarkdownSectionFormatLabel("This test uses the same easy-word and sentence counting methods as the **Gunning Fog** test.")`
+`r EndSection()`
 
 ## (Powers, Sumner, Kearl) Flesch {-#psk-test}
 
@@ -1138,10 +1132,9 @@ Where:
 | --- | --- |
 | FLOOR | Round the result of $\sqrt{C}$ down to the closest perfect square |
 
-::: {.note}
-
+`r BeginNoteSection()`
 The simplified version of this formula uses lower precision. It was originally offered to make manual calculations of this test easier.
-:::
+`r EndSection()`
 
 This test requires 3 10-sentence samples, but [normalization](#glossary) can be used to analyze entire documents.
 
@@ -1186,10 +1179,9 @@ Where:
 | W   | Number of words |
 | UUS | Number of unique unfamiliar words per 100 words (see note below) |
 
-::: {.note}
-
-Spache recommends not counting the same unfamiliar word more than once if it appears in subsequent 100-word samples (Spache, *Good* 198). For this reason, it is recommended to follow this practice when analyzing an entire document.
-:::
+`r BeginNoteSection()`
+`r MarkdownSectionFormatLabel("Spache recommends not counting the same unfamiliar word more than once if it appears in subsequent 100-word samples (Spache, *Good* 198). For this reason, it is recommended to follow this practice when analyzing an entire document.")`
+`r EndSection()`
 
 ## Stocker's Catholic Supplement {-#stocker-catholic-supplement}
 
@@ -1211,7 +1203,7 @@ Although not explicitly stated in the article, the authors' definition of “pol
 
 > “The Woodsman saw the seven sisters come into their bedroom. He saw them put on the shoes in which they danced. He saw them put on their party dresses.  
 > When they were all dressed, the oldest sister opened a door in the floor near her bed.  
-> "Sisters, we are ready," she said.  
+> “Sisters, we are ready,” she said.  
 > They walked down the secret steps.  
 > The Woodsman put on his magic cap and followed them down the steps.  
 > Thanks to his magic cap, no one was able to see him.  

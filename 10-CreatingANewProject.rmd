@@ -16,10 +16,9 @@ To determine a document's readability you will need to create a new project. Fir
 
 ![](Images/wizard1.png)
 
-::: {.note}
-
-The language option is only available in the **Language Pack** and **Professional** editions of **Readability Studio**.
-:::
+`r BeginNoteSection()`
+`r MarkdownSectionFormatLabel("The language option is only available in the **Language Pack** and **Professional** editions of **Readability Studio**.")`
+`r EndSection()`
 
 The language option will control how the document is analyzed (e.g., syllable counting). This will also affect which tests, word lists, and grammar features will be available. For example, if we select **Spanish**, then only Spanish tests will be included, and features related to English word lists (e.g., **Dale-Chall**) will not be available. For this example, select **English**.
 
@@ -37,10 +36,9 @@ After you have selected your file, click the **Forward** button to continue to t
 
 On this page, you will specify the format that best describes your document. The compositions that you can select are either narrative text or [non-narrative/fragmented text](#framented-text). These options describe the content of your document and will help the program select the appropriate [text exclusion](#options-text-exclusion) method. The layout options are used to describe the format of the document and will help the program select the appropriate [sentence deduction](#options-sentence-deduction) method. For example, if your document is formatted to fit a page and also wraps its text around illustrations, then it is recommended to check both of the **Layout** options.
 
-::: {.tip}
-
+`r BeginTipSection()`
 Previews of these document formats are shown next to each option. To view the full-size image of any preview, click on it with your mouse.
-:::
+`r EndSection()`
 
 After specifying your document structure, click the **Forward** button to continue to the **Test Selection** page, as shown below:
 
@@ -120,10 +118,9 @@ Click the **Forward** button to continue to the **Document Structure** page, as 
 
 On this page, you will specify the format that best describes your document. The compositions that you can select are either narrative text or [non-narrative/fragmented text](#framented-text). These options describe the content of your document and will help the program select the appropriate [text exclusion](#options-text-exclusion) method. The layout options are used to describe the format of the document and will help the program select the appropriate [sentence deduction](#options-sentence-deduction) method. For example, if your document is formatted to fit a page and also wraps its text around illustrations, then it is recommended to check both of the **Layout** options.
 
-::: {.tip}
-
+`r BeginTipSection()`
 Previews of these document formats are shown next to each option. To view the full-size image of any preview, click on it with your mouse.
-:::
+`r EndSection()`
 
 After specifying your documents' structure, click the **Forward** button to continue to the **Test Selection** page, as shown below:
 

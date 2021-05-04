@@ -18,10 +18,9 @@ The **Goals** subitem will display any [goals](#reviewing-goals) that are curren
 
 Above, we can see that most of the documents are passing the goal of having an **ELF** score below 12. However, most are failing to have an **FRE** score above 60.
 
-::: {.note}
-
+`r BeginNoteSection()`
 For simplicity, only goals that are failing are shown here. If all goals are passing, then this window will display a message indicating that.
-:::
+`r EndSection()`
 
 The **Score Summary** subitem will display the aggregated statistics for each test:
 

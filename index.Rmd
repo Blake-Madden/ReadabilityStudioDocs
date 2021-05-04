@@ -19,6 +19,7 @@ knitr::opts_chunk$set(message=F, warning=F)
 
 library(glue)
 library(stringr)
+library(magrittr)
 
 # Displays the macOS CMD button symbol (as a keyboard button)
 macOSCmdButton <- function()
@@ -46,57 +47,78 @@ KeyboardButton <- function(label)
     }
   }
 
-MarkdownSectionLabelToLaTeX <- function(label)
+MarkdownSectionFormatLabel <- function(label)
   {
-  # convert text inside of ** pair into \textbf{}
-  stringr::str_replace_all(label, "\\*\\*([\\w ]{1,})\\*\\*", "\\\\textbf{\\1}")
+  if (knitr::is_latex_output())
+    {
+               # convert text inside of ** pair into \textbf{}
+    label %<>% stringr::str_replace_all("\\*\\*([\\w -]{1,})\\*\\*", "\\\\textbf{\\1}") %>%
+               # italics
+               stringr::str_replace_all("\\*([\\w -]{1,})\\*", "\\\\textit{\\1}") %>%
+               # inline code
+               stringr::str_replace_all("`([\\w ()-]{1,})`", "\\\\texttt{\\1}")
+    knitr::asis_output(label)
+    }
+  else if (knitr::is_html_output())
+    {
+    knitr::asis_output(label)
+    }
+  
   }
 
-# Displays a label inside of a "Warning" section
-WarningSection <- function(label)
+# Begins a "Warning" section that labels, images, etc. can be embedded in.
+# Call EndSection() after you have entered your content for the section.
+# Note that the fontawesome5 LaTeX package should be installed.
+BeginWarningSection <- function()
   {
   if (knitr::is_latex_output())
     {
     knitr::asis_output(paste(
       "\\begin{tcolorbox}[colframe=lightgray,colback=lightpink,arc=3mm]",
-      "\n\\faExclamationTriangle \\textbf{Warning} \\newline\n",
-      MarkdownSectionLabelToLaTeX(label), "\n\\end{tcolorbox}"))
+      "\n\\faExclamationTriangle \\textbf{Warning} \\newline"))
     }
   else if (knitr::is_html_output())
-    {
-    knitr::asis_output(paste("::: {.warning}", label, ":::", sep="\n"))
-    }
+    { knitr::asis_output("::: {.warning}") }
   }
 
-# Displays a label inside of a "Tip" section
-TipSection <- function(label)
+# Begins a "Tip" section that labels, images, etc. can be embedded in.
+# Call EndSection() after you have entered your content for the section.
+BeginTipSection <- function()
   {
   if (knitr::is_latex_output())
     {
     knitr::asis_output(paste(
       "\\begin{tcolorbox}[colframe=lightgray,colback=lightyellow,arc=3mm]",
-      "\n\\faLightbulb[regular] \\textbf{Tip} \\newline\n",
-      MarkdownSectionLabelToLaTeX(label), "\n\\end{tcolorbox}"))
+      "\n\\faLightbulb[regular] \\textbf{Tip} \\newline"))
     }
   else if (knitr::is_html_output())
-    {
-    knitr::asis_output(paste("::: {.tip}", label, ":::", sep="\n"))
-    }
+    { knitr::asis_output("::: {.tip}") }
   }
 
-# Displays a label inside of a "Note" section
-NoteSection <- function(label)
+# Begins a "Note" section that labels, images, etc. can be embedded in.
+# Call EndSection() after you have entered your content for the section.
+BeginNoteSection <- function()
   {
   if (knitr::is_latex_output())
     {
     knitr::asis_output(paste(
       "\\begin{tcolorbox}[colframe=lightgray,colback=lightyellow,arc=3mm]",
-      "\n\\faComment*[regular] \\textbf{Note} \\newline\n",
-      MarkdownSectionLabelToLaTeX(label), "\n\\end{tcolorbox}"))
+      "\n\\faComment*[regular] \\textbf{Note} \\newline"))
+    }
+  else if (knitr::is_html_output())
+    { knitr::asis_output("::: {.note}") }
+  }
+
+# Ends a notes/tip/warning section
+EndSection <- function()
+  {
+  if (knitr::is_latex_output())
+    {
+    knitr::asis_output("\n\\end{tcolorbox}")
     }
   else if (knitr::is_html_output())
     {
-    knitr::asis_output(paste("::: {.note}", label, ":::", sep="\n"))
+    knitr::asis_output("\n:::")
     }
   }
 ```

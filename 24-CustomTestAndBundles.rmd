@@ -260,10 +260,9 @@ This function takes an argument specifying which text exclusion method to use. T
 | ProperNounCount() | Returns the number of proper nouns from the document. |
 | UniqueWordCount() | Returns the number of unique words from the document. |
 
-::: {.note}
-
-**Dale-Chall** and **Harris-Jacobson** familiar word functions will take their respective test's [text exclusion](#readability-test-options) options into account.
-:::
+`r BeginNoteSection()`
+`r MarkdownSectionFormatLabel("**Dale-Chall** and **Harris-Jacobson** familiar word functions will take their respective test's text exclusion options into account.")`
+`r EndSection()`
 
 ### Shortcuts {-}
 
@@ -354,15 +353,13 @@ If you are not stemming, then it is recommended to enter each inflected form of 
 
 **Only use words common to all lists**: Check this option to consider words familiar only if they appear on your custom list **and** other selected lists.
 
-::: {.warning}
+`r BeginWarningSection()`
+`r MarkdownSectionFormatLabel("This option is only recommended for when you want to find words that appear within a union of your word list and a standard list(s) (e.g., **Spache**).")`
+`r EndSection()`
 
-This option is only recommended for when you want to find words that appear within a union of your word list and a standard list(s) (e.g., **Spache**).
-:::
-
-::: {.note}
-
+`r BeginNoteSection()`
 This option is only available if you are including two or more word lists.
-:::
+`r EndSection()`
 
 ### Proper Nouns & Numerals {-#custom-proper-numerals}
 

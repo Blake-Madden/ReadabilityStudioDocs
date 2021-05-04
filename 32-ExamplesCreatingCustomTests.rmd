@@ -157,10 +157,9 @@ At this point, we have a couple of options. The first is to replace some of thes
 
 The other option is to export these unfamiliar words and use that output to review these new words with our students. Not only will this ease the students' comprehension of the recipe, but it will serve as a helpful [vocabulary-building exercise](#vocab-builder-example).
 
-::: {.tip}
-
-The recipe used in this example is available from the **Example Documents** menu. From the **Help** tab, click the **Example Documents** button, and then select **Chocolate Eclairs**. When prompted about how to open the document, select **Create a new project**.
-:::
+`r BeginTipSection()`
+`r MarkdownSectionFormatLabel("The recipe used in this example is available from the **Example Documents** menu. From the **Help** tab, click the **Example Documents** button, and then select **Chocolate Eclairs**. When prompted about how to open the document, select **Create a new project**.")`
+`r EndSection()`
 
 ## Creating a Custom Index Test {-}
 

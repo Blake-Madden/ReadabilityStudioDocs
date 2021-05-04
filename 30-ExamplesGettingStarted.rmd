@@ -10,10 +10,9 @@ In this example, we will analyze a literary novel to help determine which age gr
 
 ![](Images/exampleselectfile.png)
 
-::: {.note}
-
-The language option is only available in the **Language Pack** and **Professional** editions of **Readability Studio**.
-:::
+`r BeginNoteSection()`
+`r MarkdownSectionFormatLabel("The language option is only available in the **Language Pack** and **Professional** editions of **Readability Studio**.")`
+`r EndSection()`
 
 This will open the **Select Document to Analyze** dialog. Choose the file that you want to analyze and click the **Open** button to accept.
 
@@ -79,17 +78,15 @@ In this example, we will analyze recipes that we are working on for a middle-sch
 
 ![](Images/exampleselectfile.png)
 
-::: {.note}
-
-The language option is only available in the **Language Pack** and **Professional** editions of **Readability Studio**.
-:::
+`r BeginNoteSection()`
+`r MarkdownSectionFormatLabel("The language option is only available in the **Language Pack** and **Professional** editions of **Readability Studio**.")`
+`r EndSection()`
 
 This will open the **Select Document to Analyze** dialog. Choose the file that you want to analyze and click the **Open** button to accept.
 
-::: {.note}
-
-The original and revised versions of this recipe are available from the **Example Documents** menu. From the **Help** tab, click the **Example Documents** button and then select either **Cocoa Desserts** or **Cocoa Desserts (Revised)** from the menu. When prompted about how to open the document, select **Create a new project**.
-:::
+`r BeginNoteSection()`
+`r MarkdownSectionFormatLabel("The original and revised versions of this recipe are available from the **Example Documents** menu. From the **Help** tab, click the **Example Documents** button and then select either **Cocoa Desserts** or **Cocoa Desserts (Revised)** from the menu. When prompted about how to open the document, select **Create a new project**.")`
+`r EndSection()`
 
 You will then return to the **Document** page. Click the **Forward** button to proceed to the **Document Structure** page, as shown below:
 
@@ -165,10 +162,9 @@ The program will now reload the recipe document, meaning that all the improvemen
 
 ![](Images/improvedscores.png)
 
-::: {.tip}
-
-You can click the **Reload** button at anytime to reanalyze the source document as you edit it externally. Also, whenever you open this project, it will automatically reload the source document (in this case the recipe file).
-:::
+`r BeginTipSection()`
+`r MarkdownSectionFormatLabel("You can click the **Reload** button at anytime to reanalyze the source document as you edit it externally. Also, whenever you open this project, it will automatically reload the source document (in this case the recipe file).")`
+`r EndSection()`
 
 ## Analyzing a Webpage {-}
 
@@ -180,10 +176,9 @@ First, click on the **New** button (on the **Home** tab). The **New Project Wiza
 
 First, select **English** as the document language.
 
-::: {.note}
-
-The language option is only available in the **Language Pack** and **Professional** editions of **Readability Studio**.
-:::
+`r BeginNoteSection()`
+`r MarkdownSectionFormatLabel("The language option is only available in the **Language Pack** and **Professional** editions of **Readability Studio**.")`
+`r EndSection()`
 
 Next, open any web browser, go to the webpage, and copy its URL (i.e., address) onto the clipboard.
 
@@ -231,10 +226,9 @@ Select **English** as the document language (if this option is available) and cl
 
 ![](Images/wizardreadabilitymethods.png)
 
-::: {.note}
-
-The language option is only available in the **Language Pack** and **Professional** editions of **Readability Studio**.
-:::
+`r BeginNoteSection()`
+`r MarkdownSectionFormatLabel("The language option is only available in the **Language Pack** and **Professional** editions of **Readability Studio**.")`
+`r EndSection()`
 
 Select the **Recommend tests based on document type** and select the **Technical document** option, as shown below:
 
@@ -330,10 +324,9 @@ Note how this label is now lightly written across the graph:
 
 ![](Images/ExampleWatermarkChanged.png)
 
-::: {.tip}
-
+`r BeginTipSection()`
 Entering “[DATE]” in the watermark will show the current date when the graph is rendered.
-:::
+`r EndSection()`
 
 Now let's put a company logo on our graph. Click the **Logo** button in the **Edit** section. Select an image and click **OK**.
 
