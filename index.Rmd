@@ -47,26 +47,33 @@ KeyboardButton <- function(label)
     }
   }
 
+# Formats a label inside of a warning/tip/note section to LaTeX.
+# Supports bold, italic, inline code (which should use \x60 in place of backticks),
+# and newlines.
 MarkdownSectionFormatLabel <- function(label)
   {
   if (knitr::is_latex_output())
     {
-               # convert text inside of ** pair into \textbf{}
-    label %<>% stringr::str_replace_all("\\*\\*([\\w -]{1,})\\*\\*", "\\\\textbf{\\1}") %>%
+               # convert markdown bold tags
+    label %<>% stringr::str_replace_all("\\*\\*([\\w ()-]{1,})\\*\\*",
+                                        "\\\\textbf{\\1}") %>%
                # italics
-               stringr::str_replace_all("\\*([\\w -]{1,})\\*", "\\\\textit{\\1}") %>%
+               stringr::str_replace_all("\\*([\\w ()-]{1,})\\*",
+                                        "\\\\textit{\\1}") %>%
                # inline code
-               stringr::str_replace_all("`([\\w ()-]{1,})`", "\\\\texttt{\\1}")
+               stringr::str_replace_all("`([\\w ()-]{1,})`",
+                                        "\\\\texttt{\\1}") %>%
+               # newlines
+               stringr::str_replace_all("\n", "\\\\newline ")
     knitr::asis_output(label)
     }
   else if (knitr::is_html_output())
     {
     knitr::asis_output(label)
     }
-  
   }
 
-# Begins a "Warning" section that labels, images, etc. can be embedded in.
+# Begins a "Warning" section with a label. can be embedded in.
 # Call EndSection() after you have entered your content for the section.
 # Note that the fontawesome5 LaTeX package should be installed.
 BeginWarningSection <- function()
@@ -81,7 +88,7 @@ BeginWarningSection <- function()
     { knitr::asis_output("::: {.warning}") }
   }
 
-# Begins a "Tip" section that labels, images, etc. can be embedded in.
+# Begins a "Tip" section with a label. can be embedded in.
 # Call EndSection() after you have entered your content for the section.
 BeginTipSection <- function()
   {
@@ -95,7 +102,7 @@ BeginTipSection <- function()
     { knitr::asis_output("::: {.tip}") }
   }
 
-# Begins a "Note" section that labels, images, etc. can be embedded in.
+# Begins a "Note" section with a label. can be embedded in.
 # Call EndSection() after you have entered your content for the section.
 BeginNoteSection <- function()
   {
