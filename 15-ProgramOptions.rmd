@@ -147,10 +147,9 @@ This option is not recommended for documents that contain headers or lists that 
 
 **Ignore indenting**: Select this option to not consider indented lines following incomplete sentences as the start of a new paragraph. This option is recommended for documents that center or left align their text.
 
-::: {.note}
-
-The options **Ignore blank lines** and **Ignore indenting** are disabled if **Line ends always begin a new paragraph** is selected. In this case, line feeds will always indicate the end of a paragraph, whether or not it is followed by blank or indented lines.
-:::
+`r BeginNoteSection()`
+`r MarkdownSectionFormatLabel("The options **Ignore blank lines** and **Ignore indenting** are disabled if **Line ends always begin a new paragraph** is selected. In this case, line feeds will always indicate the end of a paragraph, whether or not it is followed by blank or indented lines.")`
+`r EndSection()`
 
 **Sentences must begin with capitalized words**: Select this option to have sentence deduction assume that all sentences begin with capitalized words. By default, **Readability Studio** takes into consideration writing that does not capitalize the first word of every sentence. To change this behavior, select this option and the program will be more grammatically strict when deducing sentences.
 
@@ -166,10 +165,9 @@ The options **Ignore blank lines** and **Ignore indenting** are disabled if **Li
 
 **Include incomplete sentences containing more than [15] words**: If a sentence is missing terminating punctuation (e.g., ‘.’ or ‘?’) then it will be considered [incomplete](#how-text-is-excluded). Lines of text missing this punctuation are generally headers or list items that should be excluded from the analysis. However, there are times when a legitimate sentence is simply missing this punctuation (due to writer or formatting error) and should be included in the analysis. To override this, enter into this field the maximum words that an incomplete sentence can have. Any sentence containing more than this number of words will be considered complete, even if its terminating punctuation is absent.
 
-::: {.note}
-
-Lines of text that resemble equations will continue to be marked as incomplete. Also, if **Aggressively exclude** is enabled, then list items with more words than this threshold will also continue to be excluded.
-:::
+`r BeginNoteSection()`
+`r MarkdownSectionFormatLabel("Lines of text that resemble equations will continue to be marked as incomplete. Also, if **Aggressively exclude** is enabled, then list items with more words than this threshold will also continue to be excluded.")`
+`r EndSection()`
 
 Note that if you are not excluding any text, this option will still take effect for tests which explicitly exclude headers (e.g., **Harris-Jacobson**).
 
@@ -207,10 +205,9 @@ Near the end of the document, the final paragraphs will be more aggressively rev
 - “Textbooks and Cirricula”
 - “Works Cited”
 
-::: {.note}
-
+`r BeginNoteSection()`
 The program will stop excluding text after a “References” header if it detects a paragraph that does not appear to be a citation. This is useful for when a references section is in the middle of a document, followed by other content.
-:::
+`r EndSection()`
 
 **Also exclude Internet and file addresses**: Select this option to ignore URLs (i.e., Internet addresses) and filepaths. Note that this applies to words inside of complete sentences, not just incomplete. For example:
 
@@ -262,10 +259,9 @@ Note that these options are not available if **Do not exclude any text** is sele
 
 **Sound out each digit**: Select this option to have the program sound out each digit when counting the syllables of numeric words. For example, the word “555-4778” will be considered nine syllables–read as “five-five-five-four-sev-en-sev-en-eight.” As another example, “$52” will be considered four syllables (read as “five-two-doll-ars”).
 
-::: {.note}
-
-These options are not applicable if **Also exclude numerals** is checked.
-:::
+`r BeginNoteSection()`
+`r MarkdownSectionFormatLabel("These options are not applicable if **Also exclude numerals** is checked.")`
+`r EndSection()`
 
 ### Edit Word/Phrase List {-#edit-word-list-dialog}
 
@@ -335,10 +331,14 @@ Note that these options are not applicable if [Also exclude numerals](#options-t
 
 **Use system default**: Select this option to have **New Dale-Chall** use the [default text exclusion](#options-text-exclusion) method used by other tests.
 
-::: {.note}
+`r BeginNoteSection()`
+`r MarkdownSectionFormatLabel("These options affect both the **New Dale-Chall** and **PSK Dale-Chall** tests. The **text exclusion** option will also affect any custom test using the following functions:
 
-These options affect both the [New Dale-Chall](#dale-chall-test) and [PSK Dale-Chall](#psk-dale-chall) tests. The **text exclusion** option will also affect any [custom test](#creating-custom-test) using the `CustomNewDaleChall()`, `UnfamiliarDaleChallWordCount()`, `UniqueUnfamiliarDaleChallWordCount()`, or `FamiliarDaleChallWordCount()` functions.
-:::
+\x60CustomNewDaleChall()\x60
+\x60UnfamiliarDaleChallWordCount()\x60
+\x60UniqueUnfamiliarDaleChallWordCount()\x60
+\x60FamiliarDaleChallWordCount()\x60")`
+`r EndSection()`
 
 #### Harris-Jacobson {-#options-harris-jacobson}
 
@@ -348,10 +348,13 @@ These options affect both the [New Dale-Chall](#dale-chall-test) and [PSK Dale-C
 
 **Use system default**: Select this option to have **Harris-Jacobson** use the [default text exclusion](#options-text-exclusion) method used by other tests.
 
-::: {.note}
-
-The **text exclusion** option will affect any custom test using the `CustomHarrisJacobson()`, `UnfamiliarHarrisJacobsonWordCount()`, `UniqueUnfamiliarHarrisJacobsonWordCount()`, or `FamiliarHarrisJacobsonWordCount()` functions.
-:::
+`r BeginNoteSection()`
+`r MarkdownSectionFormatLabel("The **text exclusion** option will affect any custom test using the following functions:
+\x60CustomHarrisJacobson()\x60
+\x60UnfamiliarHarrisJacobsonWordCount()\x60
+\x60UniqueUnfamiliarHarrisJacobsonWordCount()\x60
+\x60FamiliarHarrisJacobsonWordCount()\x60")`
+`r EndSection()`
 
 ## Scores {-#options-scores}
 
