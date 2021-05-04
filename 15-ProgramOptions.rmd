@@ -350,6 +350,7 @@ Note that these options are not applicable if [Also exclude numerals](#options-t
 
 `r BeginNoteSection()`
 `r MarkdownSectionFormatLabel("The **text exclusion** option will affect any custom test using the following functions:
+
 \x60CustomHarrisJacobson()\x60
 \x60UnfamiliarHarrisJacobsonWordCount()\x60
 \x60UniqueUnfamiliarHarrisJacobsonWordCount()\x60

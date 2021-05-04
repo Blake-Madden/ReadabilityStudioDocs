@@ -110,7 +110,7 @@ Box plots are used to display the distribution of data, where:
 
 Outlier values that do not fall within these areas are plotted outside of the whiskers.
 
-```{r, echo=F, fig.cap="Visual representation of a box plot's layout,<br />adapted from DeCicco (“Exploring ggplot2 boxplots”)", fig.align='center'}
+```{r, echo=F, fig.cap="Visual representation of a box plot's layout, adapted from DeCicco (“Exploring ggplot2 boxplots”)", fig.align='center'}
 
 # translatable content
 WhiskerLabel1 <- "Largest value within 1.5 times\ninterquartile range above\n75th percentile"

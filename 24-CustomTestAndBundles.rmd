@@ -304,7 +304,7 @@ From the **Readability** tab, click the **Custom Test** button and then select *
 
 ![](Images/NonGenerated/FunctionValidate.png)  Click this button to validate the formula. You will be alerted if your formula contains any syntax errors.
 
-**Formula**: Enter the test's formula into this field. As you type, a list of available functions will appear beneath the cursor. To select a function from this list, first use the arrow keys on your keyboard to navigate through the list. Once you have selected the desired function, hit the `SPACEBAR` on your keyboard to insert it into your formula. You can also insert functions from the **Function Browser**.
+**Formula**: Enter the test's formula into this field. As you type, a list of available functions will appear beneath the cursor. To select a function from this list, first use the arrow keys on your keyboard to navigate through the list. Once you have selected the desired function, hit the `r KeyboardButton("SPACEBAR")` on your keyboard to insert it into your formula. You can also insert functions from the **Function Browser**.
 
 ### Word Lists {-}
 

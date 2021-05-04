@@ -18,9 +18,9 @@ Because this test will use independent clauses, change the name to “Flesch (IC
 
 Next, we will change the formula. The formula for **Flesch** is defined as:
 
-```{r, eval=F, echo=T}
+$$
 I = 206.835 - (84.6*(B/W)) - (1.015*(W/S))
-```
+$$
 
 Where:
 
@@ -31,7 +31,7 @@ Where:
 | B   | Number of syllables |
 | S   | Number of sentences |
 
-Formulas can either be typed into the **Formula** field, or you can use the [Function Browser](#creating-custom-test). For example:
+Formulas can either be typed into the **Formula** field, or you can use the [**Function Browser**](#creating-custom-test). For example:
 
 ```{r, eval=F, echo=T}
 206.835 - (84.6*(SyllableCount()/WordCount())) -  
