@@ -22,6 +22,7 @@ bookdown::pdf_book:
     in_header: preamble.tex
   latex_engine: xelatex
   citation_package: natbib
+  keep_tex: true
 bookdown::epub_book:
   stylesheet: "css/style.css"
   epub_version: epub3
