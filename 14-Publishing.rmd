@@ -174,18 +174,18 @@ Note that this preview option is only available on Windows. On macOS, the previe
 
 “Document filtering” (or “cleaning”) is the removal of items from a document to assist a textual analysis. This includes items that are not meant to be analyzed, such as:
 
--   Headers
--   Footers
--   Captions
--   Copyright notices
--   Citations
--   (Short) list items
+- Headers
+- Footers
+- Captions
+- Copyright notices
+- Citations
+- (Short) list items
 
 Also, items that may cause issues with legacy programs:
 
--   Non-English letters (e.g., ‘é’)
--   Advanced punctuation (e.g., ‘—’)
--   Non-sentence-ending periods (e.g., ellipses and abbreviations)
+- Non-English letters (e.g., ‘é’)
+- Advanced punctuation (e.g., ‘—’)
+- Non-sentence-ending periods (e.g., ellipses and abbreviations)
 
 The first set of items are normally excluded from analysis because they a.) are not part of the narrative text and b.) skew the average sentence length.
 
