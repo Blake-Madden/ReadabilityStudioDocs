@@ -22,7 +22,7 @@ $$
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | G   | Grade level |
 | W   | Number of words |
@@ -46,7 +46,7 @@ Of these formulas, the predicted cloze formula is as follows:
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | C   | Estimated cloze score |
 | R   | Number of characters |
@@ -75,7 +75,7 @@ Of these formulas, the grade-placement formula is as follows:
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | G   | Grade level |
 | R   | Number of characters |
@@ -107,7 +107,7 @@ $$
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | E   | Estimated cloze % |
 | G   | Grade level |
@@ -154,7 +154,7 @@ $$
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | G   | Grade level |
 | W   | Number of words\* |
@@ -183,7 +183,7 @@ $$
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | I   | Flesch index score |
 | W   | Number of words\* |
@@ -192,7 +192,7 @@ Where:
 
 ### Flesch Reading Ease Index Table {-}
 
-|     |     |
+| Flesch Score | Description |
 | --- | --- |
 | 90-100 | Very easy, third-grade level |
 | 80-89 | Easy, fourth-grade level |
@@ -222,7 +222,7 @@ This test is based on the [Bormuth Cloze](#bormuth-cloze-mean-machine-passage) t
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | U   | Units score |
 | R   | Number of characters |
@@ -244,9 +244,8 @@ This test was trained on the same 330 110-word passages used to build the [Bormu
 
 Calculate the **DRP** difficulty of a document. Then, look up the **DRP** score from the following table to find its respective grade level:
 
-|     |     |
-| --- | --- |
 | DRP-Difficulty | DRP-GE |
+| --- | --- |
 | 0-39 | 1.5 |
 | 40  | 1.6 |
 | 41  | 1.7 |
@@ -346,7 +345,7 @@ $$
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | G   | Grade level |
 | W   | Number of words |
@@ -376,7 +375,7 @@ $$
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | I   | The index score |
 | W   | Number of words |
@@ -385,7 +384,7 @@ Where:
 
 ### McAlpine EFLAW Index Table {-}
 
-|     |     |
+| EFLAW Score | Description |
 | --- | --- |
 | 1-20 | Very easy to understand |
 | 21-25 | Quite easy to understand |
@@ -406,7 +405,7 @@ $$
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | I   | Flesch index score |
 | W   | Number of words |
@@ -433,7 +432,7 @@ $$
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | G   | Grade level |
 | W   | Number of words |
@@ -466,7 +465,7 @@ $$
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | I   | Flesch index score |
 | W   | Number of words |
@@ -475,7 +474,7 @@ Where:
 
 ### Flesch Reading Ease Index Table {-}
 
-|     |     |
+| Flesch Score | Description |
 | --- | --- |
 | 90-100 | Very easy |
 | 80-89 | Easy |
@@ -509,7 +508,7 @@ $$
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | G   | Grade level |
 | M   | Number of monosyllabic words (per 150-words) |
@@ -599,7 +598,7 @@ $$
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | G   | Grade level |
 | W   | Number of words |
@@ -753,7 +752,7 @@ The researchers conjectured these differences had more to do with use of languag
 
 The index score of **Lix** can be summarized as follows:
 
-|     |     |
+| Lix Score | Description |
 | --- | --- |
 | 0-29 | Very easy (books for children) |
 | 30-39 | Easy (fiction) |
@@ -775,7 +774,7 @@ $$
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | I   | Lix index score |
 | W   | Number of words |
@@ -784,7 +783,7 @@ Where:
 
 As a final note, Anderson contributed a grade-level conversion table for **Lix** index scores (Anderson 494) as follows:
 
-| Lix score | Equivalent grade level |
+| Lix Score | Equivalent Grade Level |
 | :-- | :-- |
 | 56+ | College |
 | 52-55 | 12  |
@@ -837,7 +836,7 @@ $$
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | G   | Grade level |
 | RP  | Number of strokes* |
@@ -874,7 +873,7 @@ $$
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | I   | Grade level |
 | W   | Number of words |
@@ -893,7 +892,7 @@ $$
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | G   | Grade level |
 | F   | Number of complex words |
@@ -926,7 +925,7 @@ The recalculated **Dale-Chall** formula is as follows:
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | G   | Grade level |
 | S   | Number of sentences |
@@ -957,7 +956,7 @@ The recalculated **Farr, Jenkins, Paterson** formula is as follows:
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | G   | Grade level |
 | W   | Number of words |
@@ -986,7 +985,7 @@ The recalculated **Gunning Fog** formula is as follows:
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | G   | Grade level |
 | W   | Number of words |
@@ -1018,11 +1017,11 @@ $$
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | G   | Grade level |
-| ASL   | Average sentence length |
-| SY   | Number of syllables per 100 words |
+| ASL | Average sentence length |
+| SY  | Number of syllables per 100 words |
 
 Note that this test treats numerals as monosyllabic words, in conjunction with the original **Flesch** test.
 
@@ -1077,7 +1076,7 @@ $$
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | I   | Rix index score |
 | X   | Number of long words (7+ characters) |
@@ -1085,7 +1084,7 @@ Where:
 
 ### Rix Index to Grade Level Table {-#rix-to-grade-level}
 
-|     |     |
+| Rix Index Score | Grade Level |
 | --- | --- |
 | 7.2 and above | College |
 | 6.2 and above | 12  |
@@ -1115,7 +1114,7 @@ $$
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | G   | Grade level |
 | C   | Number of complex (3+ syllables) words from 30 sentences |
@@ -1126,11 +1125,7 @@ $$
 G = FLOOR(\sqrt{C}) + 3
 $$
 
-Where:
-
-|     |     |
-| --- | --- |
-| FLOOR | Round the result of $\sqrt{C}$ down to the closest perfect square |
+`FLOOR` refers to rounding the result of $\sqrt{C}$ down to the closest perfect square.
 
 `r BeginNoteSection()`
 The simplified version of this formula uses lower precision. It was originally offered to make manual calculations of this test easier.
@@ -1172,7 +1167,7 @@ $$
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | G   | Grade level |
 | S   | Number of sentences |
@@ -1227,7 +1222,7 @@ $$
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | I   | Index value |
 | P   | Number of polysyllabic (2+ syllable) words |
@@ -1236,7 +1231,7 @@ Where:
 
 Then, find the index value in the following chart to acquire the final readability score:
 
-|     |     |
+| Grade Level | Index Score |
 | --- | --- |
 | Primer (Kindergarten) | 4.0 to 8.0 |
 | First grade | 8.1 to 11.5 |

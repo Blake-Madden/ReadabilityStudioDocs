@@ -12,7 +12,7 @@ $$
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | G   | Grade level |
 | S   | Number of sentences per 100 words |
@@ -164,7 +164,7 @@ $$
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | G   | Grade level |
 | C   | Number of complex words (3+ syllables) from 30 sentences |

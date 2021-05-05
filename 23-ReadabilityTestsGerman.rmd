@@ -14,7 +14,7 @@ $$I = 180 - (W/S) - (58.5*(B/W))$$
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | I   | **Amstad** (i.e., **Flesch**) index score |
 | W   | Number of words |
@@ -59,7 +59,7 @@ To convert the **Lix** index score to a grade, this test uses the following tabl
 
 ### Bamberger & Vanecek’s Lix Index to Grade Level {-}
 
-|     |     |
+| Score | Grade |
 | --- | --- |
 | 0-23 | 1^st^ grade |
 | 24-26 | 2^nd^ grade |
@@ -88,7 +88,7 @@ To convert the **Lix** index score to a grade, this test uses the following tabl
 
 ### Bamberger & Vanecek’s Lix Index to Grade Level {-}
 
-|     |     |
+| Score | Grade |
 | --- | --- |
 | 0-30 | 3^rd^ grade |
 | 31-33 | 4^th^ grade |
@@ -117,7 +117,7 @@ To convert the **Lix** index score to a grade, this test uses the following tabl
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | G   | Grade level |
 | C   | Number of 3+ syllable (“*drei- und mehrsilbigen*”) words |
@@ -139,7 +139,7 @@ Where:
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | G   | Grade level |
 | C   | Number of 3+ syllable (“*drei- und mehrsilbigen*”) words |
@@ -160,7 +160,7 @@ $$
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | G   | Grade level |
 | C   | Number of 3+ syllable (“*drei- und mehrsilbigen*”) words |
@@ -181,8 +181,8 @@ $$
 
 Where:
 
-|     |     |
-| --- | --- |
+|     | Description |
+| :-- | :-- |
 | G   | Grade level |
 | C   | Number of 3+ syllables (“*drei- und mehrsilber*”) words |
 | S   | Number of sentences |
@@ -208,7 +208,7 @@ $$
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | I   | Rix index score |
 | W   | Number words |
@@ -217,7 +217,7 @@ Where:
 
 ### Rix Index to Grade Level Table {-#rix-to-grade-level-german}
 
-|     |     |
+| Score | Grade |
 | --- | --- |
 | 0-13.5 | 1^st^ grade |
 | 13.51-17 | 2^nd^ grade |
@@ -243,7 +243,7 @@ $$
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | I   | Rix index score |
 | W   | Number words |
@@ -252,7 +252,7 @@ Where:
 
 ### Rix Index to Grade Level Table {-#rix-to-grade-level-german2}
 
-|     |     |
+| Score | Grade |
 | --- | --- |
 | 0-26 | 4^th^ grade |
 | 26.1-32 | 5^th^ grade |
@@ -280,7 +280,7 @@ $$
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | G   | Grade level |
 | C   | Number of 3+ syllables (“*drei- und mehrsilbigen*”) words from 30 sentences |
@@ -303,7 +303,7 @@ $$
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | I   | Index value (see below) |
 | C   | Number of 3+ syllable (“*drei- und mehrsilbigen*”) words |
@@ -312,7 +312,7 @@ Where:
 
 Then, find the index value in the following chart to acquire the final readability score:
 
-|     |     |
+| Grade | Score |
 | --- | --- |
 | First grade | 2.5 to 6 |
 | Second grade | 6.1 to 9 |

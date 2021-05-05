@@ -24,7 +24,7 @@ $$
 
 Where:
 
-|     |     |
+|     | Description |
 | --- | --- |
 | I   | Flesch index score |
 | W   | Number of words |
