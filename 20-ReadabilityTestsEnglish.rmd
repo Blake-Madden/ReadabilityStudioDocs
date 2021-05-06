@@ -29,6 +29,7 @@ Where:
 | RP  | Number of strokes. Strokes are characters and punctuation (except for sentence terminating punctuation) |
 | S   | Number of sentences |
 
+`r PageBreak()`
 ## Bormuth Cloze Mean {-#bormuth-cloze-mean-machine-passage}
 
 The **Bormuth Cloze Mean (Machine Computation for Passage Readability) Formula** (79-132) calculates a [predicted cloze score](#cloze) for a document.
@@ -58,6 +59,7 @@ Where:
 `r MarkdownSectionFormatLabel("The program will display the **cloze** score returned by this test in percentage format (e.g., 75) rather than fractal format (e.g., .75) to be consistent with other tests.")`
 `r EndSection()`
 
+`r PageBreak()`
 ## Bormuth Grade Placement (GP35) {-#bormuth-grade-placement-35-machine-passage}
 
 The **Bormuth Grade Placement (Machine Computation for Passage Readability) Formula** (79-132) calculates a grade level for a document.
@@ -85,6 +87,7 @@ Where:
 
 Note that this particular grade-placement test uses the regression equation that best fit the passages with cloze scores averaging ~35%. There are also 45% and 55% cloze-score fitting **Bormuth** equations, but as Bormuth noted “35 per cent on a close readability test tentatively seemed to represent a criterion for deciding whether or not students are able to exhibit a maximum of information gain as a consequence of reading the passage” (*Development* 102).
 
+`r PageBreak()`
 ## Coleman-Liau {-#coleman-liau-test}
 
 The **Coleman-Liau** formula calculates the grade level and estimated cloze score of a document based on sentence length and character count.
@@ -120,6 +123,7 @@ $$
 9 = (-27.4004*(51.3/100)) + 23.06395
 $$
 
+`r PageBreak()`
 ## New Dale-Chall {-#dale-chall-test}
 
 The **New Dale-Chall** readability test (Chall *Manual*, 1-7) calculates the grade level of a document based on sentence length and number of unfamiliar words. Words are unfamiliar if they do not appear on a list of 3,000 common words that are known to most 4^th^-grade students. The following are also considered familiar:
@@ -140,6 +144,7 @@ The **New Dale-Chall** test replaces this regression equation by looking up the 
 
 Because this test is based on the usage of familiar words (rather than syllable or letter counts), it is often regarded as a more accurate test for younger readers.
 
+`r PageBreak()`
 ## Danielson-Bryan 1 {-#danielson-bryan-1}
 
 **Danielson-Bryan 1** (206) is meant for student materials and calculates the grade level of a document based on sentence length and character count.
@@ -169,6 +174,7 @@ Where:
 
 For this reason, the “number of words” statistic is a more accurate description of what the authors intended.
 
+`r PageBreak()`
 ## Danielson-Bryan 2 {-#danielson-bryan-2}
 
 **Danielson-Bryan 2** (206) calculates an index score of a document based on sentence length and character/punctuation count. It is a variant of [Flesch Reading Ease](#flesch-test), with the difference being that it uses character and punctuation counts instead of syllable counts. Being a variant of **Flesch**, its scores range from 0-100 (the higher the score, the easier to read), with average documents being within 60-70.
@@ -204,6 +210,7 @@ Where:
 
 Refer to [Danielson-Bryan 1](#danielson-bryan-1) for an explanation of why number of words is used, instead of number of spaces between words.
 
+`r PageBreak()`
 ## Degrees of Reading Power {-#degrees-of-reading-power}
 
 The **Degrees of Reading Power** (Kibby, 416-427; Carver, *Measuring* 303-316) formula calculates the difficulty level of a document in terms of DRP units. These units range from 0 (easy) to 100 (difficult).
@@ -230,6 +237,7 @@ Where:
 | D   | Number of familiar [Dale-Chall](#dale-chall-test) words |
 | S   | Number of sentences |
 
+`r PageBreak()`
 ## Degrees of Reading Power (GE) {-#degrees-of-reading-power-grade-equivalent}
 
 The **Degrees of Reading Power (grade equivalent)** (Carver 303-316) test calculates the difficulty level of a document by performing the [DRP](#degrees-of-reading-power) test and then converting its units score into a grade level.
@@ -287,6 +295,7 @@ Calculate the **DRP** difficulty of a document. Then, look up the **DRP** score 
 | 77  | 17.9 |
 | 78-100 | 18.0 |
 
+`r PageBreak()`
 ## Easy Listening Formula {-#easy-listening-formula}
 
 The **Easy Listening Formula** is designed for “listenability” and is meant for radio and television broadcasts. Fang (65) stated that broadcasted news generally has much shorter sentences compared to print media. Therefore, he created the **ELF** test to focus solely on complex-word density, not using sentence length as a factor. That is, rather than looking at a sentence’s word count, the density of syllables in a sentence is used instead.
@@ -352,6 +361,7 @@ Where:
 | B   | Number of syllables |
 | S   | Number of sentences |
 
+`r PageBreak()`
 ## McAlpine EFLAW {-#eflaw-test}
 
 The **McAlpine EFLAW^©^** formula (McAlpine) is used to determine the ease of reading English text for ESL/EFL (English as a Second/Foreign Language) readers. This test calculates the index score of a document based on sentence length and number of miniwords (i.e., words that contain three or less letters).
@@ -391,6 +401,7 @@ Where:
 | 26-29 | Mildly difficult |
 | 30+ | Very confusing |
 
+`r PageBreak()`
 ## Farr, Jenkins, Paterson {-#farr-jenkins-paterson}
 
 The **Farr, Jenkins, Paterson** readability formula (333-337) calculates the [Flesch](#flesch-test) difficulty level of a document based on sentence length and number of monosyllabic words.
@@ -414,6 +425,7 @@ Where:
 
 For validation, **Flesch** and **FJP** scores from the aforementioned samples were compared, with a significant correlation of $r = 0.93$.
 
+`r PageBreak()`
 ## Flesch-Kincaid {-#flesch-kincaid-test}
 
 The **Flesch-Kincaid** (Kincaid et al., *Derivation* 14) readability formula is a modified version of [Flesch Reading Ease](#flesch-test) that was recalculated “to be more suitable for Navy use” (Kincaid et al., *Derivation* 11); hence, it is designed for technical documents and manuals. In addition to being a recalculation, this variation of **Flesch** returns a grade-level result, rather than an index score. This test calculates the grade level of a document based on sentence length and syllable count.
@@ -451,6 +463,7 @@ The simplified version of this formula uses a lower precision calculation. It wa
 
 Please refer to [Flesch-Kincaid](#flesch-kincaid-test).
 
+`r PageBreak()`
 ## Flesch Reading Ease {-#flesch-test}
 
 The **Flesch Reading Ease** readability formula calculates an index score of a document based on sentence length and number of syllables.
@@ -496,6 +509,7 @@ This chart consists of three “rulers.” The middle ruler displays the **Flesc
 
 In the above chart, we can see that the document's average words per sentence is 13 and its average syllables per word is 1.46. This yields a score of 71, which indicates that the document is “fairly easy” to read.
 
+`r PageBreak()`
 ## FORCAST {-#forcast-test}
 
 The **FORCAST** readability formula (Caylor 13-17) was devised for assessing U.S. army technical manuals and forms. It is the only test not designed for running narrative, so it is best suited for multiple-choice quizzes, applications, entrance forms, etc. This test calculates the grade level of a document based on its number of monosyllabic words.
@@ -523,6 +537,7 @@ This test is designed for a 150-word sample, but [normalization](#glossary) can 
 `r MarkdownSectionFormatLabel("The name **FORCAST** is a pseudo acronym for its authors: J. Patrick **FOR**d, John S. **CA**ylor, and Thomas G. **ST**icht.")`
 `r EndSection()`
 
+`r PageBreak()`
 ## Fry Graph {-#fry-test}
 
 **Fry** (“Clarifications, Validity, and Extension” 242-252) is a graphical test for English documents. It calculates a document's grade level from its average number of sentences and syllables per hundred words. These averages are plotted onto a chart where their intersection determines the reading level of the content.
@@ -574,6 +589,7 @@ This test is designed for 100-word samples, with 3 samples being recommended for
 
 Note that numerals are fully syllabized for this test. For example, “1945” will be counted as four syllables (“one”-“nine”-“four”-“five”).
 
+`r PageBreak()`
 ## Gunning Fog {-#gunning-fog-test}
 
 The **Gunning Fog** readability formula (39-41) calculates the grade level of a document based on its number of sentences and complex words.
@@ -605,6 +621,7 @@ Where:
 | F   | Number of complex words |
 | S   | Number of sentences |
 
+`r PageBreak()`
 ## Harris-Jacobson Wide Range {-#harris-jacobson}
 
 The **Harris-Jacobson** readability test (19-30; Chapter 3) calculates the grade level of a document based on sentence length and number of unique unfamiliar words. Words are unfamiliar if they do not appear on a list of common words that are known to most second-grade students. The following are also considered familiar:
@@ -728,6 +745,7 @@ Using these new basal readers as the test's criterion, a new regression equation
 
 Because this formula is based on the usage of familiar words (rather than syllable or letter counts), it is often regarded as a more accurate test for younger readers.
 
+`r PageBreak()`
 ## Lix {-#lix-test}
 
 The **Läsbarhetsindex (Lix)** readability formula (Björnsson 480-497) was designed for documents of any Western European language. It calculates a document’s index score based on sentence length and number of long words (i.e., words containing seven or more characters). Viewing long words as those with seven or more characters is what differentiates it from similar tests (which use six or more characters). This difference is what allows it to be a more balanced “yardstick” that can be applied to numerous languages.
@@ -799,6 +817,7 @@ As a final note, Anderson contributed a grade-level conversion table for **Lix**
 | 10-14 | 2   |
 | Below 10 | 1   |
 
+`r PageBreak()`
 ## Modified SMOG {-#modified-smog}
 
 The **Modified SMOG** test (L. Smith 129-132) calculates the grade level of a document based on sentence length and number of difficult (i.e., 3 or more syllable) words and is designed for primary and secondary-age materials.
@@ -824,6 +843,7 @@ Note that numerals are fully syllabized (i.e., sounded out) for this test, so th
 
 This test requires a 10-sentence sample, with 3 samples being recommended for best results. ([Normalization](#glossary) can also be used to analyze larger samples or entire documents.)
 
+`r PageBreak()`
 ## New Automated Readability Index {-#new-ari}
 
 The **New Automated Readability Index** (Kincaid et al., *Derivation* 14) is a modified version of [ARI](#ari-test) that was recalculated “to be more suitable for Navy use” (Kincaid et al., *Derivation* 11); hence, it is designed for technical documents and manuals. This test calculates the grade level of a document based on sentence length and character count.
@@ -859,6 +879,7 @@ The simplified version of this formula uses lower precision. It was originally o
 
 Please refer to [New Automated Readability Index](#new-ari).
 
+`r PageBreak()`
 ## New Farr, Jenkins, Paterson {-#new-farr-jenkins-paterson}
 
 The **New Farr, Jenkins, Paterson** readability formula (Kincaid et al., *Derivation* 17) calculates the grade level of a document based on sentence length and number of monosyllabic words.
@@ -880,6 +901,7 @@ Where:
 | M   | Number of monosyllabic words |
 | S   | Number of sentences |
 
+`r PageBreak()`
 ## New Fog Count {-#new-fog-count-test}
 
 The **New Fog Count** (Kincaid et al., *Derivation* 14) readability formula is a modified version of the [Gunning Fog](#gunning-fog-test) Index that was recalculated “to be more suitable for Navy use” (Kincaid et al., *Derivation* 11); hence, it is designed for technical documents and manuals. This test calculates the grade level of a document based on sentence length and number of words containing three or more syllables.
@@ -903,6 +925,7 @@ Where:
 `r MarkdownSectionFormatLabel("This test uses the same easy-word and sentence counting methods as the **Gunning Fog** test.")`
 `r EndSection()`
 
+`r PageBreak()`
 ## (Powers, Sumner, Kearl) Dale-Chall {-#psk-dale-chall}
 
 The **(Powers, Sumner, Kearl) Dale-Chall** readability formula (99-105) calculates the grade level of a document based on sentence length and number of unfamiliar **Dale-Chall** words.
@@ -934,6 +957,7 @@ Where:
 
 Although this is an update of the 1948 **Dale-Chall** formula, the 1995 [New Dale-Chall](#dale-chall-test) test is recommended instead. This formula does not apply as much weight to the sentence length variable as **New Dale-Chall** does and comparatively yields lower results for difficult (i.e., upper-secondary education) documents. Therefore, this test should only be used for primary and lower-secondary educational documents. It is also only recommended if [floating-point precision](#grade-level-results) for the results is required, as **New Dale-Chall** uses grade ranges instead.
 
+`r PageBreak()`
 ## (Powers, Sumner, Kearl) Farr, Jenkins, Paterson {-#psk-farr-jenkins-paterson}
 
 The **(Powers, Sumner, Kearl) Farr, Jenkins, Paterson** readability formula (99-105) calculates the grade level of a document based on sentence length and number of monosyllabic words.
@@ -963,6 +987,7 @@ Where:
 | M   | Number of monosyllabic words |
 | S   | Number of sentences |
 
+`r PageBreak()`
 ## (Powers, Sumner, Kearl) Gunning Fog {-#psk-fog}
 
 The **(Powers, Sumner, Kearl) Gunning Fog** readability formula (99-105) calculates the grade level of a document based on sentence length and number of syllables.
@@ -996,6 +1021,7 @@ Where:
 `r MarkdownSectionFormatLabel("This test uses the same easy-word and sentence counting methods as the **Gunning Fog** test.")`
 `r EndSection()`
 
+`r PageBreak()`
 ## (Powers, Sumner, Kearl) Flesch {-#psk-test}
 
 The **(Powers, Sumner, Kearl) Flesch** readability formula (99-105) calculates the grade level of a document based on sentence length and number of syllables.
@@ -1025,6 +1051,7 @@ Where:
 
 Note that this test treats numerals as monosyllabic words, in conjunction with the original **Flesch** test.
 
+`r PageBreak()`
 ## Raygor Estimate Graph {-#raygor-test}
 
 The **Raygor Estimate Graph** (259-263) is a graphical test for English documents. It calculates a document's grade level from its average number of sentences and long (6+ character) words per hundred words. These averages are plotted onto a chart where their intersection determines the reading level of the content.
@@ -1050,6 +1077,7 @@ The **Raygor Estimate Graph** formula is:
 
 This test is designed for 3 100-word samples, with 3 samples being recommended for best results. ([Normalization](#glossary) can also be used to analyze larger samples or entire documents.)
 
+`r PageBreak()`
 ## Rix {-#rix-test}
 
 The **Rate Index (Rix)** readability formula (Anderson 490-496) was designed for documents of any Western European language. It calculates a document’s index score based on sentence length and number of long words (i.e., words containing seven or more characters). It is based on the [Lix](#lix-test) readability formula (Björnsson 480-497) and follows the same philosophy of using a unified formula for multiple languages.
@@ -1068,6 +1096,7 @@ Prior to creating this formula, Anderson conducted a validation study for **Lix*
 
 After validating **Lix**, Anderson created **Rix** and compared the two tests’ results. He found that they almost perfectly correlated ($r = 0.99$). Afterwards, he validated **Rix** against the aforementioned 36-passage studies and found similarly strong correlations.
 
+`r PageBreak()`
 ### The Rix Formula {-}
 
 $$
@@ -1100,6 +1129,7 @@ Where:
 | .2 and above | 2   |
 | Below .2 | 1   |
 
+`r PageBreak()`
 ## SMOG {-#smog-test}
 
 The **SMOG** readability formula (McLaughlin 639-646) calculates the grade level of a document based on complex (i.e., 3 or more syllable) word density and is designed for secondary-age readers.
@@ -1141,6 +1171,7 @@ Note that this test is often referred to as an acronym for “Simple Measure of 
 
 Please refer to [SMOG](#smog-test).
 
+`r PageBreak()`
 ## Spache Revised {-#spache-test}
 
 The **Spache Revised** test (Spache, *Good* 195-2003) calculates the grade level of a document based on sentence length and number of unique unfamiliar words. This test uses a list of 1,041 common words that are known to younger readers (4^th^ grade and below). Any word that does not appear on this list is considered unfamiliar. The following are also considered familiar:
@@ -1178,6 +1209,7 @@ Where:
 `r MarkdownSectionFormatLabel("Spache recommends not counting the same unfamiliar word more than once if it appears in subsequent 100-word samples (Spache, *Good* 198). For this reason, it is recommended to follow this practice when analyzing an entire document.")`
 `r EndSection()`
 
+`r PageBreak()`
 ## Stocker's Catholic Supplement {-#stocker-catholic-supplement}
 
 Stocker's Catholic supplement (87-89) is an extension to the [Dale-Chall](#dale-chall-test) word list designed for Catholic students. Based on a 1971 study of 4^th^-grade Catholic students\*, this list represents over 200 words (not on the standard **Dale-Chall** list) familiar to 80% of them.
@@ -1190,6 +1222,7 @@ To include this list as part of your **New Dale-Chall** scoring, select the **To
 
 \* The students involved in this study were “6,743 randomly selected Catholic fourth-graders attending 136 parochial schools throughout the country” (Stocker 87-88).
 
+`r PageBreak()`
 ## Wheeler-Smith {-#wheeler-smith}
 
 The **Wheeler-Smith** (397-399) test is designed for primary-age materials (Kindergarten to 4^th^ grade). This test calculates the grade level of a document based on [unit](#glossary) length and number of polysyllabic (2+ syllable) words. It should be noted that this differs from most other tests that use 3+ syllable words as a difficulty factor. The researchers selected 2+ syllable words because primary readers will have more difficulty with them than secondary and adult readers.

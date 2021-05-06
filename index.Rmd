@@ -27,33 +27,25 @@ PageBreak <- function()
   if (knitr::is_latex_output())
     { knitr::asis_output("\\pagebreak") }
   else if (knitr::is_html_output())
-    { knitr::asis_output("<p style='page-break-before: always' />") }
+    { knitr::asis_output("<div style='page-break-before: always;' />") }
   }
 
 # Displays the macOS CMD button symbol (as a keyboard button)
 macOSCmdButton <- function()
   {
   if (knitr::is_latex_output())
-    {
-    knitr::asis_output("\\keys{\\cmd}")
-    }
+    { knitr::asis_output("\\keys{\\cmd}") }
   else if (knitr::is_html_output())
-    {
-    knitr::asis_output("<span class='key'>&#8984;</span>")
-    }
+    { knitr::asis_output("<span class='key'>&#8984;</span>") }
   }
 
 # Displays a label as a keyboard button
 KeyboardButton <- function(label)
   {
   if (knitr::is_latex_output())
-    {
-    knitr::asis_output(paste0("\\keys{", label, "}"))
-    }
+    { knitr::asis_output(paste0("\\keys{", label, "}")) }
   else if (knitr::is_html_output())
-    {
-    knitr::asis_output(glue("<span class='key'>{label}</span>"))
-    }
+    { knitr::asis_output(glue("<span class='key'>{label}</span>")) }
   }
 
 # Formats a label inside of a warning/tip/note section to LaTeX.
@@ -77,9 +69,7 @@ MarkdownSectionFormatLabel <- function(label)
     knitr::asis_output(label)
     }
   else if (knitr::is_html_output())
-    {
-    knitr::asis_output(label)
-    }
+    { knitr::asis_output(label) }
   }
 
 # Begins a "Warning" section with a label. can be embedded in.
