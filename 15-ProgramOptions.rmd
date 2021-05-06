@@ -543,7 +543,7 @@ Checking this option will instruct the program to not spell check words such as 
 
 Checking this option will instruct the program to not consider words such as “takin'” and “goin'” as misspellings.
 
-**Ignore social media hashtags**: Check this to ignore hashtags, such as `#ReadabilityFormulasRock`.
+**Ignore social media hashtags**: Check this to ignore hashtags, such as “#ReadabilityFormulasRock”.
 
 ## Highlighted Reports {-#options-highlighted-reports}
 
