@@ -488,7 +488,7 @@ Note that this test treats numerals as monosyllabic words by default. This behav
 
 Along with the raw score, a chart is also available to visualize the score's meaning:
 
-```{r, echo=F, fig.cap='Flesch Chart', fig.align='center'}
+```{r fleschChart, echo=F, fig.cap='Flesch Chart', fig.align='center'}
 knitr::include_graphics("Images/FleschChart.png")
 ```
 
@@ -551,7 +551,7 @@ In 1977, Fry extended the graph to include grades 13-16 by extrapolating the ave
 
 The **Fry graph** is designed for both primary and secondary-age reading materials. Below is an example of a **Fry graph**:
 
-```{r, echo=F, fig.cap='Fry Graph', fig.align='center'}
+```{r fryGraph, echo=F, fig.cap='Fry Graph', fig.align='center'}
 knitr::include_graphics("Images/frygraph.png")
 ```
 
@@ -762,7 +762,7 @@ The index score of **Lix** can be summarized as follows:
 
 Note that **Lix** also includes a chart to visualize the meaning of its index score:
 
-```{r, echo=F, fig.cap='Lix Gauge', fig.align='center'}
+```{r lixGauge, echo=F, fig.cap='Lix Gauge', fig.align='center'}
 knitr::include_graphics("Images/LixGauge.png")
 ```
 
@@ -1035,7 +1035,7 @@ In another experiment, Baldwin and Kaufman compared the correlations between **F
 
 This graph is primarily used in secondary education to help classify teaching materials and books into their appropriate reading groups. Below is an example of a **Raygor graph**:
 
-```{r, echo=F, fig.cap='Raygor Estimate Graph', fig.align='center'}
+```{r raygor, echo=F, fig.cap='Raygor Estimate Graph', fig.align='center'}
 knitr::include_graphics("Images/raygorgraph.png")
 ```
 
