@@ -776,7 +776,7 @@ a:CloseProperties()
 
 --Exclusion word list
 
-ScreenshotLib.ShowEditWordListDlg("C:\\Documents\\ExclusionWords.txt")
+ScreenshotLib.ShowEditWordListDlg(ValidationFolder .. "Screenshot Projects/Example10ExclusionWords.txt")
 
 ScreenshotLib.SnapScreenshot(ImagePath .. "ExclusionExampleCustomWords." .. FileExtension)
 
@@ -926,7 +926,7 @@ bitmaps = Application.FindFiles(ImagePath, "*." .. FileExtension)
 for i,v in ipairs(bitmaps)
 do
     command = "\"\"" .. ImageMagickPath .. "\" convert \"" ..
-              v .. "\" -resize 600^> \"" .. string.gsub(v,"." .. FileExtension,".png") .. "\"\""
+              v .. "\" -resize 500^> \"" .. string.gsub(v,"." .. FileExtension,".png") .. "\"\""
     os.execute(command)
     os.remove(v)
 end
