@@ -9,6 +9,7 @@
 \usepackage{xcolor}
 \usepackage{tcolorbox}
 \usepackage{fontawesome5}
+\usepackage{float}
 \makeatletter
 \def\thm@space@setup{%
   \thm@preskip=8pt plus 2pt minus 4pt
@@ -17,6 +18,7 @@
 \makeatother
 \raggedbottom
 
+% colors that can be used in the notes/tips/warning sections
 \definecolor{lightgray}{gray}{0.75}
 \definecolor{lightyellow}{RGB}{252,248,227}
 \definecolor{lightpink}{RGB}{255,207,219}
@@ -24,3 +26,12 @@
 \setCJKmonofont{SimSun}
 \setCJKmainfont{SimSun}
 \setCJKsansfont{SimSun}
+
+% helps reduce images from floating
+\renewcommand{\topfraction}{.85}
+\renewcommand{\bottomfraction}{.7}
+\renewcommand{\textfraction}{.15}
+\renewcommand{\floatpagefraction}{.66}
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{3}
+\setcounter{totalnumber}{4}

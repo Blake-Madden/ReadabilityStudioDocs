@@ -16,6 +16,8 @@ cover-image: "images/NonGenerated/cover.png"
 
 ```{r, include=FALSE}
 knitr::opts_chunk$set(message=F, warning=F)
+# prevent floating
+knitr::opts_chunk$set(fig.pos = "H", out.extra = "")
 
 library(glue)
 library(stringr)
@@ -119,13 +121,9 @@ BeginNoteSection <- function()
 EndSection <- function()
   {
   if (knitr::is_latex_output())
-    {
-    knitr::asis_output("\n\\end{tcolorbox}")
-    }
+    { knitr::asis_output("\n\\end{tcolorbox}") }
   else if (knitr::is_html_output())
-    {
-    knitr::asis_output("\n:::")
-    }
+    { knitr::asis_output("\n:::") }
   }
 ```
 
