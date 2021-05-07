@@ -636,21 +636,23 @@ Note that numerals are entirely excluded from this test and are considered neith
 
 The **Wide Range Readability Formula** is based on previous **Harris-Jacobson** formulas designed for preprimer through eighth-grade reader-level materials. The **Wide Range** variation was trained on a new series of basal readers (30; Chapter 3). This series included:
 
-| Primary Levels |
-| --- |
-| 1 preprimer |
-| 1 primer |
-| 1 first reader |
-| 2 second readers |
-| 2 third readers |
+```{r, echo=F}
+library(kableExtra)
 
-| Secondary Levels |
-| --- |
-| 1 fourth reader |
-| 1 fifth reader |
-| 1 sixth reader |
-| 1 seventh readers |
-| 1 eighth readers |
+primaryTable <- tibble("Primary Levels" = c("1 preprimer",
+                                            "1 primer",
+                                            "1 first reader",
+                                            "2 second readers",
+                                            "2 third readers"))
+secondaryTable <- tibble("Secondary Levels" = c("1 fourth reader",
+                                                "1 fifth reader",
+                                                "1 sixth reader",
+                                                "1 seventh reader",
+                                                "1 eighth reader"))
+kableExtra::kbl(list(primaryTable, secondaryTable),
+                booktabs=T, centering=T) %>%
+            kableExtra::kable_classic(full_width=F)
+```
 
 Using these new basal readers as the test's criterion, a new regression equation and expanded word list were built for the **Wide Range Formula**. This new formula could significantly correlate samples from these books to their reported reading levels. Further, to predict readability scores for materials beyond the eighth-grade level, the look-up table used by the test (see below) was extrapolated to include secondary and adult-level materials.
 

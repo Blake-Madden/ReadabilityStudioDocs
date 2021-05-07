@@ -20,8 +20,9 @@ knitr::opts_chunk$set(message=F, warning=F)
 knitr::opts_chunk$set(fig.pos = "H", out.extra = "")
 
 library(glue)
-library(stringr)
+library(tidyverse)
 library(magrittr)
+library(kableExtra)
 
 # Adds a page break
 PageBreak <- function()
