@@ -25,15 +25,6 @@ library(tidyverse)
 library(magrittr)
 library(kableExtra)
 
-# Adds a page break
-PageBreak <- function()
-  {
-  if (knitr::is_latex_output())
-    { knitr::asis_output("\\pagebreak") }
-  else if (knitr::is_html_output())
-    { knitr::asis_output("<div style='page-break-before: always;' />") }
-  }
-
 # Displays the macOS CMD button symbol (as a keyboard button)
 macOSCmdButton <- function()
   {
