@@ -208,7 +208,7 @@ One last item to discuss about loading a webpage is whether you want to reanalyz
 
 ![](Images/reloadwebpage.png)
 
-By having this option selected, you will reload the page's content whenever you reopen the project (or at anytime by pressing **F5**). If you prefer to embed the current version of this page into the project, then select **Embed the source document's original text in the project file**. Refer to the [Project Settings](#project-settings) overview for more information about these options.
+By having this option selected, you will reload the page's content whenever you reopen the project (or at anytime by pressing `r KeyboardButton("F5")`). If you prefer to embed the current version of this page into the project, then select **Embed the source document's original text in the project file**. Refer to the [Project Settings](#project-settings) overview for more information about these options.
 
 Note that webpages requiring authentication (i.e., requiring a user name and password) are not currently supported. To work around this, log into the webpage from any browser, save the page as a local HTML file, and then load that into a new project.
 
