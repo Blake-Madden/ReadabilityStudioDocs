@@ -159,14 +159,23 @@ $$
 
 Where:
 
-|     | Description |
-| --- | --- |
-| G   | Grade level |
-| W   | Number of words\* |
-| RP  | Number of characters, in this context being letters, numbers, and punctuation (except for sentence-ending punctuation) |
-| S   | Number of sentences |
+```{r, echo=F}
+db1Data <- tibble(" " = c("G", "W", "RP", "S"),
+                  "Description" = c("Grade level",
+                                    "Number of words (see below)",
+                                    "Number of characters, in this context being\nletters, numbers, and punctuation (except\nfor sentence-ending punctuation)",
+                                    "Number of sentences"))
 
-\*In the original article, the statistic of “number of spaces between words” is suggested, rather than explicitly saying “number of words.” Logically, this should be the number of words minus 1. However, in the article's example, number of spaces between words is the same as number of words (even when there are dashes connecting words). It is therefore assumed that the authors' intention was to count the number of words using the following logic:
+if (knitr::is_latex_output())
+  {
+  db1Data$Description %<>% kableExtra::linebreak(align='l')
+  }
+
+kableExtra::kbl(db1Data, booktabs=T, centering=T, align='l',escape=F) %>%
+  kableExtra::kable_classic(full_width=F)
+```
+
+In the original article, the statistic of “number of spaces between words” is suggested, rather than explicitly saying “number of words.” Logically, this should be the number of words minus 1. However, in the article's example, number of spaces between words is the same as number of words (even when there are dashes connecting words). It is therefore assumed that the authors' intention was to count the number of words using the following logic:
 
 1.  Count the number of spaces.
 2.  Treat dashes connecting words as spaces.
@@ -189,12 +198,23 @@ $$
 
 Where:
 
-|     | Description |
-| --- | --- |
-| I   | Flesch index score |
-| W   | Number of words\* |
-| RP  | Number of characters, in this context being letters, numbers, and punctuation (except for sentence-ending punctuation) |
-| S   | Number of sentences |
+```{r, echo=F}
+db2Data <- tibble(" " = c("I", "W", "RP", "S"),
+                  "Description" = c("Flesch index score",
+                                    "Number of words¹",
+                                    "Number of characters, in this context being\nletters, numbers, and punctuation (except\nfor sentence-ending punctuation)",
+                                    "Number of sentences"))
+
+if (knitr::is_latex_output())
+  {
+  db2Data$Description %<>% kableExtra::linebreak(align='l')
+  }
+
+kableExtra::kbl(db2Data, booktabs=T, centering=T, align='l',escape=F) %>%
+  kableExtra::kable_classic(full_width=F) %>%
+  footnote(number = "Refer to Danielson-Bryan 1 for an explanation of why number of words is used, instead of number of spaces between words.",
+           threeparttable=T)
+```
 
 ### Flesch Reading Ease Index Table {-}
 
@@ -207,8 +227,6 @@ Where:
 | 50-59 | Fairly difficult, junior high school level |
 | 30-49 | Difficult, high school level |
 | 0-29 | Very difficult, college level |
-
-Refer to [Danielson-Bryan 1](#danielson-bryan-1) for an explanation of why number of words is used, instead of number of spaces between words.
 
 \newpage
 ## Degrees of Reading Power {-#degrees-of-reading-power}
@@ -832,12 +850,18 @@ $$
 
 Where:
 
-|     | Description |
-| --- | --- |
-| G   | Grade level |
-| RP  | Number of strokes* |
-| W   | Number of words |
-| S   | Number of sentences |
+```{r, echo=F}
+newAriData <- tibble(" " = c("G", "W", "RP", "S"),
+                     "Description" = c("Grade level",
+                                    "Number of words",
+                                    "Number of strokes¹",
+                                    "Number of sentences"))
+
+kableExtra::kbl(newAriData, booktabs=T, centering=T, align='l',escape=F) %>%
+  kableExtra::kable_classic(full_width=F) %>%
+  footnote(number = "Strokes are characters and punctuation (except for sentence-terminating punctuation).",
+           threeparttable=T)
+```
 
 A simplified variation was also provided:
 
@@ -848,8 +872,6 @@ $$
 `r BeginNoteSection()`
 The simplified version of this formula uses lower precision. It was originally offered to make manual calculations of this test easier. It is recommended to use the higher-precision formula, but the simplified version is also available in the program.
 `r EndSection()`
-
-\* Strokes are characters and punctuation (except for sentence-terminating punctuation).
 
 ## New Automated Readability Index (Simplified) {-#new-ari-simplified}
 
