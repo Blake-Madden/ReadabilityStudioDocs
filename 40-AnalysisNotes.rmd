@@ -150,20 +150,20 @@ At this point, the project will be reanalyzed and these sentence fragments will 
 
 Most software that counts syllables employs one of two methods. The first is a dictionary-based system that includes a list of common words and their respective syllable counts. As the software counts a document's syllables, each word is looked up in a dictionary to retrieve its syllable count. The disadvantage of this method is that if a word is not found, then the program must prompt you to enter the syllable count.
 
-The second syllable-counting method is to use an algorithm. These algorithms generally consist of counting vowel blocks\* in a word to determine the syllable count. The advantage of this is that it will work with any word, without user interaction. The disadvantage is that these algorithms are traditionally less accurate than a dictionary approach. To be truly effective, these algorithms must consider special cases, such as:
+The second syllable-counting method is to use an algorithm. These algorithms generally consist of counting vowel blocks^1^ in a word to determine the syllable count. The advantage of this is that it will work with any word, without user interaction. The disadvantage is that these algorithms are traditionally less accurate than a dictionary approach. To be truly effective, these algorithms must consider special cases, such as:
 
 -   Situations where vowel blocks split into two syllables. For example, the “ui” in “fruit” is one syllable, but in “intuitive” it splits into two syllables.
 -   Situations where special consonant blocks may split into two syllables. For example, in the name “McCoy,” the prefix is really a separate syllable.
 
 **Readability Studio** uses an algorithmic approach which takes these linguistic nuances into account.
 
-Different algorithms should be used for different languages. The rules for vowel-blocks, silent ‘e’s, and number counting can greatly vary between languages. For example, “85” would be two syllables in English (“eight five”), whereas in Spanish\*\* it would be four syllables (“o-cho cin-co”). To account for this, **Readability Studio** uses the proper syllabizer based on the [language](#project-settings) that you specify for your project.
+Different algorithms should be used for different languages. The rules for vowel-blocks, silent ‘e’s, and number counting can greatly vary between languages. For example, “85” would be two syllables in English (“eight five”), whereas in Spanish^2^ it would be four syllables (“o-cho cin-co”). To account for this, **Readability Studio** uses the proper syllabizer based on the [language](#project-settings) that you specify for your project.
 
 Finally, for readability analysis, syllables should be counted on a word-by-word basis and not use synalepha. Synalepha is the blending of word sounds together often found in poetry. Thus, it is generally not suggested to analyze text which has a poetic meter.
 
-\* An exception for silent ‘e’ is made for English syllabizing.
+^1^ An exception for silent ‘e’ is made for English syllabizing.
 
-\*\* For Spanish text, a specialized version of the **Cuayáhuitl** (412-415) algorithm is used.
+^2^ For Spanish text, a specialized version of the **Cuayáhuitl** (412-415) algorithm is used.
 
 ### How Numbers are Syllabized {-}
 

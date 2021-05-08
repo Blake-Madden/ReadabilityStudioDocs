@@ -199,7 +199,7 @@ Refer to [Text Exclusion](#how-text-is-excluded) to learn how **Readability Stud
 
 There may be times when you would need a filtered copy of your document. For example, you might need to process your document through another program which does not have auto-filtering. In this situation, you can export a copy of your document with these aforementioned items removed. Then you can analyze your document with other software without needing to manually filter it.
 
-To do this, click on the **Home** tab of the ribbon, click on the arrow below the **Save** button, and select **Export Filtered Document**. After excluding incomplete sentences\* from your document, you will be presented with additional options. Once you have specified your filtering options, the **Preview Filtered Document** dialog (shown below) will display a preview:
+To do this, click on the **Home** tab of the ribbon, click on the arrow below the **Save** button, and select **Export Filtered Document**. After excluding incomplete sentences from your document, you will be presented with additional options. Once you have specified your filtering options, the **Preview Filtered Document** dialog (shown below) will display a preview:
 
 ![](Images/FilterTextPreview.png)
 
