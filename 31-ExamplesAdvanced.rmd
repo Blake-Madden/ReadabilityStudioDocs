@@ -6,13 +6,13 @@ In this chapter, we will step through how to exclude text from an analysis. Afte
 
 When reviewing a document, it is usually preferable to ignore certain items, such as headers and citations (refer to the [Text Exclusion](#how-text-is-excluded) topic for more information). In this example, we will discuss the various methods for excluding these items.
 
-The first step is to open the example file **Danielson-Bryan**. From the **Help** tab, click the **Example Documents** button and then select **Danielson-Bryan** from the menu. (When prompted about how to open the document, select **Create a new project**.) When the **New Project Wizard** appears, leave the defaults and click **Finish**. A warning about an incomplete sentence being included because of its length will appear:
+The first step is to open the example file **Danielson-Bryan**. From the **Help** tab, click the **Example Documents** button and then select **Danielson-Bryan** from the menu. (When prompted about how to open the document, select **Create a new project**.) When the **New Project Wizard** appears, leave the defaults and click `r KeyboardButton("Finish")`. A warning about an incomplete sentence being included because of its length will appear:
 
 ![](Images/NonGenerated/ExclusionExampleIncompleteSentWarning.png)
 
-For now click **OK**, we will review this sentence later in this example.
+For now click `r KeyboardButton("OK")`, we will review this sentence later in this example.
 
-Once the project is loaded, on the **Home** tab click the **Properties** button under the **Project** section. On the **Properties** dialog, click **Analysis** on the sidebar and select **Document Indexing**. Uncheck all the options shown below and click **OK**:
+Once the project is loaded, on the **Home** tab click the **Properties** button under the **Project** section. On the **Properties** dialog, click **Analysis** on the sidebar and select **Document Indexing**. Uncheck all the options shown below and click `r KeyboardButton("OK")`:
 
 ![](Images/ExclusionExampleAllExcluded.png)
 
@@ -28,11 +28,11 @@ The first is the sentence “Where:.” Sentences that end with a semicolon and 
 
 ![](Images/ExclusionExampleAggressiveList.png)
 
-Checking this option will exclude any valid sentence (containing less than 10 words) that is inside of a block of incomplete sentences. Click **OK** and note how “Where:” is now excluded:
+Checking this option will exclude any valid sentence (containing less than 10 words) that is inside of a block of incomplete sentences. Click `r KeyboardButton("OK")` and note how “Where:” is now excluded:
 
 ![](Images/ExclusionExampleWhereExcluded.png)
 
-The next item to note is the sentence “Number of characters...”. This is really an item in a table that is missing a period, so we should be excluding it. However, currently it is being included because it contains more than 15 words. To adjust this, go back to the **Document Indexing** options for this project. Change the value for **Include incomplete sentences containing more than [15] words** to a higher value (e.g., “20”) and click **OK**:
+The next item to note is the sentence “Number of characters...”. This is really an item in a table that is missing a period, so we should be excluding it. However, currently it is being included because it contains more than 15 words. To adjust this, go back to the **Document Indexing** options for this project. Change the value for **Include incomplete sentences containing more than [15] words** to a higher value (e.g., “20”) and click `r KeyboardButton("OK")`:
 
 ![](Images/ExclusionExampleIncompLengthValue.png)
 
@@ -44,7 +44,7 @@ Now scroll to the bottom of the report window and note the copyright notice:
 
 ![](Images/ExclusionExampleCopyrightIncluded.png)
 
-Go to the **Document Indexing** options, check **Also exclude copyright notices**, and click **OK**:
+Go to the **Document Indexing** options, check **Also exclude copyright notices**, and click `r KeyboardButton("OK")`:
 
 ![](Images/ExclusionExampleCopyrightExcluded.png)
 
@@ -52,7 +52,7 @@ Now this copyright notice will be excluded from the analysis:
 
 ![](Images/ExclusionExampleCopyrightExcludedNow.png)
 
-Along with incomplete sentences, specific types of words can also be excluded. For example, at the bottom of this window note the hyperlink “http://www.jstor.org/.” To exclude this, go to the **Document Indexing** options, check **Also exclude Internet and file addresses**, and click **OK**:
+Along with incomplete sentences, specific types of words can also be excluded. For example, at the bottom of this window note the hyperlink “http://www.jstor.org/.” To exclude this, go to the **Document Indexing** options, check **Also exclude Internet and file addresses**, and click `r KeyboardButton("OK")`:
 
 ![](Images/ExclusionExampleUrlExcluded.png)
 
@@ -60,7 +60,7 @@ Note how “http://www.jstor.org/” is now excluded:
 
 ![](Images/ExclusionExampleUrlExcludedNow.png)
 
-Other items, such as proper nouns and numbers can also be excluded. Go to the **Document Indexing** options, check **Also exclude numerals** and **Also exclude proper nouns**, and click **OK**. Then scroll to the top of the report window. First note how numbers, such as the page citation and computer series, are now excluded:
+Other items, such as proper nouns and numbers can also be excluded. Go to the **Document Indexing** options, check **Also exclude numerals** and **Also exclude proper nouns**, and click `r KeyboardButton("OK")`. Then scroll to the top of the report window. First note how numbers, such as the page citation and computer series, are now excluded:
 
 ![](Images/ExclusionExampleNumbersExcludedNow.png)
 
@@ -76,7 +76,7 @@ In the **Edit Phrase List** dialog, either double click the grid or click the ad
 
 ![](Images/ExclusionExampleCustomWords.png)
 
-Click **OK** and all instances of “punctuation” and “sentence length” are now excluded:
+Click `r KeyboardButton("OK")` and all instances of “punctuation” and “sentence length” are now excluded:
 
 ![](Images/ExclusionExampleCustomWordsExcludedNow.png)
 
@@ -84,7 +84,7 @@ Separate instances of “sentence” and “length” will still be included, th
 
 Note that when excluding individual words, these words are treated as if they are not in the document at all. This means that excluding words will affect the sentences that they appear in. For example, by excluding “Danielson-Bryan,” “1,” and “206”, the first sentence will have a word count of 20 instead of 23.
 
-Another section of text that could be excluded is the citation at the bottom. Go to the **Document Indexing** options, check **Also exclude trailing citations** and click **OK**. Scroll to the bottom of the document and note how everything below the header “Citations” is now excluded:
+Another section of text that could be excluded is the citation at the bottom. Go to the **Document Indexing** options, check **Also exclude trailing citations** and click `r KeyboardButton("OK")`. Scroll to the bottom of the document and note how everything below the header “Citations” is now excluded:
 
 ![](Images/ExclusionExampleCitationExcluded.png)
 
@@ -98,7 +98,7 @@ At this point, all that remains in the analysis is the actual prose—all “noi
 
 Continuing from the [previous example](#excluding-text-from-analysis), we will now discuss how to exclude specific blocks of text.
 
-The first step is to open the example file **Press Release**. From the **Help** tab, click the **Example Documents** button and then select **Press Release** from the menu. (When prompted about how to open the document, select **Create a new project**.) When the **New Project Wizard** appears, leave the defaults and click **Finish**.
+The first step is to open the example file **Press Release**. From the **Help** tab, click the **Example Documents** button and then select **Press Release** from the menu. (When prompted about how to open the document, select **Create a new project**.) When the **New Project Wizard** appears, leave the defaults and click `r KeyboardButton("Finish")`.
 
 Once the project is loaded, click **Grammar** on the project's sidebar and then click **Highlighted Report**. In this window, any text that is being excluded will be highlighted gray. For example, an indented list is being excluded, as shown below:
 
@@ -114,7 +114,7 @@ Open the **Properties** dialog, click **Analysis** and select **Document Indexin
 
 ![](Images/ExclusionTagsExampleOptions.png)
 
-Selecting this option will exclude text in between pairs of angle brackets. Click **OK** and note how the placeholders and final paragraph are now excluded:
+Selecting this option will exclude text in between pairs of angle brackets. Click `r KeyboardButton("OK")` and note how the placeholders and final paragraph are now excluded:
 
 ![](Images/ExclusionTagsExampleExcluding.png)
 
@@ -132,6 +132,6 @@ Enter the name “4F” into the **Bundle Name** text field. Next, select the **
 
 ![](Images/TestBundle4F.png)
 
-Click the **OK** button to accept.
+Click the `r KeyboardButton("OK")` button to accept.
 
 To use the bundle, first open any project. Next, select the **Readability** tab, click the **Bundles** button, and select **4F** from the menu. Now the program will replace all tests within the project with the tests from the “4F” bundle.

@@ -69,7 +69,7 @@ Once finished, the dialog will look like this:
 
 ![](Images/CustomTestExample1Finished.png)
 
-Click the **OK** button and our new test will be added to the system.
+Click the `r KeyboardButton("OK")` button and our new test will be added to the system.
 
 To add this test to any project, first select the **Readability** tab. Next, click the **Custom Tests** button and then select **Flesch (IC)** from the menu. Select the **Readability Scores** icon on the project pane and note that **Flesch (IC)** has now been added to the project's results:
 
@@ -127,7 +127,7 @@ The remaining logic that we must define is how to count proper nouns and numeral
 
 For this example, we will treat all proper nouns and numerals as familiar. This is the default, so leave these options unchanged.
 
-Click the **OK** button and our new test will be added to the system. At this point, the formula and all our settings will be validated. Because our [proper-noun options](#readability-test-options) differ from the standard **New Dale-Chall** test, the following prompt will appear:
+Click the `r KeyboardButton("OK")` button and our new test will be added to the system. At this point, the formula and all our settings will be validated. Because our [proper-noun options](#readability-test-options) differ from the standard **New Dale-Chall** test, the following prompt will appear:
 
 ![](Images/NonGenerated/CustomTestDCProperNounWarning.png)
 
@@ -224,7 +224,7 @@ For this test, we are only looking for words explicitly from our list. This mean
 
 ![](Images/CustomIndexTestExampleProperAndNumeralsFinished.png)
 
-Click the **OK** button and our new test will be added to the system.
+Click the `r KeyboardButton("OK")` button and our new test will be added to the system.
 
 To add this test to any project, first select the **Readability** tab. Next, click the **Custom Tests** button and then select **Buzz Index**. Select the **Readability Scores** icon on the project pane and note that **Buzz Index** has now been added to the project's results:
 

@@ -12,7 +12,7 @@ To determine the readability of a document collection, you will need to create a
 
 ![](Images/selectprojecttype.png)
 
-Select **Batch Project** and click the **OK** button to proceed to the **New Project Wizard** dialog:
+Select **Batch Project** and click the `r KeyboardButton("OK")` button to proceed to the **New Project Wizard** dialog:
 
 ![](Images/wizardbatchselectfiles.png)
 
@@ -20,17 +20,17 @@ Select **English** as the document language. Next, you can add files from a fold
 
 ![](Images/selectdirectory.png)
 
-Enter the path to your document folder in the top field. We will want to search for files inside of this folder and its subfolders, so leave **Search directories recursively** checked. Click the **OK** button to accept, and the program will begin its file search. After the program is finished searching for documents, you will return to the **Select Files** dialog. Note how all of the files that were found are now included in the file list:
+Enter the path to your document folder in the top field. We will want to search for files inside of this folder and its subfolders, so leave **Search directories recursively** checked. Click the `r KeyboardButton("OK")` button to accept, and the program will begin its file search. After the program is finished searching for documents, you will return to the **Select Files** dialog. Note how all of the files that were found are now included in the file list:
 
 ![](Images/wizardbatchselectfilesloaded.png)
 
 To add more files from other folders, repeat the previous step.
 
-We will analyze all of the documents in this collection, so just ignore the **Randomly sample** option. Click the **Forward** button to continue to the **Document Structure** page, as shown below:
+We will analyze all of the documents in this collection, so just ignore the **Randomly sample** option. Click the `r KeyboardButton("Forward >")` button to continue to the **Document Structure** page, as shown below:
 
 ![](Images/wizarddocstructure.png)
 
-In this dialog, you will specify the format that best describes your documents. We are analyzing standard, narrative documents, so select **Narrative text**. After selecting your document structure, click the **Forward** button to continue to the **Test Selection** page, as shown below:
+In this dialog, you will specify the format that best describes your documents. We are analyzing standard, narrative documents, so select **Narrative text**. After selecting your document structure, click the `r KeyboardButton("Forward >")` button to continue to the **Test Selection** page, as shown below:
 
 ![](Images/wizardbatchreadabilitymethods.png)
 
@@ -38,7 +38,7 @@ On this page, you will select how you want **Readability Studio** to choose the 
 
 ![](Images/wizardbatchdoctype.png)
 
-We will be analyzing technical documents in this example, so select **Technical document or form**. Click the **Finish** button and the project will be created and will appear like this:
+We will be analyzing technical documents in this example, so select **Technical document or form**. Click the `r KeyboardButton("Finish")` button and the project will be created and will appear like this:
 
 ![](Images/batchscorestats.png)
 
