@@ -674,28 +674,28 @@ Using these new basal readers as the test's criterion, a new regression equation
 library(tidyverse)
 
 # needs to be strings because of footnote for 8.5
-hjScoreTable <- tibble("Predicted Raw Score" = c("1.1", "1.2", "1.3", "1.4", "1.5",
+hjScoreTable <- tibble("Predicted\nRaw Score" = c("1.1", "1.2", "1.3", "1.4", "1.5",
                                                  "1.6", "1.7", "1.8", "1.9", "2.0",
                                                  "2.1", "2.2", "2.3", "2.4", "2.5",
                                                  "2.6", "2.7", "2.8", "2.9", "3.0",
                                                  "3.1", "3.2", "3.3", "3.4", "3.5",
                                                  "3.6", "3.7", "3.8", "3.9", "4.0",
                                                  "4.1", "4.2", "4.3", "4.4", "4.5"),
-                       "Readability Score" = c("1.0", "1.0", "1.0", "1.1", "1.2",
+                       "Readability\nScore" = c("1.0", "1.0", "1.0", "1.1", "1.2",
                                                "1.3", "1.4", "1.5", "1.7", "1.8",
                                                "1.9", "2.0", "2.1", "2.2", "2.3",
                                                "2.4", "2.6", "2.7", "2.8", "2.9",
                                                "3.1", "3.2", "3.3", "3.4", "3.5",
                                                "3.6", "3.7", "3.8", "3.9", "4.0",
                                                "4.1", "4.3", "4.5", "4.6", "4.7"),
-                       "Predicted Raw Score " = c("4.6", "4.7", "4.8", "4.9", "5.0",
+                       "Predicted\nRaw Score " = c("4.6", "4.7", "4.8", "4.9", "5.0",
                                                  "5.1", "5.2", "5.3", "5.4", "5.5",
                                                  "5.6", "5.7", "5.8", "5.9", "6.0",
                                                  "6.1", "6.2", "6.3", "6.4", "6.5",
                                                  "6.6", "6.7", "6.8", "6.9", "7.0",
                                                  "7.1", "7.2", "7.3", "7.4", "7.5",
                                                  "7.6", "7.7", "7.8", "7.9", "8.0"),
-                       "Readability Score " = c("4.8", "5.0", "5.2", "5.4", "5.5",
+                       "Readability\nScore " = c("4.8", "5.0", "5.2", "5.4", "5.5",
                                                "5.7", "5.9", "6.0", "6.2", "6.4",
                                                "6.5", "6.7", "6.9", "7.1", "7.3",
                                                "7.5", "7.7", "7.9", "8.1", "8.3",
@@ -703,11 +703,20 @@ hjScoreTable <- tibble("Predicted Raw Score" = c("1.1", "1.2", "1.3", "1.4", "1.
                                                "9.4", "9.6", "9.8", "10.1", "10.3",
                                                "10.5","10.7","10.9","11.1", "11.3"))
 
-kableExtra::kbl(hjScoreTable, booktabs=T, centering=T, align='r') %>%
+
+
+# add linebreaks in print
+if (knitr::is_latex_output())
+  {
+  colnames(hjScoreTable) %<>% kableExtra::linebreak(align='c')
+  }
+
+footnoteLabel <- "Readability scores above 8.5 were derived by extrapolation (21; Chapter 3)"
+
+kableExtra::kbl(hjScoreTable, booktabs=T, centering=T, align='r',escape=F) %>%
   kableExtra::kable_classic(full_width=F) %>%
   kableExtra::column_spec(2, border_right = T) %>%
-  footnote(number = c("Readability scores above 8.5 were derived by extrapolation (21; Chapter 3)")) %>%
-  kable_styling(latex_options=c("scale_down"))
+  footnote(number = footnoteLabel, threeparttable=T)
 ```
 
 Because this formula is based on the usage of familiar words (rather than syllable or letter counts), it is often regarded as a more accurate test for younger readers.
