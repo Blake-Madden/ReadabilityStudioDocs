@@ -64,7 +64,7 @@ Standard familiar-word tests normally consider numbers and proper nouns as famil
 
 Finally, you can specify how this test interacts with the [New Project Wizard](#creating-standard-project) by associating it with document types and industries. Click the **Classification** icon to display these options. Then select all the documents and industries that this test should relate to.
 
-For example, select the **Children's literature** and **Children's healthcare** check boxes (as shown below) and click **OK**.
+For example, select the **Children's literature** and **Children's healthcare** check boxes (as shown below) and click `r KeyboardButton("OK")`.
 
 ![](Images/CustomTestWizardSettings.png)
 
@@ -74,9 +74,7 @@ Now create a new project and select **Children's healthcare** as the industry ty
 
 The following functions and operators are available for use in [custom test](#creating-custom-test) formulas.
 
-### Operators {-}
-
-|     |     |
+| Operators | Description |
 | :-- | :-- |
 | \* | Multiplication. |
 | / | Division. |
@@ -96,7 +94,7 @@ The following functions and operators are available for use in [custom test](#cr
 
 For operators, the order of precedence is:
 
-|     |     |
+| Operators | Description |
 | :-- | :-- |
 | ( ) | Instructions in parentheses are executed first. |
 | ^   | Exponentiation. |
@@ -117,18 +115,15 @@ Will yield “12.5.” “5/2“ is executed first, then added to the other five
 
 You can override it so that the additions happen first (resulting in “15”), followed by the division (finally yielding “7.5”). Likewise, “(2+5)^2” will yield “49” (“7” squared), while “2+5^2” will yield “27” (“5” squared, plus “2”).
 
-### Logic {-}
-
-|     |     |
+| Locic Functions | Description |
 | :-- | :-- |
 | AND(value1,value2,...) | Returns true if all conditions are true. |
 | IF(condition,value_if_true,value_if_false) | If “condition” is true (non-zero), then “value\_if\_true” is returned; otherwise, “value\_if\_false” is returned. |
 | NOT(value) | Returns the logical negation of “value.” |
 | OR(value1,value2,...) | Returns true if any condition is true. |
 
-### Math {-}
 
-|     |     |
+| Math Functions | Description |
 | :-- | :-- |
 | ABS(x) | Absolute value of x. |
 | ATAN(x) | Arc tangent of x. |
@@ -152,26 +147,20 @@ You can override it so that the additions happen first (resulting in “15”), 
 | TAN(x) | Tangent of x. |
 | TRUNC(x) | Discards the fractional part of a number (e.g., TRUNC(-3.2) is -3, TRUNC(3.2) is 3). |
 
-### Statistics {-}
-
-|     |     |
+| Statistics Functions | Description |
 | :-- | :-- |
 | AVGERAGE(value1,value2,...) | Returns the average of a specified range of values. |
 | SUM(value1,value2,...) | Returns the sum of a specified range of values. |
 
-### Custom Familiar Word Tests {-}
-
-|     |     |
+| Custom Familiar Word Tests Functions | Description |
 | :-- | :-- |
 | CustomHarrisJacobson() | Performs a Harris-Jacobson test with a custom familiar word list. Note that this test will use the same text exclusion rules as the Harris-Jacobson test (overriding your system defaults). |
 | CustomNewDaleChall() | Performs a New Dale-Chall test with a custom familiar word list. Note that this test will use the same text exclusion rules as the Dale-Chall test (overriding your system defaults). |
 | CustomSpache() | Performs a Spache Revised test with a custom familiar word list. |
 
-### General Document Statistics {-}
-
-|     |     |
+| Document Statistics Functions | Description |
 | :-- | :-- |
-| SyllableCount() | Returns the number of syllables from the document.  
+| SyllableCount() | Returns the number of syllables from the document. |
 
 This function takes an argument specifying which numeral syllabizing method to use. These values are:
 
@@ -179,9 +168,9 @@ This function takes an argument specifying which numeral syllabizing method to u
 - `NumeralsFullySyllabized`: sounds out each digit when syllabizing numerals.
 - `NumeralsAreOneSyllable`: treats all numerals as monosyllabic words.
 
-|     |     |
+| Document Statistics Functions | Description |
 | --- | --- |
-| CharacterCount() | Returns the number of characters (i.e., letters and numbers) from the document.  
+| CharacterCount() | Returns the number of characters (i.e., letters and numbers) from the document. | 
 
 This function takes an argument specifying which text exclusion method to use. These values are:
 
@@ -189,10 +178,10 @@ This function takes an argument specifying which text exclusion method to use. T
 - `DaleChall`: uses the [Dale-Chall text-exclusion method](#options-dale-chall). This is recommended if your formula is using Dale-Chall familiar word functions (e.g., FamiliarDaleChallWordCount()).
 - `HarrisJacobson`: uses the [Harris-Jacobson text-exclusion method](#options-harris-jacobson). This is recommended if your formula is using Harris-Jacobson familiar word functions (e.g., `FamiliarHarrisJacobsonWordCount()`).
 
-|     |     |
+| Document Statistics Functions | Description |
 | --- | --- |
 | CharacterPlusPunctuationCount() | Returns the number of characters (i.e., letters and numbers) and punctuation from the document. Note that sentence-ending punctuation is not included in this count. |
-| SentenceCount() | Returns the number of sentences from the document.  
+| SentenceCount() | Returns the number of sentences from the document. |
 
 This function takes an argument specifying which text exclusion or sentence-counting method to use. These values are:
 
@@ -201,13 +190,11 @@ This function takes an argument specifying which text exclusion or sentence-coun
 - `HarrisJacobson`: uses the [Harris-Jacobson text-exclusion method](#options-harris-jacobson). This is recommended if your formula is using **Harris-Jacobson** familiar word functions (e.g., `FamiliarHarrisJacobsonWordCount()`).
 - `GunningFog`: uses the [Gunning Fog](#options-gunning-fog) sentence-counting method. This will be either traditional sentence counting or unit counting.
 
-|     |     |
+| Document Statistics Functions | Description |
 | --- | --- |
 | IndependentClauseCount() | Returns the number of units/independent clauses from the document. A unit is a section of text ending with a period, exclamation mark, question mark, interrobang, colon, semicolon, or dash. |
 
-### Word Statistics {-}
-
-|     |     |
+| Word Statistics Functions | Description |
 | :-- | :-- |
 | FamiliarDaleChallWordCount() | Returns the number of familiar **New Dale-Chall** words from the document. |
 | FamiliarHarrisJacobsonWordCount() | Returns the number of familiar **Harris-Jacobson** words from the document. |
@@ -235,7 +222,7 @@ This function takes an argument specifying which numeral syllabizing method to u
 - `Default`: uses the system default method.
 - `NumeralsFullySyllabized`: sounds out each digit when syllabizing numerals.
 
-|     |     |
+| Word Statistics Functions | Description |
 | --- | --- |
 | UniqueThreeSyllablePlusWordCount() | Returns the number of unique words consisting of three or more syllables from the document.  
   
@@ -244,7 +231,7 @@ This function takes an argument specifying which numeral syllabizing method to u
 - `Default`: uses the system default method.
 - `NumeralsFullySyllabized`: sounds out each digit when syllabizing numerals.
 
-|     |     |
+| Word Statistics Functions | Description |
 | --- | --- |
 | WordCount() | Returns the number of words from the document.  
   
@@ -254,7 +241,7 @@ This function takes an argument specifying which text exclusion method to use. T
 - `DaleChall`: uses the [Dale-Chall text-exclusion method](#options-dale-chall). This is recommended if your formula is using Dale-Chall familiar word functions (e.g., FamiliarDaleChallWordCount()).
 - `HarrisJacobson`: uses the [Harris-Jacobson text-exclusion method](#options-harris-jacobson). This is recommended if your formula is using Harris-Jacobson familiar word functions (e.g., FamiliarHarrisJacobsonWordCount()).
 
-|     |     |
+| Word Statistics Functions | Description |
 | --- | --- |
 | NumeralCount() | Returns the number of numerals from the document. |
 | ProperNounCount() | Returns the number of proper nouns from the document. |
@@ -264,9 +251,7 @@ This function takes an argument specifying which text exclusion method to use. T
 `r MarkdownSectionFormatLabel("**Dale-Chall** and **Harris-Jacobson** familiar word functions will take their respective test's text exclusion options into account.")`
 `r EndSection()`
 
-### Shortcuts {-}
-
-|     |     |
+| Shortcuts | Description |
 | :-- | :-- |
 | B | Shortcut for SyllableCount(Default). |
 | C | Shortcut for ThreeSyllablePlusWordCount(Default). |
@@ -439,6 +424,6 @@ Along with selecting tests, you can also specify the range of values that a docu
 
 Beneath the test goals grid is another grid for creating statistics goals as well. For example, you can add a goal such as specifying the maximum average sentence length for the document.
 
-Once you are done, click the **OK** button to add the bundle to the menu.
+Once you are done, click the `r KeyboardButton("OK")` button to add the bundle to the menu.
 
 After this bundle is added, select it from the menu and all the tests in the bundle will be added to the active project.
