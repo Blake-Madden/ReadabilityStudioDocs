@@ -43,23 +43,24 @@ keyboardButton <- function(label)
     { knitr::asis_output(glue("<span class='key'>{label}</span>")) }
   }
 
-# Formats a label to LaTeX (or leaves it as-is for HTML builds).
+# Converts Markdown text to LaTeX (or leaves it as-is for HTML builds)
+# or use in a kable.
 # Supports bold, italic, inline code, and newlines.
-formatFootnote <- function(label)
+markdownForKable <- function(label)
   {
   if (knitr::is_latex_output())
     {
                # convert markdown bold tags
     label %<>% stringr::str_replace_all("\\*\\*([\\w ()-]{1,})\\*\\*",
-                                        "\\\\textbf{\\1}") %>%
+                                        "\\\\\\\\textbf{\\1}") %>%
                # italics
                stringr::str_replace_all("\\*([\\w ()-]{1,})\\*",
-                                        "\\\\textit{\\1}") %>%
+                                        "\\\\\\\\textit{\\1}") %>%
                # inline code
                stringr::str_replace_all("`([\\w ()-]{1,})`",
-                                        "\\\\texttt{\\1}") %>%
+                                        "\\\\\\\\texttt{\\1}") %>%
                # newlines
-               stringr::str_replace_all("\n", "\\\\newline ")
+               stringr::str_replace_all("\n", "\\\\\\\\newline ")
     knitr::asis_output(label)
     }
   else if (knitr::is_html_output())

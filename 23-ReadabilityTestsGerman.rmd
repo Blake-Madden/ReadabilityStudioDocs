@@ -34,9 +34,9 @@ Amstad offered these interpretations for scoring:
 | 30-49 | Difficult | academic |
 | 0-29 | Very difficult | scientific |
 
-`r BeginNoteSection()`
-`r MarkdownSectionFormatLabel("Like **Flesch Reading Ease**, this test treats numerals as monosyllabic words by default. This behavior can be changed from the **Readability Options** dialog.")`
-`r EndSection()`
+```{block, type='notesection'}
+Like **Flesch Reading Ease**, this test treats numerals as monosyllabic words by default. This behavior can be changed from the **Readability Options** dialog.
+```
 
 \newpage
 ## Lix {-#lix-german}
@@ -117,14 +117,22 @@ To convert the **Lix** index score to a grade, this test uses the following tabl
 
 Where:
 
-|     | Description |
-| --- | --- |
-| G   | Grade level |
-| C   | Number of 3+ syllable (“*drei- und mehrsilbigen*”) words |
-| X   | Number of 7+ character (“*mehr als sechs buchstaben*”) words |
-| M   | Number of monosyllabic (“*einsilbigen*”) words |
-| S   | Number of sentences |
-| W   | Number of words |
+```{r, echo=F}
+nws1Data <- tibble(" " = c("G", "C", "X", "M", "S", "W"),
+                     "Description" = c("Grade level",
+                                      "Number of 3+ syllable¹ words",
+                                      "Number of 7+ character² words",
+                                      "Number of monosyllabic³ words",
+                                      "Number of sentences",
+                                      "Number of words"))
+
+kableExtra::kbl(nws1Data, booktabs=T, centering=T, align='l',escape=F) %>%
+  kableExtra::kable_classic(full_width=F) %>%
+  footnote(number = c(markdownForKable('“*drei- und mehrsilbigen*”'),
+                      markdownForKable('“*mehr als sechs buchstaben*”'),
+                      markdownForKable('“*einsilbigen*”')),
+           escape=F, threeparttable=T)
+```
 
 \newpage
 ## Neue Wiener Sachtextformel 2 {-#neue-wiener-sachtextformel2}
@@ -191,9 +199,9 @@ Where:
 | S   | Number of sentences |
 | W   | Number of words |
 
-`r BeginNoteSection()`
-`r MarkdownSectionFormatLabel("Based on the examples from **Bamberger-Vanecek** (78), the grade-level score should be truncated to one-point precision, not rounded.")`
-`r EndSection()`
+```{block, type='notesection'}
+Based on the examples from **Bamberger-Vanecek** (78), the grade-level score should be truncated to one-point precision, not rounded.
+```
 
 \newpage
 ## Rix {-#rix-german}
@@ -293,9 +301,9 @@ Where:
 
 This test requires a 10-sentence sample, with 3 samples being recommended for best results. ([Normalization](#glossary) can also be used to analyze larger samples or entire documents.)
 
-`r BeginNoteSection()`
-`r MarkdownSectionFormatLabel("Based on the examples from **Bamberger-Vanecek** (78), the grade-level score should be truncated to one-point precision, not rounded.")`
-`r EndSection()`
+```{block, type='notesection'}
+Based on the examples from **Bamberger-Vanecek** (78), the grade-level score should be truncated to one-point precision, not rounded.
+```
 
 \newpage
 ## Wheeler-Smith (Bamberger-Vanecek) {-#wheeler-smith-bamberger-vanecek}
@@ -332,8 +340,8 @@ Then, find the index value in the following chart to acquire the final readabili
 | Ninth grade | 34.1 to 38 |
 | Tenth grade | 38.1 to 42 |
 
-`r BeginNoteSection()`
-`r MarkdownSectionFormatLabel("Although **Bamberger-Vanecek** (77, 186) does not specify using units instead of sentences, the use of units is assumed to match **Wheeler-Smith**.
+```{block, type='notesection'}
+Although **Bamberger-Vanecek** (77, 186) does not specify using units instead of sentences, the use of units is assumed to match **Wheeler-Smith**.
 
-Based on the examples from **Bamberger-Vanecek** (77, 186), index values should be truncated to one-point precision, not rounded.")`
-`r EndSection()`
+Based on the examples from **Bamberger-Vanecek** (77, 186), index values should be truncated to one-point precision, not rounded.
+```
