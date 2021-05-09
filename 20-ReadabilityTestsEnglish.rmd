@@ -135,7 +135,7 @@ The **New Dale-Chall** readability test (Chall *Manual*, 1-7) calculates the gra
 - All numerals.
 
 ```{block, type='notesection'}
-This test treats headers and subheaders as full sentences, but excludes lists and tables. The default text exclusion method will be overridden for this specific test, although this behavior can be customized from the **Test-Options** dialog.
+This test treats headers and subheaders as full sentences, but excludes lists and tables. The default [text exclusion](#options-text-exclusion) method will be overridden for this specific test, although this behavior can be customized from the [**Test-Options**](#readability-test-options) dialog.
 ```
 
 The initial version of this test (Dale and Chall, “A Formula for Predicting Readability”) was a multiple regression trained against 376 passages from McCall-Crabbs *Standard Test Lessons in Reading*. After comparing the results of this formula against other tests (such as **Flesch** and **Lorge**), it was validated against manually judged reading levels from other materials. These materials included “fifty-passages of health-education materials” (18) with a correlation of $r = 0.92$. Also included were “78 passages on foreign affairs from current-events magazines, government pamphlets, and newspapers” (18) with a correlation of $r = 0.90$.
@@ -675,7 +675,7 @@ kableExtra::kbl(list(primaryTable, secondaryTable),
 Using these new basal readers as the test's criterion, a new regression equation and expanded word list were built for the **Wide Range Formula**. This new formula could significantly correlate samples from these books to their reported reading levels. Further, to predict readability scores for materials beyond the eighth-grade level, the look-up table used by the test (see below) was extrapolated to include secondary and adult-level materials.
 
 ```{block, type='notesection'}
-This test treats headers and subheaders as full sentences, but excludes lists and tables. The default text exclusion method will be overridden for this specific test.
+This test treats headers and subheaders as full sentences, but excludes lists and tables. The default [text exclusion](#options-text-exclusion) method will be overridden for this specific test.
 ```
 
 **Harris-Jacobson** is calculated from the following steps:
@@ -920,7 +920,7 @@ Where:
 | S   | Number of sentences |
 
 ```{block, type='notesection'}
-This test uses the same easy-word and sentence counting methods as the **Gunning Fog** test.
+This test uses the same easy-word and sentence counting methods as the [Gunning Fog](#gunning-fog-test) test.
 ```
 
 \newpage
@@ -1016,7 +1016,7 @@ Where:
 | S   | Number of sentences |
 
 ```{block, type='notesection'}
-This test uses the same easy-word and sentence counting methods as the **Gunning Fog** test.
+This test uses the same easy-word and sentence counting methods as the [Gunning Fog](#gunning-fog-test) test.
 ```
 
 \newpage

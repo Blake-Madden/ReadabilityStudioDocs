@@ -35,7 +35,7 @@ Amstad offered these interpretations for scoring:
 | 0-29 | Very difficult | scientific |
 
 ```{block, type='notesection'}
-Like **Flesch Reading Ease**, this test treats numerals as monosyllabic words by default. This behavior can be changed from the **Readability Options** dialog.
+Like **Flesch Reading Ease**, this test treats numerals as monosyllabic words by default. This behavior can be changed from the [Readability Options](#readability-test-options) dialog.
 ```
 
 \newpage
