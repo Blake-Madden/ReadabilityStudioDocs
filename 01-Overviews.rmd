@@ -22,63 +22,63 @@ Note that these tests only determine the reading level of material based on how 
 
 ![](Images/NonGenerated/gb.png) **English Tests**
 
--   [Automated Readability Index](#ari-test)
--   [New Automated Readability Index](#new-ari)
--   [Bormuth Cloze Mean Test](#bormuth-cloze-mean-machine-passage)
--   [Bormuth Grade Placement Test](#bormuth-grade-placement-35-machine-passage)
--   [Coleman-Liau](#coleman-liau-test)
--   [New Dale-Chall](#dale-chall-test)
--   [Danielson-Bryan 1](#danielson-bryan-1)
--   [Danielson-Bryan 2](#danielson-bryan-2)
--   [Degrees of Reading Power](#degrees-of-reading-power)
--   [Degrees of Reading Power (GE)](#degrees-of-reading-power-grade-equivalent)
--   [Easy Listening Formula](#easy-listening-formula)
--   [McAlpine EFLAW^©^](#eflaw-test)
--   [Farr, Jenkins, Paterson](#farr-jenkins-paterson)
--   [Flesch Reading Ease](#flesch-test)
--   [Flesch-Kincaid](#flesch-kincaid-test)
--   [FORCAST](#forcast-test)
--   [Fry Graph](#fry-test)
--   [Gunning Fog](#gunning-fog-test)
--   [Harris-Jacobson](#harris-jacobson)
--   [Läsbarhetsindex (Lix)](#lix-test)
--   [New Fog Count](#new-fog-count-test)
--   [(Powers, Sumner, Kearl) Dale-Chall](#psk-dale-chall)
--   [(Powers, Sumner, Kearl) Farr, Jenkins, Paterson](#psk-farr-jenkins-paterson)
--   [(Powers, Sumner, Kearl) Flesch Reading Ease](#psk-test)
--   [(Powers, Sumner, Kearl) Gunning Fog](#psk-fog)
--   [Raygor Estimate Graph](#raygor-test)
--   [Rate Index (Rix)](#rix-test)
--   [SMOG](#smog-test)
--   [Modified SMOG](#modified-smog)
--   [Spache Revised](#spache-test)
--   [Wheeler-Smith](#wheeler-smith)
+- [Automated Readability Index](#ari-test)
+- [New Automated Readability Index](#new-ari)
+- [Bormuth Cloze Mean Test](#bormuth-cloze-mean-machine-passage)
+- [Bormuth Grade Placement Test](#bormuth-grade-placement-35-machine-passage)
+- [Coleman-Liau](#coleman-liau-test)
+- [New Dale-Chall](#dale-chall-test)
+- [Danielson-Bryan 1](#danielson-bryan-1)
+- [Danielson-Bryan 2](#danielson-bryan-2)
+- [Degrees of Reading Power](#degrees-of-reading-power)
+- [Degrees of Reading Power (GE)](#degrees-of-reading-power-grade-equivalent)
+- [Easy Listening Formula](#easy-listening-formula)
+- [McAlpine EFLAW^©^](#eflaw-test)
+- [Farr, Jenkins, Paterson](#farr-jenkins-paterson)
+- [Flesch Reading Ease](#flesch-test)
+- [Flesch-Kincaid](#flesch-kincaid-test)
+- [FORCAST](#forcast-test)
+- [Fry Graph](#fry-test)
+- [Gunning Fog](#gunning-fog-test)
+- [Harris-Jacobson](#harris-jacobson)
+- [Läsbarhetsindex (Lix)](#lix-test)
+- [New Fog Count](#new-fog-count-test)
+- [(Powers, Sumner, Kearl) Dale-Chall](#psk-dale-chall)
+- [(Powers, Sumner, Kearl) Farr, Jenkins, Paterson](#psk-farr-jenkins-paterson)
+- [(Powers, Sumner, Kearl) Flesch Reading Ease](#psk-test)
+- [(Powers, Sumner, Kearl) Gunning Fog](#psk-fog)
+- [Raygor Estimate Graph](#raygor-test)
+- [Rate Index (Rix)](#rix-test)
+- [SMOG](#smog-test)
+- [Modified SMOG](#modified-smog)
+- [Spache Revised](#spache-test)
+- [Wheeler-Smith](#wheeler-smith)
 
 ![](Images/NonGenerated/es.png) **Spanish Tests**
 
--   [Crawford](#crawford)
--   [Gilliam, Peña, Mountain Fry Graph](#gilliam-pena-mountain-fry-graph)
--   [FRASE Graph](#frase)
--   [Läsbarhetsindex (Lix)](#lix-test)
--   [Rate Index (Rix)](#rix-test)
--   [SOL](#sol-spanish)
+- [Crawford](#crawford)
+- [Gilliam, Peña, Mountain Fry Graph](#gilliam-pena-mountain-fry-graph)
+- [FRASE Graph](#frase)
+- [Läsbarhetsindex (Lix)](#lix-test)
+- [Rate Index (Rix)](#rix-test)
+- [SOL](#sol-spanish)
 
 ![](Images/NonGenerated/de.png) **German Tests**
 
--   [Amstad](#amstad)
--   [Läsbarhetsindex (Lix)](#lix-test)
--   [Lix (German children's literature)](#lix-german-childrens-literature)
--   [Lix (German technical literature)](#lix-german-technical)
--   [Neue Wiener Sachtextformel 1](#neue-wiener-sachtextformel1)
--   [Neue Wiener Sachtextformel 2](#neue-wiener-sachtextformel2)
--   [Neue Wiener Sachtextformel 3](#neue-wiener-sachtextformel3)
--   [Quadratwurzelverfahren](#qu-bamberger-vanecek)
--   [Rate Index (Rix)](#rix-test)
--   [Rix (German fiction)](#rix-german-fiction)
--   [Rix (German non-fiction)](#rix-german-nonfiction)
--   [Schwartz](#scwartz)
--   [SMOG (Bamberger-Vanecek)](#smog-bamberger-vanecek)
--   [Wheeler-Smith (Bamberger-Vanecek)](#wheeler-smith-bamberger-vanecek)
+- [Amstad](#amstad)
+- [Läsbarhetsindex (Lix)](#lix-test)
+- [Lix (German children's literature)](#lix-german-childrens-literature)
+- [Lix (German technical literature)](#lix-german-technical)
+- [Neue Wiener Sachtextformel 1](#neue-wiener-sachtextformel1)
+- [Neue Wiener Sachtextformel 2](#neue-wiener-sachtextformel2)
+- [Neue Wiener Sachtextformel 3](#neue-wiener-sachtextformel3)
+- [Quadratwurzelverfahren](#qu-bamberger-vanecek)
+- [Rate Index (Rix)](#rix-test)
+- [Rix (German fiction)](#rix-german-fiction)
+- [Rix (German non-fiction)](#rix-german-nonfiction)
+- [Schwartz](#scwartz)
+- [SMOG (Bamberger-Vanecek)](#smog-bamberger-vanecek)
+- [Wheeler-Smith (Bamberger-Vanecek)](#wheeler-smith-bamberger-vanecek)
 
 In addition, **Readability Studio** offers in-depth explanations for these tests. Each test result includes an interpretation of the score and the factors that affect it.
 
@@ -120,17 +120,17 @@ Difficult words and sentences are also shown highlighted in their original conte
 
 Along with readability analysis, **Readability Studio** also offers basic grammar checking. The program can detect the following problems:
 
--   [Misspellings (English only)](#reviewing-misspellings)
--   [Repeated words](#reviewing-repeated-words)
--   [Wording errors (English only)](#reviewing-wording-errors)
--   [Article mismatching (English only)](#reviewing-article-mismatches)
--   [Redundant phrases (English only)](#reviewing-redundant-phrases)
--   [Wordy items (English only)](#reviewing-wordy-items)
--   [Clichés (English only)](#reviewing-cliches)
--   [Overly-long sentences](#reviewing-sentences-breakdown)
--   [Lowercased sentences](#reviewing-lowercased-sentences)
--   [Sentences that begin with conjunctions](#reviewing-conjunction-sentences)
--   [Passive voice (English only)](#reviewing-passive-voice)
+- [Misspellings (English only)](#reviewing-misspellings)
+- [Repeated words](#reviewing-repeated-words)
+- [Wording errors (English only)](#reviewing-wording-errors)
+- [Article mismatching (English only)](#reviewing-article-mismatches)
+- [Redundant phrases (English only)](#reviewing-redundant-phrases)
+- [Wordy items (English only)](#reviewing-wordy-items)
+- [Clichés (English only)](#reviewing-cliches)
+- [Overly-long sentences](#reviewing-sentences-breakdown)
+- [Lowercased sentences](#reviewing-lowercased-sentences)
+- [Sentences that begin with conjunctions](#reviewing-conjunction-sentences)
+- [Passive voice (English only)](#reviewing-passive-voice)
 
 These issues are shown highlighted in your document for easy review. They are also aggregated into sortable lists to give a general overview of any problems and to assist in finding specific issues.
 
@@ -142,19 +142,19 @@ These issues are shown highlighted in your document for easy review. They are al
 
 **Readability Studio** supports importing text from many file formats, including:
 
--   ANSI and Unicode text (\*.txt)
--   Microsoft^®^ Word 95-2003 (\*.doc)
--   Microsoft^®^ Word 2007 (\*.docx)
--   Microsoft^®^ PowerPoint 2007 (\*.pptx)
--   Microsoft^®^ Excel 2007 (cells can be batch analyzed as documents or filepaths to other documents)
--   OpenDocument Text (\*.odt)
--   OpenDocument Presentation (\*.odp)
--   HTML (\*.htm)
--   Rich text (\*.rtf)
--   Postscript (\*.ps)
--   Interface Definition Language (\*.idl)
--   (Doxygen style) C++ source (\*.cpp and \*.h)
--   ZIP (documents within can be batch analyzed)
+- ANSI and Unicode text (\*.txt)
+- Microsoft^®^ Word 95-2003 (\*.doc)
+- Microsoft^®^ Word 2007 (\*.docx)
+- Microsoft^®^ PowerPoint 2007 (\*.pptx)
+- Microsoft^®^ Excel 2007 (cells can be batch analyzed as documents or filepaths to other documents)
+- OpenDocument Text (\*.odt)
+- OpenDocument Presentation (\*.odp)
+- HTML (\*.htm)
+- Rich text (\*.rtf)
+- Postscript (\*.ps)
+- Interface Definition Language (\*.idl)
+- (Doxygen style) C++ source (\*.cpp and \*.h)
+- ZIP (documents within can be batch analyzed)
 
 You do not need the native application for these file formats. **Readability Studio** is capable of importing these files without any additional programs.
 
@@ -162,10 +162,10 @@ You do not need the native application for these file formats. **Readability Stu
 
 **Readability Studio** provides printing and [exporting](#exporting) capabilities for all test scores, word lists, statistics, graphs, etc. This enables you to easily share and publish your results.
 
--   Test results, statistics, and difficult word lists can all be exported as HTML or text.
--   Statistics summary report can be exported as HTML.
--   Highlighted document views can be exported as RTF or HTML.
--   Graphs can be exported as TIFF, JPG, BMP, PNG, SVG, GIF, or TARGA.
+- Test results, statistics, and difficult word lists can all be exported as HTML or text.
+- Statistics summary report can be exported as HTML.
+- Highlighted document views can be exported as RTF or HTML.
+- Graphs can be exported as TIFF, JPG, BMP, PNG, SVG, GIF, or TARGA.
 
 #### Flexibility {-}
 
