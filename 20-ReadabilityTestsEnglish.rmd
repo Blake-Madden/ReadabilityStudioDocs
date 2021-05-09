@@ -678,6 +678,7 @@ Using these new basal readers as the test's criterion, a new regression equation
 This test treats headers and subheaders as full sentences, but excludes lists and tables. The default [text exclusion](#options-text-exclusion) method will be overridden for this specific test.
 ```
 
+```{block, type='onsamepage'}
 **Harris-Jacobson** is calculated from the following steps:
 
 1. Obtain the V1 score: (Number of unique hard words / Number of words) \* 100.
@@ -687,6 +688,7 @@ This test treats headers and subheaders as full sentences, but excludes lists an
 5. Add together the result of step 3, step 4, and .642 to achieve the predicted raw score.
 6. Round off the predicted raw score to one decimal place.
 7. Find the predicted raw score in the following table to acquire the final readability score:
+```
 
 ```{r, echo=F}
 library(tidyverse)

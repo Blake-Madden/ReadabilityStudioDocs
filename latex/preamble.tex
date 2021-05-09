@@ -27,6 +27,9 @@
 \setCJKmainfont{SimSun}
 \setCJKsansfont{SimSun}
 
+% Float features
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 % don't float anything
 \floatplacement{table}{H}
 \floatplacement{figure}{H}
@@ -78,4 +81,16 @@
     }
     {
     \end{tcolorbox}
+    }
+
+% Pagination
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% prevents section from being split by a page break
+% "nopagebreak" was already taken :)
+\newenvironment{onsamepage}
+    {
+    \begin{minipage}{\textwidth}
+    }
+    {
+    \end{minipage}
     }
