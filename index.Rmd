@@ -35,7 +35,7 @@ macOSCmdButton <- function()
   }
 
 # Displays a label as a keyboard button
-KeyboardButton <- function(label)
+keyboardButton <- function(label)
   {
   if (knitr::is_latex_output())
     { knitr::asis_output(paste0("\\keys{", label, "}")) }
@@ -43,10 +43,9 @@ KeyboardButton <- function(label)
     { knitr::asis_output(glue("<span class='key'>{label}</span>")) }
   }
 
-# Formats a label inside of a warning/tip/note section to LaTeX.
-# Supports bold, italic, inline code (which should use \x60 in place of backticks),
-# and newlines.
-MarkdownSectionFormatLabel <- function(label)
+# Formats a label to LaTeX (or leaves it as-is for HTML builds).
+# Supports bold, italic, inline code, and newlines.
+formatFootnote <- function(label)
   {
   if (knitr::is_latex_output())
     {
@@ -65,58 +64,6 @@ MarkdownSectionFormatLabel <- function(label)
     }
   else if (knitr::is_html_output())
     { knitr::asis_output(label) }
-  }
-
-# Begins a "Warning" section with a label. can be embedded in.
-# Call EndSection() after you have entered your content for the section.
-# Note that the fontawesome5 LaTeX package should be installed.
-BeginWarningSection <- function()
-  {
-  if (knitr::is_latex_output())
-    {
-    knitr::asis_output(paste(
-      "\\begin{tcolorbox}[colframe=lightgray,colback=lightpink,arc=3mm]",
-      "\n\\faExclamationTriangle \\textbf{Warning} \\newline"))
-    }
-  else if (knitr::is_html_output())
-    { knitr::asis_output("::: {.warning}") }
-  }
-
-# Begins a "Tip" section with a label. can be embedded in.
-# Call EndSection() after you have entered your content for the section.
-BeginTipSection <- function()
-  {
-  if (knitr::is_latex_output())
-    {
-    knitr::asis_output(paste(
-      "\\begin{tcolorbox}[colframe=lightgray,colback=lightyellow,arc=3mm]",
-      "\n\\faLightbulb[regular] \\textbf{Tip} \\newline"))
-    }
-  else if (knitr::is_html_output())
-    { knitr::asis_output("::: {.tip}") }
-  }
-
-# Begins a "Note" section with a label. can be embedded in.
-# Call EndSection() after you have entered your content for the section.
-BeginNoteSection <- function()
-  {
-  if (knitr::is_latex_output())
-    {
-    knitr::asis_output(paste(
-      "\\begin{tcolorbox}[colframe=lightgray,colback=lightyellow,arc=3mm]",
-      "\n\\faComment*[regular] \\textbf{Note} \\newline"))
-    }
-  else if (knitr::is_html_output())
-    { knitr::asis_output("::: {.note}") }
-  }
-
-# Ends a notes/tip/warning section
-EndSection <- function()
-  {
-  if (knitr::is_latex_output())
-    { knitr::asis_output("\n\\end{tcolorbox}") }
-  else if (knitr::is_html_output())
-    { knitr::asis_output("\n:::") }
   }
 ```
 

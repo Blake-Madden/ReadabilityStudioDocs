@@ -1,3 +1,4 @@
+% LaTeX packages that we will need
 \usepackage{booktabs}
 \usepackage{amsthm}
 \usepackage{xeCJK}
@@ -13,10 +14,6 @@
 \usepackage{threeparttable}
 \usepackage{float}
 
-% don't float anything
-\floatplacement{table}{H}
-\floatplacement{figure}{H}
-
 \makeatletter
 \def\thm@space@setup{%
   \thm@preskip=8pt plus 2pt minus 4pt
@@ -25,16 +22,16 @@
 \makeatother
 \raggedbottom
 
-% colors that can be used in the notes/tips/warning sections
-\definecolor{lightgray}{gray}{0.75}
-\definecolor{lightyellow}{RGB}{252,248,227}
-\definecolor{lightpink}{RGB}{255,207,219}
-
+% in case we need CJK fonts
 \setCJKmonofont{SimSun}
 \setCJKmainfont{SimSun}
 \setCJKsansfont{SimSun}
 
-% helps reduce images from floating
+% don't float anything
+\floatplacement{table}{H}
+\floatplacement{figure}{H}
+
+% helps reduce images from floating also
 \renewcommand{\topfraction}{.85}
 \renewcommand{\bottomfraction}{.7}
 \renewcommand{\textfraction}{.15}
@@ -42,3 +39,43 @@
 \setcounter{topnumber}{3}
 \setcounter{bottomnumber}{3}
 \setcounter{totalnumber}{4}
+
+% the warning, note, and tip color boxes
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% colors that can be used
+\definecolor{lightgray}{gray}{0.75}
+\definecolor{lightyellow}{RGB}{252,248,227}
+\definecolor{lightpink}{RGB}{255,207,219}
+\definecolor{lightblue}{RGB}{232,244,248}
+\definecolor{mediumblue}{RGB}{28,77,93}
+
+% Tip box
+\newenvironment{tipsection}
+    {
+    \begin{tcolorbox}[colframe=lightgray,colback=lightyellow,arc=3mm]
+    \faLightbulb[regular] \textbf{Tip} \newline
+    }
+    {
+    \end{tcolorbox}
+    }
+
+% Note box
+\newenvironment{notesection}
+    {
+    \begin{tcolorbox}[colframe=mediumblue,colback=lightblue,coltext=mediumblue,arc=3mm]
+    \faLightbulb[regular] \textbf{Note} \newline
+    }
+    {
+    \end{tcolorbox}
+    }
+
+% Warning box
+\newenvironment{warningsection}
+    {
+    \begin{tcolorbox}[colframe=lightgray,colback=lightpink,arc=3mm]
+    \faLightbulb[regular] \textbf{{Warning} } \newline
+    }
+    {
+    \end{tcolorbox}
+    }

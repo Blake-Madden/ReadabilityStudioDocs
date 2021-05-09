@@ -1,45 +1,48 @@
-.note {
+.notesection {
   padding: 1em 1em 1em 1em;
-  display:inline-block;
-  position:relative;
-  color: black;
-  background: #FCF8E3;
+  display: inline-block;
+  position: relative;
+  color: rgb(28,77,93);
+  background: rgb(232,244,248);
+  border: 1px solid rgb(28,77,93);
   border-radius: 15px;
   width: 100%;
   margin-bottom: 5px;
   margin-top: 5px;
 }
-.note::before {
+.notesection::before {
   content: "📝Note";
   font-weight: bold;  
 }
-.tip {
+.tipsection {
   padding: 1em 1em 1em 1em;
-  display:inline-block;
-  position:relative;
+  display: inline-block;
+  position: relative;
   color: black;
-  background: #FCF8E3;
+  background: rgb(252,248,227);
+  border: 1px solid black;
   border-radius: 15px;
   width: 100%;
   margin-bottom: 5px;
   margin-top: 5px;
 }
-.tip::before {
+.tipsection::before {
   content: "💡Tip";
   font-weight: bold;  
 }
-.warning {
+.warningsection {
   padding: 1em 1em 1em 1em;
-  display:inline-block;
-  position:relative;
+  display: inline-block;
+  position: relative;
   color: black;
-  background: rgba(255,130,162,.25);
+  background: rgb(255,207,219);
+  border: 1px solid black;
   border-radius: 15px;
   width: 100%;
   margin-bottom: 5px;
   margin-top: 5px;
 }
-.warning::before {
+.warningsection::before {
   content: "⚠️Warning";
   font-weight: bold;  
 }
@@ -63,7 +66,7 @@
 
 /* prevent note sections from being split by a page break.*/
 @media print {
-.note, .tip, .warning {
+.notesection, .tipsection, .warningsection {
        break-inside: avoid-page;
        page-break-inside: avoid;
     }

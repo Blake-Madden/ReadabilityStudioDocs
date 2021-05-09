@@ -36,9 +36,9 @@ When [exporting](#exporting) a text window, the following export formats are ava
 
 **RTF**: A format that can be displayed in most word-processing programs.
 
-`r BeginTipSection()`
-`r MarkdownSectionFormatLabel("If you plan to edit this output, then **RTF** is recommended. (Most word processors support editing this format.)")`
-`r EndSection()`
+```{block, type='tipsection'}
+If you plan to edit this output, then **RTF** is recommended. (Most word processors support editing this format.)
+```
 
 ## Image Export Options {-#image-export}
 
@@ -60,9 +60,9 @@ After selecting the image format, these additional options will be provided:
 
 **Height**: Enter the height of the exported image into this field.
 
-`r BeginNoteSection()`
+```{block, type='notesection'}
 When you change the width or height, the other measurement will be adjusted automatically to maintain the aspect ratio.
-`r EndSection()`
+```
 
 ### Color Mode {-}
 
@@ -205,9 +205,9 @@ To do this, click on the **Home** tab of the ribbon, click on the arrow below th
 
 Finally, click `r KeyboardButton("OK")` to save the file.
 
-`r BeginTipSection()`
+```{block, type='tipsection'}
 Which incomplete-sentence removal method used is controlled by your project's text exclusion options.
-`r EndSection()`
+```
 
 ### Additional Filtering Options {-#additional-filtering-options}
 

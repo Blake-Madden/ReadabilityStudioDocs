@@ -179,9 +179,9 @@ Statistics for any custom familiar-word tests will also be included in this wind
 
 A **Notes** section may be included at the bottom of the formatted report if there are any items of interest detected (e.g., a high sentence-length average). If your document requires improvement, then this section is usually a good place to begin.
 
-`r BeginNoteSection()`
-`r MarkdownSectionFormatLabel("3+ syllable words and **Fog** and **SMOG** hard words are all the same except for how numerals (e.g., phone numbers and dates) are handled. **SMOG** always sounds out each digit of a numeric word, whereas **Fog** ignores numeric words. You can control how numeric words are handled from the **Document Indexing** section of the **Options** dialog (available on the **Tools** tab).")`
-`r EndSection()`
+```{block, type='notesection'}
+3+ syllable words and **Fog** and **SMOG** hard words are all the same except for how numerals (e.g., phone numbers and dates) are handled. **SMOG** always sounds out each digit of a numeric word, whereas **Fog** ignores numeric words. You can control how numeric words are handled from the **Document Indexing** section of the **Options** dialog (available on the **Tools** tab).
+```
 
 ## Reviewing the Words Breakdown {-#reviewing-word-breakdowns}
 
@@ -247,9 +247,9 @@ Finally, a histogram of the words (grouped by syllable count) is also available:
 
 In the above histogram, we see that most of the words are either 1 or 2 syllables. There are only 25 **3-syllable** words and 17 **4-syllable** words in the document. Note that selecting a bar will display the first 25 words within that syllable group (if [binning](#options-histograms) is set to **unique values**).
 
-`r BeginNoteSection()`
-`r MarkdownSectionFormatLabel("The **total** value of a word count reflects the number of words, including repeats of the same word. The **unique** value of a word count reflects the number of words, excluding repeats. For example, a document contains the word “liquidation” three times. This word will be tallied three times when factored into the total word count, but only once into the unique word count. Most tests use the total word count variable, although there are some that use unique counts (e.g., **Spache** uses its **unique** unfamiliar word count).")`
-`r EndSection()`
+```{block, type='notesection'}
+The **total** value of a word count reflects the number of words, including repeats of the same word. The **unique** value of a word count reflects the number of words, excluding repeats. For example, a document contains the word “liquidation” three times. This word will be tallied three times when factored into the total word count, but only once into the unique word count. Most tests use the total word count variable, although there are some that use unique counts (e.g., **Spache** uses its **unique** unfamiliar word count).
+```
 
 See also [Proper Nouns in the Difficult Word Lists](#proper-nouns-in-lists).
 

@@ -16,9 +16,9 @@ The **Web Harvester** dialog enables you to gather (and optionally download) lin
 
 **Log broken links**: Check this option to check for broken links while harvesting and save them to the [log report](#log-report).
 
-`r BeginWarningSection()`
+```{block, type='warningsection'}
 Checking this option will degrade performance as each web link must be connected to and verified.
-`r EndSection()`
+```
 
 **User Agent**: Enter into this field your user agent. The user agent is the name of the client program that is sent to a website as you crawl it.
 

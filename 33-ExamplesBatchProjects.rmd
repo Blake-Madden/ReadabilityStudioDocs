@@ -2,9 +2,9 @@
 
 In this chapter, we will step through examples showing how to analyse batches of documents.
 
-`r BeginNoteSection()`
-`r MarkdownSectionFormatLabel("Batch projects are only available in the **Professional** edition of **Readability Studio**.")`
-`r EndSection()`
+```{block, type='notesection'}
+Batch projects are only available in the **Professional** edition of **Readability Studio**.
+```
 
 ## Reviewing a Collection of Documents {-}
 
