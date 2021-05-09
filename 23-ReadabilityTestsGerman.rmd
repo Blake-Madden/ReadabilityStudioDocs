@@ -126,7 +126,7 @@ nws1Data <- tibble(" " = c("G", "C", "X", "M", "S", "W"),
                                       "Number of sentences",
                                       "Number of words"))
 
-kableExtra::kbl(nws1Data, booktabs=T, centering=T, align='l',escape=F) %>%
+kableExtra::kbl(nws1Data, booktabs=T, centering=T, align='l', escape=F) %>%
   kableExtra::kable_classic(full_width=F) %>%
   footnote(number = c(markdownForKable('“*drei- und mehrsilbigen*”'),
                       markdownForKable('“*mehr als sechs buchstaben*”'),
@@ -148,14 +148,22 @@ kableExtra::kbl(nws1Data, booktabs=T, centering=T, align='l',escape=F) %>%
 
 Where:
 
-|     | Description |
-| --- | --- |
-| G   | Grade level |
-| C   | Number of 3+ syllable (“*drei- und mehrsilbigen*”) words |
-| X   | Number of 7+ character (“*mehr als sechs buchstaben*”) words |
-| M   | Number of monosyllabic (“*einsilbigen*”) words |
-| S   | Number of sentences |
-| W   | Number of words |
+```{r, echo=F}
+nws2Data <- tibble(" " = c("G", "C", "X", "M", "S", "W"),
+                   "Description" = c("Grade level",
+                                     "Number of 3+ syllable¹ words",
+                                     "Number of 7+ character² words",
+                                     "Number of monosyllabic³ words",
+                                     "Number of sentences",
+                                     "Number of words"))
+
+kableExtra::kbl(nws2Data, booktabs=T, centering=T, align='l', escape=F, linesep="") %>%
+  kableExtra::kable_classic(full_width=F) %>%
+  footnote(number = c(markdownForKable('“*drei- und mehrsilbigen*”'),
+                      markdownForKable('“*mehr als sechs buchstaben*”'),
+                      markdownForKable('“*einsilbigen*”')),
+           escape=F, threeparttable=T)
+```
 
 \newpage
 ## Neue Wiener Sachtextformel 3 {-#neue-wiener-sachtextformel3}
@@ -170,14 +178,22 @@ $$
 
 Where:
 
-|     | Description |
-| --- | --- |
-| G   | Grade level |
-| C   | Number of 3+ syllable (“*drei- und mehrsilbigen*”) words |
-| X   | Number of 7+ character (“*mehr als sechs buchstaben*”) words |
-| M   | Number of monosyllabic (“*einsilbigen*”) words |
-| S   | Number of sentences |
-| W   | Number of words |
+```{r, echo=F}
+nws3Data <- tibble(" " = c("G", "C", "X", "M", "S", "W"),
+                   "Description" = c("Grade level",
+                                     "Number of 3+ syllable¹ words",
+                                     "Number of 7+ character² words",
+                                     "Number of monosyllabic³ words",
+                                     "Number of sentences",
+                                     "Number of words"))
+
+kableExtra::kbl(nws3Data, booktabs=T, centering=T, align='l', escape=F, linesep="") %>%
+  kableExtra::kable_classic(full_width=F) %>%
+  footnote(number = c(markdownForKable('“*drei- und mehrsilbigen*”'),
+                      markdownForKable('“*mehr als sechs buchstaben*”'),
+                      markdownForKable('“*einsilbigen*”')),
+           escape=F, threeparttable=T)
+```
 
 \newpage
 ## Quadratwurzelverfahren {-#qu-bamberger-vanecek}
@@ -192,12 +208,18 @@ $$
 
 Where:
 
-|     | Description |
-| :-- | :-- |
-| G   | Grade level |
-| C   | Number of 3+ syllables (“*drei- und mehrsilber*”) words |
-| S   | Number of sentences |
-| W   | Number of words |
+```{r, echo=F}
+quadData <- tibble(" " = c("G", "C", "S", "W"),
+                   "Description" = c("Grade level",
+                                      "Number of 3+ syllable¹ words",
+                                      "Number of sentences",
+                                      "Number of words"))
+
+kableExtra::kbl(quadData, booktabs=T, centering=T, align='l', escape=F) %>%
+  kableExtra::kable_classic(full_width=F) %>%
+  footnote(number = c(markdownForKable('“*drei- und mehrsilbigen*”')),
+           escape=F, threeparttable=T)
+```
 
 ```{block, type='notesection'}
 Based on the examples from **Bamberger-Vanecek** (78), the grade-level score should be truncated to one-point precision, not rounded.
@@ -294,10 +316,16 @@ $$
 
 Where:
 
-|     | Description |
-| --- | --- |
-| G   | Grade level |
-| C   | Number of 3+ syllables (“*drei- und mehrsilbigen*”) words from 30 sentences |
+```{r, echo=F}
+smogBVData <- tibble(" " = c("G", "C"),
+                     "Description" = c("Grade level",
+                                      "Number of 3+ syllable¹ words from 30 sentences"))
+
+kableExtra::kbl(smogBVData, booktabs=T, centering=T, align='l', escape=F) %>%
+  kableExtra::kable_classic(full_width=F) %>%
+  footnote(number = c(markdownForKable('“*drei- und mehrsilbigen*”')),
+           escape=F, threeparttable=T)
+```
 
 This test requires a 10-sentence sample, with 3 samples being recommended for best results. ([Normalization](#glossary) can also be used to analyze larger samples or entire documents.)
 
@@ -318,12 +346,18 @@ $$
 
 Where:
 
-|     | Description |
-| --- | --- |
-| I   | Index value (see below) |
-| C   | Number of 3+ syllable (“*drei- und mehrsilbigen*”) words |
-| W   | Number of words |
-| U   | Number of units |
+```{r, echo=F}
+wheelersmithBVData <- tibble(" " = c("I", "C", "W", "U"),
+                             "Description" = c("Index value",
+                                      "Number of 3+ syllable¹ words",
+                                      "Number of words",
+                                      "Number of units"))
+
+kableExtra::kbl(wheelersmithBVData, booktabs=T, centering=T, align='l', escape=F) %>%
+  kableExtra::kable_classic(full_width=F) %>%
+  footnote(number = c(markdownForKable('“*drei- und mehrsilbigen*”')),
+           escape=F, threeparttable=T)
+```
 
 Then, find the index value in the following chart to acquire the final readability score:
 
