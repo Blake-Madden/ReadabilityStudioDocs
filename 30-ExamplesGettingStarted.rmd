@@ -60,17 +60,16 @@ Next, the [List Export Options](#export-list) dialog will appear. (Note that by 
 
 Click `r keyboardButton("OK")` to export the word list to distribute to your students to help prepare them for their reading assignments.
 
-:::{.small-table}
 ```{r, echo=FALSE}
-library(knitr)
 words <- c("involuntarily", "extraordinary",
            "self-accusatory", "emphatically",
            "petrification", "associated",
            "unprofitable", "satisfactory",
            "administrator", "supernatural", "corroborated")
-kable(x=words, caption="Example of exported words", col.names="")
+kableExtra::kbl(x=words, caption="Example of exported words",
+                booktabs=T, centering=T, col.names="") %>%
+  kableExtra::kable_paper(full_width=F)
 ```
-:::
 
 ## Analyzing a Work in Progress {-}
 
