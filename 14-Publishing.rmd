@@ -203,7 +203,7 @@ To do this, click on the **Home** tab of the ribbon, click on the arrow below th
 
 ![](Images/FilterTextPreview.png)
 
-Finally, click `r KeyboardButton("OK")` to save the file.
+Finally, click `r keyboardButton("OK")` to save the file.
 
 ```{block, type='tipsection'}
 Which incomplete-sentence removal method used is controlled by your project's text exclusion options.

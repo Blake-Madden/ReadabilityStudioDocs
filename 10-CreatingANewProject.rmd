@@ -12,7 +12,7 @@ To begin, click the **New** button on the **Home** tab to display the **New Proj
 
 ## Standard Project {-#creating-standard-project}
 
-To determine a document's readability you will need to create a new project. First, click the **New** button on the **Home** tab to open the **New Project Wizard**. (If you are using the **Professional** edition, select **Standard Project** and click `r KeyboardButton("OK")`). On the first page of the wizard, the options for specifying the document and its language will be shown:
+To determine a document's readability you will need to create a new project. First, click the **New** button on the **Home** tab to open the **New Project Wizard**. (If you are using the **Professional** edition, select **Standard Project** and click `r keyboardButton("OK")`). On the first page of the wizard, the options for specifying the document and its language will be shown:
 
 ![](Images/wizard1.png)
 
@@ -30,7 +30,7 @@ To analyze a file, select the **Read text from a file or webpage** option. Then 
 
 ![](Images/wizardentertext.png)
 
-After you have selected your file, click the `r KeyboardButton("Forward >")` button to continue to the **Document Structure** page, as shown below:
+After you have selected your file, click the `r keyboardButton("Forward >")` button to continue to the **Document Structure** page, as shown below:
 
 ![](Images/wizarddocstructure.png)
 
@@ -40,7 +40,7 @@ On this page, you will specify the format that best describes your document. The
 Previews of these document formats are shown next to each option. To view the full-size image of any preview, click on it with your mouse.
 ```
 
-After specifying your document structure, click the `r KeyboardButton("Forward >")` button to continue to the **Test Selection** page, as shown below:
+After specifying your document structure, click the `r keyboardButton("Forward >")` button to continue to the **Test Selection** page, as shown below:
 
 ![](Images/wizardreadabilitymethods.png)
 
@@ -66,7 +66,7 @@ Along with adding tests to a project, test bundles also can include [goals](#rev
 
 Note that you can always add or remove tests from your project at any time. If you select either the document type or industry options, you are not bound to the tests that **Readability Studio** recommends.
 
-Finally, click the `r KeyboardButton("Finish")` button and the project will be created and will appear like this:
+Finally, click the `r keyboardButton("Finish")` button and the project will be created and will appear like this:
 
 ![](Images/scores.png)
 
@@ -78,7 +78,7 @@ To determine the readability of a document collection, you will need to create a
 
 ![](Images/selectprojecttype.png)
 
-Select **Batch Project** and click the `r KeyboardButton("OK")` button to proceed to the **New Project Wizard** dialog, as shown below:
+Select **Batch Project** and click the `r keyboardButton("OK")` button to proceed to the **New Project Wizard** dialog, as shown below:
 
 ![](Images/wizardbatchselectfiles.png)
 
@@ -86,23 +86,23 @@ On the first page of this dialog, **Documents**, are options for selecting your 
 
 Now you can add files from a folder, archive file, Excel^®^ 2007 file, or website to the project.
 
-To add files from a folder, click the `r KeyboardButton("Add folder")` button. You will be presented with the [Select Directory](#select-directory) dialog:
+To add files from a folder, click the `r keyboardButton("Add folder")` button. You will be presented with the [Select Directory](#select-directory) dialog:
 
 ![](Images/selectdirectory.png)
 
-To add files from an archive (i.e., a \*.zip file), click the `r KeyboardButton("Add archive")` button. You will be presented with the [Select Archive File](#select-archive) dialog:
+To add files from an archive (i.e., a \*.zip file), click the `r keyboardButton("Add archive")` button. You will be presented with the [Select Archive File](#select-archive) dialog:
 
 ![](Images/selectarchive.png)
 
-To add documents from an Excel 2007 file, click the `r KeyboardButton("Add spreadsheet")` button. After selecting an Excel file, you will be prompted for which cells to import. After specifying these, the cells will be imported one of two ways. The first way is if a cell's content is a filepath. In this case, the document referenced by this filepath will be loaded into the project. Otherwise, if a cell is not a file path, then its content will be imported as a document itself. In this case, the cell's name (e.g., “B19”) will be used as the document's name.
+To add documents from an Excel 2007 file, click the `r keyboardButton("Add spreadsheet")` button. After selecting an Excel file, you will be prompted for which cells to import. After specifying these, the cells will be imported one of two ways. The first way is if a cell's content is a filepath. In this case, the document referenced by this filepath will be loaded into the project. Otherwise, if a cell is not a file path, then its content will be imported as a document itself. In this case, the cell's name (e.g., “B19”) will be used as the document's name.
 
-To search for files from a website and include them in the project, click the `r KeyboardButton("Add web pages")` button. This will display the [Web Harvester](#web-harvester) dialog, as shown below:
+To search for files from a website and include them in the project, click the `r keyboardButton("Add web pages")` button. This will display the [Web Harvester](#web-harvester) dialog, as shown below:
 
 ![](Images/webharvester.png)
 
-To add an individual web page to the project, click the `r KeyboardButton("Add web page")` button. This will display a text box where you can enter the web page's path.
+To add an individual web page to the project, click the `r keyboardButton("Add web page")` button. This will display a text box where you can enter the web page's path.
 
-You can also select local files to include in the project. Click the `r KeyboardButton("Add file(s)")` button and then select the file(s) that you want to include.
+You can also select local files to include in the project. Click the `r keyboardButton("Add file(s)")` button and then select the file(s) that you want to include.
 
 As you add files to the project, you can also include a helpful description next to any file. Double click in the **Description** column next to any filename, and then type a description to be attached to that file. When the batch project is loaded, this description will appear in any results window that displays filenames. (Note that for some file formats, the program will fill this field with the document's subject or title information if you leave it blank.)
 
@@ -112,7 +112,7 @@ After you have selected your files, you can randomly sample a subset of these do
 
 Note that when the project is first analyzed, the documents that were not included in the sample will be removed from the project.
 
-Click the `r KeyboardButton("Forward >")` button to continue to the **Document Structure** page, as shown below:
+Click the `r keyboardButton("Forward >")` button to continue to the **Document Structure** page, as shown below:
 
 ![](Images/wizarddocstructure.png)
 
@@ -122,7 +122,7 @@ On this page, you will specify the format that best describes your document. The
 Previews of these document formats are shown next to each option. To view the full-size image of any preview, click on it with your mouse.
 ```
 
-After specifying your documents' structure, click the `r KeyboardButton("Forward >")` button to continue to the **Test Selection** page, as shown below:
+After specifying your documents' structure, click the `r keyboardButton("Forward >")` button to continue to the **Test Selection** page, as shown below:
 
 ![](Images/wizardbatchreadabilitymethods.png)
 
@@ -142,7 +142,7 @@ The tests available on this page will depend on the project's language. For exam
 
 Note that you can always add or remove tests from your project at any time. If you select either the document type or industry options, you are not bound to the tests that **Readability Studio** recommends.
 
-After you have selected the tests to perform, click the `r KeyboardButton("Finish")` button and the project will be created and will appear like this:
+After you have selected the tests to perform, click the `r keyboardButton("Finish")` button and the project will be created and will appear like this:
 
 ![](Images/batchscorestats.png)
 
@@ -174,6 +174,6 @@ This dialog enables you to import a worksheet (from a spreadsheet) for [batch](#
 
 **All text cells**: Select this option to import the entire worksheet.
 
-**Only highlighted cells**: Select this option to only import the selected cells (which will be highlighted blue). A block of cells can be selected by holding down the left mouse button and dragging the cursor around the block. Individual cells can be selected by holding down the `r KeyboardButton("CTRL")` (`r macOSCmdButton()` on macOS) button on the keyboard and clicking the cells. Also, entire columns and rows can be selected by clicking the column header or row label, respectively.
+**Only highlighted cells**: Select this option to only import the selected cells (which will be highlighted blue). A block of cells can be selected by holding down the left mouse button and dragging the cursor around the block. Individual cells can be selected by holding down the `r keyboardButton("CTRL")` (`r macOSCmdButton()` on macOS) button on the keyboard and clicking the cells. Also, entire columns and rows can be selected by clicking the column header or row label, respectively.
 
-Note that selections can also be discontiguous. For example, if you hold down the `r KeyboardButton("CTRL")`` button and click the column headers “A” and then “D,” then these two columns will be imported.
+Note that selections can also be discontiguous. For example, if you hold down the `r keyboardButton("CTRL")`` button and click the column headers “A” and then “D,” then these two columns will be imported.

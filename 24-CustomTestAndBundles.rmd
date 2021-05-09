@@ -64,7 +64,7 @@ Standard familiar-word tests normally consider numbers and proper nouns as famil
 
 Finally, you can specify how this test interacts with the [New Project Wizard](#creating-standard-project) by associating it with document types and industries. Click the **Classification** icon to display these options. Then select all the documents and industries that this test should relate to.
 
-For example, select the **Children's literature** and **Children's healthcare** check boxes (as shown below) and click `r KeyboardButton("OK")`.
+For example, select the **Children's literature** and **Children's healthcare** check boxes (as shown below) and click `r keyboardButton("OK")`.
 
 ![](Images/CustomTestWizardSettings.png)
 
@@ -289,7 +289,7 @@ From the **Readability** tab, click the **Custom Test** button and then select *
 
 ![](Images/NonGenerated/FunctionValidate.png)  Click this button to validate the formula. You will be alerted if your formula contains any syntax errors.
 
-**Formula**: Enter the test's formula into this field. As you type, a list of available functions will appear beneath the cursor. To select a function from this list, first use the arrow keys on your keyboard to navigate through the list. Once you have selected the desired function, hit the `r KeyboardButton("SPACEBAR")` on your keyboard to insert it into your formula. You can also insert functions from the **Function Browser**.
+**Formula**: Enter the test's formula into this field. As you type, a list of available functions will appear beneath the cursor. To select a function from this list, first use the arrow keys on your keyboard to navigate through the list. Once you have selected the desired function, hit the `r keyboardButton("SPACEBAR")` on your keyboard to insert it into your formula. You can also insert functions from the **Function Browser**.
 
 ### Word Lists {-}
 
@@ -424,6 +424,6 @@ Along with selecting tests, you can also specify the range of values that a docu
 
 Beneath the test goals grid is another grid for creating statistics goals as well. For example, you can add a goal such as specifying the maximum average sentence length for the document.
 
-Once you are done, click the `r KeyboardButton("OK")` button to add the bundle to the menu.
+Once you are done, click the `r keyboardButton("OK")` button to add the bundle to the menu.
 
 After this bundle is added, select it from the menu and all the tests in the bundle will be added to the active project.

@@ -138,7 +138,7 @@ To see what is happening here, we will open the original document. From the **Ho
 
 ![](Images/NonGenerated/PeterRabbitBrowser.png)
 
-To correct this, we will change how sentences are deduced for this project. Click the **Properties** button on the **Home** tab and then select **Analysis**. Then select the options **Ignore blank lines** and **Ignore indenting** and click `r KeyboardButton("OK")` to accept. Note that we also selected **Ignore indenting** because this file contains some indented text.
+To correct this, we will change how sentences are deduced for this project. Click the **Properties** button on the **Home** tab and then select **Analysis**. Then select the options **Ignore blank lines** and **Ignore indenting** and click `r keyboardButton("OK")` to accept. Note that we also selected **Ignore indenting** because this file contains some indented text.
 
 ![](Images/IgnoreBlankLines.png)
 

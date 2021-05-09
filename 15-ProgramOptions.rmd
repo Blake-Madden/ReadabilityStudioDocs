@@ -271,9 +271,9 @@ This dialog can edit either a word or phrase list.
 
 After selecting your list file, its words/phrases will be displayed in the grid below the file-path field. In this grid, you can edit your list with the following keyboard commands:
 
-- `r KeyboardButton("DELETE")`—removes the selected item(s) from the list.
-- `r KeyboardButton("INSERT")`—edits the selected item in the list. Double-clicking an item with the mouse will also edit it.
-- `r KeyboardButton("CTRL")`+`r KeyboardButton("INSERT")` (`r macOSCmdButton()`+`r KeyboardButton("INSERT")` on macOS) —adds a new item to the list.
+- `r keyboardButton("DELETE")`—removes the selected item(s) from the list.
+- `r keyboardButton("INSERT")`—edits the selected item in the list. Double-clicking an item with the mouse will also edit it.
+- `r keyboardButton("CTRL")`+`r keyboardButton("INSERT")` (`r macOSCmdButton()`+`r keyboardButton("INSERT")` on macOS) —adds a new item to the list.
 
 **Add**, **Edit**, and **Remove** buttons are also available above the grid.
 
