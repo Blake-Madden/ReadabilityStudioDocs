@@ -3,7 +3,10 @@ title: "Readability Studio 2021 Manual"
 description: "Readability Studio 2021 Manual"
 author: "Blake Madden"
 site: bookdown::bookdown_site
-output: bookdown::gitbook
+output:
+  bookdown::pdf_book:
+    includes:
+      in_header: "latex/preamble.tex"
 documentclass: book
 papersize: a4
 links-as-notes: true
