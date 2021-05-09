@@ -76,10 +76,10 @@ This option is available only when exporting as a TIFF file.
 
 **Compression**: This option specifies the compression level of the TIFF file and includes the following options:
 
--   None: do not compress the image
--   Lempel-Ziv & Welch: lossless compression, but may generate larger images than other compression methods.
--   JPEG: lossy compression method. Suitable for high-color images, but some quality may be lost.
--   Deflate: lossless, high-compression method.
+- None: do not compress the image
+- Lempel-Ziv & Welch: lossless compression, but may generate larger images than other compression methods.
+- JPEG: lossy compression method. Suitable for high-color images, but some quality may be lost.
+- Deflate: lossless, high-compression method.
 
 ## List Export Options {-#export-list}
 
