@@ -19,7 +19,7 @@ bookdown::gitbook:
     search: no
 bookdown::pdf_book:
   includes:
-    in_header: preamble.tex
+    in_header: "latex/preamble.tex"
   latex_engine: xelatex
   citation_package: natbib
   keep_tex: true
