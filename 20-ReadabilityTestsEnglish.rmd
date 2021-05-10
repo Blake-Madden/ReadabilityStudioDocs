@@ -723,13 +723,9 @@ hjScoreTable <- tibble("Predicted\nRaw Score" = c("1.1", "1.2", "1.3", "1.4", "1
                                                "9.4", "9.6", "9.8", "10.1", "10.3",
                                                "10.5","10.7","10.9","11.1", "11.3"))
 
-
-
 # add linebreaks in print
 if (knitr::is_latex_output())
-  {
-  colnames(hjScoreTable) %<>% kableExtra::linebreak(align='c')
-  }
+  {  colnames(hjScoreTable) %<>% kableExtra::linebreak(align='c') }
 
 footnoteLabel <- "Readability scores above 8.5 were derived by extrapolation (21; Chapter 3)"
 
