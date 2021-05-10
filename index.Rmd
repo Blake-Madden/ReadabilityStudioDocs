@@ -35,6 +35,8 @@ macOSCmdButton <- function()
     { knitr::asis_output("\\keys{\\cmd}") }
   else if (knitr::is_html_output())
     { knitr::asis_output("<span class='key'>&#8984;</span>") }
+  else
+    { knitr::asis_output(text) }
   }
 
 # Displays a label as a keyboard button
@@ -44,17 +46,43 @@ keyboardButton <- function(label)
     { knitr::asis_output(paste0("\\keys{", label, "}")) }
   else if (knitr::is_html_output())
     { knitr::asis_output(glue("<span class='key'>{label}</span>")) }
+  else
+    { knitr::asis_output(text) }
+  }
+
+# Instructs the LaTeX system to write a string exactly as it appears.
+# This is useful for writing something like straight quotes without them
+# being converted to smart quotes.
+# This is the same as putting text inside of backticks, but will not be
+# drawn as a code block in LaTeX output.
+# @note For non-LaTeX builds, text will be wrapped in backticks.
+# @param text The text to write.
+# @param enclosure The character to wrap the label inside
+#                  (used by LaTeX's \verb macro).
+#                  This character should not appear inside of the text.
+verbatim <- function(text, enclosure='|')
+  {
+  if (knitr::is_latex_output())
+    { knitr::asis_output(glue("\\verb{enclosure}{text}{enclosure}")) }
+  else
+    {
+    ifelse((stringr::str_length(text) == 0),
+            knitr::asis_output(text),
+            # spaces around text is needed in case there are
+            # leading or trailing backticks in the text
+            knitr::asis_output(glue("`` {text} ``")))
+    }
   }
 
 # Converts Markdown text to LaTeX (or leaves it as-is for HTML builds)
 # or use in a kable.
 # Supports bold, italic, inline code, and newlines.
-markdownForKable <- function(label)
+markdownForKable <- function(text)
   {
   if (knitr::is_latex_output())
     {
                # convert markdown bold tags
-    label %<>% stringr::str_replace_all("\\*\\*([\\w ()-]{1,})\\*\\*",
+    text %<>% stringr::str_replace_all("\\*\\*([\\w ()-]{1,})\\*\\*",
                                         "\\\\\\\\textbf{\\1}") %>%
                # italics
                stringr::str_replace_all("\\*([\\w ()-]{1,})\\*",
@@ -64,10 +92,10 @@ markdownForKable <- function(label)
                                         "\\\\\\\\texttt{\\1}") %>%
                # newlines
                stringr::str_replace_all("\n", "\\\\\\\\newline ")
-    knitr::asis_output(label)
+    knitr::asis_output(text)
     }
-  else if (knitr::is_html_output())
-    { knitr::asis_output(label) }
+  else
+    { knitr::asis_output(text) }
   }
 ```
 
