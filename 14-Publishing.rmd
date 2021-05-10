@@ -215,64 +215,43 @@ When exporting a filtered version of your document, the program will first remov
 
 **Romanize (replace special characters)**: Check this option to replace accented and extended characters with their ASCII equivalents. This option is required if you are needing the filtered document to be in ASCII (7-bit) format. The following Romanization replacements are used:
 
-| Extended ASCII character | Replacement |
-| :-- | :-- |
-| ö | oe |
-| ü | ue |
-| ä | ae |
-| ß | ss |
-| ñ | nn |
-| å | aa |
-| æ | ae |
-| œ | oe |
-| à | a |
-| á | a |
-| â | a |
-| ã | a |
-| å | a |
-| ç | c |
-| è | e |
-| é | e |
-| ê | e |
-| ë | e |
-| ì | i |
-| í | i |
-| î | i |
-| ï | i |
-| ò | o |
-| ó | o |
-| ô | o |
-| õ | o |
-| ø | o |
-| ù | u |
-| ú | u |
-| û | u |
-| ý | y |
-| ÿ | y |
-| • | · |
-| ‚ | ' |
-| ‹ | ' |
-| › | ' |
-| ‘ | ' |
-| ’ | ' |
-| \` | ' |
-| „ | " |
-| “ | " |
-| ” | " |
-| « | " |
-| » | " |
-| … | ... |
-| ‒ | \-- |
-| – | \-- |
-| — | \-- |
-| ― | \-- |
-| © | (c) |
-| ® | (r) |
-| ™ | (tm) |
-| ¼ | 1/4 |
-| ½ | 1/2 |
-| ¾ | 3/4 |
-| ± | +- |
+```{r, echo=F}
+library(tidyverse)
+
+asciiData <- tibble("Extended\nASCII Character" = c("ö", "ü", "ä", "ß", "ñ",
+                                                   "å", "æ", "œ", "à", "á",
+                                                   "â", "ã", "å", "ç", "è",
+                                                   "é", "ê", "ë", "ì", "í",
+                                                   "î", "ï", "ò", "ó", "ô",
+                                                   "õ", "ø", "ù", "ú", "û"),
+                    "Replacement" = c("oe", "ue", "ae", "ss", "nn",
+                                      "aa", "ae", "oe", "a", "a",
+                                      "a", "a", "a", "c", "e",
+                                      "e", "e", "e", "i", "i",
+                                      "i", "i", "o", "o", "o",
+                                      "o", "o", "u", "u", "u"),
+                    "Extended\nASCII Character " = c("ý", "ÿ", "•", "‚", "‹",
+                                                    "›", "‘", "’", "`", "„",
+                                                    "“", "”", "«", "»", "…",
+                                                    "‒", "–", "—", "―", "©",
+                                                    "®", "™", "¼", "½", "¾",
+                                                    "±", "", "", "", "" ),
+                    "Replacement " = c("y", "y", "·", "'", "'",
+                                       "'", "'", "'", "'", "\"",
+                                       "\"", "\"", "\"", "\"", "...",
+                                       "--", "--", "--", "--", "(c)",
+                                       "(r)", "(tm)", "1/4", "1/2", "3/4",
+                                       "+-", "", "", "", "")) %>%
+  dplyr::mutate_all(verbatim)
+
+# add linebreaks in print
+if (knitr::is_latex_output())
+  {  colnames(asciiData) %<>% kableExtra::linebreak(align='c') }
+
+kableExtra::kbl(asciiData, booktabs=T, centering=T, align='r',escape=F) %>%
+  kableExtra::kable_classic(full_width=F) %>%
+  kableExtra::column_spec(2, border_right = T)
+```
 
 Any extended ASCII character not listed above will be removed from the document.
 
