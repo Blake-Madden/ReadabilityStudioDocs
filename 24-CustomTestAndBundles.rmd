@@ -260,7 +260,7 @@ This function takes an argument specifying which text exclusion method to use. T
 **Dale-Chall** and **Harris-Jacobson** familiar word functions will take their respective test's text exclusion options into account.
 ```
 
-| Shortcuts | Description |
+| Shortcut | Description |
 | :-- | :-- |
 | B | Shortcut for SyllableCount(Default). |
 | C | Shortcut for ThreeSyllablePlusWordCount(Default). |
@@ -277,6 +277,8 @@ This function takes an argument specifying which text exclusion method to use. T
 | UUS | Shortcut for UniqueUnfamiliarSpacheWordCount(). |
 | W | Shortcut for WordCount(Default). |
 | X | Shortcut for SevenCharacterPlusWordCount(). |
+
+Table: Shortcuts
 
 ## Custom Test Dialog {-#custom-test-dialog}
 
