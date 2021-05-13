@@ -67,8 +67,10 @@ words <- c("involuntarily", "extraordinary",
            "unprofitable", "satisfactory",
            "administrator", "supernatural", "corroborated")
 kableExtra::kbl(x=words, caption="Example of exported words",
-                booktabs=T, centering=T, col.names="") %>%
-  kableExtra::kable_paper(full_width=F)
+                booktabs=T, centering=T, col.names="",
+                linesep="") %>%
+  kableExtra::kable_paper(full_width=F) %>%
+  kableExtra::kable_styling(latex_options=c("striped"))
 ```
 
 ## Analyzing a Work in Progress {-}
