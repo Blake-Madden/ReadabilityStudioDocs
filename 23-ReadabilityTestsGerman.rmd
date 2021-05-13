@@ -128,9 +128,9 @@ nws1Data <- tibble(" " = c("G", "C", "X", "M", "S", "W"),
 
 kableExtra::kbl(nws1Data, booktabs=T, centering=T, align='l', escape=F) %>%
   kableExtra::kable_classic(full_width=F) %>%
-  footnote(number = c(markdownForKable('“*drei- und mehrsilbigen*”'),
-                      markdownForKable('“*mehr als sechs buchstaben*”'),
-                      markdownForKable('“*einsilbigen*”')),
+  footnote(number = c(markdownForKableFootnote('“*drei- und mehrsilbigen*”'),
+                      markdownForKableFootnote('“*mehr als sechs buchstaben*”'),
+                      markdownForKableFootnote('“*einsilbigen*”')),
            escape=F, threeparttable=T)
 ```
 
@@ -159,9 +159,9 @@ nws2Data <- tibble(" " = c("G", "C", "X", "M", "S", "W"),
 
 kableExtra::kbl(nws2Data, booktabs=T, centering=T, align='l', escape=F, linesep="") %>%
   kableExtra::kable_classic(full_width=F) %>%
-  footnote(number = c(markdownForKable('“*drei- und mehrsilbigen*”'),
-                      markdownForKable('“*mehr als sechs buchstaben*”'),
-                      markdownForKable('“*einsilbigen*”')),
+  footnote(number = c(markdownForKableFootnote('“*drei- und mehrsilbigen*”'),
+                      markdownForKableFootnote('“*mehr als sechs buchstaben*”'),
+                      markdownForKableFootnote('“*einsilbigen*”')),
            escape=F, threeparttable=T)
 ```
 
@@ -189,9 +189,9 @@ nws3Data <- tibble(" " = c("G", "C", "X", "M", "S", "W"),
 
 kableExtra::kbl(nws3Data, booktabs=T, centering=T, align='l', escape=F, linesep="") %>%
   kableExtra::kable_classic(full_width=F) %>%
-  footnote(number = c(markdownForKable('“*drei- und mehrsilbigen*”'),
-                      markdownForKable('“*mehr als sechs buchstaben*”'),
-                      markdownForKable('“*einsilbigen*”')),
+  footnote(number = c(markdownForKableFootnote('“*drei- und mehrsilbigen*”'),
+                      markdownForKableFootnote('“*mehr als sechs buchstaben*”'),
+                      markdownForKableFootnote('“*einsilbigen*”')),
            escape=F, threeparttable=T)
 ```
 
@@ -217,7 +217,7 @@ quadData <- tibble(" " = c("G", "C", "S", "W"),
 
 kableExtra::kbl(quadData, booktabs=T, centering=T, align='l', escape=F) %>%
   kableExtra::kable_classic(full_width=F) %>%
-  footnote(number = c(markdownForKable('“*drei- und mehrsilbigen*”')),
+  footnote(number = c(markdownForKableFootnote('“*drei- und mehrsilbigen*”')),
            escape=F, threeparttable=T)
 ```
 
@@ -323,7 +323,7 @@ smogBVData <- tibble(" " = c("G", "C"),
 
 kableExtra::kbl(smogBVData, booktabs=T, centering=T, align='l', escape=F) %>%
   kableExtra::kable_classic(full_width=F) %>%
-  footnote(number = c(markdownForKable('“*drei- und mehrsilbigen*”')),
+  footnote(number = c(markdownForKableFootnote('“*drei- und mehrsilbigen*”')),
            escape=F, threeparttable=T)
 ```
 
@@ -355,7 +355,7 @@ wheelersmithBVData <- tibble(" " = c("I", "C", "W", "U"),
 
 kableExtra::kbl(wheelersmithBVData, booktabs=T, centering=T, align='l', escape=F) %>%
   kableExtra::kable_classic(full_width=F) %>%
-  footnote(number = c(markdownForKable('“*drei- und mehrsilbigen*”')),
+  footnote(number = c(markdownForKableFootnote('“*drei- und mehrsilbigen*”')),
            escape=F, threeparttable=T)
 ```
 

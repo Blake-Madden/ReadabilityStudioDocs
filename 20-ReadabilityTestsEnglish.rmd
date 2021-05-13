@@ -206,11 +206,9 @@ db2Data <- tibble(" " = c("I", "W", "RP", "S"),
                                     "Number of sentences"))
 
 if (knitr::is_latex_output())
-  {
-  db2Data$Description %<>% kableExtra::linebreak(align='l')
-  }
+  { db2Data$Description %<>% kableExtra::linebreak(align='l') }
 
-kableExtra::kbl(db2Data, booktabs=T, centering=T, align='l',escape=F) %>%
+kableExtra::kbl(db2Data, booktabs=T, centering=T, align='l', escape=F) %>%
   kableExtra::kable_classic(full_width=F) %>%
   footnote(number = "Refer to Danielson-Bryan 1 for an explanation of why number of words is used, instead of number of spaces between words.",
            threeparttable=T)
