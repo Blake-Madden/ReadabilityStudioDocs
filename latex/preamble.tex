@@ -10,9 +10,16 @@
 \usepackage{xcolor}
 \usepackage{tcolorbox}
 \usepackage{fontawesome5}
+\usepackage{longtable,tabu}
 \usepackage{makecell}
 \usepackage{threeparttable}
 \usepackage{float}
+\usepackage{fontspec}
+\usepackage{ucharclasses}
+\usepackage{libertinus}
+\usepackage{xcolor,colortbl}
+\usepackage[a4paper]{geometry}
+\geometry{left=4cm, right=3cm, top=2.5cm, bottom=2.5cm}
 
 \makeatletter
 \def\thm@space@setup{%
@@ -21,6 +28,9 @@
 }
 \makeatother
 \raggedbottom
+
+% Set Main Fonts
+%\setmainfont{Libertinus Sans}
 
 % in case we need CJK fonts
 \setCJKmonofont{SimSun}

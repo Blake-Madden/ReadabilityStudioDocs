@@ -8,10 +8,8 @@ output:
     includes:
       in_header: "latex/preamble.tex"
 documentclass: book
-papersize: a4
 links-as-notes: true
 linestretch: 1.15
-geometry: "left=4cm, right=3cm, top=2.5cm, bottom=2.5cm"
 biblio-style: mlalike
 link-citations: yes
 cover-image: "images/NonGenerated/cover.png"
@@ -74,10 +72,10 @@ verbatim <- function(text, enclosure='|')
     }
   }
 
-# Converts Markdown text to LaTeX (or leaves it as-is for HTML builds)
+# Converts Markdown text to LaTeX (or leaves it as-is for HTML builds) for kableExtra footnotes
 # or use in a kable.
 # Supports bold, italic, inline code, and newlines.
-markdownForKable <- function(text)
+markdownForKableFootnote <- function(text)
   {
   if (knitr::is_latex_output())
     {
