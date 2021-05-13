@@ -74,7 +74,7 @@ Now create a new project and select **Children's healthcare** as the industry ty
 
 The following functions and operators are available for use in [custom test](#creating-custom-test) formulas.
 
-| Operators | Description |
+| Operator | Description |
 | :-- | :-- |
 | \* | Multiplication. |
 | / | Division. |
@@ -92,9 +92,11 @@ The following functions and operators are available for use in [custom test](#cr
 | \| | Logical alternative. |
 | ( ) | Overrides the order of operations. |
 
+Table: Operators
+
 For operators, the order of precedence is:
 
-| Operators | Description |
+| Operator | Description |
 | :-- | :-- |
 | ( ) | Instructions in parentheses are executed first. |
 | ^   | Exponentiation. |
@@ -115,15 +117,16 @@ Will yield “12.5.” “5/2“ is executed first, then added to the other five
 
 You can override it so that the additions happen first (resulting in “15”), followed by the division (finally yielding “7.5”). Likewise, “(2+5)^2” will yield “49” (“7” squared), while “2+5^2” will yield “27” (“5” squared, plus “2”).
 
-| Locic Functions | Description |
+| Function | Description |
 | :-- | :-- |
 | AND(value1,value2,...) | Returns true if all conditions are true. |
 | IF(condition,value_if_true,value_if_false) | If “condition” is true (non-zero), then “value\_if\_true” is returned; otherwise, “value\_if\_false” is returned. |
 | NOT(value) | Returns the logical negation of “value.” |
 | OR(value1,value2,...) | Returns true if any condition is true. |
 
+Table: Logic Functions
 
-| Math Functions | Description |
+| Function | Description |
 | :-- | :-- |
 | ABS(x) | Absolute value of x. |
 | ATAN(x) | Arc tangent of x. |
@@ -147,16 +150,22 @@ You can override it so that the additions happen first (resulting in “15”), 
 | TAN(x) | Tangent of x. |
 | TRUNC(x) | Discards the fractional part of a number (e.g., TRUNC(-3.2) is -3, TRUNC(3.2) is 3). |
 
-| Statistics Functions | Description |
+Table: Math Functions
+
+| Function | Description |
 | :-- | :-- |
 | AVGERAGE(value1,value2,...) | Returns the average of a specified range of values. |
 | SUM(value1,value2,...) | Returns the sum of a specified range of values. |
 
-| Custom Familiar Word Tests Functions | Description |
+Table: Statistical Functions
+
+| Function | Description |
 | :-- | :-- |
 | CustomHarrisJacobson() | Performs a Harris-Jacobson test with a custom familiar word list. Note that this test will use the same text exclusion rules as the Harris-Jacobson test (overriding your system defaults). |
 | CustomNewDaleChall() | Performs a New Dale-Chall test with a custom familiar word list. Note that this test will use the same text exclusion rules as the Dale-Chall test (overriding your system defaults). |
 | CustomSpache() | Performs a Spache Revised test with a custom familiar word list. |
+
+Table: Custom Familiar Word Tests Functions
 
 | Document Statistics Functions | Description |
 | :-- | :-- |
