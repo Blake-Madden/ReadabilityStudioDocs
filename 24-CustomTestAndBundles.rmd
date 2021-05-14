@@ -74,6 +74,7 @@ Now create a new project and select **Children's healthcare** as the industry ty
 
 The following functions and operators are available for use in [custom test](#creating-custom-test) formulas.
 
+```{block, type='onsamepage'}
 | Operator | Description |
 | :-- | :-- |
 | \* | Multiplication. |
@@ -93,7 +94,9 @@ The following functions and operators are available for use in [custom test](#cr
 | ( ) | Overrides the order of operations. |
 
 Table: Operators
+```
 
+```{block, type='onsamepage'}
 For operators, the order of precedence is:
 
 | Operator | Description |
@@ -102,6 +105,7 @@ For operators, the order of precedence is:
 | ^   | Exponentiation. |
 | \* and / | Multiplication and division. |
 | \+ and - | Addition and subtraction. |
+```
 
 For example, the following:
 
@@ -117,6 +121,7 @@ Will yield “12.5.” “5/2“ is executed first, then added to the other five
 
 You can override it so that the additions happen first (resulting in “15”), followed by the division (finally yielding “7.5”). Likewise, “(2+5)^2” will yield “49” (“7” squared), while “2+5^2” will yield “27” (“5” squared, plus “2”).
 
+```{block, type='onsamepage'}
 | Function | Description |
 | :-- | :-- |
 | AND(value1,value2,...) | Returns true if all conditions are true. |
@@ -125,7 +130,9 @@ You can override it so that the additions happen first (resulting in “15”), 
 | OR(value1,value2,...) | Returns true if any condition is true. |
 
 Table: Logic Functions
+```
 
+```{block, type='onsamepage'}
 | Function | Description |
 | :-- | :-- |
 | ABS(x) | Absolute value of x. |
@@ -151,14 +158,18 @@ Table: Logic Functions
 | TRUNC(x) | Discards the fractional part of a number (e.g., TRUNC(-3.2) is -3, TRUNC(3.2) is 3). |
 
 Table: Math Functions
+```
 
+```{block, type='onsamepage'}
 | Function | Description |
 | :-- | :-- |
 | AVGERAGE(value1,value2,...) | Returns the average of a specified range of values. |
 | SUM(value1,value2,...) | Returns the sum of a specified range of values. |
 
 Table: Statistical Functions
+```
 
+```{block, type='onsamepage'}
 | Function | Description |
 | :-- | :-- |
 | CustomHarrisJacobson() | Performs a Harris-Jacobson test with a custom familiar word list. Note that this test will use the same text exclusion rules as the Harris-Jacobson test (overriding your system defaults). |
@@ -166,55 +177,40 @@ Table: Statistical Functions
 | CustomSpache() | Performs a Spache Revised test with a custom familiar word list. |
 
 Table: Custom Familiar Word Tests Functions
+```
 
-| Document Statistics Functions | Description |
-| :-- | :-- |
-| SyllableCount() | Returns the number of syllables from the document. |
-
-This function takes an argument specifying which numeral syllabizing method to use. These values are:
-
-- `Default`: uses the system default method.
-- `NumeralsFullySyllabized`: sounds out each digit when syllabizing numerals.
-- `NumeralsAreOneSyllable`: treats all numerals as monosyllabic words.
-
-| Document Statistics Functions | Description |
+```{block, type='onsamepage'}
+| Function | Description |
 | --- | --- |
-| CharacterCount() | Returns the number of characters (i.e., letters and numbers) from the document. | 
-
-This function takes an argument specifying which text exclusion method to use. These values are:
-
-- `Default`: uses the system default text-exclusion method.
-- `DaleChall`: uses the [Dale-Chall text-exclusion method](#options-dale-chall). This is recommended if your formula is using Dale-Chall familiar word functions (e.g., FamiliarDaleChallWordCount()).
-- `HarrisJacobson`: uses the [Harris-Jacobson text-exclusion method](#options-harris-jacobson). This is recommended if your formula is using Harris-Jacobson familiar word functions (e.g., `FamiliarHarrisJacobsonWordCount()`).
-
-| Document Statistics Functions | Description |
-| --- | --- |
+| CharacterCount() | Returns the number of characters (i.e., letters and numbers) from the document. This function takes an argument specifying which text exclusion method to use: `Default`, [`DaleChall`](#options-dale-chall)^1^, and `HarrisJacobson`^2^. | 
 | CharacterPlusPunctuationCount() | Returns the number of characters (i.e., letters and numbers) and punctuation from the document. Note that sentence-ending punctuation is not included in this count. |
-| SentenceCount() | Returns the number of sentences from the document. |
-
-This function takes an argument specifying which text exclusion or sentence-counting method to use. These values are:
-
-- `Default`: uses the system default text-exclusion method.
-- `DaleChall`: uses the [Dale-Chall text-exclusion method](#options-dale-chall). This is recommended if your formula is using **Dale-Chall** familiar word functions (e.g., `FamiliarDaleChallWordCount()`).
-- `HarrisJacobson`: uses the [Harris-Jacobson text-exclusion method](#options-harris-jacobson). This is recommended if your formula is using **Harris-Jacobson** familiar word functions (e.g., `FamiliarHarrisJacobsonWordCount()`).
-- `GunningFog`: uses the [Gunning Fog](#options-gunning-fog) sentence-counting method. This will be either traditional sentence counting or unit counting.
-
-| Document Statistics Functions | Description |
-| --- | --- |
 | IndependentClauseCount() | Returns the number of units/independent clauses from the document. A unit is a section of text ending with a period, exclamation mark, question mark, interrobang, colon, semicolon, or dash. |
+| SentenceCount() | Returns the number of sentences from the document. This function takes an argument specifying which text exclusion or sentence-counting method to use: `Default`, `DaleChall`, `HarrisJacobson`, and `GunningFog`^3^. |
+| SyllableCount() | Returns the number of syllables from the document. This function takes an argument specifying which numeral syllabizing method to use: `Default`, `NumeralsFullySyllabized`, and `NumeralsAreOneSyllable`. |
 
-| Word Statistics Functions | Description |
-| :-- | :-- |
+Table: Document Statistics Functions
+
+^1^ ~Uses the Dale-Chall text-exclusion method~
+
+^2^ ~Uses the [Harris-Jacobson text-exclusion method](#options-harris-jacobson)~
+
+^3^ ~Uses the [Gunning Fog](#options-gunning-fog) sentence-counting method. This will be either traditional sentence counting or unit counting~
+```
+
+| Function | Description |
+| --- | --- |
 | FamiliarDaleChallWordCount() | Returns the number of familiar **New Dale-Chall** words from the document. |
 | FamiliarHarrisJacobsonWordCount() | Returns the number of familiar **Harris-Jacobson** words from the document. |
 | FamiliarSpacheWordCount() | Returns the number of familiar **Spache** words from the document. |
 | FamiliarWordCount() | Returns the number of familiar words (from a custom list) the document. |
 | HardFogWordCount() | Returns the number of difficult **Gunning Fog** words. |
-| OneSyllableWordCount() | Returns the number of monosyllabic words from the document. |
 | MiniWordCount() | Returns the number of miniwords from the document (refer to [EFLAW](#eflaw-test)). |
+| NumeralCount() | Returns the number of numerals from the document. |
+| OneSyllableWordCount() | Returns the number of monosyllabic words from the document. |
+| ProperNounCount() | Returns the number of proper nouns from the document. |
 | SevenCharacterPlusWordCount() | Returns the number of words consisting of seven or more characters from the document. |
 | SixCharacterPlusWordCount() | Returns the number of words consisting of six or more characters from the document. |
-| ThreeSyllablePlusWordCount() | Returns the number of words consisting of three or more syllables from the document.  
+| ThreeSyllablePlusWordCount() | Returns the number of words consisting of three or more syllables from the document. |
 | UnfamiliarDaleChallWordCount() | Returns the number of unfamiliar **New Dale-Chall** words from the document. |
 | UnfamiliarHarrisJacobsonWordCount() | Returns the number of unfamiliar **Harris-Jacobson** words from the document. |
 | UnfamiliarSpacheWordCount() | Returns the number of unfamiliar **Spache** words from the document. |
@@ -224,42 +220,18 @@ This function takes an argument specifying which text exclusion or sentence-coun
 | UniqueUnfamiliarDaleChallWordCount() | Returns the number of unique unfamiliar **New Dale-Chall** words from the document. |
 | UniqueUnfamiliarHarrisJacobsonWordCount() | Returns the number of unique unfamiliar **Harris-Jacobson** words from the document. |
 | UniqueUnfamiliarSpacheWordCount() | Returns the number of unique unfamiliar **Spache** words from the document. |
-| UniqueUnfamiliarWordCount() | Returns the number of unique unfamiliar words (from a custom list) from the document. |
-
-This function takes an argument specifying which numeral syllabizing method to use. These values are:
-
-- `Default`: uses the system default method.
-- `NumeralsFullySyllabized`: sounds out each digit when syllabizing numerals.
-
-| Word Statistics Functions | Description |
-| --- | --- |
-| UniqueThreeSyllablePlusWordCount() | Returns the number of unique words consisting of three or more syllables from the document.  
-  
-This function takes an argument specifying which numeral syllabizing method to use. These values are:
-
-- `Default`: uses the system default method.
-- `NumeralsFullySyllabized`: sounds out each digit when syllabizing numerals.
-
-| Word Statistics Functions | Description |
-| --- | --- |
-| WordCount() | Returns the number of words from the document.  
-  
-This function takes an argument specifying which text exclusion method to use. These values are:
-
-- `Default`: uses the system default text-exclusion method.
-- `DaleChall`: uses the [Dale-Chall text-exclusion method](#options-dale-chall). This is recommended if your formula is using Dale-Chall familiar word functions (e.g., FamiliarDaleChallWordCount()).
-- `HarrisJacobson`: uses the [Harris-Jacobson text-exclusion method](#options-harris-jacobson). This is recommended if your formula is using Harris-Jacobson familiar word functions (e.g., FamiliarHarrisJacobsonWordCount()).
-
-| Word Statistics Functions | Description |
-| --- | --- |
-| NumeralCount() | Returns the number of numerals from the document. |
-| ProperNounCount() | Returns the number of proper nouns from the document. |
+| UniqueUnfamiliarWordCount() | Returns the number of unique unfamiliar words (from a custom list) from the document.  This function takes an argument specifying which numeral syllabizing method to use: `Default` and `NumeralsFullySyllabized`. |
+| UniqueThreeSyllablePlusWordCount() | Returns the number of unique words consisting of three or more syllables from the document. This function takes an argument specifying which numeral syllabizing method to use: `Default` and `NumeralsFullySyllabized`. |
 | UniqueWordCount() | Returns the number of unique words from the document. |
+| WordCount() | Returns the number of words from the document. This function takes an argument specifying which text exclusion method to use: `Default`, `DaleChall`, and `HarrisJacobson`. |
+
+Table: Word Statistics Functions
 
 ```{block, type='notesection'}
 **Dale-Chall** and **Harris-Jacobson** familiar word functions will take their respective test's text exclusion options into account.
 ```
 
+```{block, type='onsamepage'}
 | Shortcut | Description |
 | :-- | :-- |
 | B | Shortcut for SyllableCount(Default). |
@@ -279,6 +251,7 @@ This function takes an argument specifying which text exclusion method to use. T
 | X | Shortcut for SevenCharacterPlusWordCount(). |
 
 Table: Shortcuts
+```
 
 ## Custom Test Dialog {-#custom-test-dialog}
 
