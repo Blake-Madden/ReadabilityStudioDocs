@@ -126,7 +126,7 @@ nws1Data <- tibble(" " = c("G", "C", "X", "M", "S", "W"),
                                       "Number of sentences",
                                       "Number of words"))
 
-kableExtra::kbl(nws1Data, booktabs=T, centering=T, align='l', escape=F) %>%
+kableExtra::kbl(nws1Data, booktabs=T, centering=T, align='l', escape=F, linesep="") %>%
   kableExtra::kable_classic(full_width=F) %>%
   footnote(number = c(markdownForKableFootnote('“*drei- und mehrsilbigen*”'),
                       markdownForKableFootnote('“*mehr als sechs buchstaben*”'),
