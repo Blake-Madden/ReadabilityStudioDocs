@@ -172,58 +172,72 @@ Table: Statistical Functions
 ```{block, type='onsamepage'}
 | Function | Description |
 | :-- | :-- |
-| CustomHarrisJacobson() | Performs a Harris-Jacobson test with a custom familiar word list. Note that this test will use the same text exclusion rules as the Harris-Jacobson test (overriding your system defaults). |
-| CustomNewDaleChall() | Performs a New Dale-Chall test with a custom familiar word list. Note that this test will use the same text exclusion rules as the Dale-Chall test (overriding your system defaults). |
-| CustomSpache() | Performs a Spache Revised test with a custom familiar word list. |
+| CustomHarrisJacobson() | Performs a **Harris-Jacobson** test with a custom familiar word list. Note that this test will use the same text exclusion rules as **Harris-Jacobson** (overriding your system defaults). |
+| CustomNewDaleChall() | Performs a **New Dale-Chall** test with a custom familiar word list. Note that this test will use the same text exclusion rules as **New Dale-Chall** (overriding your system defaults). |
+| CustomSpache() | Performs a **Spache Revised** test with a custom familiar word list. |
 
 Table: Custom Familiar Word Tests Functions
 ```
 
 ```{block, type='onsamepage'}
+<!--
+Have to manually format the footnotes in here for numerous reasons, this is the best way to get this to format
+properly in LaTex.
+
+kable has compile issues with threeparttable and full-width tables, and using kable also means
+that we have to use column_spec with a hard coded column width. This means the table won't wrap precisely like
+the tables above and below it.
+
+As for markdown, using the proper footnote method causes the footnotes to be letters instead of numbers because
+we are in a minipage. (The minipage is to keep the footnotes under the table, and not the end of the page.)
+So, to use MLA footnotes, we have to create psuedo footnotes below the table.
+-->
+
 | Function | Description |
 | --- | --- |
-| CharacterCount() | Returns the number of characters (i.e., letters and numbers) from the document. This function takes an argument specifying which text exclusion method to use: `Default`, [`DaleChall`](#options-dale-chall)^1^, and `HarrisJacobson`^2^. | 
-| CharacterPlusPunctuationCount() | Returns the number of characters (i.e., letters and numbers) and punctuation from the document. Note that sentence-ending punctuation is not included in this count. |
-| IndependentClauseCount() | Returns the number of units/independent clauses from the document. A unit is a section of text ending with a period, exclamation mark, question mark, interrobang, colon, semicolon, or dash. |
-| SentenceCount() | Returns the number of sentences from the document. This function takes an argument specifying which text exclusion or sentence-counting method to use: `Default`, `DaleChall`, `HarrisJacobson`, and `GunningFog`^3^. |
-| SyllableCount() | Returns the number of syllables from the document. This function takes an argument specifying which numeral syllabizing method to use: `Default`, `NumeralsFullySyllabized`, and `NumeralsAreOneSyllable`. |
+| CharacterCount() | Returns the number of characters (i.e., letters and numbers). This function takes an argument specifying which text exclusion method to use: `Default`, `DaleChall`^1^, or `HarrisJacobson`^2^. | 
+| CharacterPlusPunctuationCount() | Returns the number of characters (i.e., letters and numbers) and punctuation. Note that sentence-ending punctuation is not included in this count. |
+| IndependentClauseCount() | Returns the number of units/independent clauses. A unit is a section of text ending with a period, exclamation, question mark, interrobang, colon, semicolon, or dash. |
+| SentenceCount() | Returns the number of sentences. This function takes an argument specifying which text exclusion or sentence-counting method to use: `Default`, `DaleChall`, `HarrisJacobson`, or `GunningFog`^3^. |
+| SyllableCount() | Returns the number of syllables. This function takes an argument specifying which numeral syllabizing method to use: `Default`, `NumeralsFullySyllabized`, or `NumeralsAreOneSyllable`. |
 
 Table: Document Statistics Functions
 
-^1^ ~Uses the Dale-Chall text-exclusion method~
+^1^ Uses the [Dale-Chall text-exclusion](#options-dale-chall) method.
 
-^2^ ~Uses the [Harris-Jacobson text-exclusion method](#options-harris-jacobson)~
+^2^ Uses the [Harris-Jacobson text-exclusion method](#options-harris-jacobson).
 
-^3^ ~Uses the [Gunning Fog](#options-gunning-fog) sentence-counting method. This will be either traditional sentence counting or unit counting~
+^3^ Uses the [Gunning Fog](#options-gunning-fog) sentence-counting method.\
+\ \ This will be either traditional sentence counting or unit counting.
 ```
 
 | Function | Description |
 | --- | --- |
-| FamiliarDaleChallWordCount() | Returns the number of familiar **New Dale-Chall** words from the document. |
-| FamiliarHarrisJacobsonWordCount() | Returns the number of familiar **Harris-Jacobson** words from the document. |
-| FamiliarSpacheWordCount() | Returns the number of familiar **Spache** words from the document. |
+| FamiliarDaleChallWordCount() | Returns the number of familiar **New Dale-Chall** words. |
+| FamiliarHarrisJacobsonWordCount() | Returns the number of familiar **Harris-Jacobson** words. |
+| FamiliarSpacheWordCount() | Returns the number of familiar **Spache** words. |
 | FamiliarWordCount() | Returns the number of familiar words (from a custom list) the document. |
 | HardFogWordCount() | Returns the number of difficult **Gunning Fog** words. |
-| MiniWordCount() | Returns the number of miniwords from the document (refer to [EFLAW](#eflaw-test)). |
-| NumeralCount() | Returns the number of numerals from the document. |
-| OneSyllableWordCount() | Returns the number of monosyllabic words from the document. |
-| ProperNounCount() | Returns the number of proper nouns from the document. |
-| SevenCharacterPlusWordCount() | Returns the number of words consisting of seven or more characters from the document. |
-| SixCharacterPlusWordCount() | Returns the number of words consisting of six or more characters from the document. |
-| ThreeSyllablePlusWordCount() | Returns the number of words consisting of three or more syllables from the document. |
-| UnfamiliarDaleChallWordCount() | Returns the number of unfamiliar **New Dale-Chall** words from the document. |
-| UnfamiliarHarrisJacobsonWordCount() | Returns the number of unfamiliar **Harris-Jacobson** words from the document. |
-| UnfamiliarSpacheWordCount() | Returns the number of unfamiliar **Spache** words from the document. |
+| MiniWordCount() | Returns the number of miniwords (refer to [EFLAW](#eflaw-test)). |
+| NumeralCount() | Returns the number of numerals. |
+| OneSyllableWordCount() | Returns the number of monosyllabic words. |
+| ProperNounCount() | Returns the number of proper nouns. |
+| SevenCharacterPlusWordCount() | Returns the number of words consisting of seven or more characters. |
+| SixCharacterPlusWordCount() | Returns the number of words consisting of six or more characters. |
+| ThreeSyllablePlusWordCount() | Returns the number of words consisting of three or more syllables. This function takes an argument specifying which numeral syllabizing method to use: `Default` or `NumeralsFullySyllabized`. |
+| UnfamiliarDaleChallWordCount() | Returns the number of unfamiliar **New Dale-Chall** words. |
+| UnfamiliarHarrisJacobsonWordCount() | Returns the number of unfamiliar **Harris-Jacobson** words. |
+| UnfamiliarSpacheWordCount() | Returns the number of unfamiliar **Spache** words. |
 | UnfamiliarWordCount() | Returns the number of unfamiliar words (from a custom list) the document. |
-| UniqueOneSyllableWordCount() | Returns the number of unique monosyllabic words from the document. |
-| UniqueSixCharacterPlusWordCount() | Returns the number of unique words consisting of six or more characters from the document. |
-| UniqueUnfamiliarDaleChallWordCount() | Returns the number of unique unfamiliar **New Dale-Chall** words from the document. |
-| UniqueUnfamiliarHarrisJacobsonWordCount() | Returns the number of unique unfamiliar **Harris-Jacobson** words from the document. |
-| UniqueUnfamiliarSpacheWordCount() | Returns the number of unique unfamiliar **Spache** words from the document. |
-| UniqueUnfamiliarWordCount() | Returns the number of unique unfamiliar words (from a custom list) from the document.  This function takes an argument specifying which numeral syllabizing method to use: `Default` and `NumeralsFullySyllabized`. |
-| UniqueThreeSyllablePlusWordCount() | Returns the number of unique words consisting of three or more syllables from the document. This function takes an argument specifying which numeral syllabizing method to use: `Default` and `NumeralsFullySyllabized`. |
-| UniqueWordCount() | Returns the number of unique words from the document. |
-| WordCount() | Returns the number of words from the document. This function takes an argument specifying which text exclusion method to use: `Default`, `DaleChall`, and `HarrisJacobson`. |
+| UniqueOneSyllableWordCount() | Returns the number of unique monosyllabic words. |
+| UniqueSixCharacterPlusWordCount() | Returns the number of unique words consisting of six or more characters. |
+| UniqueUnfamiliarDaleChallWordCount() | Returns the number of unique unfamiliar **New Dale-Chall** words. |
+| UniqueUnfamiliarHarrisJacobsonWordCount() | Returns the number of unique unfamiliar **Harris-Jacobson** words. |
+| UniqueUnfamiliarSpacheWordCount() | Returns the number of unique unfamiliar **Spache** words. |
+| UniqueUnfamiliarWordCount() | Returns the number of unique unfamiliar words (from a custom list). |
+| UniqueThreeSyllablePlusWordCount() | Returns the number of unique words consisting of three or more syllables. This function takes an argument specifying which numeral syllabizing method to use: `Default` or `NumeralsFullySyllabized`. |
+| UniqueWordCount() | Returns the number of unique words. |
+| WordCount() | Returns the number of words. This function takes an argument specifying which text exclusion method to use: `Default`, `DaleChall`, or `HarrisJacobson`. |
 
 Table: Word Statistics Functions
 
