@@ -22,12 +22,19 @@ $$
 
 Where:
 
-|     | Description |
-| --- | --- |
-| G   | Grade level |
-| W   | Number of words |
-| RP  | Number of strokes. Strokes are characters and punctuation (except for sentence terminating punctuation) |
-| S   | Number of sentences |
+```{r, echo=F}
+ariData <- tibble(" " = c("G", "W", "RP", "S"),
+                  "Description" = c("Grade level",
+                                    "Number of words",
+                                    "Number of strokes",
+                                    "Number of sentences"))
+
+kableExtra::kbl(ariData, booktabs=T, centering=T, align='l',escape=F) %>%
+  kableExtra::kable_classic(full_width=F) %>%
+  column_spec(2, width='10cm') %>%
+  footnote(number = c("Strokes are characters and punctuation (except for sentence terminating punctuation)"),
+           threeparttable=T)
+```
 
 \newpage
 ## Bormuth Cloze Mean {-#bormuth-cloze-mean-machine-passage}
@@ -163,16 +170,14 @@ Where:
 db1Data <- tibble(" " = c("G", "W", "RP", "S"),
                   "Description" = c("Grade level",
                                     "Number of words (see below)",
-                                    "Number of characters, in this context being\nletters, numbers, and punctuation (except\nfor sentence-ending punctuation)",
+                                    "Number of characters¹",
                                     "Number of sentences"))
 
-if (knitr::is_latex_output())
-  {
-  db1Data$Description %<>% kableExtra::linebreak(align='l')
-  }
-
 kableExtra::kbl(db1Data, booktabs=T, centering=T, align='l',escape=F) %>%
-  kableExtra::kable_classic(full_width=F)
+  kableExtra::kable_classic(full_width=F) %>%
+  column_spec(2, width='10cm') %>%
+  footnote(number = c("In this context, characters are letters, numbers, and punctuation (except for sentence-ending punctuation)"),
+           threeparttable=T)
 ```
 
 In the original article, the statistic of “number of spaces between words” is suggested, rather than explicitly saying “number of words.” Logically, this should be the number of words minus 1. However, in the article's example, number of spaces between words is the same as number of words (even when there are dashes connecting words). It is therefore assumed that the authors' intention was to count the number of words using the following logic:
@@ -202,15 +207,14 @@ Where:
 db2Data <- tibble(" " = c("I", "W", "RP", "S"),
                   "Description" = c("Flesch index score",
                                     "Number of words¹",
-                                    "Number of characters, in this context being\nletters, numbers, and punctuation (except\nfor sentence-ending punctuation)",
+                                    "Number of characters²",
                                     "Number of sentences"))
-
-if (knitr::is_latex_output())
-  { db2Data$Description %<>% kableExtra::linebreak(align='l') }
 
 kableExtra::kbl(db2Data, booktabs=T, centering=T, align='l', escape=F) %>%
   kableExtra::kable_classic(full_width=F) %>%
-  footnote(number = "Refer to Danielson-Bryan 1 for an explanation of why number of words is used, instead of number of spaces between words.",
+  column_spec(2, width='10cm') %>%
+  footnote(number = c("Refer to Danielson-Bryan 1 for an explanation of why number of words is used, instead of number of spaces between words.",
+                      "In this context, characters are letters, numbers, and punctuation (except for sentence-ending punctuation)"),
            threeparttable=T)
 ```
 
@@ -268,48 +272,32 @@ This test was trained on the same 330 110-word passages used to build the [Bormu
 
 Calculate the **DRP** difficulty of a document. Then, look up the **DRP** score from the following table to find its respective grade level:
 
-| DRP-Difficulty | DRP-GE |
-| --- | --- |
-| 0-39 | 1.5 |
-| 40  | 1.6 |
-| 41  | 1.7 |
-| 42  | 1.7 |
-| 43  | 1.8 |
-| 44  | 2.0 |
-| 45  | 2.1 |
-| 46  | 2.3 |
-| 47  | 2.5 |
-| 48  | 2.8 |
-| 49  | 3.0 |
-| 50  | 3.3 |
-| 51  | 3.6 |
-| 52  | 3.9 |
-| 53  | 4.3 |
-| 54  | 4.7 |
-| 55  | 5.1 |
-| 56  | 5.5 |
-| 57  | 5.9 |
-| 58  | 6.3 |
-| 59  | 6.8 |
-| 60  | 7.3 |
-| 61  | 7.8 |
-| 62  | 8.3 |
-| 63  | 8.8 |
-| 64  | 9.4 |
-| 65  | 10.0 |
-| 66  | 10.6 |
-| 67  | 11.2 |
-| 68  | 11.8 |
-| 69  | 12.5 |
-| 70  | 13.1 |
-| 71  | 13.7 |
-| 72  | 14.4 |
-| 73  | 15.0 |
-| 74  | 15.7 |
-| 75  | 16.4 |
-| 76  | 17.1 |
-| 77  | 17.9 |
-| 78-100 | 18.0 |
+```{r, echo=F}
+library(tidyverse)
+
+# needs to be strings because of "0-39"
+drpTable <- tibble("DRP-Difficulty" = c("0-39", "40", "41", "42", "43",
+                                        "44", "45", "46", "47", "48",
+                                        "49", "50", "51", "52", "53",
+                                        "54", "55", "56", "57", "58"),
+                       "DRP-GE" = c("1.5", "1.6", "1.7", "1.7", "1.8",
+                                    "2.0", "2.1", "2.3", "2.5", "2.8",
+                                    "3.0", "3.3", "3.6", "3.9", "4.3",
+                                    "4.7", "5.1", "5.5", "5.9", "6.3"),
+                       "DRP-Difficulty " = c("59", "60", "61", "62", "63",
+                                             "64", "65", "66", "67", "68",
+                                             "69", "70", "71", "72", "73",
+                                             "74", "75", "76", "77", "78-100"),
+                       "DRP-GE " = c("6.8", "7.3", "7.8", "8.3", "8.8",
+                                    "9.4", "10.0", "10.6", "11.2", "11.8",
+                                    "12.5", "13.1", "13.7", "14.4", "15.0",
+                                    "15.7", "16.4", "17.1", "17.9", "18.0"))
+
+
+kableExtra::kbl(drpTable, booktabs=T, centering=T, align='r',escape=F) %>%
+  kableExtra::kable_classic(full_width=F) %>%
+  kableExtra::column_spec(2, border_right = T) 
+```
 
 \newpage
 ## Easy Listening Formula {-#easy-listening-formula}
@@ -727,7 +715,7 @@ hjScoreTable <- tibble("Predicted\nRaw Score" = c("1.1", "1.2", "1.3", "1.4", "1
 
 # add linebreaks in print
 if (knitr::is_latex_output())
-  {  colnames(hjScoreTable) %<>% kableExtra::linebreak(align='c') }
+  { colnames(hjScoreTable) %<>% kableExtra::linebreak(align='c') }
 
 footnoteLabel <- "Readability scores above 8.5 were derived by extrapolation (21; Chapter 3)"
 
@@ -861,7 +849,7 @@ newAriData <- tibble(" " = c("G", "W", "RP", "S"),
 
 kableExtra::kbl(newAriData, booktabs=T, centering=T, align='l',escape=F) %>%
   kableExtra::kable_classic(full_width=F) %>%
-  column_spec(2, width='8cm') %>%
+  column_spec(2, width='10cm') %>%
   footnote(number = "Strokes are characters and punctuation (except for sentence-terminating punctuation).",
            threeparttable=T)
 ```
@@ -1221,6 +1209,7 @@ To view this list, select the **Readability** tab, click the `r keyboardButton("
 
 To include this list as part of your **New Dale-Chall** scoring, select the **Tools** tab and click the `r keyboardButton("Options")` button to display the [**Options**](#options-overview) dialog. Next, expand **Readability Scores**, select **Test Options**, and then check **Include Stocker's Catholic supplement**. After selecting this option, all **New Dale-Chall** tests performed in new projects will include this supplement.
 
+<!-- Don't use markdown footnote because we just want this on the same page -->
 ^1^ The students involved in this study were “6,743 randomly selected Catholic fourth-graders attending 136 parochial schools throughout the country” (Stocker 87-88).
 
 \newpage
