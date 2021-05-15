@@ -31,7 +31,7 @@ Checking this option will degrade performance as each web link must be connected
 - **Subdomain restricted**: Select this option to only harvest links with the same subdomain as the base webpage (e.g., “sales.company.com”).
 - **Restricted to user-defined domain(s)**: Select this option to only harvest links from a provided list of domains. If folders are included in a specified domain, then the harvesting will be restricted to that folder. For example, if “www.news.mybusiness.com/articles” is specified, then only files from the folder “articles” in the subdomain “www.news.mybusiness.com” will be harvested.
 - **Restricted to external domains**: Select this option to only harvest links from domains other than the webpage that you specify.
-- **Restricted to same folder**: Select this option to only harvest links from the same web folder as the base URL. For example, if your base webpage is “www.mybusiness.com/history/aboutus.html,” then only links from “www.mybusiness.com/history/” will be harvested.
+- **Restricted to same folder**: Select this option to only harvest links from the same web folder as the base URL. For example, if your base webpage is “www.mybusiness.com/history/aboutus.html,” then links will only be harvested from “www.mybusiness.com/history/.”
 
 **User-defined Domain(s)**: Enter all user-defined domains in this list. This option is only applicable if domain restriction is set to user-defined domains.
 
