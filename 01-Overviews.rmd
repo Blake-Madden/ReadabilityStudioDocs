@@ -20,6 +20,7 @@ Note that these tests only determine the reading level of material based on how 
 
 **Readability Studio** offers many popular readability tests, including:
 
+```{block, type='onsamepage'}
 ![](Images/NonGenerated/gb.png) **English Tests**
 
 - [Automated Readability Index](#ari-test)
@@ -53,7 +54,9 @@ Note that these tests only determine the reading level of material based on how 
 - [Modified SMOG](#modified-smog)
 - [Spache Revised](#spache-test)
 - [Wheeler-Smith](#wheeler-smith)
+```
 
+```{block, type='onsamepage'}
 ![](Images/NonGenerated/es.png) **Spanish Tests**
 
 - [Crawford](#crawford)
@@ -62,7 +65,9 @@ Note that these tests only determine the reading level of material based on how 
 - [Läsbarhetsindex (Lix)](#lix-test)
 - [Rate Index (Rix)](#rix-test)
 - [SOL](#sol-spanish)
+```
 
+```{block, type='onsamepage'}
 ![](Images/NonGenerated/de.png) **German Tests**
 
 - [Amstad](#amstad)
@@ -79,6 +84,7 @@ Note that these tests only determine the reading level of material based on how 
 - [Schwartz](#scwartz)
 - [SMOG (Bamberger-Vanecek)](#smog-bamberger-vanecek)
 - [Wheeler-Smith (Bamberger-Vanecek)](#wheeler-smith-bamberger-vanecek)
+```
 
 In addition, **Readability Studio** offers in-depth explanations for these tests. Each test result includes an interpretation of the score and the factors that affect it.
 
