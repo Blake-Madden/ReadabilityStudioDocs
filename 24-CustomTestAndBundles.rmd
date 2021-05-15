@@ -30,11 +30,13 @@ To view the available functions, click the function browser button ![](Images/No
 
 Refer to the [Custom-Test Functions](#custom-test-functions) overview for a list of available functions.
 
+```{block, type='onsamepage'}
 After entering your formula, you will need to specify what type of test this will be from the **Test type** combobox. This will determine which column the test's score will appear in the [Readability Scores](#reviewing-test-scores) window. The following types of tests are available:
 
 - Grade level
 - Index value
 - [Predicted cloze score](#cloze)
+```
 
 If your test is using any of the predefined familiar-word formulas (`CustomNewDaleChall()`, `CustomSpache()`, `CustomHarrisJacobson()`) or using the functions `UnfamiliarWordCount()` or `UniqueUnfamiliarWordCount()`, then you will need to define how familiar words are detected. Expand **Familiar Words** to view two sections: [Word Lists](#custom-word-list) and [Proper Nouns & Numerals](#custom-proper-numerals).
 
@@ -275,11 +277,13 @@ From the **Readability** tab, click the **Custom Test** button and then select *
 
 **Test name**: If creating a new test, enter its name into this field.
 
+```{block, type='onsamepage'}
 **Test type**: Select from this list the type of result this test returns. This will determine which column the test's score will appear in the [Readability Scores](#reviewing-test-scores) window. The following types of tests are available:
 
 - Grade level
 - Index value
 - [Predicted cloze score](#cloze)
+```
 
 ### Formula {-}
 

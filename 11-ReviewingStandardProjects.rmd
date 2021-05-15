@@ -527,15 +527,14 @@ To view any sentence in its original context, double-click on it. This will take
 
 ## Dolch Sight Words {-#reviewing-dolch}
 
-The **Dolch Sight Words** (456-460) represent the most frequently occurring service words^1^ in most text, especially children's literature. Early readers need to learn and recognize these words to attain reading fluency. Many of these words cannot be sounded out or represented by pictures; therefore, they must be learned by sight^2^.
+The **Dolch Sight Words** (456-460) represent the most frequently occurring service words[^1] in most text, especially children's literature. Early readers need to learn and recognize these words to attain reading fluency. Many of these words cannot be sounded out or represented by pictures; therefore, they must be learned by sight[^2].
 
 If you are writing educational materials for early readers, then use as many of these words as possible to help readers practice them. Also, keep the percentage of non-Dolch words low so that readers can better focus on the sight words.
 
 **Readability Studio** offers a suite of **Dolch** statistics and graphs as a tool for educators and writers targeting early readers. If you are creating material intended to help early readers practice **Dolch** words, then it is recommended to include this in your project. To add **Dolch** statistics to your project, go to the **Readability** tab and select either **Primary-age Reading** or **Second Language Reading** and select **Dolch Sight Words**. A **Dolch Sight Words** icon will appear at the bottom of the project sidebar—clicking on that will display all the **Dolch** information.
 
-^1^ Pronouns, adjectives, adverbs, prepositions, conjunctions, and verbs.
-
-^2^ A separate list of nouns commonly found in children's literature is also included with the **Dolch** collection. However, the sight words are generally the focus of most **Dolch** activities.
+[^1]: Pronouns, adjectives, adverbs, prepositions, conjunctions, and verbs.
+[^2]: A separate list of nouns commonly found in children's literature is also included with the **Dolch** collection. However, the sight words are generally the focus of most **Dolch** activities.
 
 ### Reviewing the Dolch Statistics {-#reviewing-dolch-stats}
 

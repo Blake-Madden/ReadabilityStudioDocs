@@ -154,13 +154,15 @@ Grade-level scores are traditional displayed in U.S. (K-12+) format, be can be c
 
 ## Cloze Scores and Readability Formulas {-#cloze}
 
+```{block, type='onsamepage'}
 A **cloze** procedure is a test given to a student to measure his/her comprehension ability. This test consists of the following steps:
 
-1. Take a 250 word passage from a document.
-2. Delete every fifth word and replace it with a blank of equal length. There should be a total 50 blanks when finished.
-3. Have the student fill in as many of the blanks as he/she can.
-4. Count the number of blank words that he/she filled in correctly. Traditionally, synonyms are not accepted, but this can be at the discretion of the administrator. Misspellings are acceptable.
-5. Multiply the number of correct answers by two. This is the percentage of correct answers and will range from 0 (zero comprehension) to 100 (total comprehension).
+- Take a 250 word passage from a document.
+- Delete every fifth word and replace it with a blank of equal length. There should be a total 50 blanks when finished.
+- Have the student fill in as many of the blanks as he/she can.
+- Count the number of blank words that he/she filled in correctly. Traditionally, synonyms are not accepted, but this can be at the discretion of the administrator. Misspellings are acceptable.
+- Multiply the number of correct answers by two. This is the percentage of correct answers and will range from 0 (zero comprehension) to 100 (total comprehension).
+```
 
 **Cloze** procedures can also be used to gage how easily a passage of text can be comprehended. In this context, a **cloze** procedure is given to a group of students, and the mean (average) of their scores is the level of comprehensibility for the passage. 60% and higher is considered to be an acceptable level of comprehensibility. Scores lower than 60% indicate that the passage may be too difficult to be comprehensible and should be rewritten.
 

@@ -32,7 +32,7 @@ At this point we can review the test scores of the book (by clicking on the **Re
 
 To help understand why this book may be difficult for younger readers, click on the **Words Breakdown** icon on the project sidebar to display various lists of difficult words. Select the **3+ syllable words** subitem to view the list of complex words.
 
-Next, we will sort this list, going from highest to lowest syllable count. Click the **Sort** button on the ribbon and select **Sort Descending** from the button's menu. On the **Sort Columns Descending** dialog, double click on the first row in the grid and select the column **Syllable Count**. Then double click on the row below that and select **Frequency**. These options will tell the program to sort the words from highest to lowest syllable count, and in the case of any ties to sort by frequency. Click `r keyboardButton("OK")` to sort the list.
+Next, we will sort this list, going from highest to lowest syllable count. Click the `r keyboardButton("Sort")` button on the ribbon and select **Sort Descending** from the button's menu. On the **Sort Columns Descending** dialog, double click on the first row in the grid and select the column **Syllable Count**. Then double click on the row below that and select **Frequency**. These options will tell the program to sort the words from highest to lowest syllable count, and in the case of any ties to sort by frequency. Click `r keyboardButton("OK")` to sort the list.
 
 Now the words will be sorted by syllable count and then by frequency. As illustrated below, there are many words containing five or more syllables, which can be very difficult for most readers of any age.
 
@@ -109,7 +109,7 @@ If you are excluding [incomplete sentences](#how-text-is-excluded) (the default)
 
 ![](Images/NonGenerated/sentencewarning.png)
 
-Because this file contains numerous incomplete sentences, the program will ask you if excluding them is what you truly intend. In this case, these sentences are just list items that we should ignore, so select **No**.
+Because this file contains numerous incomplete sentences, the program will ask you if excluding them is what you truly intend. In this case, these sentences are just list items that we should ignore, so select **Continue excluding incomplete sentences**.
 
 At this point we can review the test scores of the recipe to determine which reading age it is appropriate for. Click on the **Readability Scores** icon on the project sidebar to display the scores. As we can see below, it appears to be readable for at least readers in the upper eighth grade. This is higher than our target audience and we may need to make some improvements to this recipe to make it easier to read.
 
@@ -119,11 +119,11 @@ To help understand why this recipe may be difficult for younger readers, click o
 
 ![](Images/examplestats.png)
 
-Click on the “difficult sentences” link in this section to go to the [Long Sentences](#reviewing-sentences-breakdown) subitem of the **Sentences Breakdown** section. This window will display a list of all the overly-long sentences in our recipes. As we can see, there are a few rather long sentences that are adversely affecting our scores.
+Click on the “difficult sentences” link in this section to go to the [**Long Sentences**](#reviewing-sentences-breakdown) subitem of the **Sentences Breakdown** section. This window will display a list of all the overly-long sentences in our recipes. As we can see, there are a few rather long sentences that are adversely affecting our scores.
 
 ![](Images/examplelongsentences.png)
 
-Long sentences can seem unfocused and difficult to read, and it is recommended to shorten or split them. To view any of these sentences in its original context, double-click on it in this list. The program will switch to the [Grammar](#reviewing-standard-grammar) page with this sentence highlighted:
+Long sentences can seem unfocused and difficult to read, and it is recommended to shorten or split them. To view any of these sentences in its original context, double-click on it in this list. The program will switch to the [**Grammar**](#reviewing-standard-grammar) page with this sentence highlighted:
 
 ![](Images/longsentenceselected.png)
 
@@ -137,7 +137,7 @@ Not only is it long, but it is a little confusing. It is unclear what was mixed 
 
 Continue this process for as many of the long sentences as you can. Sentences in the 20-word range are normally acceptable, but sentences over 30 words should be revised.
 
-Other useful tools for shortening sentences in **Readability Studio** are the other pages in the **Grammar** section. Click on the **Grammar** icon on the project sidebar. Click on the [Repeated Words](#reviewing-repeated-words) page and note how the phrase “and and” is in the file (obviously a typo). Next, click on the [Redundant Phrases](#reviewing-redundant-phrases) page. Note how the phrase “mixed together” is redundant and the program is suggesting that it be replaced with “mixed.” A [Wordy Items](#reviewing-wordy-items) and [Clichés](#reviewing-cliches) page may also appear, but there do not seem to be any of these in this file. By fixing these items, we can shorten sentences and improve the overall document.
+Other useful tools for shortening sentences in **Readability Studio** are the other pages in the **Grammar** section. Click on the **Grammar** icon on the project sidebar. Click on the [**Repeated Words**](#reviewing-repeated-words) page and note how the phrase “and and” is in the file (obviously a typo). Next, click on the [Redundant Phrases](#reviewing-redundant-phrases) page. Note how the phrase “mixed together” is redundant and the program is suggesting that it be replaced with “mixed.” A [Wordy Items](#reviewing-wordy-items) and [Clichés](#reviewing-cliches) page may also appear, but there do not seem to be any of these in this file. By fixing these items, we can shorten sentences and improve the overall document.
 
 Although there are not many difficult words in this file, it may be worthwhile to at least review them. Click on the **Words Breakdown** icon on the project sidebar. This will display various lists of difficult words. Select the **3+ syllable words** page and click on the **Syllable Count** column header twice to [sort](#column-sorting) the words into descending order. As illustrated below, there are a few words containing four syllables, which can be difficult for most readers.
 
@@ -147,13 +147,13 @@ To view these words in their original context, double-click on any word in this 
 
 ![](Images/difficultwordselected.png)
 
-You can click on any of the other pages to view other difficult words in their original context, such as 6+ character words or unfamiliar [Dale-Chall](#dale-chall-test) words.
+You can click on any of the other pages to view other difficult words in their original context, such as 6+ character words or unfamiliar [**Dale-Chall**](#dale-chall-test) words.
 
 To continue simplifying this recipe, we will replace some of these difficult words. Words such as “incorporate,” “consequently,” and “gradually” could also be replaced with shorter, simpler synonyms. As illustrated below, we have replaced a few words, such as substituting “incorporate” with “add” and “gradually” with “slowly.”
 
 ![](Images/NonGenerated/improvedwords.png)
 
-After we finish reworking the original document, we will want to analyze it again to see if it now meets our target audience. Rather than starting all over by making a new project, we will link this project directly to the recipe document. Whenever we open the project again, it will reanalyze the recipe document. To do this, click the **Properties** button on the **Home** tab to open the **Project Properties** dialog. Select the **Project Settings** icon and then select the option **Reload the source document when opening project**. Click the `r keyboardButton("OK")` button to accept.
+After we finish reworking the original document, we will want to analyze it again to see if it now meets our target audience. Rather than starting all over by making a new project, we will link this project directly to the recipe document. Whenever we open the project again, it will reanalyze the recipe document. To do this, click the `r keyboardButton("Properties")` button on the **Home** tab to open the **Project Properties** dialog. Select the **Project Settings** icon and then select the option **Reload the source document when opening project**. Click the `r keyboardButton("OK")` button to accept.
 
 ![](Images/linktofile.png)
 
@@ -171,7 +171,7 @@ You can click the **Reload** button at anytime to reanalyze the source document 
 
 In this example, we will create a project that reads and analyzes a webpage. Although you can save a webpage from your web browser and load the HTML file, **Readability Studio** can also directly connect to a webpage.
 
-First, click on the **New** button (on the **Home** tab). The **New Project Wizard** dialog will appear, as shown below:
+First, click on the `r keyboardButton("New")` button (on the **Home** tab). The **New Project Wizard** dialog will appear, as shown below:
 
 ![](Images/wizard1.png)
 
@@ -189,7 +189,7 @@ Now, go back to the project wizard and select **Read text from a file or webpage
 
 ![](Images/webpath.png)
 
-After specifying the URL, choose to analyze the page by document type and then select **Technical document**. Most webpages would fall under the category of either general or technical document. Because this page discusses the subject of the Linux operating system, we will select technical.
+After specifying the URL, choose to analyze the page by document type and then select **Technical document**. Most webpages would fall under the category of either general or technical document. Because this page discusses the subject of the GNU/Linux operating system, we will select technical.
 
 ![](Images/wizarddoctypetechselected.png)
 
@@ -199,13 +199,13 @@ Next, accept the rest of the defaults on the **New Project** wizard by clicking 
 
 Note how some text is highlighted gray. These are [incomplete sentences](#how-text-is-excluded), and because **Readability Studio**, by default, ignores incomplete sentences, nothing highlighted gray is factored into the analysis. That is, nothing highlighted gray here counts towards the overall sentence, paragraph, and word totals and are also not included in any readability test calculation. Aside from non-narrative forms, it is normally recommended to ignore incomplete sentences. This is especially true for webpages, because often HTML tables and lists are used on websites to display menus—items that are not normally part of the page's narrative.
 
-If you wish to include incomplete sentences in the analysis, click the **Properties** button on the **Home** tab to display the **Project Properties** dialog. Next, click the **Document Indexing** icon, and select the **Do not exclude any text** option.
+If you wish to include incomplete sentences in the analysis, click the `r keyboardButton("Properties")` button on the **Home** tab to display the **Project Properties** dialog. Next, click the **Document Indexing** icon, and select the **Do not exclude any text** option.
 
 ![](Images/excludeincompletesentences.png)
 
-Note that this option is also available on the [Options](#options-overview) dialog (from the **Tools** tab) if you wish to change this behavior for all future projects.
+Note that this option is also available on the [**Options**](#options-overview) dialog (from the **Tools** tab) if you wish to change this behavior for all future projects.
 
-One last item to discuss about loading a webpage is whether you want to reanalyze it later as it changes. By default, the project will directly link to the webpage, although you can change this to embed a “snapshot” of the page into the project. To toggle this behavior, click the **Properties** button on the **Home** tab to display the **Project Properties** dialog. Then click the **Project Settings** icon. Here, we can see that **Reload the source document when opening project** is selected.
+One last item to discuss about loading a webpage is whether you want to reanalyze it later as it changes. By default, the project will directly link to the webpage, although you can change this to embed a “snapshot” of the page into the project. To toggle this behavior, click the `r keyboardButton("Properties")` button on the **Home** tab to display the **Project Properties** dialog. Then click the **Project Settings** icon. Here, we can see that **Reload the source document when opening project** is selected.
 
 ![](Images/reloadwebpage.png)
 
@@ -241,7 +241,7 @@ If you are excluding [incomplete sentences](#how-text-is-excluded) (the default)
 
 ![](Images/NonGenerated/sentencewarning.png)
 
-Because this file contains numerous incomplete sentences, the program will ask you if excluding them is what you truly intend. In this case, these sentences are just list items that we should ignore, so select **No**.
+Because this file contains numerous incomplete sentences, the program will ask you if excluding them is what you truly intend. In this case, these sentences are just list items that we should ignore, so select **Continue excluding incomplete sentences**.
 
 Once the project is loaded, the readability scores will be presented. As we can see below, this document scores high within the collegiate range.
 
@@ -255,7 +255,7 @@ As we can see, there are some very long sentences in this document and they are 
 
 ![](Images/featuressentencelist.png)
 
-This list can be sorted alphabetically, by word count, or by location. To view any sentence in its original context, double-click on it. This will take you to the [Grammar](#reviewing-standard-grammar) section. In this window, all the overly-long sentences and wordy items are highlighted and each sentence is followed by its respective word count (in parentheses).
+This list can be sorted alphabetically, by word count, or by location. To view any sentence in its original context, double-click on it. This will take you to the [**Grammar**](#reviewing-standard-grammar) section. In this window, all the overly-long sentences and wordy items are highlighted and each sentence is followed by its respective word count (in parentheses).
 
 ![](Images/featuressentences.png)
 
@@ -287,35 +287,35 @@ Once the project has finished loading, select **Words Breakdown** on the sidebar
 
 ![](Images/ExampleGraphDefault.png)
 
-Now we will customize the appearance of this graph. One change that we can make is to reorder the columns in this bar chart. On the **Home** tab, click the **Sort** button under the **Edit** section. Select **Sort Descending** from the menu and note that the bars are now shown from largest to smallest from the origin:
+Now we will customize the appearance of this graph. One change that we can make is to reorder the columns in this bar chart. On the **Home** tab, click the `r keyboardButton("Sort")` button under the **Edit** section. Select **Sort Descending** from the menu and note that the bars are now shown from largest to smallest from the origin:
 
 ![](Images/ExampleGraphSorted.png)
 
-Next, let's change the background of the graph. On the **Home** tab, click the **Background** button under the **Edit** section. Select **Color...** from the menu. When the color selection dialog appears, select a new color (e.g., purple) and click `r keyboardButton("OK")`. After selecting your new color, check the option **Apply Fade** from this menu.
+Next, let's change the background of the graph. On the **Home** tab, click the `r keyboardButton("Background")` button under the **Edit** section. Select **Color...** from the menu. When the color selection dialog appears, select a new color (e.g., purple) and click `r keyboardButton("OK")`. After selecting your new color, check the option **Apply Fade** from this menu.
 
 Now the graph will have a purple background with a gradient effect:
 
 ![](Images/ExampleGraphBackgroundColorChanged.png)
 
-Next, click the **Background** button again and select **Image** from the menu. When the image selection dialog appears, choose an image and click `r keyboardButton("OK")`.
+Next, click the `r keyboardButton("Background")` button again and select **Image** from the menu. When the image selection dialog appears, choose an image and click `r keyboardButton("OK")`.
 
 Now this image will be shown as the background for your graphs:
 
 ![](Images/ExampleGraphBackgroundImageChangedTooOpaque.png)
 
-By default, the image will be shown fully opaque. For lighter images this will look fine, but darker images (like the one shown above) will make it difficult to read the graph. Click the **Background** button and select **Image Opacity...** from the menu. On the **Set Opacity** dialog, slide the opacity down to 100. Click `r keyboardButton("OK")`.
+By default, the image will be shown fully opaque. For lighter images this will look fine, but darker images (like the one shown above) will make it difficult to read the graph. Click the `r keyboardButton("Background")` button and select **Image Opacity...** from the menu. On the **Set Opacity** dialog, slide the opacity down to 100. Click `r keyboardButton("OK")`.
 
 Now this image will be translucent and the graph labels will be much easier to read:
 
 ![](Images/ExampleGraphBackgroundImageChanged.png)
 
-Next, we will want to apply a light color to the plot area. Click the **Background** button and select **Plot Area Color...** from the menu and select a new color. Then, select **Opacity...** from this menu and set it to 40. Click `r keyboardButton("OK")`.
+Next, we will want to apply a light color to the plot area. Click the `r keyboardButton("Background")` button and select **Plot Area Color...** from the menu and select a new color. Then, select **Opacity...** from this menu and set it to 40. Click `r keyboardButton("OK")`.
 
 Now the plot area of the graph will have a light blue applied to it:
 
 ![](Images/ExamplePlotBackgroundColorChanged.png)
 
-Next, let's put a [watermark](#watermark-and-logo) across our graph. Click the **Watermark** button in the **Edit** section. Enter the following into the **Watermark** dialog and click `r keyboardButton("OK")`:
+Next, let's put a [watermark](#watermark-and-logo) across our graph. Click the `r keyboardButton("Watermark")` button in the **Edit** section. Enter the following into the **Watermark** dialog and click `r keyboardButton("OK")`:
 
 > INTERNAL USE ONLY
 >
@@ -329,19 +329,19 @@ Note how this label is now lightly written across the graph:
 Entering “[DATE]” in the watermark will show the current date when the graph is rendered.
 ```
 
-Now let's put a company logo on our graph. Click the **Logo** button in the **Edit** section. Select an image and click `r keyboardButton("OK")`.
+Now let's put a company logo on our graph. Click the `r keyboardButton("Logo")` button in the **Edit** section. Select an image and click `r keyboardButton("OK")`.
 
 Now this image will be shown in the bottom right corner of the graph:
 
 ![](Images/ExampleLogoChanged.png)
 
-Next, we can change the direction of the bars. Click the **Orientation** button in the **Edit** section. Select **Vertical** from the menu.
+Next, we can change the direction of the bars. Click the `r keyboardButton("Orientation")` button in the **Edit** section. Select **Vertical** from the menu.
 
 Now the bars will be arranged vertically:
 
 ![](Images/ExampleBarChartOrientationChanged.png)
 
-Finally, let's change how the bars are drawn. Click the **Bar Style** button in the **Edit** section and select **Color fade, bottom to top**.
+Finally, let's change how the bars are drawn. Click the `r keyboardButton("Bar Style")` button in the **Edit** section and select **Color fade, bottom to top**.
 
 The bars will now have a fading color painted across them, rather than the default glassy look:
 

@@ -586,12 +586,15 @@ The **Fry graph** is designed for both primary and secondary-age reading materia
 knitr::include_graphics("Images/frygraph.png")
 ```
 
+```{block, type='onsamepage'}
 Note the following aspects of this graph:
 
 - Grade levels from 1 to 17+ are represented by bands along the middle. If a score falls within one of these bands, then that will be the document's grade level.
 - A curved line running through the middle of the grade-level bands. This represents the “smoothed mean of the sample passages. If you plot a large number of passages with a wide range, they will tend to fall somewhere near the line” (“Clarifications, Validity, and Extension” 243).
 - Shaded areas in the bottom-left and top-right corners. These represent the long-sentences and long-words regions, respectively. If a document's score falls into either of these regions, then one of these factors is making the document too difficult to fit into a grade level.
+```
 
+```{block, type='onsamepage'}
 The **Fry Graph** instructions are:
 
 - Extract a 100-word passage from the selection. If the material is long, take subsamples from the beginning, middle, and end.
@@ -600,6 +603,7 @@ The **Fry Graph** instructions are:
 - Find the point on the chart.
 - If the sample's syllable or sentence count is too low or high for it to be plotted, then adjust that factor so that it can fit onto the chart. For example, if a sample has 187 syllables per 100 words, then this will need to be adjusted to 182.
 - Repeat this process for each sample, and then average the samples.
+```
 
 This test is designed for 100-word samples, with 3 samples being recommended for best results. ([Normalization](#glossary) can also be used to analyze larger samples or entire documents.)
 

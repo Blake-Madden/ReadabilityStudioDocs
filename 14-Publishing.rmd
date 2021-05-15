@@ -168,7 +168,9 @@ To preview a window before printing it, select **Print Preview** from this menu:
 
 ![](Images/NonGenerated/printpreview.png)
 
-Note that this preview option is only available on Windows. On macOS, the preview option on the print dialog can be used for previewing.
+```{block, type='notesection'}
+The preview option is only available on Windows. On macOS, the preview option on the print dialog can be used for previewing.
+```
 
 ## Exporting Filtered Documents {-#filtering-export}
 

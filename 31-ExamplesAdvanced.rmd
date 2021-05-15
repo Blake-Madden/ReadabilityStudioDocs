@@ -134,4 +134,4 @@ Enter the name “4F” into the **Bundle Name** text field. Next, select the **
 
 Click the `r keyboardButton("OK")` button to accept.
 
-To use the bundle, first open any project. Next, select the **Readability** tab, click the **Bundles** button, and select **4F** from the menu. Now the program will replace all tests within the project with the tests from the “4F” bundle.
+To use the bundle, first open any project. Next, select the **Readability** tab, click the `r keyboardButton("Bundles")` button, and select **4F** from the menu. Now the program will replace all tests within the project with the tests from the “4F” bundle.
