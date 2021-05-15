@@ -6,7 +6,7 @@ In this chapter, we will step through some simple examples demonstrating how to 
 
 ## Analyzing a Book {-#book-example}
 
-In this example, we will analyze a literary novel to help determine which age group it is most appropriate for (in terms of readability, not content). The first step is to open the **New Project** wizard and choose the book. Click the **New** button on the **Home** tab to open the **New Project Wizard**. First, select **English** as the document language (if this option is available). Then, select the option **Read text from a file or webpage**. Click the button next to the file path field to browse for it:
+In this example, we will analyze a literary novel to help determine which age group it is most appropriate for (in terms of readability, not content). The first step is to open the **New Project** wizard and choose the book. Click the `r keyboardButton("New")` button on the **Home** tab to open the **New Project Wizard**. First, select **English** as the document language (if this option is available). Then, select the option **Read text from a file or webpage**. Click the button next to the file path field to browse for it:
 
 ![](Images/exampleselectfile.png)
 
@@ -14,7 +14,7 @@ In this example, we will analyze a literary novel to help determine which age gr
 The language option is only available in the **Language Pack** and **Professional** editions of **Readability Studio**.
 ```
 
-This will open the **Select Document to Analyze** dialog. Choose the file that you want to analyze and click the **Open** button to accept.
+This will open the **Select Document to Analyze** dialog. Choose the file that you want to analyze and click the `r keyboardButton("Open")` button to accept.
 
 You will then return to the **Document** page. Click the `r keyboardButton("Forward >")` button to proceed to the **Test Selection** dialog, as shown below:
 
@@ -26,7 +26,7 @@ Because this is a literary work, select the **Recommend tests based on document 
 
 Finally, click the `r keyboardButton("Finish")` button to begin analyzing the project.
 
-At this point we can review the test scores of the book (by clicking on the **Readability Scores** icon on the project sidebar) to help determine its reading level. As we can see below, Charles Dickens's A Christmas Carol appears to be readable for at least readers in the 10-13 age (or above) range. This implies that it may be too difficult for younger readers due to longer sentences and/or difficult words.
+At this point we can review the test scores of the book (by clicking on the **Readability Scores** icon on the project sidebar) to help determine its reading level. As we can see below, Charles Dickens's *A Christmas Carol* appears to be readable for at least readers in the 10-13 age (or above) range. This implies that it may be too difficult for younger readers due to longer sentences and/or difficult words.
 
 ![](Images/scores.png)
 
@@ -40,7 +40,7 @@ Now the words will be sorted by syllable count and then by frequency. As illustr
 
 If you are an educator assigning this book to your students, you can export the more difficult words to a report. You can hand this report out to your students and ask them to define these terms before reading the book. This will help prepare them for the book and make it easier and more enjoyable to read.
 
-To do this, click the **Save** button on the **Home** tab and use the **Save As...** dialog to save this list to either an HTML or text file. You can also do this with any of the other difficult word lists, such as the **Spache unfamiliar words** list. Refer to the [Improving Students' Vocabulary](#vocab-builder-example) example for further details.
+To do this, click the `r keyboardButton("Save")` button on the **Home** tab and use the **Save As...** dialog to save this list to either an HTML or text file. You can also do this with any of the other difficult word lists, such as the **Spache unfamiliar words** list. Refer to the [Improving Students' Vocabulary](#vocab-builder-example) example for further details.
 
 ## Improving Students' Vocabulary {-#vocab-builder-example}
 
@@ -50,7 +50,7 @@ Continuing from the [previous example](#book-example), select the top item in th
 
 ![](Images/difficultwords2.png)
 
-Now that you have selected the words that you want to save, click the **Save** button on the **Home** tab.
+Now that you have selected the words that you want to save, click the `r keyboardButton("Save")` button on the **Home** tab.
 
 A **Save As** dialog will appear and you will have the option to save as either HTML or text. Select where you want to save the file and click **Save**.
 
@@ -75,7 +75,7 @@ kableExtra::kbl(x=words, caption="Example of exported words",
 
 ## Analyzing a Work in Progress {-}
 
-In this example, we will analyze recipes that we are working on for a middle-school home economics class. Our target audience will be seventh-eighth graders and we will use **Readability Studio** to meet their reading level. The first step is to open the **New Project Wizard** and select the recipe file. Click the **New** button on the **Home** tab to open the **New Project Wizard**. Next, select **English** as the document language (if this option is available). Then, select the option **Read text from a file or webpage**. Click the button next to the file path field to browse for it:
+In this example, we will analyze recipes that we are working on for a middle-school home economics class. Our target audience will be seventh-eighth graders and we will use **Readability Studio** to meet their reading level. The first step is to open the **New Project Wizard** and select the recipe file. Click the `r keyboardButton("New")` button on the **Home** tab to open the **New Project Wizard**. Next, select **English** as the document language (if this option is available). Then, select the option **Read text from a file or webpage**. Click the button next to the file path field to browse for it:
 
 ![](Images/exampleselectfile.png)
 
@@ -83,10 +83,10 @@ In this example, we will analyze recipes that we are working on for a middle-sch
 The language option is only available in the **Language Pack** and **Professional** editions of **Readability Studio**.
 ```
 
-This will open the **Select Document to Analyze** dialog. Choose the file that you want to analyze and click the **Open** button to accept.
+This will open the **Select Document to Analyze** dialog. Choose the file that you want to analyze and click the `r keyboardButton("Open")` button to accept.
 
 ```{block, type='notesection'}
-The original and revised versions of this recipe are available from the **Example Documents** menu. From the **Help** tab, click the **Example Documents** button and then select either **Cocoa Desserts** or **Cocoa Desserts (Revised)** from the menu. When prompted about how to open the document, select **Create a new project**.
+The original and revised versions of this recipe are available from the **Example Documents** menu. From the **Help** tab, click the `r keyboardButton("Example Documents")` button and then select either **Cocoa Desserts** or **Cocoa Desserts (Revised)** from the menu. When prompted about how to open the document, select **Create a new project**.
 ```
 
 You will then return to the **Document** page. Click the `r keyboardButton("Forward >")` button to proceed to the **Document Structure** page, as shown below:
@@ -127,7 +127,7 @@ Long sentences can seem unfocused and difficult to read, and it is recommended t
 
 ![](Images/longsentenceselected.png)
 
-Now that we have found the difficult sentences, let us begin splitting them up so that they are easier to read. From the **Home** tab, click the **Edit Document** button to open the recipes file for editing. Find one of the long sentences and review it. For example, consider this sentence:
+Now that we have found the difficult sentences, let us begin splitting them up so that they are easier to read. From the **Home** tab, click the `r keyboardButton("Edit Document")` button to open the recipes file for editing. Find one of the long sentences and review it. For example, consider this sentence:
 
 ![](Images/NonGenerated/sentencetoimprove.png)
 
@@ -157,14 +157,14 @@ After we finish reworking the original document, we will want to analyze it agai
 
 ![](Images/linktofile.png)
 
-Click the **Reload** button on the **Home** tab.
+Click the `r keyboardButton("Reload")` button on the **Home** tab.
 
 The program will now reload the recipe document, meaning that all the improvements that we just made will be imported into the project. As we can see below, our grade level scores now meet our target audience and this recipe will be easier and more enjoyable to read for our home economics class.
 
 ![](Images/improvedscores.png)
 
 ```{block, type='tipsection'}
-You can click the **Reload** button at anytime to reanalyze the source document as you edit it externally. Also, whenever you open this project, it will automatically reload the source document (in this case the recipe file).
+You can click the `r keyboardButton("Reload")` button at anytime to reanalyze the source document as you edit it externally. Also, whenever you open this project, it will automatically reload the source document (in this case the recipe file).
 ```
 
 ## Analyzing a Webpage {-}
@@ -217,7 +217,7 @@ Note that webpages requiring authentication (i.e., requiring a user name and pas
 
 In this example, we will review a document for overly-long sentences. This example will demonstrate the available methods for defining an overly-long sentence. In addition, it will also demonstrate how to search for and review these sentences.
 
-The first step is to open the example file **Features**. From the **Help** tab, click the **Example Documents** button and then select **Features** from the menu. Next, when prompted about how to open the document, select **Create a new project**.
+The first step is to open the example file **Features**. From the **Help** tab, click the `r keyboardButton("Example Documents")` button and then select **Features** from the menu. Next, when prompted about how to open the document, select **Create a new project**.
 
 You will then be presented with the **New Project Wizard** dialog, as shown below:
 
@@ -259,7 +259,7 @@ This list can be sorted alphabetically, by word count, or by location. To view a
 
 ![](Images/featuressentences.png)
 
-By default, the program considers sentences overly long if they contain more than 22 words. As we can see, there are a few sentences that are barely over 22 words that are not problematic. However, there are a few clustered sentences which exceed 40 words. At this point, we will want to temporarily filter out the smaller of these long sentences and search for the “worst offenders.” From the **Home** tab, click the **Properties** button and then select **Analysis**. As shown below, we have a couple of different ways to determine if a sentence is overly long:
+By default, the program considers sentences overly long if they contain more than 22 words. As we can see, there are a few sentences that are barely over 22 words that are not problematic. However, there are a few clustered sentences which exceed 40 words. At this point, we will want to temporarily filter out the smaller of these long sentences and search for the “worst offenders.” From the **Home** tab, click the `r keyboardButton("Properties")` button and then select **Analysis**. As shown below, we have a couple of different ways to determine if a sentence is overly long:
 
 ![](Images/featuressentoptions.png)
 
@@ -267,7 +267,7 @@ The first option is to define a specific word count as the long sentence boundar
 
 ![](Images/featuressentences25.png)
 
-The second option is to consider sentences overly long if they are comparatively longer than the other sentences in the document. From the **Home** tab, click the **Properties** button and then select **Analysis**. Select the option **Outside sentence-length outlier range** and click the `r keyboardButton("OK")` button. At this point, the boundary for overly-long sentences will be calculated based on the outlier range of the sentence lengths. After reanalyzing the file, note how there are only two highlighted sentences. One sentence contains 45 words and the other 48 words. These are the two “worst offenders” and should be either reworded or split into small sentences.
+The second option is to consider sentences overly long if they are comparatively longer than the other sentences in the document. From the **Home** tab, click the `r keyboardButton("Properties")` button and then select **Analysis**. Select the option **Outside sentence-length outlier range** and click the `r keyboardButton("OK")` button. At this point, the boundary for overly-long sentences will be calculated based on the outlier range of the sentence lengths. After reanalyzing the file, note how there are only two highlighted sentences. One sentence contains 45 words and the other 48 words. These are the two “worst offenders” and should be either reworded or split into small sentences.
 
 ![](Images/featuressentencesoutliers.png)
 
@@ -281,7 +281,7 @@ This option is only recommended for situations where most of the sentences are a
 
 In this example, we will discuss the various ways to change the appearance of a graph.
 
-The first step is to open the example file **Chocolate Eclairs**. From the **Help** tab on the ribbon, click the **Example Documents** button and then select **Chocolate Eclairs** from the menu. (When prompted about how to open the document, select **Create a new project**.) When the **New Project Wizard** appears, leave the defaults and click `r keyboardButton("Finish")`.
+The first step is to open the example file **Chocolate Eclairs**. From the **Help** tab on the ribbon, click the `r keyboardButton("Example Documents")` button and then select **Chocolate Eclairs** from the menu. (When prompted about how to open the document, select **Create a new project**.) When the **New Project Wizard** appears, leave the defaults and click `r keyboardButton("Finish")`.
 
 Once the project has finished loading, select **Words Breakdown** on the sidebar, then click **Word Counts** beneath that. A bar chart showing a breakdown of word categories will be displayed:
 

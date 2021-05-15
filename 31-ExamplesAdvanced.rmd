@@ -6,13 +6,13 @@ In this chapter, we will step through how to exclude text from an analysis. Afte
 
 When reviewing a document, it is usually preferable to ignore certain items, such as headers and citations (refer to the [Text Exclusion](#how-text-is-excluded) topic for more information). In this example, we will discuss the various methods for excluding these items.
 
-The first step is to open the example file **Danielson-Bryan**. From the **Help** tab, click the **Example Documents** button and then select **Danielson-Bryan** from the menu. (When prompted about how to open the document, select **Create a new project**.) When the **New Project Wizard** appears, leave the defaults and click `r keyboardButton("Finish")`. A warning about an incomplete sentence being included because of its length will appear:
+The first step is to open the example file **Danielson-Bryan**. From the **Help** tab, click the `r keyboardButton("Example Documents")` button and then select **Danielson-Bryan** from the menu. (When prompted about how to open the document, select **Create a new project**.) When the **New Project Wizard** appears, leave the defaults and click `r keyboardButton("Finish")`. A warning about an incomplete sentence being included because of its length will appear:
 
 ![](Images/NonGenerated/ExclusionExampleIncompleteSentWarning.png)
 
 For now click `r keyboardButton("OK")`, we will review this sentence later in this example.
 
-Once the project is loaded, on the **Home** tab click the **Properties** button under the **Project** section. On the **Properties** dialog, click **Analysis** on the sidebar and select **Document Indexing**. Uncheck all the options shown below and click `r keyboardButton("OK")`:
+Once the project is loaded, on the **Home** tab click the `r keyboardButton("Properties")` button under the **Project** section. On the **Properties** dialog, click **Analysis** on the sidebar and select **Document Indexing**. Uncheck all the options shown below and click `r keyboardButton("OK")`:
 
 ![](Images/ExclusionExampleAllExcluded.png)
 
@@ -98,7 +98,7 @@ All the options discussed here are also available on the **Document** tab of the
 
 Continuing from the [previous example](#excluding-text-from-analysis), we will now discuss how to exclude specific blocks of text.
 
-The first step is to open the example file **Press Release**. From the **Help** tab, click the **Example Documents** button and then select **Press Release** from the menu. (When prompted about how to open the document, select **Create a new project**.) When the **New Project Wizard** appears, leave the defaults and click `r keyboardButton("Finish")`.
+The first step is to open the example file **Press Release**. From the **Help** tab, click the `r keyboardButton("Example Documents")` button and then select **Press Release** from the menu. (When prompted about how to open the document, select **Create a new project**.) When the **New Project Wizard** appears, leave the defaults and click `r keyboardButton("Finish")`.
 
 Once the project is loaded, click **Grammar** on the project's sidebar and then click **Highlighted Report**. In this window, any text that is being excluded will be highlighted gray. For example, an indented list is being excluded, as shown below:
 
@@ -124,7 +124,7 @@ All the options discussed here are also offered on the **Document** tab of the r
 
 ## Creating a Test Bundle {-}
 
-[Test bundles](#test-bundles) are a convenient way to add multiple tests to a project at once. In this example, we will create a test bundle named “4F” which includes the [**F**ry](#fry-test), [**F**ORCAST](#forcast-test), [**F**og](#gunning-fog-test), and [**F**lesch-Kincaid](#flesch-kincaid-test) tests. The first step is to select the **Readability** tab, click the **Bundles** button, and select **Add...** from the menu. This will open the **Add Test Bundle** dialog:
+[Test bundles](#test-bundles) are a convenient way to add multiple tests to a project at once. In this example, we will create a test bundle named “4F” which includes the [**F**ry](#fry-test), [**F**ORCAST](#forcast-test), [**F**og](#gunning-fog-test), and [**F**lesch-Kincaid](#flesch-kincaid-test) tests. The first step is to select the **Readability** tab, click the `r keyboardButton("Bundles")` button, and select **Add...** from the menu. This will open the **Add Test Bundle** dialog:
 
 ![](Images/TestBundle.png)
 

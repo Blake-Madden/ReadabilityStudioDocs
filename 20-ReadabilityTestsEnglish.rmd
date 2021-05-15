@@ -793,6 +793,7 @@ Where:
 | X   | Number of long words (7+ characters) |
 | S   | Number of sentences |
 
+```{block, type='onsamepage'}
 As a final note, Anderson contributed a grade-level conversion table for **Lix** index scores (Anderson 494) as follows:
 
 | Lix Score | Equivalent Grade Level |
@@ -810,6 +811,7 @@ As a final note, Anderson contributed a grade-level conversion table for **Lix**
 | 15-19 | 3   |
 | 10-14 | 2   |
 | Below 10 | 1   |
+```
 
 \newpage
 ## Modified SMOG {-#modified-smog}
@@ -859,6 +861,7 @@ newAriData <- tibble(" " = c("G", "W", "RP", "S"),
 
 kableExtra::kbl(newAriData, booktabs=T, centering=T, align='l',escape=F) %>%
   kableExtra::kable_classic(full_width=F) %>%
+  column_spec(2, width='8cm') %>%
   footnote(number = "Strokes are characters and punctuation (except for sentence-terminating punctuation).",
            threeparttable=T)
 ```
@@ -1214,9 +1217,9 @@ Stocker's Catholic supplement (87-89) is an extension to the [Dale-Chall](#dale-
 
 This list is used along with the **Dale-Chall** list and offers more accurate scoring with materials meant for Catholic schools.
 
-To view this list, select the **Readability** tab, click the **Word Lists** button, and select **Stocker's Catholic Supplement** from the menu.
+To view this list, select the **Readability** tab, click the `r keyboardButton("Word Lists")` button, and select **Stocker's Catholic Supplement** from the menu.
 
-To include this list as part of your **New Dale-Chall** scoring, select the **Tools** tab and click the **Options** button to display the [**Options**](#options-overview) dialog. Next, expand **Readability Scores**, select **Test Options**, and then check **Include Stocker's Catholic supplement**. After selecting this option, all **New Dale-Chall** tests performed in new projects will include this supplement.
+To include this list as part of your **New Dale-Chall** scoring, select the **Tools** tab and click the `r keyboardButton("Options")` button to display the [**Options**](#options-overview) dialog. Next, expand **Readability Scores**, select **Test Options**, and then check **Include Stocker's Catholic supplement**. After selecting this option, all **New Dale-Chall** tests performed in new projects will include this supplement.
 
 ^1^ The students involved in this study were “6,743 randomly selected Catholic fourth-graders attending 136 parochial schools throughout the country” (Stocker 87-88).
 

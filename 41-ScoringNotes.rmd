@@ -14,6 +14,7 @@ Finally, graphical tests (e.g., [Fry](#fry-test)) only return integral grade lev
 
 Grade-level scores are traditional displayed in U.S. (K-12+) format, be can be coverted to other scales. The following grade scales are available to choose from:
  
+ ```{block, type='onsamepage'}
 ### ![](Images/NonGenerated/usa.png) United States of America {-}
 
 |  ![](Images/NonGenerated/usa.png) **K-12+** |
@@ -24,7 +25,9 @@ Grade-level scores are traditional displayed in U.S. (K-12+) format, be can be c
 | College (grades 13-16) |
 | Graduate School (grades 17-18) |
 | Doctorate (grade 19+) |
+```
 
+```{block, type='onsamepage'}
 ### ![](Images/NonGenerated/gb.png) England and Wales {-}
 
 |  ![](Images/NonGenerated/gb.png) **Key Stages** |
@@ -37,6 +40,7 @@ Grade-level scores are traditional displayed in U.S. (K-12+) format, be can be c
 | College (4 years) |
 | Graduate School (2 years) |
 | Doctorate |
+```
 
 ### ![](Images/NonGenerated/ca.png) **Canada** {-}
 

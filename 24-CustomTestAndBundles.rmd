@@ -4,7 +4,7 @@
 
 Along with offering standard tests, such as [New Dale Chall](#dale-chall-test) and [Revised Spache](#spache-test), **Readability Studio** also includes the ability to create your own tests. Many customizable features are offered for new tests, such as being able to select your own familiar-word list and which formula to use.
 
-To create a custom test, go to the **Readability** tab, click the arrow beneath the **Custom Tests** button and select **Add Test...** from the menu. At this point, the **Add Custom Test** dialog will be displayed:
+To create a custom test, go to the **Readability** tab, click the arrow beneath the `r keyboardButton("Custom Tests")` button and select **Add Test...** from the menu. At this point, the **Add Custom Test** dialog will be displayed:
 
 ![](Images/AddCustomTest.png)
 
@@ -273,7 +273,7 @@ Table: Shortcuts
 
 ### General Settings {-#custom-test-general-settings}
 
-From the **Readability** tab, click the **Custom Test** button and then select **Add Test...** to display the **Add Custom Test** dialog. This dialog is used to edit or create a [custom test](#creating-custom-test).
+From the **Readability** tab, click the `r keyboardButton("Custom Test")` button and then select **Add Test...** to display the **Add Custom Test** dialog. This dialog is used to edit or create a [custom test](#creating-custom-test).
 
 **Test name**: If creating a new test, enter its name into this field.
 
@@ -372,7 +372,7 @@ This option is only available if you are including two or more word lists.
 
 ## Adding a Custom-word Test {-#add-custom-word-test}
 
-From the **Readability** tab, click the **Custom Test** button and then select **Add Custom [Test]...** to display the **Add Custom [Test]** dialog. The following tests available are: **New Dale-Chall**, **Spache Revised**, and **Harris-Jacobson**. This dialog is used to create a [custom word test](#creating-custom-test) and is a simplified version of the standard [Custom Test](#creating-custom-test) dialog.
+From the **Readability** tab, click the `r keyboardButton("Custom Test")` button and then select **Add Custom [Test]...** to display the **Add Custom [Test]** dialog. The following tests available are: **New Dale-Chall**, **Spache Revised**, and **Harris-Jacobson**. This dialog is used to create a [custom word test](#creating-custom-test) and is a simplified version of the standard [Custom Test](#creating-custom-test) dialog.
 
 **Test name**: Enter the name of the new test (e.g., “Harris-Jacobson (Social Studies)”) into this field.
 
@@ -395,8 +395,9 @@ videogame`
 
 Test bundles enable you to organize tests into collections that you can quickly add to a project. Rather than selecting numerous tests from the menus one-by-one, you can simply select a test bundle from the menu. From there, all tests within the bundle will be added to the project.
 
-To access the test bundles, select the **Readability** tab and click the **Bundles** button. A menu will appear which contains all the available bundles, as well as options to add, edit, and remove them.
+To access the test bundles, select the **Readability** tab and click the `r keyboardButton("Bundles")` button. A menu will appear which contains all the available bundles, as well as options to add, edit, and remove them.
 
+```{block, type='onsamepage'}
 By default, the industry and document-type bundles used in the [New Project](#creating-standard-project) Wizard will be available. This includes:
 
 - General document
@@ -411,6 +412,7 @@ By default, the industry and document-type bundles used in the [New Project](#cr
 - Military and government
 - Second language education
 - Broadcasting
+```
 
 More specific bundles based on research articles are also included, such as "Patient Consent Forms" and "Kincaid's Tests for Navy-Personnel Materials." (Some of these bundles may include goals, if recommended in the original article.)
 

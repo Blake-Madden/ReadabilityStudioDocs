@@ -4,7 +4,7 @@
 
 In this chapter, we will discuss how to get started by creating a new project.
 
-To begin, click the **New** button on the **Home** tab to display the **New Project** dialog. This dialog enables you to create either a [standard](#creating-standard-project) or [batch](#creating-batch-project) project. Note that batch projects are only available with **Professional Edition**.
+To begin, click the `r keyboardButton("New")` button on the **Home** tab to display the **New Project** dialog. This dialog enables you to create either a [standard](#creating-standard-project) or [batch](#creating-batch-project) project. Note that batch projects are only available with **Professional Edition**.
 
 **Standard project**: Select this option to create a standard project, which can analyze a file, a webpage, or typed text.
 
@@ -12,7 +12,7 @@ To begin, click the **New** button on the **Home** tab to display the **New Proj
 
 ## Standard Project {-#creating-standard-project}
 
-To determine a document's readability you will need to create a new project. First, click the **New** button on the **Home** tab to open the **New Project Wizard**. (If you are using the **Professional** edition, select **Standard Project** and click `r keyboardButton("OK")`). On the first page of the wizard, the options for specifying the document and its language will be shown:
+To determine a document's readability you will need to create a new project. First, click the `r keyboardButton("New")` button on the **Home** tab to open the **New Project Wizard**. (If you are using the **Professional** edition, select **Standard Project** and click `r keyboardButton("OK")`). On the first page of the wizard, the options for specifying the document and its language will be shown:
 
 ![](Images/wizard1.png)
 
@@ -74,7 +74,7 @@ From here, you can review the [readability scores](#reviewing-test-scores) and [
 
 ## Batch Projects {-#creating-batch-project}
 
-To determine the readability of a document collection, you will need to create a new batch project. First, click the **New** button on the **Home** tab to open the **Select Project Type** dialog, as shown below:
+To determine the readability of a document collection, you will need to create a new batch project. First, click the `r keyboardButton("New")` button on the **Home** tab to open the **Select Project Type** dialog, as shown below:
 
 ![](Images/selectprojecttype.png)
 

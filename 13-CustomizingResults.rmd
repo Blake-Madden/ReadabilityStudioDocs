@@ -26,7 +26,7 @@ Options for customizing its display are made available on the **Edit** section o
 
 ![](Images/RibbonEditStats.png)
 
-Click the **Edit Report** button to view the [Properties](#options-statistics) dialog. Here, you can specify which sections to include in your summary report.
+Click the `r keyboardButton("Edit Report")` button to view the [**Properties**](#options-statistics) dialog. Here, you can specify which sections to include in your summary report.
 
 ## Customizing the Highlighted Text Windows {-}
 

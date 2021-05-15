@@ -234,7 +234,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - Improved document indexing performance.
 - Improved detection of Unicode spaces and line separators when indexing sentences.
 - Improved detection of longer internet address.
-- Triangle bullet points (&#8227;) are now detected.
+- Triangle bullet points are now detected.
 - '@' can now be seen as a full word (or prefix/suffix of a word).
 - Improved detection of sentence endings when followed by a citation (e.g., “End of sentence.^17^ A new sentence.”).
 - Improved article-mismatch detection.
@@ -408,7 +408,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - Graph editing options are now available on the ribbon.
 - Added **Long Format** and **Grade Scale** options to the ribbon (when the score window is selected).
 - The font and highlighting of text windows can now be changed from the ribbon.
-- Export options are now located under the **Save** button (on the ribbon).
+- Export options are now located under the `r keyboardButton("Save")` button (on the ribbon).
 - **Start Page** is now integrated into the main window and can be accessed whenever there aren't any open projects.
 - Added **Review Program Options** to the **Start Page**.
 - **Start Page** now can show more files in its most-recently-used list.
