@@ -4,11 +4,11 @@
 
 Most readability tests that return a grade level include a mantissa (i.e., decimal value), which represents the month of the grade. For example, “1.6” would be the sixth month of first grade (Carver, “Measuring Readability Using DPR Units” 306-307). However, this only applies to tests that are computed from a mathematical formula (generally, a regression equation). Tests that use different methods—such as look-up tables or graphs—usually only return a grade level as an integer.
 
-For example, [New Dale-Chall](#dale-chall-test) looks up your unfamiliar word and sentence counts from a table and returns a grade range. This will yield results such as “7-8,” meaning that a document falls within the seventh to eighth grade reading level.
+For example, [**New Dale-Chall**](#dale-chall-test) looks up your unfamiliar word and sentence counts from a table and returns a grade range. This will yield results such as “7-8,” meaning that a document falls within the seventh to eighth grade reading level.
 
-[Lix](#lix-test) and [Rix](#rix-test) use a similar method. These tests calculate an index score and then look up the grade level from a table using this value.
+[**Lix**](#lix-test) and [**Rix**](#rix-test) use a similar method. These tests calculate an index score and then look up the grade level from a table using this value.
 
-Finally, graphical tests (e.g., [Fry](#fry-test)) only return integral grade levels because the “slices” on these graphs only represent the grade, not the grade and month.
+Finally, graphical tests (e.g., [**Fry**](#fry-test)) only return integral grade levels because the “slices” on these graphs only represent the grade, not the grade and month.
 
 ## Grade Scales {-#grade-scales}
 
@@ -17,7 +17,7 @@ Grade-level scores are traditional displayed in U.S. (K-12+) format, be can be c
  ```{block, type='onsamepage'}
 ### ![](Images/NonGenerated/usa.png) United States of America {-}
 
-|  ![](Images/NonGenerated/usa.png) **K-12+** |
+| **K-12+** |
 | :-- |
 | Kindergarten (grade 0) |
 | Grades 1-8 |
@@ -30,7 +30,7 @@ Grade-level scores are traditional displayed in U.S. (K-12+) format, be can be c
 ```{block, type='onsamepage'}
 ### ![](Images/NonGenerated/gb.png) England and Wales {-}
 
-|  ![](Images/NonGenerated/gb.png) **Key Stages** |
+| **Key Stages** |
 | :-- |
 | Key stage 1: Ages 5-7 (Years 1-2) |
 | Key stage 2: Ages 7-11 (Years 3-6) |
@@ -44,7 +44,7 @@ Grade-level scores are traditional displayed in U.S. (K-12+) format, be can be c
 
 ### ![](Images/NonGenerated/ca.png) **Canada** {-}
 
-|  ![](Images/NonGenerated/ca.png) **K-12+ (Alberta)** |
+| **K-12+ (Alberta)** |
 | :-- |
 | Elementary(Kindergarten-Grade 6) |
 | Junior High (Grade 7-9) |
@@ -53,7 +53,7 @@ Grade-level scores are traditional displayed in U.S. (K-12+) format, be can be c
 | Graduate School (grades 17-18) |
 | Doctorate (grade 19+) |
 
-|  ![](Images/NonGenerated/ca.png) **K-12+ (British Columbia)** |
+| **K-12+ (British Columbia)** |
 | :-- |
 | Elementary (Kindergarten-Grade 7) |
 | Junior Secondary (Grade 8-10) |
@@ -62,7 +62,7 @@ Grade-level scores are traditional displayed in U.S. (K-12+) format, be can be c
 | Graduate School (grades 17-18) |
 | Doctorate (grade 19+) |
 
-|  ![](Images/NonGenerated/ca.png) **K-12+ (Manitoba)** |
+| **K-12+ (Manitoba)** |
 | :-- |
 | Early (Kindergarten-Grade 4) |
 | Middle (Grade 5-8) |
@@ -71,7 +71,7 @@ Grade-level scores are traditional displayed in U.S. (K-12+) format, be can be c
 | Graduate School (grades 17-18) |
 | Doctorate (grade 19+) |
 
-|  ![](Images/NonGenerated/ca.png) **K-12+ (New Brunswick)** |
+| **K-12+ (New Brunswick)** |
 | :-- |
 | Elementary (Kindergarten-Grade 5) |
 | Middle School (Grade 6-8) |
@@ -80,7 +80,7 @@ Grade-level scores are traditional displayed in U.S. (K-12+) format, be can be c
 | Graduate School (grades 17-18) |
 | Doctorate (grade 19+) |
 
-|  ![](Images/NonGenerated/ca.png) **K-12+ (Newfoundland & Labrador)** |
+| **K-12+ (Newfoundland & Labrador)** |
 | :-- |
 | Kindergarten |
 | Primary (Grade 1-3) |
@@ -91,7 +91,7 @@ Grade-level scores are traditional displayed in U.S. (K-12+) format, be can be c
 | Graduate School (grades 17-18) |
 | Doctorate (grade 19+) |
 
-|  ![](Images/NonGenerated/ca.png) **K-12+ (Northwest Territories)** |
+| **K-12+ (Northwest Territories)** |
 | :-- |
 | Primary (Kindergarten-Grade 3) |
 | Intermediate (Grade 4-6) |
@@ -101,7 +101,7 @@ Grade-level scores are traditional displayed in U.S. (K-12+) format, be can be c
 | Graduate School (grades 17-18) |
 | Doctorate (grade 19+) |
 
-|  ![](Images/NonGenerated/ca.png) **K-12+ (Nova Scotia)** |
+| **K-12+ (Nova Scotia)** |
 | :-- |
 | Elementary (Primary-Grade 6) |
 | Junior High (Grade 7-9) |
@@ -110,7 +110,7 @@ Grade-level scores are traditional displayed in U.S. (K-12+) format, be can be c
 | Graduate School (grades 17-18) |
 | Doctorate (grade 19+) |
 
-|  ![](Images/NonGenerated/ca.png) **K-12+ (Nunavut)** |
+| **K-12+ (Nunavut)** |
 | :-- |
 | Kindergarten (grade 0) |
 | Grades 1-12 |
@@ -118,7 +118,7 @@ Grade-level scores are traditional displayed in U.S. (K-12+) format, be can be c
 | Graduate School (grades 17-18) |
 | Doctorate (grade 19+) |
 
-|  ![](Images/NonGenerated/ca.png) **K-12+ (Ontario)** |
+| **K-12+ (Ontario)** |
 | :-- |
 | Elementary (Grades 1-8) |
 | (Grade 9-12) |
@@ -126,7 +126,7 @@ Grade-level scores are traditional displayed in U.S. (K-12+) format, be can be c
 | Graduate School (grades 17-18) |
 | Doctorate (grade 19+) |
 
-|  ![](Images/NonGenerated/ca.png) **K-12+ (Prince Edward Island)** |
+| **K-12+ (Prince Edward Island)** |
 | :-- |
 | Kindergarten |
 | Elementary (Grade 1-6) |
@@ -136,7 +136,7 @@ Grade-level scores are traditional displayed in U.S. (K-12+) format, be can be c
 | Graduate School (grades 17-18) |
 | Doctorate (grade 19+) |
 
-|  ![](Images/NonGenerated/ca.png) **K-12+ (Saskatchewan)** |
+| **K-12+ (Saskatchewan)** |
 | :-- |
 | Kindergarten |
 | Elementary Level (Grade 1-5) |
@@ -146,7 +146,7 @@ Grade-level scores are traditional displayed in U.S. (K-12+) format, be can be c
 | Graduate School (grades 17-18) |
 | Doctorate (grade 19+) |
 
-|  ![](Images/NonGenerated/ca.png) **Quebec:** |
+| **Quebec:** |
 | :-- |
 | Maternelle (Kindergarten) |
 | École Primaire (Grades 1-6) |
