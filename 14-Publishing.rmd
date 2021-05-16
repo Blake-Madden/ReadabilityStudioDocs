@@ -236,21 +236,20 @@ asciiData <- tibble("Extended\nASCII Character" = c("ö", "ü", "ä", "ß", "ñ"
                                                     "›", "‘", "’", "`", "„",
                                                     "“", "”", "«", "»", "…",
                                                     "‒", "–", "—", "―", "©",
-                                                    "®", "™", "¼", "½", "¾",
+                                                    "®", ifelse(knitr::is_latex_output(), "\\textsuperscript{TM}", "<sup>TM</sup>"), "¼", "½", "¾",
                                                     "±", "", "", "", "" ),
-                    "Replacement " = c("y", "y", "·", "'", "'",
-                                       "'", "'", "'", "'", "\"",
-                                       "\"", "\"", "\"", "\"", "...",
-                                       "--", "--", "--", "--", "(c)",
+                    "Replacement " = c("y", "y", verbatim("·"), verbatim("'"), verbatim("'"),
+                                       verbatim("'"), verbatim("'"), verbatim("'"), verbatim("'"), verbatim("\""),
+                                       verbatim("\""), verbatim("\""), verbatim("\""), verbatim("\""), verbatim("..."),
+                                       verbatim("--"), verbatim("--"), verbatim("--"), verbatim("--"), "(c)",
                                        "(r)", "(tm)", "1/4", "1/2", "3/4",
-                                       "+-", "", "", "", "")) %>%
-  dplyr::mutate_all(verbatim)
+                                       "+-", "", "", "", ""))
 
 # add linebreaks in print
 if (knitr::is_latex_output())
   {  colnames(asciiData) %<>% kableExtra::linebreak(align='c') }
 
-kableExtra::kbl(asciiData, booktabs=T, centering=T, align='r',escape=F) %>%
+kableExtra::kbl(asciiData, booktabs=T, centering=T, align='r', escape=F) %>%
   kableExtra::kable_classic(full_width=F) %>%
   kableExtra::column_spec(2, border_right = T)
 ```
