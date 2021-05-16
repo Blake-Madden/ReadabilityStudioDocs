@@ -36,9 +36,9 @@ When [exporting](#exporting) a text window, the following export formats are ava
 
 **RTF**: A format that can be displayed in most word-processing programs.
 
-```{block, type='tipsection'}
+::: {.tipsection data-latex=""}
 If you plan to edit this output, then **RTF** is recommended. (Most word processors support editing this format.)
-```
+:::
 
 ## Image Export Options {-#image-export}
 
@@ -60,9 +60,9 @@ After selecting the image format, these additional options will be provided:
 
 **Height**: Enter the height of the exported image into this field.
 
-```{block, type='notesection'}
+::: {.notesection data-latex=""}
 When you change the width or height, the other measurement will be adjusted automatically to maintain the aspect ratio.
-```
+:::
 
 ### Color Mode {-}
 
@@ -168,9 +168,9 @@ To preview a window before printing it, select **Print Preview** from this menu:
 
 ![](Images/NonGenerated/printpreview.png)
 
-```{block, type='notesection'}
+::: {.notesection data-latex=""}
 The preview option is only available on Windows. On macOS, the preview option on the print dialog can be used for previewing.
-```
+:::
 
 ## Exporting Filtered Documents {-#filtering-export}
 
@@ -207,9 +207,9 @@ To do this, click on the **Home** tab of the ribbon, click on the arrow below th
 
 Finally, click `r keyboardButton("OK")` to save the file.
 
-```{block, type='tipsection'}
+::: {.tipsection data-latex=""}
 Which incomplete-sentence removal method used is controlled by your project's [text exclusion options](#options-text-exclusion).
-```
+:::
 
 ### Additional Filtering Options {-#additional-filtering-options}
 
@@ -233,10 +233,10 @@ asciiData <- tibble("Extended\nASCII Character" = c("ö", "ü", "ä", "ß", "ñ"
                                       "e", "e", "e", "i", "i",
                                       "i", "i", "o", "o", "o",
                                       "o", "o", "u", "u", "u"),
-                    "Extended\nASCII Character " = c("ý", "ÿ", "•", "‚", "‹",
+                    "Extended\nASCII Character " = c("ý", "ÿ", verbatim("•"), "‚", "‹",
                                                     "›", "‘", "’", "`", "„",
                                                     "“", "”", "«", "»", "…",
-                                                    "‒", "–", "—", "―", "©",
+                                                    verbatim("‒"), verbatim("–"), verbatim("—"), verbatim("―"), "©",
                                                     "®", trademark(), "¼", "½", "¾",
                                                     "±", "", "", "", "" ),
                     "Replacement " = c("y", "y", verbatim("·"), verbatim("'"), verbatim("'"),
