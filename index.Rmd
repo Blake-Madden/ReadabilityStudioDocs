@@ -26,7 +26,7 @@ library(tidyverse)
 library(magrittr)
 library(kableExtra)
 
-# Displays the macOS CMD button symbol (as a keyboard button).
+# @brief Displays the macOS CMD button symbol (as a keyboard button).
 macOSCmdButton <- function()
   {
   if (knitr::is_latex_output())
@@ -37,7 +37,7 @@ macOSCmdButton <- function()
     { knitr::asis_output(text) }
   }
 
-# Displays a label as a keyboard button.
+# @brief Displays a label as a keyboard button.
 keyboardButton <- function(label)
   {
   if (knitr::is_latex_output())
@@ -48,7 +48,7 @@ keyboardButton <- function(label)
     { knitr::asis_output(text) }
   }
 
-# Returns an indentation for a line of text.
+# @brief Returns an indentation to put in front of a line of text.
 indentation <- function()
   {
   if (knitr::is_latex_output())
@@ -57,6 +57,33 @@ indentation <- function()
     { knitr::asis_output("&nbsp;&nbsp;&nbsp;&nbsp;") }
   else
     { knitr::asis_output("") }
+  }
+
+# @brief Returns a trademark symbol.
+# @note The '™' symbol isn't available in fonts when building LaTeX sometimes,
+#       so this will construct our own version.
+trademark <- function()
+  {
+  if (knitr::is_latex_output())
+    { knitr::asis_output("\\textsuperscript{\\tiny TM}") }
+  else if (knitr::is_html_output())
+    { knitr::asis_output("<sup><small>TM</small></sup>") }
+  else
+    { knitr::asis_output("™") }
+  }
+
+# @brief Returns a less than or equal to symbol.
+# @note The '≤' symbol isn't available in fonts when building LaTeX sometimes,
+#       and epub struggles with Unicode characters like this as well,
+#       so this will use math (LaTeX) or "<=" (epub) to avoid this.
+lessThanOrEqualTo <- function()
+  {
+  if (knitr::is_latex_output())
+    { knitr::asis_output("$\\leq$") }
+  else if (knitr::is_html_output(excludes = c("epub")))
+    { knitr::asis_output("≤") }
+  else
+    { knitr::asis_output("<=") }
   }
 
 # Instructs the LaTeX system to write a string exactly as it appears.

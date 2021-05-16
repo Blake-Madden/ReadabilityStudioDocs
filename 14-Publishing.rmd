@@ -219,6 +219,7 @@ When exporting a filtered version of your document, the program will first remov
 
 ```{r, echo=F}
 library(tidyverse)
+library(magrittr)
 
 asciiData <- tibble("Extended\nASCII Character" = c("ö", "ü", "ä", "ß", "ñ",
                                                    "å", "æ", "œ", "à", "á",
@@ -236,7 +237,7 @@ asciiData <- tibble("Extended\nASCII Character" = c("ö", "ü", "ä", "ß", "ñ"
                                                     "›", "‘", "’", "`", "„",
                                                     "“", "”", "«", "»", "…",
                                                     "‒", "–", "—", "―", "©",
-                                                    "®", ifelse(knitr::is_latex_output(), "\\textsuperscript{TM}", "<sup>TM</sup>"), "¼", "½", "¾",
+                                                    "®", trademark(), "¼", "½", "¾",
                                                     "±", "", "", "", "" ),
                     "Replacement " = c("y", "y", verbatim("·"), verbatim("'"), verbatim("'"),
                                        verbatim("'"), verbatim("'"), verbatim("'"), verbatim("'"), verbatim("\""),
@@ -245,7 +246,7 @@ asciiData <- tibble("Extended\nASCII Character" = c("ö", "ü", "ä", "ß", "ñ"
                                        "(r)", "(tm)", "1/4", "1/2", "3/4",
                                        "+-", "", "", "", ""))
 
-# add linebreaks in print
+# add linebreaks to the coloumn headers for print
 if (knitr::is_latex_output())
   {  colnames(asciiData) %<>% kableExtra::linebreak(align='c') }
 
