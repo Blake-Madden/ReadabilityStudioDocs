@@ -1201,7 +1201,7 @@ Spache recommends not counting the same unfamiliar word more than once if it app
 \newpage
 ## Stocker's Catholic Supplement {-#stocker-catholic-supplement}
 
-Stocker's Catholic supplement (87-89) is an extension to the [Dale-Chall](#dale-chall-test) word list designed for Catholic students. Based on a 1971 study of 4^th^-grade Catholic students^1^, this list represents over 200 words (not on the standard **Dale-Chall** list) familiar to 80% of them.
+Stocker's Catholic supplement (87-89) is an extension to the [Dale-Chall](#dale-chall-test) word list designed for Catholic students. Based on a 1971 study of 4^th^-grade Catholic students[^Stocker], this list represents over 200 words (not on the standard **Dale-Chall** list) familiar to 80% of them.
 
 This list is used along with the **Dale-Chall** list and offers more accurate scoring with materials meant for Catholic schools.
 
@@ -1209,15 +1209,14 @@ To view this list, select the **Readability** tab, click the `r keyboardButton("
 
 To include this list as part of your **New Dale-Chall** scoring, select the **Tools** tab and click the `r keyboardButton("Options")` button to display the [**Options**](#options-overview) dialog. Next, expand **Readability Scores**, select **Test Options**, and then check **Include Stocker's Catholic supplement**. After selecting this option, all **New Dale-Chall** tests performed in new projects will include this supplement.
 
-<!-- Don't use markdown footnote because we just want this on the same page -->
-^1^ The students involved in this study were “6,743 randomly selected Catholic fourth-graders attending 136 parochial schools throughout the country” (Stocker 87-88).
+[^Stocker]: The students involved in this study were “6,743 randomly selected Catholic fourth-graders attending 136 parochial schools throughout the country” (Stocker 87-88).
 
 \newpage
 ## Wheeler-Smith {-#wheeler-smith}
 
 The **Wheeler-Smith** (397-399) test is designed for primary-age materials (Kindergarten to 4^th^ grade). This test calculates the grade level of a document based on [unit](#glossary) length and number of polysyllabic (2+ syllable) words. It should be noted that this differs from most other tests that use 3+ syllable words as a difficulty factor. The researchers selected 2+ syllable words because primary readers will have more difficulty with them than secondary and adult readers.
 
-Although not explicitly stated in the article, the authors' definition of “polysyllabic” as being 2+ syllable can be inferred from the example^1^ that they provided:
+Although not explicitly stated in the article, the authors' definition of “polysyllabic” as being 2+ syllable can be inferred from the example[^River] that they provided:
 
 > “The Woodsman saw the seven sisters come into their bedroom. He saw them put on the shoes in which they danced. He saw them put on their party dresses.  
 > When they were all dressed, the oldest sister opened a door in the floor near her bed.  
@@ -1262,4 +1261,4 @@ Then, find the index value in the following chart to acquire the final readabili
 | Third grade | 19.1 to 26.5 |
 | Fourth grade | 26.6 to 34.5 |
 
-^1^ This sample was taken from *Down Singing River*, Betts-Welch, American Book Company.
+[^River]: This sample was taken from *Down Singing River*, Betts-Welch, American Book Company.
