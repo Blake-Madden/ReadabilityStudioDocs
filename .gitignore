@@ -15,4 +15,5 @@ _raw/
 *.pdf
 .Rproj.user
 /_bookdown_files/
+/.vs/
 
