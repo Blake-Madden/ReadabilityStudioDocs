@@ -163,9 +163,9 @@ The program will now reload the recipe document, meaning that all the improvemen
 
 ![](Images/improvedscores.png)
 
-```{block, type='tipsection'}
-You can click the **Reload**` button at anytime to reanalyze the source document as you edit it externally. Also, whenever you open this project, it will automatically reload the source document (in this case the recipe file).
-```
+::: {.tipsection data-latex=""}
+You can click the `r keyboardButton("Reload")` button at anytime to reanalyze the source document as you edit it externally. Also, whenever you open this project, it will automatically reload the source document (in this case, the recipe file).
+:::
 
 ## Analyzing a Webpage {-}
 
