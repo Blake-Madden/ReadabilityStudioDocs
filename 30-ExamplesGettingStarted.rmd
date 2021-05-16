@@ -86,7 +86,7 @@ The language option is only available in the **Language Pack** and **Professiona
 This will open the **Select Document to Analyze** dialog. Choose the file that you want to analyze and click the `r keyboardButton("Open")` button to accept.
 
 ```{block, type='notesection'}
-The original and revised versions of this recipe are available from the **Example Documents** menu. From the **Help** tab, click the `r keyboardButton("Example Documents")` button and then select either **Cocoa Desserts** or **Cocoa Desserts (Revised)** from the menu. When prompted about how to open the document, select **Create a new project**.
+The original and revised versions of this recipe are available from the **Example Documents** menu. From the **Help** tab, click the **Example Documents** button and then select either **Cocoa Desserts** or **Cocoa Desserts (Revised)** from the menu. When prompted about how to open the document, select **Create a new project**.
 ```
 
 You will then return to the **Document** page. Click the `r keyboardButton("Forward >")` button to proceed to the **Document Structure** page, as shown below:
@@ -164,7 +164,7 @@ The program will now reload the recipe document, meaning that all the improvemen
 ![](Images/improvedscores.png)
 
 ```{block, type='tipsection'}
-You can click the `r keyboardButton("Reload")` button at anytime to reanalyze the source document as you edit it externally. Also, whenever you open this project, it will automatically reload the source document (in this case the recipe file).
+You can click the **Reload**` button at anytime to reanalyze the source document as you edit it externally. Also, whenever you open this project, it will automatically reload the source document (in this case the recipe file).
 ```
 
 ## Analyzing a Webpage {-}
