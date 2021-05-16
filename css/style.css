@@ -47,9 +47,28 @@
   font-weight: bold;  
 }
 
+.optionssection {
+  padding: 1em 1em 1em 1em;
+  display: inline-block;
+  position: relative;
+  color: black;
+  background: rgb(241,241,241);
+  border: 1px solid rgb(215,215,215);
+  width: 100%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.optionssection .optionssectiontitle {
+  background: rgb(215,215,215);
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 0em 1em 0em 1em;
+}
+
 /* prevents note sections from being split by a page break.*/
 @media print {
-.notesection, .tipsection, .warningsection {
+.notesection, .tipsection, .warningsection, .optionssection {
        break-inside: avoid-page;
        page-break-inside: avoid;
     }

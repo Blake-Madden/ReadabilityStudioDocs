@@ -52,7 +52,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % colors that can be used
-\definecolor{lightgray}{gray}{0.75}
+\definecolor{lightgray}{RGB}{215,215,215}
+\definecolor{ultralightgray}{RGB}{241,241,241}
 \definecolor{lightyellow}{RGB}{252,248,227}
 \definecolor{lightpink}{RGB}{255,207,219}
 \definecolor{lightblue}{RGB}{232,244,248}
@@ -83,6 +84,25 @@
     {
     \begin{tcolorbox}[colframe=lightgray,colback=lightpink,arc=3mm]
     \faLightbulb[regular] \textbf{{Warning} } \newline
+    }
+    {
+    \end{tcolorbox}
+    }
+
+% A light gray box for related program options (e.g., a radio button group, a combobox and its values, etc.).
+\newenvironment{optionssection}
+    {
+    \begin{tcolorbox}[colframe=lightgray,colback=ultralightgray,sharp corners=all,parbox=false]
+    }
+    {
+    \end{tcolorbox}
+    }
+
+% Title to add at the top of an optionssection.
+\newenvironment{optionssectiontitle}
+    {
+    \begin{tcolorbox}[colframe=lightgray,colback=lightgray]
+    \bfseries
     }
     {
     \end{tcolorbox}
