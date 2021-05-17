@@ -64,6 +64,7 @@ The following are informational messages shown interactively in the program:
 - Prompt about how background images will not be upscaled beyond their original size when zooming into a graph.
 - Prompt about how settings are embedded in projects and how to edit them.
 
+\newpage
 
 ## Project {-#project-settings}
 
@@ -91,15 +92,21 @@ The options on this page customize your general project settings.
 
 **Language**: Select from here the language of the document(s) that you will be analyzing. The language selected here will affect how syllables are counted and control which tests, word lists, and grammar features will be made available. For example, if Spanish is selected, then only Spanish tests will be available and the document will be analyzed using the Spanish syllable counter.
 
-Note that this feature is only available if either **Professional** or **Language Pack** features are licensed.
+::: {.notesection data-latex=""}
+This feature is only available if either **Professional** or **Language Pack** features are licensed.
+:::
 
-**Linking and embedding**
+:::: {.optionssection data-latex=""}
+::: {.optionssectiontitle data-latex=""}
+Linking and embedding
+:::
 
 **Embed the document's text into the project**: Select this option to save the source document's text directly into the project. When you open this project, it will not reanalyze your document. If your document has been edited, then those changes will not be reflected in this project.
 
 This is useful for analyzing a “snapshot” of your work. For example, you could analyze an early draft of your work and have it embedded in the project. As you edit your work, opening this project will still show the results from the original draft. From here, you can create a new project for your revised work and compare its results against your early draft.
 
 **Reload the document when opening project**: Select this option to reload and reanalyze the source document the next time you open the project. Note that the source document's content will not be stored in the project. If the document cannot be found, then only the results from the previous analysis will be shown.
+::::
 
 **Document description**: Enter into this field a description of the document. Note that for some file formats, the program will pre-fill this field with the document's subject or title information.
 
@@ -110,6 +117,8 @@ Enter into this field an additional document to append to the regular document. 
 Note that for batch projects, this document will be appended to each document in the batch.
 
 Also note that your original document is not affected by this process. The original and additional document are only combined within **Readability Studio** while it analyzes them.
+
+\newpage
 
 ## Document Indexing {-#document-analysis}
 
@@ -127,7 +136,12 @@ These sentences can be viewed in the [Grammar](#reviewing-standard-grammar) and 
 
 ### Sentence/Paragraph Deduction {-#options-sentence-deduction}
 
-**Line ends**: The following options control how line ends affect how paragraphs are counted.
+:::: {.optionssection data-latex=""}
+::: {.optionssectiontitle data-latex=""}
+Line ends
+:::
+
+The following options control how line ends affect how paragraphs are counted.
 
 **only begin a new paragraph if following a valid sentence**: Select this option to only consider a line feed as the end of the current sentence and paragraph if it follows a valid sentence. This option is recommended for text that is formatted to a specific width (e.g., scanned documents).
 
@@ -140,6 +154,7 @@ Both of these exceptions can be overridden by the options [**Ignore blank lines*
 **always begin a new paragraph**: Select this option to always consider line feeds in the text as the end of the current sentence and paragraph. This should only be used for special cases where a document does not have paragraph indenting and contains numerous lists or headers that are not followed by blank lines.
 
 Refer to [line chaining](#line-chaining) for more information about these options.
+::::
 
 **Ignore blank lines**: Select this option to not consider [incomplete sentences](#how-text-is-excluded) followed by blank lines as the end of the current sentence and paragraph. If an incomplete sentence is encountered, any blank lines after it will be skipped and the sentence will be merged with the following sentence.
 
@@ -147,27 +162,33 @@ This option is not recommended for documents that contain headers or lists that 
 
 **Ignore indenting**: Select this option to not consider indented lines following incomplete sentences as the start of a new paragraph. This option is recommended for documents that center or left align their text.
 
-```{block, type='notesection'}
+::: {.notesection data-latex=""}
 The options **Ignore blank lines** and **Ignore indenting** are disabled if **Line ends always begin a new paragraph** is selected. In this case, line feeds will always indicate the end of a paragraph, whether or not it is followed by blank or indented lines.
-```
+:::
 
 **Sentences must begin with capitalized words**: Select this option to have sentence deduction assume that all sentences begin with capitalized words. By default, **Readability Studio** takes into consideration writing that does not capitalize the first word of every sentence. To change this behavior, select this option and the program will be more grammatically strict when deducing sentences.
 
 ### Text Exclusion {-#options-text-exclusion}
 
-**Exclusion**: These options control how text is excluded from your documents.
+:::: {.optionssection data-latex=""}
+::: {.optionssectiontitle data-latex=""}
+Exclusion
+:::
+
+These options control how text is excluded from your documents.
 
 **Do not exclude any text**: Select this option to treat all incomplete sentences as regular sentences when calculating statistics. This is only recommended for forms that may contain numerous titles and lists items and little narrative text. Refer to the [Fragmented Text](#framented-text) topic for more information.
 
 **Exclude all incomplete sentences**: Select this option to ignore all incomplete sentences when calculating statistics. This option is recommended by most tests.
 
 **Exclude all incomplete sentences, except headings**: Select this option to ignore all tables and list items, but include headers and subheaders as full sentences.
+::::
 
 **Include incomplete sentences containing more than [15] words**: If a sentence is missing terminating punctuation (e.g., ‘.’ or ‘?’) then it will be considered [incomplete](#how-text-is-excluded). Lines of text missing this punctuation are generally headers or list items that should be excluded from the analysis. However, there are times when a legitimate sentence is simply missing this punctuation (due to writer or formatting error) and should be included in the analysis. To override this, enter into this field the maximum words that an incomplete sentence can have. Any sentence containing more than this number of words will be considered complete, even if its terminating punctuation is absent.
 
-```{block, type='notesection'}
+::: {.notesection data-latex=""}
 Lines of text that resemble equations will continue to be marked as incomplete. Also, if **Aggressively exclude** is enabled, then list items with more words than this threshold will also continue to be excluded.
-```
+:::
 
 Note that if you are not excluding any text, this option will still take effect for tests which explicitly exclude headers (e.g., **Harris-Jacobson**).
 
@@ -205,9 +226,9 @@ Near the end of the document, the final paragraphs will be more aggressively rev
 - “Textbooks and Cirricula”
 - “Works Cited”
 
-```{block, type='notesection'}
+::: {.notesection data-latex=""}
 The program will stop excluding text after a “References” header if it detects a paragraph that does not appear to be a citation. This is useful for when a references section is in the middle of a document, followed by other content.
-```
+:::
 
 **Also exclude Internet and file addresses**: Select this option to ignore URLs (i.e., Internet addresses) and filepaths. Note that this applies to words inside of complete sentences, not just incomplete. For example:
 
@@ -253,15 +274,21 @@ Note that these options are not available if **Do not exclude any text** is sele
 
 ### Numerals {-#numsyllable}
 
-**Syllabication**: The following options control how numeric words are syllabized.
+:::: {.optionssection data-latex=""}
+::: {.optionssectiontitle data-latex=""}
+Syllabication
+:::
+
+The following options control how numeric words are syllabized.
 
 **Numerals are one syllable**: Select this option to have the program consider numeric words (e.g., numbers, dates, phone numbers) as monosyllabic.
 
 **Sound out each digit**: Select this option to have the program sound out each digit when counting the syllables of numeric words. For example, the word “555-4778” will be considered nine syllables–read as “five-five-five-four-sev-en-sev-en-eight.” As another example, “$52” will be considered four syllables (read as “five-two-doll-ars”).
+::::
 
-```{block, type='notesection'}
+::: {.notesection data-latex=""}
 These options are not applicable if **Also exclude numerals** is checked.
-```
+:::
 
 ### Edit Word/Phrase List {-#edit-word-list-dialog}
 
@@ -276,6 +303,8 @@ After selecting your list file, its words/phrases will be displayed in the grid 
 - `r keyboardButton("CTRL")`+`r keyboardButton("INSERT")` (`r macOSCmdButton()`+`r keyboardButton("INSERT")` on macOS) —adds a new item to the list.
 
 **Add**, **Edit**, and **Remove** buttons are also available above the grid.
+
+\newpage
 
 ## Readability Scores {-#readability-test-options}
 
@@ -293,7 +322,12 @@ This option affects the **Gunning Fog**, **(PSK) Gunning Fog**, and **New Fog Co
 
 #### Flesch {-#options-flesch}
 
-**Numeral syllabication**: Select one of the following options to control how numerals are syllabized for **Flesch** related tests.
+:::: {.optionssection data-latex=""}
+::: {.optionssectiontitle data-latex=""}
+Numeral syllabication
+:::
+
+Select one of the following options to control how numerals are syllabized for **Flesch** related tests.
 
 **Count numerals as one syllable**: Select this option to consider all numerals as monosyllabic.
 
@@ -302,62 +336,87 @@ This option affects the **Gunning Fog**, **(PSK) Gunning Fog**, and **New Fog Co
 This option affects the **Flesch**, **PSK Flesch**, and **Amstad** tests.
 
 Note that these options are not applicable if [Also exclude numerals](#options-text-exclusion) is checked.
+::::
 
 #### Flesch-Kincaid {-#options-flesch-kincaid}
 
-**Numeral syllabication**: Select from the following options to control how numerals are syllabized for **Flesch-Kincaid**.
+:::: {.optionssection data-latex=""}
+::: {.optionssectiontitle data-latex=""}
+Numeral syllabication
+:::
+
+Select from the following options to control how numerals are syllabized for **Flesch-Kincaid**.
 
 **Sound out each digit**: Select this option to have the program sound out each digit when counting the syllables of numeric words. For example, the word “555-4778” will be considered nine syllables–read as “five-five-five-four-seven-seven-eight.”
 
 **System default**: Select this option to use the system default [numeral syllabication](#numsyllable) method.
 
 Note that these options are not applicable if [Also exclude numerals](#options-text-exclusion) is checked.
+::::
 
 #### Dale-Chall {-#options-dale-chall}
 
 **Include Catholic Supplement**: Check this option to include [Stocker's supplementary word list](#stocker-catholic-supplement) for Catholic students.
 
-**Proper nouns**: Select one of the following options to control how proper nouns are treated by **Dale-Chall** related tests:
+:::: {.optionssection data-latex=""}
+::: {.optionssectiontitle data-latex=""}
+Proper nouns
+:::
+
+Select one of the following options to control how proper nouns are treated by **Dale-Chall** related tests:
 
 **Count as unfamiliar**: Select this option to consider all proper nouns (that do not appear on the familiar-word list) as unfamiliar.
 
 **Count as familiar**: Select this option to consider all proper nouns as familiar.
 
 **First occurrence of each is unfamiliar**: Select this option to consider only the first occurrence of each proper noun (that does not appear on the familiar-word list) as unfamiliar.
+::::
 
-**Text exclusion**: Select one of the following options to control how text is excluded in **Dale-Chall** related tests:
+:::: {.optionssection data-latex=""}
+::: {.optionssectiontitle data-latex=""}
+Text exclusion
+:::
+
+Select one of the following options to control how text is excluded in **Dale-Chall** related tests:
 
 **Exclude incomplete sentences, except headings**: Select this option to have **New Dale-Chall** include headers and subheaders in its analysis, but exclude lists and tables.
 
 **Use system default**: Select this option to have **New Dale-Chall** use the [default text exclusion](#options-text-exclusion) method used by other tests.
+::::
 
-```{block, type='notesection'}
+::: {.notesection data-latex=""}
 These options affect both the **New Dale-Chall** and **PSK Dale-Chall** tests. The **text exclusion** option will also affect any custom test using the following functions:
 
 - `CustomNewDaleChall()`
 - `UnfamiliarDaleChallWordCount()`
 - `UniqueUnfamiliarDaleChallWordCount()`
 - `FamiliarDaleChallWordCount()`
-```
+:::
 
 #### Harris-Jacobson {-#options-harris-jacobson}
 
-**Text exclusion**: Select one of the following options to control how text is excluded in **Harris-Jacobson**:
+:::: {.optionssection data-latex=""}
+::: {.optionssectiontitle data-latex=""}
+Text exclusion
+:::
+
+Select one of the following options to control how text is excluded in **Harris-Jacobson**:
 
 **Exclude incomplete sentences, except headings**: Select this option to have **Harris-Jacobson** include headers and subheaders in its analysis, but exclude lists and tables.
 
 **Use system default**: Select this option to have **Harris-Jacobson** use the [default text exclusion](#options-text-exclusion) method used by other tests.
+::::
 
-```{block, type='notesection'}
+::: {.notesection data-latex=""}
 The **text exclusion** option will affect any custom test using the following functions:
 
 - `CustomHarrisJacobson()`
 - `UnfamiliarHarrisJacobsonWordCount()`
 - `UniqueUnfamiliarHarrisJacobsonWordCount()`
 - `FamiliarHarrisJacobsonWordCount()`
-```
+:::
 
-## Scores {-#options-scores}
+### Scores {-#options-scores}
 
 The options on this page customize which results to include in the **Readability Scores** section and how grade-level scores and reading ages are displayed. Most readability tests use U.S. K-12 (+college) grade levels to represent their scores; however, **Readability Studio** can display these scores in other formats as well. For example, a score of 4 could be shown as “Key stage 2 (year 5)” if using the **Key Stages** grade scale.
 
@@ -382,6 +441,11 @@ Refer to [Grade Scales](#grade-scales) for a list of available scales.
 
 #### Reading Age Display {-#reading-age}
 
+:::: {.optionssection data-latex=""}
+::: {.optionssectiontitle data-latex=""}
+Calculation
+:::
+
 Reading ages are included in the [Readability Scores](#reviewing-test-scores) section within **Standard** projects next to each grade level score. Although most tests do not include reading ages, the program can calculate them from the grade-level scores. The following options are available for customizing how these ages are calculated from their respective grade-level score:
 
 **School-year range**: Select this option to display the full age range from a given grade level. For example, if a test scores at “5.3” (fifth grade), then the age range for fifth graders (i.e., “10-11”) will be used.
@@ -391,8 +455,9 @@ Note that when calculating the reading-age aggregate statistics (e.g., the avera
 **Round to semester**: Select this option to calculate a reading age from a grade level by rounding the grade level. For example, a grade level score of “5.3” will be seen as the first semester of fifth grade and the starting age of most fifth graders (i.e., “10”) will be used as the reading age. As another example, a grade level score of “5.6” will be seen as the second semester of fifth grade and the graduating age of most fifth graders (i.e., “11”) will be used as the reading age.
 
 Note that reading ages do not contain floating-point precision, even if their respective grade-level scores do. This is because students' ages within the same grade can widely vary; therefore, a grade-level score's [mantissa](#grade-level-results) cannot accurately be carried over to a group's reading age. A grade-level score can homogeneously represent a group of students in the same grade; however, a reading age must be more generalized to accurately apply to the same group (whose ages differ).
+::::
 
-## Readability Graphs {-#options-readability-graphs}
+### Readability Graphs {-#options-readability-graphs}
 
 The options on this page customize various readability graph settings.
 
@@ -407,6 +472,8 @@ The options on this page customize various readability graph settings.
 #### Lix Gauge {-#options-lix-gauge}
 
 **Use English translations for German Lix gauge**: Check this to display Schulz’s (53) English translated bracket labels on the [German Lix](#lix-german-technical) gauge.
+
+\newpage
 
 ## Statistics {-#options-statistics}
 
@@ -442,6 +509,8 @@ The options on this page customize which statistics to include in your reports a
 
 **Explanation**: Check this to include the **Dolch** explanation in the report.
 
+\newpage
+
 ## Words Breakdown {-#options-words-breakdown}
 
 The options on this page customize which results are included in the [Words Breakdown](#reviewing-word-breakdowns) section.
@@ -468,6 +537,8 @@ The options on this page customize which results are included in the [Words Brea
 
 **All Words (Condensed)**: Check this to include a list of all words (in condensed form) in the results. Words with the same root (e.g., “run” and “running”) will be combined into one row.
 
+\newpage
+
 ## Sentences Breakdown {-#options-sentences-breakdown}
 
 The options on this page customize which results are included in the [Sentences Breakdown](#reviewing-sentences-breakdown) section.
@@ -481,6 +552,8 @@ The options on this page customize which results are included in the [Sentences 
 **Lengths (Distribution)**: Check this to include a sentence-lengths histogram in the results.
 
 **Lengths (Density)**: Check this to include a sentence-lengths [heatmap](#reviewing-sentences-breakdown) in the results.
+
+\newpage
 
 ## Grammar {-#options-grammar}
 
@@ -544,6 +617,8 @@ Checking this option will instruct the program to not consider words such as “
 
 **Ignore social media hashtags**: Check this to ignore hashtags, such as “#ReadabilityFormulasRock”.
 
+\newpage
+
 ## Highlighted Reports {-#options-highlighted-reports}
 
 ### General {-}
@@ -564,13 +639,19 @@ The options on this page customize the display of the text views.
 
 **Wordy items color**: Click this button to select the color to highlight wordy phrases and difficult words. This highlighting will appear in the **Grammar** document view.
 
-**Highlight text by changing its**:
+:::: {.optionssection data-latex=""}
+::: {.optionssectiontitle data-latex=""}
+Highlight text by changing its
+:::
 
 **Background color**: Select this option to highlight text by changing its background color.
 
 **Font color**: Select this option to highlight text by changing its foreground (font) color.
+::::
 
-## Dolch Sight Words {-#dolch-options}
+\newpage
+
+### Dolch Sight Words {-#dolch-options}
 
 The options on this page select which categories of [Dolch](#reviewing-dolch) words to highlight and how to highlight them.
 
@@ -589,6 +670,8 @@ The options on this page select which categories of [Dolch](#reviewing-dolch) wo
 **Dolch verbs color**: Select this checkbox to highlight **Dolch** verbs in the **Dolch** text window. Click the adjacent button to select the color to highlight these words.
 
 **Dolch nouns color**: Select this checkbox to highlight **Dolch** nouns in the **Dolch** text window. Click the adjacent button to select the color to highlight these words.
+
+\newpage
 
 ## Test Graphs {-#options-graphs}
 
@@ -658,7 +741,7 @@ The options on this page customize the title fonts of your graphs.
 
 **Right titles**: Click this button to select the font for the right title in your graphs.
 
-## Bar Charts {-#options-bar-charts}
+### Bar Charts {-#options-bar-charts}
 
 The options on this page customize your bar charts' settings.
 
@@ -666,7 +749,10 @@ The options on this page customize your bar charts' settings.
 
 **Color**: Click this button to select the color used for your bars.
 
-##### Effect {-}
+:::: {.optionssection data-latex=""}
+::: {.optionssectiontitle data-latex=""}
+Effect
+:::
 
 **Solid**: Select this option to use a solid color for your bars.
 
@@ -677,18 +763,23 @@ The options on this page customize your bar charts' settings.
 **Color fade, top to bottom**: Select this option to apply a color fade across your bars (starting from the top).
 
 **Custom image brush**: Select this option to draw a stack of images across your bars. The image for this brush is specified on the [**General**](#options-graphs) page.
+::::
 
 **Opacity**: Sets the transparency of the bars. A value of 255 will set the bars to be fully opaque, whereas 0 will set the bars to be transparent.
 
-##### Orientation {-}
+:::: {.optionssection data-latex=""}
+::: {.optionssectiontitle data-latex=""}
+Orientation
+:::
 
 **Horizontal**: Select this option to display the bars horizontally.
 
 **Vertical**: Select this option to display the bars vertically.
+::::
 
 **Display labels on bars**: Check this to display labels on the bars.
 
-## Histograms {-#options-histograms}
+### Histograms {-#options-histograms}
 
 The options on this page customize the test score histograms included in [batch projects](#creating-batch-project) and the **Syllable Counts** in [standard projects](#creating-standard-project).
 
@@ -696,7 +787,10 @@ The options on this page customize the test score histograms included in [batch 
 
 **Color**: Click this button to select the color used for your bars.
 
-##### Effect {-}
+:::: {.optionssection data-latex=""}
+::: {.optionssectiontitle data-latex=""}
+Effect
+:::
 
 **Solid**: Select this option to use a solid color for your bars.
 
@@ -707,6 +801,7 @@ The options on this page customize the test score histograms included in [batch 
 **Color fade, top to bottom**: Select this option to apply a color fade across your bars (starting from the top).
 
 **Custom image brush**: Select this option to draw a stack of images across your bars. The image for this brush is specified on the [General](#options-graphs) page.
+::::
 
 **Opacity**: Sets the transparency of the bars. A value of 255 will set the bars to be fully opaque, whereas 0 will set the bars to be transparent.
 
@@ -714,7 +809,10 @@ The options on this page customize the test score histograms included in [batch 
 
 Bin sorting refers to how values (e.g., index and grade scores) are categorized into separate classes. Each class (or bin) is displayed on a histogram as a bar. The options listed here control how these bins are created and how your data are sorted into them.
 
-##### Sorting {-}
+:::: {.optionssection data-latex=""}
+::: {.optionssectiontitle data-latex=""}
+Sorting
+:::
 
 **Create a bin for each unique value**: Select this option to create a bin (i.e., a bar) for every unique value. If you have floating-point grade scores and are not rounding your values, then a bin for every unique floating-point value will be created. If you select this option, then it is recommended to set the rounding option to **Round down**.
 
@@ -725,25 +823,42 @@ Bin sorting refers to how values (e.g., index and grade scores) are categorized 
 Note that if you are not rounding down your values, then scores with no mantissa (fractional part) may fall into a bin different from the same values with fractional parts. For example, if you have a bin ranging from 1-2 and another ranging from 2-3, then the first bin represents values > 1 and `r lessThanOrEqualTo()` 2, and the second bin represents values > 2 and `r lessThanOrEqualTo()` 3. If you are not rounding down your scores, then a score of 2 will fall into the 1-2 bin, whereas a score of 2.1 will fall into the 2-3 bin. If you select this option, then it is recommended to set the rounding option to **Round down**. This will ensure that values such as 2 and 2.1 fall into the same bin.
 
 Also note that if data for a particular histogram contain four or less unique values, then unique value binning will be used.
+::::
 
-**Grade level/index value rounding**: This option controls how [floating-point](#grade-level-results) values are rounded when being sorted into bins. You may choose from the following options:
+:::: {.optionssection data-latex=""}
+::: {.optionssectiontitle data-latex=""}
+Grade level/index value rounding
+:::
 
-- **Round**: Select this option to round grade-level scores up or down (based on their fractional part) when sorting them into the histogram's bins. Values such as 4 and 4.3 will be sorted as 4, whereas 4.5 and 4.9 will be sorted as 5.
-- **Round down**: Select this option to round grade-level scores down when sorting them into the histogram's bins. Values such as 4, 4.3, and 4.9 will be sorted as 4. This selection is recommended.
-- **Round up**: Select this option to round grade-level scores up when sorting them into the histogram's bins. Values such as 4 will be sorted as 4, whereas 4.1, 4.3, and 4.9 will be sorted as 5. This selection is not recommended and should only be used for special cases.
-- **Do not round**: Select this option to not round any grade-level scores. Scores will be sorted into the bins exactly as they appear with their fractional parts. This selection is not recommended and should only be used for special cases.
+This option controls how [floating-point](#grade-level-results) values are rounded when being sorted into bins. You may choose from the following options:
+
+**Round**: Select this option to round grade-level scores up or down (based on their fractional part) when sorting them into the histogram's bins. Values such as 4 and 4.3 will be sorted as 4, whereas 4.5 and 4.9 will be sorted as 5.
+
+**Round down**: Select this option to round grade-level scores down when sorting them into the histogram's bins. Values such as 4, 4.3, and 4.9 will be sorted as 4. This selection is recommended.
+
+**Round up**: Select this option to round grade-level scores up when sorting them into the histogram's bins. Values such as 4 will be sorted as 4, whereas 4.1, 4.3, and 4.9 will be sorted as 5. This selection is not recommended and should only be used for special cases.
+
+**Do not round**: Select this option to not round any grade-level scores. Scores will be sorted into the bins exactly as they appear with their fractional parts. This selection is not recommended and should only be used for special cases.
+::::
 
 #### Bin Display {-}
 
 These options control the display of the axis labels, bar labels, and side title of the histogram.
 
-##### Interval Display {-}
+:::: {.optionssection data-latex=""}
+::: {.optionssectiontitle data-latex=""}
+Interval Display
+:::
 
 **Cutpoints**: Select this option to display the axis bin intervals on the sides of the bars. The label on the left side of a bar will be the ending value of the previous bin. The label on the right side of the bar will be the end of the current bin.
 
 **Midpoints**: Select this option to display the axis bin intervals centered under the bars. For neat intervals, the label will be the range of the bin; otherwise, it will be the midpoint. This option is recommended if using neat intervals because it may be easier to interpret.
+::::
 
-##### Labels {-}
+:::: {.optionssection data-latex=""}
+::: {.optionssectiontitle data-latex=""}
+Labels
+:::
 
 **Counts**: Select this option to display the number of items in the bin as its label. This label will appear at the top of each bar.
 
@@ -752,8 +867,9 @@ These options control the display of the axis labels, bar labels, and side title
 **Counts & percentages**: Select this option to display the number of items and percentage of items that fall into the bin as its label. This label will appear at the top of each bar.
 
 **No labels**: Select this option to not display bin labels.
+::::
 
-## Box Plots {-#options-box-plots}
+### Box Plots {-#options-box-plots}
 
 The options on this page customize the test-score box plots included in [batch projects](#creating-batch-project) and the **Sentence Lengths** box plot in [standard projects](#creating-standard-project).
 
@@ -761,7 +877,10 @@ The options on this page customize the test-score box plots included in [batch p
 
 **Color**: Click this button to select the color used for the boxes.
 
-##### Effect {-}
+:::: {.optionssection data-latex=""}
+::: {.optionssectiontitle data-latex=""}
+Effect
+:::
 
 **Solid**: Select this option to use a solid color for your boxes.
 
@@ -771,7 +890,8 @@ The options on this page customize the test-score box plots included in [batch p
 
 **Color fade, right to left**: Select this option to apply a color fade across your boxes (starting from the right).
 
-**Custom image brush**: Select this option to draw a stack of images across your boxes. The image for this brush is specified on the [General](#options-graphs) page.
+**Custom image brush**: Select this option to draw a stack of images across your boxes. The image for this brush is specified on the [**General**](#options-graphs) page.
+::::
 
 **Opacity**: Sets the transparency of the box. A value of 255 will set the box to be fully opaque, whereas 0 will set the box to be transparent.
 

@@ -352,13 +352,17 @@ This option is only available if you are including two or more word lists.
 
 #### Proper Nouns {-}
 
-**Familiarity**:
+:::: {.optionssection data-latex=""}
+::: {.optionssectiontitle data-latex=""}
+Familiarity
+:::
 
 **Count as unfamiliar**: Select this option to consider all proper nouns (that do not appear on any familiar-word list) as unfamiliar.
 
 **Count as familiar**: Select this option to consider all proper nouns as familiar.
 
 **Count only first occurrence of each as unfamiliar**: Select this option to consider only the first occurrence of each proper noun (that does not appear on any familiar-word list) as unfamiliar.
+::::
 
 #### Numerals {-}
 
