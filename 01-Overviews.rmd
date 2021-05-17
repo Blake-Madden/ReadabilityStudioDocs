@@ -94,9 +94,9 @@ Another important feature is that the program analyzes the entire content of you
 
 Finally, the **Professional** edition of **Readability Studio** offers multiple-document analysis. The program can analyze hundreds (or even thousands) of documents at once and aggregate their results. This includes all readability scores, difficult word and sentence statistics, and grammar issues. You can also “drill down” into a specific document to review it in deeper detail.
 
-```{block, type='notesection'}
+::: {.notesection data-latex=""}
 Spanish and German tests are only available in the **Professional** edition, or if you have the **Language Pack** feature licensed.
-```
+:::
 
 #### Helpful assistance for test selection {-}
 

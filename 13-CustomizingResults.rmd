@@ -82,6 +82,6 @@ After creating or opening a project, you can customize how the program analyzes 
 
 ![](Images/RibbonEditDocumentOptions.png)
 
-```{block, type='tipsection'}
+::: {.tipsection data-latex=""}
 With a standard project, you can review these changes in realtime by selecting any highlighted text window in the [Words Breakdown](#reviewing-word-breakdowns) or [Grammar](#reviewing-standard-grammar) sections. As you make changes, the program will reanalyze your document and these changes will be visible in this window. For example, changing how words are being excluded or how sentence endings are deduced will become apparent as you make changes from the ribbon.
-```
+:::

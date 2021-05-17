@@ -10,9 +10,9 @@ In this example, we will analyze a literary novel to help determine which age gr
 
 ![](Images/exampleselectfile.png)
 
-```{block, type='notesection'}
+::: {.notesection data-latex=""}
 The language option is only available in the **Language Pack** and **Professional** editions of **Readability Studio**.
-```
+:::
 
 This will open the **Select Document to Analyze** dialog. Choose the file that you want to analyze and click the `r keyboardButton("Open")` button to accept.
 
@@ -79,15 +79,15 @@ In this example, we will analyze recipes that we are working on for a middle-sch
 
 ![](Images/exampleselectfile.png)
 
-```{block, type='notesection'}
+::: {.notesection data-latex=""}
 The language option is only available in the **Language Pack** and **Professional** editions of **Readability Studio**.
-```
+:::
 
 This will open the **Select Document to Analyze** dialog. Choose the file that you want to analyze and click the `r keyboardButton("Open")` button to accept.
 
-```{block, type='notesection'}
-The original and revised versions of this recipe are available from the **Example Documents** menu. From the **Help** tab, click the **Example Documents** button and then select either **Cocoa Desserts** or **Cocoa Desserts (Revised)** from the menu. When prompted about how to open the document, select **Create a new project**.
-```
+::: {.notesection data-latex=""}
+The original and revised versions of this recipe are available from the **Example Documents** menu. From the **Help** tab, click the `r keyboardButton("Example Documents")` button and then select either **Cocoa Desserts** or **Cocoa Desserts (Revised)** from the menu. When prompted about how to open the document, select **Create a new project**.
+:::
 
 You will then return to the **Document** page. Click the `r keyboardButton("Forward >")` button to proceed to the **Document Structure** page, as shown below:
 
@@ -177,9 +177,9 @@ First, click on the `r keyboardButton("New")` button (on the **Home** tab). The 
 
 First, select **English** as the document language.
 
-```{block, type='notesection'}
+::: {.notesection data-latex=""}
 The language option is only available in the **Language Pack** and **Professional** editions of **Readability Studio**.
-```
+:::
 
 Next, open any web browser, go to the webpage, and copy its URL (i.e., address) onto the clipboard.
 
@@ -227,9 +227,9 @@ Select **English** as the document language (if this option is available) and cl
 
 ![](Images/wizardreadabilitymethods.png)
 
-```{block, type='notesection'}
+::: {.notesection data-latex=""}
 The language option is only available in the **Language Pack** and **Professional** editions of **Readability Studio**.
-```
+:::
 
 Select the **Recommend tests based on document type** and select the **Technical document** option, as shown below:
 
@@ -325,9 +325,9 @@ Note how this label is now lightly written across the graph:
 
 ![](Images/ExampleWatermarkChanged.png)
 
-```{block, type='tipsection'}
+::: {.tipsection data-latex=""}
 Entering “[DATE]” in the watermark will show the current date when the graph is rendered.
-```
+:::
 
 Now let's put a company logo on our graph. Click the `r keyboardButton("Logo")` button in the **Edit** section. Select an image and click `r keyboardButton("OK")`.
 

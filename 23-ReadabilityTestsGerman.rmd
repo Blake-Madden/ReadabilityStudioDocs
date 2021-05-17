@@ -34,9 +34,9 @@ Amstad offered these interpretations for scoring:
 | 30-49 | Difficult | academic |
 | 0-29 | Very difficult | scientific |
 
-```{block, type='notesection'}
+::: {.notesection data-latex=""}
 Like **Flesch Reading Ease**, this test treats numerals as monosyllabic words by default. This behavior can be changed from the [**Readability Options**](#readability-test-options) dialog.
-```
+:::
 
 \newpage
 ## Lix {-#lix-german}
@@ -221,9 +221,9 @@ kableExtra::kbl(quadData, booktabs=T, centering=T, align='l', escape=F) %>%
            escape=F, threeparttable=T)
 ```
 
-```{block, type='notesection'}
+::: {.notesection data-latex=""}
 Based on the examples from **Bamberger-Vanecek** (78), the grade-level score should be truncated to one-point precision, not rounded.
-```
+:::
 
 \newpage
 ## Rix {-#rix-german}
@@ -329,9 +329,9 @@ kableExtra::kbl(smogBVData, booktabs=T, centering=T, align='l', escape=F) %>%
 
 This test requires a 10-sentence sample, with 3 samples being recommended for best results. ([Normalization](#glossary) can also be used to analyze larger samples or entire documents.)
 
-```{block, type='notesection'}
+::: {.notesection data-latex=""}
 Based on the examples from **Bamberger-Vanecek** (78), the grade-level score should be truncated to one-point precision, not rounded.
-```
+:::
 
 \newpage
 ## Wheeler-Smith (Bamberger-Vanecek) {-#wheeler-smith-bamberger-vanecek}
@@ -374,8 +374,8 @@ Then, find the index value in the following chart to acquire the final readabili
 | Ninth grade | 34.1 to 38 |
 | Tenth grade | 38.1 to 42 |
 
-```{block, type='notesection'}
+::: {.notesection data-latex=""}
 Although **Bamberger-Vanecek** (77, 186) does not specify using units instead of sentences, the use of units is assumed to match **Wheeler-Smith**.
 
 Based on the examples from **Bamberger-Vanecek** (77, 186), index values should be truncated to one-point precision, not rounded.
-```
+:::

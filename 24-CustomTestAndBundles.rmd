@@ -111,15 +111,15 @@ For operators, the order of precedence is:
 
 For example, the following:
 
-```{r, eval=F, echo=T}
+$$
 5+5+5/2
-```
+$$
 
 Will yield “12.5.” “5/2“ is executed first, then added to the other fives. However, by using parentheses:
 
-```{r, eval=F, echo=T}
+$$
 (5+5+5)/2
-```
+$$
 
 You can override it so that the additions happen first (resulting in “15”), followed by the division (finally yielding “7.5”). Likewise, “(2+5)^2” will yield “49” (“7” squared), while “2+5^2” will yield “27” (“5” squared, plus “2”).
 
@@ -243,9 +243,9 @@ Table: Document Statistics Functions
 
 Table: Word Statistics Functions
 
-```{block, type='notesection'}
+::: {.notesection data-latex=""}
 **Dale-Chall** and **Harris-Jacobson** familiar word functions will take their respective test's text exclusion options into account.
-```
+:::
 
 ```{block, type='onsamepage'}
 | Shortcut | Description |
@@ -340,13 +340,13 @@ If you are not stemming, then it is recommended to enter each inflected form of 
 
 **Only use words common to all lists**: Check this option to consider words familiar only if they appear on your custom list **and** other selected lists.
 
-```{block, type='warningsection'}
+::: {.warningsection data-latex=""}
 This option is only recommended for when you want to find words that appear within a union of your word list and a standard list(s) (e.g., **Spache**).
-```
+:::
 
-```{block, type='warningsection'}
+::: {.notesection data-latex=""}
 This option is only available if you are including two or more word lists.
-```
+:::
 
 ### Proper Nouns & Numerals {-#custom-proper-numerals}
 
