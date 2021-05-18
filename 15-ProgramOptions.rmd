@@ -266,7 +266,7 @@ This would be seen as a 13-word sentence, with all the phrases from the exclusio
 
 This phrase list can be edited by clicking the button next to this field, which will open the [Edit Word/Phrase List](#edit-word-list-dialog) dialog.
 
-**Don't exclude first occurrences**: Select this option to not exclude the first occurrence of any word or phrase from your exclusion list. All remaining occurrences of these words in the document will be excluded. This is useful if you wish to only analyze the first instance of certain difficult words.
+**Include first occurrenc**: Select this option to not exclude the first occurrence of any word or phrase from your exclusion list. All remaining occurrences of these words in the document will be excluded. This is useful if you wish to only analyze the first instance of certain difficult words.
 
 **Exclude text between**: Selects whether to exclude all text in between a certain pair of tags. For example, select “[ and ]” and any text inside of '[' and ']' will be ignored in the analysis. Along with excluding the bracketed words, any full paragraphs and sentences wrapped inside of these tags will also be excluded (which will be reflected in the statistics). Refer to [Excluding Placeholders and Blocks of Text](#excluding-placeholders) for an example.
 
