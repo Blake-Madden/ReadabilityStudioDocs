@@ -153,12 +153,12 @@ Both of these exceptions can be overridden by the options [**Ignore blank lines*
 
 **always begin a new paragraph**: Select this option to always consider line feeds in the text as the end of the current sentence and paragraph. This should only be used for special cases where a document does not have paragraph indenting and contains numerous lists or headers that are not followed by blank lines.
 
-Refer to [line chaining](#line-chaining) for more information about these options.
+Refer to ch. \@ref(line-chaining) for more information about these options.
 ::::
 
 **Ignore blank lines**: Select this option to not consider [incomplete sentences](#how-text-is-excluded) followed by blank lines as the end of the current sentence and paragraph. If an incomplete sentence is encountered, any blank lines after it will be skipped and the sentence will be merged with the following sentence.
 
-This option is not recommended for documents that contain headers or lists that rely on blank lines to separate them from the narrative text. Refer to the [Line Chaining](#line-chaining) topic for more information.
+This option is not recommended for documents that contain headers or lists that rely on blank lines to separate them from the narrative text. Refer to ch. \@ref(line-chaining) for more information.
 
 **Ignore indenting**: Select this option to not consider indented lines following incomplete sentences as the start of a new paragraph. This option is recommended for documents that center or left align their text.
 
@@ -177,7 +177,7 @@ Exclusion
 
 These options control how text is excluded from your documents.
 
-**Do not exclude any text**: Select this option to treat all incomplete sentences as regular sentences when calculating statistics. This is only recommended for forms that may contain numerous titles and lists items and little narrative text. Refer to the [Fragmented Text](#framented-text) topic for more information.
+**Do not exclude any text**: Select this option to treat all incomplete sentences as regular sentences when calculating statistics. This is only recommended for forms that may contain numerous titles and lists items and little narrative text. Refer to ch. \@ref(framented-text) for more information.
 
 **Exclude all incomplete sentences**: Select this option to ignore all incomplete sentences when calculating statistics. This option is recommended by most tests.
 
@@ -268,7 +268,7 @@ This phrase list can be edited by clicking the button next to this field, which 
 
 **Include first occurrenc**: Select this option to not exclude the first occurrence of any word or phrase from your exclusion list. All remaining occurrences of these words in the document will be excluded. This is useful if you wish to only analyze the first instance of certain difficult words.
 
-**Exclude text between**: Selects whether to exclude all text in between a certain pair of tags. For example, select “[ and ]” and any text inside of '[' and ']' will be ignored in the analysis. Along with excluding the bracketed words, any full paragraphs and sentences wrapped inside of these tags will also be excluded (which will be reflected in the statistics). Refer to [Excluding Placeholders and Blocks of Text](#excluding-placeholders) for an example.
+**Exclude text between**: Selects whether to exclude all text in between a certain pair of tags. For example, select “[ and ]” and any text inside of '[' and ']' will be ignored in the analysis. Along with excluding the bracketed words, any full paragraphs and sentences wrapped inside of these tags will also be excluded (which will be reflected in the statistics). Refer to ch. \@ref(excluding-placeholders) for an example.
 
 Note that these options are not available if **Do not exclude any text** is selected.
 
@@ -435,7 +435,7 @@ The options on this page customize which results to include in the **Readability
 - The labels on the grade-level [box plot](#reviewing-batch-box-plots).
 - The bin labels on the grade-level [histograms](#reviewing-batch-histograms).
 
-Refer to [Grade Scales](#grade-scales) for a list of available scales.
+Refer to ch. \@ref(grade-scales) for a list of available scales.
 
 **Display scores in long format**: Check this to display readability scores in long format (e.g., “2^nd^ grade”) within the score grid.
 

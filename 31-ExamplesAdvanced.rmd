@@ -4,7 +4,7 @@ In this chapter, we will step through how to exclude text from an analysis. Afte
 
 ## Excluding Text from an Analysis {-#excluding-text-from-analysis}
 
-When reviewing a document, it is usually preferable to ignore certain items, such as headers and citations (refer to the [Text Exclusion](#how-text-is-excluded) topic for more information). In this example, we will discuss the various methods for excluding these items.
+When reviewing a document, it is usually preferable to ignore certain items, such as headers and citations (refer to ch. \@ref(how-text-is-excluded) for more information). In this example, we will discuss the various methods for excluding these items.
 
 The first step is to open the example file **Danielson-Bryan**. From the **Help** tab, click the `r keyboardButton("Example Documents")` button and then select **Danielson-Bryan** from the menu. (When prompted about how to open the document, select **Create a new project**.) When the **New Project Wizard** appears, leave the defaults and click `r keyboardButton("Finish")`. A warning about an incomplete sentence being included because of its length will appear:
 
@@ -80,7 +80,7 @@ Click `r keyboardButton("OK")` and all instances of “punctuation” and “sen
 
 ![](Images/ExclusionExampleCustomWordsExcludedNow.png)
 
-Separate instances of “sentence” and “length” will still be included, they will only be excluded if they appear together to form the phrase “sentence length.” Refer to [document indexing options](#document-analysis) for more on how custom word/phrase exclusion works.
+Separate instances of “sentence” and “length” will still be included, they will only be excluded if they appear together to form the phrase “sentence length.” Refer to ch. \@ref(document-analysis) for more on how custom word/phrase exclusion works.
 
 Note that when excluding individual words, these words are treated as if they are not in the document at all. This means that excluding words will affect the sentences that they appear in. For example, by excluding “Danielson-Bryan,” “1,” and “206”, the first sentence will have a word count of 20 instead of 23.
 

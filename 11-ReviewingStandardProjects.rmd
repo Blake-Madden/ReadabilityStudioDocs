@@ -28,7 +28,7 @@ When calculating these statistics, failed test scores are treated as missing obs
 
 To remove any test from this list, select it and press `r keyboardButton("CTRL")`+`r keyboardButton("DELETE")` (`r macOSCmdButton()`+`r keyboardButton("DELETE")` on macOS) on your keyboard. To edit a [custom test](#creating-custom-test), double click on it in this list. To view the help for a standard test, double click on it in this list.
 
-There will also be graphs in this section if you had included the [Fry](#reviewing-readability-graphs) , [Gilliam-Peña-Mountain](#gilliam-pena-mountain-fry-graph), [Raygor](#reviewing-readability-graphs), [Flesch](#flesch-test), or [FRASE](#frase) tests. Please refer to the [Readability Graphs Overview](#reviewing-readability-graphs) for further information.
+There will also be graphs in this section if you had included the [Fry](#reviewing-readability-graphs) , [Gilliam-Peña-Mountain](#gilliam-pena-mountain-fry-graph), [Raygor](#reviewing-readability-graphs), [Flesch](#flesch-test), or [FRASE](#frase) tests. Please refer to ch. \@ref(reviewing-readability-graphs) for further information.
 
 ## Reviewing the Readability Graphs {-#reviewing-readability-graphs}
 
@@ -205,7 +205,7 @@ The types of difficult-word lists that may be shown are:
 
 **All Words (Condensed)**: This list is the same as **All Words**, except that is excludes common words and combines others. In regards to combining words, words with the same root will be merged into a single row. For example, “report,” “reports,” and “reporting” will be combined into one row, with the frequency counts for all three words also combined. As for excluding words, common words (e.g., “the”), numerals, and filenames are not included in this list. (If no words can be combined and there are no common words to ignore, then this list will not be shown.)
 
-Note that if you are ignoring incomplete sentences, then these lists will only include the words from complete sentences. If you need to review all the words from the document, then select the option [Do not exclude any text](#options-text-exclusion). Refer to the [How Text is Excluded](#how-text-is-excluded) overview to learn more about how **Readability Studio** handles incomplete sentences.
+Note that if you are ignoring incomplete sentences, then these lists will only include the words from complete sentences. If you need to review all the words from the document, then select the option [Do not exclude any text](#options-text-exclusion). Refer to ch. \@ref(how-text-is-excluded) to learn more about how **Readability Studio** handles incomplete sentences.
 
 To view any of these lists, click on its name under the **Words Breakdown** section on the sidebar. For example, click on the **Words Breakdown** icon on the sidebar, and when it expands click on **3+ Syllables** underneath it.
 
@@ -261,7 +261,7 @@ A list of overly-long sentences:
 
 ![](Images/featuressentencelist.png)
 
-Note that if you are ignoring incomplete sentences, then this list will only include the complete sentences. If you need to review all the sentences from the document, then select the option [Do not exclude any text](#options-text-exclusion). Refer to the [How Text is Excluded](#how-text-is-excluded) overview to learn more about how **Readability Studio** handles incomplete sentences.
+Note that if you are ignoring incomplete sentences, then this list will only include the complete sentences. If you need to review all the sentences from the document, then select the option [Do not exclude any text](#options-text-exclusion). Refer to ch. \@ref(how-text-is-excluded) to learn more about how **Readability Studio** handles incomplete sentences.
 
 To find the longest sentence, [sort](#column-sorting) the **Word Count** column into descending order. As you can see below, the longest sentence is now shown at the top of the list.
 
@@ -366,7 +366,7 @@ To view any repeated word in its original context, double-click on it. This will
 
 Note that if there are no repeated words in your document, then this window will not be included.
 
-Refer to [Repeated Word Exceptions](#repeated-word-exceptions) for more information on how repeated words are detected.
+Refer to ch. \@ref(repeated-word-exceptions) for more information on how repeated words are detected.
 
 ### Reviewing Article Mismatches {-#reviewing-article-mismatches}
 
@@ -385,7 +385,7 @@ To view any item in its original context, double-click on it. This will take you
 
 Note that if there are no article mismatches in your document, then this window will not be included.
 
-Refer to [Article Mismatching](#article-mismatching) to learn more.
+Refer to ch. \@ref(article-mismatching) to learn more.
 
 ### Reviewing Misspellings {-#reviewing-misspellings}
 
@@ -562,13 +562,13 @@ To graphically view the **Dolch** words breakdown, click on the [Word Counts](#r
 
 After opening a project, click on the **Dolch Sight Words** icon on the project sidebar. There are two graphs available for review: **Dolch Coverage** and **Word Counts**.
 
-The **Dolch Coverage** graph displays how much of each category is used in the document. Refer to [Dolch coverage](#reviewing-dolch-stats) for more information.
+The **Dolch Coverage** graph displays how much of each category is used in the document. Refer to ch. \@ref(reviewing-dolch-stats) for more information.
 
 ![](Images/DolchCoverageChart.png)
 
 As we can see in the above graph, 87.5% of the **Dolch** prepositions are used in the document. Pronouns and adverbs are also well covered with 76.9% and 73.5%, respectively. However, less than half of the **Dolch** adjectives and nouns are used in the document. From this, we can see that this document may be useful for some **Dolch** categories, but not others.
 
-The **Words Breakdown** graph displays all the raw **Dolch** word counts, broken down by category. Refer to [Dolch statistics](#reviewing-dolch-stats) for more information.
+The **Words Breakdown** graph displays all the raw **Dolch** word counts, broken down by category. Refer to ch. \@ref(reviewing-dolch-stats) for more information.
 
 ![](Images/DolchWordBreakdown.png)
 

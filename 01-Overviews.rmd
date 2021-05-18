@@ -224,7 +224,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - Expanded the difficulty-level descriptions for the German **Lix** tests.
 - Instruction label now shown on all **Flesch** charts (not just blank ones).
 - Added custom test features:
-  - Added feature to create custom tests based on any existing formula-based test. Refer to [Creating a Modified Flesch Test](#creating-custom-flesch-test) for an example.
+  - Added feature to create custom tests based on any existing formula-based test. Refer to ch. \@ref(creating-custom-flesch-test) for an example.
   - Added `GunningFog` option to `SentenceCount()` function. This will return the sentence count using the system's [Gunning Fog method](#options-gunning-fog).
   - Added `MiniWordCount()` function.
   - Added `HardFogWordCount()` function.

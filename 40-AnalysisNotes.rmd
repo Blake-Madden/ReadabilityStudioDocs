@@ -29,7 +29,7 @@ Although not traditionally mentioned in readability articles, other items may al
 -   Specific words or phrases
 ```
 
-Refer to the [text exclusion options](#options-text-exclusion) topic for a detailed explanation of these options.
+Refer to ch. \@ref(options-text-exclusion) for a detailed explanation of these options.
 
 ## How Sentences are Counted {-#how-sentences-are-counted}
 

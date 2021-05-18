@@ -195,7 +195,7 @@ By default, **Readability Studio** will automatically ignore these items, rather
 
 The second set of items do not cause issue with **Readability Studio**. It can recognize extended characters (e.g., ‘é’, ‘—’, etc.) and can properly deduce sentence endings. For these reasons, document cleaning is generally not necessary within **Readability Studio**.
 
-Refer to [Text Exclusion](#how-text-is-excluded) to learn how **Readability Studio** automatically filters documents.
+Refer to ch. \@ref(how-text-is-excluded) to learn how **Readability Studio** automatically filters documents.
 
 ### Exporting Filtered Documents {-}
 

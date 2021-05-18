@@ -56,7 +56,7 @@ The distribution of these raw scores can also be graphically viewed. Click on th
 
 ![](Images/histogrades.png)
 
-Judging from this graph, we have quite a few difficult documents in this batch. There are 11 files in the 12-13 range, which is not a comfortable reading level. Refer to [Reviewing the histograms](#reviewing-batch-histograms) and [Reviewing the box plots](#reviewing-batch-box-plots) for further information.
+Judging from this graph, we have quite a few difficult documents in this batch. There are 11 files in the 12-13 range, which is not a comfortable reading level. Refer to ch. \@ref(reviewing-batch-histograms) and [Reviewing the box plots](#reviewing-batch-box-plots) for further information.
 
 Now that we know which documents are scoring highly, we can begin revising them. The next step is to review any grammar issues that may be contributing to overly-long sentences. Click on the **Grammar** icon to display any grammar issues detected in the documents. First select the **Long Sentences** subitem, as shown below:
 

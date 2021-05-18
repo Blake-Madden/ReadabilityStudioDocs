@@ -14,7 +14,7 @@ Options for customizing their display are made available on the **Edit** section
 
 **Grade scale**: Click this button to choose from a list of grade scales to display your scores in.
 
-Refer to [Grade Scales](#grade-scales) for a list of available scales.
+Refer to ch. \@ref(grade-scales) for a list of available scales.
 
 ## Customizing the Summary Statistics {-}
 
@@ -72,9 +72,9 @@ Options for customizing it are made available on the **Edit** section of the rib
 
 ![](Images/RibbonEditGraphs.png)
 
-The options made available will be dependent on the graph type. Please refer to the [box plot](#options-box-plots), [bar chart](#options-bar-charts), [histogram](#options-histograms), and [readability graph](#options-readability-graphs) topics for further discussions of these options.
+The options made available will be dependent on the graph type. Please refer to ch. \@ref(options-box-plots) for further discussions of these options.
 
-Please refer to the “[Customizing a Graph](#customizing-a-graph)” example for a step-by-step tutorial on editing a graph.
+Please refer to \@ref(customizing-a-graph) for a step-by-step tutorial on editing a graph.
 
 ## Customizing How Documents are Analyzed {-}
 

@@ -26,7 +26,7 @@ Now that the document's measurements have been normalized to the required sample
 
 **Unit**: A section of text ending with a period, exclamation mark, question mark, interrobang, colon, semicolon, or dash. Lengthy, complex sentences generally contain more than one unit.
 
-Please refer to [Statistical Terminology](#stat-terms) for information regarding statistics.
+Please refer to ch. \@ref(stat-terms) for information regarding statistics.
 
 ## Statistical Terminology {-#stat-terms}
 

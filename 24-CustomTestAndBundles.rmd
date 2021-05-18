@@ -28,7 +28,7 @@ To view the available functions, click the function browser button ![](Images/No
 
 ![](Images/FunctionBrowser.png)
 
-Refer to the [Custom-Test Functions](#custom-test-functions) overview for a list of available functions.
+Refer to \@ref(custom-test-functions) for a list of available functions.
 
 ```{block, type='onsamepage'}
 After entering your formula, you will need to specify what type of test this will be from the **Test type** combobox. This will determine which column the test's score will appear in the [Readability Scores](#reviewing-test-scores) window. The following types of tests are available:
@@ -220,7 +220,7 @@ Table: Document Statistics Functions
 | FamiliarSpacheWordCount() | Returns the number of familiar **Spache** words. |
 | FamiliarWordCount() | Returns the number of familiar words (from a custom list) the document. |
 | HardFogWordCount() | Returns the number of difficult **Gunning Fog** words. |
-| MiniWordCount() | Returns the number of miniwords (refer to [EFLAW](#eflaw-test)). |
+| MiniWordCount() | Returns the number of miniwords (refer to ch. \@ref(eflaw-test)). |
 | NumeralCount() | Returns the number of numerals. |
 | OneSyllableWordCount() | Returns the number of monosyllabic words. |
 | ProperNounCount() | Returns the number of proper nouns. |
@@ -287,7 +287,7 @@ From the **Readability** tab, click the `r keyboardButton("Custom Test")` button
 
 ### Formula {-}
 
-![](Images/NonGenerated/FunctionBroswerButton.png)  Click this button to display the **Function Browser** dialog. In this dialog, you can browse the available functions and insert them into your formula. Refer to the [Custom-Test Functions](#custom-test-functions) overview for a list of available functions.
+![](Images/NonGenerated/FunctionBroswerButton.png)  Click this button to display the **Function Browser** dialog. In this dialog, you can browse the available functions and insert them into your formula. Refer to \@ref(custom-test-functions) for a list of available functions.
 
 ![](Images/NonGenerated/FunctionValidate.png)  Click this button to validate the formula. You will be alerted if your formula contains any syntax errors.
 

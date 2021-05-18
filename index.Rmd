@@ -7,6 +7,7 @@ output:
   bookdown::pdf_book:
     includes:
       in_header: "latex/preamble.tex"
+      after_body: "latex/after_body.tex"
 documentclass: book
 links-as-notes: true
 linestretch: 1.15
@@ -145,7 +146,7 @@ This is preliminary documentation for an upcoming release of Readability Studio.
 <img src="images/NonGenerated/cover.png" width="250" align="right" alt="Readability Studio 2021 Manual cover" />
 ```
 
-This book is a guide to using the software product **Readability Studio**, as well as a reference for readability formulas. For those interested in the formulas, please refer to the [English](#english-readability-tests), [Spanish](#spanish-readability-tests), and [German](#german-readability-tests) formula overviews. For further reading, refer to the [bibliography](#bibliography) for a concise list of articles discussing these formulas.
+This book is a guide to using the software product **Readability Studio**, as well as a reference for readability formulas. For those interested in the formulas, please refer to ch. \@ref(english-readability-tests), ch. \@ref(spanish-readability-tests), and ch. \@ref(german-readability-tests) for formula overviews. For further reading, refer to ch. \@ref(bibliography) for a concise list of articles discussing these formulas.
 
 ![](images/NonGenerated/CC_BY-NC-ND.png)
 
