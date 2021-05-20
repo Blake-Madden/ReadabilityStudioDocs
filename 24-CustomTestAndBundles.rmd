@@ -210,7 +210,7 @@ Table: Document Statistics Functions
 ^2^ Uses the [Harris-Jacobson text-exclusion method](#options-harris-jacobson).
 
 ^3^ Uses the [Gunning Fog](#options-gunning-fog) sentence-counting method.\
-\ \ This will be either traditional sentence counting or unit counting.
+This will be either traditional sentence counting or unit counting.
 ```
 
 | Function | Description |
