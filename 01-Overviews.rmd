@@ -20,70 +20,38 @@ Note that these tests only determine the reading level of material based on how 
 
 **Readability Studio** offers many popular readability tests, including:
 
-```{block, type='onsamepage'}
-![](Images/NonGenerated/gb.png) **English Tests**
+```{r, echo=F}
+maxTestRows <- 15
 
-- [Automated Readability Index](#ari-test)
-- [New Automated Readability Index](#new-ari)
-- [Bormuth Cloze Mean Test](#bormuth-cloze-mean-machine-passage)
-- [Bormuth Grade Placement Test](#bormuth-grade-placement-35-machine-passage)
-- [Coleman-Liau](#coleman-liau-test)
-- [New Dale-Chall](#dale-chall-test)
-- [Danielson-Bryan 1](#danielson-bryan-1)
-- [Danielson-Bryan 2](#danielson-bryan-2)
-- [Degrees of Reading Power](#degrees-of-reading-power)
-- [Degrees of Reading Power (GE)](#degrees-of-reading-power-grade-equivalent)
-- [Easy Listening Formula](#easy-listening-formula)
-- [McAlpine EFLAW^©^](#eflaw-test)
-- [Farr, Jenkins, Paterson](#farr-jenkins-paterson)
-- [Flesch Reading Ease](#flesch-test)
-- [Flesch-Kincaid](#flesch-kincaid-test)
-- [FORCAST](#forcast-test)
-- [Fry Graph](#fry-test)
-- [Gunning Fog](#gunning-fog-test)
-- [Harris-Jacobson](#harris-jacobson)
-- [Läsbarhetsindex (Lix)](#lix-test)
-- [New Fog Count](#new-fog-count-test)
-- [(Powers, Sumner, Kearl) Dale-Chall](#psk-dale-chall)
-- [(Powers, Sumner, Kearl) Farr, Jenkins, Paterson](#psk-farr-jenkins-paterson)
-- [(Powers, Sumner, Kearl) Flesch Reading Ease](#psk-test)
-- [(Powers, Sumner, Kearl) Gunning Fog](#psk-fog)
-- [Raygor Estimate Graph](#raygor-test)
-- [Rate Index (Rix)](#rix-test)
-- [SMOG](#smog-test)
-- [Modified SMOG](#modified-smog)
-- [Spache Revised](#spache-test)
-- [Wheeler-Smith](#wheeler-smith)
+englishTests <- splitColumnIntoTable(read_tsv("data/EnglishTests.txt",
+                                     col_names=F)[[1]], maxTestRows, "Tests")
+
+kableExtra::kbl(englishTests, booktabs=T, centering=T, linesep="",
+                caption="English Tests", align='l', escape=F) %>%
+  kableExtra::kable_classic(full_width=F) %>%
+  kableExtra::kable_styling(latex_options=c("scale_down")) %>%
+  kableExtra::column_spec(1, border_right = ncol(englishTests) > 1) %>%
+  kableExtra::column_spec(2, border_right = ncol(englishTests) > 1)
 ```
 
-```{block, type='onsamepage'}
-![](Images/NonGenerated/es.png) **Spanish Tests**
+```{r, echo=F}
+spanishTests <- splitColumnIntoTable(read_tsv("data/SpanishTests.txt",
+                                     col_names=F)[[1]], maxTestRows, "Tests")
 
-- [Crawford](#crawford)
-- [Gilliam, Peña, Mountain Fry Graph](#gilliam-pena-mountain-fry-graph)
-- [FRASE Graph](#frase)
-- [Läsbarhetsindex (Lix)](#lix-test)
-- [Rate Index (Rix)](#rix-test)
-- [SOL](#sol-spanish)
+kableExtra::kbl(spanishTests, booktabs=T, centering=T, linesep="",
+                caption="Spanish Tests", align='l', escape=F) %>%
+  kableExtra::kable_classic(full_width=F) %>%
+  kableExtra::column_spec(1, border_right = ncol(spanishTests) > 1)
 ```
 
-```{block, type='onsamepage'}
-![](Images/NonGenerated/de.png) **German Tests**
+```{r, echo=F}
+germanTests <- splitColumnIntoTable(read_tsv("data/GermanTests.txt",
+                                    col_names=F)[[1]], maxTestRows, "Tests")
 
-- [Amstad](#amstad)
-- [Läsbarhetsindex (Lix)](#lix-test)
-- [Lix (German children's literature)](#lix-german-childrens-literature)
-- [Lix (German technical literature)](#lix-german-technical)
-- [Neue Wiener Sachtextformel 1](#neue-wiener-sachtextformel1)
-- [Neue Wiener Sachtextformel 2](#neue-wiener-sachtextformel2)
-- [Neue Wiener Sachtextformel 3](#neue-wiener-sachtextformel3)
-- [Quadratwurzelverfahren](#qu-bamberger-vanecek)
-- [Rate Index (Rix)](#rix-test)
-- [Rix (German fiction)](#rix-german-fiction)
-- [Rix (German non-fiction)](#rix-german-nonfiction)
-- [Schwartz](#scwartz)
-- [SMOG (Bamberger-Vanecek)](#smog-bamberger-vanecek)
-- [Wheeler-Smith (Bamberger-Vanecek)](#wheeler-smith-bamberger-vanecek)
+kableExtra::kbl(germanTests, booktabs=T, centering=T, linesep="",
+                caption="German Tests", align='l', escape=F) %>%
+  kableExtra::kable_classic(full_width=F) %>%
+  kableExtra::column_spec(1, border_right = ncol(germanTests) > 1)
 ```
 
 In addition, **Readability Studio** offers in-depth explanations for these tests. Each test result includes an interpretation of the score and the factors that affect it.

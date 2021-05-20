@@ -49,6 +49,32 @@ keyboardButton <- function(label)
     { knitr::asis_output(text) }
   }
 
+# Splits a vector into a multi-column table.
+# @param col The vector to split.
+# @param rowCount The maximum number of rows for the table.
+# @param columnName The name to assign to the column(s) in the output.
+splitColumnIntoTable <- function(col, rowCount, columnName)
+  {
+  colVals <- col %>%
+    sort()
+  if (length(colVals) > rowCount)
+    {
+    length(colVals) <- length(colVals)+
+      (rowCount-length(colVals) %% rowCount)
+
+    }
+  else
+    { rowCount = length(colVals) }
+
+  outData <- as.tibble(colVals %>% matrix(nrow=rowCount, byrow=F))
+  if (ncol(outData) > 1)
+    { colnames(outData) <- rep(columnName, ncol(outData)) }
+  else
+    { colnames(outData) <- columnName }
+
+  outData
+  }
+
 # @brief Returns an indentation to put in front of a line of text.
 indentation <- function()
   {
