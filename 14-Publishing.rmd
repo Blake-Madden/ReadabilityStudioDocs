@@ -1,8 +1,8 @@
 # Publishing the Results
 
-## Exporting {-#exporting}
+## Exporting {#exporting}
 
-All graphs, lists, statistical summaries, and highlighted text windows can be exported from **Readability Studio**. This is useful for reviewing the results outside the program, as well as publishing and sharing them with colleagues.
+All graphs\index{graphs!saving}, lists\index{lists!saving}, statistical summaries\index{summaries!saving}, and highlighted text windows\index{text windows!saving} can be exported from **Readability Studio**. This is useful for reviewing the results outside the program, as well as publishing and sharing them with colleagues.
 
 To export any window, go to the **Home** tab and click the `r keyboardButton("Save")` button, or right click on the window and select **Save**.
 
@@ -16,7 +16,7 @@ Numerous formats are available for each type of window:
 
 All windows can also be exported at once by clicking the arrow beneath **Save** and selecting [Export All...](#export-all-options).
 
-## Scores Export Options{-#scores-export}
+## Scores Export Options{#scores-export}
 
 When [exporting](#exporting) readability scores from a standard project, the following export options are available:
 
@@ -28,21 +28,20 @@ When [exporting](#exporting) readability scores from a standard project, the fol
 
 **Both**: Saves the scores grid and explanations.
 
-## Text Window Export Options {-#text-window-export}
+## Text Window Export Options {#text-window-export}
 
-When [exporting](#exporting) a text window, the following export formats are available:
+When [exporting](#exporting) a text window\index{text windows!saving}, the following export formats are available:
 
-**HTML**: A format that can be displayed in Internet browsers and most word-processing programs.
-
-**RTF**: A format that can be displayed in most word-processing programs.
+- **HTML**: A format that can be displayed in Internet browsers and most word-processing programs.
+- **RTF**: A format that can be displayed in most word-processing programs.
 
 ::: {.tipsection data-latex=""}
 If you plan to edit this output, then **RTF** is recommended. (Most word processors support editing this format.)
 :::
 
-## Image Export Options {-#image-export}
+## Image Export Options {#image-export}
 
-When [exporting](#exporting) a graph, you will first be prompted for an image format to export as. The following formats are available to choose from:
+When [exporting](#exporting) a graph\index{graphs!saving}, you will first be prompted for an image format to export as. The following formats are available to choose from:
 
 - **PNG**: A lossless-compressed image format. The image can be compressed to a smaller size without any loss of quality.
 - **JPG**: A lossy-compressed image format. Some image quality may be lost, compared to other formats such as PNG.
@@ -81,9 +80,9 @@ This option is available only when exporting as a TIFF file.
 - JPEG: lossy compression method. Suitable for high-color images, but some quality may be lost.
 - Deflate: lossless, high-compression method.
 
-## List Export Options {-#export-list}
+## List Export Options {#export-list}
 
-When [exporting](#exporting) a list, you will be provided with the following formats to export as:
+When [exporting](#exporting) a list\index{lists!saving}, you will be provided with the following formats to export as:
 
 - **HTML**: A format that includes formatting and can be opened in browsers and spreadsheet programs.
 - **TXT**: A tab-delimited file with no formatting (i.e., colors will be lost).
@@ -110,7 +109,7 @@ The options here specify the range of columns and rows to export.
 
 **Columns: to**: Enter the ending column to export into this field.
 
-## Export All Options {-#export-all-options}
+## Export All Options {#export-all-options}
 
 Select **Export All** from the `r keyboardButton("Save")` button's menu to display the **Export All Options** dialog.
 
@@ -148,9 +147,9 @@ This dialog provides options for [exporting](#exporting) an entire project into 
 
 **Include lists and text windows**: Select this option to include lists and highlighted text windows in the output. It is recommended to unselect this option for larger documents. This option only applies to standard projects.
 
-## Printing {-#printing}
+## Printing {#printing}
 
-All graphs, lists, statistical summaries, and highlighted text windows can be printed from **Readability Studio**. This is useful for reviewing the results outside the program, and for publishing and sharing them with colleagues.
+All graphs\index{graphs!printing}, lists\index{lists!printing}, statistical summaries\index{summaries!printing}, and highlighted text windows\index{text windows!printing} can be printed from **Readability Studio**. This is useful for reviewing the results outside the program, and for publishing and sharing them with colleagues.
 
 To print any window, go to the **Home** tab and click the `r keyboardButton("Print")` button, or right click on the window and select **Print**.
 
@@ -172,7 +171,7 @@ To preview a window before printing it, select **Print Preview** from this menu:
 The preview option is only available on Windows. On macOS, the preview option on the print dialog can be used for previewing.
 :::
 
-## Exporting Filtered Documents {-#filtering-export}
+## Exporting Filtered Documents {#filtering-export}
 
 “Document filtering” (or “cleaning”) is the removal of items from a document to assist a textual analysis. This includes items that are not meant to be analyzed, such as:
 
@@ -195,7 +194,7 @@ By default, **Readability Studio** will automatically ignore these items, rather
 
 The second set of items do not cause issue with **Readability Studio**. It can recognize extended characters (e.g., ‘é’, ‘—’, etc.) and can properly deduce sentence endings. For these reasons, document cleaning is generally not necessary within **Readability Studio**.
 
-Refer to ch. \@ref(how-text-is-excluded) to learn how **Readability Studio** automatically filters documents.
+Refer to \@ref(how-text-is-excluded) to learn how **Readability Studio** automatically filters documents.
 
 ### Exporting Filtered Documents {-}
 
