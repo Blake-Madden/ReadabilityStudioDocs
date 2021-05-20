@@ -2,9 +2,9 @@
 
 In this chapter, we will step through how to exclude text from an analysis. After that, we will continue with examples showing how to customize graphs and create test bundles.
 
-## Excluding Text from an Analysis {-#excluding-text-from-analysis}
+## Excluding Text from an Analysis {#excluding-text-from-analysis}
 
-When reviewing a document, it is usually preferable to ignore certain items, such as headers and citations (refer to ch. \@ref(how-text-is-excluded) for more information). In this example, we will discuss the various methods for excluding these items.
+When reviewing a document, it is usually preferable to ignore certain items, such as headers and citations (refer to \@ref(how-text-is-excluded) for more information). In this example, we will discuss the various methods for excluding these items.
 
 The first step is to open the example file **Danielson-Bryan**. From the **Help** tab, click the `r keyboardButton("Example Documents")` button and then select **Danielson-Bryan** from the menu. (When prompted about how to open the document, select **Create a new project**.) When the **New Project Wizard** appears, leave the defaults and click `r keyboardButton("Finish")`. A warning about an incomplete sentence being included because of its length will appear:
 
@@ -80,7 +80,7 @@ Click `r keyboardButton("OK")` and all instances of “punctuation” and “sen
 
 ![](Images/ExclusionExampleCustomWordsExcludedNow.png)
 
-Separate instances of “sentence” and “length” will still be included, they will only be excluded if they appear together to form the phrase “sentence length.” Refer to ch. \@ref(document-analysis) for more on how custom word/phrase exclusion works.
+Separate instances of “sentence” and “length” will still be included, they will only be excluded if they appear together to form the phrase “sentence length.” Refer to \@ref(document-analysis) for more on how custom word/phrase exclusion works.
 
 Note that when excluding individual words, these words are treated as if they are not in the document at all. This means that excluding words will affect the sentences that they appear in. For example, by excluding “Danielson-Bryan,” “1,” and “206”, the first sentence will have a word count of 20 instead of 23.
 
@@ -94,7 +94,7 @@ At this point, all that remains in the analysis is the actual prose—all “noi
 All the options discussed here are also available on the **Document** tab of the ribbon.
 :::
 
-## Excluding Placeholders and Blocks of Text {-#excluding-placeholders}
+## Excluding Placeholders and Blocks of Text {#excluding-placeholders}
 
 Continuing from the [previous example](#excluding-text-from-analysis), we will now discuss how to exclude specific blocks of text.
 
@@ -122,7 +122,7 @@ Selecting this option will exclude text in between pairs of angle brackets. Clic
 All the options discussed here are also offered on the **Document** tab of the ribbon.
 :::
 
-## Creating a Test Bundle {-}
+## Creating a Test Bundle
 
 [Test bundles](#test-bundles) are a convenient way to add multiple tests to a project at once. In this example, we will create a test bundle named “4F” which includes the [**F**ry](#fry-test), [**F**ORCAST](#forcast-test), [**F**og](#gunning-fog-test), and [**F**lesch-Kincaid](#flesch-kincaid-test) tests. The first step is to select the **Readability** tab, click the `r keyboardButton("Bundles")` button, and select **Add...** from the menu. This will open the **Add Test Bundle** dialog:
 

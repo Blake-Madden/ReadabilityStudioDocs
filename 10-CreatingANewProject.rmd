@@ -10,7 +10,7 @@ To begin, click the `r keyboardButton("New")` button on the **Home** tab to disp
 
 **Batch project**: Select this option to create a batch project, which can analyze a collection of documents or a website.
 
-## Standard Project {-#creating-standard-project}
+## Standard Project {#creating-standard-project}
 
 To determine a document's readability you will need to create a new project. First, click the `r keyboardButton("New")` button on the **Home** tab to open the **New Project Wizard**. (If you are using the **Professional** edition, select **Standard Project** and click `r keyboardButton("OK")`). On the first page of the wizard, the options for specifying the document and its language will be shown:
 
@@ -72,7 +72,7 @@ Finally, click the `r keyboardButton("Finish")` button and the project will be c
 
 From here, you can review the [readability scores](#reviewing-test-scores) and [graphs](#reviewing-readability-graphs), useful document [statistics](#reviewing-statistics), and various lists of [difficult words](#reviewing-word-breakdowns). You can also review the document with its difficult words and [sentences](#reviewing-standard-grammar) highlighted.
 
-## Batch Projects {-#creating-batch-project}
+## Batch Projects {#creating-batch-project}
 
 To determine the readability of a document collection, you will need to create a new batch project. First, click the `r keyboardButton("New")` button on the **Home** tab to open the **Select Project Type** dialog, as shown below:
 

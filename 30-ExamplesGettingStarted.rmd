@@ -4,7 +4,7 @@
 
 In this chapter, we will step through some simple examples demonstrating how to analyze, review, and improve a document. After that, we will continue with examples showing how to analyze a webpage and how to review difficult sentences.
 
-## Analyzing a Book {-#book-example}
+## Analyzing a Book {#book-example}
 
 In this example, we will analyze a literary novel to help determine which age group it is most appropriate for (in terms of readability, not content). The first step is to open the **New Project** wizard and choose the book. Click the `r keyboardButton("New")` button on the **Home** tab to open the **New Project Wizard**. First, select **English** as the document language (if this option is available). Then, select the option **Read text from a file or webpage**. Click the button next to the file path field to browse for it:
 
@@ -42,7 +42,7 @@ If you are an educator assigning this book to your students, you can export the 
 
 To do this, click the `r keyboardButton("Save")` button on the **Home** tab and use the **Save As...** dialog to save this list to either an HTML or text file. You can also do this with any of the other difficult word lists, such as the **Spache unfamiliar words** list. Refer to \@ref(vocab-builder-example) for an example.
 
-## Improving Students' Vocabulary {-#vocab-builder-example}
+## Improving Students' Vocabulary {#vocab-builder-example}
 
 In this example, we will save a list of the more complex words from a book. If you are an educator, you can send this list to your students and ask them to define these words prior to reading the book. This can be a great way to prepare them for future readings, as well as helping them build their overall vocabulary.
 
@@ -73,7 +73,7 @@ kableExtra::kbl(x=words, caption="Example of exported words",
   kableExtra::kable_styling(latex_options=c("striped"))
 ```
 
-## Analyzing a Work in Progress {-}
+## Analyzing a Work in Progress
 
 In this example, we will analyze recipes that we are working on for a middle-school home economics class. Our target audience will be seventh-eighth graders and we will use **Readability Studio** to meet their reading level. The first step is to open the **New Project Wizard** and select the recipe file. Click the `r keyboardButton("New")` button on the **Home** tab to open the **New Project Wizard**. Next, select **English** as the document language (if this option is available). Then, select the option **Read text from a file or webpage**. Click the button next to the file path field to browse for it:
 
@@ -167,7 +167,7 @@ The program will now reload the recipe document, meaning that all the improvemen
 You can click the `r keyboardButton("Reload")` button at anytime to reanalyze the source document as you edit it externally. Also, whenever you open this project, it will automatically reload the source document (in this case, the recipe file).
 :::
 
-## Analyzing a Webpage {-}
+## Analyzing a Webpage
 
 In this example, we will create a project that reads and analyzes a webpage. Although you can save a webpage from your web browser and load the HTML file, **Readability Studio** can also directly connect to a webpage.
 
@@ -209,11 +209,11 @@ One last item to discuss about loading a webpage is whether you want to reanalyz
 
 ![](Images/reloadwebpage.png)
 
-By having this option selected, you will reload the page's content whenever you reopen the project (or at anytime by pressing `r keyboardButton("F5")`). If you prefer to embed the current version of this page into the project, then select **Embed the source document's original text in the project file**. Refer to ch. \@ref(project-settings) for more information about these options.
+By having this option selected, you will reload the page's content whenever you reopen the project (or at anytime by pressing `r keyboardButton("F5")`). If you prefer to embed the current version of this page into the project, then select **Embed the source document's original text in the project file**. Refer to \@ref(project-settings) for more information about these options.
 
 Note that webpages requiring authentication (i.e., requiring a user name and password) are not currently supported. To work around this, log into the webpage from any browser, save the page as a local HTML file, and then load that into a new project.
 
-## Searching for Overly Long Sentences {-}
+## Searching for Overly Long Sentences
 
 In this example, we will review a document for overly-long sentences. This example will demonstrate the available methods for defining an overly-long sentence. In addition, it will also demonstrate how to search for and review these sentences.
 
@@ -277,7 +277,7 @@ To see what the outlier range is, click on the **Summary Statistics** icon in th
 
 This option is only recommended for situations where most of the sentences are an acceptable length, but a few (very) long sentences skew the average. This option is useful for finding these extreme sentences.
 
-## Customizing a Graph {-#customizing-a-graph}
+## Customizing a Graph {#customizing-a-graph}
 
 In this example, we will discuss the various ways to change the appearance of a graph.
 

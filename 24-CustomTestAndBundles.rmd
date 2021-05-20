@@ -1,6 +1,6 @@
 # Custom Tests & Bundles
 
-## Creating a Custom Test {-#creating-custom-test}
+## Creating a Custom Test {#creating-custom-test}
 
 Along with offering standard tests, such as [New Dale Chall](#dale-chall-test) and [Revised Spache](#spache-test), **Readability Studio** also includes the ability to create your own tests. Many customizable features are offered for new tests, such as being able to select your own familiar-word list and which formula to use.
 
@@ -72,7 +72,7 @@ For example, select the **Children's literature** and **Children's healthcare** 
 
 Now create a new project and select **Children's healthcare** as the industry type. Once the program loads the document, your custom test will be automatically included in the results.
 
-## Custom Test Functions {-#custom-test-functions}
+## Custom Test Functions {#custom-test-functions}
 
 The following functions and operators are available for use in [custom test](#creating-custom-test) formulas.
 
@@ -220,7 +220,7 @@ Table: Document Statistics Functions
 | FamiliarSpacheWordCount() | Returns the number of familiar **Spache** words. |
 | FamiliarWordCount() | Returns the number of familiar words (from a custom list) the document. |
 | HardFogWordCount() | Returns the number of difficult **Gunning Fog** words. |
-| MiniWordCount() | Returns the number of miniwords (refer to ch. \@ref(eflaw-test)). |
+| MiniWordCount() | Returns the number of miniwords (refer to \@ref(eflaw-test)). |
 | NumeralCount() | Returns the number of numerals. |
 | OneSyllableWordCount() | Returns the number of monosyllabic words. |
 | ProperNounCount() | Returns the number of proper nouns. |
@@ -269,7 +269,7 @@ Table: Word Statistics Functions
 Table: Shortcuts
 ```
 
-## Custom Test Dialog {-#custom-test-dialog}
+## Custom Test Dialog {#custom-test-dialog}
 
 ### General Settings {-#custom-test-general-settings}
 
@@ -374,7 +374,7 @@ Familiarity
 
 **Associate with industry**: Select the industries that you want this test to be associated with when creating a new project. This will only take effect if the project wizard selects tests for you based on industry or field.
 
-## Adding a Custom-word Test {-#add-custom-word-test}
+## Adding a Custom-word Test {#add-custom-word-test}
 
 From the **Readability** tab, click the `r keyboardButton("Custom Test")` button and then select **Add Custom [Test]...** to display the **Add Custom [Test]** dialog. The following tests available are: **New Dale-Chall**, **Spache Revised**, and **Harris-Jacobson**. This dialog is used to create a [custom word test](#creating-custom-test) and is a simplified version of the standard [Custom Test](#creating-custom-test) dialog.
 
@@ -395,7 +395,7 @@ install
 program  
 videogame`
 
-## Test Bundles {-#test-bundles}
+## Test Bundles {#test-bundles}
 
 Test bundles enable you to organize tests into collections that you can quickly add to a project. Rather than selecting numerous tests from the menus one-by-one, you can simply select a test bundle from the menu. From there, all tests within the bundle will be added to the project.
 

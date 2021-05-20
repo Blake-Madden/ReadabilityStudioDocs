@@ -1,6 +1,6 @@
 # Scoring Notes
 
-## Grade Level Results {-#grade-level-results}
+## Grade Level Results {#grade-level-results}
 
 Most readability tests that return a grade level include a mantissa (i.e., decimal value), which represents the month of the grade. For example, “1.6” would be the sixth month of first grade (Carver, “Measuring Readability Using DPR Units” 306-307). However, this only applies to tests that are computed from a mathematical formula (generally, a regression equation). Tests that use different methods—such as look-up tables or graphs—usually only return a grade level as an integer.
 
@@ -10,9 +10,9 @@ For example, [**New Dale-Chall**](#dale-chall-test) looks up your unfamiliar wor
 
 Finally, graphical tests (e.g., [**Fry**](#fry-test)) only return integral grade levels because the “slices” on these graphs only represent the grade, not the grade and month.
 
- ```{block, type='onsamepage'}
-## Grade Scales {-#grade-scales}
+## Grade Scales {#grade-scales}
 
+ ```{block, type='onsamepage'}
 Grade-level scores are traditional displayed in U.S. (K-12+) format, be can be coverted to other scales. The following grade scales are available to choose from:
 
 | **K-12+** |
@@ -152,7 +152,7 @@ kableExtra::kbl(canadaTable, booktabs=T, centering=T, escape=F, linesep="", capt
   kableExtra::column_spec(1, border_right=T)
 ```
 
-## Cloze Scores and Readability Formulas {-#cloze}
+## Cloze Scores and Readability Formulas {#cloze}
 
 ```{block, type='onsamepage'}
 A **cloze** procedure is a test given to a student to measure his/her comprehension ability. This test consists of the following steps:
@@ -170,7 +170,7 @@ A **cloze** procedure is a test given to a student to measure his/her comprehens
 
 Some readability formulas produce predicted **cloze** scores (rather than grade levels). A predicted **cloze** score represents an estimation of a passage's mean score if it were made into a **cloze** test and given to a group of students. This can be useful when selecting passages to use for **cloze** tests.
 
-## Proper Nouns in the Difficult Word Lists {-#proper-nouns-in-lists}
+## Proper Nouns in the Difficult Word Lists {#proper-nouns-in-lists}
 
 When reviewing your difficult word lists, you may notice that some proper nouns are displayed with additional information. This is to help discern how many times the given word is considered unfamiliar in the document (for certain tests).
 
@@ -192,8 +192,8 @@ If a word appears only in proper form throughout the document, then it will not 
 
 Note that this also applies to any [custom tests](#creating-custom-test) that treat proper nouns as familiar.
 
-## Adding Words to Familiar-Word Tests {-}
+## Adding Words to Familiar-Word Tests
 
 Although both [Dale-Chall](#dale-chall-test) and [Spache](#spache-test) were updated in recent years, some may find that these tests lack contemporary words known by young readers. For example, some computer terms that 4^th^ graders are fluent in are not considered familiar by these tests. Proper nouns such as **Microsoft** and **Macbook** will be considered familiar, but some non-proper computer words (e.g., megabyte) will not.
 
-**Readability Studio** offers [custom tests](#creating-custom-test) as a solution for extending these tests. You can create a new test with **Dale-Chall**, **Spache**, or **Harris-Jacobson** as a template, and append your own word list to it. When you perform this custom test, any word on the standard word list or your word list will be considered familiar. Refer to ch. \@ref(creating-custom-test) for more information.
+**Readability Studio** offers [custom tests](#creating-custom-test) as a solution for extending these tests. You can create a new test with **Dale-Chall**, **Spache**, or **Harris-Jacobson** as a template, and append your own word list to it. When you perform this custom test, any word on the standard word list or your word list will be considered familiar. Refer to \@ref(creating-custom-test) for more information.

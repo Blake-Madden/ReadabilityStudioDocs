@@ -16,7 +16,7 @@ If you wish to change options for an individual project, then click the `r keybo
 
 ![](Images/linktofile.png)
 
-## General Settings {-#options-general-settings}
+## General Settings {#options-general-settings}
 
 The options on this page manage the program's general settings.
 
@@ -66,7 +66,7 @@ The following are informational messages shown interactively in the program:
 
 \newpage
 
-## Project {-#project-settings}
+## Project {#project-settings}
 
 The options on this page customize your general project settings.
 
@@ -120,7 +120,7 @@ Also note that your original document is not affected by this process. The origi
 
 \newpage
 
-## Document Indexing {-#document-analysis}
+## Document Indexing {#document-analysis}
 
 The options here specify how your documents should be parsed and analyzed.
 
@@ -153,12 +153,12 @@ Both of these exceptions can be overridden by the options [**Ignore blank lines*
 
 **always begin a new paragraph**: Select this option to always consider line feeds in the text as the end of the current sentence and paragraph. This should only be used for special cases where a document does not have paragraph indenting and contains numerous lists or headers that are not followed by blank lines.
 
-Refer to ch. \@ref(line-chaining) for more information about these options.
+Refer to \@ref(line-chaining) for more information about these options.
 ::::
 
 **Ignore blank lines**: Select this option to not consider [incomplete sentences](#how-text-is-excluded) followed by blank lines as the end of the current sentence and paragraph. If an incomplete sentence is encountered, any blank lines after it will be skipped and the sentence will be merged with the following sentence.
 
-This option is not recommended for documents that contain headers or lists that rely on blank lines to separate them from the narrative text. Refer to ch. \@ref(line-chaining) for more information.
+This option is not recommended for documents that contain headers or lists that rely on blank lines to separate them from the narrative text. Refer to \@ref(line-chaining) for more information.
 
 **Ignore indenting**: Select this option to not consider indented lines following incomplete sentences as the start of a new paragraph. This option is recommended for documents that center or left align their text.
 
@@ -177,7 +177,7 @@ Exclusion
 
 These options control how text is excluded from your documents.
 
-**Do not exclude any text**: Select this option to treat all incomplete sentences as regular sentences when calculating statistics. This is only recommended for forms that may contain numerous titles and lists items and little narrative text. Refer to ch. \@ref(framented-text) for more information.
+**Do not exclude any text**: Select this option to treat all incomplete sentences as regular sentences when calculating statistics. This is only recommended for forms that may contain numerous titles and lists items and little narrative text. Refer to \@ref(framented-text) for more information.
 
 **Exclude all incomplete sentences**: Select this option to ignore all incomplete sentences when calculating statistics. This option is recommended by most tests.
 
@@ -268,7 +268,7 @@ This phrase list can be edited by clicking the button next to this field, which 
 
 **Include first occurrenc**: Select this option to not exclude the first occurrence of any word or phrase from your exclusion list. All remaining occurrences of these words in the document will be excluded. This is useful if you wish to only analyze the first instance of certain difficult words.
 
-**Exclude text between**: Selects whether to exclude all text in between a certain pair of tags. For example, select “[ and ]” and any text inside of '[' and ']' will be ignored in the analysis. Along with excluding the bracketed words, any full paragraphs and sentences wrapped inside of these tags will also be excluded (which will be reflected in the statistics). Refer to ch. \@ref(excluding-placeholders) for an example.
+**Exclude text between**: Selects whether to exclude all text in between a certain pair of tags. For example, select “[ and ]” and any text inside of '[' and ']' will be ignored in the analysis. Along with excluding the bracketed words, any full paragraphs and sentences wrapped inside of these tags will also be excluded (which will be reflected in the statistics). Refer to \@ref(excluding-placeholders) for an example.
 
 Note that these options are not available if **Do not exclude any text** is selected.
 
@@ -306,7 +306,7 @@ After selecting your list file, its words/phrases will be displayed in the grid 
 
 \newpage
 
-## Readability Scores {-#readability-test-options}
+## Readability Scores {#readability-test-options}
 
 ### Test Options {-#options-test-options}
 
@@ -435,7 +435,7 @@ The options on this page customize which results to include in the **Readability
 - The labels on the grade-level [box plot](#reviewing-batch-box-plots).
 - The bin labels on the grade-level [histograms](#reviewing-batch-histograms).
 
-Refer to ch. \@ref(grade-scales) for a list of available scales.
+Refer to \@ref(grade-scales) for a list of available scales.
 
 **Display scores in long format**: Check this to display readability scores in long format (e.g., “2^nd^ grade”) within the score grid.
 
@@ -475,7 +475,7 @@ The options on this page customize various readability graph settings.
 
 \newpage
 
-## Statistics {-#options-statistics}
+## Statistics {#options-statistics}
 
 The options on this page customize which statistics to include in your reports and results.
 
@@ -511,7 +511,7 @@ The options on this page customize which statistics to include in your reports a
 
 \newpage
 
-## Words Breakdown {-#options-words-breakdown}
+## Words Breakdown {#options-words-breakdown}
 
 The options on this page customize which results are included in the [Words Breakdown](#reviewing-word-breakdowns) section.
 
@@ -539,7 +539,7 @@ The options on this page customize which results are included in the [Words Brea
 
 \newpage
 
-## Sentences Breakdown {-#options-sentences-breakdown}
+## Sentences Breakdown {#options-sentences-breakdown}
 
 The options on this page customize which results are included in the [Sentences Breakdown](#reviewing-sentences-breakdown) section.
 
@@ -555,7 +555,7 @@ The options on this page customize which results are included in the [Sentences 
 
 \newpage
 
-## Grammar {-#options-grammar}
+## Grammar {#options-grammar}
 
 The options on this page customize grammar analysis.
 
@@ -619,7 +619,7 @@ Checking this option will instruct the program to not consider words such as “
 
 \newpage
 
-## Highlighted Reports {-#options-highlighted-reports}
+## Highlighted Reports {#options-highlighted-reports}
 
 ### General {-}
 
@@ -673,7 +673,7 @@ The options on this page select which categories of [Dolch](#reviewing-dolch) wo
 
 \newpage
 
-## Test Graphs {-#options-graphs}
+## Test Graphs {#options-graphs}
 
 ### General {-}
 
@@ -895,7 +895,7 @@ Effect
 
 **Opacity**: Sets the transparency of the box. A value of 255 will set the box to be fully opaque, whereas 0 will set the box to be transparent.
 
-#### Box Options: {-#options-box-plots-box-options}
+#### Box Options: {-}
 
 **Display box & whisker labels**: Check this to display labels on the middle points, upper/lower control limits, and whiskers.
 

@@ -4,7 +4,7 @@ In this chapter, we will step through examples showing how to create different t
 
 With custom tests, you can create enhanced versions of existing tests like **New Dale-Chall** that include your own word list. You can also create entirely new tests with your own formulas, and design them to return either grade-level, predicted cloze, or index scores.
 
-## Creating a Modified **Flesch** Test {-#creating-custom-flesch-test}
+## Creating a Modified **Flesch** Test {#creating-custom-flesch-test}
 
 In this example, we will create a custom test. Custom tests are useful for either creating an entirely new formula or a new one based on an existing formula.
 
@@ -75,7 +75,7 @@ To add this test to any project, first select the **Readability** tab. Next, cli
 
 ![](Images/CustomTestExample1Score.png)
 
-## Creating a Custom **New Dale-Chall** Test {-}
+## Creating a Custom **New Dale-Chall** Test
 
 In this example, we will create a custom [New Dale-Chall](#dale-chall-test) test specifically designed for recipes for a group of young students. Although the standard **Dale-Chall** list is quite extensive, we may wish to append some words that we know are familiar to our kitchen-savvy students.
 
@@ -161,7 +161,7 @@ The other option is to export these unfamiliar words and use that output to revi
 The recipe used in this example is available from the **Example Documents** menu. From the **Help** tab, click the `r keyboardButton("Example Documents")` button, and then select **Chocolate Eclairs**. When prompted about how to open the document, select **Create a new project**.
 :::
 
-## Creating a Custom Index Test {-}
+## Creating a Custom Index Test
 
 In this example, we will create a test designed for classifying a document within a custom scale. We will make a list of “buzzwords” that are commonly overused in marketing documents, then create a test to see how much a given document uses them. Also, rather than calculating the conventional grade-level or predicted [cloze](#cloze) score, our test will return a value using our own scale.
 

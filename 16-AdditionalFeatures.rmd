@@ -2,7 +2,7 @@
 
 This chapter discusses additional features not directly related to readability. This includes features such crawling and downloading documents from a website, as well as logging and command line options.
 
-## Web Harvester {-#web-harvester}
+## Web Harvester {#web-harvester}
 
 The **Web Harvester** dialog enables you to gather (and optionally download) links from a website.
 
@@ -62,7 +62,7 @@ If you intend to review a website and need to always analyze its latest changes,
 
 **Minimum file size to download (in Kbs.)**: Enter into this field the minimum size (in kilobytes) that a file must be for it to be downloaded.
 
-## Command Line Options {-#command-line-options}
+## Command Line Options {#command-line-options}
 
 The following command line options are available for **Readability Studio**:
 
@@ -83,7 +83,7 @@ This example would tell the program to log the maximum level of information whil
 
 Note that verbose logging can also be enabled by holding down the `r keyboardButton("SHIFT")` button on your keyboard while the program opens.
 
-## Log Report {-#log-report}
+## Log Report {#log-report}
 
 While it is running, **Readability Studio** logs various diagnostic information. This information can provide details such as:
 
@@ -105,7 +105,7 @@ The messages in this report are displayed such that:
 
 This information can be useful if you are experiencing issues with loading a document.
 
-## Select Labelling {-#select-labelling}
+## Select Labelling {#select-labelling}
 
 On this dialog, you can select whether to use your documents' descriptions as their labels, or to use a single label to group them by.
 

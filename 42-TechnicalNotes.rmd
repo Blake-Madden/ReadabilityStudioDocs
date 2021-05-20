@@ -1,6 +1,6 @@
 # Technical Notes
 
-## Glossary {-#glossary}
+## Glossary {#glossary}
 
 **Cloze test**: A [cloze](#cloze) procedure is a test given to a student to measure his/her comprehension ability.
 
@@ -26,9 +26,9 @@ Now that the document's measurements have been normalized to the required sample
 
 **Unit**: A section of text ending with a period, exclamation mark, question mark, interrobang, colon, semicolon, or dash. Lengthy, complex sentences generally contain more than one unit.
 
-Please refer to ch. \@ref(stat-terms) for information regarding statistics.
+Please refer to \@ref(stat-terms) for information regarding statistics.
 
-## Statistical Terminology {-#stat-terms}
+## Statistical Terminology {#stat-terms}
 
 ### Range {-#stats-range}
 
@@ -100,7 +100,7 @@ boxplot(len ~ dose, data = ToothGrowth,
 beeswarm(len ~ dose, data = ToothGrowth, col = 2, add = TRUE)
 ```
 
-## Box Plots {-#box-plots}
+## Box Plots {#box-plots}
 
 Box plots are used to display the distribution of data, where:
 

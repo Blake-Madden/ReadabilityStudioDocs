@@ -1,6 +1,6 @@
 # Customizing the Results
 
-## Customizing the Scores {-}
+## Customizing the Scores
 
 When the **Scores** section is selected:
 
@@ -14,9 +14,9 @@ Options for customizing their display are made available on the **Edit** section
 
 **Grade scale**: Click this button to choose from a list of grade scales to display your scores in.
 
-Refer to ch. \@ref(grade-scales) for a list of available scales.
+Refer to \@ref(grade-scales) for a list of available scales.
 
-## Customizing the Summary Statistics {-}
+## Customizing the Summary Statistics
 
 When the **Summary Statistics** report is selected:
 
@@ -28,7 +28,7 @@ Options for customizing its display are made available on the **Edit** section o
 
 Click the `r keyboardButton("Edit Report")` button to view the [**Properties**](#options-statistics) dialog. Here, you can specify which sections to include in your summary report.
 
-## Customizing the Highlighted Text Windows {-}
+## Customizing the Highlighted Text Windows
 
 When any highlighted-text window is selected:
 
@@ -42,7 +42,7 @@ Options for customizing its display are made available on the **Edit** section o
 
 **Highlight**: Click this button to open the [**Properties**](#options-highlighted-reports) dialog. Here, you can customize the highlight colors and whether the background or foreground of the text should be highlighted.
 
-## Column Sorting {-#column-sorting}
+## Column Sorting {#column-sorting}
 
 You can sort any list column by clicking on the column header, as shown below:
 
@@ -62,7 +62,7 @@ To sort a list by multiple columns, click the `r keyboardButton("Sort")` button 
 
 On this dialog, you will specify which columns to sort by and their order. Going from top to bottom in this grid, the columns specified here will act as the sorting criteria for the list. The list will be sorted by the first specified column (and its respective sorting order), and in the case of a tie between two or more rows, the next specified column will become the sort criterion between those rows, and so on. To add a column as a sort criterion, double click a row in this grid and select the column name from the drop-down box. Once you have selected the columns to sort by, click the `r keyboardButton("OK")` button to sort the list.
 
-## Customizing Graphs {-}
+## Customizing Graphs
 
 When any graph is selected:
 
@@ -72,11 +72,11 @@ Options for customizing it are made available on the **Edit** section of the rib
 
 ![](Images/RibbonEditGraphs.png)
 
-The options made available will be dependent on the graph type. Please refer to ch. \@ref(options-box-plots) for further discussions of these options.
+The options made available will be dependent on the graph type. Please refer to \@ref(options-graphs) for further discussions of these options.
 
 Please refer to \@ref(customizing-a-graph) for a step-by-step tutorial on editing a graph.
 
-## Customizing How Documents are Analyzed {-}
+## Customizing How Documents are Analyzed
 
 After creating or opening a project, you can customize how the program analyzes the source document(s). For example, you can change how numerals are syllabized or how sentence endings are detected. To edit these options, click on the **Document** tab of the ribbon:
 

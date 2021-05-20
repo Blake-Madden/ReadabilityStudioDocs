@@ -1,8 +1,6 @@
 # (PART) Appendix {-}
 
-# References
-
-## Bibliography {-#bibliography}
+# References {#bibliography}
 
 Amstad, Toni. “Wie Verstandlich Sind Unsere Zeitungen?” Diss. Universitat Zurich, 1978.
 

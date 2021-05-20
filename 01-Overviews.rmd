@@ -2,7 +2,7 @@
 
 # Overviews
 
-## Introductory Overview {-#intro}
+## Introductory Overview {#intro}
 
 When writing for a target audience or classifying documents for specific age groups, readability formulas are invaluable tools. They help determine the minimum age group that can quickly process reading material by using an analytical approach. This approach uses factors such as sentence length, word difficulty, and word familiarity.
 
@@ -10,7 +10,7 @@ Most readability scores represent the grade level of the youngest reader that ca
 
 Note that these tests only determine the reading level of material based on how easy it is to process. They do not consider the content or themes of a given work. The age level reported by a test score only reflects the age group that can comprehend a document. It does not reflect whether the topics covered in the material are meant for that age group. If you are classifying books into age groups, you should first review them for any mature topics. Then you should use readability tests to determine their comprehension levels.
 
-## What Readability Studio Offers {-#program-offering}
+## What Readability Studio Offers {#program-offering}
 
 **Readability Studio** eases the task of performing these tests. The program quickly imports and analyzes your work using the most popular tests. In addition, it offers insightful explanations and suggestions for improving your documents.
 
@@ -177,7 +177,7 @@ You do not need the native application for these file formats. **Readability Stu
 
 Finally, **Readability Studio** is highly configurable. Many options, such as how documents are analyzed and how the results are displayed, are customizable. For example, you can specify how numeric words (e.g., “10/31/1974”) are [syllabized](#document-analysis). Other programs either sound out each digit or treat the entire word as one syllable and you cannot change this. With **Readability Studio**, you can toggle this behavior at anytime.
 
-## New Features and Enhancements {-#new-features}
+## New Features and Enhancements {#new-features}
 
 ### Readability Studio 2020/2021 {-}
 ***
@@ -224,7 +224,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - Expanded the difficulty-level descriptions for the German **Lix** tests.
 - Instruction label now shown on all **Flesch** charts (not just blank ones).
 - Added custom test features:
-  - Added feature to create custom tests based on any existing formula-based test. Refer to ch. \@ref(creating-custom-flesch-test) for an example.
+  - Added feature to create custom tests based on any existing formula-based test. Refer to \@ref(creating-custom-flesch-test) for an example.
   - Added `GunningFog` option to `SentenceCount()` function. This will return the sentence count using the system's [Gunning Fog method](#options-gunning-fog).
   - Added `MiniWordCount()` function.
   - Added `HardFogWordCount()` function.

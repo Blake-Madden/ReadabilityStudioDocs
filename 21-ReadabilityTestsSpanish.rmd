@@ -1,6 +1,6 @@
 # Spanish Readability Tests {#spanish-readability-tests}
 
-## Crawford {-#crawford}
+## Crawford {#crawford}
 
 The **Crawford** (1-17) test is designed for “elementary level materials in Spanish” (4). This test calculates the grade level of a document based on sentence length and syllable count.
 
@@ -33,7 +33,7 @@ For example, in the above graph the number of syllables is 175. The number of se
 This test is designed for 100-word samples and uses the same statistics as the [Fry](#fry-test) test. ([Normalization](#glossary) can also be used to analyze larger samples or entire documents.)
 
 \newpage
-## FRASE Graph {-#frase}
+## FRASE Graph {#frase}
 
 **FRASE (Fry Readability Adaptation for Spanish Evaluation)** (Vari-Cartier 141-148) is a graphical test for Spanish text. This test calculates a document's language level from its average number of sentences and syllables per hundred words. These averages are plotted onto a chart where their intersection determines the reading level of the content.
 
@@ -75,7 +75,7 @@ The **FRASE Graph** procedure is:
 This test is designed for 100-word samples, with 3 samples being recommended for best results. ([Normalization](#glossary) can also be used to analyze larger samples or entire documents.)
 
 \newpage
-## Gilliam-Peña-Mountain Graph {-#gilliam-pena-mountain-fry-graph}
+## Gilliam-Peña-Mountain Graph {#gilliam-pena-mountain-fry-graph}
 
 **Gilliam-Peña-Mountain** (426-430) is a graphical test for Spanish text based on the [Fry](#fry-test) graph (“Clarifications, Validity, and Extension” 242-252). It is identical to the **Fry** graph, except that its X (syllable-count) axis begins at 175 (instead of 108). This is necessary to account for Spanish text having a much higher syllable count than its English counterpart. As the authors stated, “Spanish syllable counts, however, were so high that they threw many of the samples outside the bands or off the graph entirely” (427).
 
@@ -131,16 +131,16 @@ This test is designed for 100-word samples, with 3 samples being recommended for
 Note that numerals are fully syllabized for this test. For example, “1945” will be counted as nine syllables (“u-no”-“nu-e-ve”-“cua-tro”-“cin-co”).
 
 \newpage
-## Lix {-#lix-spanish}
+## Lix {#lix-spanish}
 
 Please refer to [Lix](#lix-test).
 
-## Rix {-#rix-spanish}
+## Rix {#rix-spanish}
 
 Please refer to [Rix](#rix-test).
 
 \newpage
-## SOL {-#sol-spanish}
+## SOL {#sol-spanish}
 
 The **SOL** readability formula (Contreras 21-29) calculates the grade level of a document based on complex-word density.
 
