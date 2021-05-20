@@ -1,5 +1,8 @@
 % LaTeX packages that we will need
-\usepackage{booktabs}
+\usepackage{imakeidx}
+\makeindex[intoc=true,columnseprule=true,
+           options= -s latex/indexstyles.ist]
+
 \usepackage{amsthm}
 \usepackage{xeCJK}
 \usepackage[all]{nowidow}
@@ -10,12 +13,14 @@
 \usepackage{xcolor}
 \usepackage{tcolorbox}
 \usepackage{fontawesome5}
+% table packages
+\usepackage{booktabs}
 \usepackage{longtable,tabu}
 \usepackage{makecell}
 \usepackage{threeparttable}
+\usepackage{colortbl}
 \usepackage{float}
 \usepackage{fontspec}
-\usepackage{xcolor,colortbl}
 \usepackage[a4paper]{geometry}
 \geometry{left=4cm, right=3cm, top=2.5cm, bottom=2.5cm}
 
