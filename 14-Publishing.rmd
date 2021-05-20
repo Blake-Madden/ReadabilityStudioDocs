@@ -22,18 +22,23 @@ When [exporting](#exporting) readability scores from a standard project, the fol
 
 ### Select which section to save {-}
 
+::: {.optionssection data-latex=""}
 **Grid**: Saves the grid of readability scores.
 
 **Explanations**: Saves a report of the explanations associated with the scores.
 
 **Both**: Saves the scores grid and explanations.
+:::
 
 ## Text Window Export Options {#text-window-export}
 
 When [exporting](#exporting) a text window\index{text windows!saving}, the following export formats are available:
 
-- **HTML**: A format that can be displayed in Internet browsers and most word-processing programs.
-- **RTF**: A format that can be displayed in most word-processing programs.
+::: {.optionssection data-latex=""}
+**HTML**: A format that can be displayed in Internet browsers and most word-processing programs.
+
+**RTF**: A format that can be displayed in most word-processing programs.
+:::
 
 ::: {.tipsection data-latex=""}
 If you plan to edit this output, then **RTF** is recommended. (Most word processors support editing this format.)
@@ -43,13 +48,21 @@ If you plan to edit this output, then **RTF** is recommended. (Most word process
 
 When [exporting](#exporting) a graph\index{graphs!saving}, you will first be prompted for an image format to export as. The following formats are available to choose from:
 
-- **PNG**: A lossless-compressed image format. The image can be compressed to a smaller size without any loss of quality.
-- **JPG**: A lossy-compressed image format. Some image quality may be lost, compared to other formats such as PNG.
-- **BMP**: An uncompressed raster (i.e., pixel based) image format.
-- **TIFF**: This format can either be compressed or uncompressed and offers both lossy and lossless compression. This format is generally preferred for desktop publishing.
-- **TARGA**: A raster (i.e., pixel based) image format.
-- **GIF**: A raster (i.e., pixel based) image format. Note that this image format is limited to 256 colors.
-- **SVG**: A format that uses vector (rather than raster) drawing. Vector-based images can be scaled to much larger sizes, without the loss of quality that raster images would experience.
+::: {.optionssection data-latex=""}
+**PNG**: A lossless-compressed image format. The image can be compressed to a smaller size without any loss of quality.
+
+**JPG**: A lossy-compressed image format. Some image quality may be lost, compared to other formats such as PNG.
+
+**BMP**: An uncompressed raster (i.e., pixel based) image format.
+
+**TIFF**: This format can either be compressed or uncompressed and offers both lossy and lossless compression. This format is generally preferred for desktop publishing.
+
+**TARGA**: A raster (i.e., pixel based) image format.
+
+**GIF**: A raster (i.e., pixel based) image format. Note that this image format is limited to 256 colors.
+
+**SVG**: A format that uses vector (rather than raster) drawing. Vector-based images can be scaled to much larger sizes, without the loss of quality that raster images would experience.
+:::
 
 After selecting the image format, these additional options will be provided:
 
@@ -65,27 +78,41 @@ When you change the width or height, the other measurement will be adjusted auto
 
 ### Color Mode {-}
 
+::: {.optionssection data-latex=""}
 **RGB (Color)**: Select this option to save the image in color.
 
 **Grayscale**: Select this option to save the image in shades of gray.
+:::
 
 ### TIFF options {-}
 
 This option is available only when exporting as a TIFF file.
 
-**Compression**: This option specifies the compression level of the TIFF file and includes the following options:
+::: {.optionssection data-latex=""}
+::: {.optionssectiontitle data-latex=""}
+Compression
+:::
 
-- None: do not compress the image
-- Lempel-Ziv & Welch: lossless compression, but may generate larger images than other compression methods.
-- JPEG: lossy compression method. Suitable for high-color images, but some quality may be lost.
-- Deflate: lossless, high-compression method.
+This option specifies the compression level of the TIFF file and includes the following options:
+
+**None**: do not compress the image
+
+**Lempel-Ziv & Welch**: lossless compression, but may generate larger images than other compression methods.
+
+**JPEG**: lossy compression method. Suitable for high-color images, but some quality may be lost.
+
+**Deflate**: lossless, high-compression method.
+:::
 
 ## List Export Options {#export-list}
 
 When [exporting](#exporting) a list\index{lists!saving}, you will be provided with the following formats to export as:
 
-- **HTML**: A format that includes formatting and can be opened in browsers and spreadsheet programs.
-- **TXT**: A tab-delimited file with no formatting (i.e., colors will be lost).
+::: {.optionssection data-latex=""}
+**HTML**: A format that includes formatting and can be opened in browsers and spreadsheet programs.
+
+**TXT**: A tab-delimited file with no formatting (i.e., colors will be lost).
+:::
 
 After selecting the file format, these additional options will be provided.
 
@@ -241,8 +268,8 @@ asciiData <- tibble("Extended\nASCII Character" = c("ö", "ü", "ä", "ß", "ñ"
                     "Replacement " = c("y", "y", verbatim("·"), verbatim("'"), verbatim("'"),
                                        verbatim("'"), verbatim("'"), verbatim("'"), verbatim("'"), verbatim("\""),
                                        verbatim("\""), verbatim("\""), verbatim("\""), verbatim("\""), verbatim("..."),
-                                       verbatim("--"), verbatim("--"), verbatim("--"), verbatim("--"), "(c)",
-                                       "(r)", "(tm)", "1/4", "1/2", "3/4",
+                                       verbatim("--"), verbatim("--"), verbatim("--"), verbatim("--"), verbatim("(c)"),
+                                       verbatim("(r)"), "(tm)", "1/4", "1/2", "3/4",
                                        "+-", "", "", "", ""))
 
 # add linebreaks to the coloumn headers for print
