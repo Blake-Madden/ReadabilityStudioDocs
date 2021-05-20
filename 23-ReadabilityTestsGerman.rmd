@@ -41,7 +41,7 @@ Like **Flesch Reading Ease**, this test treats numerals as monosyllabic words by
 \newpage
 ## Lix {#lix-german}
 
-Please refer to [Lix](#lix-test).
+Refer to \@ref(lix-test).
 
 ## Lix (German children's literature) {#lix-german-childrens-literature}
 
@@ -228,7 +228,7 @@ Based on the examples from **Bamberger-Vanecek** (78), the grade-level score sho
 \newpage
 ## Rix {#rix-german}
 
-Please refer to [Rix](#rix-test).
+Refer to \@ref(rix-test).
 
 ## Rix (German fiction) {#rix-german-fiction}
 

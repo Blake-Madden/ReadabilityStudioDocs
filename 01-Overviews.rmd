@@ -52,7 +52,7 @@ Note that these tests only determine the reading level of material based on how 
 - [Rate Index (Rix)](#rix-test)
 - [SMOG](#smog-test)
 - [Modified SMOG](#modified-smog)
-- [**Spache Revised**](#spache-test)
+- [Spache Revised](#spache-test)
 - [Wheeler-Smith](#wheeler-smith)
 ```
 
