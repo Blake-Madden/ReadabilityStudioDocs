@@ -174,7 +174,7 @@ Some readability formulas produce predicted **cloze** scores (rather than grade 
 
 When reviewing your difficult word lists, you may notice that some proper nouns are displayed with additional information. This is to help discern how many times the given word is considered unfamiliar in the document (for certain tests).
 
-Certain tests, such as [Spache Revised](#spache-test), treat all proper nouns as familiar, even if they do not appear on the test's familiar-word list. However, if the same word occurs in the document as non-proper, then that instance will be considered unfamiliar if it is not on the test's familiar-word list.
+Certain tests, such as [**Spache Revised**](#spache-test), treat all proper nouns as familiar, even if they do not appear on the test's familiar-word list. However, if the same word occurs in the document as non-proper, then that instance will be considered unfamiliar if it is not on the test's familiar-word list.
 
 Consider the following example:
 
@@ -194,6 +194,6 @@ Note that this also applies to any [custom tests](#creating-custom-test) that tr
 
 ## Adding Words to Familiar-Word Tests
 
-Although both [Dale-Chall](#dale-chall-test) and [Spache](#spache-test) were updated in recent years, some may find that these tests lack contemporary words known by young readers. For example, some computer terms that 4^th^ graders are fluent in are not considered familiar by these tests. Proper nouns such as **Microsoft** and **Macbook** will be considered familiar, but some non-proper computer words (e.g., megabyte) will not.
+Although both [**Dale-Chall**](#dale-chall-test) and [**Spache**](#spache-test) were updated in recent years, some may find that these tests lack contemporary words known by young readers. For example, some computer terms that 4^th^ graders are fluent in are not considered familiar by these tests. Proper nouns such as **Microsoft** and **Macbook** will be considered familiar, but some non-proper computer words (e.g., megabyte) will not.
 
 **Readability Studio** offers [custom tests](#creating-custom-test) as a solution for extending these tests. You can create a new test with **Dale-Chall**, **Spache**, or **Harris-Jacobson** as a template, and append your own word list to it. When you perform this custom test, any word on the standard word list or your word list will be considered familiar. Refer to \@ref(creating-custom-test) for more information.

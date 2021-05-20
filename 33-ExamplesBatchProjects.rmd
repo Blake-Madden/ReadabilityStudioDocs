@@ -42,7 +42,7 @@ We will be analyzing technical documents in this example, so select **Technical 
 
 ![](Images/batchscorestats.png)
 
-The first items presented to us are the aggregated [statistics](#reviewing-batch-scores) for the test scores. This will give us a general overview of the collection's readability level. By looking at the **Means** column, we can see that the average reading levels of our documents are in the high-school range. Also, the mean [Flesch](#flesch-test) score is 54, which is somewhat difficult. The next column to review is the **Maximum** column. Here we can see that some of the higher test scores (e.g., 14.6) are into the collegiate level. From this, we can summarize that this collection is a little too difficult to read and that some documents need revising.
+The first items presented to us are the aggregated [statistics](#reviewing-batch-scores) for the test scores. This will give us a general overview of the collection's readability level. By looking at the **Means** column, we can see that the average reading levels of our documents are in the high-school range. Also, the mean [**Flesch**](#flesch-test) score is 54, which is somewhat difficult. The next column to review is the **Maximum** column. Here we can see that some of the higher test scores (e.g., 14.6) are into the collegiate level. From this, we can summarize that this collection is a little too difficult to read and that some documents need revising.
 
 To view a breakdown of all the documents and their respective test scores, click on the **Raw Scores** subitem. Here we can [sort](#column-sorting) any of the test columns to see which documents scored the highest.
 

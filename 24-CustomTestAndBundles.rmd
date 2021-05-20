@@ -330,7 +330,7 @@ If you are not stemming, then it is recommended to enter each inflected form of 
 
 **Include New Dale-Chall familiar word list**: Check this option to use the [New Dale-Chall](#dale-chall-test) word list (along with any other selected word lists) to determine if a word is familiar.
 
-**Include Spache Revised familiar word list**: Check this option to use the [Spache Revised](#spache-test) word list (along with any other selected word lists) to determine if a word is familiar.
+**Include Spache Revised familiar word list**: Check this option to use the [**Spache Revised**](#spache-test) word list (along with any other selected word lists) to determine if a word is familiar.
 
 **Include Harris-Jacobson familiar word list**: Check this option to use the [Harris-Jacobson](#harris-jacobson) word list (along with any other selected word lists) to determine if a word is familiar.
 

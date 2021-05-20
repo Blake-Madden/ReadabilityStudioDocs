@@ -467,7 +467,7 @@ The options on this page customize various readability graph settings.
 
 #### Flesch Chart {-#options-flesch-chart}
 
-**Connect points**: Check this to connect the factor and score points on the [Flesch](#flesch-test) chart.
+**Connect points**: Check this to connect the factor and score points on the [**Flesch**](#flesch-test) chart.
 
 #### Lix Gauge {-#options-lix-gauge}
 

@@ -8,7 +8,7 @@ With custom tests, you can create enhanced versions of existing tests like **New
 
 In this example, we will create a custom test. Custom tests are useful for either creating an entirely new formula or a new one based on an existing formula.
 
-For this example, we will use the [Flesch](#flesch-test) formula for our basis. We will take the standard **Flesch** formula and substitute its sentence count factor with independent clause count. This will effectively create a formula which does not penalize documents for containing numerous compound sentences.
+For this example, we will use the [**Flesch**](#flesch-test) formula for our basis. We will take the standard **Flesch** formula and substitute its sentence count factor with independent clause count. This will effectively create a formula which does not penalize documents for containing numerous compound sentences.
 
 The first step to creating a new test is to click the `r keyboardButton("Custom Tests")` button on the **Readability** tab and select **Add Test Based on...** from the menu. This will present a dialog containing formula-based tests; select **Flesch Reading Ease** and click OK.
 

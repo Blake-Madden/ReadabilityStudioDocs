@@ -28,11 +28,11 @@ When calculating these statistics, failed test scores are treated as missing obs
 
 To remove any test from this list, select it and press `r keyboardButton("CTRL")`+`r keyboardButton("DELETE")` (`r macOSCmdButton()`+`r keyboardButton("DELETE")` on macOS) on your keyboard. To edit a [custom test](#creating-custom-test), double click on it in this list. To view the help for a standard test, double click on it in this list.
 
-There will also be graphs in this section if you had included the [**Fry**](#reviewing-readability-graphs) , [Gilliam-Peña-Mountain](#gilliam-pena-mountain-fry-graph), [**Raygor**](#reviewing-readability-graphs), [**Flesch**](#flesch-test), or [**FRASE**](#frase) tests. Please refer to \@ref(reviewing-readability-graphs) for further information.
+There will also be graphs in this section if you had included the [**Fry**](#reviewing-readability-graphs) , [**Gilliam-Peña-Mountain**](#gilliam-pena-mountain-fry-graph), [**Raygor**](#reviewing-readability-graphs), [**Flesch**](#flesch-test), or [**FRASE**](#frase) tests. Please refer to \@ref(reviewing-readability-graphs) for further information.
 
 ## Reviewing the Readability Graphs {#reviewing-readability-graphs}
 
-There are numerous readability tests that are graphically plotted, including [**Fry**](#fry-test), [Raygor](#raygor-test), [Flesch](#flesch-test), [Lix](#lix-test), [Gilliam-Peña-Mountain](#gilliam-pena-mountain-fry-graph), [**FRASE**](#frase), [**Crawford**](#crawford), and [**Schwartz**](#scwartz). These graphs consist of either grade-level or reading-level regions that a document may fall within. They also include indicators for the most influential factor for the document's reported level (i.e., word difficulty vs. sentence difficulty).
+There are numerous readability tests that are graphically plotted, including [**Fry**](#fry-test), [**Raygor**](#raygor-test), [**Flesch**](#flesch-test), [Lix](#lix-test), [**Gilliam-Peña-Mountain**](#gilliam-pena-mountain-fry-graph), [**FRASE**](#frase), [**Crawford**](#crawford), and [**Schwartz**](#scwartz). These graphs consist of either grade-level or reading-level regions that a document may fall within. They also include indicators for the most influential factor for the document's reported level (i.e., word difficulty vs. sentence difficulty).
 
 To view these graphs, click on the **Test Graphs & Charts** icon in a [standard project](#creating-standard-project) or the **Readability Graphs** icon in a [batch project](#creating-batch-project).
 
