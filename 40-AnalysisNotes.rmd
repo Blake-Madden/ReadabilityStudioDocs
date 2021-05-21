@@ -23,10 +23,10 @@ Although ignoring these items is generally recommended, there is one exception: 
 ```{block, type='onsamepage'}
 Although not traditionally mentioned in readability articles, other items may also be excluded within **Readability Studio**. These include:
 
--   Copyright notices
--   Trailing citations
--   Internet and file addresses
--   Specific words or phrases
+- Copyright notices
+- Trailing citations
+- Internet and file addresses
+- Specific words or phrases
 ```
 
 Refer to \@ref(document-analysis) for a detailed explanation of these options.
@@ -170,8 +170,8 @@ Finally, for readability analysis, syllables should be counted on a word-by-word
 
 Numbers are generally syllabized using one of two approaches:
 
--   Sound out each digit of the number. For example, “87” would be three syllables (“eight se-ven”).
--   Count the entire number as one syllable.
+- Sound out each digit of the number. For example, “87” would be three syllables (“eight se-ven”).
+- Count the entire number as one syllable.
 
 By default, **Readability Studio** counts numbers as monosyllabic words; however, this behavior can be toggled from the [Document Indexing](#document-analysis) options. Note that some tests may override these settings if they require a specific method. For example, [*Fry*](#fry-test) will always sound out each numeric digit when syllabizing.
 
@@ -202,14 +202,14 @@ Generally, repeated words are a typo; however, there are a few exceptions. For e
 ```{block, type='onsamepage'}
 Although awkwardly worded, the duplicate “that” and “had” are grammatically correct. To account for this, **Readability Studio** ignores certain repeated words, such as:
 
--   “ha ha”
--   “had had”
--   “no no”
--   “that that”
--   “die die” (German article)
--   “der der” (German article)
--   “das das” (German article)
--   “sie sie” (German pronoun)
+- “ha ha”
+- “had had”
+- “no no”
+- “that that”
+- “die die” (German article)
+- “der der” (German article)
+- “das das” (German article)
+- “sie sie” (German pronoun)
 ```
 
 Words separated by punctuation are also ignored when deducing repeated words. For example:
@@ -265,9 +265,9 @@ Note how “Business” and “Point-of-Sale” are split across multiple lines.
 
 When **Readability Studio** encounters a hyphenated word at the end of a line, it will perform the following steps:
 
-1. Both parts of the word will be joined.
-2. The hyphen(s) will be removed and if what remains is a known word, then that will be used. Otherwise,...
-3. The hyphen(s) will be kept as part of the word.
+- Both parts of the word will be joined.
+- The hyphen(s) will be removed and if what remains is a known word, then that will be used. Otherwise,...
+- The hyphen(s) will be kept as part of the word.
 
 With the above example, “Bus-iness” will be recognized as “Business.” In contrast, “Point-of-Sale” will remain as a hyphenated compound word because “PointofSale” is not a known word.
 

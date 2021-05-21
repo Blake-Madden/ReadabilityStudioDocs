@@ -668,17 +668,17 @@ Using these new basal readers as the test's criterion, a new regression equation
 This test treats headers and subheaders as full sentences, but excludes lists and tables. The default [text exclusion](#options-text-exclusion) method will be overridden for this specific test.
 :::
 
-```{block, type='onsamepage'}
+::: {.onsamepage data-latex=""}
 *Harris-Jacobson* is calculated from the following steps:
 
-1. Obtain the V1 score: (Number of unique hard words / Number of words) \* 100.
-2. Obtain the V2 score: Number of words / Number of sentences.
-3. Multiply V1 by .245.
-4. Multiply the V2 score by .160.
-5. Add together the result of step 3, step 4, and .642 to achieve the predicted raw score.
-6. Round off the predicted raw score to one decimal place.
-7. Find the predicted raw score in the following table to acquire the final readability score:
-```
+- Obtain the V1 score: (Number of unique hard words / Number of words) \* 100.
+- Obtain the V2 score: Number of words / Number of sentences.
+- Multiply V1 by .245.
+- Multiply the V2 score by .160.
+- Add together the result of step 3, step 4, and .642 to achieve the predicted raw score.
+- Round off the predicted raw score to one decimal place.
+- Find the predicted raw score in the following table to acquire the final readability score:
+:::
 
 ```{r, echo=F}
 library(tidyverse)
@@ -730,7 +730,7 @@ Because this formula is based on the usage of familiar words (rather than syllab
 \newpage
 ## Lix {#lix-test}
 
-The **Läsbarhetsindex (Lix)** readability formula (Björnsson 480-497) was designed for documents of any Western European language. It calculates a document’s index score based on sentence length and number of long words (i.e., words containing seven or more characters). Viewing long words as those with seven or more characters is what differentiates it from similar tests (which use six or more characters). This difference is what allows it to be a more balanced “yardstick” that can be applied to numerous languages.
+The *Läsbarhetsindex (Lix)* readability formula (Björnsson 480-497) was designed for documents of any Western European language. It calculates a document’s index score based on sentence length and number of long words (i.e., words containing seven or more characters). Viewing long words as those with seven or more characters is what differentiates it from similar tests (which use six or more characters). This difference is what allows it to be a more balanced “yardstick” that can be applied to numerous languages.
 
 The philosophy behind using one formula for multiple languages is that, at their core, most languages are similar in difficulty. This approach argues that a language having various idiosyncrasies and longer words is not why it scores at more difficult levels. The reason languages score higher is because of how they are used (i.e., word choice, writing style) and presented (e.g., longer paragraphs and sentences, less images). This differs from the reasoning behind other tests based on adjusted English formulas. Those tests are designed under the assumption that non-English languages are inherently more difficult (because of comparatively longer words). For example, [*Gilliam-Peña-Mountain*](#gilliam-pena-mountain-fry-graph) and the [German reinterpretation of Lix](#lix-german-technical) follow this logic of adjusting English formulas for non-English text. *Lix*, however, chooses to use the same formula to gauge multiple languages. It views documents that score higher to be a result of writing style and presentation, not the language itself.
 

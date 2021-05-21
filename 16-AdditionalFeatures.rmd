@@ -87,11 +87,11 @@ Note that verbose logging can also be enabled by holding down the `r keyboardBut
 
 While it is running, **Readability Studio** logs various diagnostic information. This information can provide details such as:
 
--   The location of where the program is loading its license and settings files
--   Parsing errors encountered while reading documents (e.g., malformed HTML files)
--   Warnings and errors encountered while performing analyses
--   The paths of documents being analyzed (verbose mode only)
--   Information about the operating system (e.g., OS version, default font, etc.)
+- The location of where the program is loading its license and settings files
+- Parsing errors encountered while reading documents (e.g., malformed HTML files)
+- Warnings and errors encountered while performing analyses
+- The paths of documents being analyzed (verbose mode only)
+- Information about the operating system (e.g., OS version, default font, etc.)
 
 The log's level of detail is controlled by either the [command line](#command-line-options) or by holding down the `r keyboardButton("SHIFT")` button on your keyword while the program starts. (Holding `r keyboardButton("SHIFT")` instructs the program to use maximum, verbose logging.)
 
