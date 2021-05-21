@@ -4,11 +4,11 @@
 
 Most readability tests that return a grade level include a mantissa (i.e., decimal value), which represents the month of the grade. For example, “1.6” would be the sixth month of first grade (Carver, “Measuring Readability Using DPR Units” 306-307). However, this only applies to tests that are computed from a mathematical formula (generally, a regression equation). Tests that use different methods—such as look-up tables or graphs—usually only return a grade level as an integer.
 
-For example, [**New Dale-Chall**](#dale-chall-test) looks up your unfamiliar word and sentence counts from a table and returns a grade range. This will yield results such as “7-8,” meaning that a document falls within the seventh to eighth grade reading level.
+For example, [*New Dale-Chall*](#dale-chall-test) looks up your unfamiliar word and sentence counts from a table and returns a grade range. This will yield results such as “7-8,” meaning that a document falls within the seventh to eighth grade reading level.
 
-[**Lix**](#lix-test) and [**Rix**](#rix-test) use a similar method. These tests calculate an index score and then look up the grade level from a table using this value.
+[*Lix*](#lix-test) and [*Rix*](#rix-test) use a similar method. These tests calculate an index score and then look up the grade level from a table using this value.
 
-Finally, graphical tests (e.g., [**Fry**](#fry-test)) only return integral grade levels because the “slices” on these graphs only represent the grade, not the grade and month.
+Finally, graphical tests (e.g., [*Fry*](#fry-test)) only return integral grade levels because the “slices” on these graphs only represent the grade, not the grade and month.
 
 ## Grade Scales {#grade-scales}
 
@@ -174,7 +174,7 @@ Some readability formulas produce predicted **cloze** scores (rather than grade 
 
 When reviewing your difficult word lists, you may notice that some proper nouns are displayed with additional information. This is to help discern how many times the given word is considered unfamiliar in the document (for certain tests).
 
-Certain tests, such as [**Spache Revised**](#spache-test), treat all proper nouns as familiar, even if they do not appear on the test's familiar-word list. However, if the same word occurs in the document as non-proper, then that instance will be considered unfamiliar if it is not on the test's familiar-word list.
+Certain tests, such as [*Spache Revised*](#spache-test), treat all proper nouns as familiar, even if they do not appear on the test's familiar-word list. However, if the same word occurs in the document as non-proper, then that instance will be considered unfamiliar if it is not on the test's familiar-word list.
 
 Consider the following example:
 
@@ -184,16 +184,16 @@ The list of unfamiliar **HJ** words will report the following:
 
 `Examiner    2 (3 total occurrences, 1 proper and familiar, 2 non-proper and unfamiliar)`
 
-This means that “Examiner” in the phrase “Daily Examiner” is proper and **Harris-Jacobson** treated it as familiar. Although the word “examiner” is not a familiar **HJ** word, a reader will recognize that it is proper. From there, he/she can deduct that it is the name of a specific person, place, or thing (e.g., a newspaper). Therefore, it is somewhat familiar to the reader, even if he/she does not know the word.
+This means that “Examiner” in the phrase “Daily Examiner” is proper and *Harris-Jacobson* treated it as familiar. Although the word “examiner” is not a familiar **HJ** word, a reader will recognize that it is proper. From there, he/she can deduct that it is the name of a specific person, place, or thing (e.g., a newspaper). Therefore, it is somewhat familiar to the reader, even if he/she does not know the word.
 
 However, the other two instances of “examiner” are regular nouns. Because “examiner” is not on the **HJ** familiar-word list, these two instances are considered unfamiliar. When **HJ** is computed, a frequency count of 2 (not 3) will be used for this particular word when tallying the number of unfamiliar words.
 
-If a word appears only in proper form throughout the document, then it will not appear on various unfamiliar lists (e.g., **Spache**). A proper noun will never appear on these lists unless there are conflicting non-proper instances of the same word.
+If a word appears only in proper form throughout the document, then it will not appear on various unfamiliar lists (e.g., *Spache*). A proper noun will never appear on these lists unless there are conflicting non-proper instances of the same word.
 
 Note that this also applies to any [custom tests](#creating-custom-test) that treat proper nouns as familiar.
 
 ## Adding Words to Familiar-Word Tests
 
-Although both [**Dale-Chall**](#dale-chall-test) and [**Spache**](#spache-test) were updated in recent years, some may find that these tests lack contemporary words known by young readers. For example, some computer terms that 4^th^ graders are fluent in are not considered familiar by these tests. Proper nouns such as **Microsoft** and **Macbook** will be considered familiar, but some non-proper computer words (e.g., megabyte) will not.
+Although both [*Dale-Chall*](#dale-chall-test) and [*Spache*](#spache-test) were updated in recent years, some may find that these tests lack contemporary words known by young readers. For example, some computer terms that 4^th^ graders are fluent in are not considered familiar by these tests. Proper nouns such as **Microsoft** and **Macbook** will be considered familiar, but some non-proper computer words (e.g., megabyte) will not.
 
-**Readability Studio** offers [custom tests](#creating-custom-test) as a solution for extending these tests. You can create a new test with **Dale-Chall**, **Spache**, or **Harris-Jacobson** as a template, and append your own word list to it. When you perform this custom test, any word on the standard word list or your word list will be considered familiar. Refer to \@ref(creating-custom-test) for more information.
+**Readability Studio** offers [custom tests](#creating-custom-test) as a solution for extending these tests. You can create a new test with *Dale-Chall*, *Spache*, or *Harris-Jacobson* as a template, and append your own word list to it. When you perform this custom test, any word on the standard word list or your word list will be considered familiar. Refer to \@ref(creating-custom-test) for more information.

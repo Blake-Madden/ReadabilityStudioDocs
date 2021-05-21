@@ -147,7 +147,7 @@ To view these words in their original context, double-click on any word in this 
 
 ![](Images/difficultwordselected.png)
 
-You can click on any of the other pages to view other difficult words in their original context, such as 6+ character words or unfamiliar [**Dale-Chall**](#dale-chall-test) words.
+You can click on any of the other pages to view other difficult words in their original context, such as 6+ character words or unfamiliar [*Dale-Chall*](#dale-chall-test) words.
 
 To continue simplifying this recipe, we will replace some of these difficult words. Words such as “incorporate,” “consequently,” and “gradually” could also be replaced with shorter, simpler synonyms. As illustrated below, we have replaced a few words, such as substituting “incorporate” with “add” and “gradually” with “slowly.”
 

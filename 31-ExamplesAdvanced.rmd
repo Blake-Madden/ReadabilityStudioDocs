@@ -128,7 +128,7 @@ All the options discussed here are also offered on the **Document** tab of the r
 
 ![](Images/TestBundle.png)
 
-Enter the name “4F” into the **Bundle Name** text field. Next, select the **Standard Tests** page and check the **Fry**, **FORCAST**, **Fog**, and **Flesch-Kincaid** tests, as shown below:
+Enter the name “4F” into the **Bundle Name** text field. Next, select the **Standard Tests** page and check the *Fry*, *FORCAST*, *Fog*, and *Flesch-Kincaid* tests, as shown below:
 
 ![](Images/TestBundle4F.png)
 

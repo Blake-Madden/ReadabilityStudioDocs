@@ -173,7 +173,7 @@ Numbers are generally syllabized using one of two approaches:
 -   Sound out each digit of the number. For example, “87” would be three syllables (“eight se-ven”).
 -   Count the entire number as one syllable.
 
-By default, **Readability Studio** counts numbers as monosyllabic words; however, this behavior can be toggled from the [Document Indexing](#document-analysis) options. Note that some tests may override these settings if they require a specific method. For example, [**Fry**](#fry-test) will always sound out each numeric digit when syllabizing.
+By default, **Readability Studio** counts numbers as monosyllabic words; however, this behavior can be toggled from the [Document Indexing](#document-analysis) options. Note that some tests may override these settings if they require a specific method. For example, [*Fry*](#fry-test) will always sound out each numeric digit when syllabizing.
 
 ### How Symbols are Syllabized {-}
 

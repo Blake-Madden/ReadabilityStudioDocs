@@ -22,7 +22,7 @@ $$
 
 Now that the document's measurements have been normalized to the required sample's scale, we can use these values (100 words and 11 sentences) with the test.
 
-**Polysyllabic**: Technically speaking, this means any word containing more than 1 syllable. In the case of some tests (e.g., **Wheeler-Smith**), this term is used in this context. Other tests’ sources, however, tend to use this term to describe words of 3 or more syllables. Because of this inconsistency, it is recommended to avoid using this term and instead state explicitly the intention of a given test.
+**Polysyllabic**: Technically speaking, this means any word containing more than 1 syllable. In the case of some tests (e.g., *Wheeler-Smith*), this term is used in this context. Other tests’ sources, however, tend to use this term to describe words of 3 or more syllables. Because of this inconsistency, it is recommended to avoid using this term and instead state explicitly the intention of a given test.
 
 **Unit**: A section of text ending with a period, exclamation mark, question mark, interrobang, colon, semicolon, or dash. Lengthy, complex sentences generally contain more than one unit.
 

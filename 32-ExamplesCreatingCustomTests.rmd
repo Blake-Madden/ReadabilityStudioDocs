@@ -2,21 +2,21 @@
 
 In this chapter, we will step through examples showing how to create different types of custom tests.
 
-With custom tests, you can create enhanced versions of existing tests like **New Dale-Chall** that include your own word list. You can also create entirely new tests with your own formulas, and design them to return either grade-level, predicted cloze, or index scores.
+With custom tests, you can create enhanced versions of existing tests like *New Dale-Chall* that include your own word list. You can also create entirely new tests with your own formulas, and design them to return either grade-level, predicted cloze, or index scores.
 
-## Creating a Modified **Flesch** Test {#creating-custom-flesch-test}
+## Creating a Modified *Flesch* Test {#creating-custom-flesch-test}
 
 In this example, we will create a custom test. Custom tests are useful for either creating an entirely new formula or a new one based on an existing formula.
 
-For this example, we will use the [**Flesch**](#flesch-test) formula for our basis. We will take the standard **Flesch** formula and substitute its sentence count factor with independent clause count. This will effectively create a formula which does not penalize documents for containing numerous compound sentences.
+For this example, we will use the [*Flesch*](#flesch-test) formula for our basis. We will take the standard *Flesch* formula and substitute its sentence count factor with independent clause count. This will effectively create a formula which does not penalize documents for containing numerous compound sentences.
 
-The first step to creating a new test is to click the `r keyboardButton("Custom Tests")` button on the **Readability** tab and select **Add Test Based on...** from the menu. This will present a dialog containing formula-based tests; select **Flesch Reading Ease** and click OK.
+The first step to creating a new test is to click the `r keyboardButton("Custom Tests")` button on the **Readability** tab and select **Add Test Based on...** from the menu. This will present a dialog containing formula-based tests; select *Flesch Reading Ease* and click OK.
 
 Because this test will use independent clauses, change the name to “Flesch (IC)”:
 
 ![](Images/CustomTestExample1TestName.png)
 
-Next, we will change the formula. The formula for **Flesch** is defined as:
+Next, we will change the formula. The formula for *Flesch* is defined as:
 
 $$
 I = 206.835 - (84.6*(B/W)) - (1.015*(W/S))
@@ -50,7 +50,7 @@ By default, all formula results will be returned with floating-point precision. 
 ROUND(206.835 - (84.6*(B/W)) - (1.015*(W/S)), 0)
 ```
 
-This formula will yield the same results as the **Flesch** test. For this example, we will have our new test count independent clauses instead of sentences. To do this, change `SentenceCount()` (or `S`) to `IndependentClauseCount()` (or `U`). For example:
+This formula will yield the same results as the *Flesch* test. For this example, we will have our new test count independent clauses instead of sentences. To do this, change `SentenceCount()` (or `S`) to `IndependentClauseCount()` (or `U`). For example:
 
 ```{r, eval=F, echo=T}
 ROUND(206.835 - (84.6*(B/W)) - (1.015*(W/U)), 0)
@@ -63,7 +63,7 @@ ROUND(206.835 - (84.6*(SyllableCount()/WordCount())) -
     (1.015*(WordCount()/IndependentClauseCount())), 0)
 ```
 
-The final step is to specify the type of test that this is. **Flesch Reading Ease** is an index test, so verify that the test type is set to **Index**. This will instruct the program to place the result into the **Scale Value** column (see below).
+The final step is to specify the type of test that this is. *Flesch Reading Ease* is an index test, so verify that the test type is set to **Index**. This will instruct the program to place the result into the **Scale Value** column (see below).
 
 Once finished, the dialog will look like this:
 
@@ -75,31 +75,31 @@ To add this test to any project, first select the **Readability** tab. Next, cli
 
 ![](Images/CustomTestExample1Score.png)
 
-## Creating a Custom **New Dale-Chall** Test
+## Creating a Custom *New Dale-Chall* Test
 
-In this example, we will create a custom [New Dale-Chall](#dale-chall-test) test specifically designed for recipes for a group of young students. Although the standard **Dale-Chall** list is quite extensive, we may wish to append some words that we know are familiar to our kitchen-savvy students.
+In this example, we will create a custom [New Dale-Chall](#dale-chall-test) test specifically designed for recipes for a group of young students. Although the standard *Dale-Chall* list is quite extensive, we may wish to append some words that we know are familiar to our kitchen-savvy students.
 
-The first step is to create a list of baking-specific words that our readers are familiar with that are not already on the standard **Dale-Chall** list. This can be any text file where the words are separated by spaces, tabs, commas, or semicolons. For this example, we will use this list:
+The first step is to create a list of baking-specific words that our readers are familiar with that are not already on the standard *Dale-Chall* list. This can be any text file where the words are separated by spaces, tabs, commas, or semicolons. For this example, we will use this list:
 
 `beaten, custard, eclair, éclair, flaky, glaze, glace, glossy, grate, meringue, pastry, pinch, platter, prepare, recipe, saucepan, sift, skewer, teaspoon, teaspoonful, thicken, tumbler, unbeaten, vanilla, whisk, scrape, tablespoon, tablespoonful`
 
-The next step is to create a custom test and connect our word list to it. For a custom **New Dale-Chall**, the simplest way is to click the `r keyboardButton("Custom Tests")` button on the **Readability** tab and select **Add Custom “New Dale-Chall”...** from the menu. This will present the [Add Custom Word Test](#add-custom-word-test) dialog. From this dialog, we would enter the name of the new test (e.g., “New Dale-Chall (Baking)”) and file path to our word list, and then this test would be added to the program. However, for this example we will use the more advanced **Add Custom Test** dialog.
+The next step is to create a custom test and connect our word list to it. For a custom *New Dale-Chall*, the simplest way is to click the `r keyboardButton("Custom Tests")` button on the **Readability** tab and select **Add Custom “New Dale-Chall”...** from the menu. This will present the [Add Custom Word Test](#add-custom-word-test) dialog. From this dialog, we would enter the name of the new test (e.g., “New Dale-Chall (Baking)”) and file path to our word list, and then this test would be added to the program. However, for this example we will use the more advanced **Add Custom Test** dialog.
 
 Click the `r keyboardButton("Custom Tests")` button on the **Readability** tab and select **Add...** from the menu. This will present the [Add Custom Test](#custom-test-general-settings) dialog, as shown below:
 
 ![](Images/AddCustomTest.png)
 
-Because this will be a **New Dale-Chall** test meant for baking, we will enter the name “New Dale-Chall (Baking)”:
+Because this will be a *New Dale-Chall* test meant for baking, we will enter the name “New Dale-Chall (Baking)”:
 
 ![](Images/CustomTestExample2Name.png)
 
-Next, we will enter the formula. The formula for a custom **New Dale-Chall** test is:
+Next, we will enter the formula. The formula for a custom *New Dale-Chall* test is:
 
 `CustomNewDaleChall()`
 
-This formula will instruct the program to use the standard **New Dale-Chall** formula with our familiar-word criteria, which we will define later.
+This formula will instruct the program to use the standard *New Dale-Chall* formula with our familiar-word criteria, which we will define later.
 
-The next step is to specify the type of test that this is into the **Test type** field. By default, new tests will be defined as grade-level tests, which means that the result will be truncated to be within the 0 (Kindergarten) to 19 (doctorate) range. **New Dale-Chall** is a grade-level test, so we will leave this option set to the default.
+The next step is to specify the type of test that this is into the **Test type** field. By default, new tests will be defined as grade-level tests, which means that the result will be truncated to be within the 0 (Kindergarten) to 19 (doctorate) range. *New Dale-Chall* is a grade-level test, so we will leave this option set to the default.
 
 Once finished, the dialog will look like this:
 
@@ -117,7 +117,7 @@ The other option is to use stemming. Stemming will compare the roots of the word
 
 To keep our word list simple, we will use English stemming. Select **English** as the stemmer.
 
-Next, we will define which other word lists will be included in our test. Because this is a **New Dale-Chall** test, check the option **Include New Dale-Chall familiar word list**. The dialog will now appear like this:
+Next, we will define which other word lists will be included in our test. Because this is a *New Dale-Chall* test, check the option **Include New Dale-Chall familiar word list**. The dialog will now appear like this:
 
 ![](Images/CustomTestExample2WordSettingsFinished.png)
 
@@ -127,27 +127,27 @@ The remaining logic that we must define is how to count proper nouns and numeral
 
 For this example, we will treat all proper nouns and numerals as familiar. This is the default, so leave these options unchanged.
 
-Click the `r keyboardButton("OK")` button and our new test will be added to the system. At this point, the formula and all our settings will be validated. Because our [proper-noun options](#readability-test-options) differ from the standard **New Dale-Chall** test, the following prompt will appear:
+Click the `r keyboardButton("OK")` button and our new test will be added to the system. At this point, the formula and all our settings will be validated. Because our [proper-noun options](#readability-test-options) differ from the standard *New Dale-Chall* test, the following prompt will appear:
 
 ![](Images/NonGenerated/CustomTestDCProperNounWarning.png)
 
-We are intending to treat all proper nouns as familiar and do not wish to use the same settings as **New Dale-Chall**, so click **Do not adjust**. Our new test, **New Dale-Chall (Baking)**, has now been added to the program.
+We are intending to treat all proper nouns as familiar and do not wish to use the same settings as *New Dale-Chall*, so click **Do not adjust**. Our new test, **New Dale-Chall (Baking)**, has now been added to the program.
 
 To add this test to any project, first select the **Readability** tab. Next, click the `r keyboardButton("Custom Tests")` button and then select **New Dale-Chall (Baking)**. Select the **Readability Scores** icon on the project pane and note that **New Dale-Chall (Baking)** has now been added to the project's results:
 
 ![](Images/CustomTestExample2Score.png)
 
-Note how the result for our custom test is lower than the standard **New Dale-Chall** test. This is because our test is using an expanded list of known words and will consider fewer words unfamiliar than the **New Dale-Chall** test will.
+Note how the result for our custom test is lower than the standard *New Dale-Chall* test. This is because our test is using an expanded list of known words and will consider fewer words unfamiliar than the *New Dale-Chall* test will.
 
-Now that the test has been added, we can review some of its output. Click on the **Words Breakdown** icon on the project pane. As shown below, there are numerous unfamiliar **Dale-Chall** words in this recipe:
+Now that the test has been added, we can review some of its output. Click on the **Words Breakdown** icon on the project pane. As shown below, there are numerous unfamiliar *Dale-Chall* words in this recipe:
 
 ![](Images/CustomTestExample2DCWordList.png)
 
-However, because our custom test is including some extra words not on the **Dale-Chall** list, our test will have less unfamiliar words. Select the **New Dale-Chall (Baking)** subitem to review the unfamiliar words from the recipe relative to our custom test:
+However, because our custom test is including some extra words not on the *Dale-Chall* list, our test will have less unfamiliar words. Select the **New Dale-Chall (Baking)** subitem to review the unfamiliar words from the recipe relative to our custom test:
 
 ![](Images/CustomTestExample2CustomWordList.png)
 
-Note how there are far fewer unfamiliar **New Dale-Chall (Baking)** words when compared to the standard **New Dale-Chall** output.
+Note how there are far fewer unfamiliar **New Dale-Chall (Baking)** words when compared to the standard *New Dale-Chall* output.
 
 We can also review these words in their original context. Click on the **Highlighted Reports** icon on the project pane, and then select the **New Dale-Chall (Baking)** tab. Here we can see exactly where all the unfamiliar **New Dale-Chall (Baking)** words are in our recipe.
 

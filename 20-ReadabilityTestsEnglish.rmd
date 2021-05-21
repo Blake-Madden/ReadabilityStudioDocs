@@ -806,7 +806,7 @@ As a final note, Anderson contributed a grade-level conversion table for *Lix* i
 
 The **Modified SMOG** test (L. Smith 129-132) calculates the grade level of a document based on sentence length and number of difficult (i.e., 3 or more syllable) words and is designed for primary and secondary-age materials.
 
-**Modified SMOG** differs from [SMOG](#smog-test) in the following ways:
+**Modified SMOG** differs from [*SMOG*](#smog-test) in the following ways:
 
 - It uses the unique number of difficult words (rather than the total).
 - It uses a smaller constant in its formula.
@@ -1073,7 +1073,7 @@ This test is designed for 3 100-word samples, with 3 samples being recommended f
 
 The **Rate Index (Rix)** readability formula (Anderson 490-496) was designed for documents of any Western European language. It calculates a document’s index score based on sentence length and number of long words (i.e., words containing seven or more characters). It is based on the [*Lix*](#lix-test) readability formula (Björnsson 480-497) and follows the same philosophy of using a unified formula for multiple languages.
 
-“Rate” in this context refers to the rate of long words throughout the document. Comparing against other tests that traditionally recommend fixed sample sizes (e.g., [SMOG](#smog-test)), Anderson noted that *Rix* could be applied to any length of text without normalization. As he explained, “the concept of rate has the advantage of being applied over any number of sentences, for it is a running average” (Anderson 495).
+“Rate” in this context refers to the rate of long words throughout the document. Comparing against other tests that traditionally recommend fixed sample sizes (e.g., [*SMOG*](#smog-test)), Anderson noted that *Rix* could be applied to any length of text without normalization. As he explained, “the concept of rate has the advantage of being applied over any number of sentences, for it is a running average” (Anderson 495).
 
 Regarding the factors used for this test, Anderson defined a sentence “as a sequence of words terminated by a full-stop (period), question or exclamation mark, colon, or semicolon” (Anderson 495). In other words, sentences [units](#glossary) should be used for the calculation. (As for *Lix*, Björnsson did not define how sentences should end, so it is recommended to use the traditional ‘.’, ‘?’, and ‘!’ markers for that test.)
 
@@ -1165,7 +1165,7 @@ Refer to \@ref(smog-test).
 \newpage
 ## Spache Revised {#spache-test}
 
-The **Spache Revised** test (Spache, *Good* 195-2003) calculates the grade level of a document based on sentence length and number of unique unfamiliar words. This test uses a list of 1,041 common words that are known to younger readers (4^th^ grade and below). Any word that does not appear on this list is considered unfamiliar. The following are also considered familiar:
+The *Spache Revised* test (Spache, *Good* 195-2003) calculates the grade level of a document based on sentence length and number of unique unfamiliar words. This test uses a list of 1,041 common words that are known to younger readers (4^th^ grade and below). Any word that does not appear on this list is considered unfamiliar. The following are also considered familiar:
 
 - Regular verb forms of any common word (i.e., “ing,” “es,” “s,” “ed,” and “ies” endings). Irregular forms are not familiar.
 - Regular plural and possessive forms of any common word (i.e., “s,” “es,” and “ies” endings). Irregular forms are not familiar.
@@ -1175,7 +1175,7 @@ The **Spache Revised** test (Spache, *Good* 195-2003) calculates the grade level
 - All proper nouns.
 - All numerals.
 
-**Spache Revised** is generally used for primary age (i.e., Kindergarten to 7^th^ grade) readers to help classify school textbooks and literature. This differs from [New Dale-Chall](#dale-chall-test), which is better meant for secondary age readers.
+*Spache Revised* is generally used for primary age (i.e., Kindergarten to 7^th^ grade) readers to help classify school textbooks and literature. This differs from [New Dale-Chall](#dale-chall-test), which is better meant for secondary age readers.
 
 Because this formula uses familiar words (rather than syllable or letter counts), it is often regarded as a more accurate test for younger readers.
 

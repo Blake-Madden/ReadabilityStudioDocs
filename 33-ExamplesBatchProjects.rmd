@@ -42,7 +42,7 @@ We will be analyzing technical documents in this example, so select **Technical 
 
 ![](Images/batchscorestats.png)
 
-The first items presented to us are the aggregated [statistics](#reviewing-batch-scores) for the test scores. This will give us a general overview of the collection's readability level. By looking at the **Means** column, we can see that the average reading levels of our documents are in the high-school range. Also, the mean [**Flesch**](#flesch-test) score is 54, which is somewhat difficult. The next column to review is the **Maximum** column. Here we can see that some of the higher test scores (e.g., 14.6) are into the collegiate level. From this, we can summarize that this collection is a little too difficult to read and that some documents need revising.
+The first items presented to us are the aggregated [statistics](#reviewing-batch-scores) for the test scores. This will give us a general overview of the collection's readability level. By looking at the **Means** column, we can see that the average reading levels of our documents are in the high-school range. Also, the mean [*Flesch*](#flesch-test) score is 54, which is somewhat difficult. The next column to review is the **Maximum** column. Here we can see that some of the higher test scores (e.g., 14.6) are into the collegiate level. From this, we can summarize that this collection is a little too difficult to read and that some documents need revising.
 
 To view a breakdown of all the documents and their respective test scores, click on the **Raw Scores** subitem. Here we can [sort](#column-sorting) any of the test columns to see which documents scored the highest.
 
@@ -52,7 +52,7 @@ To view any document's scores in a vertical layout, double-click on its row in t
 
 ![](Images/viewitemrawscores.png)
 
-The distribution of these raw scores can also be graphically viewed. Click on the **Score Box Plots** icon on the project sidebar to view the box plots, and click on the **Histograms** icon to view the histograms. Box plots show the “spread” of each test's scores, whereas histograms show a test's scores divided into groups. For example, below is a histogram showing the **Flesch-Kincaid** scores:
+The distribution of these raw scores can also be graphically viewed. Click on the **Score Box Plots** icon on the project sidebar to view the box plots, and click on the **Histograms** icon to view the histograms. Box plots show the “spread” of each test's scores, whereas histograms show a test's scores divided into groups. For example, below is a histogram showing the *Flesch-Kincaid* scores:
 
 ![](Images/histogrades.png)
 
@@ -66,6 +66,6 @@ Here we can see which documents have the most overly-long sentences, as well as 
 
 Other tabs in the **Grammar** section are also available to help improve your documents. If any of these grammatical issues are encountered, then lists for [wordy items](#reviewing-batch-wordiness), [clichés](#reviewing-batch-cliches), [repeated words](#reviewing-batch-repeated-words), [lowercased sentences](#reviewing-batch-lowercased-sentences), and [conjunction-starting sentences](#reviewing-batch-conjunction-sentences) will be included. For the purpose of shortening sentences, the **Repeated Words** and **Wordy Items** tabs should be reviewed.
 
-Once some of the documents have been revised, you can reload the batch project with the `r keyboardButton("F5")` button on your keyboard. As we can see in this updated **Flesch-Kincaid** histogram, there is already some improvement in this batch. There are no longer any documents scoring above the 12^th^ grade, and only 10 documents remain in the 10-12 grade range.
+Once some of the documents have been revised, you can reload the batch project with the `r keyboardButton("F5")` button on your keyboard. As we can see in this updated *Flesch-Kincaid* histogram, there is already some improvement in this batch. There are no longer any documents scoring above the 12^th^ grade, and only 10 documents remain in the 10-12 grade range.
 
 ![](Images/histoimproved.png)

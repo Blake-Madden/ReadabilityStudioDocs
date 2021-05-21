@@ -180,7 +180,7 @@ Statistics for any custom familiar-word tests will also be included in this wind
 A **Notes** section may be included at the bottom of the formatted report if there are any items of interest detected (e.g., a high sentence-length average). If your document requires improvement, then this section is usually a good place to begin.
 
 ::: {.notesection data-latex=""}
-3+ syllable words and [Fog](#gunning-fog-test) and [SMOG](#smog-test) hard words are all the same except for how numerals (e.g., phone numbers and dates) are handled. *SMOG* always sounds out each digit of a numeric word, whereas *Fog* ignores numeric words. You can control how numeric words are handled from the [Document Indexing](#document-analysis) section of the [Options](#options-overview) dialog (available on the **Tools** tab).
+3+ syllable words and [Fog](#gunning-fog-test) and [*SMOG*](#smog-test) hard words are all the same except for how numerals (e.g., phone numbers and dates) are handled. *SMOG* always sounds out each digit of a numeric word, whereas *Fog* ignores numeric words. You can control how numeric words are handled from the [Document Indexing](#document-analysis) section of the [Options](#options-overview) dialog (available on the **Tools** tab).
 :::
 
 ## Reviewing the Words Breakdown {#reviewing-word-breakdowns}
