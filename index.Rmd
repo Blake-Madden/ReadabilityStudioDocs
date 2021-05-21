@@ -66,7 +66,7 @@ splitColumnIntoTable <- function(col, rowCount, columnName)
   else
     { rowCount = length(colVals) }
 
-  outData <- as.tibble(colVals %>% matrix(nrow=rowCount, byrow=F))
+  outData <- dplyr::as_tibble(colVals %>% matrix(nrow=rowCount, byrow=F), .name_repair="minimal")
   if (ncol(outData) > 1)
     { colnames(outData) <- rep(columnName, ncol(outData)) }
   else
