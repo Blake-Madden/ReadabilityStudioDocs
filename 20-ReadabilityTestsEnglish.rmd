@@ -732,7 +732,7 @@ Because this formula is based on the usage of familiar words (rather than syllab
 
 The *Läsbarhetsindex (Lix)* readability formula (Björnsson 480-497) was designed for documents of any Western European language. It calculates a document’s index score based on sentence length and number of long words (i.e., words containing seven or more characters). Viewing long words as those with seven or more characters is what differentiates it from similar tests (which use six or more characters). This difference is what allows it to be a more balanced “yardstick” that can be applied to numerous languages.
 
-The philosophy behind using one formula for multiple languages is that, at their core, most languages are similar in difficulty. This approach argues that a language having various idiosyncrasies and longer words is not why it scores at more difficult levels. The reason languages score higher is because of how they are used (i.e., word choice, writing style) and presented (e.g., longer paragraphs and sentences, less images). This differs from the reasoning behind other tests based on adjusted English formulas. Those tests are designed under the assumption that non-English languages are inherently more difficult (because of comparatively longer words). For example, [*Gilliam-Peña-Mountain*](#gilliam-pena-mountain-fry-graph) and the [German reinterpretation of Lix](#lix-german-technical) follow this logic of adjusting English formulas for non-English text. *Lix*, however, chooses to use the same formula to gauge multiple languages. It views documents that score higher to be a result of writing style and presentation, not the language itself.
+The philosophy behind using one formula for multiple languages is that, at their core, most languages are similar in difficulty. This approach argues that a language having various idiosyncrasies and longer words is not why it scores at more difficult levels. The reason languages score higher is because of how they are used (i.e., word choice, writing style) and presented (e.g., longer paragraphs and sentences, less images). This differs from the reasoning behind other tests based on adjusted English formulas. Those tests are designed under the assumption that non-English languages are inherently more difficult (because of comparatively longer words). For example, [*Gilliam-Peña-Mountain*](#gilliam-pena-mountain-fry-graph) and the [German reinterpretation of *Lix*](#lix-german-technical) follow this logic of adjusting English formulas for non-English text. *Lix*, however, chooses to use the same formula to gauge multiple languages. It views documents that score higher to be a result of writing style and presentation, not the language itself.
 
 This test was originally designed for Danish, English, French, German, and Finnish and trained on “thousands of books and reading passages” (481) during 1968, 1969, 1974, 1975, and 1979. During the 1974 English study, the formula was tested with:
 
@@ -804,9 +804,9 @@ As a final note, Anderson contributed a grade-level conversion table for *Lix* i
 \newpage
 ## Modified SMOG {#modified-smog}
 
-The **Modified SMOG** test (L. Smith 129-132) calculates the grade level of a document based on sentence length and number of difficult (i.e., 3 or more syllable) words and is designed for primary and secondary-age materials.
+The *Modified SMOG* test (L. Smith 129-132) calculates the grade level of a document based on sentence length and number of difficult (i.e., 3 or more syllable) words and is designed for primary and secondary-age materials.
 
-**Modified SMOG** differs from [*SMOG*](#smog-test) in the following ways:
+*Modified SMOG* differs from [*SMOG*](#smog-test) in the following ways:
 
 - It uses the unique number of difficult words (rather than the total).
 - It uses a smaller constant in its formula.
@@ -816,7 +816,7 @@ Because of these adjustments, it will generally produce scores closer to other t
 
 The author's decision to not count repeated polysyllabic words was a major factor in making this test more appropriate for primary readers. As he explains, in a particular pre-primer book “the word 'kangaroo' appeared 52 times . . . it was the only polysyllabic word in the book. To count the word more than once would have inflated the readability score to an unrealistic level” (130).
 
-The steps for calculating **Modified SMOG** are:
+The steps for calculating *Modified SMOG* are:
 
 - Take 3 10-sentence samples.
 - Count the number of **unique** words containing 3 or more syllables.
@@ -830,7 +830,7 @@ This test requires a 10-sentence sample, with 3 samples being recommended for be
 \newpage
 ## New Automated Readability Index {#new-ari}
 
-The **New Automated Readability Index** (Kincaid et al., *Derivation* 14) is a modified version of [ARI](#ari-test) that was recalculated “to be more suitable for Navy use” (Kincaid et al., *Derivation* 11); hence, it is designed for technical documents and manuals. This test calculates the grade level of a document based on sentence length and character count.
+The *New Automated Readability Index* (Kincaid et al., *Derivation* 14) is a modified version of [ARI](#ari-test) that was recalculated “to be more suitable for Navy use” (Kincaid et al., *Derivation* 11); hence, it is designed for technical documents and manuals. This test calculates the grade level of a document based on sentence length and character count.
 
 This test was trained against reading-test results from 531 U.S. Navy personnel from four Naval technical training schools. Using these results, the following multiple regression equation was derived:
 
@@ -871,9 +871,9 @@ Refer to \@ref(new-ari).
 \newpage
 ## New Farr, Jenkins, Paterson {#new-farr-jenkins-paterson}
 
-The **New Farr, Jenkins, Paterson** readability formula (Kincaid et al., *Derivation* 17) calculates the grade level of a document based on sentence length and number of monosyllabic words.
+The *New Farr, Jenkins, Paterson* readability formula (Kincaid et al., *Derivation* 17) calculates the grade level of a document based on sentence length and number of monosyllabic words.
 
-**New Farr, Jenkins, Paterson** is a recalculated version of the [FJP](#farr-jenkins-paterson) test that was recalculated “to be more suitable for Navy use” (Kincaid et al., *Derivation* 11); hence, it is designed for technical documents and manuals. In addition to being a recalculation, this variation of *FJP* (i.e., a *Flesch*-like test) returns a grade-level result, rather than an index score.
+*New Farr, Jenkins, Paterson* is a recalculated version of the [*FJP*](#farr-jenkins-paterson) test that was recalculated “to be more suitable for Navy use” (Kincaid et al., *Derivation* 11); hence, it is designed for technical documents and manuals. In addition to being a recalculation, this variation of *FJP* (i.e., a *Flesch*-like test) returns a grade-level result, rather than an index score.
 
 This test was trained against reading-test results from 531 U.S. Navy personnel from four Naval technical training schools. Using these results, the following multiple regression equation was derived:
 
@@ -893,7 +893,7 @@ Where:
 \newpage
 ## New Fog Count {#new-fog-count-test}
 
-The **New Fog Count** (Kincaid et al., *Derivation* 14) readability formula is a modified version of the [Gunning Fog](#gunning-fog-test) Index that was recalculated “to be more suitable for Navy use” (Kincaid et al., *Derivation* 11); hence, it is designed for technical documents and manuals. This test calculates the grade level of a document based on sentence length and number of words containing three or more syllables.
+The *New Fog Count* (Kincaid et al., *Derivation* 14) readability formula is a modified version of the [Gunning Fog](#gunning-fog-test) Index that was recalculated “to be more suitable for Navy use” (Kincaid et al., *Derivation* 11); hence, it is designed for technical documents and manuals. This test calculates the grade level of a document based on sentence length and number of words containing three or more syllables.
 
 This test was trained against reading-test results from 531 U.S. Navy personnel from four Naval technical training schools. Using these results, the following multiple regression equation was derived:
 
@@ -917,16 +917,16 @@ This test uses the same easy-word and sentence counting methods as the [Gunning 
 \newpage
 ## (Powers, Sumner, Kearl) Dale-Chall {#psk-dale-chall}
 
-The **(Powers, Sumner, Kearl) Dale-Chall** readability formula (99-105) calculates the grade level of a document based on sentence length and number of unfamiliar *Dale-Chall* words.
+The *(Powers, Sumner, Kearl) Dale-Chall* readability formula (99-105) calculates the grade level of a document based on sentence length and number of unfamiliar *Dale-Chall* words.
 
-The goal of Powers, Sumner, and Kearl was to develop updated versions of four popular readability formulas: *Dale-Chall*, *Flesch*, *Gunning Fog*, and **Far-Jenkins-Paterson**. These updated formulas would be based off of the newer (1950) edition of the McCall-Crabbs test criterion. By using this revised test material, Powers, Sumner, and Kearl aimed to “modernize the formulas by taking advantage of the more recently administered tests” and to “establish formulas which are derived from identical materials” (Powers, Sumner, and Kearl 100).
+The goal of Powers, Sumner, and Kearl was to develop updated versions of four popular readability formulas: *Dale-Chall*, *Flesch*, *Gunning Fog*, and **Farr-Jenkins-Paterson**. These updated formulas would be based off of the newer (1950) edition of the McCall-Crabbs test criterion. By using this revised test material, Powers, Sumner, and Kearl aimed to “modernize the formulas by taking advantage of the more recently administered tests” and to “establish formulas which are derived from identical materials” (Powers, Sumner, and Kearl 100).
 
 The training materials used to build the regression formulas were 383 prose passages from the 1950 edition of McCall-Crabbs's *Standard Test Lessons in Reading*. For validation, the formulas were tested against 113 samples from “various publications” (Powers, Sumner, and Kearl 100). Their results (shown below) implied somewhat strong correlations for their *Dale-Chall* and *Flesch* formulas and mild correlations for their *FJP* and *Gunning Fog* formulas:
 
-- recalculated Dale-Chall: $r^2 = 0.5092$
-- recalculated Flesch: $r^2 = 0.4034$
-- recalculated Gunning Fog: $r^2 = 0.3440$
-- recalculated Far-Jenkins-Paterson: $r^2 = 0.3407$
+- recalculated *Dale-Chall*: $r^2 = 0.5092$
+- recalculated *Flesch*: $r^2 = 0.4034$
+- recalculated *Gunning Fog*: $r^2 = 0.3440$
+- recalculated *Farr-Jenkins-Paterson*: $r^2 = 0.3407$
 
 The recalculated *Dale-Chall* formula is as follows:
 
@@ -949,16 +949,16 @@ Although this is an update of the 1948 *Dale-Chall* formula, the 1995 [New Dale-
 \newpage
 ## (Powers, Sumner, Kearl) Farr, Jenkins, Paterson {#psk-farr-jenkins-paterson}
 
-The **(Powers, Sumner, Kearl) Farr, Jenkins, Paterson** readability formula (99-105) calculates the grade level of a document based on sentence length and number of monosyllabic words.
+The *(Powers, Sumner, Kearl) Farr, Jenkins, Paterson* readability formula (99-105) calculates the grade level of a document based on sentence length and number of monosyllabic words.
 
-The goal of Powers, Sumner, and Kearl was to develop updated versions of four popular readability formulas: *Dale-Chall*, *Flesch*, *Gunning Fog*, and **Far-Jenkins-Paterson**. These updated formulas would be based off of the newer (1950) edition of the McCall-Crabbs test criterion. By using this revised test material, Powers, Sumner, and Kearl aimed to “modernize the formulas by taking advantage of the more recently administered tests” and to “establish formulas which are derived from identical materials” (Powers, Sumner, and Kearl 100).
+The goal of Powers, Sumner, and Kearl was to develop updated versions of four popular readability formulas: *Dale-Chall*, *Flesch*, *Gunning Fog*, and *Farr-Jenkins-Paterson*. These updated formulas would be based off of the newer (1950) edition of the McCall-Crabbs test criterion. By using this revised test material, Powers, Sumner, and Kearl aimed to “modernize the formulas by taking advantage of the more recently administered tests” and to “establish formulas which are derived from identical materials” (Powers, Sumner, and Kearl 100).
 
 The training materials used to build the regression formulas were 383 prose passages from the 1950 edition of McCall-Crabbs's *Standard Test Lessons in Reading*. For validation, the formulas were tested against 113 samples from “various publications” (Powers, Sumner, and Kearl 100). Their results (shown below) implied somewhat strong correlations for their *Dale-Chall* and *Flesch* formulas and mild correlations for their *FJP* and *Gunning Fog* formulas:
 
-- recalculated Dale-Chall: $r^2 = 0.5092$
-- recalculated Flesch: $r^2 = 0.4034$
-- recalculated Gunning Fog: $r^2 = 0.3440$
-- recalculated Far-Jenkins-Paterson: $r^2 = 0.3407$
+- recalculated *Dale-Chall*: $r^2 = 0.5092$
+- recalculated *Flesch*: $r^2 = 0.4034$
+- recalculated *Gunning Fog*: $r^2 = 0.3440$
+- recalculated *Farr-Jenkins-Paterson*: $r^2 = 0.3407$
 
 The recalculated *Farr, Jenkins, Paterson* formula is as follows:
 
@@ -979,16 +979,16 @@ Where:
 \newpage
 ## (Powers, Sumner, Kearl) Gunning Fog {#psk-fog}
 
-The **(Powers, Sumner, Kearl) Gunning Fog** readability formula (99-105) calculates the grade level of a document based on sentence length and number of syllables.
+The *(Powers, Sumner, Kearl) Gunning Fog* readability formula (99-105) calculates the grade level of a document based on sentence length and number of syllables.
 
-The goal of Powers, Sumner, and Kearl was to develop updated versions of four popular readability formulas: *Dale-Chall*, *Flesch*, *Gunning Fog*, and **Far-Jenkins-Paterson**. These updated formulas would be based off of the newer (1950) edition of the McCall-Crabbs test criterion. By using this revised test material, Powers, Sumner, and Kearl aimed to “modernize the formulas by taking advantage of the more recently administered tests” and to “establish formulas which are derived from identical materials” (Powers, Sumner, and Kearl 100).
+The goal of Powers, Sumner, and Kearl was to develop updated versions of four popular readability formulas: *Dale-Chall*, *Flesch*, *Gunning Fog*, and *Farr-Jenkins-Paterson*. These updated formulas would be based off of the newer (1950) edition of the McCall-Crabbs test criterion. By using this revised test material, Powers, Sumner, and Kearl aimed to “modernize the formulas by taking advantage of the more recently administered tests” and to “establish formulas which are derived from identical materials” (Powers, Sumner, and Kearl 100).
 
 The training materials used to build the regression formulas were 383 prose passages from the 1950 edition of McCall-Crabbs's *Standard Test Lessons in Reading*. For validation, the formulas were tested against 113 samples from “various publications” (Powers, Sumner, and Kearl 100). Their results (shown below) implied somewhat strong correlations for their *Dale-Chall* and *Flesch* formulas and mild correlations for their *FJP* and *Gunning Fog* formulas:
 
-- recalculated Dale-Chall: $r^2 = 0.5092$
-- recalculated Flesch: $r^2 = 0.4034$
-- recalculated Gunning Fog: $r^2 = 0.3440$
-- recalculated Far-Jenkins-Paterson: $r^2 = 0.3407$
+- recalculated *Dale-Chall*: $r^2 = 0.5092$
+- recalculated *Flesch*: $r^2 = 0.4034$
+- recalculated *Gunning Fog*: $r^2 = 0.3440$
+- recalculated *Farr-Jenkins-Paterson*: $r^2 = 0.3407$
 
 The recalculated *Gunning Fog* formula is as follows:
 
@@ -1013,16 +1013,16 @@ This test uses the same easy-word and sentence counting methods as the [Gunning 
 \newpage
 ## (Powers, Sumner, Kearl) Flesch {#psk-test}
 
-The **(Powers, Sumner, Kearl) Flesch** readability formula (99-105) calculates the grade level of a document based on sentence length and number of syllables.
+The *(Powers, Sumner, Kearl) Flesch* readability formula (99-105) calculates the grade level of a document based on sentence length and number of syllables.
 
-The goal of Powers, Sumner, and Kearl was to develop updated versions of four popular readability formulas: *Dale-Chall*, *Flesch*, *Gunning Fog*, and **Far-Jenkins-Paterson**. These updated formulas would be based off of the newer (1950) edition of the McCall-Crabbs test criterion. By using this revised test material, Powers, Sumner, and Kearl aimed to “modernize the formulas by taking advantage of the more recently administered tests” and to “establish formulas which are derived from identical materials” (Powers, Sumner, and Kearl 100).
+The goal of Powers, Sumner, and Kearl was to develop updated versions of four popular readability formulas: *Dale-Chall*, *Flesch*, *Gunning Fog*, and *Farr-Jenkins-Paterson*. These updated formulas would be based off of the newer (1950) edition of the McCall-Crabbs test criterion. By using this revised test material, Powers, Sumner, and Kearl aimed to “modernize the formulas by taking advantage of the more recently administered tests” and to “establish formulas which are derived from identical materials” (Powers, Sumner, and Kearl 100).
 
 The training materials used to build the regression formulas were 383 prose passages from the 1950 edition of McCall-Crabbs's *Standard Test Lessons in Reading*. For validation, the formulas were tested against 113 samples from “various publications” (Powers, Sumner, and Kearl 100). Their results (shown below) implied somewhat strong correlations for their *Dale-Chall* and *Flesch* formulas and mild correlations for their *FJP* and *Gunning Fog* formulas:
 
-- recalculated Dale-Chall: $r^2 = 0.5092$
-- recalculated Flesch: $r^2 = 0.4034$
-- recalculated Gunning Fog: $r^2 = 0.3440$
-- recalculated Far-Jenkins-Paterson: $r^2 = 0.3407$
+- recalculated *Dale-Chall*: $r^2 = 0.5092$
+- recalculated *Flesch*: $r^2 = 0.4034$
+- recalculated *Gunning Fog*: $r^2 = 0.3440$
+- recalculated *Farr-Jenkins-Paterson*: $r^2 = 0.3407$
 
 The recalculated *Flesch* formula is as follows:
 
