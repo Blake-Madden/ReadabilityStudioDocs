@@ -45,9 +45,9 @@ Note that selecting **System** will reset the program colors to the system's def
 - **Warn about documents that contain sentences split by paragraph breaks.** This warning is shown when a document being analyzed contains what appears to be sentences with paragraph breaks in them. In this situation, the sentences will not be indexed properly, and it is recommended to fix to the document.
 - **Warn about documents that contain long incomplete sentences that will be included in the analysis.** This warning is shown when a document being analyzed contains sentences that, although missing terminating punctuation, will be included in the analysis because of their length. To change this behavior, adjust the option [Include incomplete sentences containing more than [15] words](#options-text-exclusion).
 - **Prompt if a document should switch to include sentences in the analysis.** If a document is excluding a high volume of incomplete sentences, then you will be prompted about switching to include those sentences in the analysis.
-- **Prompt if a custom NDC test's proper noun settings differ from the standard NDC test.** By default, [New Dale-Chall](#dale-chall-test) requires that the first instance of each proper noun be seen as unfamiliar. If you are creating a custom **New Dale-Chall** test which uses different proper-noun logic, then you will be prompted whether this is your intent.
-- **Prompt about New Dale-Chall using a different text exclusion method from the system default.** By default, **New Dale-Chall** uses its own method for excluding text, which may differ from the system default's method. This message will be shown to warn about this.
-- **Prompt about Harris-Jacobson using a different text exclusion method from the system default.** By default, **Harris-Jacobson** uses its own method for excluding text, which may differ from the system default's method. This message will be shown to warn about this.
+- **Prompt if a custom NDC test's proper noun settings differ from the standard NDC test.** By default, [New Dale-Chall](#dale-chall-test) requires that the first instance of each proper noun be seen as unfamiliar. If you are creating a custom *New Dale-Chall* test which uses different proper-noun logic, then you will be prompted whether this is your intent.
+- **Prompt about New Dale-Chall using a different text exclusion method from the system default.** By default, *New Dale-Chall* uses its own method for excluding text, which may differ from the system default's method. This message will be shown to warn about this.
+- **Prompt about Harris-Jacobson using a different text exclusion method from the system default.** By default, *Harris-Jacobson* uses its own method for excluding text, which may differ from the system default's method. This message will be shown to warn about this.
 - **Warn when a custom test's numeral settings will be adjusted.** Some tests (e.g., [Harris-Jacobson](#harris-jacobson)) require numerals to be excluded from the analysis. This warning will be shown if a custom test needs its numeral settings adjusted to take such rules into account.
 - **Warn about German stemming not supporting proper noun detection.** This warning is shown when creating a custom test that uses German stemming and treats proper nouns as familiar.
 - **Warn about unique-value histograms requiring midpoint axis labels.** If you specify **unique values** as your histogram [bin sorting](#options-histograms) method, then midpoint interval display will need to be used. Because each bin (i.e., bar) will represent only one value, the histograms will not have ranges of values for its intervals. Therefore, cutpoints will not be applicable and midpoint axis labels will be used instead. If you have cutpoints as the interval type and choose unique-value bin sorting, then this warning will be shown before adjusting the interval display.
@@ -190,7 +190,7 @@ These options control how text is excluded from your documents.
 Lines of text that resemble equations will continue to be marked as incomplete. Also, if **Aggressively exclude** is enabled, then list items with more words than this threshold will also continue to be excluded.
 :::
 
-Note that if you are not excluding any text, this option will still take effect for tests which explicitly exclude headers (e.g., **Harris-Jacobson**).
+Note that if you are not excluding any text, this option will still take effect for tests which explicitly exclude headers (e.g., *Harris-Jacobson*).
 
 **Aggressively exclude**: Select this option to mark any valid sentence as incomplete if a). it is between at least two incomplete sentences and b). is less than 10 words. For example:
 
@@ -318,7 +318,7 @@ The options on this page customize the behavior of certain tests.
 
 Although this behavior is recommended in The Technique of Clear Writing, it will produce lower scores than counting sentences with the [traditional method](#how-sentences-are-counted). This is especially true if your document contains run-on sentences. For example, if this option is checked, then an 80-word sentence with four clauses will be counted as four smaller sentences and will not adversely affect the score. If this option is unchecked, then this same sentence will be counted as a single 80-word sentence and will adversely affect the score. If you prefer to penalize run-on sentences, then leave this option unchecked.
 
-This option affects the **Gunning Fog**, **(PSK) Gunning Fog**, and **New Fog Count** tests.
+This option affects the *Gunning Fog*, **(PSK) Gunning Fog**, and **New Fog Count** tests.
 
 #### Flesch {-#options-flesch}
 
@@ -327,13 +327,13 @@ This option affects the **Gunning Fog**, **(PSK) Gunning Fog**, and **New Fog Co
 Numeral syllabication
 :::
 
-Select one of the following options to control how numerals are syllabized for **Flesch** related tests.
+Select one of the following options to control how numerals are syllabized for *Flesch* related tests.
 
 **Count numerals as one syllable**: Select this option to consider all numerals as monosyllabic.
 
 **System default**: Select this option to use the system default [numeral syllabication](#numsyllable) method.
 
-This option affects the **Flesch**, **PSK Flesch**, and **Amstad** tests.
+This option affects the *Flesch*, **PSK Flesch**, and *Amstad* tests.
 
 Note that these options are not applicable if [Also exclude numerals](#options-text-exclusion) is checked.
 ::::
@@ -345,7 +345,7 @@ Note that these options are not applicable if [Also exclude numerals](#options-t
 Numeral syllabication
 :::
 
-Select from the following options to control how numerals are syllabized for **Flesch-Kincaid**.
+Select from the following options to control how numerals are syllabized for *Flesch-Kincaid*.
 
 **Sound out each digit**: Select this option to have the program sound out each digit when counting the syllables of numeric words. For example, the word “555-4778” will be considered nine syllables–read as “five-five-five-four-seven-seven-eight.”
 
@@ -363,7 +363,7 @@ Note that these options are not applicable if [Also exclude numerals](#options-t
 Proper nouns
 :::
 
-Select one of the following options to control how proper nouns are treated by **Dale-Chall** related tests:
+Select one of the following options to control how proper nouns are treated by *Dale-Chall* related tests:
 
 **Count as unfamiliar**: Select this option to consider all proper nouns (that do not appear on the familiar-word list) as unfamiliar.
 
@@ -377,15 +377,15 @@ Select one of the following options to control how proper nouns are treated by *
 Text exclusion
 :::
 
-Select one of the following options to control how text is excluded in **Dale-Chall** related tests:
+Select one of the following options to control how text is excluded in *Dale-Chall* related tests:
 
-**Exclude incomplete sentences, except headings**: Select this option to have **New Dale-Chall** include headers and subheaders in its analysis, but exclude lists and tables.
+**Exclude incomplete sentences, except headings**: Select this option to have *New Dale-Chall* include headers and subheaders in its analysis, but exclude lists and tables.
 
-**Use system default**: Select this option to have **New Dale-Chall** use the [default text exclusion](#options-text-exclusion) method used by other tests.
+**Use system default**: Select this option to have *New Dale-Chall* use the [default text exclusion](#options-text-exclusion) method used by other tests.
 ::::
 
 ::: {.notesection data-latex=""}
-These options affect both the **New Dale-Chall** and **PSK Dale-Chall** tests. The **text exclusion** option will also affect any custom test using the following functions:
+These options affect both the *New Dale-Chall* and **PSK Dale-Chall** tests. The **text exclusion** option will also affect any custom test using the following functions:
 
 - `CustomNewDaleChall()`
 - `UnfamiliarDaleChallWordCount()`
@@ -400,11 +400,11 @@ These options affect both the **New Dale-Chall** and **PSK Dale-Chall** tests. T
 Text exclusion
 :::
 
-Select one of the following options to control how text is excluded in **Harris-Jacobson**:
+Select one of the following options to control how text is excluded in *Harris-Jacobson*:
 
-**Exclude incomplete sentences, except headings**: Select this option to have **Harris-Jacobson** include headers and subheaders in its analysis, but exclude lists and tables.
+**Exclude incomplete sentences, except headings**: Select this option to have *Harris-Jacobson* include headers and subheaders in its analysis, but exclude lists and tables.
 
-**Use system default**: Select this option to have **Harris-Jacobson** use the [default text exclusion](#options-text-exclusion) method used by other tests.
+**Use system default**: Select this option to have *Harris-Jacobson* use the [default text exclusion](#options-text-exclusion) method used by other tests.
 ::::
 
 ::: {.notesection data-latex=""}
@@ -430,7 +430,7 @@ The options on this page customize which results to include in the **Readability
 
 - The score explanations shown in the [Readability Scores](#reviewing-test-scores) window.
 - The score display shown in the **Readability Scores** window (if **long format** is selected).
-- Selection labels on the **Fry**, **Raygor**, and **GPM** graphs.
+- Selection labels on the *Fry*, *Raygor*, and **GPM** graphs.
 - The [raw and aggregated score](#reviewing-batch-scores) display in **Batch Projects** (if **long format** is selected).
 - The labels on the grade-level [box plot](#reviewing-batch-box-plots).
 - The bin labels on the grade-level [histograms](#reviewing-batch-histograms).
@@ -467,7 +467,7 @@ The options on this page customize various readability graph settings.
 
 #### Flesch Chart {-#options-flesch-chart}
 
-**Connect points**: Check this to connect the factor and score points on the [**Flesch**](#flesch-test) chart.
+**Connect points**: Check this to connect the factor and score points on the [*Flesch*](#flesch-test) chart.
 
 #### Lix Gauge {-#options-lix-gauge}
 
@@ -525,11 +525,11 @@ The options on this page customize which results are included in the [Words Brea
 
 **6+ Characters**: Check this to include the 6+ character words in the results.
 
-**Dale-Chall**: Check this to include the **Dale-Chall** unfamiliar words list in the results. (If a **Dale-Chall** test is included in the project).
+*Dale-Chall*: Check this to include the *Dale-Chall* unfamiliar words list in the results. (If a *Dale-Chall* test is included in the project).
 
-**Spache**: Check this to include the **Spache** unfamiliar words list in the results. (If **Spache** is included in the project).
+*Spache*: Check this to include the *Spache* unfamiliar words list in the results. (If *Spache* is included in the project).
 
-**Harris-Jacobson**: Check this to include the **Harris-Jacobson** unfamiliar words list in the results. (If **Harris-Jacobson** is included in the project).
+*Harris-Jacobson*: Check this to include the *Harris-Jacobson* unfamiliar words list in the results. (If *Harris-Jacobson* is included in the project).
 
 **Custom Tests**: Check this to include any custom tests' unfamiliar words lists in the results.
 

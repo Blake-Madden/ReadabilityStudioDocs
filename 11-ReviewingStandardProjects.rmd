@@ -10,11 +10,11 @@ The top area of the **Scores** window is the score grid. In here there are four 
 - **Grade Level**: the minimum grade level that the test determined the document is suitable for.
 - **Reader Age**: the minimum reader age that the test determined the document is suitable for. The reader age is determined from the test's score. It can be shown as either a [range](#reading-age) for the entire grade, or be rounded to the semester that the grade score falls into.
 - **Scale Value**: the index value for tests that use special scales.
-- [Predicted Cloze Score](#cloze): the estimated score if the document were to be used for a cloze test. Note that cloze scores will be displayed in percentage format (i.e., 0-100) instead of floating-point format (i.e., .0-1.0) for easier reading.
+- [**Predicted Cloze Score**](#cloze): the estimated score if the document were to be used for a cloze test. Note that cloze scores will be displayed in percentage format (i.e., 0-100) instead of floating-point format (i.e., .0-1.0) for easier reading.
 
 Note that most tests have just one type of result (e.g., grade level), so non-applicable columns are left blank. For example, note below that the [Gunning Fog](#gunning-fog-test) result is a grade level of 8.3. This translates to an eighth grade level reader (in his or her third month of class). Because this test only returns a grade level and age, the **Scale Value** and **Predicted Cloze Score** columns are empty. Another example is the result for the [Flesch Reading Ease](#flesch-test) test, which has a scale value of 79. This test has its own scale (instead of a grade level) so its age, grade level, and cloze columns are empty.
 
-When a grade-level test scores a document at its maximum value, a “+” will be appended to the score. Although most grade-level tests can score up to 19, some tests which are designed for primary and secondary education materials will have lower maximum scores. For example, [Wheeler-Smith](#wheeler-smith) is designed for primary-age materials and its maximum score is the fourth-grade level. If a document's **Wheeler-Smith** score is 4, then it will be displayed as “4+.”
+When a grade-level test scores a document at its maximum value, a “+” will be appended to the score. Although most grade-level tests can score up to 19, some tests which are designed for primary and secondary education materials will have lower maximum scores. For example, [*Wheeler-Smith*](#wheeler-smith) is designed for primary-age materials and its maximum score is the fourth-grade level. If a document's *Wheeler-Smith* score is 4, then it will be displayed as “4+.”
 
 Select any test in the results grid to display an explanation of its score in the window below.
 
@@ -24,19 +24,19 @@ Along with an explanation of the test's results, the factors that it uses to det
 
 Finally, the averages (means) of your test scores and ages are displayed at the bottom of the results window. Their respective [modes](#stat-terms), [medians](#stat-terms), and [standard deviations](#stat-terms) are also included if [Extended Information](#options-summary-report) is enabled. Note that scores are truncated when searching for the grade-level mode. For example, “6.7” and “6.2” will both be treated as “6.” Mode generally requires discrete data to produce meaningful results; therefore, grade-level scores are converted to their base grades for this statistic.
 
-When calculating these statistics, failed test scores are treated as missing observations and not included. For example, let us say that you included 5 tests, but one of them could not be calculated. In this case, the valid 4 scores will be added and divided by 4 (not 5) to acquire the means. Also, grade range scores–such as “5-6” from [**New Dale-Chall**](#dale-chall-test)–will be converted to its own average (e.g., “5-6” will be 5.5).
+When calculating these statistics, failed test scores are treated as missing observations and not included. For example, let us say that you included 5 tests, but one of them could not be calculated. In this case, the valid 4 scores will be added and divided by 4 (not 5) to acquire the means. Also, grade range scores–such as “5-6” from [*New Dale-Chall*](#dale-chall-test)–will be converted to its own average (e.g., “5-6” will be 5.5).
 
 To remove any test from this list, select it and press `r keyboardButton("CTRL")`+`r keyboardButton("DELETE")` (`r macOSCmdButton()`+`r keyboardButton("DELETE")` on macOS) on your keyboard. To edit a [custom test](#creating-custom-test), double click on it in this list. To view the help for a standard test, double click on it in this list.
 
-There will also be graphs in this section if you had included the [**Fry**](#reviewing-readability-graphs) , [**Gilliam-Peña-Mountain**](#gilliam-pena-mountain-fry-graph), [**Raygor**](#reviewing-readability-graphs), [**Flesch**](#flesch-test), or [**FRASE**](#frase) tests. Please refer to \@ref(reviewing-readability-graphs) for further information.
+There will also be graphs in this section if you had included the [*Fry*](#reviewing-readability-graphs) , [*Gilliam-Peña-Mountain*](#gilliam-pena-mountain-fry-graph), [*Raygor*](#reviewing-readability-graphs), [*Flesch*](#flesch-test), or [*FRASE*](#frase) tests. Please refer to \@ref(reviewing-readability-graphs) for further information.
 
 ## Reviewing the Readability Graphs {#reviewing-readability-graphs}
 
-There are numerous readability tests that are graphically plotted, including [**Fry**](#fry-test), [**Raygor**](#raygor-test), [**Flesch**](#flesch-test), [Lix](#lix-test), [**Gilliam-Peña-Mountain**](#gilliam-pena-mountain-fry-graph), [**FRASE**](#frase), [**Crawford**](#crawford), and [**Schwartz**](#scwartz). These graphs consist of either grade-level or reading-level regions that a document may fall within. They also include indicators for the most influential factor for the document's reported level (i.e., word difficulty vs. sentence difficulty).
+There are numerous readability tests that are graphically plotted, including [*Fry*](#fry-test), [*Raygor*](#raygor-test), [*Flesch*](#flesch-test), [*Lix*](#lix-test), [*Gilliam-Peña-Mountain*](#gilliam-pena-mountain-fry-graph), [*FRASE*](#frase), [*Crawford*](#crawford), and [*Schwartz*](#scwartz). These graphs consist of either grade-level or reading-level regions that a document may fall within. They also include indicators for the most influential factor for the document's reported level (i.e., word difficulty vs. sentence difficulty).
 
 To view these graphs, click on the **Test Graphs & Charts** icon in a [standard project](#creating-standard-project) or the **Readability Graphs** icon in a [batch project](#creating-batch-project).
 
-Let us first review a **Fry** graph:
+Let us first review a *Fry* graph:
 
 ```{r fryGraph2, echo=F, fig.cap='Fry Graph', fig.align='center'}
 knitr::include_graphics("Images/frygraph.png")
@@ -46,41 +46,41 @@ To read this graph, search for the red data point–this value represents the do
 
 Running through each slice is a gray line, which is a separator to help show the most predominate cause of the document's difficulty. If the data point is above the gray line, then the strongest influence on the document's difficulty is high-syllable words. If it is below the line, then the strongest influence is long sentences. In the above example, it is above the line, implying that it is slightly more influenced by high-syllable words. However, because it is fairly close to the line, this document is well balanced between difficult words and difficult sentences.
 
-If the data point does not fall inside of a slice then the test will fail. For example, the **Raygor** graph below indicates that the document's overly-long words caused the test to fail:
+If the data point does not fall inside of a slice then the test will fail. For example, the *Raygor* graph below indicates that the document's overly-long words caused the test to fail:
 
 ```{r raygorBadGrade, echo=F, fig.cap='Raygor Graph', fig.align='center'}
 knitr::include_graphics("Images/raygorbadgrade.png")
 ```
 
-The document was almost classified as 11^th^ grade level material, but its long sentences make it too difficult to be assigned to any grade. At this point, you would want to review the document's lengthy sentences (select [Highlighted Report](#reviewing-standard-grammar) under the **Grammar** sidebar item) and try to shorten some of them.
+The document was almost classified as 11^th^ grade level material, but its long sentences make it too difficult to be assigned to any grade. At this point, you would want to review the document's lengthy sentences (select [**Highlighted Report**](#reviewing-standard-grammar) under the **Grammar** sidebar item) and try to shorten some of them.
 
-The **Gilliam-Peña-Mountain** graph is a variation of **Fry** designed for Spanish text. It is identical to **Fry**, except that its X axis begins at 175 (instead of 108). This enables this graph to plot Spanish text, which usually has a much higher syllable count than its English counterpart. Below is an example of a **Gilliam-Peña-Mountain** graph:
+The *Gilliam-Peña-Mountain* graph is a variation of *Fry* designed for Spanish text. It is identical to *Fry*, except that its X axis begins at 175 (instead of 108). This enables this graph to plot Spanish text, which usually has a much higher syllable count than its English counterpart. Below is an example of a *Gilliam-Peña-Mountain* graph:
 
 ```{r gpm2, echo=F, fig.cap='Gilliam-Peña-Mountain Graph', fig.align='center'}
 knitr::include_graphics("Images/GpmFry.png")
 ```
 
-The **Schwartz** graph is another **Fry**-like graph, which is designed for German (primary and secondary-reader) text. Although similar in appearance to **Fry**, this graph uses its own reading-level regions mapped to the German materials it was trained on. This approach differs from **Gilliam-Peña-Mountain**, which uses the original **Fry** template and adjusts its axis ranges to accommodate Spanish text. Below is an example of a **Schwartz** graph:
+The *Schwartz* graph is another *Fry*-like graph, which is designed for German (primary and secondary-reader) text. Although similar in appearance to *Fry*, this graph uses its own reading-level regions mapped to the German materials it was trained on. This approach differs from *Gilliam-Peña-Mountain*, which uses the original *Fry* template and adjusts its axis ranges to accommodate Spanish text. Below is an example of a *Schwartz* graph:
 
 ```{r schwartz2, echo=F, fig.cap='Schwartz Graph', fig.align='center'}
 knitr::include_graphics("Images/Schwartz.png")
 ```
 
-The **Fry** and **Raygor** graphs are very similar and are both interpreted in the same manner; however, there are a few differences between them. The **Fry** graph classifies documents within the 1^st^ grade to doctorate level. In contrast, **Raygor** concentrates on the range of 3^rd^ grade to the sophomore collegiate level. It is recommended to only use **Raygor** graphs for secondary-age materials.
+The *Fry* and *Raygor* graphs are very similar and are both interpreted in the same manner; however, there are a few differences between them. The *Fry* graph classifies documents within the 1^st^ grade to doctorate level. In contrast, *Raygor* concentrates on the range of 3^rd^ grade to the sophomore collegiate level. It is recommended to only use *Raygor* graphs for secondary-age materials.
 
-Another difference is that the **Fry** graph is influenced by high-syllable words, while the **Raygor** graph is influenced by long words. Long sentences remain a key factor for both of these graphs, though.
+Another difference is that the *Fry* graph is influenced by high-syllable words, while the *Raygor* graph is influenced by long words. Long sentences remain a key factor for both of these graphs, though.
 
-The other difference between the two graphs is that they are inverted from one another. In a **Fry** graph, the long-sentence region is in the bottom left-hand corner (going downward), whereas in a **Raygor** graph the long-sentence region is in the top left-hand corner (going upward). However, the same rules apply for how to interpret the grade level and influence of difficult words vs. difficult sentences.
+The other difference between the two graphs is that they are inverted from one another. In a *Fry* graph, the long-sentence region is in the bottom left-hand corner (going downward), whereas in a *Raygor* graph the long-sentence region is in the top left-hand corner (going upward). However, the same rules apply for how to interpret the grade level and influence of difficult words vs. difficult sentences.
 
-The **FRASE** graph is similar to **Fry** in terms of factors used and axis orientation. Its most influential factor (i.e., word vs. sentence difficulty) is determined in the same manner, and its Y (sentence) axis is descending. Below is an example of a **FRASE** graph:
+The *FRASE* graph is similar to *Fry* in terms of factors used and axis orientation. Its most influential factor (i.e., word vs. sentence difficulty) is determined in the same manner, and its Y (sentence) axis is descending. Below is an example of a *FRASE* graph:
 
 ```{r frase2, echo=F, fig.cap='Frase Graph', fig.align='center'}
 knitr::include_graphics("Images/FraseGraph.png")
 ```
 
-A key difference with **FRASE** is its use of **reading** levels (rather than **grade** levels). In the above example, we can see that the document has been scored at the “Intermediate” level. The other difference is that it is designed for Spanish text—note how its X (syllable-count) axis begins at 182, not 108.
+A key difference with *FRASE* is its use of **reading** levels (rather than **grade** levels). In the above example, we can see that the document has been scored at the “Intermediate” level. The other difference is that it is designed for Spanish text—note how its X (syllable-count) axis begins at 182, not 108.
 
-The **Crawford** graph is also similar to **Fry** in terms of factors used. However, it differs from most other graphs in that it uses the interior of the plot to find its sentence-count factor (instead of an axis). Below is an example of a **Crawford** graph:
+The *Crawford* graph is also similar to *Fry* in terms of factors used. However, it differs from most other graphs in that it uses the interior of the plot to find its sentence-count factor (instead of an axis). Below is an example of a *Crawford* graph:
 
 ```{r crawford2, echo=F, fig.cap='Crawford Graph', fig.align='center'}
 knitr::include_graphics("Images/CrawfordGraph.png")
@@ -88,27 +88,27 @@ knitr::include_graphics("Images/CrawfordGraph.png")
 
 In the above graph, we can see that the intersection of the factors is 175 and 7. The number of syllables is 175 (Y axis). The number of sentences is approximately 7 (between 8.4 and 5.9 on the plot [corresponding to 175 on the Y axis]). From this intersection, the point's X axis value is 3.7. Hence, 3.7 is the grade-level score for this graph.
 
-The **Flesch** chart plots a document's factors onto a pair of “rulers” and then connects them to determine the **Flesch** score. This score ranges from 0 (“very difficult”) to 100 (“very easy”). Below is an example of a **Flesch** chart:
+The *Flesch* chart plots a document's factors onto a pair of “rulers” and then connects them to determine the *Flesch* score. This score ranges from 0 (“very difficult”) to 100 (“very easy”). Below is an example of a *Flesch* chart:
 
 ```{r fleschChart2, echo=F, fig.cap='Flesch Chart', fig.align='center'}
 knitr::include_graphics("Images/FleschChart.png")
 ```
 
-**Danielson Bryan 2**—a variation of **Flesch Reading Ease**— includes a similar graphic, which also includes grade-level information:
+*Danielson-Bryan 2*—a variation of *Flesch Reading Ease*— includes a similar graphic, which also includes grade-level information:
 
-```{r db2Plot2, echo=F, fig.cap='Danielson Bryan 2 Plot', fig.align='center'}
+```{r db2Plot2, echo=F, fig.cap='Danielson-Bryan 2 Plot', fig.align='center'}
 knitr::include_graphics("Images/DB2Plot.png")
 ```
 
-Similar to a **Flesch** chart, the **Lix** gauge plots a document's **Lix** index score on a chart showing its difficulty level:
+Similar to a *Flesch* chart, the *Lix* gauge plots a document's *Lix* index score on a chart showing its difficulty level:
 
 ```{r lixGuage2, echo=F, fig.cap='Lix Gauge', fig.align='center'}
 knitr::include_graphics("Images/LixGauge.png")
 ```
 
-In the above chart, we can see that **Lix** scores can range from 0 (“very easy”) to 60+ (“very difficult”).
+In the above chart, we can see that *Lix* scores can range from 0 (“very easy”) to 60+ (“very difficult”).
 
-There is also a variation of the **Lix** gauge that is adjusted for German materials:
+There is also a variation of the *Lix* gauge that is adjusted for German materials:
 
 ```{r germanLix3, echo=F, fig.cap='German Lix Gauge', fig.align='center'}
 knitr::include_graphics("Images/GermanLixGauge.png")
@@ -116,7 +116,7 @@ knitr::include_graphics("Images/GermanLixGauge.png")
 
 This version adjusts the scaling of the score, assuming that German text is inherently more difficult than other languages. It also includes additional levels of difficulty (e.g., “children and young adult”).
 
-Note that if you plot any of these graphs, its score can also be viewed in the [Readability Scores](#reviewing-test-scores) area.
+Note that if you plot any of these graphs, its score can also be viewed in the [**Readability Scores**](#reviewing-test-scores) area.
 
 As a final note, [batch projects](#creating-batch-project) include multi-document versions of all these graphs:
 
@@ -124,7 +124,7 @@ As a final note, [batch projects](#creating-batch-project) include multi-documen
 knitr::include_graphics("Images/MultipleFry.png")
 ```
 
-Here, we can see that an entire collection of documents are plotted onto a single **Fry** graph. This is useful for visualizing the grade-level layout of a group of documents. In the above example, we can see that the documents are clustering in the high-school region. We can also interpret that complex words are heavily influencing the documents' difficulty.
+Here, we can see that an entire collection of documents are plotted onto a single *Fry* graph. This is useful for visualizing the grade-level layout of a group of documents. In the above example, we can see that the documents are clustering in the high-school region. We can also interpret that complex words are heavily influencing the documents' difficulty.
 
 You can also print or save a blank copy of any of these graphs. This is useful for printing handouts for instructors or students to use. To print a blank graph, go to the **Readability** tab on the ribbon, click the `r keyboardButton("Blank Graphs")` button, and select the graph that you wish to save.
 
@@ -138,9 +138,9 @@ If a project contains goals, then a **Goals** section will be available to show 
 
 In the above image, we can see that this project is recommending:
 
-- **Fry** should not be higher than 10
-- **Flesch Reading Ease** should be higher than 60
-- **ELF** should not be higher than 12
+- *Fry* should not be higher than 10
+- *Flesch Reading Ease* should be higher than 60
+- *ELF* should not be higher than 12
 
 Also, the warning icons indicate that currently the document is failing to meet all these criteria.
 
@@ -154,33 +154,33 @@ After opening a project, click on the **Summary Statistics** icon on the project
 
 The **Report** and **Tabular Report** windows display the document's statistics in two formats: a formatted report and a tabular report, respectively. Both of these reports contain the following statistics:
 
--   Number of paragraphs and average number of sentences per paragraph.
--   Number of sentences and average number of words per sentence.
--   Number and percentage of difficult sentences.
--   Number of [units](#glossary)/independent clauses. This statistic is only available if [Extended Information](#options-summary-report) is enabled.
--   Number of interrogative sentences (questions).
--   Number of exclamatory sentences.
--   Number of words.
--   Number of unique words.
--   Number of syllables and average number of syllables per word.
--   Number of characters (with and without punctuation) and average number of characters per word.
--   Number and percentage of numerals.
--   Number and percentage of proper nouns (not available for German projects).
--   Number and percentage of total (and unique) monosyllabic words.
--   Number and percentage of total (and unique) 3+ syllable words.
--   Number and percentage of total (and unique) hard [SMOG](#smog-test) words. This statistic is only available if **SMOG** is included in the project.
--   Number and percentage of total (and unique) hard [Fog](#gunning-fog-test) words. This statistic is only available if **Fog** is included in the project.
--   Number and percentage of total (and unique) 6+ letter words.
--   Number and percentage of total (and unique) unfamiliar words. This includes word lists such as [Dale-Chall](#dale-chall-test) and [Spache](#spache-test). These statistics are only available if the respective tests are included in the project.
--   Number of grammar errors.
--   Text size (the size of the text in a document, not the actual file size). This statistic is only available if [Extended Information](#options-summary-report) is enabled.
+- Number of paragraphs and average number of sentences per paragraph.
+- Number of sentences and average number of words per sentence.
+- Number and percentage of difficult sentences.
+- Number of [units](#glossary)/independent clauses. This statistic is only available if [Extended Information](#options-summary-report) is enabled.
+- Number of interrogative sentences (questions).
+- Number of exclamatory sentences.
+- Number of words.
+- Number of unique words.
+- Number of syllables and average number of syllables per word.
+- Number of characters (with and without punctuation) and average number of characters per word.
+- Number and percentage of numerals.
+- Number and percentage of proper nouns (not available for German projects).
+- Number and percentage of total (and unique) monosyllabic words.
+- Number and percentage of total (and unique) 3+ syllable words.
+- Number and percentage of total (and unique) hard [*SMOG*](#smog-test) words. This statistic is only available if *SMOG* is included in the project.
+- Number and percentage of total (and unique) hard [*Fog*](#gunning-fog-test) words. This statistic is only available if *Fog* is included in the project.
+- Number and percentage of total (and unique) 6+ letter words.
+- Number and percentage of total (and unique) unfamiliar words. This includes word lists such as [*Dale-Chall*](#dale-chall-test) and [*Spache*](#spache-test). These statistics are only available if the respective tests are included in the project.
+- Number of grammar errors.
+- Text size (the size of the text in a document, not the actual file size). This statistic is only available if [**Extended Information**](#options-summary-report) is enabled.
 
 Statistics for any custom familiar-word tests will also be included in this window.
 
 A **Notes** section may be included at the bottom of the formatted report if there are any items of interest detected (e.g., a high sentence-length average). If your document requires improvement, then this section is usually a good place to begin.
 
 ::: {.notesection data-latex=""}
-3+ syllable words and [Fog](#gunning-fog-test) and [SMOG](#smog-test) hard words are all the same except for how numerals (e.g., phone numbers and dates) are handled. **SMOG** always sounds out each digit of a numeric word, whereas **Fog** ignores numeric words. You can control how numeric words are handled from the [Document Indexing](#document-analysis) section of the [Options](#options-overview) dialog (available on the **Tools** tab).
+3+ syllable words and [Fog](#gunning-fog-test) and [SMOG](#smog-test) hard words are all the same except for how numerals (e.g., phone numbers and dates) are handled. *SMOG* always sounds out each digit of a numeric word, whereas *Fog* ignores numeric words. You can control how numeric words are handled from the [Document Indexing](#document-analysis) section of the [Options](#options-overview) dialog (available on the **Tools** tab).
 :::
 
 ## Reviewing the Words Breakdown {#reviewing-word-breakdowns}
@@ -195,17 +195,17 @@ The types of difficult-word lists that may be shown are:
 
 **6+ Characters**: This list displays all the document's words that are six or more characters. It also displays how many characters each word contains and their respective frequency counts. This window is only available if the document contains 6+ character words.
 
-**Dale-Chall (Unfamiliar)**: This list displays all the document's words that are not in the [Dale-Chall](#dale-chall-test) familiar words list and their respective frequency counts. The **Dale-Chall** word list is a collection of words that are considered to be familiar to most fourth grade readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if a **Dale-Chall** related test is included in the project.
+**Dale-Chall (Unfamiliar)**: This list displays all the document's words that are not in the [*Dale-Chall*](#dale-chall-test) familiar words list and their respective frequency counts. The *Dale-Chall* word list is a collection of words that are considered to be familiar to most fourth grade readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if a *Dale-Chall* related test is included in the project.
 
-**Spache (Unfamiliar)**: This list displays all the document's words that are not in the **Spache** familiar words list and their respective frequency counts. The [Spache](#spache-test) word list is a collection of words that are considered to be familiar to most primary-age readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the **Spache** test is included in the project.
+**Spache (Unfamiliar)**: This list displays all the document's words that are not in the *Spache* familiar words list and their respective frequency counts. The [*Spache*](#spache-test) word list is a collection of words that are considered to be familiar to most primary-age readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the *Spache* test is included in the project.
 
-**Harris-Jacobson (Unfamiliar)**: This list displays all the document's words that are not in the **Harris-Jacobson** familiar words list and their respective frequency counts. The [Harris-Jacobson](#harris-jacobson) word list is a collection of words that are considered to be familiar to most second-grade readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the **Harris-Jacobson** test is included in the project.
+**Harris-Jacobson (Unfamiliar)**: This list displays all the document's words that are not in the *Harris-Jacobson* familiar words list and their respective frequency counts. The [*Harris-Jacobson*](#harris-jacobson) word list is a collection of words that are considered to be familiar to most second-grade readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the *Harris-Jacobson* test is included in the project.
 
 **All Words**: This list displays all the words from the document and their respective frequency counts.
 
 **All Words (Condensed)**: This list is the same as **All Words**, except that is excludes common words and combines others. In regards to combining words, words with the same root will be merged into a single row. For example, “report,” “reports,” and “reporting” will be combined into one row, with the frequency counts for all three words also combined. As for excluding words, common words (e.g., “the”), numerals, and filenames are not included in this list. (If no words can be combined and there are no common words to ignore, then this list will not be shown.)
 
-Note that if you are ignoring incomplete sentences, then these lists will only include the words from complete sentences. If you need to review all the words from the document, then select the option [Do not exclude any text](#options-text-exclusion). Refer to \@ref(how-text-is-excluded) to learn more about how **Readability Studio** handles incomplete sentences.
+Note that if you are ignoring incomplete sentences, then these lists will only include the words from complete sentences. If you need to review all the words from the document, then select the option [**Do not exclude any text**](#options-text-exclusion). Refer to \@ref(how-text-is-excluded) to learn more about how **Readability Studio** handles incomplete sentences.
 
 To view any of these lists, click on its name under the **Words Breakdown** section on the sidebar. For example, click on the **Words Breakdown** icon on the sidebar, and when it expands click on **3+ Syllables** underneath it.
 
@@ -215,7 +215,7 @@ To find the most complex words, sort the **Syllable Count** column of the **3+ S
 
 If your test scores are indicating that the document is too difficult for your target audience, then you should review overly complex or long words. You may consider seeing if any shorter synonyms could be used in their place. The same type of review can also be performed with the **6+ Characters** list by sorting the **Character Count** column.
 
-To help find the most difficult words for the **Dale-Chall** list, select the **Dale-Chall (Unfamiliar)** subitem and sort the **Frequency** column. The most frequently occurring words are the ones that should be replaced with more familiar synonyms that most readers would recognize.
+To help find the most difficult words for the *Dale-Chall* list, select the **Dale-Chall (Unfamiliar)** subitem and sort the **Frequency** column. The most frequently occurring words are the ones that should be replaced with more familiar synonyms that most readers would recognize.
 
 To find a specific word in a list, type the word into the **Search** bar at the top of program and hit the `r keyboardButton("ENTER")` button on your keyboard. You can also select the list and begin typing the word. If the word is in the list, then the selection will move to it.
 
@@ -227,11 +227,11 @@ The different types of text windows that may be shown are:
 
 **6+ Characters**: This text window contains the document with all the words that are six or more characters long highlighted. This window is only available if the document contains 6+ character words.
 
-**Dale-Chall (Unfamiliar)**: This text window contains the document with all the [Dale-Chall](#dale-chall-test) unfamiliar words highlighted. The **Dale-Chall** word list is a collection of words that are considered to be familiar to most fourth grade readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if a **Dale-Chall** related test is included in the project.
+**Dale-Chall (Unfamiliar)**: This text window contains the document with all the [Dale-Chall](#dale-chall-test) unfamiliar words highlighted. The *Dale-Chall* word list is a collection of words that are considered to be familiar to most fourth grade readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if a *Dale-Chall* related test is included in the project.
 
-**Spache (Unfamiliar)**: This text window contains the document with all the [Spache](#spache-test) unfamiliar words highlighted. The **Spache** word list is a collection of words that are considered to be familiar to most primary-age readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the **Spache** test is included in the project.
+**Spache (Unfamiliar)**: This text window contains the document with all the [Spache](#spache-test) unfamiliar words highlighted. The *Spache* word list is a collection of words that are considered to be familiar to most primary-age readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the *Spache* test is included in the project.
 
-**Harris-Jacobson (Unfamiliar)**: This text window contains the document with all the [Harris-Jacobson](#harris-jacobson) unfamiliar words highlighted. The **Harris-Jacobson** word list is a collection of words that are considered to be familiar to most primary-age readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the **Harris-Jacobson** test is included in the project.
+**Harris-Jacobson (Unfamiliar)**: This text window contains the document with all the [Harris-Jacobson](#harris-jacobson) unfamiliar words highlighted. The *Harris-Jacobson* word list is a collection of words that are considered to be familiar to most primary-age readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the *Harris-Jacobson* test is included in the project.
 
 You can change both the font and highlighting color by opening the [Project Properties](#options-overview) dialog and clicking the [Highlighted Reports](#options-highlighted-reports) icon. Note that changing these options from the **Project Properties** dialog will only affect the current project. If you want to make changes to any future projects, then go to the **Options** dialog from the **Tools** tab instead.
 
@@ -239,7 +239,7 @@ A **Word Counts** [bar chart](#options-bar-charts) is also included in this sect
 
 ![](Images/barchart.png)
 
-In the above example, we can see that there are 70 unfamiliar **Dale-Chall** words, but only 42 **3+ syllable** words. From this, we could infer that we should first concentrate on replacing these unfamiliar words. Lists of these words can be found by clicking on the [Difficult Words](#reviewing-word-breakdowns) icon on the project sidebar.
+In the above example, we can see that there are 70 unfamiliar *Dale-Chall* words, but only 42 **3+ syllable** words. From this, we could infer that we should first concentrate on replacing these unfamiliar words. Lists of these words can be found by clicking on the [Difficult Words](#reviewing-word-breakdowns) icon on the project sidebar.
 
 Finally, a histogram of the words (grouped by syllable count) is also available:
 
@@ -248,7 +248,7 @@ Finally, a histogram of the words (grouped by syllable count) is also available:
 In the above histogram, we see that most of the words are either 1 or 2 syllables. There are only 25 **3-syllable** words and 17 **4-syllable** words in the document. Note that selecting a bar will display the first 25 words within that syllable group (if [binning](#options-histograms) is set to **unique values**).
 
 ::: {.notesection data-latex=""}
-The **total** value of a word count reflects the number of words, including repeats of the same word. The **unique** value of a word count reflects the number of words, excluding repeats. For example, a document contains the word “liquidation” three times. This word will be tallied three times when factored into the total word count, but only once into the unique word count. Most tests use the total word count variable, although there are some that use unique counts (e.g., **Spache** uses its **unique** unfamiliar word count).
+The **total** value of a word count reflects the number of words, including repeats of the same word. The **unique** value of a word count reflects the number of words, excluding repeats. For example, a document contains the word “liquidation” three times. This word will be tallied three times when factored into the total word count, but only once into the unique word count. Most tests use the total word count variable, although there are some that use unique counts (e.g., *Spache* uses its **unique** unfamiliar word count).
 :::
 
 See also [Proper Nouns in the Difficult Word Lists](#proper-nouns-in-lists).
@@ -267,7 +267,7 @@ To find the longest sentence, [sort](#column-sorting) the **Word Count** column 
 
 ![](Images/featuressentencelistsorted.png)
 
-To view any sentence in its original context, double-click on it. This will take you to the [Highlighted Report](#reviewing-standard-grammar) page with that sentence selected.
+To view any sentence in its original context, double-click on it. This will take you to the [**Highlighted Report**](#reviewing-standard-grammar) page with that sentence selected.
 
 If the test scores are indicating that the document is too difficult for your target audience, then review the overly-long sentences. You should consider splitting these sentences into smaller ones and revising any [wordy items](#reviewing-wordy-items).
 
@@ -324,7 +324,7 @@ Lowercased sentence searching is applied to all sentences. [Incomplete sentences
 
 Also note that if the option [Sentences must begin with capitalized words](#options-sentence-deduction) is enabled, then this feature will be limited to sentences that begin new paragraphs. If you want to search for any possible sentences that begin with lowercased words, then you should leave this option unchecked.
 
-To view any sentence in its original context, double-click on it. This will take you to the [Highlighted Report](#reviewing-standard-grammar) page with that sentence selected.
+To view any sentence in its original context, double-click on it. This will take you to the [**Highlighted Report**](#reviewing-standard-grammar) page with that sentence selected.
 
 Note that if there are no lowercased sentences in your document, then this window will not be included.
 
@@ -362,7 +362,7 @@ Repeated words are bound to the sentence level. If the same word ends one senten
 
 Repeated word searching is applied to all sentences. [Incomplete sentences](#how-text-is-excluded) will be reviewed for this, even if they are excluded from the analysis.
 
-To view any repeated word in its original context, double-click on it. This will take you to the [Highlighted Report](#reviewing-standard-grammar) page with that repeated word selected.
+To view any repeated word in its original context, double-click on it. This will take you to the [**Highlighted Report**](#reviewing-standard-grammar) page with that repeated word selected.
 
 Note that if there are no repeated words in your document, then this window will not be included.
 
@@ -376,8 +376,8 @@ After opening a project, click on the **Grammar** icon on the project sidebar an
 
 For example, the following articles would be marked as mismatching:
 
--   a electronic
--   an textbook
+- a electronic
+- an textbook
 
 This search is applied to all sentences. [Incomplete sentences](#how-text-is-excluded) will be reviewed for this, even if they are excluded from the analysis.
 
@@ -397,7 +397,7 @@ Options for controlling how misspellings are searched for are available in the [
 
 Misspelling searching is applied to all sentences. [Incomplete sentences](#how-text-is-excluded) will be reviewed for this, even if they are excluded from the analysis.
 
-To view any misspelling in its original context, double-click on it. This will take you to the [Highlighted Report](#reviewing-standard-grammar) page with that word selected.
+To view any misspelling in its original context, double-click on it. This will take you to the [**Highlighted Report**](#reviewing-standard-grammar) page with that word selected.
 
 To add a word(s) to your dictionary, first select them in this list. Then, click on the **Document** tab, and click the arrow below the `r keyboardButton("Spell Checker")` button. Then, select **Add Selected Words** and the selected words in this list will no longer be reported as misspellings.
 
@@ -423,7 +423,7 @@ Wording errors are bound to the sentence level. If part of a phrase ends one sen
 
 This search is applied to all sentences. [Incomplete sentences](#how-text-is-excluded) will be reviewed for this, even if they are excluded from the analysis.
 
-To view any wording error in its original context, double-click on it. This will take you to the [Highlighted Report](#reviewing-standard-grammar) page with that phrase selected.
+To view any wording error in its original context, double-click on it. This will take you to the [**Highlighted Report**](#reviewing-standard-grammar) page with that phrase selected.
 
 Note that if there are no wording errors in your document, then this window will not be included.
 
@@ -445,7 +445,7 @@ Redundant phrases are bound to the sentence level. If part of a phrase ends one 
 
 Redundant phrase searching is applied to all sentences. [Incomplete sentences](#how-text-is-excluded) will be reviewed for this, even if they are excluded from the analysis.
 
-To view any redundant phrase in its original context, double-click on it. This will take you to the [Highlighted Report](#reviewing-standard-grammar) page with that phrase selected.
+To view any redundant phrase in its original context, double-click on it. This will take you to the [**Highlighted Report**](#reviewing-standard-grammar) page with that phrase selected.
 
 Note that if there are no redundant phrases in your document, then this window will not be included.
 
@@ -467,7 +467,7 @@ Wordy phrases are bound to the sentence level. If part of a phrase ends one sent
 
 Wordy-item searching does not affect readability calculations, so this analysis is applied to all sentences. [Incomplete sentences](#how-text-is-excluded) will be reviewed for this, even if they are excluded from the analysis.
 
-To view any wordy item in its original context, double-click on it. This will take you to the [Highlighted Report](#reviewing-standard-grammar) page with that item selected.
+To view any wordy item in its original context, double-click on it. This will take you to the [**Highlighted Report**](#reviewing-standard-grammar) page with that item selected.
 
 Note that if there are no wordy items in your document, then this window will not be included.
 
@@ -523,62 +523,62 @@ Numeric words, proper nouns, single-letter words, and common words (e.g., “the
 
 Note that if there are no sentences with overused words in your document, then this window will not be included.
 
-To view any sentence in its original context, double-click on it. This will take you to the [Highlighted Report](#reviewing-standard-grammar) page with that sentence selected.
+To view any sentence in its original context, double-click on it. This will take you to the [**Highlighted Report**](#reviewing-standard-grammar) page with that sentence selected.
 
 ## Dolch Sight Words {#reviewing-dolch}
 
-The **Dolch Sight Words** (456-460) represent the most frequently occurring service words[^1] in most text, especially children's literature. Early readers need to learn and recognize these words to attain reading fluency. Many of these words cannot be sounded out or represented by pictures; therefore, they must be learned by sight[^2].
+The *Dolch Sight Words* (456-460) represent the most frequently occurring service words[^DolchPronounsFootnote] in most text, especially children's literature. Early readers need to learn and recognize these words to attain reading fluency. Many of these words cannot be sounded out or represented by pictures; therefore, they must be learned by sight[^DolchNounsListFootnote].
 
 If you are writing educational materials for early readers, then use as many of these words as possible to help readers practice them. Also, keep the percentage of non-Dolch words low so that readers can better focus on the sight words.
 
-**Readability Studio** offers a suite of **Dolch** statistics and graphs as a tool for educators and writers targeting early readers. If you are creating material intended to help early readers practice **Dolch** words, then it is recommended to include this in your project. To add **Dolch** statistics to your project, go to the **Readability** tab and select either **Primary-age Reading** or **Second Language Reading** and select **Dolch Sight Words**. A **Dolch Sight Words** icon will appear at the bottom of the project sidebar—clicking on that will display all the **Dolch** information.
+**Readability Studio** offers a suite of *Dolch* statistics and graphs as a tool for educators and writers targeting early readers. If you are creating material intended to help early readers practice *Dolch* words, then it is recommended to include this in your project. To add *Dolch* statistics to your project, go to the **Readability** tab and select either **Primary-age Reading** or **Second Language Reading** and select *Dolch Sight Words*. A *Dolch Sight Words* icon will appear at the bottom of the project sidebar—clicking on that will display all the *Dolch* information.
 
-[^1]: Pronouns, adjectives, adverbs, prepositions, conjunctions, and verbs.
-[^2]: A separate list of nouns commonly found in children's literature is also included with the **Dolch** collection. However, the sight words are generally the focus of most **Dolch** activities.
+[^DolchPronounsFootnote]: Pronouns, adjectives, adverbs, prepositions, conjunctions, and verbs.
+[^DolchNounsListFootnote]: A separate list of nouns commonly found in children's literature is also included with the *Dolch* collection. However, the sight words are generally the focus of most *Dolch* activities.
 
 ### Reviewing the Dolch Statistics {-#reviewing-dolch-stats}
 
-After opening a project, click on the **Dolch Sight Words** icon on the project sidebar and select the **Dolch Summary** subitem to view the document's **Dolch** statistics:
+After opening a project, click on the *Dolch Sight Words* icon on the project sidebar and select the **Dolch Summary** subitem to view the document's *Dolch* statistics:
 
 ![](Images/dolchsummary.png)
 
-There are two types of statistics included: **Dolch** coverage and raw **Dolch** word counts.
+There are two types of statistics included: *Dolch* coverage and raw *Dolch* word counts.
 
-The **Dolch Word Coverage** section displays how much of each category is used in the document. For example, if 6 of the conjunction **Dolch** words are used in the document, then 6 will be displayed next to **Conjunctions used**. The percentage will also be included in parentheses after these counts. In this case, it will be 100% because there are 6 words on the **Dolch** conjunction list.
+The **Dolch Word Coverage** section displays how much of each category is used in the document. For example, if 6 of the conjunction *Dolch* words are used in the document, then 6 will be displayed next to **Conjunctions used**. The percentage will also be included in parentheses after these counts. In this case, it will be 100% because there are 6 words on the *Dolch* conjunction list.
 
-Notes will be shown at the bottom of the **Dolch Word Coverage** section to indicate which (if any) categories are being used well by your document. This is the best way to see whether or not your document is useful as a **Dolch** practice tool.
+Notes will be shown at the bottom of the **Dolch Word Coverage** section to indicate which (if any) categories are being used well by your document. This is the best way to see whether or not your document is useful as a *Dolch* practice tool.
 
-If a document does not provide good coverage for any of the categories and/or contains numerous non-Dolch words, then it will not be an appropriate **Dolch** training document. This does not necessarily mean that it is not an appropriate document for younger readers. It simply means that the document does not use enough of the **Dolch** words to help readers learn these words. For example, The Tale of Peter Rabbit has decent coverage of the **Dolch** conjunctions and prepositions, but it also contains a large percentage of non-Dolch words. This book's readability levels indicate that it is proper for young readers. However, its high non-Dolch words percentage will make it inappropriate for readers to use it for practicing **Dolch** words.
+If a document does not provide good coverage for any of the categories and/or contains numerous non-Dolch words, then it will not be an appropriate *Dolch* training document. This does not necessarily mean that it is not an appropriate document for younger readers. It simply means that the document does not use enough of the *Dolch* words to help readers learn these words. For example, The Tale of Peter Rabbit has decent coverage of the *Dolch* conjunctions and prepositions, but it also contains a large percentage of non-Dolch words. This book's readability levels indicate that it is proper for young readers. However, its high non-Dolch words percentage will make it inappropriate for readers to use it for practicing *Dolch* words.
 
-To graphically view the **Dolch** coverage, click on the [Coverage Chart](#reviewing-dolch-graphs) icon. This will display a bar chart of these statistics, listed by category.
+To graphically view the *Dolch* coverage, click on the [**Coverage Chart**](#reviewing-dolch-graphs) icon. This will display a bar chart of these statistics, listed by category.
 
-Below this is the **Dolch Words** section, which lists all the raw **Dolch** word counts, broken down by category. Each category includes its total and unique counts of words found in the document. For example, let us say that four unique words from the pronoun list are found in the document, each appearing twice. In this case, **Number of Pronoun Dolch words** will be eight (four words each appearing twice) and **Number of unique Pronoun Dolch words** will be four.
+Below this is the **Dolch Words** section, which lists all the raw *Dolch* word counts, broken down by category. Each category includes its total and unique counts of words found in the document. For example, let us say that four unique words from the pronoun list are found in the document, each appearing twice. In this case, **Number of Pronoun Dolch words** will be eight (four words each appearing twice) and **Number of unique Pronoun Dolch words** will be four.
 
 Note that there may be a slight discrepancy between a category's coverage value and its unique word count. This will happen if your document contains variations of certain words, such as “ask” and “asked.” The program will treat morphological variations of a word the same as its root word when calculating coverage statistics. However, when calculating unique word statistics, different forms of words will be counted separately. For example, the words “asked” and “asking” will be counted as separate unique words; however, they both will be seen as “ask” when calculating the verb-list coverage.
 
-To graphically view the **Dolch** words breakdown, click on the [Word Counts](#reviewing-dolch-graphs) subitem. This will display a bar chart of these statistics, listed by category.
+To graphically view the *Dolch* words breakdown, click on the [**Word Counts**](#reviewing-dolch-graphs) subitem. This will display a bar chart of these statistics, listed by category.
 
 ### Reviewing the Dolch Graphs {-#reviewing-dolch-graphs}
 
-After opening a project, click on the **Dolch Sight Words** icon on the project sidebar. There are two graphs available for review: **Dolch Coverage** and **Word Counts**.
+After opening a project, click on the *Dolch Sight Words* icon on the project sidebar. There are two graphs available for review: **Dolch Coverage** and **Word Counts**.
 
 The **Dolch Coverage** graph displays how much of each category is used in the document. Refer to \@ref(reviewing-dolch) for more information.
 
 ![](Images/DolchCoverageChart.png)
 
-As we can see in the above graph, 87.5% of the **Dolch** prepositions are used in the document. Pronouns and adverbs are also well covered with 76.9% and 73.5%, respectively. However, less than half of the **Dolch** adjectives and nouns are used in the document. From this, we can see that this document may be useful for some **Dolch** categories, but not others.
+As we can see in the above graph, 87.5% of the *Dolch* prepositions are used in the document. Pronouns and adverbs are also well covered with 76.9% and 73.5%, respectively. However, less than half of the *Dolch* adjectives and nouns are used in the document. From this, we can see that this document may be useful for some *Dolch* categories, but not others.
 
-The **Words Breakdown** graph displays all the raw **Dolch** word counts, broken down by category. Refer to \@ref(reviewing-dolch) for more information.
+The **Words Breakdown** graph displays all the raw *Dolch* word counts, broken down by category. Refer to \@ref(reviewing-dolch) for more information.
 
 ![](Images/DolchWordBreakdown.png)
 
-As we can see in the above graph, there are 938 total **Dolch** words used in this document. Unfortunately, there are also 489 non-Dolch words. Although there is a strong number of Dolch words, the high number of non-Dolch words may make this document a poor candidate for practicing **Dolch** sight words.
+As we can see in the above graph, there are 938 total *Dolch* words used in this document. Unfortunately, there are also 489 non-Dolch words. Although there is a strong number of Dolch words, the high number of non-Dolch words may make this document a poor candidate for practicing *Dolch* sight words.
 
 ### Reviewing the Dolch Highlighted Text {-#reviewing-dolch-text}
 
-After opening a project, click on the **Dolch Sight Words** icon on the project sidebar. There will be two types of highlighted text windows available: **Dolch Words** and **Non-Dolch Words**.
+After opening a project, click on the *Dolch Sight Words* icon on the project sidebar. There will be two types of highlighted text windows available: **Dolch Words** and **Non-Dolch Words**.
 
-The **Dolch Words** subitem will display the document with the **Dolch** words highlighted:
+The **Dolch Words** subitem will display the document with the *Dolch* words highlighted:
 
 ![](Images/dolchhighlightedwords.png)
 
@@ -620,34 +620,34 @@ grid.draw(legend)
 
 To customize category highlighting, click the `r keyboardButton("Properties")` button on the **Home** tab to display the **Project Properties** dialog. Then select the **Highlighted Reports** icon and select the [Dolch Sight Words](#dolch-options) subitem. Here you can choose which categories to highlight and select their respective highlight colors.
 
-The **Non-Dolch Words** subitem will display the document with all the non-Dolch words (words that do not appear in any of the **Dolch** lists) highlighted:
+The **Non-Dolch Words** subitem will display the document with all the non-Dolch words (words that do not appear in any of the *Dolch* lists) highlighted:
 
 ![](Images/dolchhighlightednonwords.png)
 
 ### Reviewing the Dolch Word Lists {-#reviewing-dolch-lists}
 
-After opening a project, click on the **Dolch Sight Words** icon on the project sidebar. There will be three types of word lists available: **Dolch Words**, **Non-Dolch Words**, and **Unused Dolch Words**.
+After opening a project, click on the *Dolch Sight Words* icon on the project sidebar. There will be three types of word lists available: **Dolch Words**, **Non-Dolch Words**, and **Unused Dolch Words**.
 
-The **Dolch Words** subitem will display a list of the **Dolch** words from the document:
+The **Dolch Words** subitem will display a list of the *Dolch* words from the document:
 
 ![](Images/dolchwordslist.png)
 
-Next to each word will be two columns. The first column is **Frequency**, which will represent the number of times the word appears in the file. The second column is **Category**, which represents the **Dolch** category to which the word belongs.
+Next to each word will be two columns. The first column is **Frequency**, which will represent the number of times the word appears in the file. The second column is **Category**, which represents the *Dolch* category to which the word belongs.
 
-Double-click on any word in this list to display the [Dolch Words](#reviewing-dolch-text) text window with the first instance of that word selected.
+Double-click on any word in this list to display the [**Dolch Words**](#reviewing-dolch-text) text window with the first instance of that word selected.
 
-The **Non-Dolch Words** subitem will display a list of the words from the document that do not appear on any of the **Dolch** lists:
+The **Non-Dolch Words** subitem will display a list of the words from the document that do not appear on any of the *Dolch* lists:
 
 ![](Images/dolchnonwordslist.png)
 
 Next to each word will be a **Frequency** column, which will represent the number of times the word appears in the file.
 
-A high volume of non-Dolch words will adversely affect a document's ability to be a good **Dolch** practice tool. If the non-Dolch word count is high, consider replacing or removing words from this list that have high frequency counts.
+A high volume of non-Dolch words will adversely affect a document's ability to be a good *Dolch* practice tool. If the non-Dolch word count is high, consider replacing or removing words from this list that have high frequency counts.
 
 Double-click on any word in this list to display the [**Non-Dolch Words**](#reviewing-dolch-text) text window with the first instance of that word selected.
 
-The **Unused Dolch Words** subitem will display a list of the **Dolch** words that do not appear in the document:
+The **Unused Dolch Words** subitem will display a list of the *Dolch* words that do not appear in the document:
 
 ![](Images/dolchunusedwordslist.png)
 
-Next to each word will be a **Category** column, which represents the **Dolch** category that the word belongs to. If your document has low [coverage](#reviewing-dolch) of a category that you are targeting, try adding the words listed here to the document.
+Next to each word will be a **Category** column, which represents the *Dolch* category that the word belongs to. If your document has low [coverage](#reviewing-dolch) of a category that you are targeting, try adding the words listed here to the document.

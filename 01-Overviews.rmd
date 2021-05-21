@@ -72,7 +72,7 @@ Spanish and German tests are only available in the **Professional** edition, or 
 
 #### Graphics {-}
 
-**Readability Studio** includes numerous graphs to help visualize your results. Graphical tests such as **Fry** and **Raygor** are included, as well as a bar chart showing a breakdown of the difficult word categories. If you are reviewing **Dolch Sight Words**, then breakdown charts of your category usage and coverage are also included.
+**Readability Studio** includes numerous graphs to help visualize your results. Graphical tests such as *Fry* and *Raygor* are included, as well as a bar chart showing a breakdown of the difficult word categories. If you are reviewing *Dolch Sight Words*, then breakdown charts of your category usage and coverage are also included.
 
 Multiple-document graphs are also provided in the **Professional** edition of **Readability Studio**. Here, [histograms](#reviewing-batch-histograms) and [box plots](#reviewing-batch-box-plots) show the distribution of a document collection's test scores. This is useful for summarizing the general reading level of a batch of documents. It is also useful for finding problematic documents in a batch (i.e., outliers).
 
@@ -110,7 +110,7 @@ These issues are shown highlighted in your document for easy review. They are al
 
 #### Dolch Sight Words {-}
 
-**Readability Studio** also includes a [Dolch](#reviewing-dolch) suite of statistics and graphs, which is useful for educators and writers who work with young readers. The program provides a complete breakdown of **Dolch** words that you are using (and not using) in your materials. This enables writers to see how they can improve their **Dolch** practice materials. This also enables educators to determine which materials are appropriate for **Dolch** practice.
+**Readability Studio** also includes a [Dolch](#reviewing-dolch) suite of statistics and graphs, which is useful for educators and writers who work with young readers. The program provides a complete breakdown of *Dolch* words that you are using (and not using) in your materials. This enables writers to see how they can improve their *Dolch* practice materials. This also enables educators to determine which materials are appropriate for *Dolch* practice.
 
 #### Numerous file formats supported {-}
 
@@ -185,12 +185,12 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 
 - Added [goals](#reviewing-goals) feature to warn if a document's scores do not fall within a certain range.
 - Added [Schwartz test](#scwartz) (German projects only).
-- Added a graph to visualize **Lix** index scores.
-- Added a graph to visualize German **Lix** index scores.
-- Added a graph to visualize **Danielson-Bryan 2** scores.
-- **Rix** now uses sentence units in its calculation to better match the test's recommendations.
-- Expanded the difficulty-level descriptions for the German **Lix** tests.
-- Instruction label now shown on all **Flesch** charts (not just blank ones).
+- Added a graph to visualize *Lix* index scores.
+- Added a graph to visualize German *Lix* index scores.
+- Added a graph to visualize *Danielson-Bryan 2* scores.
+- *Rix* now uses sentence units in its calculation to better match the test's recommendations.
+- Expanded the difficulty-level descriptions for the German *Lix* tests.
+- Instruction label now shown on all *Flesch* charts (not just blank ones).
 - Added custom test features:
   - Added feature to create custom tests based on any existing formula-based test. Refer to \@ref(creating-custom-flesch-test) for an example.
   - Added `GunningFog` option to `SentenceCount()` function. This will return the sentence count using the system's [Gunning Fog method](#options-gunning-fog).
@@ -216,7 +216,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - Expanded words ignored by spell checker when **ignore programming words** is selected.
 - [Overused words (x Sentence)](#reviewing-overused-by-sentence) now excludes acronyms.
 - [All Words (Condensed)](#reviewing-word-breakdowns) now excludes common words (e.g., “the”), numerals, and filenames.
-- **Lix** and **Rix** are now available in the **Adult** readability tests menu.
+- *Lix* and *Rix* are now available in the **Adult** readability tests menu.
 - Added **Ignore social media hashtags** option to spell-checker.
 - Expanded spell-checker to include government, economics, business, accounting, biology, and psychology terminology.
 - New formula-parsing engine used for custom tests. This includes the following changes:
@@ -248,7 +248,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 
 #### Graph Enhancements {-}
 
-- Added [beeswarm jittering](#stats-issues) to box, **Danielson-Bryan 2**, **Flesch Reading Ease**, **Lix**, and **German Lix** plots (in batch projects).
+- Added [beeswarm jittering](#stats-issues) to box, *Danielson-Bryan 2*, *Flesch Reading Ease*, *Lix*, and *German Lix* plots (in batch projects).
 - Improved graph rendering performance.
 - Added option to not include labels on histograms.
 - Added option to not include labels on barcharts.
@@ -336,10 +336,10 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - Selecting outliers in [sentence-length box plots](#reviewing-sentences-breakdown) will now show a preview of the sentence.
 - Removed unnecessary axis information from box plots, offering a cleaner appearance.
 - Selecting a bar in a histogram will now show its first 25 observations.
-- Selecting a point on a score chart (e.g., **Fry**) in a batch project will show the corresponding documents name on the point.
-- Selecting an area in a score chart (e.g., grade or level areas in a **Fry** or **Crawford** chart) will show a descriptive label on that area.
-- Brackets in **Flesch** chart are now color coded.
-- Added instruction label to blank **Flesch** charts.
+- Selecting a point on a score chart (e.g., *Fry*) in a batch project will show the corresponding documents name on the point.
+- Selecting an area in a score chart (e.g., grade or level areas in a *Fry* or *Crawford* chart) will show a descriptive label on that area.
+- Brackets in *Flesch* chart are now color coded.
+- Added instruction label to blank *Flesch* charts.
 - Added support for multiline graph watermarks.
 
 #### Bug Fixes {-}
@@ -433,7 +433,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - Suggested replacements are now shown in the difficult and unfamiliar word lists.
 - A search bar is now available at the top of the program.
 - A new start page has been added to open and create projects from.
-- Word list windows (e.g., the **New Dale-Chall** window) can now be searched.
+- Word list windows (e.g., the *New Dale-Chall* window) can now be searched.
 - Test explanations in the results now show the tests' factors in a grid (for easier reading).
 - Multiple-column sorting added to lists in the results.
 - Summation option added for most lists in the results.
@@ -466,7 +466,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
     - numerals
     - proper nouns
     - custom words and phrases
-- [Stocker's Catholic supplement](#stocker-catholic-supplement) now available for **New Dale-Chall** and custom tests.
+- [Stocker's Catholic supplement](#stocker-catholic-supplement) now available for *New Dale-Chall* and custom tests.
 
 #### Importing/Exporting Enhancements {-}
 
@@ -498,40 +498,40 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
     - The score list (standard project).
     - The raw and aggregated scores list (batch project).
     - The explanations for each test.
-    - Tooltips in **Fry** and **Raygor** graphs.
+    - Tooltips in *Fry* and *Raygor* graphs.
     - Bin labels with grade histograms.
     - Y axis of box plots.
 - Added Spanish document analysis features. This includes specialized Spanish syllabizer and tests:
-    - Added [Gilliam, Peña, Mountain Fry Graph](#gilliam-pena-mountain-fry-graph).
-    - Added [Crawford](#crawford) test.
-    - Added [FRASE](#frase) graph.
-    - Added [SOL](#sol-spanish) test.
+    - Added [*Gilliam, Peña, Mountain Fry Graph*](#gilliam-pena-mountain-fry-graph).
+    - Added [*Crawford*](#crawford) test.
+    - Added [*FRASE*](#frase) graph.
+    - Added [*SOL*](#sol-spanish) test.
 - Added new English tests:
-    - Added [Dale-Chall (PSK)](#psk-dale-chall) test.
-    - Added [Bormuth Cloze Mean](#bormuth-cloze-mean-machine-passage) test.
-    - Added [Bormuth Grade Placement](#bormuth-grade-placement-35-machine-passage) test.
-    - Added [Gunning Fog (PSK)](#psk-fog) test.
-    - Added [Farr, Jenkins, Paterson](#farr-jenkins-paterson) test.
-    - Added [Farr, Jenkins, Paterson (PSK)](#psk-farr-jenkins-paterson) test.
-    - Added [Wheeler-Smith](#wheeler-smith) test.
-    - Added [Degrees of Reading Power](#degrees-of-reading-power) test.
-    - Added [Degrees of Reading Power](#degrees-of-reading-power-grade-equivalent) test (grade level).
-    - Added [Harris-Jacobson](#harris-jacobson) test.
-        - Added **Harris-Jacobson** word list viewer.
-        - Added **Harris-Jacobson** hard word list window.
-        - Added **Harris-Jacobson** highlighted text window.
-        - Added **Harris-Jacobson** unfamiliar words to the statistics.
-        - Added **Harris-Jacobson** bar to the word breakdown bar chart.
-- Added high-precision option to [SMOG](#smog-test) test.
-- Added **count independent clauses as separate sentences** option to [Gunning Fog](#gunning-fog-test).
-- **Gunning Fog** now treats words made three syllables by adding “ed” or “es” as easy.
+    - Added [*Dale-Chall (PSK)*](#psk-dale-chall) test.
+    - Added [*Bormuth Cloze Mean*](#bormuth-cloze-mean-machine-passage) test.
+    - Added [*Bormuth Grade Placement*](#bormuth-grade-placement-35-machine-passage) test.
+    - Added [*Gunning Fog (PSK)*](#psk-fog) test.
+    - Added [*Farr, Jenkins, Paterson*](#farr-jenkins-paterson) test.
+    - Added [*Farr, Jenkins, Paterson (PSK)*](#psk-farr-jenkins-paterson) test.
+    - Added [*Wheeler-Smith*](#wheeler-smith) test.
+    - Added [*Degrees of Reading Power*](#degrees-of-reading-power) test.
+    - Added [*Degrees of Reading Power*](#degrees-of-reading-power-grade-equivalent) test (grade level).
+    - Added [*Harris-Jacobson*](#harris-jacobson) test.
+        - Added *Harris-Jacobson* word list viewer.
+        - Added *Harris-Jacobson* hard word list window.
+        - Added *Harris-Jacobson* highlighted text window.
+        - Added *Harris-Jacobson* unfamiliar words to the statistics.
+        - Added *Harris-Jacobson* bar to the word breakdown bar chart.
+- Added high-precision option to [*SMOG*](#smog-test) test.
+- Added **count independent clauses as separate sentences** option to [*Gunning Fog*](#gunning-fog-test).
+- *Gunning Fog* now treats words made three syllables by adding “ed” or “es” as easy.
 - Added custom formula functionality to [custom tests](#creating-custom-test).
 - Added ability to specify the result type of custom tests (e.g., index level or grade level).
 - Added ability for custom tests to control how proper nouns are handled (including the ability to count only the first occurrence of a proper noun as unfamiliar).
 - Custom tests no longer require custom word lists (just the standard lists can be selected).
-- Added predicted cloze score to [Coleman-Liau](#coleman-liau-test) test.
-- [New Dale-Chall](#dale-chall-test) now has custom text exclusion options to use either the recommended instructions or the system defaults.
-- **New Dale-Chall** has the ability to control how proper nouns are handled (including the ability to count only the first occurrence of a proper noun as unfamiliar).
+- Added predicted cloze score to [*Coleman-Liau*](#coleman-liau-test) test.
+- [*New Dale-Chall*](#dale-chall-test) now has custom text exclusion options to use either the recommended instructions or the system defaults.
+- *New Dale-Chall* has the ability to control how proper nouns are handled (including the ability to count only the first occurrence of a proper noun as unfamiliar).
 - [Fry graph](#fry-test) now uses updated instructions for numerals and proper nouns based on the 1977 article *Fry's Readability Graph: Clarifications, Validity, and Extension to Level 17*.
 - Added **ignore left alignment/tabbing** option to document analysis.
 - Random sampling percentage default changed to 15 (from 25).
@@ -539,7 +539,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - Reworded **incomplete sentences** section in the options to **text exclusion**.
 - Added new text exclusion method for including headers and sub-headers (as full sentences), but excluding all other incomplete sentences.
 - **Independent clause count** statistic now included in the statistics report. An independent clause is a section of text which ends with a period, exclamation mark, question mark, [interrobang](#glossary), colon, semicolon, or dash.
-- **Mode** now included in Standard projects’ test score statistics.
+- Mode now included in Standard projects’ test score statistics.
 - Batch project now includes **valid N**, **range**, **standard error**, **skewness**, and **kurtosis** in the aggregated statistics.
 - "+" is now added to maximum level test scores.
 - Text exclusion can now be adjusted to include incomplete sentences containing a specified number of words.
@@ -591,7 +591,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - Norwegian aspect of custom test wasn’t working (word list would be empty).
 - Smart apostrophes were not being recognized by word indexer.
 - Different apostrophes were not being seen as the same character by familiar-word tests.
-- “It’ll” and “dino” added to **Dale-Chall** word list.
+- “It’ll” and “dino” added to *Dale-Chall* word list.
 - Word 2007 importer was bringing in paragraph offset values as part of the text.
 - Incorrect warning about document version number on non-English locales.
 - Printing large lists would truncate excess columns.
