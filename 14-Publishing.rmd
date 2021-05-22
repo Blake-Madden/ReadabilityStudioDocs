@@ -14,7 +14,7 @@ Numerous formats are available for each type of window:
 - Word, phrase, and sentence [lists](#export-list): HTML and Text
 - [Graphs](#image-export): PNG, BMP, TIFF, JPEG, GIF, TARGA, and SVG
 
-All windows can also be exported at once by clicking the arrow beneath **Save** and selecting [Export All...](#export-all-options).
+All windows can also be exported at once by clicking the arrow beneath **Save** and selecting [**Export All...**](#export-all-options).
 
 ## Scores Export Options{#scores-export}
 
@@ -180,19 +180,26 @@ All graphs\index{graphs!printing}, lists\index{lists!printing}, statistical summ
 
 To print any window, go to the **Home** tab and click the `r keyboardButton("Print")` button, or right click on the window and select **Print**.
 
-Clicking the arrow beneath the `r keyboardButton("Print")` button will open a menu containing additional printing options. For example, to change the paper size or orientation of your printouts, select **Page Setup** from this menu:
+:::  {.wrapfigure data-latex="{r}{0.5\\textwidth}"}
+![](Images/printerheadersfooters.png){width=48%}
+:::
 
-![](Images/NonGenerated/pagesetup.png)
+Clicking the arrow beneath the `r keyboardButton("Print")` button will open a menu containing additional printing options. For example, to change the paper size or orientation of your printouts, select **Page Setup** from this menu.
 
-To add headers or footers to your printouts, select **Headers & Footers** from this menu:
+To add headers or footers to your printouts, select **Headers & Footers** from this menu.
 
-![](Images/printerheadersfooters.png)
+The following predefined values can be selected for any header or footer:
 
-Predefined values such as the page number, title, and date can be added, as well as custom values.
+- Page number
+- Title
+- Date
+- Time
+
+Custom values can also be entered here.
 
 To preview a window before printing it, select **Print Preview** from this menu:
 
-![](Images/NonGenerated/printpreview.png)
+![](Images/NonGenerated/printpreview.png){width=50%}
 
 ::: {.notesection data-latex=""}
 The preview option is only available on Windows. On macOS, the preview option on the print dialog can be used for previewing.
