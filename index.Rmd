@@ -168,9 +168,9 @@ markdownForKableFootnote <- function(text)
 This is preliminary documentation for an upcoming release of Readability Studio. If you have any feedback, please feel free to file an issue on [Github](https://github.com/Blake-Madden/ReadabilityStudioDocs). Thank you.
 ```
 
-```{asis, echo=!knitr::is_latex_output()}
-<img src="images/NonGenerated/cover.png" width="250" align="right" alt="Readability Studio 2021 Manual cover" />
-```
+:::{.wrapfigure data-latex="{r}{0.5\\textwidth}"}
+![](images/NonGenerated/cover.png){width=48%}
+:::
 
 This book is a guide to using the software product **Readability Studio**, as well as a reference for readability formulas. For those interested in the formulas, please refer to ch. \@ref(english-readability-tests), ch. \@ref(spanish-readability-tests), and ch. \@ref(german-readability-tests) for formula overviews. For further reading, refer to ch. \@ref(bibliography) for a concise list of articles discussing these formulas.
 

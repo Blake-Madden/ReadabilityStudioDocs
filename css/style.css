@@ -97,8 +97,23 @@
   overflow-wrap: break-word;
 }
 
+/* places an image to the right of the text, consuming half of the page.*/
+.wrapfigure {
+  float: right;
+  width: 48%;
+  padding: 0 0 0 2%;
+}
+
+.wrapfigure p img {
+  float: inherit;
+  /* Size has to be passed to image via markdown for LaTex,
+     but in here we want the image to the 100% of the parent container.*/
+  width: 100% !important;
+  padding: inherit;
+}
+
 .figure {
-    text-align: center;
+  text-align: center;
 }
 .caption {
   color: #777;
