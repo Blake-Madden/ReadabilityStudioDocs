@@ -44,9 +44,11 @@ Options for customizing its display are made available on the **Edit** section o
 
 ## Column Sorting {#column-sorting}
 
-You can sort any list column by clicking on the column header, as shown below:
+:::{.wrapfigure data-latex="{r}{0.5\\textwidth}"}
+![](Images/columnheader.png){width=48%}
+:::
 
-![](Images/columnheader.png)
+You can sort any list column by clicking on the column header.
 
 The first time you click a column's header, that column will be sorted into ascending order. This means that the column's values will go from smallest to largest as you move downward. For numeric columns, numbers will be sorted 1, 2, 3, etc. as you go downward. For text columns, the column will be sorted alphabetically, going from A-Z as you move downward.
 
