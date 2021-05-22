@@ -132,7 +132,7 @@ Considering sentences with more than 22 words to be overly long is based on rese
 
 **Outside sentence outlier range**: Select this option to consider sentences overly long if they are comparatively longer than other sentences in the document. This option is only recommended for situations where most of the sentences have an acceptable length, but a few (very) long sentences skew the average. This option is useful for finding these extreme sentences.
 
-These sentences can be viewed in the [Grammar](#reviewing-standard-grammar) and [Long Sentences](#reviewing-sentences-breakdown) windows in the **Grammar** section.
+These sentences can be viewed in the [**Grammar**](#reviewing-standard-grammar) and [**Long Sentences**](#reviewing-sentences-breakdown) windows in the **Grammar** section.
 
 ### Sentence/Paragraph Deduction {-#options-sentence-deduction}
 
@@ -316,7 +316,7 @@ The options on this page customize the behavior of certain tests.
 
 **Count independent clauses**: Check this option to count independent clauses as separate sentences when calculating a [Gunning Fog](#gunning-fog-test) score. Independent clauses are detected by dashes, colons, and semicolons within a sentence.
 
-Although this behavior is recommended in The Technique of Clear Writing, it will produce lower scores than counting sentences with the [traditional method](#how-sentences-are-counted). This is especially true if your document contains run-on sentences. For example, if this option is checked, then an 80-word sentence with four clauses will be counted as four smaller sentences and will not adversely affect the score. If this option is unchecked, then this same sentence will be counted as a single 80-word sentence and will adversely affect the score. If you prefer to penalize run-on sentences, then leave this option unchecked.
+Although this behavior is recommended in *The Technique of Clear Writing*, it will produce lower scores than counting sentences with the [traditional method](#how-sentences-are-counted). This is especially true if your document contains run-on sentences. For example, if this option is checked, then an 80-word sentence with four clauses will be counted as four smaller sentences and will not adversely affect the score. If this option is unchecked, then this same sentence will be counted as a single 80-word sentence and will adversely affect the score. If you prefer to penalize run-on sentences, then leave this option unchecked.
 
 This option affects the *Gunning Fog*, **(PSK) Gunning Fog**, and **New Fog Count** tests.
 
@@ -428,9 +428,9 @@ The options on this page customize which results to include in the **Readability
 
 **Grade scale**: Select from this list the grade scale that you wish to use. This will affect:
 
-- The score explanations shown in the [Readability Scores](#reviewing-test-scores) window.
+- The score explanations shown in the [**Readability Scores**](#reviewing-test-scores) window.
 - The score display shown in the **Readability Scores** window (if **long format** is selected).
-- Selection labels on the *Fry*, *Raygor*, and **GPM** graphs.
+- Selection labels on the *Fry*, *Raygor*, and *GPM* graphs.
 - The [raw and aggregated score](#reviewing-batch-scores) display in **Batch Projects** (if **long format** is selected).
 - The labels on the grade-level [box plot](#reviewing-batch-box-plots).
 - The bin labels on the grade-level [histograms](#reviewing-batch-histograms).
