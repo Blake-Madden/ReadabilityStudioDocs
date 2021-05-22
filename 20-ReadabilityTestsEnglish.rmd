@@ -12,7 +12,7 @@ Kincaid et al. (*Evaluating* 3, 6-15) also used this test for evaluating peered-
 - 22 graduate students from Southern Georgia College
 - 14 trainees participating in a Public Service Careers project at Southern Georgia College
 
-They noted that for the high school study, the materials with lower **ARI** scores yielded better comprehension rates “as reflected in cloze scores” (Kincaid et al. 3). The graduate students and trainees from the other studies stated that the materials may not be appropriate for remedial high school readers (13, 15), but did agree that the stories was “authentic” and “interesting.”
+They noted that for the high school study, the materials with lower **ARI** scores yielded better comprehension rates “as reflected in cloze scores” (Kincaid et al. 3). The graduate students and trainees from the other studies stated that the materials may not be appropriate for remedial high school readers (13, 15), but did agree that the stories were “authentic” and “interesting.”
 
 ### The ARI Formula {-}
 
@@ -92,7 +92,7 @@ Where:
 | D   | Number of familiar [Dale-Chall](#dale-chall-test) words |
 | S   | Number of sentences |
 
-Note that this particular grade-placement test uses the regression equation that best fit the passages with cloze scores averaging ~35%. There are also 45% and 55% cloze-score fitting **Bormuth** equations, but as Bormuth noted “35 per cent on a close readability test tentatively seemed to represent a criterion for deciding whether or not students are able to exhibit a maximum of information gain as a consequence of reading the passage” (*Development* 102).
+Note that this particular grade-placement test uses the regression equation that best fit the passages with cloze scores averaging ~35%. There are also 45% and 55% cloze-score fitting *Bormuth* equations, but as Bormuth noted “35 per cent on a close readability test tentatively seemed to represent a criterion for deciding whether or not students are able to exhibit a maximum of information gain as a consequence of reading the passage” (*Development* 102).
 
 \newpage
 ## Coleman-Liau {#coleman-liau-test}
@@ -158,7 +158,7 @@ Because this test is based on the usage of familiar words (rather than syllable 
 
 *DB1* was designed to be a faster method (compared to [*Farr-Jenkins-Paterson*](#farr-jenkins-paterson)) of calculating readability scores on UNIVAC 1105 computers. Rather than counting syllables, *DB1* counts characters and punctuation, which was simpler to analyze on computers of that era. This performance benefit is more of a historical reference now; modern computers can calculate syllable counts optimally.
 
-This test was trained against 383 selections from the 1950 edition of McCall-Crabbs *Standard Test Lessons in Reading* (McCall 1950). For validation, the derived formula had an $r^2 = 0.575$, similar to **Farr-Jenkins-Paterson's** $r^2 = 0.553$. This regression equation is as follows:
+This test was trained against 383 selections from the 1950 edition of McCall-Crabbs *Standard Test Lessons in Reading* (McCall 1950). For validation, the derived formula had an $r^2 = 0.575$, similar to *Farr-Jenkins-Paterson*'s $r^2 = 0.553$. This regression equation is as follows:
 
 $$
 G = 1.0364*(RP/W) + .0194*(RP/S) - .6059
@@ -195,7 +195,7 @@ For this reason, the “number of words” statistic is a more accurate descript
 
 *DB2* was designed to be a faster method (compared to [*Farr-Jenkins-Paterson*](#farr-jenkins-paterson)) of calculating readability scores on UNIVAC 1105 computers. Rather than counting syllables, **DB2** counts characters and punctuation, which was simpler to analyze on computers of that era. This performance benefit is more of a historical reference now; modern computers can calculate syllable counts optimally.
 
-This test was trained against 376 passages from *McCall-Crabbs Standard Test Lessons in Reading* (1926 ed.). For validation, the derived formula had an $r^2 = 0.575$, similar to **Farr-Jenkins-Paterson's** $r^2 = 0.553$. This regression equation is as follows:
+This test was trained against 376 passages from *McCall-Crabbs Standard Test Lessons in Reading* (1926 ed.). For validation, the derived formula had an $r^2 = 0.575$, similar to *Farr-Jenkins-Paterson*'s $r^2 = 0.553$. This regression equation is as follows:
 
 $$
 I = 131.059 - 10.364*(RP/W) - .194*(RP/S)
@@ -237,7 +237,7 @@ The *Degrees of Reading Power* (Kibby, 416-427; Carver, *Measuring* 303-316) for
 
 The *DRP* difficulty score of document is used to match it to a student based on his/her DRP ability score. DRP ability tests are manual tests administered to students to gauge their reading levels.
 
-This test is based on the [*Bormuth Cloze*](#bormuth-cloze-mean-machine-passage) test and uses the same criteria for its calculation. Basically, this test uses the **Bormuth** formula to calculate a [predicted cloze score](#cloze), converts it to percentage format, and then inverts it to arrive at the units score.
+This test is based on the [*Bormuth Cloze*](#bormuth-cloze-mean-machine-passage) test and uses the same criteria for its calculation. Basically, this test uses the *Bormuth* formula to calculate a [predicted cloze score](#cloze), converts it to percentage format, and then inverts it to arrive at the units score.
 
 ### Degrees of Reading Power Formula {-}
 
@@ -260,9 +260,9 @@ Where:
 \newpage
 ## Degrees of Reading Power (GE) {#degrees-of-reading-power-grade-equivalent}
 
-The *Degrees of Reading Power (grade equivalent)* (Carver 303-316) test calculates the difficulty level of a document by performing the [DRP](#degrees-of-reading-power) test and then converting its units score into a grade level.
+The *Degrees of Reading Power (grade equivalent)* (Carver 303-316) test calculates the difficulty level of a document by performing the [*DRP*](#degrees-of-reading-power) test and then converting its units score into a grade level.
 
-This test was trained on the same 330 110-word passages used to build the [Bormuth](#bormuth-cloze-mean-machine-passage) test, along with an additional 30 samples. These additional samples were 100-word passages tested by students from the graduate library at the University of Maryland (Carver 305-306). Using these samples (and their cloze and **Rauding** scores), Carver built a table to convert between *DRP* units and grade levels (see below). Next, he compared the **DRP-GE** results against *DRP* units, **Rauding Scale** scores, and cloze scores. The **DRP-GE** (grade equivalency) results strongly correlated with these other scores:
+This test was trained on the same 330 110-word passages used to build the [Bormuth](#bormuth-cloze-mean-machine-passage) test, along with an additional 30 samples. These additional samples were 100-word passages tested by students from the graduate library at the University of Maryland (Carver 305-306). Using these samples (and their cloze and *Rauding* scores), Carver built a table to convert between *DRP* units and grade levels (see below). Next, he compared the *DRP-GE* results against *DRP* units, *Rauding Scale* scores, and cloze scores. The *DRP-GE* (grade equivalency) results strongly correlated with these other scores:
 
 - *DRP*: $r = 0.98$
 - *Rauding Scale-GE*: $r = 0.84$
@@ -455,7 +455,7 @@ Where:
 | B   | Number of syllables |
 | S   | Number of sentences |
 
-Initially, this test was named **New Reading Ease Formula** (Kincaid et al., *Derivation* 14), but was later referred to as *Flesch-Kincaid* (Kincaid et al., *Development* 19).
+Initially, this test was named *New Reading Ease Formula* (Kincaid et al., *Derivation* 14), but was later referred to as *Flesch-Kincaid* (Kincaid et al., *Development* 19).
 
 Note that this test sounds out numerals' digits when syllabizing. For example, “1918” will be counted as four syllables (“one”-“nine”-“one”-“eight”). This behavior can be adjusted from the [**Readability Options**](#readability-test-options) if you prefer a different numeral syllabizing method.
 
@@ -568,7 +568,7 @@ The graph's results were compared to other tests, yielding the following correla
 
 In 1977, Fry extended the graph to include grades 13-16 by extrapolating the averages from the preceding 3 years on the graph (*Extension* 251).
 
-The **Fry graph** is designed for both primary and secondary-age reading materials. Below is an example of a **Fry graph**:
+The *Fry* graph is designed for both primary and secondary-age reading materials. Below is an example of a *Fry* graph:
 
 ```{r fryGraph, echo=F, fig.cap='Fry Graph', fig.align='center'}
 knitr::include_graphics("Images/frygraph.png")
@@ -583,7 +583,7 @@ Note the following aspects of this graph:
 ```
 
 ```{block, type='onsamepage'}
-The **Fry Graph** instructions are:
+The *Fry* graph instructions are:
 
 - Extract a 100-word passage from the selection. If the material is long, take subsamples from the beginning, middle, and end.
 - Count the number of sentences in each passage. Count a half sentence as .5.
@@ -637,12 +637,12 @@ The *Harris-Jacobson* readability test (19-30; Chapter 3) calculates the grade l
 - Regular verb forms of any common word (i.e., “ing,” “es,” “s,” “ed,” and “ies” endings). Irregular forms are not familiar.
 - Regular plural and possessive forms of any common word (i.e., “s,” “es,” and “ies” endings). Irregular forms are not familiar.
 - Adjectival or adverbial forms of common words. This includes forms with endings such as “ly,” “est,” “er,” and “ily.”
-- Hyphenated words if both parts of the word are common words. For example, “apple-tree” and “and/or” would be familiar. (Note that forward slashes (‘/’) are treated like hyphens in this context.) Although this rule is not explicitly stated in Basic Reading Vocabularies, it is recommended because both [Spache](#spache-test) and [New Dale-Chall](#dale-chall-test) apply it.
+- Hyphenated words if both parts of the word are common words. For example, “apple-tree” and “and/or” would be familiar. (Note that forward slashes (‘/’) are treated like hyphens in this context.) Although this rule is not explicitly stated in Basic Reading Vocabularies, it is recommended because both [*Spache*](#spache-test) and [*New Dale-Chall*](#dale-chall-test) apply it.
 - All proper nouns.
 
 Note that numerals are entirely excluded from this test and are considered neither familiar nor unfamiliar.
 
-The **Wide Range Readability Formula** is based on previous *Harris-Jacobson* formulas designed for preprimer through eighth-grade reader-level materials. The **Wide Range** variation was trained on a new series of basal readers (30; Chapter 3). This series included:
+The *Wide Range Readability Formula* is based on previous *Harris-Jacobson* formulas designed for preprimer through eighth-grade reader-level materials. The **Wide Range** variation was trained on a new series of basal readers (30; Chapter 3). This series included:
 
 ```{r, echo=F}
 library(kableExtra)
@@ -944,7 +944,7 @@ Where:
 | UDC | Number of unfamiliar *Dale-Chall* words |
 | W   | Number of words |
 
-Although this is an update of the 1948 *Dale-Chall* formula, the 1995 [New Dale-Chall](#dale-chall-test) test is recommended instead. This formula does not apply as much weight to the sentence length variable as *New Dale-Chall* does and comparatively yields lower results for difficult (i.e., upper-secondary education) documents. Therefore, this test should only be used for primary and lower-secondary educational documents. It is also only recommended if [floating-point precision](#grade-level-results) for the results is required, as *New Dale-Chall* uses grade ranges instead.
+Although this is an update of the 1948 *Dale-Chall* formula, the 1995 [*New Dale-Chall*](#dale-chall-test) test is recommended instead. This formula does not apply as much weight to the sentence length variable as *New Dale-Chall* does and comparatively yields lower results for difficult (i.e., upper-secondary education) documents. Therefore, this test should only be used for primary and lower-secondary educational documents. It is also only recommended if [floating-point precision](#grade-level-results) for the results is required, as *New Dale-Chall* uses grade ranges instead.
 
 \newpage
 ## (Powers, Sumner, Kearl) Farr, Jenkins, Paterson {#psk-farr-jenkins-paterson}
@@ -1043,7 +1043,7 @@ Note that this test treats numerals as monosyllabic words, in conjunction with t
 \newpage
 ## Raygor Estimate Graph {#raygor-test}
 
-The **Raygor Estimate Graph** (259-263) is a graphical test for English documents. It calculates a document's grade level from its average number of sentences and long (6+ character) words per hundred words. These averages are plotted onto a chart where their intersection determines the reading level of the content.
+The *Raygor Estimate Graph* (259-263) is a graphical test for English documents. It calculates a document's grade level from its average number of sentences and long (6+ character) words per hundred words. These averages are plotted onto a chart where their intersection determines the reading level of the content.
 
 Note that this graph is very similar to the [*Fry*](#fry-test) graph. The intent of this test was to provide a quicker and simpler way to plot a readability level, assuming that counting characters is easier than syllables. To confirm this, a secondary study (Baldwin and Kaufman 148-153) conducted an experiment involving 155 students from the University of Tulsa. The students performed *Fry* and *Raygor* tests on 6 100-word passages. Afterwards, an independent *t* test was performed to gauge the difference in time spent manually performing the two readability tests. What the researches found was a significant difference, where *Raygor* took an average of 250.26 seconds to complete versus 323.45 seconds for *Fry*.
 
@@ -1056,7 +1056,7 @@ knitr::include_graphics("Images/raygorgraph.png")
 ```
 
 ::: {.onsamepage data-latex=""}
-The **Raygor Estimate Graph** formula is:
+The *Raygor Estimate Graph* formula is:
 
 - Extract a 100-word passage from the selection. If the material is long, take subsamples from the beginning, middle, and end. Numerals should be skipped.
 - Count the number of sentences, estimated to the nearest tenth.
@@ -1071,7 +1071,7 @@ This test is designed for 3 100-word samples, with 3 samples being recommended f
 \newpage
 ## Rix {#rix-test}
 
-The **Rate Index (Rix)** readability formula (Anderson 490-496) was designed for documents of any Western European language. It calculates a document’s index score based on sentence length and number of long words (i.e., words containing seven or more characters). It is based on the [*Lix*](#lix-test) readability formula (Björnsson 480-497) and follows the same philosophy of using a unified formula for multiple languages.
+The *Rate Index (Rix)* readability formula (Anderson 490-496) was designed for documents of any Western European language. It calculates a document’s index score based on sentence length and number of long words (i.e., words containing seven or more characters). It is based on the [*Lix*](#lix-test) readability formula (Björnsson 480-497) and follows the same philosophy of using a unified formula for multiple languages.
 
 “Rate” in this context refers to the rate of long words throughout the document. Comparing against other tests that traditionally recommend fixed sample sizes (e.g., [*SMOG*](#smog-test)), Anderson noted that *Rix* could be applied to any length of text without normalization. As he explained, “the concept of rate has the advantage of being applied over any number of sentences, for it is a running average” (Anderson 495).
 
@@ -1175,11 +1175,11 @@ The *Spache Revised* test (Spache, *Good* 195-2003) calculates the grade level o
 - All proper nouns.
 - All numerals.
 
-*Spache Revised* is generally used for primary age (i.e., Kindergarten to 7^th^ grade) readers to help classify school textbooks and literature. This differs from [New Dale-Chall](#dale-chall-test), which is better meant for secondary age readers.
+*Spache Revised* is generally used for primary age (i.e., Kindergarten to 7^th^ grade) readers to help classify school textbooks and literature. This differs from [*New Dale-Chall*](#dale-chall-test), which is better meant for secondary age readers.
 
 Because this formula uses familiar words (rather than syllable or letter counts), it is often regarded as a more accurate test for younger readers.
 
-Note that **Readability Studio** uses the revised 1974 version of Spache.
+Note that **Readability Studio** uses the revised 1974 version of *Spache*.
 
 ### The Spache Revised Formula {-}
 

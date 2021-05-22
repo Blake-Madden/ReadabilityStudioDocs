@@ -439,24 +439,24 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - Summation option added for most lists in the results.
 - Improved printing of summary report and test results windows.
 - Test bundles added, which enable you to add a specific set of tests to a project with one button click.
-- Shortcuts for creating custom [New Dale-Chall](#dale-chall-test), [Spache](#spache-test), and [Harris-Jacobson](#harris-jacobson) added.
+- Shortcuts for creating custom [*New Dale-Chall*](#dale-chall-test), [*Spache*](#spache-test), and [*Harris-Jacobson*](#harris-jacobson) added.
 - An overview window showing all tests and their respective factors and descriptions is now available.
 
 #### Analysis/Test Enhancements {-}
 
 - German project support added (**Professional** or **Language Pack** edition).
 - New tests added:
-    - [Danielson-Bryan 1 & 2](#danielson-bryan-1)
-    - [Easy Listening Formula](#easy-listening-formula)
-    - [Amstad](#amstad)
-    - [Lix (German children's literature)](#lix-german-childrens-literature)
-    - [Lix (German technical literature)](#lix-german-technical)
-    - [Neue Wiener Sachtextformel 1-3](#neue-wiener-sachtextformel1)
-    - [Quadratwurzelverfahren](#qu-bamberger-vanecek)
-    - [Rix (German fiction)](#rix-german-fiction)
-    - [Rix (German non-fiction)](#rix-german-nonfiction)
-    - [SMOG (Bamberger-Vanecek)](#smog-bamberger-vanecek)
-    - [Wheeler-Smith (Bamberger-Vanecek)](#wheeler-smith)
+    - [*Danielson-Bryan* 1 & 2](#danielson-bryan-1)
+    - [*Easy Listening Formula*](#easy-listening-formula)
+    - [*Amstad*](#amstad)
+    - *[Lix* (German children's literature)](#lix-german-childrens-literature)
+    - [*Lix* (German technical literature)](#lix-german-technical)
+    - [*Neue Wiener Sachtextformel* 1-3](#neue-wiener-sachtextformel1)
+    - [*Quadratwurzelverfahren*](#qu-bamberger-vanecek)
+    - [*Rix* (German fiction)](#rix-german-fiction)
+    - [*Rix* (German non-fiction)](#rix-german-nonfiction)
+    - [*SMOG* (Bamberger-Vanecek)](#smog-bamberger-vanecek)
+    - [*Wheeler-Smith* (Bamberger-Vanecek)](#wheeler-smith)
 - New grammar checking features for English projects:
     - spell checker
     - article mismatches

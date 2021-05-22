@@ -74,9 +74,9 @@ Options for customizing it are made available on the **Edit** section of the rib
 
 ![](Images/RibbonEditGraphs.png)
 
-The options made available will be dependent on the graph type. Please refer to \@ref(options-graphs) for further discussions of these options.
+The options made available will be dependent on the graph type. Refer to \@ref(options-graphs) for further discussions of these options.
 
-Please refer to \@ref(customizing-a-graph) for a step-by-step tutorial on editing a graph.
+Refer to \@ref(customizing-a-graph) for a step-by-step tutorial on editing a graph.
 
 ## Customizing How Documents are Analyzed
 

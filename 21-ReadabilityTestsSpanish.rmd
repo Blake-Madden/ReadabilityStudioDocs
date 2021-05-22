@@ -59,7 +59,7 @@ These validation involved correlating the *FRASE* scores against “teacher judg
 - teacher judgments: $r = 0.95$
 - multiple choice tests: $r = -0.97$
 
-Below is an example of a **FRASE graph**:
+Below is an example of a *FRASE* graph:
 
 ```{r frase, echo=F, fig.cap='Frase Graph', fig.align='center'}
 knitr::include_graphics("Images/FraseGraph.png")
@@ -111,7 +111,7 @@ It was also trained on the following juvenile trade books:
 
 Syllable and sentence statistics where calculated from these samples. Initially, the researchers noted that most of these statistics could not be plotted onto a *Fry* graph, because of the high syllable count. They deduced that a constant would need to be subtracted from this syllable count to be able to plot it on the graphs. Next, they determined where on the graph these materials should lie based on the either the grade level provided by the publisher or by plotting an English translation of the material onto a graph. By comparing the differences between the actual and expected syllable counts, it was determined that subtracting 67 from the Spanish syllable counts would adjust the score to appear on the graph where it was expected to be.
 
-The *Gilliam-Peña-Mountain* graph is designed for both primary and secondary-age reading materials. Below is an example of a **Gilliam-Peña-Mountain graph**:
+The *Gilliam-Peña-Mountain* graph is designed for both primary and secondary-age reading materials. Below is an example of a *Gilliam-Peña-Mountain* graph:
 
 ```{r gpm, echo=F, fig.cap='Gilliam-Peña-Mountain Graph', fig.align='center'}
 knitr::include_graphics("Images/GpmFry.png")
@@ -144,7 +144,7 @@ Refer to \@ref(rix-test).
 
 The *SOL* readability formula (Contreras 21-29) calculates the grade level of a document based on complex-word density.
 
-*SOL* is a modified version of [*SMOG*](#smog-test) (McLaughlin 639-646) that was recalibrated for Spanish text. This test calculates the *SMOG* score of a Spanish document, and then adjusts the score to take into account the comparably higher complex-word counts found in Spanish text. This adjustment is similar to what [Gilliam, Peña, Mountain](#gilliam-pena-mountain-fry-graph) (426-430) uses for plotting Spanish text onto the [Fry graph](#fry-test).
+*SOL* is a modified version of [*SMOG*](#smog-test) (McLaughlin 639-646) that was recalibrated for Spanish text. This test calculates the *SMOG* score of a Spanish document, and then adjusts the score to take into account the comparably higher complex-word counts found in Spanish text. This adjustment is similar to what [*Gilliam, Peña, Mountain*](#gilliam-pena-mountain-fry-graph) (426-430) uses for plotting Spanish text onto the [*Fry* graph](#fry-test).
 
 This test was trained on multiple blocks of 30-sentence samples from the following English, Spanish, and French materials:
 

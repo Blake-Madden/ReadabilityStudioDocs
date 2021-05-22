@@ -172,7 +172,7 @@ This is preliminary documentation for an upcoming release of Readability Studio.
 ![](images/NonGenerated/cover.png){width=48%}
 :::
 
-This book is a guide to using the software product **Readability Studio**, as well as a reference for readability formulas. For those interested in the formulas, please refer to ch. \@ref(english-readability-tests), ch. \@ref(spanish-readability-tests), and ch. \@ref(german-readability-tests) for formula overviews. For further reading, refer to ch. \@ref(bibliography) for a concise list of articles discussing these formulas.
+This book is a guide to using the software product **Readability Studio**, as well as a reference for readability formulas. For those interested in the formulas, refer to ch. \@ref(english-readability-tests), ch. \@ref(spanish-readability-tests), and ch. \@ref(german-readability-tests) for formula overviews. For further reading, refer to ch. \@ref(bibliography) for a concise list of articles discussing these formulas.
 
 ![](images/NonGenerated/CC_BY-NC-ND.png)
 

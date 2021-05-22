@@ -45,7 +45,7 @@ Refer to \@ref(lix-test).
 
 ## Lix (German children's literature) {#lix-german-childrens-literature}
 
-This test is a German variation of [Läsbarhetsindex (Lix)](#lix-test) designed for children's literature. It uses the same index-score formula as *Lix*, but uses different scales for assigning the difficulty and grade-level scores. This adjustment was developed by Renström (152-153) and Bamberger & Vanecek (64, 187) for use with German literature ranging from 1^st^ to 8^th^ grade. (Renström developed the adjusted difficulty gauge; Bamberger & Vanecek developed the grade-level conversion.)
+This test is a German variation of [*Läsbarhetsindex (Lix)*](#lix-test) designed for children's literature. It uses the same index-score formula as *Lix*, but uses different scales for assigning the difficulty and grade-level scores. This adjustment was developed by Renström (152-153) and Bamberger & Vanecek (64, 187) for use with German literature ranging from 1^st^ to 8^th^ grade. (Renström developed the adjusted difficulty gauge; Bamberger & Vanecek developed the grade-level conversion.)
 
 Note that this test differs from the original *Lix* approach of using the same scoring for any document, regardless of language. Instead, this test is designed specifically for German materials, adjusting the grade-level score and classification of the index value.
 
@@ -73,7 +73,7 @@ To convert the *Lix* index score to a grade, this test uses the following table:
 \newpage
 ## Lix (German technical literature) {#lix-german-technical}
 
-This test is a German variation of [Läsbarhetsindex (Lix)](#lix-test) designed for technical literature. It uses the same index-score formula as *Lix*, but uses different scales for assigning the difficulty and grade-level scores. This adjustment was developed by Renström (152-153) and Bamberger & Vanecek (64, 187) for use with German literature ranging from 3^rd^ to 15^th^ grade. (Renström developed the adjusted difficulty gauge; Bamberger & Vanecek developed the grade-level conversion.)
+This test is a German variation of [*Läsbarhetsindex (Lix)*](#lix-test) designed for technical literature. It uses the same index-score formula as *Lix*, but uses different scales for assigning the difficulty and grade-level scores. This adjustment was developed by Renström (152-153) and Bamberger & Vanecek (64, 187) for use with German literature ranging from 3^rd^ to 15^th^ grade. (Renström developed the adjusted difficulty gauge; Bamberger & Vanecek developed the grade-level conversion.)
 
 Note that this test differs from the original *Lix* approach of using the same scoring for any document, regardless of language. Instead, this test is designed specifically for German materials, adjusting the grade-level score and classification of the index value.
 
@@ -198,7 +198,7 @@ kableExtra::kbl(nws3Data, booktabs=T, centering=T, align='l', escape=F, linesep=
 \newpage
 ## Quadratwurzelverfahren {#qu-bamberger-vanecek}
 
-*Quadratwurzelverfahren* (“Square root method”) (78) is an alternative method for calculating [SMOG (Bamberger-Vanecek)](#smog-bamberger-vanecek). Where **SMOG (Bamberger-Vanecek)** uses a 30-sentence sample, **Quadratwurzelverfahren** uses a 100-word sample; otherwise, they produce the same results.
+*Quadratwurzelverfahren* (“Square root method”) (78) is an alternative method for calculating [*SMOG (Bamberger-Vanecek)*](#smog-bamberger-vanecek). Where *SMOG (Bamberger-Vanecek)* uses a 30-sentence sample, *Quadratwurzelverfahren* uses a 100-word sample; otherwise, they produce the same results.
 
 ### The Quadratwurzelverfahren Formula {-}
 
