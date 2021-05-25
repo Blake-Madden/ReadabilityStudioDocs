@@ -12,7 +12,7 @@ To determine the readability of a document collection, you will need to create a
 
 ![](Images/selectprojecttype.png)
 
-Select **Batch Project** and click the `r keyboardButton("OK")` button to proceed to the **New Project Wizard** dialog:
+Select **Batch Project** and click the `r keyboardButton("OK")` button to proceed to the **New Project** Wizard dialog:
 
 ![](Images/wizardbatchselectfiles.png)
 

@@ -24,7 +24,7 @@ The options on this page manage the program's general settings.
 
 **Import**: Click this button to import program settings and defaults from a file.
 
-**Export**: Click this button to export the current program settings to a file. This includes all your settings on the [**Options**](#options-overview) dialog, your defaults for the [**New Project Wizard**](#creating-standard-project), and your printer headers & footers.
+**Export**: Click this button to export the current program settings to a file. This includes all your settings on the [**Options**](#options-overview) dialog, your defaults for the [**New Project**](#creating-standard-project) Wizard, and your printer headers & footers.
 
 **Reset**: Click this button to reset the program settings to the defaults.
 
@@ -446,7 +446,7 @@ Refer to \@ref(grade-scales) for a list of available scales.
 Calculation
 :::
 
-Reading ages are included in the [Readability Scores](#reviewing-test-scores) section within **Standard** projects next to each grade level score. Although most tests do not include reading ages, the program can calculate them from the grade-level scores. The following options are available for customizing how these ages are calculated from their respective grade-level score:
+Reading ages are included in the [**Readability Scores**](#reviewing-test-scores) section within **Standard** projects next to each grade level score. Although most tests do not include reading ages, the program can calculate them from the grade-level scores. The following options are available for customizing how these ages are calculated from their respective grade-level score:
 
 **School-year range**: Select this option to display the full age range from a given grade level. For example, if a test scores at “5.3” (fifth grade), then the age range for fifth graders (i.e., “10–11”) will be used.
 

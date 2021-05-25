@@ -20,7 +20,7 @@ The second type of formula is a custom-built formula. For example, the formula f
 
 `SevenCharacterPlusWordCount() / SentenceCount()`
 
-To create a new formula based on Lix that treats 6+ character words as difficult, enter this:
+To create a new formula based on *Lix* that treats 6+ character words as difficult, enter this:
 
 `SixCharacterPlusWordCount() / SentenceCount()`
 
@@ -31,14 +31,14 @@ To view the available functions, click the function browser button ![](Images/No
 Refer to \@ref(custom-test-functions) for a list of available functions.
 
 ```{block, type='onsamepage'}
-After entering your formula, you will need to specify what type of test this will be from the **Test type** combobox. This will determine which column the test's score will appear in the [Readability Scores](#reviewing-test-scores) window. The following types of tests are available:
+After entering your formula, you will need to specify what type of test this will be from the **Test type** combobox. This will determine which column the test's score will appear in the [**Readability Scores**](#reviewing-test-scores) window. The following types of tests are available:
 
 - Grade level
 - Index value
 - [Predicted cloze score](#cloze)
 ```
 
-If your test is using any of the predefined familiar-word formulas (`CustomNewDaleChall()`, `CustomSpache()`, `CustomHarrisJacobson()`) or using the functions `UnfamiliarWordCount()` or `UniqueUnfamiliarWordCount()`, then you will need to define how familiar words are detected. Expand **Familiar Words** to view two sections: [Word Lists](#custom-word-list) and [Proper Nouns & Numerals](#custom-proper-numerals).
+If your test is using any of the predefined familiar-word formulas (`CustomNewDaleChall()`, `CustomSpache()`, `CustomHarrisJacobson()`) or using the functions `UnfamiliarWordCount()` or `UniqueUnfamiliarWordCount()`, then you will need to define how familiar words are detected. Expand **Familiar Words** to view two sections: [**Word Lists**](#custom-word-list) and [**Proper Nouns & Numerals**](#custom-proper-numerals).
 
 If you want to include a list of your own familiar words, then check the option **Include custom familiar word list**. Next, enter the path to the familiar-word file in the **File containing familiar words** field. This file must be a text file and each word must be separated by a space, tab, comma, semicolon, or new line. An example file would look like this:
 
@@ -64,7 +64,7 @@ Standard familiar-word tests normally consider numbers and proper nouns as famil
 
 ![](Images/CustomTestTreat.png)
 
-Finally, you can specify how this test interacts with the [**New Project Wizard**](#creating-standard-project) by associating it with document types and industries. Click the **Classification** icon to display these options. Then select all the documents and industries that this test should relate to.
+Finally, you can specify how this test interacts with the [**New Project**](#creating-standard-project) Wizard by associating it with document types and industries. Click the **Classification** icon to display these options. Then select all the documents and industries that this test should relate to.
 
 For example, select the **Children's literature** and **Children's healthcare** check boxes (as shown below) and click `r keyboardButton("OK")`.
 
@@ -115,7 +115,7 @@ $$
 5+5+5/2
 $$
 
-Will yield “12.5.” “5/2“ is executed first, then added to the other fives. However, by using parentheses:
+Will yield “12.5.” “5/2” is executed first, then added to the other fives. However, by using parentheses:
 
 $$
 (5+5+5)/2
@@ -278,11 +278,11 @@ From the **Readability** tab, click the `r keyboardButton("Custom Test")` button
 **Test name**: If creating a new test, enter its name into this field.
 
 ```{block, type='onsamepage'}
-**Test type**: Select from this list the type of result this test returns. This will determine which column the test's score will appear in the [Readability Scores](#reviewing-test-scores) window. The following types of tests are available:
+**Test type**: Select from this list the type of result this test returns. This will determine which column the test's score will appear in the [**Readability Scores**](#reviewing-test-scores) window. The following types of tests are available:
 
 - Grade level
 - Index value
-- [Predicted cloze score](#cloze)
+- [Predicted *cloz* score](#cloze)
 ```
 
 ### Formula {-}
@@ -328,11 +328,11 @@ If you are not stemming, then it is recommended to enter each inflected form of 
 
 #### Standard familiar word lists {-}
 
-**Include New Dale-Chall familiar word list**: Check this option to use the [New Dale-Chall](#dale-chall-test) word list (along with any other selected word lists) to determine if a word is familiar.
+**Include New Dale-Chall familiar word list**: Check this option to use the [*New Dale-Chall*](#dale-chall-test) word list (along with any other selected word lists) to determine if a word is familiar.
 
 **Include Spache Revised familiar word list**: Check this option to use the [*Spache Revised*](#spache-test) word list (along with any other selected word lists) to determine if a word is familiar.
 
-**Include Harris-Jacobson familiar word list**: Check this option to use the [Harris-Jacobson](#harris-jacobson) word list (along with any other selected word lists) to determine if a word is familiar.
+**Include Harris-Jacobson familiar word list**: Check this option to use the [*Harris-Jacobson*](#harris-jacobson) word list (along with any other selected word lists) to determine if a word is familiar.
 
 **Include Stocker's Catholic supplement**: Check this option to include [Stocker's supplementary word list](#stocker-catholic-supplement) for Catholic students (along with any other selected word lists) to determine if a word is familiar.
 
@@ -402,7 +402,7 @@ Test bundles enable you to organize tests into collections that you can quickly 
 To access the test bundles, select the **Readability** tab and click the `r keyboardButton("Bundles")` button. A menu will appear which contains all the available bundles, as well as options to add, edit, and remove them.
 
 ```{block, type='onsamepage'}
-By default, the industry and document-type bundles used in the [New Project](#creating-standard-project) Wizard will be available. This includes:
+By default, the industry and document-type bundles used in the [**New Project**](#creating-standard-project) Wizard will be available. This includes:
 
 - General document
 - Technical document
@@ -428,7 +428,7 @@ You can also create your own bundles. To do this, select **Add...** from the **B
 
 On the **General** page of this dialog, you will first enter a name for the bundle. (This name is how it will appear in the **Bundles** menu.) Next, you will select all the tests that you wish to include in this bundle. (Tests are available on the **Standard Tests**, **Custom Tests**, and **Vocabulary Tools** pages.)
 
-Along with selecting tests, you can also specify the range of values that a document should score within for any given test. First, on the **Goals** tab, click the ![](Images/NonGenerated/add.png) button to include a new goal. Next, double click in the **Test** column to select the test. Finally, click in either the **Recommended minimum score** or **Recommended maximum score** column and enter the acceptable score range. Now, when this bundle is applied to a project, the document’s pass/fail status will be displayed in the [Goals](#reviewing-goals) section.
+Along with selecting tests, you can also specify the range of values that a document should score within for any given test. First, on the **Goals** page, click the ![](Images/NonGenerated/add.png) button to include a new goal. Next, double click in the **Test** column to select the test. Finally, click in either the **Recommended minimum score** or **Recommended maximum score** column and enter the acceptable score range. Now, when this bundle is applied to a project, the document’s pass/fail status will be displayed in the [**Goals**](#reviewing-goals) section.
 
 Beneath the test goals grid is another grid for creating statistics goals as well. For example, you can add a goal such as specifying the maximum average sentence length for the document.
 

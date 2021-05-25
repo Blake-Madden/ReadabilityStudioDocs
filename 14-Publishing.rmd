@@ -146,13 +146,13 @@ This dialog provides options for [exporting](#exporting) an entire project into 
 
 ### Sections to export {-}
 
-**Export test scores**: Select this option to export all the windows from the [Readability Scores](#reviewing-test-scores) section.
+**Export test scores**: Select this option to export all the windows from the [**Readability Scores**](#reviewing-test-scores) section.
 
-**Export summary statistics**: Select this option to export all the windows from the [Summary Statistics](#reviewing-statistics) section. This option only applies to standard projects.
+**Export summary statistics**: Select this option to export all the windows from the [**Summary Statistics**](#reviewing-statistics) section. This option only applies to standard projects.
 
 **Export histograms/box plots**: Select this option to export all [histograms](#reviewing-batch-histograms) and [box plots](#reviewing-batch-box-plots). This option only applies to batch projects.
 
-**Export words breakdown**: Select this option to export all the windows from the [Words Breakdown](#reviewing-word-breakdowns) section.
+**Export words breakdown**: Select this option to export all the windows from the [**Words Breakdown**](#reviewing-word-breakdowns) section.
 
 **Export sentences breakdown**: Select this option to export all the windows from the [Sentences Breakdown](#reviewing-sentences-breakdown) section.
 

@@ -6,7 +6,7 @@ In this chapter, we will step through some simple examples demonstrating how to 
 
 ## Analyzing a Book {#book-example}
 
-In this example, we will analyze a literary novel to help determine which age group it is most appropriate for (in terms of readability, not content). The first step is to open the **New Project** wizard and choose the book. Click the `r keyboardButton("New")` button on the **Home** tab to open the **New Project Wizard**. First, select **English** as the document language (if this option is available). Then, select the option **Read text from a file or webpage**. Click the button next to the file path field to browse for it:
+In this example, we will analyze a literary novel to help determine which age group it is most appropriate for (in terms of readability, not content). The first step is to open the **New Project** wizard and choose the book. Click the `r keyboardButton("New")` button on the **Home** tab to open the **New Project** Wizard. First, select **English** as the document language (if this option is available). Then, select the option **Read text from a file or webpage**. Click the button next to the file path field to browse for it:
 
 ![](Images/exampleselectfile.png)
 
@@ -75,7 +75,7 @@ kableExtra::kbl(x=words, caption="Example of exported words",
 
 ## Analyzing a Work in Progress
 
-In this example, we will analyze recipes that we are working on for a middle-school home economics class. Our target audience will be seventh-eighth graders and we will use **Readability Studio** to meet their reading level. The first step is to open the **New Project Wizard** and select the recipe file. Click the `r keyboardButton("New")` button on the **Home** tab to open the **New Project Wizard**. Next, select **English** as the document language (if this option is available). Then, select the option **Read text from a file or webpage**. Click the button next to the file path field to browse for it:
+In this example, we will analyze recipes that we are working on for a middle-school home economics class. Our target audience will be seventh-eighth graders and we will use **Readability Studio** to meet their reading level. The first step is to open the **New Project** Wizard and select the recipe file. Click the `r keyboardButton("New")` button on the **Home** tab to open the **New Project** Wizard. Next, select **English** as the document language (if this option is available). Then, select the option **Read text from a file or webpage**. Click the button next to the file path field to browse for it:
 
 ![](Images/exampleselectfile.png)
 
@@ -171,7 +171,7 @@ You can click the `r keyboardButton("Reload")` button at anytime to reanalyze th
 
 In this example, we will create a project that reads and analyzes a webpage. Although you can save a webpage from your web browser and load the HTML file, **Readability Studio** can also directly connect to a webpage.
 
-First, click on the `r keyboardButton("New")` button (on the **Home** tab). The **New Project Wizard** dialog will appear, as shown below:
+First, click on the `r keyboardButton("New")` button (on the **Home** tab). The **New Project** Wizard dialog will appear, as shown below:
 
 ![](Images/wizard1.png)
 
@@ -219,7 +219,7 @@ In this example, we will review a document for overly-long sentences. This examp
 
 The first step is to open the example file **Features**. From the **Help** tab, click the `r keyboardButton("Example Documents")` button and then select **Features** from the menu. Next, when prompted about how to open the document, select **Create a new project**.
 
-You will then be presented with the **New Project Wizard** dialog, as shown below:
+You will then be presented with the **New Project** Wizard dialog, as shown below:
 
 ![](Images/wizard1.png)
 
@@ -281,7 +281,7 @@ This option is only recommended for situations where most of the sentences are a
 
 In this example, we will discuss the various ways to change the appearance of a graph.
 
-The first step is to open the example file **Chocolate Eclairs**. From the **Help** tab on the ribbon, click the `r keyboardButton("Example Documents")` button and then select **Chocolate Eclairs** from the menu. (When prompted about how to open the document, select **Create a new project**.) When the **New Project Wizard** appears, leave the defaults and click `r keyboardButton("Finish")`.
+The first step is to open the example file **Chocolate Eclairs**. From the **Help** tab on the ribbon, click the `r keyboardButton("Example Documents")` button and then select **Chocolate Eclairs** from the menu. (When prompted about how to open the document, select **Create a new project**.) When the **New Project** Wizard appears, leave the defaults and click `r keyboardButton("Finish")`.
 
 Once the project has finished loading, select **Words Breakdown** on the sidebar, then click **Word Counts** beneath that. A bar chart showing a breakdown of word categories will be displayed:
 
