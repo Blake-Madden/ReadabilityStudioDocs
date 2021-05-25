@@ -12,7 +12,7 @@ To begin, click the `r keyboardButton("New")` button on the **Home** tab to disp
 
 ## Standard Project {#creating-standard-project}
 
-To determine a document's readability you will need to create a new project. First, click the `r keyboardButton("New")` button on the **Home** tab to open the **New Project** Wizard. (If you are using the **Professional** edition, select **Standard Project** and click `r keyboardButton("OK")`). On the first page of the wizard, the options for specifying the document and its language will be shown:
+To determine a document's readability you will need to create a new project. First, click the `r keyboardButton("New")` button on the **Home** tab to open the **New Project** wizard. (If you are using the **Professional** edition, select **Standard Project** and click `r keyboardButton("OK")`). On the first page of the wizard, the options for specifying the document and its language will be shown:
 
 ![](Images/wizard1.png)
 
@@ -78,7 +78,7 @@ To determine the readability of a document collection, you will need to create a
 
 ![](Images/selectprojecttype.png)
 
-Select **Batch Project** and click the `r keyboardButton("OK")` button to proceed to the **New Project** Wizard dialog, as shown below:
+Select **Batch Project** and click the `r keyboardButton("OK")` button to proceed to the **New Project** wizard dialog, as shown below:
 
 ![](Images/wizardbatchselectfiles.png)
 

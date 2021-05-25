@@ -10,7 +10,7 @@ In this example, we will create a custom test. Custom tests are useful for eithe
 
 For this example, we will use the [*Flesch*](#flesch-test) formula for our basis. We will take the standard *Flesch* formula and substitute its sentence count factor with independent clause count. This will effectively create a formula which does not penalize documents for containing numerous compound sentences.
 
-The first step to creating a new test is to click the `r keyboardButton("Custom Tests")` button on the **Readability** tab and select **Add Test Based on...** from the menu. This will present a dialog containing formula-based tests; select *Flesch Reading Ease* and click OK.
+The first step to creating a new test is to click the `r keyboardButton("Custom Tests")` button on the **Readability** tab and select **Add Test Based on...** from the menu. This will present a dialog containing formula-based tests; select *Flesch Reading Ease* and click `r keyboardButton("OK")`.
 
 Because this test will use independent clauses, change the name to “Flesch (IC)”:
 
@@ -44,7 +44,7 @@ There are shortcuts available for various functions, so this formula can also be
 206.835 - (84.6*(B/W)) - (1.015*(W/S))
 ```
 
-By default, all formula results will be returned with floating-point precision. For this particular formula, we will prefer to simply round the result. To do this, we will add the [ROUND](#custom-test-functions) function to our formula (with `0` as the precision width):
+By default, all formula results will be returned with floating-point precision. For this particular formula, we will prefer to simply round the result. To do this, we will add the [`ROUND`](#custom-test-functions) function to our formula (with `0` as the precision width):
 
 ```{r, eval=F, echo=T}
 ROUND(206.835 - (84.6*(B/W)) - (1.015*(W/S)), 0)
@@ -71,13 +71,13 @@ Once finished, the dialog will look like this:
 
 Click the `r keyboardButton("OK")` button and our new test will be added to the system.
 
-To add this test to any project, first select the **Readability** tab. Next, click the `r keyboardButton("Custom Tests")` button and then select **Flesch (IC)** from the menu. Select the **Readability Scores** icon on the project pane and note that **Flesch (IC)** has now been added to the project's results:
+To add this test to any project, first select the **Readability** tab. Next, click the `r keyboardButton("Custom Tests")` button and then select **Flesch (IC)** from the menu. Select the **Readability Scores** icon on the project pane and note that *Flesch (IC)* has now been added to the project's results:
 
 ![](Images/CustomTestExample1Score.png)
 
 ## Creating a Custom *New Dale-Chall* Test
 
-In this example, we will create a custom [New Dale-Chall](#dale-chall-test) test specifically designed for recipes for a group of young students. Although the standard *Dale-Chall* list is quite extensive, we may wish to append some words that we know are familiar to our kitchen-savvy students.
+In this example, we will create a custom [*New Dale-Chall*](#dale-chall-test) test specifically designed for recipes for a group of young students. Although the standard *Dale-Chall* list is quite extensive, we may wish to append some words that we know are familiar to our kitchen-savvy students.
 
 The first step is to create a list of baking-specific words that our readers are familiar with that are not already on the standard *Dale-Chall* list. This can be any text file where the words are separated by spaces, tabs, commas, or semicolons. For this example, we will use this list:
 
@@ -131,9 +131,9 @@ Click the `r keyboardButton("OK")` button and our new test will be added to the 
 
 ![](Images/NonGenerated/CustomTestDCProperNounWarning.png)
 
-We are intending to treat all proper nouns as familiar and do not wish to use the same settings as *New Dale-Chall*, so click **Do not adjust**. Our new test, **New Dale-Chall (Baking)**, has now been added to the program.
+We are intending to treat all proper nouns as familiar and do not wish to use the same settings as *New Dale-Chall*, so click **Do not adjust**. Our new test, *New Dale-Chall (Baking)*, has now been added to the program.
 
-To add this test to any project, first select the **Readability** tab. Next, click the `r keyboardButton("Custom Tests")` button and then select **New Dale-Chall (Baking)**. Select the **Readability Scores** icon on the project pane and note that **New Dale-Chall (Baking)** has now been added to the project's results:
+To add this test to any project, first select the **Readability** tab. Next, click the `r keyboardButton("Custom Tests")` button and then select **New Dale-Chall (Baking)**. Select the **Readability Scores** icon on the project pane and note that *New Dale-Chall (Baking)* has now been added to the project's results:
 
 ![](Images/CustomTestExample2Score.png)
 
@@ -147,7 +147,7 @@ However, because our custom test is including some extra words not on the *Dale-
 
 ![](Images/CustomTestExample2CustomWordList.png)
 
-Note how there are far fewer unfamiliar **New Dale-Chall (Baking)** words when compared to the standard *New Dale-Chall* output.
+Note how there are far fewer unfamiliar *New Dale-Chall (Baking)* words when compared to the standard *New Dale-Chall* output.
 
 We can also review these words in their original context. Click on the **Highlighted Reports** icon on the project pane, and then select the **New Dale-Chall (Baking)** tab. Here we can see exactly where all the unfamiliar **New Dale-Chall (Baking)** words are in our recipe.
 
@@ -226,9 +226,9 @@ For this test, we are only looking for words explicitly from our list. This mean
 
 Click the `r keyboardButton("OK")` button and our new test will be added to the system.
 
-To add this test to any project, first select the **Readability** tab. Next, click the `r keyboardButton("Custom Tests")` button and then select **Buzz Index**. Select the **Readability Scores** icon on the project pane and note that **Buzz Index** has now been added to the project's results:
+To add this test to any project, first select the **Readability** tab. Next, click the `r keyboardButton("Custom Tests")` button and then select **Buzz Index**. Select the **Readability Scores** icon on the project pane and note that *Buzz Index* has now been added to the project's results:
 
-To demonstrate this, click the **Help** tab of the ribbon. Then, click the `r keyboardButton("Examples")` button and select **Press Release** from the menu. Choose the defaults in the [Standard Project Wizard](#creating-standard-project) to create a new project from this document. Once the file is processed, click the **Highlighted Reports** icon on the sidebar to view the document. After doing a quick reading of this press release, there may be some concern about the author's enthusiasm for marketing speak. To confirm this, select the **Readability** tab on the ribbon, click **Custom Tests** and select **Buzz Index**. Next, click the **Readability Scores** icon on the sidebar and select **Scores** underneath that. As we had feared, the document is scoring at the unacceptable level 3:
+To demonstrate this, click the **Help** tab of the ribbon. Then, click the `r keyboardButton("Examples")` button and select **Press Release** from the menu. Choose the defaults in the standard [**New Project**](#creating-standard-project) wizard to create a new project from this document. Once the file is processed, click the **Highlighted Reports** icon on the sidebar to view the document. After doing a quick reading of this press release, there may be some concern about the author's enthusiasm for marketing speak. To confirm this, select the **Readability** tab on the ribbon, click **Custom Tests** and select **Buzz Index**. Next, click the **Readability Scores** icon on the sidebar and select **Scores** underneath that. As we had feared, the document is scoring at the unacceptable level 3:
 
 ![](Images/CustomIndexTestExampleScore.png)
 

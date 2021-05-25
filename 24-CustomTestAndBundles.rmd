@@ -64,7 +64,7 @@ Standard familiar-word tests normally consider numbers and proper nouns as famil
 
 ![](Images/CustomTestTreat.png)
 
-Finally, you can specify how this test interacts with the [**New Project**](#creating-standard-project) Wizard by associating it with document types and industries. Click the **Classification** icon to display these options. Then select all the documents and industries that this test should relate to.
+Finally, you can specify how this test interacts with the [**New Project**](#creating-standard-project) wizard by associating it with document types and industries. Click the **Classification** icon to display these options. Then select all the documents and industries that this test should relate to.
 
 For example, select the **Children's literature** and **Children's healthcare** check boxes (as shown below) and click `r keyboardButton("OK")`.
 
@@ -282,7 +282,7 @@ From the **Readability** tab, click the `r keyboardButton("Custom Test")` button
 
 - Grade level
 - Index value
-- [Predicted *cloz* score](#cloze)
+- [Predicted *cloze* score](#cloze)
 ```
 
 ### Formula {-}
@@ -402,7 +402,7 @@ Test bundles enable you to organize tests into collections that you can quickly 
 To access the test bundles, select the **Readability** tab and click the `r keyboardButton("Bundles")` button. A menu will appear which contains all the available bundles, as well as options to add, edit, and remove them.
 
 ```{block, type='onsamepage'}
-By default, the industry and document-type bundles used in the [**New Project**](#creating-standard-project) Wizard will be available. This includes:
+By default, the industry and document-type bundles used in the [**New Project**](#creating-standard-project) wizard will be available. This includes:
 
 - General document
 - Technical document
