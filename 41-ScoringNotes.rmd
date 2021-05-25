@@ -4,7 +4,7 @@
 
 Most readability tests that return a grade level include a mantissa (i.e., decimal value), which represents the month of the grade. For example, “1.6” would be the sixth month of first grade (Carver, “Measuring Readability Using DPR Units” 306-307). However, this only applies to tests that are computed from a mathematical formula (generally, a regression equation). Tests that use different methods—such as look-up tables or graphs—usually only return a grade level as an integer.
 
-For example, [*New Dale-Chall*](#dale-chall-test) looks up your unfamiliar word and sentence counts from a table and returns a grade range. This will yield results such as “7-8,” meaning that a document falls within the seventh to eighth grade reading level.
+For example, [*New Dale-Chall*](#dale-chall-test) looks up your unfamiliar word and sentence counts from a table and returns a grade range. This will yield results such as “7–8,” meaning that a document falls within the seventh to eighth grade reading level.
 
 [*Lix*](#lix-test) and [*Rix*](#rix-test) use a similar method. These tests calculate an index score and then look up the grade level from a table using this value.
 
@@ -12,33 +12,27 @@ Finally, graphical tests (e.g., [*Fry*](#fry-test)) only return integral grade l
 
 ## Grade Scales {#grade-scales}
 
- ```{block, type='onsamepage'}
-Grade-level scores are traditional displayed in U.S. (K-12+) format, be can be coverted to other scales. The following grade scales are available to choose from:
+::: {.onsamepage}
+Grade-level scores are traditional displayed in U.S. (K–12+) format, be can be coverted to other scales. The following grade scales are available to choose from:
 
-| **K-12+** |
-| :-- |
-| Kindergarten (grade 0) |
-| Grades 1-8 |
-| High School (grades 9-12) |
-| College (grades 13-16) |
-| Graduate School (grades 17-18) |
-| Doctorate (grade 19+) |
+```{r, echo=F}
+usaGradeScale <- splitColumnIntoTable(read_tsv("data/USAGradeScale.txt",
+                                         col_names=F)[[1]], 15, "Grade Levels")
 
-Table: United States of America
-
-| **Key Stages** |
-| :-- |
-| Key stage 1: Ages 5-7 (Years 1-2) |
-| Key stage 2: Ages 7-11 (Years 3-6) |
-| Key stage 3: Ages 11-14 (Years 7-9) |
-| Key stage 4: Ages 14-16 (Years 10-11) |
-| Sixth Form (2 years) |
-| College (4 years) |
-| Graduate School (2 years) |
-| Doctorate |
-
-Table: England and Wales
+kableExtra::kbl(usaGradeScale, booktabs=T, centering=T, linesep="",
+                caption="United States of America", align='l', escape=F) %>%
+  kableExtra::kable_classic(full_width=F)
 ```
+
+```{r, echo=F}
+englishKeyStages <- splitColumnIntoTable(read_tsv("data/EnglandWalesGradeScale.txt",
+                                         col_names=F)[[1]], 15, "Key Stages")
+
+kableExtra::kbl(englishKeyStages, booktabs=T, centering=T, linesep="",
+                caption="England and Wales", align='l', escape=F) %>%
+  kableExtra::kable_classic(full_width=F)
+```
+:::
 
 \newpage
 
@@ -47,95 +41,95 @@ library(tidyverse)
 
 col1Indices <- c(1,8,15,22,29,38)
 col2Indices <- c(1,8,14,20,28,36)
-canadaTable <- tibble(V1 = c("K-12+ (Alberta)",
-                             "Elementary (Kindergarten-grade 6)", "Junior High (grades 7-9)",
-                             "Senior High (grades 10-12)", "College (grades 13-16)",
-                             "Graduate School (grades 17-18)", "Doctorate (grade 19+)",
+canadaTable <- tibble(V1 = c("K–12+ (Alberta)",
+                             "Elementary (Kindergarten–grade 6)", "Junior High (grades 7–9)",
+                             "Senior High (grades 10–12)", "College (grades 13–16)",
+                             "Graduate School (grades 17–18)", "Doctorate (grade 19+)",
 
-                             "K-12+ (British Columbia)",
-                             "Elementary (Kindergarten-grade 7)", "Junior Secondary (grades 8-10)",
-                             "Senior Secondary (grades 11-12)", "College (grades 13-16)",
-                             "Graduate School (grades 17-18)", "Doctorate (grade 19+)",
+                             "K–12+ (British Columbia)",
+                             "Elementary (Kindergarten–grade 7)", "Junior Secondary (grades 8–10)",
+                             "Senior Secondary (grades 11–12)", "College (grades 13–16)",
+                             "Graduate School (grades 17–18)", "Doctorate (grade 19+)",
 
-                             "K-12+ (Manitoba)",
-                             "Early (Kindergarten-grade 4)",
-                             "Middle (grades 5-8)",
-                             "Senior (grades 9-12)",
-                             "College (grades 13-16)",
-                             "Graduate School (grades 17-18)",
+                             "K–12+ (Manitoba)",
+                             "Early (Kindergarten–grade 4)",
+                             "Middle (grades 5–8)",
+                             "Senior (grades 9–12)",
+                             "College (grades 13–16)",
+                             "Graduate School (grades 17–18)",
                              "Doctorate (grade 19+)",
 
-                             "K-12+ (New Brunswick)",
-                             "Elementary (Kindergarten-grade 5)",
-                             "Middle School (grades 6-8)",
-                             "High School (grades 9-12)",
-                             "College (grades 13-16)",
-                             "Graduate School (grades 17-18)",
+                             "K–12+ (New Brunswick)",
+                             "Elementary (Kindergarten–grade 5)",
+                             "Middle School (grades 6–8)",
+                             "High School (grades 9–12)",
+                             "College (grades 13–16)",
+                             "Graduate School (grades 17–18)",
                              "Doctorate (grade 19+)",
 
-                             "K-12+ (Newfoundland & Labrador)",
+                             "K–12+ (Newfoundland & Labrador)",
                              "Kindergarten",
-                             "Primary (grades 1-3)",
-                             "Elementary (grades 4-6)",
-                             "Intermediate (grades 7-9)",
-                             "Senior High (Level I-III)",
-                             "College (grades 13-16)",
-                             "Graduate School (grades 17-18)",
+                             "Primary (grades 1–3)",
+                             "Elementary (grades 4–6)",
+                             "Intermediate (grades 7–9)",
+                             "Senior High (Level I–III)",
+                             "College (grades 13–16)",
+                             "Graduate School (grades 17–18)",
                              "Doctorate (grade 19+)",
 
-                             "K-12+ (Northwest Territories)",
-                             "Primary (Kindergarten-grade 3)",
-                             "Intermediate (grades 4-6)",
-                             "Junior Secondary (grades 7-9)",
-                             "Senior Secondary (grades 10-12)",
-                             "College (grades 13-16)",
-                             "Graduate School (grades 17-18)",
+                             "K–12+ (Northwest Territories)",
+                             "Primary (Kindergarten–grade 3)",
+                             "Intermediate (grades 4–6)",
+                             "Junior Secondary (grades 7–9)",
+                             "Senior Secondary (grades 10–12)",
+                             "College (grades 13–16)",
+                             "Graduate School (grades 17–18)",
                              "Doctorate (grade 19+)"),
 
-                     V2 = c("K-12+ (Nova Scotia)",
-                            "Elementary (Primary-grade 6)",
-                            "Junior High (grades 7-9)",
-                            "Senior High (grades 10-12)",
-                            "College (grades 13-16)",
-                            "Graduate School (grades 17-18)",
+                     V2 = c("K–12+ (Nova Scotia)",
+                            "Elementary (Primary–grade 6)",
+                            "Junior High (grades 7–9)",
+                            "Senior High (grades 10–12)",
+                            "College (grades 13–16)",
+                            "Graduate School (grades 17–18)",
                             "Doctorate (grade 19+)",
 
-                            "K-12+ (Nunavut)",
+                            "K–12+ (Nunavut)",
                             "Kindergarten (grade 0)",
-                            "Grades 1-12",
-                            "College (grades 13-16)",
-                            "Graduate School (grades 17-18)",
+                            "Grades 1–12",
+                            "College (grades 13–16)",
+                            "Graduate School (grades 17–18)",
                             "Doctorate (grade 19+)",
 
-                            "K-12+ (Ontario)",
-                            "Elementary (grades 1-8)",
-                            "Grades 9-12",
-                            "College (grades 13-16)",
-                            "Graduate School (grades 17-18)",
+                            "K–12+ (Ontario)",
+                            "Elementary (grades 1–8)",
+                            "Grades 9–12",
+                            "College (grades 13–16)",
+                            "Graduate School (grades 17–18)",
                             "Doctorate (grade 19+)",
 
-                            "K-12+ (Prince Edward Island)",
+                            "K–12+ (Prince Edward Island)",
                             "Kindergarten",
-                            "Elementary (grades 1-6)",
-                            "Intermediate School (grades 7-9)",
-                            "Senior High (grades 10-12)",
-                            "College (grades 13-16)",
-                            "Graduate School (grades 17-18)",
+                            "Elementary (grades 1–6)",
+                            "Intermediate School (grades 7–9)",
+                            "Senior High (grades 10–12)",
+                            "College (grades 13–16)",
+                            "Graduate School (grades 17–18)",
                             "Doctorate (grade 19+)",
 
-                            "K-12+ (Saskatchewan)",
+                            "K–12+ (Saskatchewan)",
                             "Kindergarten",
-                            "Elementary Level (grades 1-5)",
-                            "Middle Level (grades 6-9)",
-                            "Secondary Level (grades 10-12)",
-                            "College (grades 13-16)",
-                            "Graduate School (grades 17-18)",
+                            "Elementary Level (grades 1–5)",
+                            "Middle Level (grades 6–9)",
+                            "Secondary Level (grades 10–12)",
+                            "College (grades 13–16)",
+                            "Graduate School (grades 17–18)",
                             "Doctorate (grade 19+)",
 
                             "Quebec",
                             "Maternelle (Kindergarten)",
-                            "École Primaire (grades 1-6)",
-                            "École Secondaire (grades 7-11)",
+                            "École Primaire (grades 1–6)",
+                            "École Secondaire (grades 7–11)",
                             "CEGEP (two years of University prep)",
                             "University (3 years for Bachelors Degree)",
                             "Graduate degree (2 years)",
@@ -147,7 +141,7 @@ canadaTable <- tibble(V1 = c("K-12+ (Alberta)",
   mutate("V2" = ifelse(!(row_number() %in% col2Indices), paste0(indentation(), V2), V2)) %>%
   dplyr::rename("Grade Levels " = V2)
 
-kableExtra::kbl(canadaTable, booktabs=T, centering=T, escape=F, linesep="", caption="Canadian Providences") %>%
+kableExtra::kbl(canadaTable, booktabs=T, centering=T, escape=F, linesep="", caption="Canadian Provences") %>%
   kableExtra::kable_classic(full_width=F) %>%
   kableExtra::column_spec(1, border_right=T)
 ```
@@ -155,7 +149,7 @@ kableExtra::kbl(canadaTable, booktabs=T, centering=T, escape=F, linesep="", capt
 ## Cloze Scores and Readability Formulas {#cloze}
 
 ```{block, type='onsamepage'}
-A **cloze** procedure is a test given to a student to measure his/her comprehension ability. This test consists of the following steps:
+A *cloze* procedure is a test given to a student to measure his/her comprehension ability. This test consists of the following steps:
 
 - Take a 250 word passage from a document.
 - Delete every fifth word and replace it with a blank of equal length. There should be a total 50 blanks when finished.
@@ -164,11 +158,11 @@ A **cloze** procedure is a test given to a student to measure his/her comprehens
 - Multiply the number of correct answers by two. This is the percentage of correct answers and will range from 0 (zero comprehension) to 100 (total comprehension).
 ```
 
-**Cloze** procedures can also be used to gage how easily a passage of text can be comprehended. In this context, a **cloze** procedure is given to a group of students, and the mean (average) of their scores is the level of comprehensibility for the passage. 60% and higher is considered to be an acceptable level of comprehensibility. Scores lower than 60% indicate that the passage may be too difficult to be comprehensible and should be rewritten.
+*Cloze* procedures can also be used to gage how easily a passage of text can be comprehended. In this context, a *cloze* procedure is given to a group of students, and the mean (average) of their scores is the level of comprehensibility for the passage. 60% and higher is considered to be an acceptable level of comprehensibility. Scores lower than 60% indicate that the passage may be too difficult to be comprehensible and should be rewritten.
 
-**Cloze** scores such as these are the criteria used to validate most readability formulas. Generally, researchers use the passages and results from published **cloze** procedures as their test data when creating a formula. This process usually involves a Multiple Regression analysis with the **cloze** scores of the passages as the dependent variable and factors such as sentence lengths and syllable counts as the independent variables. This analysis will determine which factors most strongly affect the **cloze** scores. After finding the most effective factors, these factors are then incorporated into a formula. Through experimentation, the formula is adjusted to produce results that strongly correlate to the original **cloze** scores. The stronger this correlation, the more accurate the formula will be in predicting the readability of new text samples.
+*Cloze* scores such as these are the criteria used to validate most readability formulas. Generally, researchers use the passages and results from published *cloze* procedures as their test data when creating a formula. This process usually involves a Multiple Regression analysis with the *cloze* scores of the passages as the dependent variable and factors such as sentence lengths and syllable counts as the independent variables. This analysis will determine which factors most strongly affect the *cloze* scores. After finding the most effective factors, these factors are then incorporated into a formula. Through experimentation, the formula is adjusted to produce results that strongly correlate to the original *cloze* scores. The stronger this correlation, the more accurate the formula will be in predicting the readability of new text samples.
 
-Some readability formulas produce predicted **cloze** scores (rather than grade levels). A predicted **cloze** score represents an estimation of a passage's mean score if it were made into a **cloze** test and given to a group of students. This can be useful when selecting passages to use for **cloze** tests.
+Some readability formulas produce predicted *cloze* scores (rather than grade levels). A predicted *cloze* score represents an estimation of a passage's mean score if it were made into a *cloze* test and given to a group of students. This can be useful when selecting passages to use for *cloze* tests.
 
 ## Proper Nouns in the Difficult Word Lists {#proper-nouns-in-lists}
 
@@ -180,13 +174,13 @@ Consider the following example:
 
 > “The Daily Examiner reported today that a tax examiner is reviewing the company's records. The examiner will have his full report by the end of the week.”
 
-The list of unfamiliar **HJ** words will report the following:
+The list of unfamiliar *HJ* words will report the following:
 
 `Examiner    2 (3 total occurrences, 1 proper and familiar, 2 non-proper and unfamiliar)`
 
-This means that “Examiner” in the phrase “Daily Examiner” is proper and *Harris-Jacobson* treated it as familiar. Although the word “examiner” is not a familiar **HJ** word, a reader will recognize that it is proper. From there, he/she can deduct that it is the name of a specific person, place, or thing (e.g., a newspaper). Therefore, it is somewhat familiar to the reader, even if he/she does not know the word.
+This means that “Examiner” in the phrase “Daily Examiner” is proper and *Harris-Jacobson* treated it as familiar. Although the word “examiner” is not a familiar *HJ* word, a reader will recognize that it is proper. From there, he/she can deduct that it is the name of a specific person, place, or thing (e.g., a newspaper). Therefore, it is somewhat familiar to the reader, even if he/she does not know the word.
 
-However, the other two instances of “examiner” are regular nouns. Because “examiner” is not on the **HJ** familiar-word list, these two instances are considered unfamiliar. When **HJ** is computed, a frequency count of 2 (not 3) will be used for this particular word when tallying the number of unfamiliar words.
+However, the other two instances of “examiner” are regular nouns. Because “examiner” is not on the *HJ* familiar-word list, these two instances are considered unfamiliar. When *HJ* is computed, a frequency count of 2 (not 3) will be used for this particular word when tallying the number of unfamiliar words.
 
 If a word appears only in proper form throughout the document, then it will not appear on various unfamiliar lists (e.g., *Spache*). A proper noun will never appear on these lists unless there are conflicting non-proper instances of the same word.
 

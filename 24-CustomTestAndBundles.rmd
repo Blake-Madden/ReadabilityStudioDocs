@@ -2,19 +2,19 @@
 
 ## Creating a Custom Test {#creating-custom-test}
 
-Along with offering standard tests, such as [New Dale Chall](#dale-chall-test) and [Revised Spache](#spache-test), **Readability Studio** also includes the ability to create your own tests. Many customizable features are offered for new tests, such as being able to select your own familiar-word list and which formula to use.
+Along with offering standard tests, such as [*New Dale Chall*](#dale-chall-test) and [*Revised Spache*](#spache-test), **Readability Studio** also includes the ability to create your own tests. Many customizable features are offered for new tests, such as being able to select your own familiar-word list and which formula to use.
 
 To create a custom test, go to the **Readability** tab, click the arrow beneath the `r keyboardButton("Custom Tests")` button and select **Add Test...** from the menu. At this point, the **Add Custom Test** dialog will be displayed:
 
 ![](Images/AddCustomTest.png)
 
-In the **General Settings** section, enter a name for this test (e.g., **NDC Computer**) in the **Test name** field. This will be the name of the test as it appears in your results and on the menu.
+In the **General Settings** section, enter a name for this test (e.g., “NDC Computer”) in the **Test name** field. This will be the name of the test as it appears in your results and on the menu.
 
 Next, enter the test's formula in the **Formula** field. Essentially, there are two types of formulas: predefined familiar-word formulas and custom-built formulas. A predefined familiar-word formula will use a standard test's formula along with your own familiar-word criteria. This is useful for expanding a standard test (such as *New Dale-Chall*) by including your own word list. The available predefined formulas are:
 
 - `CustomNewDaleChall()`: this will use the *New Dale-Chall* formula.
 - `CustomSpache()`: this will use the *Spache Revised* formula.
-- `CustomHarrisJacobson()`: this will use the **Harris Jacobson** formula.
+- `CustomHarrisJacobson()`: this will use the *Harris Jacobson* formula.
 
 The second type of formula is a custom-built formula. For example, the formula for Lix is:
 
@@ -205,11 +205,11 @@ So, to use MLA footnotes, we have to create psuedo footnotes below the table.
 
 Table: Document Statistics Functions
 
-^1^ Uses the [Dale-Chall text-exclusion](#options-dale-chall) method.
+^1^ Uses the [*Dale-Chall* text-exclusion](#options-dale-chall) method.
 
-^2^ Uses the [Harris-Jacobson text-exclusion method](#options-harris-jacobson).
+^2^ Uses the [*Harris-Jacobson* text-exclusion method](#options-harris-jacobson).
 
-^3^ Uses the [Gunning Fog](#options-gunning-fog) sentence-counting method.\
+^3^ Uses the [*Gunning Fog*](#options-gunning-fog) sentence-counting method.\
 This will be either traditional sentence counting or unit counting.
 ```
 
@@ -340,12 +340,12 @@ If you are not stemming, then it is recommended to enter each inflected form of 
 
 **Only use words common to all lists**: Check this option to consider words familiar only if they appear on your custom list **and** other selected lists.
 
-::: {.warningsection data-latex=""}
-This option is only recommended for when you want to find words that appear within a union of your word list and a standard list(s) (e.g., *Spache*).
-:::
-
 ::: {.notesection data-latex=""}
 This option is only available if you are including two or more word lists.
+:::
+
+::: {.warningsection data-latex=""}
+This option is only recommended for when you want to find words that appear within a union of your word list and a standard list(s) (e.g., *Spache*).
 :::
 
 ### Proper Nouns & Numerals {-#custom-proper-numerals}

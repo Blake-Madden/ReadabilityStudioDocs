@@ -54,7 +54,7 @@ Now that you have selected the words that you want to save, click the `r keyboar
 
 A **Save As** dialog will appear and you will have the option to save as either HTML or text. Select where you want to save the file and click **Save**.
 
-Next, the [List Export Options](#export-list) dialog will appear. (Note that by default, all the words will be exported.) To export just the words that you have highlighted, select the checkbox **Only export selected rows**. Also, because we are only interested in saving the **Word** column—not the **Syllable Count** or **Frequency Count** columns—enter 1 in the **Columns: from** and **to:** fields. Finally, uncheck the option **Include column headers** because we are only exporting one column. Your **List Export Options** will look like this:
+Next, the [**List Export Options**](#export-list) dialog will appear. (Note that by default, all the words will be exported.) To export just the words that you have highlighted, select the checkbox **Only export selected rows**. Also, because we are only interested in saving the **Word** column—not the **Syllable Count** or **Frequency Count** columns—enter 1 in the **Columns: from** and **to:** fields. Finally, uncheck the option **Include column headers** because we are only exporting one column. Your **List Export Options** will look like this:
 
 ![](Images/exportoptions.png)
 

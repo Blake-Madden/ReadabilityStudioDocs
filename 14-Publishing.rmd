@@ -158,7 +158,7 @@ This dialog provides options for [exporting](#exporting) an entire project into 
 
 **Export grammar section**: Select this option to export all the windows from the **Grammar** section.
 
-**Export Dolch sight words section**: Select this option to export all the windows from the [Dolch Sight Words](#reviewing-dolch) section. This option only applies if **Dolch Sight Words** is included in the project.
+**Export Dolch sight words section**: Select this option to export all the windows from the [**Dolch Sight Words**](#reviewing-dolch) section. This option only applies if **Dolch Sight Words** is included in the project.
 
 **Export warnings section**: Select this option to export all the project's [warnings](#reviewing-batch-warnings). This option only applies to batch projects.
 
@@ -197,9 +197,11 @@ The following predefined values can be selected for any header or footer:
 
 Custom values can also be entered here.
 
-To preview a window before printing it, select **Print Preview** from this menu:
+To preview a window before printing it, select **Print Preview** from this menu.
 
+::: {.center data-latex=""}
 ![](Images/NonGenerated/printpreview.png){width=50%}
+:::
 
 ::: {.notesection data-latex=""}
 The preview option is only available on Windows. On macOS, the preview option on the print dialog can be used for previewing.
@@ -232,11 +234,13 @@ Refer to \@ref(how-text-is-excluded) to learn how **Readability Studio** automat
 
 ### Exporting Filtered Documents {-}
 
+::: {.wrapfigure data-latex="{r}{0.5\\textwidth}"}
+![](Images/FilterTextPreview.png){width=48%}
+:::
+
 There may be times when you would need a filtered copy of your document. For example, you might need to process your document through another program which does not have auto-filtering. In this situation, you can export a copy of your document with these aforementioned items removed. Then you can analyze your document with other software without needing to manually filter it.
 
-To do this, click on the **Home** tab of the ribbon, click on the arrow below the `r keyboardButton("Save")` button, and select **Export Filtered Document**. After excluding incomplete sentences from your document, you will be presented with additional options. Once you have specified your filtering options, the **Preview Filtered Document** dialog (shown below) will display a preview:
-
-![](Images/FilterTextPreview.png)
+To do this, click on the **Home** tab of the ribbon, click on the arrow below the `r keyboardButton("Save")` button, and select **Export Filtered Document**. After excluding incomplete sentences from your document, you will be presented with additional options. Once you have specified your filtering options, the **Preview Filtered Document** dialog (shown on the right) will display a preview.
 
 Finally, click `r keyboardButton("OK")` to save the file.
 

@@ -35,7 +35,7 @@ Amstad offered these interpretations for scoring:
 | 0-29 | Very difficult | scientific |
 
 ::: {.notesection data-latex=""}
-Like *Flesch Reading Ease*, this test treats numerals as monosyllabic words by default. This behavior can be changed from the [**Readability Options**](#readability-test-options) dialog.
+Like *Flesch Reading Ease*, this test treats numerals as monosyllabic words by default. This behavior can be changed from the [**Options**](#readability-test-options) dialog.
 :::
 
 \newpage
@@ -57,6 +57,7 @@ knitr::include_graphics("Images/GermanLixGauge.png")
 
 This version adjusts the scaling of the score, assuming that German text is inherently more difficult than other languages. It also includes additional levels of difficulty (e.g., “children and young adult”).
 
+::: {.onsamepage data-latex=""}
 To convert the *Lix* index score to a grade, this test uses the following table:
 
 | Index Score | Grade |
@@ -69,8 +70,10 @@ To convert the *Lix* index score to a grade, this test uses the following table:
 | 34-35 | 6^th^ grade |
 | 36-37 | 7^th^ grade |
 | 38+ | 8^th^ grade |
+:::
 
 \newpage
+
 ## Lix (German technical literature) {#lix-german-technical}
 
 This test is a German variation of [*Läsbarhetsindex (Lix)*](#lix-test) designed for technical literature. It uses the same index-score formula as *Lix*, but uses different scales for assigning the difficulty and grade-level scores. This adjustment was developed by Renström (152-153) and Bamberger & Vanecek (64, 187) for use with German literature ranging from 3^rd^ to 15^th^ grade. (Renström developed the adjusted difficulty gauge; Bamberger & Vanecek developed the grade-level conversion.)
@@ -222,7 +225,7 @@ kableExtra::kbl(quadData, booktabs=T, centering=T, align='l', escape=F) %>%
 ```
 
 ::: {.notesection data-latex=""}
-Based on the examples from **Bamberger-Vanecek** (78), the grade-level score should be truncated to one-point precision, not rounded.
+Based on the examples from Bamberger-Vanecek (78), the grade-level score should be truncated to one-point precision, not rounded.
 :::
 
 \newpage
@@ -330,7 +333,7 @@ kableExtra::kbl(smogBVData, booktabs=T, centering=T, align='l', escape=F) %>%
 This test requires a 10-sentence sample, with 3 samples being recommended for best results. ([Normalization](#glossary) can also be used to analyze larger samples or entire documents.)
 
 ::: {.notesection data-latex=""}
-Based on the examples from **Bamberger-Vanecek** (78), the grade-level score should be truncated to one-point precision, not rounded.
+Based on the examples from Bamberger-Vanecek (78), the grade-level score should be truncated to one-point precision, not rounded.
 :::
 
 \newpage

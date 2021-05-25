@@ -58,9 +58,11 @@ Clicking the column a second time will sort that column into descending order. A
 
 To toggle the sorting order, click the column header again.
 
-To sort a list by multiple columns, click the `r keyboardButton("Sort")` button in the **Edit** section on the **Home** tab of the ribbon and the **Sort Columns** dialog will appear:
+::: {.wrapfigure data-latex="{r}{0.5\\textwidth}"}
+![](Images/sortcolumnsdialog.png){width=48%}
+:::
 
-![](Images/sortcolumnsdialog.png)
+To sort a list by multiple columns, click the `r keyboardButton("Sort")` button in the **Edit** section on the **Home** tab of the ribbon and the **Sort Columns** dialog will appear.
 
 On this dialog, you will specify which columns to sort by and their order. Going from top to bottom in this grid, the columns specified here will act as the sorting criteria for the list. The list will be sorted by the first specified column (and its respective sorting order), and in the case of a tie between two or more rows, the next specified column will become the sort criterion between those rows, and so on. To add a column as a sort criterion, double click a row in this grid and select the column name from the drop-down box. Once you have selected the columns to sort by, click the `r keyboardButton("OK")` button to sort the list.
 
@@ -85,5 +87,5 @@ After creating or opening a project, you can customize how the program analyzes 
 ![](Images/RibbonEditDocumentOptions.png)
 
 ::: {.tipsection data-latex=""}
-With a standard project, you can review these changes in realtime by selecting any highlighted text window in the [Words Breakdown](#reviewing-word-breakdowns) or [Grammar](#reviewing-standard-grammar) sections. As you make changes, the program will reanalyze your document and these changes will be visible in this window. For example, changing how words are being excluded or how sentence endings are deduced will become apparent as you make changes from the ribbon.
+With a standard project, you can review these changes in realtime by selecting any highlighted text window in the [**Words Breakdown**](#reviewing-word-breakdowns) or [**Grammar**](#reviewing-standard-grammar) sections. As you make changes, the program will reanalyze your document and these changes will be visible in this window. For example, changing how words are being excluded or how sentence endings are deduced will become apparent as you make changes from the ribbon.
 :::

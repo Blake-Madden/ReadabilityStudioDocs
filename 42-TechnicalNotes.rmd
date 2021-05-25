@@ -2,7 +2,7 @@
 
 ## Glossary {#glossary}
 
-**Cloze test**: A [cloze](#cloze) procedure is a test given to a student to measure his/her comprehension ability.
+**Cloze test**: A [*cloze*](#cloze) procedure is a test given to a student to measure his/her comprehension ability.
 
 **Interrobang**: The combination of a question mark and exclamation point at the end of a sentence. Interrobangs are shown as either two separate characters (“?!” or “!?”) or a single character (‽).
 
@@ -78,7 +78,7 @@ stripchart(len ~ dose, data = ToothGrowth, method='overplot', add=T, pch=20, col
 
 Although we can interpret the quartile ranges, it is not obvious how the data “clumps” together overall.
 
-To correct this, a technique called **jittering** is used to adjust the x axis values of overlapping points. Traditionally, jittering uses randomness to adjust the points’ position around both sides of the axis, as such:
+To correct this, a technique called jittering is used to adjust the x axis values of overlapping points. Traditionally, jittering uses randomness to adjust the points’ position around both sides of the axis, as such:
 
 ```{r, echo=F, fig.cap="Box plot with random jittering", fig.align='center', out.width='75%'}
 boxplot(len ~ dose, data = ToothGrowth,

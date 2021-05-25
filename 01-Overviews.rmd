@@ -6,7 +6,7 @@
 
 When writing for a target audience or classifying documents for specific age groups, readability formulas are invaluable tools. They help determine the minimum age group that can quickly process reading material by using an analytical approach. This approach uses factors such as sentence length, word difficulty, and word familiarity.
 
-Most readability scores represent the grade level of the youngest reader that can understand a document. They can also determine how easily a more broad audience can process it. For example, most magazine and newspaper articles should aim for scores around the 14-16 age range. This is not because most readers of newspapers are in this age group. It is because this type of material should be easy to read for most age groups. If an article has numerous complex and uncommon words, then it will take much longer to read and understand. (It will also make it less enjoyable to read.) These are not qualities appropriate for something meant to be read quickly by most readers.
+Most readability scores represent the grade level of the youngest reader that can understand a document. They can also determine how easily a more broad audience can process it. For example, most magazine and newspaper articles should aim for scores around the 14–16 age range. This is not because most readers of newspapers are in this age group. It is because this type of material should be easy to read for most age groups. If an article has numerous complex and uncommon words, then it will take much longer to read and understand. (It will also make it less enjoyable to read.) These are not qualities appropriate for something meant to be read quickly by most readers.
 
 Note that these tests only determine the reading level of material based on how easy it is to process. They do not consider the content or themes of a given work. The age level reported by a test score only reflects the age group that can comprehend a document. It does not reflect whether the topics covered in the material are meant for that age group. If you are classifying books into age groups, you should first review them for any mature topics. Then you should use readability tests to determine their comprehension levels.
 
@@ -110,14 +110,14 @@ These issues are shown highlighted in your document for easy review. They are al
 
 #### Dolch Sight Words {-}
 
-**Readability Studio** also includes a [Dolch](#reviewing-dolch) suite of statistics and graphs, which is useful for educators and writers who work with young readers. The program provides a complete breakdown of *Dolch* words that you are using (and not using) in your materials. This enables writers to see how they can improve their *Dolch* practice materials. This also enables educators to determine which materials are appropriate for *Dolch* practice.
+**Readability Studio** also includes a [*Dolch*](#reviewing-dolch) suite of statistics and graphs, which is useful for educators and writers who work with young readers. The program provides a complete breakdown of *Dolch* words that you are using (and not using) in your materials. This enables writers to see how they can improve their *Dolch* practice materials. This also enables educators to determine which materials are appropriate for *Dolch* practice.
 
 #### Numerous file formats supported {-}
 
 **Readability Studio** supports importing text from many file formats, including:
 
 - ANSI and Unicode text (\*.txt)
-- Microsoft^®^ Word 95-2003 (\*.doc)
+- Microsoft^®^ Word 95–2003 (\*.doc)
 - Microsoft^®^ Word 2007 (\*.docx)
 - Microsoft^®^ PowerPoint 2007 (\*.pptx)
 - Microsoft^®^ Excel 2007 (cells can be batch analyzed as documents or filepaths to other documents)
@@ -196,7 +196,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
   - Added `GunningFog` option to `SentenceCount()` function. This will return the sentence count using the system's [Gunning Fog method](#options-gunning-fog).
   - Added `MiniWordCount()` function.
   - Added `HardFogWordCount()` function.
-- [Farr-Jenkins-Paterson](#farr-jenkins-paterson) now includes floating-point precision in its results.
+- [*Farr-Jenkins-Paterson*](#farr-jenkins-paterson) now includes floating-point precision in its results.
 - Added sentence-lengths histogram (standard projects).
 - Bins in the syllable, sentence-length, grade-level, and predicted cloze score histograms now begin at 1^st^ grade or Kindergarten.
 - Improved document indexing performance.
@@ -240,7 +240,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
   - Added support for superscripts and subscripts.
   - Annotations are now removed from the text.
   - `${}` Javascript placeholders are now removed from the text.
-- Improvements to Word 97-2003 importer to better handle Unicode and corrupted files.
+- Improvements to Word 97–2003 importer to better handle Unicode and corrupted files.
 - Improvements to RTF importer (improved Unicode and footnote support).
 - Improvements to C++ source file importer (improved handling of escaped quotes).
 - Added **Narrow full-width characters** option to [document filtering](#additional-filtering-options).
@@ -286,7 +286,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - Added new [Overused Words (x Sentence)](#reviewing-overused-by-sentence) list to standard and batch projects.
 - Added new [All Words (Condensed)](#reviewing-word-breakdowns) list to standard and batch projects.
 - Added new **Sentence Length** [heatmap](#reviewing-sentences-breakdown) to standard projects.
-- Added [Allow colloquialisms](#options-grammar) feature to the English spell checker.
+- Added [**Allow colloquialisms**](#options-grammar) feature to the English spell checker.
 - Which results to include in the **Summary Statistics** section can now be individually toggled.
 - Which results to include in the **Grammar** section can now be individually toggled.
 - Which results to include in the **Scores** section can now be individually toggled.
@@ -295,12 +295,12 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - [Reviewer](#project-settings) and **Status** information can now be added to projects.
 - Warning messages that are being suppressed will now not be included in the [Warning](#reviewing-batch-warnings) section of a batch.
 - While a project is open, the search bar will autocomplete items that you have already searched for.
-- [Log Report](#log-report) button is now always available. (This option was not available unless verbose logging was enabled in previous releases.)
+- [**Log Report**](#log-report) button is now always available. (This option was not available unless verbose logging was enabled in previous releases.)
 - Added **Timestamp** and **Source** columns to **Log Report** window.
 - Most test warning messages are now shown in the infobar (instead of message boxes), making them less intrusive.
 - Improved program display when running under higher screen resolutions.
 - Added new icons to subitems in projects' sidebars.
-- Added **-bg** (graph background) [command line](#command-line-options) option.
+- Added `-bg` (graph background) [command line](#command-line-options) option.
 - Simplified **About** dialog.
 
 #### Analysis/Test Enhancements {-}
@@ -313,7 +313,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - Improved proper noun detection. Words in headers and at the start of sentences are marked as proper if the number of mid-sentence occurrences of the same word are capitalized is more than the occurrences that aren't.
 - Lines of text that appear to be equations will be marked as incomplete sentences.
 - The option **Aggressively deduce lists** is now **Aggressively exclude**. Enabling this will now make citation-section exclusion more aggressive.
-- Updated **Portuguese** stemmer to latest standard.
+- Updated Portuguese stemmer to latest standard.
 - Two single quotes after a word are now seen as a double quote.
 - Expanded spell-checker to include medical terminology.
 
@@ -324,7 +324,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - Improvements to OpenDocument Text importer.
 - Added SVG exporting for graphs. (Bar and Box color fade is not currently supported.)
 - Improvements to workaround bad formatting when importing HTML documents.
-- Improved **symbol** font detection in HTML files.
+- Improved Symbol font correction in HTML files.
 - Added log messages for importing/formatting issues encountered while loading documents.
 - Added page breaks to **Export All** HTML report.
 - Performance improvements to the HTML importer.
@@ -451,7 +451,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
     - [*Amstad*](#amstad)
     - *[Lix* (German children's literature)](#lix-german-childrens-literature)
     - [*Lix* (German technical literature)](#lix-german-technical)
-    - [*Neue Wiener Sachtextformel* 1-3](#neue-wiener-sachtextformel1)
+    - [*Neue Wiener Sachtextformel* 1–3](#neue-wiener-sachtextformel1)
     - [*Quadratwurzelverfahren*](#qu-bamberger-vanecek)
     - [*Rix* (German fiction)](#rix-german-fiction)
     - [*Rix* (German non-fiction)](#rix-german-nonfiction)
@@ -482,7 +482,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - The color and opacity of graph plot areas can now be customized.
 - A [box plot](#box-plots) showing the document's sentence lengths added to standard projects.
 
-### Readability Studio 3.0/3.1/3.2 (2009-2010) {-}
+### Readability Studio 3.0/3.1/3.2 (2009–2010) {-}
 ***
 
 #### General Enhancements {-}
@@ -540,7 +540,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - Added new text exclusion method for including headers and sub-headers (as full sentences), but excluding all other incomplete sentences.
 - **Independent clause count** statistic now included in the statistics report. An independent clause is a section of text which ends with a period, exclamation mark, question mark, [interrobang](#glossary), colon, semicolon, or dash.
 - Mode now included in Standard projects’ test score statistics.
-- Batch project now includes **valid N**, **range**, **standard error**, **skewness**, and **kurtosis** in the aggregated statistics.
+- Batch project now includes valid N, range, standard error, skewness, and kurtosis in the aggregated statistics.
 - "+" is now added to maximum level test scores.
 - Text exclusion can now be adjusted to include incomplete sentences containing a specified number of words.
 
@@ -552,7 +552,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - When printing lists, the table is now split into smaller tables with page breaks between them. In addition, the header row appears on each page. Tables are also split into separate pages if there are too many columns to fit on one page.
 - When exporting lists as HTML, the aforementioned page break feature can optionally be included.
 - Borders for lists, statistics window, and test window are now ½ inch (instead of a full inch) when printing.
-- Optimized list HTML output (output files are 10-15% smaller).
+- Optimized list HTML output (output files are 10–15% smaller).
 - Added TIFF compression options.
 - Added quantization (256 color reduction) option.
 - Added Targa image (\*.tga) exporting.
@@ -567,7 +567,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 
 #### Graph Enhancements {-}
 
-- [Raygor graph](#raygor-test) now shows “College” and “Professor” as the labels for the last two slices.
+- [*Raygor* graph](#raygor-test) now shows “College” and “Professor” as the labels for the last two slices.
 - Added image stippling option (i.e., custom brush) for bar charts, histograms, and box plots.
 
 #### Bug Fixes {-}

@@ -137,6 +137,18 @@ verbatim <- function(text, enclosure='|')
     }
   }
 
+# Same as verbatim, but for non-LaTeX builds the text will not
+# be wrapped in backticks.
+verbatim_latex <- function(text, enclosure='|')
+  {
+  if (knitr::is_latex_output())
+    { knitr::asis_output(glue("\\verb{enclosure}{text}{enclosure}")) }
+  else
+    {
+    knitr::asis_output(text)
+    }
+  }
+
 # Converts Markdown text to LaTeX (or leaves it as-is for HTML builds) for kableExtra footnotes
 # or use in a kable.
 # Supports bold, italic, inline code, and newlines.

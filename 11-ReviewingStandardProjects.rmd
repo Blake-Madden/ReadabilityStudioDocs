@@ -10,9 +10,9 @@ The top area of the **Scores** window is the score grid. In here there are four 
 - **Grade Level**: the minimum grade level that the test determined the document is suitable for.
 - **Reader Age**: the minimum reader age that the test determined the document is suitable for. The reader age is determined from the test's score. It can be shown as either a [range](#reading-age) for the entire grade, or be rounded to the semester that the grade score falls into.
 - **Scale Value**: the index value for tests that use special scales.
-- [**Predicted Cloze Score**](#cloze): the estimated score if the document were to be used for a cloze test. Note that cloze scores will be displayed in percentage format (i.e., 0-100) instead of floating-point format (i.e., .0-1.0) for easier reading.
+- [**Predicted Cloze Score**](#cloze): the estimated score if the document were to be used for a cloze test. Note that cloze scores will be displayed in percentage format (i.e., 0–100) instead of floating-point format (i.e., .0–1.0) for easier reading.
 
-Note that most tests have just one type of result (e.g., grade level), so non-applicable columns are left blank. For example, note below that the [Gunning Fog](#gunning-fog-test) result is a grade level of 8.3. This translates to an eighth grade level reader (in his or her third month of class). Because this test only returns a grade level and age, the **Scale Value** and **Predicted Cloze Score** columns are empty. Another example is the result for the [Flesch Reading Ease](#flesch-test) test, which has a scale value of 79. This test has its own scale (instead of a grade level) so its age, grade level, and cloze columns are empty.
+Note that most tests have just one type of result (e.g., grade level), so non-applicable columns are left blank. For example, note below that the [*Gunning Fog*](#gunning-fog-test) result is a grade level of 8.3. This translates to an eighth grade level reader (in his or her third month of class). Because this test only returns a grade level and age, the **Scale Value** and **Predicted Cloze Score** columns are empty. Another example is the result for the [*Flesch Reading Ease*](#flesch-test) test, which has a scale value of 79. This test has its own scale (instead of a grade level) so its age, grade level, and cloze columns are empty.
 
 When a grade-level test scores a document at its maximum value, a “+” will be appended to the score. Although most grade-level tests can score up to 19, some tests which are designed for primary and secondary education materials will have lower maximum scores. For example, [*Wheeler-Smith*](#wheeler-smith) is designed for primary-age materials and its maximum score is the fourth-grade level. If a document's *Wheeler-Smith* score is 4, then it will be displayed as “4+.”
 
@@ -24,7 +24,7 @@ Along with an explanation of the test's results, the factors that it uses to det
 
 Finally, the averages (means) of your test scores and ages are displayed at the bottom of the results window. Their respective [modes](#stat-terms), [medians](#stat-terms), and [standard deviations](#stat-terms) are also included if [Extended Information](#options-summary-report) is enabled. Note that scores are truncated when searching for the grade-level mode. For example, “6.7” and “6.2” will both be treated as “6.” Mode generally requires discrete data to produce meaningful results; therefore, grade-level scores are converted to their base grades for this statistic.
 
-When calculating these statistics, failed test scores are treated as missing observations and not included. For example, let us say that you included 5 tests, but one of them could not be calculated. In this case, the valid 4 scores will be added and divided by 4 (not 5) to acquire the means. Also, grade range scores–such as “5-6” from [*New Dale-Chall*](#dale-chall-test)–will be converted to its own average (e.g., “5-6” will be 5.5).
+When calculating these statistics, failed test scores are treated as missing observations and not included. For example, let us say that you included 5 tests, but one of them could not be calculated. In this case, the valid 4 scores will be added and divided by 4 (not 5) to acquire the means. Also, grade range scores–such as “5–6” from [*New Dale-Chall*](#dale-chall-test)–will be converted to its own average (e.g., “5-6” will be 5.5).
 
 To remove any test from this list, select it and press `r keyboardButton("CTRL")`+`r keyboardButton("DELETE")` (`r macOSCmdButton()`+`r keyboardButton("DELETE")` on macOS) on your keyboard. To edit a [custom test](#creating-custom-test), double click on it in this list. To view the help for a standard test, double click on it in this list.
 
@@ -157,7 +157,7 @@ The **Report** and **Tabular Report** windows display the document's statistics 
 - Number of paragraphs and average number of sentences per paragraph.
 - Number of sentences and average number of words per sentence.
 - Number and percentage of difficult sentences.
-- Number of [units](#glossary)/independent clauses. This statistic is only available if [Extended Information](#options-summary-report) is enabled.
+- Number of [units](#glossary)/independent clauses. This statistic is only available if [**Extended Information**](#options-summary-report) is enabled.
 - Number of interrogative sentences (questions).
 - Number of exclamatory sentences.
 - Number of words.
@@ -180,7 +180,7 @@ Statistics for any custom familiar-word tests will also be included in this wind
 A **Notes** section may be included at the bottom of the formatted report if there are any items of interest detected (e.g., a high sentence-length average). If your document requires improvement, then this section is usually a good place to begin.
 
 ::: {.notesection data-latex=""}
-3+ syllable words and [Fog](#gunning-fog-test) and [*SMOG*](#smog-test) hard words are all the same except for how numerals (e.g., phone numbers and dates) are handled. *SMOG* always sounds out each digit of a numeric word, whereas *Fog* ignores numeric words. You can control how numeric words are handled from the [Document Indexing](#document-analysis) section of the [Options](#options-overview) dialog (available on the **Tools** tab).
+3+ syllable words and [*Fog*](#gunning-fog-test) and [*SMOG*](#smog-test) hard words are all the same except for how numerals (e.g., phone numbers and dates) are handled. *SMOG* always sounds out each digit of a numeric word, whereas *Fog* ignores numeric words. You can control how numeric words are handled from the [**Document Indexing**](#document-analysis) section of the [**Options**](#options-overview) dialog (available on the **Tools** tab).
 :::
 
 ## Reviewing the Words Breakdown {#reviewing-word-breakdowns}
@@ -227,31 +227,31 @@ The different types of text windows that may be shown are:
 
 **6+ Characters**: This text window contains the document with all the words that are six or more characters long highlighted. This window is only available if the document contains 6+ character words.
 
-**Dale-Chall (Unfamiliar)**: This text window contains the document with all the [Dale-Chall](#dale-chall-test) unfamiliar words highlighted. The *Dale-Chall* word list is a collection of words that are considered to be familiar to most fourth grade readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if a *Dale-Chall* related test is included in the project.
+**Dale-Chall (Unfamiliar)**: This text window contains the document with all the [*Dale-Chall*](#dale-chall-test) unfamiliar words highlighted. The *Dale-Chall* word list is a collection of words that are considered to be familiar to most fourth grade readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if a *Dale-Chall* related test is included in the project.
 
-**Spache (Unfamiliar)**: This text window contains the document with all the [Spache](#spache-test) unfamiliar words highlighted. The *Spache* word list is a collection of words that are considered to be familiar to most primary-age readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the *Spache* test is included in the project.
+**Spache (Unfamiliar)**: This text window contains the document with all the [*Spache*](#spache-test) unfamiliar words highlighted. The *Spache* word list is a collection of words that are considered to be familiar to most primary-age readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the *Spache* test is included in the project.
 
-**Harris-Jacobson (Unfamiliar)**: This text window contains the document with all the [Harris-Jacobson](#harris-jacobson) unfamiliar words highlighted. The *Harris-Jacobson* word list is a collection of words that are considered to be familiar to most primary-age readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the *Harris-Jacobson* test is included in the project.
+**Harris-Jacobson (Unfamiliar)**: This text window contains the document with all the [*Harris-Jacobson*](#harris-jacobson) unfamiliar words highlighted. The *Harris-Jacobson* word list is a collection of words that are considered to be familiar to most primary-age readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the *Harris-Jacobson* test is included in the project.
 
-You can change both the font and highlighting color by opening the [Project Properties](#options-overview) dialog and clicking the [Highlighted Reports](#options-highlighted-reports) icon. Note that changing these options from the **Project Properties** dialog will only affect the current project. If you want to make changes to any future projects, then go to the **Options** dialog from the **Tools** tab instead.
+You can change both the font and highlighting color by opening the [**Project Properties**](#options-overview) dialog and clicking the [**Highlighted Reports**](#options-highlighted-reports) icon. Note that changing these options from the **Project Properties** dialog will only affect the current project. If you want to make changes to any future projects, then go to the **Options** dialog from the **Tools** tab instead.
 
 A **Word Counts** [bar chart](#options-bar-charts) is also included in this section. This graph shows the total counts of each type of word (e.g., 3+ syllable words) and how each category compares to one another. This bar chart will appear like this:
 
 ![](Images/barchart.png)
 
-In the above example, we can see that there are 70 unfamiliar *Dale-Chall* words, but only 42 **3+ syllable** words. From this, we could infer that we should first concentrate on replacing these unfamiliar words. Lists of these words can be found by clicking on the [Difficult Words](#reviewing-word-breakdowns) icon on the project sidebar.
+In the above example, we can see that there are 70 unfamiliar *Dale-Chall* words, but only 42 **3+ syllable** words. From this, we could infer that we should first concentrate on replacing these unfamiliar words. Lists of these words can be found by clicking on the [**Difficult Words**](#reviewing-word-breakdowns) icon on the project sidebar.
 
 Finally, a histogram of the words (grouped by syllable count) is also available:
 
 ![](Images/SyllableCountHistogram.png)
 
-In the above histogram, we see that most of the words are either 1 or 2 syllables. There are only 25 **3-syllable** words and 17 **4-syllable** words in the document. Note that selecting a bar will display the first 25 words within that syllable group (if [binning](#options-histograms) is set to **unique values**).
+In the above histogram, we see that most of the words are either 1 or 2 syllables. There are only 25 3-syllable words and 17 4-syllable words in the document. Note that selecting a bar will display the first 25 words within that syllable group (if [binning](#options-histograms) is set to **unique values**).
 
 ::: {.notesection data-latex=""}
-The **total** value of a word count reflects the number of words, including repeats of the same word. The **unique** value of a word count reflects the number of words, excluding repeats. For example, a document contains the word “liquidation” three times. This word will be tallied three times when factored into the total word count, but only once into the unique word count. Most tests use the total word count variable, although there are some that use unique counts (e.g., *Spache* uses its **unique** unfamiliar word count).
+The total value of a word count reflects the number of words, including repeats of the same word. The unique value of a word count reflects the number of words, excluding repeats. For example, a document contains the word “liquidation” three times. This word will be tallied three times when factored into the total word count, but only once into the unique word count. Most tests use the total word count variable, although there are some that use unique counts (e.g., *Spache* uses its unique unfamiliar word count).
 :::
 
-See also [Proper Nouns in the Difficult Word Lists](#proper-nouns-in-lists).
+See also \@ref(proper-nouns-in-lists).
 
 ## Reviewing the Sentences Breakdown {#reviewing-sentences-breakdown}
 
@@ -277,7 +277,7 @@ A [box plot](#box-plots) of the sentence lengths (measured by word count) is als
 
 ![](Images/SentencesBoxplot.png)
 
-The first item to review is the box, which measures the percentiles range. Above, we see that this range is 4.5 to 19.5, meaning that half of the sentences are between 4.5-19.5 words.
+The first item to review is the box, which measures the percentiles range. Above, we see that this range is 4.5–19.5, meaning that half of the sentences are between 4.5–19.5 words.
 
 Next, note the line drawn across the box—this represents the [median](#stat-terms). In this case, the median is 12.5, which means that the middle sentence is 12.5 words. This median line is almost equidistant, which implies that the sentence lengths in this range are evenly distributed.
 
@@ -288,6 +288,7 @@ Finally, any sentence lengths outside of the non-outlier range will be displayed
 A histogram is also available to visualize how the sentence lengths are distributed:
 
 ![](Images/SentencesHistogram.png)
+
 In the above graph, we can see a large portion of short sentences, with the rest falling into a normal distribution.
 
 A heatmap of these sentence lengths is also included:
@@ -310,9 +311,9 @@ After opening a project, click on the **Grammar** icon on the project sidebar an
 
 Note that each sentence is followed by its respective word count (in parentheses).
 
-You can change both the font and highlighting color by opening the [Project Properties](#options-overview) dialog and clicking the [Highlighted Reports](#options-highlighted-reports) icon. Note that changing these options from the **Project Properties** dialog will only affect the current project. If you want to make configuration changes for future projects, then go to the **Options** dialog from the **Tools** tab instead.
+You can change both the font and highlighting color by opening the [**Project Properties**](#options-overview) dialog and clicking the [Highlighted Reports](#options-highlighted-reports) icon. Note that changing these options from the **Project Properties** dialog will only affect the current project. If you want to make configuration changes for future projects, then go to the **Options** dialog from the **Tools** tab instead.
 
-For documents with numerous sentences over twenty words, it is recommended to use outlier searching. Open the **Project Properties** dialog, click the [Document Indexing](#document-analysis) icon, and select the option **Outside sentence-length outlier range**. This will make it so that only the extremely long sentences (compared to the other sentences in the document) are highlighted. This helps pinpoint the most troublesome sentences that need to be shortened.
+For documents with numerous sentences over twenty words, it is recommended to use outlier searching. Open the **Project Properties** dialog, click the [**Document Indexing**](#document-analysis) icon, and select the option **Outside sentence-length outlier range**. This will make it so that only the extremely long sentences (compared to the other sentences in the document) are highlighted. This helps pinpoint the most troublesome sentences that need to be shortened.
 
 ### Reviewing Lowercased Sentences {-#reviewing-lowercased-sentences}
 
@@ -322,7 +323,7 @@ After opening a project, click on the **Grammar** icon on the project sidebar an
 
 Lowercased sentence searching is applied to all sentences. [Incomplete sentences](#how-text-is-excluded) will be reviewed for this, even if they are excluded from the analysis.
 
-Also note that if the option [Sentences must begin with capitalized words](#options-sentence-deduction) is enabled, then this feature will be limited to sentences that begin new paragraphs. If you want to search for any possible sentences that begin with lowercased words, then you should leave this option unchecked.
+Also note that if the option [**Sentences must begin with capitalized words**](#options-sentence-deduction) is enabled, then this feature will be limited to sentences that begin new paragraphs. If you want to search for any possible sentences that begin with lowercased words, then you should leave this option unchecked.
 
 To view any sentence in its original context, double-click on it. This will take you to the [**Highlighted Report**](#reviewing-standard-grammar) page with that sentence selected.
 
@@ -393,7 +394,7 @@ After opening a project, click on the **Grammar** icon on the project sidebar an
 
 ![](Images/misspellings.png)
 
-Options for controlling how misspellings are searched for are available in the [Grammar](#options-grammar) options.
+Options for controlling how misspellings are searched for are available in the [**Grammar**](#options-grammar) options.
 
 Misspelling searching is applied to all sentences. [Incomplete sentences](#how-text-is-excluded) will be reviewed for this, even if they are excluded from the analysis.
 
@@ -527,7 +528,7 @@ To view any sentence in its original context, double-click on it. This will take
 
 ## Dolch Sight Words {#reviewing-dolch}
 
-The *Dolch Sight Words* (456-460) represent the most frequently occurring service words[^DolchPronounsFootnote] in most text, especially children's literature. Early readers need to learn and recognize these words to attain reading fluency. Many of these words cannot be sounded out or represented by pictures; therefore, they must be learned by sight[^DolchNounsListFootnote].
+The *Dolch Sight Words* (456–460) represent the most frequently occurring service words[^DolchPronounsFootnote] in most text, especially children's literature. Early readers need to learn and recognize these words to attain reading fluency. Many of these words cannot be sounded out or represented by pictures; therefore, they must be learned by sight[^DolchNounsListFootnote].
 
 If you are writing educational materials for early readers, then use as many of these words as possible to help readers practice them. Also, keep the percentage of non-Dolch words low so that readers can better focus on the sight words.
 
@@ -548,7 +549,7 @@ The **Dolch Word Coverage** section displays how much of each category is used i
 
 Notes will be shown at the bottom of the **Dolch Word Coverage** section to indicate which (if any) categories are being used well by your document. This is the best way to see whether or not your document is useful as a *Dolch* practice tool.
 
-If a document does not provide good coverage for any of the categories and/or contains numerous non-Dolch words, then it will not be an appropriate *Dolch* training document. This does not necessarily mean that it is not an appropriate document for younger readers. It simply means that the document does not use enough of the *Dolch* words to help readers learn these words. For example, The Tale of Peter Rabbit has decent coverage of the *Dolch* conjunctions and prepositions, but it also contains a large percentage of non-Dolch words. This book's readability levels indicate that it is proper for young readers. However, its high non-Dolch words percentage will make it inappropriate for readers to use it for practicing *Dolch* words.
+If a document does not provide good coverage for any of the categories and/or contains numerous non-Dolch words, then it will not be an appropriate *Dolch* training document. This does not necessarily mean that it is not an appropriate document for younger readers. It simply means that the document does not use enough of the *Dolch* words to help readers learn these words. For example, *The Tale of Peter Rabbit* has decent coverage of the *Dolch* conjunctions and prepositions, but it also contains a large percentage of non-Dolch words. This book's readability levels indicate that it is proper for young readers. However, its high non-Dolch words percentage will make it inappropriate for readers to use it for practicing *Dolch* words.
 
 To graphically view the *Dolch* coverage, click on the [**Coverage Chart**](#reviewing-dolch-graphs) icon. This will display a bar chart of these statistics, listed by category.
 
@@ -618,7 +619,7 @@ grid.newpage()
 grid.draw(legend)
 ```
 
-To customize category highlighting, click the `r keyboardButton("Properties")` button on the **Home** tab to display the **Project Properties** dialog. Then select the **Highlighted Reports** icon and select the [Dolch Sight Words](#dolch-options) subitem. Here you can choose which categories to highlight and select their respective highlight colors.
+To customize category highlighting, click the `r keyboardButton("Properties")` button on the **Home** tab to display the **Project Properties** dialog. Then select the **Highlighted Reports** icon and select the [**Dolch Sight Words**](#dolch-options) subitem. Here you can choose which categories to highlight and select their respective highlight colors.
 
 The **Non-Dolch Words** subitem will display the document with all the non-Dolch words (words that do not appear in any of the *Dolch* lists) highlighted:
 

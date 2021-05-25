@@ -24,7 +24,7 @@ The options on this page manage the program's general settings.
 
 **Import**: Click this button to import program settings and defaults from a file.
 
-**Export**: Click this button to export the current program settings to a file. This includes all your settings on the [Options](#options-overview) dialog, your defaults for the [New Project Wizard](#creating-standard-project), and your printer headers & footers.
+**Export**: Click this button to export the current program settings to a file. This includes all your settings on the [**Options**](#options-overview) dialog, your defaults for the [New Project Wizard](#creating-standard-project), and your printer headers & footers.
 
 **Reset**: Click this button to reset the program settings to the defaults.
 
@@ -302,7 +302,7 @@ After selecting your list file, its words/phrases will be displayed in the grid 
 - `r keyboardButton("INSERT")`—edits the selected item in the list. Double-clicking an item with the mouse will also edit it.
 - `r keyboardButton("CTRL")`+`r keyboardButton("INSERT")` (`r macOSCmdButton()`+`r keyboardButton("INSERT")` on macOS) —adds a new item to the list.
 
-**Add**, **Edit**, and **Remove** buttons are also available above the grid.
+Buttons to add, edit, and remove items are also available above the grid.
 
 \newpage
 
@@ -314,11 +314,11 @@ The options on this page customize the behavior of certain tests.
 
 #### Gunning Fog {-#options-gunning-fog}
 
-**Count independent clauses**: Check this option to count independent clauses as separate sentences when calculating a [Gunning Fog](#gunning-fog-test) score. Independent clauses are detected by dashes, colons, and semicolons within a sentence.
+**Count independent clauses**: Check this option to count independent clauses as separate sentences when calculating a [*Gunning Fog*](#gunning-fog-test) score. Independent clauses are detected by dashes, colons, and semicolons within a sentence.
 
 Although this behavior is recommended in *The Technique of Clear Writing*, it will produce lower scores than counting sentences with the [traditional method](#how-sentences-are-counted). This is especially true if your document contains run-on sentences. For example, if this option is checked, then an 80-word sentence with four clauses will be counted as four smaller sentences and will not adversely affect the score. If this option is unchecked, then this same sentence will be counted as a single 80-word sentence and will adversely affect the score. If you prefer to penalize run-on sentences, then leave this option unchecked.
 
-This option affects the *Gunning Fog*, **(PSK) Gunning Fog**, and **New Fog Count** tests.
+This option affects the *Gunning Fog*, *(PSK) Gunning Fog*, and *New Fog Count* tests.
 
 #### Flesch {-#options-flesch}
 
@@ -333,9 +333,9 @@ Select one of the following options to control how numerals are syllabized for *
 
 **System default**: Select this option to use the system default [numeral syllabication](#numsyllable) method.
 
-This option affects the *Flesch*, **PSK Flesch**, and *Amstad* tests.
+This option affects the *Flesch*, *PSK Flesch*, and *Amstad* tests.
 
-Note that these options are not applicable if [Also exclude numerals](#options-text-exclusion) is checked.
+Note that these options are not applicable if [**Also exclude numerals**](#options-text-exclusion) is checked.
 ::::
 
 #### Flesch-Kincaid {-#options-flesch-kincaid}
@@ -351,7 +351,7 @@ Select from the following options to control how numerals are syllabized for *Fl
 
 **System default**: Select this option to use the system default [numeral syllabication](#numsyllable) method.
 
-Note that these options are not applicable if [Also exclude numerals](#options-text-exclusion) is checked.
+Note that these options are not applicable if [**Also exclude numerals**](#options-text-exclusion) is checked.
 ::::
 
 #### Dale-Chall {-#options-dale-chall}
@@ -385,7 +385,7 @@ Select one of the following options to control how text is excluded in *Dale-Cha
 ::::
 
 ::: {.notesection data-latex=""}
-These options affect both the *New Dale-Chall* and **PSK Dale-Chall** tests. The **text exclusion** option will also affect any custom test using the following functions:
+These options affect both the *New Dale-Chall* and *PSK Dale-Chall* tests. The **Text exclusion** option will also affect any custom test using the following functions:
 
 - `CustomNewDaleChall()`
 - `UnfamiliarDaleChallWordCount()`
@@ -418,7 +418,7 @@ The **text exclusion** option will affect any custom test using the following fu
 
 ### Scores {-#options-scores}
 
-The options on this page customize which results to include in the **Readability Scores** section and how grade-level scores and reading ages are displayed. Most readability tests use U.S. K-12 (+college) grade levels to represent their scores; however, **Readability Studio** can display these scores in other formats as well. For example, a score of 4 could be shown as “Key stage 2 (year 5)” if using the **Key Stages** grade scale.
+The options on this page customize which results to include in the **Readability Scores** section and how grade-level scores and reading ages are displayed. Most readability tests use U.S. K-12 (+college) grade levels to represent their scores; however, **Readability Studio** can display these scores in other formats as well. For example, a score of 4 could be shown as “Key stage 2 (year 5)” if using the Key Stages grade scale.
 
 #### Results {-#options-results-options}
 
@@ -431,7 +431,7 @@ The options on this page customize which results to include in the **Readability
 - The score explanations shown in the [**Readability Scores**](#reviewing-test-scores) window.
 - The score display shown in the **Readability Scores** window (if **long format** is selected).
 - Selection labels on the *Fry*, *Raygor*, and *GPM* graphs.
-- The [raw and aggregated score](#reviewing-batch-scores) display in **Batch Projects** (if **long format** is selected).
+- The [raw and aggregated score](#reviewing-batch-scores) display in batch projects (if **long format** is selected).
 - The labels on the grade-level [box plot](#reviewing-batch-box-plots).
 - The bin labels on the grade-level [histograms](#reviewing-batch-histograms).
 
@@ -448,9 +448,9 @@ Calculation
 
 Reading ages are included in the [Readability Scores](#reviewing-test-scores) section within **Standard** projects next to each grade level score. Although most tests do not include reading ages, the program can calculate them from the grade-level scores. The following options are available for customizing how these ages are calculated from their respective grade-level score:
 
-**School-year range**: Select this option to display the full age range from a given grade level. For example, if a test scores at “5.3” (fifth grade), then the age range for fifth graders (i.e., “10-11”) will be used.
+**School-year range**: Select this option to display the full age range from a given grade level. For example, if a test scores at “5.3” (fifth grade), then the age range for fifth graders (i.e., “10–11”) will be used.
 
-Note that when calculating the reading-age aggregate statistics (e.g., the average reading age), the middle point of each range is used. For example, the average for two ranges such as “10-11” and “11-12” would be 11. The middle point of “10-11” is 10.5, the middle point of “11-12” is 11.5; therefore, (10.5+11.5)/2 = 11.
+Note that when calculating the reading-age aggregate statistics (e.g., the average reading age), the middle point of each range is used. For example, the average for two ranges such as “10–11” and “11–12” would be 11. The middle point of “10-11” is 10.5, the middle point of “11-12” is 11.5; therefore, (10.5+11.5)/2 = 11.
 
 **Round to semester**: Select this option to calculate a reading age from a grade level by rounding the grade level. For example, a grade level score of “5.3” will be seen as the first semester of fifth grade and the starting age of most fifth graders (i.e., “10”) will be used as the reading age. As another example, a grade level score of “5.6” will be seen as the second semester of fifth grade and the graduating age of most fifth graders (i.e., “11”) will be used as the reading age.
 
@@ -507,13 +507,13 @@ The options on this page customize which statistics to include in your reports a
 
 **Words**: Check this to include the word statistics in the report.
 
-**Explanation**: Check this to include the **Dolch** explanation in the report.
+**Explanation**: Check this to include an explanation of *Dolch* in the report.
 
 \newpage
 
 ## Words Breakdown {#options-words-breakdown}
 
-The options on this page customize which results are included in the [Words Breakdown](#reviewing-word-breakdowns) section.
+The options on this page customize which results are included in the [**Words Breakdown**](#reviewing-word-breakdowns) section.
 
 ### Results {-}
 
@@ -541,7 +541,7 @@ The options on this page customize which results are included in the [Words Brea
 
 ## Sentences Breakdown {#options-sentences-breakdown}
 
-The options on this page customize which results are included in the [Sentences Breakdown](#reviewing-sentences-breakdown) section.
+The options on this page customize which results are included in the [**Sentences Breakdown**](#reviewing-sentences-breakdown) section.
 
 ### Results {-}
 
@@ -602,10 +602,10 @@ The options in this section select what the spell checker should ignore.
 **Ignore programmer code**: Check this to not spell check words with mixed upper and lower case words. This is useful for excluding programming syntax which may appear in computer-related documents. For example:
 
 > “Projects can be exported via Lua like this:  
->   
-> `r verbatim("a = StandardProject(\"CrawfordValidation.rsp\")")`
 > 
-> `r verbatim("a:ExportAll(\"Results\")")`”
+> a = StandardProject(`r verbatim_latex('"')`CrawfordValidation.rsp`r verbatim_latex('"')`)
+> 
+> a:ExportAll(`r verbatim_latex('"')`Results`r verbatim_latex('"')`)”
 
 Checking this option will instruct the program to not spell check words such as “StandardProject” and “ExportAll.”
 
@@ -613,7 +613,7 @@ Checking this option will instruct the program to not spell check words such as 
 
 > He's been takin' that test for five hours. He ain't never goin' to finish.
 
-Checking this option will instruct the program to not consider words such as “takin’” and “goin’” as misspellings.
+Checking this option will instruct the program to not consider words such as “takin`r verbatim_latex('’”')` and “goin`r verbatim_latex('’”')` as misspellings.
 
 **Ignore social media hashtags**: Check this to ignore hashtags, such as “#ReadabilityFormulasRock”.
 
@@ -635,7 +635,7 @@ The options on this page customize the display of the text views.
 
 **Difficult words and sentences color**: Click this button to select the color to highlight words and sentences considered difficult in the document viewing area.
 
-**Grammar errors color**: Click this button to select the color to highlight grammar errors (e.g., repeated words and misspellings). This highlighting will appear in the [Grammar](#reviewing-standard-grammar) document view.
+**Grammar errors color**: Click this button to select the color to highlight grammar errors (e.g., repeated words and misspellings). This highlighting will appear in the [**Grammar**](#reviewing-standard-grammar) document view.
 
 **Wordy items color**: Click this button to select the color to highlight wordy phrases and difficult words. This highlighting will appear in the **Grammar** document view.
 
@@ -653,23 +653,23 @@ Highlight text by changing its
 
 ### Dolch Sight Words {-#dolch-options}
 
-The options on this page select which categories of [Dolch](#reviewing-dolch) words to highlight and how to highlight them.
+The options on this page select which categories of [*Dolch*](#reviewing-dolch) words to highlight and how to highlight them.
 
 #### Highlighting {-}
 
-**Dolch conjunctions color**: Select this checkbox to highlight **Dolch** conjunctions in the **Dolch** text window. Click the adjacent button to select the color to highlight these words.
+**Dolch conjunctions color**: Select this checkbox to highlight *Dolch* conjunctions in the text window. Click the adjacent button to select the color to highlight these words.
 
-**Dolch prepositions color**: Select this checkbox to highlight **Dolch** prepositions in the **Dolch** text window. Click the adjacent button to select the color to highlight these words.
+**Dolch prepositions color**: Select this checkbox to highlight *Dolch* prepositions in the text window. Click the adjacent button to select the color to highlight these words.
 
-**Dolch pronouns color**: Select this checkbox to highlight **Dolch** pronouns in the **Dolch** text window. Click the adjacent button to select the color to highlight these words.
+**Dolch pronouns color**: Select this checkbox to highlight *Dolch* pronouns in the text window. Click the adjacent button to select the color to highlight these words.
 
-**Dolch adverbs color**: Select this checkbox to highlight **Dolch** adverbs in the **Dolch** text window. Click the adjacent button to select the color to highlight these words.
+**Dolch adverbs color**: Select this checkbox to highlight *Dolch* adverbs in the text window. Click the adjacent button to select the color to highlight these words.
 
-**Dolch adjectives color**: Select this checkbox to highlight **Dolch** adjectives in the **Dolch** text window. Click the adjacent button to select the color to highlight these words.
+**Dolch adjectives color**: Select this checkbox to highlight *Dolch* adjectives in the text window. Click the adjacent button to select the color to highlight these words.
 
-**Dolch verbs color**: Select this checkbox to highlight **Dolch** verbs in the **Dolch** text window. Click the adjacent button to select the color to highlight these words.
+**Dolch verbs color**: Select this checkbox to highlight *Dolch* verbs in the text window. Click the adjacent button to select the color to highlight these words.
 
-**Dolch nouns color**: Select this checkbox to highlight **Dolch** nouns in the **Dolch** text window. Click the adjacent button to select the color to highlight these words.
+**Dolch nouns color**: Select this checkbox to highlight *Dolch* nouns in the text window. Click the adjacent button to select the color to highlight these words.
 
 \newpage
 
@@ -816,11 +816,11 @@ Sorting
 
 **Create a bin for each unique value**: Select this option to create a bin (i.e., a bar) for every unique value. If you have floating-point grade scores and are not rounding your values, then a bin for every unique floating-point value will be created. If you select this option, then it is recommended to set the rounding option to **Round down**.
 
-**Sort by interval**: Select this option to have the program select the best bin sizes based on the range of your data. Rather than having a bin for each unique value, bins will be created for ranges of values. For example, you may have a bin representing values for grades 2-4, rather than having separate bins for 2, 3, and 4.
+**Sort by interval**: Select this option to have the program select the best bin sizes based on the range of your data. Rather than having a bin for each unique value, bins will be created for ranges of values. For example, you may have a bin representing values for grades 2–4, rather than having separate bins for 2, 3, and 4.
 
-**Sort by neat interval**: Select this option to have the program select the best integral bin sizes based on the range of your data. This option is the same as **Sort by interval**, except that it will force the bin ranges and bin sizes to be integer values. This will prevent having ranges beginning at values such as 2.4 and will also force the bin widths into sizes such as 2 or 3 (rather than 3.2). By selecting this option, your intervals will precisely represent grade ranges (e.g., grades 2-4) and prevent any overlap between the grades in your bins (if rounding the values).
+**Sort by neat interval**: Select this option to have the program select the best integral bin sizes based on the range of your data. This option is the same as **Sort by interval**, except that it will force the bin ranges and bin sizes to be integer values. This will prevent having ranges beginning at values such as 2.4 and will also force the bin widths into sizes such as 2 or 3 (rather than 3.2). By selecting this option, your intervals will precisely represent grade ranges (e.g., grades 2–4) and prevent any overlap between the grades in your bins (if rounding the values).
 
-Note that if you are not rounding down your values, then scores with no mantissa (fractional part) may fall into a bin different from the same values with fractional parts. For example, if you have a bin ranging from 1-2 and another ranging from 2-3, then the first bin represents values > 1 and `r lessThanOrEqualTo()` 2, and the second bin represents values > 2 and `r lessThanOrEqualTo()` 3. If you are not rounding down your scores, then a score of 2 will fall into the 1-2 bin, whereas a score of 2.1 will fall into the 2-3 bin. If you select this option, then it is recommended to set the rounding option to **Round down**. This will ensure that values such as 2 and 2.1 fall into the same bin.
+Note that if you are not rounding down your values, then scores with no mantissa (fractional part) may fall into a bin different from the same values with fractional parts. For example, if you have a bin ranging from 1–2 and another ranging from 2–3, then the first bin represents values > 1 and `r lessThanOrEqualTo()` 2, and the second bin represents values > 2 and `r lessThanOrEqualTo()` 3. If you are not rounding down your scores, then a score of 2 will fall into the 1-2 bin, whereas a score of 2.1 will fall into the 2–3 bin. If you select this option, then it is recommended to set the rounding option to **Round down**. This will ensure that values such as 2 and 2.1 fall into the same bin.
 
 Also note that if data for a particular histogram contain four or less unique values, then unique value binning will be used.
 ::::
