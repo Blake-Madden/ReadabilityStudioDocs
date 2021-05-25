@@ -64,7 +64,7 @@ Standard familiar-word tests normally consider numbers and proper nouns as famil
 
 ![](Images/CustomTestTreat.png)
 
-Finally, you can specify how this test interacts with the [New Project Wizard](#creating-standard-project) by associating it with document types and industries. Click the **Classification** icon to display these options. Then select all the documents and industries that this test should relate to.
+Finally, you can specify how this test interacts with the [**New Project Wizard**](#creating-standard-project) by associating it with document types and industries. Click the **Classification** icon to display these options. Then select all the documents and industries that this test should relate to.
 
 For example, select the **Children's literature** and **Children's healthcare** check boxes (as shown below) and click `r keyboardButton("OK")`.
 

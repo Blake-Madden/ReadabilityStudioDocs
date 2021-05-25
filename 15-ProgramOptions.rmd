@@ -24,7 +24,7 @@ The options on this page manage the program's general settings.
 
 **Import**: Click this button to import program settings and defaults from a file.
 
-**Export**: Click this button to export the current program settings to a file. This includes all your settings on the [**Options**](#options-overview) dialog, your defaults for the [New Project Wizard](#creating-standard-project), and your printer headers & footers.
+**Export**: Click this button to export the current program settings to a file. This includes all your settings on the [**Options**](#options-overview) dialog, your defaults for the [**New Project Wizard**](#creating-standard-project), and your printer headers & footers.
 
 **Reset**: Click this button to reset the program settings to the defaults.
 
