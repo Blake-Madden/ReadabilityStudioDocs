@@ -112,6 +112,23 @@
   padding: inherit;
 }
 
+/* center an image inside of "center" div.*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.center img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* Size has to be passed to image via markdown for LaTex,
+     but in here we want the image to the 100% of the parent container.*/
+  width: 100% !important;
+}
+
 .figure {
   text-align: center;
 }
