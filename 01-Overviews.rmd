@@ -184,7 +184,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 #### Analysis/Test Enhancements {-}
 
 - Added [goals](#reviewing-goals) feature to warn if a document's scores do not fall within a certain range.
-- Added [Schwartz test](#scwartz) (German projects only).
+- Added [*Schwartz* test](#scwartz) (German projects only).
 - Added a graph to visualize *Lix* index scores.
 - Added a graph to visualize German *Lix* index scores.
 - Added a graph to visualize *Danielson-Bryan 2* scores.
@@ -193,7 +193,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - Instruction label now shown on all *Flesch* charts (not just blank ones).
 - Added custom test features:
   - Added feature to create custom tests based on any existing formula-based test. Refer to \@ref(creating-custom-flesch-test) for an example.
-  - Added `GunningFog` option to `SentenceCount()` function. This will return the sentence count using the system's [Gunning Fog method](#options-gunning-fog).
+  - Added `GunningFog` option to `SentenceCount()` function. This will return the sentence count using the system's [*Gunning Fog* method](#options-gunning-fog).
   - Added `MiniWordCount()` function.
   - Added `HardFogWordCount()` function.
 - [*Farr-Jenkins-Paterson*](#farr-jenkins-paterson) now includes floating-point precision in its results.
@@ -415,7 +415,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - Graphs can now show a custom color and image as its background together (color will be shown underneath the image).
 - Graph background image opacity editor now shows the image with the proper aspect ratio.
 - Color of axis labels can now be changed.
-- Short/long words and sentences labels added to the [Fry graph](#fry-test).
+- Short/long words and sentences labels added to the [*Fry* graph](#fry-test).
 - Grade levels are now shown in long format on batch project histograms if there is enough space for them.
 
 #### Bug Fixes {-}
@@ -449,7 +449,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
     - [*Danielson-Bryan* 1 & 2](#danielson-bryan-1)
     - [*Easy Listening Formula*](#easy-listening-formula)
     - [*Amstad*](#amstad)
-    - *[Lix* (German children's literature)](#lix-german-childrens-literature)
+    - [*Lix* (German children's literature)](#lix-german-childrens-literature)
     - [*Lix* (German technical literature)](#lix-german-technical)
     - [*Neue Wiener Sachtextformel* 1–3](#neue-wiener-sachtextformel1)
     - [*Quadratwurzelverfahren*](#qu-bamberger-vanecek)

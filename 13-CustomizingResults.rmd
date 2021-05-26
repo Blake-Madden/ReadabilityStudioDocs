@@ -44,7 +44,7 @@ Options for customizing its display are made available on the **Edit** section o
 
 ## Column Sorting {#column-sorting}
 
-:::{.wrapfigure data-latex="{r}{0.5\\textwidth}"}
+::: {.wrapfigure data-latex="{r}{0.5\\textwidth}"}
 ![](Images/columnheader.png){width=48%}
 :::
 

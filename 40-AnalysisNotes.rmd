@@ -88,7 +88,7 @@ In this situation, the header would be joined with the first sentence. Additiona
 - There are no blank lines following the line
 - The next line of text is not tabbed over or bulleted
 
-In the above example, the program will detect the blank line between the header and the first sentence and not chain them together. Instead, the header will be seen as an [incomplete sentence](#how-text-is-excluded). The program will also detect how the list items are tabbed over and not chain them together. Instead, each list item will be seen as an incomplete sentence. Any line that begins with a tab or two (or more) spaces will be considered as a tabbed line. Lines that begin with hyphens, dashes, or numbers followed by a period will be considered “bulleted” and will also not be chained to the proceeding sentence.
+In the above example, the program will detect the blank line between the header and the first sentence and not chain them together. Instead, the header will be seen as an [incomplete sentence](#how-text-is-excluded). The program will also detect how the list items are tabbed over and not chain them together. Instead, each list item will be seen as an incomplete sentence. Any line that begins with a tab or two (or more) spaces will be considered as a tabbed line. Lines that begin with hyphens, dashes, or numbers followed by a period will be considered bulleted and will also not be chained to the proceeding sentence.
 
 As we can see, the program helps avoid incorrect line chaining. Just as important, it will chain lines correctly when it is actually necessary. Consider the following:
 

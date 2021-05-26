@@ -22,7 +22,7 @@ Select any test in the results grid to display an explanation of its score in th
 
 Along with an explanation of the test's results, the factors that it uses to determine difficulty are also shown. For example, if **Sentence Length** and **Word Length** have an “X” next to them, then these variables are used in the test's equation. To lower the score for a given test, try to improve its factors (e.g., lower the document's average sentence length).
 
-Finally, the averages (means) of your test scores and ages are displayed at the bottom of the results window. Their respective [modes](#stat-terms), [medians](#stat-terms), and [standard deviations](#stat-terms) are also included if [Extended Information](#options-summary-report) is enabled. Note that scores are truncated when searching for the grade-level mode. For example, “6.7” and “6.2” will both be treated as “6.” Mode generally requires discrete data to produce meaningful results; therefore, grade-level scores are converted to their base grades for this statistic.
+Finally, the averages (means) of your test scores and ages are displayed at the bottom of the results window. Their respective [modes](#stat-terms), [medians](#stat-terms), and [standard deviations](#stat-terms) are also included if [**Extended Information**](#options-summary-report) is enabled. Note that scores are truncated when searching for the grade-level mode. For example, “6.7” and “6.2” will both be treated as “6.” Mode generally requires discrete data to produce meaningful results; therefore, grade-level scores are converted to their base grades for this statistic.
 
 When calculating these statistics, failed test scores are treated as missing observations and not included. For example, let us say that you included 5 tests, but one of them could not be calculated. In this case, the valid 4 scores will be added and divided by 4 (not 5) to acquire the means. Also, grade range scores–such as “5–6” from [*New Dale-Chall*](#dale-chall-test)–will be converted to its own average (e.g., “5-6” will be 5.5).
 
@@ -78,7 +78,7 @@ The *FRASE* graph is similar to *Fry* in terms of factors used and axis orientat
 knitr::include_graphics("Images/FraseGraph.png")
 ```
 
-A key difference with *FRASE* is its use of **reading** levels (rather than **grade** levels). In the above example, we can see that the document has been scored at the “Intermediate” level. The other difference is that it is designed for Spanish text—note how its X (syllable-count) axis begins at 182, not 108.
+A key difference with *FRASE* is its use of reading levels (rather than grade levels). In the above example, we can see that the document has been scored at the “Intermediate” level. The other difference is that it is designed for Spanish text—note how its X (syllable-count) axis begins at 182, not 108.
 
 The *Crawford* graph is also similar to *Fry* in terms of factors used. However, it differs from most other graphs in that it uses the interior of the plot to find its sentence-count factor (instead of an axis). Below is an example of a *Crawford* graph:
 
@@ -134,7 +134,9 @@ Goals are recommended score ranges that a document should fall within.
 
 If a project contains goals, then a **Goals** section will be available to show whether they were met. For example:
 
-![](Images/StandardProjectGoals.png)
+::: {.center data-latex=""}
+![](Images/StandardProjectGoals.png){width=50%}
+:::
 
 In the above image, we can see that this project is recommending:
 
@@ -239,13 +241,13 @@ A **Word Counts** [bar chart](#options-bar-charts) is also included in this sect
 
 ![](Images/barchart.png)
 
-In the above example, we can see that there are 70 unfamiliar *Dale-Chall* words, but only 42 **3+ syllable** words. From this, we could infer that we should first concentrate on replacing these unfamiliar words. Lists of these words can be found by clicking on the [**Difficult Words**](#reviewing-word-breakdowns) icon on the project sidebar.
+In the above example, we can see that there are 70 unfamiliar *Dale-Chall* words, but only 42 3+ syllable words. From this, we could infer that we should first concentrate on replacing these unfamiliar words. Lists of these words can be found by clicking on the [**Difficult Words**](#reviewing-word-breakdowns) icon on the project sidebar.
 
 Finally, a histogram of the words (grouped by syllable count) is also available:
 
 ![](Images/SyllableCountHistogram.png)
 
-In the above histogram, we see that most of the words are either 1 or 2 syllables. There are only 25 3-syllable words and 17 4-syllable words in the document. Note that selecting a bar will display the first 25 words within that syllable group (if [binning](#options-histograms) is set to **unique values**).
+In the above histogram, we see that most of the words are either 1 or 2 syllables. There are only 25 3-syllable words and 17 4-syllable words in the document. Note that selecting a bar will display the first 25 words within that syllable group (if [binning](#options-histograms) is set to unique values).
 
 ::: {.notesection data-latex=""}
 The total value of a word count reflects the number of words, including repeats of the same word. The unique value of a word count reflects the number of words, excluding repeats. For example, a document contains the word “liquidation” three times. This word will be tallied three times when factored into the total word count, but only once into the unique word count. Most tests use the total word count variable, although there are some that use unique counts (e.g., *Spache* uses its unique unfamiliar word count).
@@ -261,7 +263,7 @@ A list of overly-long sentences:
 
 ![](Images/featuressentencelist.png)
 
-Note that if you are ignoring incomplete sentences, then this list will only include the complete sentences. If you need to review all the sentences from the document, then select the option [Do not exclude any text](#options-text-exclusion). Refer to \@ref(how-text-is-excluded) to learn more about how **Readability Studio** handles incomplete sentences.
+Note that if you are ignoring incomplete sentences, then this list will only include the complete sentences. If you need to review all the sentences from the document, then select the option [**Do not exclude any text**](#options-text-exclusion). Refer to \@ref(how-text-is-excluded) to learn more about how **Readability Studio** handles incomplete sentences.
 
 To find the longest sentence, [sort](#column-sorting) the **Word Count** column into descending order. As you can see below, the longest sentence is now shown at the top of the list.
 
@@ -585,41 +587,9 @@ The **Dolch Words** subitem will display the document with the *Dolch* words hig
 
 Each category (e.g., nouns) will be highlighted by a different color.
 
-```{r, echo=F, fig.dim=c(2,2.5), fig.cap="Dolch highlighting legend", fig.align='center'}
-
-# translatable content
-Labels = c("Excluded text", "Dolch conjunctions",
-  "Dolch prepositions", "Dolch pronouns", "Dolch adverbs",
-  "Dolch adjectives", "Dolch verbs")
-# end translatable content
-
-library(ggplot2)
-library(dplyr)
-library(cowplot)
-library(grid)
-library(gridExtra)
-
-myData <- data.frame(numbers=1:7,
-                     labels=Labels)
-myData$labels = factor(myData$labels, levels=myData$labels)
-
-hist <- ggplot(myData, aes(numbers, fill=labels)) + geom_bar() +
-  scale_fill_manual(values=c("grey","yellow",
-                             rgb(0,245,255,maxColorValue=255),
-                             rgb(198,226,255,maxColorValue=255),
-                             rgb(0,250,154,maxColorValue=255),
-                             rgb(221,160,221,maxColorValue=255),
-                             rgb(254,208,112,maxColorValue=255))) +
-  labs(fill="", legend="") +
-  theme(legend.background = element_blank(),
-    legend.box.background = element_rect(colour = "darkgrey"))
-
-legend <- cowplot::get_legend(hist)
-grid.newpage()
-grid.draw(legend)
-```
-
 To customize category highlighting, click the `r keyboardButton("Properties")` button on the **Home** tab to display the **Project Properties** dialog. Then select the **Highlighted Reports** icon and select the [**Dolch Sight Words**](#dolch-options) subitem. Here you can choose which categories to highlight and select their respective highlight colors.
+
+`r menu(c('Home', 'Project Properties', 'Highlighted Reports', 'Dolch Sight Words'))`
 
 The **Non-Dolch Words** subitem will display the document with all the non-Dolch words (words that do not appear in any of the *Dolch* lists) highlighted:
 
@@ -643,7 +613,7 @@ The **Non-Dolch Words** subitem will display a list of the words from the docume
 
 Next to each word will be a **Frequency** column, which will represent the number of times the word appears in the file.
 
-A high volume of non-Dolch words will adversely affect a document's ability to be a good *Dolch* practice tool. If the non-Dolch word count is high, consider replacing or removing words from this list that have high frequency counts.
+A high volume of non-Dolch words will adversely affect a document's ability to be a good *Dolch* practice tool. If the non-*Dolch* word count is high, consider replacing or removing words from this list that have high frequency counts.
 
 Double-click on any word in this list to display the [**Non-Dolch Words**](#reviewing-dolch-text) text window with the first instance of that word selected.
 

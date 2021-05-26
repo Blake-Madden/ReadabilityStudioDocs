@@ -6,7 +6,7 @@ In this chapter, we will step through how to exclude text from an analysis. Afte
 
 When reviewing a document, it is usually preferable to ignore certain items, such as headers and citations (refer to \@ref(how-text-is-excluded) for more information). In this example, we will discuss the various methods for excluding these items.
 
-The first step is to open the example file **Danielson-Bryan**. From the **Help** tab, click the `r keyboardButton("Example Documents")` button and then select **Danielson-Bryan** from the menu. (When prompted about how to open the document, select **Create a new project**.) When the **New Project Wizard** appears, leave the defaults and click `r keyboardButton("Finish")`. A warning about an incomplete sentence being included because of its length will appear:
+The first step is to open the example file **Danielson-Bryan**. From the **Help** tab, click the `r keyboardButton("Example Documents")` button and then select **Danielson-Bryan** from the menu. (When prompted about how to open the document, select **Create a new project**.) When the **New Project** wizard appears, leave the defaults and click `r keyboardButton("Finish")`. A warning about an incomplete sentence being included because of its length will appear:
 
 ![](Images/NonGenerated/ExclusionExampleIncompleteSentWarning.png)
 
@@ -124,7 +124,7 @@ All the options discussed here are also offered on the **Document** tab of the r
 
 ## Creating a Test Bundle
 
-[Test bundles](#test-bundles) are a convenient way to add multiple tests to a project at once. In this example, we will create a test bundle named “4F” which includes the [**F**ry](#fry-test), [**F**ORCAST](#forcast-test), [**F**og](#gunning-fog-test), and [**F**lesch-Kincaid](#flesch-kincaid-test) tests. The first step is to select the **Readability** tab, click the `r keyboardButton("Bundles")` button, and select **Add...** from the menu. This will open the **Add Test Bundle** dialog:
+[Test bundles](#test-bundles) are a convenient way to add multiple tests to a project at once. In this example, we will create a test bundle named “4F” which includes the [*Fry*](#fry-test), [*FORCAST*](#forcast-test), [*Fog*](#gunning-fog-test), and [*Flesch-Kincaid*](#flesch-kincaid-test) tests. The first step is to select the **Readability** tab, click the `r keyboardButton("Bundles")` button, and select **Add...** from the menu. This will open the **Add Test Bundle** dialog:
 
 ![](Images/TestBundle.png)
 

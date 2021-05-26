@@ -88,7 +88,7 @@ When you change the width or height, the other measurement will be adjusted auto
 
 This option is available only when exporting as a TIFF file.
 
-::: {.optionssection data-latex=""}
+:::: {.optionssection data-latex=""}
 ::: {.optionssectiontitle data-latex=""}
 Compression
 :::
@@ -102,7 +102,7 @@ This option specifies the compression level of the TIFF file and includes the fo
 **JPEG**: lossy compression method. Suitable for high-color images, but some quality may be lost.
 
 **Deflate**: lossless, high-compression method.
-:::
+::::
 
 ## List Export Options {#export-list}
 
@@ -154,7 +154,7 @@ This dialog provides options for [exporting](#exporting) an entire project into 
 
 **Export words breakdown**: Select this option to export all the windows from the [**Words Breakdown**](#reviewing-word-breakdowns) section.
 
-**Export sentences breakdown**: Select this option to export all the windows from the [Sentences Breakdown](#reviewing-sentences-breakdown) section.
+**Export sentences breakdown**: Select this option to export all the windows from the [**Sentences Breakdown**](#reviewing-sentences-breakdown) section.
 
 **Export grammar section**: Select this option to export all the windows from the **Grammar** section.
 
@@ -302,11 +302,11 @@ Any extended ASCII character not listed above will be removed from the document.
 
 **Remove trailing periods from abbreviations and acronyms**: Check this option to remove the last period from abbreviations and acronyms. For example:
 
-> “Dr. Jones has requested a copy of the S.T.A.R.T. report.”
+> “Dr. Jones has requested a copy of the S.W.O.T. report.”
 
 will be exported as:
 
-> “Dr Jones has requested a copy of the S.T.A.R.T report.”
+> “Dr Jones has requested a copy of the S.W.O.T report.”
 
 This option is recommended for other programs that may have difficulty deducing sentences properly because of these periods.
 

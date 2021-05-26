@@ -35,7 +35,7 @@ After entering your formula, you will need to specify what type of test this wil
 
 - Grade level
 - Index value
-- [Predicted cloze score](#cloze)
+- [Predicted *cloze* score](#cloze)
 ```
 
 If your test is using any of the predefined familiar-word formulas (`CustomNewDaleChall()`, `CustomSpache()`, `CustomHarrisJacobson()`) or using the functions `UnfamiliarWordCount()` or `UniqueUnfamiliarWordCount()`, then you will need to define how familiar words are detected. Expand **Familiar Words** to view two sections: [**Word Lists**](#custom-word-list) and [**Proper Nouns & Numerals**](#custom-proper-numerals).
