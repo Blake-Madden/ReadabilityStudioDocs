@@ -81,7 +81,7 @@
 }
 
 /* displays a label as a keyboard button.*/
-.key {
+.keys {
   display: inline-block;
   margin: 0 .1em;
   padding: .1em .6em;
@@ -95,6 +95,33 @@
   border-radius: 3px;
   box-shadow: 0 1px 1px rgb(12 13 14 / 15%), inset 0 1px 0 0 #fff;
   overflow-wrap: break-word;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 
 /* places an image to the right of the text, consuming half of the page.*/

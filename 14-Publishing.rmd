@@ -4,7 +4,7 @@
 
 All graphs\index{graphs!saving}, lists\index{lists!saving}, statistical summaries\index{summaries!saving}, and highlighted text windows\index{text windows!saving} can be exported from **Readability Studio**. This is useful for reviewing the results outside the program, as well as publishing and sharing them with colleagues.
 
-To export any window, go to the **Home** tab and click the `r keyboardButton("Save")` button, or right click on the window and select **Save**.
+To export any window, go to the **Home** tab and click the `r keys("Save")` button, or right click on the window and select **Save**.
 
 Numerous formats are available for each type of window:
 
@@ -120,7 +120,7 @@ After selecting the file format, these additional options will be provided.
 
 **Only export selected rows**: Check this option to only export the selected rows in the list.
 
-**Insert page breaks**: Check this option to split the list into smaller tables with page breaks between them. These tables will be sized to fit your current [printer](#printing) paper size and orientation. Additionally, a page break will be inserted between each table, which will appear when you print this output from a web browser. To change either your paper size or orientation, select **Page Setup** from the `r keyboardButton("Print")` button's menu.
+**Insert page breaks**: Check this option to split the list into smaller tables with page breaks between them. These tables will be sized to fit your current [printer](#printing) paper size and orientation. Additionally, a page break will be inserted between each table, which will appear when you print this output from a web browser. To change either your paper size or orientation, select **Page Setup** from the `r keys("Print")` button's menu.
 
 This option only applies to HTML exporting.
 
@@ -138,7 +138,7 @@ The options here specify the range of columns and rows to export.
 
 ## Export All Options {#export-all-options}
 
-Select **Export All** from the `r keyboardButton("Save")` button's menu to display the **Export All Options** dialog.
+Select **Export All** from the `r keys("Save")` button's menu to display the **Export All Options** dialog.
 
 This dialog provides options for [exporting](#exporting) an entire project into a single report or folder of separate files.
 
@@ -178,13 +178,13 @@ This dialog provides options for [exporting](#exporting) an entire project into 
 
 All graphs\index{graphs!printing}, lists\index{lists!printing}, statistical summaries\index{summaries!printing}, and highlighted text windows\index{text windows!printing} can be printed from **Readability Studio**. This is useful for reviewing the results outside the program, and for publishing and sharing them with colleagues.
 
-To print any window, go to the **Home** tab and click the `r keyboardButton("Print")` button, or right click on the window and select **Print**.
+To print any window, go to the **Home** tab and click the `r keys("Print")` button, or right click on the window and select **Print**.
 
 :::  {.wrapfigure data-latex="{r}{0.5\\textwidth}"}
 ![](Images/printerheadersfooters.png){width=48%}
 :::
 
-Clicking the arrow beneath the `r keyboardButton("Print")` button will open a menu containing additional printing options. For example, to change the paper size or orientation of your printouts, select **Page Setup** from this menu.
+Clicking the arrow beneath the `r keys("Print")` button will open a menu containing additional printing options. For example, to change the paper size or orientation of your printouts, select **Page Setup** from this menu.
 
 To add headers or footers to your printouts, select **Headers & Footers** from this menu.
 
@@ -240,9 +240,9 @@ Refer to \@ref(how-text-is-excluded) to learn how **Readability Studio** automat
 
 There may be times when you would need a filtered copy of your document. For example, you might need to process your document through another program which does not have auto-filtering. In this situation, you can export a copy of your document with these aforementioned items removed. Then you can analyze your document with other software without needing to manually filter it.
 
-To do this, click on the **Home** tab of the ribbon, click on the arrow below the `r keyboardButton("Save")` button, and select **Export Filtered Document**. After excluding incomplete sentences from your document, you will be presented with additional options. Once you have specified your filtering options, the **Preview Filtered Document** dialog (shown on the right) will display a preview.
+To do this, click on the **Home** tab of the ribbon, click on the arrow below the `r keys("Save")` button, and select **Export Filtered Document**. After excluding incomplete sentences from your document, you will be presented with additional options. Once you have specified your filtering options, the **Preview Filtered Document** dialog (shown on the right) will display a preview.
 
-Finally, click `r keyboardButton("OK")` to save the file.
+Finally, click `r keys("OK")` to save the file.
 
 ::: {.tipsection data-latex=""}
 Which incomplete-sentence removal method used is controlled by your project's [text exclusion options](#options-text-exclusion).

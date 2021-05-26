@@ -6,7 +6,7 @@ In this chapter, we will step through some simple examples demonstrating how to 
 
 ## Analyzing a Book {#book-example}
 
-In this example, we will analyze a literary novel to help determine which age group it is most appropriate for (in terms of readability, not content). The first step is to open the **New Project** wizard and choose the book. Click the `r keyboardButton("New")` button on the **Home** tab to open the **New Project** wizard. First, select **English** as the document language (if this option is available). Then, select the option **Read text from a file or webpage**. Click the button next to the file path field to browse for it:
+In this example, we will analyze a literary novel to help determine which age group it is most appropriate for (in terms of readability, not content). The first step is to open the **New Project** wizard and choose the book. Click the `r keys("New")` button on the **Home** tab to open the **New Project** wizard. First, select **English** as the document language (if this option is available). Then, select the option **Read text from a file or webpage**. Click the button next to the file path field to browse for it:
 
 ![](Images/exampleselectfile.png)
 
@@ -14,9 +14,9 @@ In this example, we will analyze a literary novel to help determine which age gr
 The language option is only available in the **Language Pack** and **Professional** editions of **Readability Studio**.
 :::
 
-This will open the **Select Document to Analyze** dialog. Choose the file that you want to analyze and click the `r keyboardButton("Open")` button to accept.
+This will open the **Select Document to Analyze** dialog. Choose the file that you want to analyze and click the `r keys("Open")` button to accept.
 
-You will then return to the **Document** page. Click the `r keyboardButton("Forward >")` button to proceed to the **Test Selection** dialog, as shown below:
+You will then return to the **Document** page. Click the `r keys("Forward >")` button to proceed to the **Test Selection** dialog, as shown below:
 
 ![](Images/wizardreadabilitymethods.png)
 
@@ -24,7 +24,7 @@ Because this is a literary work, select the **Recommend tests based on document 
 
 ![](Images/wizarddoctypelitselected.png)
 
-Finally, click the `r keyboardButton("Finish")` button to begin analyzing the project.
+Finally, click the `r keys("Finish")` button to begin analyzing the project.
 
 At this point we can review the test scores of the book (by clicking on the **Readability Scores** icon on the project sidebar) to help determine its reading level. As we can see below, Charles Dickens's *A Christmas Carol* appears to be readable for at least readers in the 10-13 age (or above) range. This implies that it may be too difficult for younger readers due to longer sentences and/or difficult words.
 
@@ -32,7 +32,7 @@ At this point we can review the test scores of the book (by clicking on the **Re
 
 To help understand why this book may be difficult for younger readers, click on the **Words Breakdown** icon on the project sidebar to display various lists of difficult words. Select the **3+ syllable words** subitem to view the list of complex words.
 
-Next, we will sort this list, going from highest to lowest syllable count. Click the `r keyboardButton("Sort")` button on the ribbon and select **Sort Descending** from the button's menu. On the **Sort Columns Descending** dialog, double click on the first row in the grid and select the column **Syllable Count**. Then double click on the row below that and select **Frequency**. These options will tell the program to sort the words from highest to lowest syllable count, and in the case of any ties to sort by frequency. Click `r keyboardButton("OK")` to sort the list.
+Next, we will sort this list, going from highest to lowest syllable count. Click the `r keys("Sort")` button on the ribbon and select **Sort Descending** from the button's menu. On the **Sort Columns Descending** dialog, double click on the first row in the grid and select the column **Syllable Count**. Then double click on the row below that and select **Frequency**. These options will tell the program to sort the words from highest to lowest syllable count, and in the case of any ties to sort by frequency. Click `r keys("OK")` to sort the list.
 
 Now the words will be sorted by syllable count and then by frequency. As illustrated below, there are many words containing five or more syllables, which can be very difficult for most readers of any age.
 
@@ -40,17 +40,17 @@ Now the words will be sorted by syllable count and then by frequency. As illustr
 
 If you are an educator assigning this book to your students, you can export the more difficult words to a report. You can hand this report out to your students and ask them to define these terms before reading the book. This will help prepare them for the book and make it easier and more enjoyable to read.
 
-To do this, click the `r keyboardButton("Save")` button on the **Home** tab and use the **Save As...** dialog to save this list to either an HTML or text file. You can also do this with any of the other difficult word lists, such as the **Spache unfamiliar words** list. Refer to \@ref(vocab-builder-example) for an example.
+To do this, click the `r keys("Save")` button on the **Home** tab and use the **Save As...** dialog to save this list to either an HTML or text file. You can also do this with any of the other difficult word lists, such as the **Spache unfamiliar words** list. Refer to \@ref(vocab-builder-example) for an example.
 
 ## Improving Students' Vocabulary {#vocab-builder-example}
 
 In this example, we will save a list of the more complex words from a book. If you are an educator, you can send this list to your students and ask them to define these words prior to reading the book. This can be a great way to prepare them for future readings, as well as helping them build their overall vocabulary.
 
-Continuing from the [previous example](#book-example)(see \@ref(book-example)), select the top item in the hard word list. Now scroll down to the last word that has five syllables, hold down the `r keyboardButton("SHIFT")` key, and select this word. Now you will have all the words with five or more syllables selected. If there are any words that you want to add or remove from your selection, hold down the `r keyboardButton("CTRL")` key and click on them. Your word list will look like this:
+Continuing from the [previous example](#book-example)(see \@ref(book-example)), select the top item in the hard word list. Now scroll down to the last word that has five syllables, hold down the `r keys("SHIFT")` key, and select this word. Now you will have all the words with five or more syllables selected. If there are any words that you want to add or remove from your selection, hold down the `r keys("CTRL")` key and click on them. Your word list will look like this:
 
 ![](Images/difficultwords2.png)
 
-Now that you have selected the words that you want to save, click the `r keyboardButton("Save")` button on the **Home** tab.
+Now that you have selected the words that you want to save, click the `r keys("Save")` button on the **Home** tab.
 
 A **Save As** dialog will appear and you will have the option to save as either HTML or text. Select where you want to save the file and click **Save**.
 
@@ -60,11 +60,11 @@ A **Save As** dialog will appear and you will have the option to save as either 
 
 Next, the [**List Export Options**](#export-list) dialog will appear. (By default, all the words will be exported.) To export just the words that you have highlighted, select the checkbox **Only export selected rows**. Also, because we are only interested in saving the **Word** column—not the **Syllable Count** or **Frequency Count** columns—enter 1 in the **Columns: from** and **to:** fields. Finally, uncheck the option **Include column headers** because we are only exporting one column.
 
-Click `r keyboardButton("OK")` to export the word list to distribute to your students to help prepare them for their reading assignments.
+Click `r keys("OK")` to export the word list to distribute to your students to help prepare them for their reading assignments.
 
 ## Analyzing a Work in Progress
 
-In this example, we will analyze recipes that we are working on for a middle-school home economics class. Our target audience will be seventh-eighth graders and we will use **Readability Studio** to meet their reading level. The first step is to open the **New Project** wizard and select the recipe file. Click the `r keyboardButton("New")` button on the **Home** tab to open the **New Project** wizard. Next, select **English** as the document language (if this option is available). Then, select the option **Read text from a file or webpage**. Click the button next to the file path field to browse for it:
+In this example, we will analyze recipes that we are working on for a middle-school home economics class. Our target audience will be seventh-eighth graders and we will use **Readability Studio** to meet their reading level. The first step is to open the **New Project** wizard and select the recipe file. Click the `r keys("New")` button on the **Home** tab to open the **New Project** wizard. Next, select **English** as the document language (if this option is available). Then, select the option **Read text from a file or webpage**. Click the button next to the file path field to browse for it:
 
 ![](Images/exampleselectfile.png)
 
@@ -72,19 +72,19 @@ In this example, we will analyze recipes that we are working on for a middle-sch
 The language option is only available in the **Language Pack** and **Professional** editions of **Readability Studio**.
 :::
 
-This will open the **Select Document to Analyze** dialog. Choose the file that you want to analyze and click the `r keyboardButton("Open")` button to accept.
+This will open the **Select Document to Analyze** dialog. Choose the file that you want to analyze and click the `r keys("Open")` button to accept.
 
 ::: {.notesection data-latex=""}
-The original and revised versions of this recipe are available from the **Example Documents** menu. From the **Help** tab, click the `r keyboardButton("Example Documents")` button and then select either **Cocoa Desserts** or **Cocoa Desserts (Revised)** from the menu. When prompted about how to open the document, select **Create a new project**.
+The original and revised versions of this recipe are available from the **Example Documents** menu. From the **Help** tab, click the `r keys("Example Documents")` button and then select either **Cocoa Desserts** or **Cocoa Desserts (Revised)** from the menu. When prompted about how to open the document, select **Create a new project**.
 :::
 
-You will then return to the **Document** page. Click the `r keyboardButton("Forward >")` button to proceed to the **Document Structure** page, as shown below:
+You will then return to the **Document** page. Click the `r keys("Forward >")` button to proceed to the **Document Structure** page, as shown below:
 
 ![](Images/wizarddocstructure.png)
 
 On this page, we will specify how this document is formatted. The first option, **Narrative text**, is meant for documents that consist of the standard sentence and paragraph structure. The second option, [**Non-narrative, fragmented text**](#framented-text), is meant for documents that contain very few sentences and mostly consist of sentence fragments. This document contains narrative text, so select **Narrative text**.
 
-Our recipe file does not have any special formatting (e.g., text centering), so keep both options in the **Layout** section unchecked. Now that we have specified the structure of the document, click the `r keyboardButton("Forward >")` button to proceed to the **Test Selection** page, as shown below:
+Our recipe file does not have any special formatting (e.g., text centering), so keep both options in the **Layout** section unchecked. Now that we have specified the structure of the document, click the `r keys("Forward >")` button to proceed to the **Test Selection** page, as shown below:
 
 ![](Images/wizardreadabilitymethods.png)
 
@@ -92,7 +92,7 @@ This file does not belong to any particular industry, but we do know that it is 
 
 ![](Images/wizarddoctypetechselected.png)
 
-Because this is an instructional document containing small narrative blocks, we will consider this to be a technical document. Select **Technical document or form** and click the `r keyboardButton("Finish")` button to begin analyzing the project.
+Because this is an instructional document containing small narrative blocks, we will consider this to be a technical document. Select **Technical document or form** and click the `r keys("Finish")` button to begin analyzing the project.
 
 If you are excluding [incomplete sentences](#how-text-is-excluded) (the default) then this warning message will be displayed.
 
@@ -118,7 +118,7 @@ Long sentences can seem unfocused and difficult to read, and it is recommended t
 
 ![](Images/longsentenceselected.png)
 
-Now that we have found the difficult sentences, let us begin splitting them up so that they are easier to read. From the **Home** tab, click the `r keyboardButton("Edit Document")` button to open the recipes file for editing. Find one of the long sentences and review it. For example, consider this sentence:
+Now that we have found the difficult sentences, let us begin splitting them up so that they are easier to read. From the **Home** tab, click the `r keys("Edit Document")` button to open the recipes file for editing. Find one of the long sentences and review it. For example, consider this sentence:
 
 ![](Images/NonGenerated/sentencetoimprove.png)
 
@@ -144,25 +144,25 @@ To continue simplifying this recipe, we will replace some of these difficult wor
 
 ![](Images/NonGenerated/improvedwords.png)
 
-After we finish reworking the original document, we will want to analyze it again to see if it now meets our target audience. Rather than starting all over by making a new project, we will link this project directly to the recipe document. Whenever we open the project again, it will reanalyze the recipe document. To do this, click the `r keyboardButton("Properties")` button on the **Home** tab to open the **Project Properties** dialog. Select the **Project Settings** icon and then select the option **Reload the source document when opening project**. Click the `r keyboardButton("OK")` button to accept.
+After we finish reworking the original document, we will want to analyze it again to see if it now meets our target audience. Rather than starting all over by making a new project, we will link this project directly to the recipe document. Whenever we open the project again, it will reanalyze the recipe document. To do this, click the `r keys("Properties")` button on the **Home** tab to open the **Project Properties** dialog. Select the **Project Settings** icon and then select the option **Reload the source document when opening project**. Click the `r keys("OK")` button to accept.
 
 ![](Images/linktofile.png)
 
-Click the `r keyboardButton("Reload")` button on the **Home** tab.
+Click the `r keys("Reload")` button on the **Home** tab.
 
 The program will now reload the recipe document, meaning that all the improvements that we just made will be imported into the project. As we can see below, our grade level scores now meet our target audience and this recipe will be easier and more enjoyable to read for our home economics class.
 
 ![](Images/improvedscores.png)
 
 ::: {.tipsection data-latex=""}
-You can click the `r keyboardButton("Reload")` button at anytime to reanalyze the source document as you edit it externally. Also, whenever you open this project, it will automatically reload the source document (in this case, the recipe file).
+You can click the `r keys("Reload")` button at anytime to reanalyze the source document as you edit it externally. Also, whenever you open this project, it will automatically reload the source document (in this case, the recipe file).
 :::
 
 ## Analyzing a Webpage
 
 In this example, we will create a project that reads and analyzes a webpage. Although you can save a webpage from your web browser and load the HTML file, **Readability Studio** can also directly connect to a webpage.
 
-First, click on the `r keyboardButton("New")` button (on the **Home** tab). The **New Project** wizard dialog will appear, as shown below:
+First, click on the `r keys("New")` button (on the **Home** tab). The **New Project** wizard dialog will appear, as shown below:
 
 ![](Images/wizard1.png)
 
@@ -184,23 +184,23 @@ After specifying the URL, choose to analyze the page by document type and then s
 
 ![](Images/wizarddoctypetechselected.png)
 
-Next, accept the rest of the defaults on the **New Project** wizard by clicking the `r keyboardButton("Finish")` button. Once the project is finished loading, click on the **View Document** icon to display the highlighted content of the webpage.
+Next, accept the rest of the defaults on the **New Project** wizard by clicking the `r keys("Finish")` button. Once the project is finished loading, click on the **View Document** icon to display the highlighted content of the webpage.
 
 ![](Images/incompletesentences.png)
 
 Note how some text is highlighted gray. These are [incomplete sentences](#how-text-is-excluded), and because **Readability Studio**, by default, ignores incomplete sentences, nothing highlighted gray is factored into the analysis. That is, nothing highlighted gray here counts towards the overall sentence, paragraph, and word totals and are also not included in any readability test calculation. Aside from non-narrative forms, it is normally recommended to ignore incomplete sentences. This is especially true for webpages, because often HTML tables and lists are used on websites to display menus—items that are not normally part of the page's narrative.
 
-If you wish to include incomplete sentences in the analysis, click the `r keyboardButton("Properties")` button on the **Home** tab to display the **Project Properties** dialog. Next, click the **Document Indexing** icon, and select the **Do not exclude any text** option.
+If you wish to include incomplete sentences in the analysis, click the `r keys("Properties")` button on the **Home** tab to display the **Project Properties** dialog. Next, click the **Document Indexing** icon, and select the **Do not exclude any text** option.
 
 ![](Images/excludeincompletesentences.png)
 
 Note that this option is also available on the [**Options**](#options-overview) dialog (from the **Tools** tab) if you wish to change this behavior for all future projects.
 
-One last item to discuss about loading a webpage is whether you want to reanalyze it later as it changes. By default, the project will directly link to the webpage, although you can change this to embed a “snapshot” of the page into the project. To toggle this behavior, click the `r keyboardButton("Properties")` button on the **Home** tab to display the **Project Properties** dialog. Then click the **Project Settings** icon. Here, we can see that **Reload the source document when opening project** is selected.
+One last item to discuss about loading a webpage is whether you want to reanalyze it later as it changes. By default, the project will directly link to the webpage, although you can change this to embed a “snapshot” of the page into the project. To toggle this behavior, click the `r keys("Properties")` button on the **Home** tab to display the **Project Properties** dialog. Then click the **Project Settings** icon. Here, we can see that **Reload the source document when opening project** is selected.
 
 ![](Images/reloadwebpage.png)
 
-By having this option selected, you will reload the page's content whenever you reopen the project (or at anytime by pressing `r keyboardButton("F5")`). If you prefer to embed the current version of this page into the project, then select **Embed the source document's original text in the project file**. Refer to \@ref(project-settings) for more information about these options.
+By having this option selected, you will reload the page's content whenever you reopen the project (or at anytime by pressing `r keys("F5")`). If you prefer to embed the current version of this page into the project, then select **Embed the source document's original text in the project file**. Refer to \@ref(project-settings) for more information about these options.
 
 Note that webpages requiring authentication (i.e., requiring a user name and password) are not currently supported. To work around this, log into the webpage from any browser, save the page as a local HTML file, and then load that into a new project.
 
@@ -208,13 +208,13 @@ Note that webpages requiring authentication (i.e., requiring a user name and pas
 
 In this example, we will review a document for overly-long sentences. This example will demonstrate the available methods for defining an overly-long sentence. In addition, it will also demonstrate how to search for and review these sentences.
 
-The first step is to open the example file **Features**. From the **Help** tab, click the `r keyboardButton("Example Documents")` button and then select **Features** from the menu. Next, when prompted about how to open the document, select **Create a new project**.
+The first step is to open the example file **Features**. From the **Help** tab, click the `r keys("Example Documents")` button and then select **Features** from the menu. Next, when prompted about how to open the document, select **Create a new project**.
 
 You will then be presented with the **New Project** wizard dialog, as shown below:
 
 ![](Images/wizard1.png)
 
-Select **English** as the document language (if this option is available) and click the `r keyboardButton("Forward >")` button until you reach the **Test Selection** page, as shown below:
+Select **English** as the document language (if this option is available) and click the `r keys("Forward >")` button until you reach the **Test Selection** page, as shown below:
 
 ![](Images/wizardreadabilitymethods.png)
 
@@ -226,7 +226,7 @@ Select the **Recommend tests based on document type** and select the **Technical
 
 ![](Images/wizarddoctypetechselected.png)
 
-Click the `r keyboardButton("Finish")` button to begin analyzing the project.
+Click the `r keys("Finish")` button to begin analyzing the project.
 
 If you are excluding [incomplete sentences](#how-text-is-excluded) (the default) then this warning message will be displayed.
 
@@ -252,15 +252,15 @@ This list can be sorted alphabetically, by word count, or by location. To view a
 
 ![](Images/featuressentences.png)
 
-By default, the program considers sentences overly long if they contain more than 22 words. As we can see, there are a few sentences that are barely over 22 words that are not problematic. However, there are a few clustered sentences which exceed 40 words. At this point, we will want to temporarily filter out the smaller of these long sentences and search for the “worst offenders.” From the **Home** tab, click the `r keyboardButton("Properties")` button and then select **Analysis**. As shown below, we have a couple of different ways to determine if a sentence is overly long:
+By default, the program considers sentences overly long if they contain more than 22 words. As we can see, there are a few sentences that are barely over 22 words that are not problematic. However, there are a few clustered sentences which exceed 40 words. At this point, we will want to temporarily filter out the smaller of these long sentences and search for the “worst offenders.” From the **Home** tab, click the `r keys("Properties")` button and then select **Analysis**. As shown below, we have a couple of different ways to determine if a sentence is overly long:
 
 ![](Images/featuressentoptions.png)
 
-The first option is to define a specific word count as the long sentence boundary. Enter “25” where it says **Longer than [22] words** and click the `r keyboardButton("OK")` button. The program will now reanalyze the file, classifying any sentences longer than 25 (instead of 22) as overly long. As shown below, sentences that are between 23-25 words are no longer being considered overly long:
+The first option is to define a specific word count as the long sentence boundary. Enter “25” where it says **Longer than [22] words** and click the `r keys("OK")` button. The program will now reanalyze the file, classifying any sentences longer than 25 (instead of 22) as overly long. As shown below, sentences that are between 23-25 words are no longer being considered overly long:
 
 ![](Images/featuressentences25.png)
 
-The second option is to consider sentences overly long if they are comparatively longer than the other sentences in the document. From the **Home** tab, click the `r keyboardButton("Properties")` button and then select **Analysis**. Select the option **Outside sentence-length outlier range** and click the `r keyboardButton("OK")` button. At this point, the boundary for overly-long sentences will be calculated based on the outlier range of the sentence lengths. After reanalyzing the file, note how there are only two highlighted sentences. One sentence contains 45 words and the other 48 words. These are the two “worst offenders” and should be either reworded or split into small sentences.
+The second option is to consider sentences overly long if they are comparatively longer than the other sentences in the document. From the **Home** tab, click the `r keys("Properties")` button and then select **Analysis**. Select the option **Outside sentence-length outlier range** and click the `r keys("OK")` button. At this point, the boundary for overly-long sentences will be calculated based on the outlier range of the sentence lengths. After reanalyzing the file, note how there are only two highlighted sentences. One sentence contains 45 words and the other 48 words. These are the two “worst offenders” and should be either reworded or split into small sentences.
 
 ![](Images/featuressentencesoutliers.png)
 
@@ -274,41 +274,41 @@ This option is only recommended for situations where most of the sentences are a
 
 In this example, we will discuss the various ways to change the appearance of a graph.
 
-The first step is to open the example file **Chocolate Eclairs**. From the **Help** tab on the ribbon, click the `r keyboardButton("Example Documents")` button and then select **Chocolate Eclairs** from the menu. (When prompted about how to open the document, select **Create a new project**.) When the **New Project** wizard appears, leave the defaults and click `r keyboardButton("Finish")`.
+The first step is to open the example file **Chocolate Eclairs**. From the **Help** tab on the ribbon, click the `r keys("Example Documents")` button and then select **Chocolate Eclairs** from the menu. (When prompted about how to open the document, select **Create a new project**.) When the **New Project** wizard appears, leave the defaults and click `r keys("Finish")`.
 
 Once the project has finished loading, select **Words Breakdown** on the sidebar, then click **Word Counts** beneath that. A bar chart showing a breakdown of word categories will be displayed:
 
 ![](Images/ExampleGraphDefault.png)
 
-Now we will customize the appearance of this graph. One change that we can make is to reorder the columns in this bar chart. On the **Home** tab, click the `r keyboardButton("Sort")` button under the **Edit** section. Select **Sort Descending** from the menu and note that the bars are now shown from largest to smallest from the origin:
+Now we will customize the appearance of this graph. One change that we can make is to reorder the columns in this bar chart. On the **Home** tab, click the `r keys("Sort")` button under the **Edit** section. Select **Sort Descending** from the menu and note that the bars are now shown from largest to smallest from the origin:
 
 ![](Images/ExampleGraphSorted.png)
 
-Next, let's change the background of the graph. On the **Home** tab, click the `r keyboardButton("Background")` button under the **Edit** section. Select **Color...** from the menu. When the color selection dialog appears, select a new color (e.g., purple) and click `r keyboardButton("OK")`. After selecting your new color, check the option **Apply Fade** from this menu.
+Next, let's change the background of the graph. On the **Home** tab, click the `r keys("Background")` button under the **Edit** section. Select **Color...** from the menu. When the color selection dialog appears, select a new color (e.g., purple) and click `r keys("OK")`. After selecting your new color, check the option **Apply Fade** from this menu.
 
 Now the graph will have a purple background with a gradient effect:
 
 ![](Images/ExampleGraphBackgroundColorChanged.png)
 
-Next, click the `r keyboardButton("Background")` button again and select **Image** from the menu. When the image selection dialog appears, choose an image and click `r keyboardButton("OK")`.
+Next, click the `r keys("Background")` button again and select **Image** from the menu. When the image selection dialog appears, choose an image and click `r keys("OK")`.
 
 Now this image will be shown as the background for your graphs:
 
 ![](Images/ExampleGraphBackgroundImageChangedTooOpaque.png)
 
-By default, the image will be shown fully opaque. For lighter images this will look fine, but darker images (like the one shown above) will make it difficult to read the graph. Click the `r keyboardButton("Background")` button and select **Image Opacity...** from the menu. On the **Set Opacity** dialog, slide the opacity down to 100. Click `r keyboardButton("OK")`.
+By default, the image will be shown fully opaque. For lighter images this will look fine, but darker images (like the one shown above) will make it difficult to read the graph. Click the `r keys("Background")` button and select **Image Opacity...** from the menu. On the **Set Opacity** dialog, slide the opacity down to 100. Click `r keys("OK")`.
 
 Now this image will be translucent and the graph labels will be much easier to read:
 
 ![](Images/ExampleGraphBackgroundImageChanged.png)
 
-Next, we will want to apply a light color to the plot area. Click the `r keyboardButton("Background")` button and select **Plot Area Color...** from the menu and select a new color. Then, select **Opacity...** from this menu and set it to 40. Click `r keyboardButton("OK")`.
+Next, we will want to apply a light color to the plot area. Click the `r keys("Background")` button and select **Plot Area Color...** from the menu and select a new color. Then, select **Opacity...** from this menu and set it to 40. Click `r keys("OK")`.
 
 Now the plot area of the graph will have a light blue applied to it:
 
 ![](Images/ExamplePlotBackgroundColorChanged.png)
 
-Next, let's put a [watermark](#watermark-and-logo) across our graph. Click the `r keyboardButton("Watermark")` button in the **Edit** section. Enter the following into the **Watermark** dialog and click `r keyboardButton("OK")`:
+Next, let's put a [watermark](#watermark-and-logo) across our graph. Click the `r keys("Watermark")` button in the **Edit** section. Enter the following into the **Watermark** dialog and click `r keys("OK")`:
 
 > INTERNAL USE ONLY
 >
@@ -322,19 +322,19 @@ Note how this label is now lightly written across the graph:
 Entering “[DATE]” in the watermark will show the current date when the graph is rendered.
 :::
 
-Now let's put a company logo on our graph. Click the `r keyboardButton("Logo")` button in the **Edit** section. Select an image and click `r keyboardButton("OK")`.
+Now let's put a company logo on our graph. Click the `r keys("Logo")` button in the **Edit** section. Select an image and click `r keys("OK")`.
 
 Now this image will be shown in the bottom right corner of the graph:
 
 ![](Images/ExampleLogoChanged.png)
 
-Next, we can change the direction of the bars. Click the `r keyboardButton("Orientation")` button in the **Edit** section. Select **Vertical** from the menu.
+Next, we can change the direction of the bars. Click the `r keys("Orientation")` button in the **Edit** section. Select **Vertical** from the menu.
 
 Now the bars will be arranged vertically:
 
 ![](Images/ExampleBarChartOrientationChanged.png)
 
-Finally, let's change how the bars are drawn. Click the `r keyboardButton("Bar Style")` button in the **Edit** section and select **Color fade, bottom to top**.
+Finally, let's change how the bars are drawn. Click the `r keys("Bar Style")` button in the **Edit** section and select **Color fade, bottom to top**.
 
 The bars will now have a fading color painted across them, rather than the default glassy look:
 

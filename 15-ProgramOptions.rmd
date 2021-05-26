@@ -8,11 +8,11 @@
 
 These options can be configured both globally and for individual projects. Note that changing options globally will affect all future projects, but will not affect currently existing projects.
 
-To set these options globally, click the `r keyboardButton("Options")` button on the **Tools** tab to open the **Options** dialog:
+To set these options globally, click the `r keys("Options")` button on the **Tools** tab to open the **Options** dialog:
 
 ![](Images/OptionsDlg.png)
 
-If you wish to change options for an individual project, then click the `r keyboardButton("Properties")` button on the **Home** tab to open the **Project Properties** dialog:
+If you wish to change options for an individual project, then click the `r keys("Properties")` button on the **Home** tab to open the **Project Properties** dialog:
 
 ![](Images/linktofile.png)
 
@@ -52,14 +52,14 @@ Note that selecting **System** will reset the program colors to the system's def
 - **Warn about German stemming not supporting proper noun detection.** This warning is shown when creating a custom test that uses German stemming and treats proper nouns as familiar.
 - **Warn about unique-value histograms requiring midpoint axis labels.** If you specify **unique values** as your histogram [bin sorting](#options-histograms) method, then midpoint interval display will need to be used. Because each bin (i.e., bar) will represent only one value, the histograms will not have ranges of values for its intervals. Therefore, cutpoints will not be applicable and midpoint axis labels will be used instead. If you have cutpoints as the interval type and choose unique-value bin sorting, then this warning will be shown before adjusting the interval display.
 - **Prompt about auto-searching for missing files.** By default, projects link to the documents that they analyze. When you open a project, the document will be reanalyzed to include any recent changes. If the document cannot be found, then the program will ask if it should search for a document by the same name. This search will be relative to the project file's location. Unchecking this option will suppress this prompt and the program will automatically search for and load the document.
-- **Prompt about re-linking to a document that has been embedded.** By default, a project will link to the document it is analyzing. When you click the `r keyboardButton("Edit Document")` button (on the **Home** tab), the document will be opened in its default editor. However, if you have chosen to embed the document into the project, then this prompt will appear. It will ask you whether you want to change this setting to link to the document and then edit it, or it continue embedding the document and then edit the embedded text. Note that if you continue to embed the document and edit the embedded text, then your changes will only be reflected in your project—your changes will not appear in the original document.
+- **Prompt about re-linking to a document that has been embedded.** By default, a project will link to the document it is analyzing. When you click the `r keys("Edit Document")` button (on the **Home** tab), the document will be opened in its default editor. However, if you have chosen to embed the document into the project, then this prompt will appear. It will ask you whether you want to change this setting to link to the document and then edit it, or it continue embedding the document and then edit the embedded text. Note that if you continue to embed the document and edit the embedded text, then your changes will only be reflected in your project—your changes will not appear in the original document.
 - **Prompt about failing to load a project that is missing its embedded text.** When opening a project which embeds the document's text, then an error message will be shown if the embedded text is not found within the project.
 - **Check to see if ClearType is turned on.** If ClearType is turned off, then the program will ask you about enabling it. ClearType makes fonts smoother and easier to read. This applies to the Windows^®^ edition of **Readability Studio** only.
 - **Prompt for labels when adding documents to a batch project.** When creating a batch project, you have the option of applying either a custom label or the documents' descriptions to a set of files. If this prompt is disabled, then the documents' descriptions will always be used.
 
 The following are informational messages shown interactively in the program:
 
-- Prompt about how windows can be exported from the `r keyboardButton("Save")` button.
+- Prompt about how windows can be exported from the `r keys("Save")` button.
 - Prompt about how double-clicking a test can show its help.
 - Prompt about how background images will not be upscaled beyond their original size when zooming into a graph.
 - Prompt about how settings are embedded in projects and how to edit them.
@@ -298,9 +298,9 @@ This dialog can edit either a word or phrase list.
 
 After selecting your list file, its words/phrases will be displayed in the grid below the file-path field. In this grid, you can edit your list with the following keyboard commands:
 
-- `r keyboardButton("DELETE")`—removes the selected item(s) from the list.
-- `r keyboardButton("INSERT")`—edits the selected item in the list. Double-clicking an item with the mouse will also edit it.
-- `r keyboardButton("CTRL")`+`r keyboardButton("INSERT")` (`r macOSCmdButton()`+`r keyboardButton("INSERT")` on macOS) —adds a new item to the list.
+- `r keys("DELETE")`—removes the selected item(s) from the list.
+- `r keys("INSERT")`—edits the selected item in the list. Double-clicking an item with the mouse will also edit it.
+- `r keys("CTRL")`+`r keys("INSERT")` (`r macOSCmdButton()`+`r keys("INSERT")` on macOS) —adds a new item to the list.
 
 Buttons to add, edit, and remove items are also available above the grid.
 

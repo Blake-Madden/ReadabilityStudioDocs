@@ -26,7 +26,7 @@ Options for customizing its display are made available on the **Edit** section o
 
 ![](Images/RibbonEditStats.png)
 
-Click the `r keyboardButton("Edit Report")` button to view the [**Properties**](#options-statistics) dialog. Here, you can specify which sections to include in your summary report.
+Click the `r keys("Edit Report")` button to view the [**Properties**](#options-statistics) dialog. Here, you can specify which sections to include in your summary report.
 
 ## Customizing the Highlighted Text Windows
 
@@ -62,9 +62,9 @@ To toggle the sorting order, click the column header again.
 ![](Images/sortcolumnsdialog.png){width=48%}
 :::
 
-To sort a list by multiple columns, click the `r keyboardButton("Sort")` button in the **Edit** section on the **Home** tab of the ribbon and the **Sort Columns** dialog will appear.
+To sort a list by multiple columns, click the `r keys("Sort")` button in the **Edit** section on the **Home** tab of the ribbon and the **Sort Columns** dialog will appear.
 
-On this dialog, you will specify which columns to sort by and their order. Going from top to bottom in this grid, the columns specified here will act as the sorting criteria for the list. The list will be sorted by the first specified column (and its respective sorting order), and in the case of a tie between two or more rows, the next specified column will become the sort criterion between those rows, and so on. To add a column as a sort criterion, double click a row in this grid and select the column name from the drop-down box. Once you have selected the columns to sort by, click the `r keyboardButton("OK")` button to sort the list.
+On this dialog, you will specify which columns to sort by and their order. Going from top to bottom in this grid, the columns specified here will act as the sorting criteria for the list. The list will be sorted by the first specified column (and its respective sorting order), and in the case of a tie between two or more rows, the next specified column will become the sort criterion between those rows, and so on. To add a column as a sort criterion, double click a row in this grid and select the column name from the drop-down box. Once you have selected the columns to sort by, click the `r keys("OK")` button to sort the list.
 
 ## Customizing Graphs
 

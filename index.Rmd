@@ -38,13 +38,29 @@ macOSCmdButton <- function()
     { knitr::asis_output(text) }
   }
 
+menu <- function(menuKeys)
+  {
+  if (knitr::is_latex_output())
+    {
+    knitr::asis_output(glue('\\menu[,]{',
+                              glue_collapse(glue("{<menuKeys>}", .open='<', .close='>'), sep=','),
+                              '}', .open='<', .close='>'))
+    }
+  else if (knitr::is_html_output())
+    {
+    knitr::asis_output(glue(
+      glue_collapse(glue("<div class='key'>{menuKeys[1:length(menuKeys)-1]}</div><div class='arrow right'></div>"), sep=' '),
+      glue("<div class='key'>{menuKeys[length(menuKeys)]}</div>")))
+    }
+  }
+
 # @brief Displays a label as a keyboard button.
-keyboardButton <- function(label)
+keys <- function(label)
   {
   if (knitr::is_latex_output())
     { knitr::asis_output(paste0("\\keys{", label, "}")) }
   else if (knitr::is_html_output())
-    { knitr::asis_output(glue("<span class='key'>{label}</span>")) }
+    { knitr::asis_output(glue("<span class='keys'>{label}</span>")) }
   else
     { knitr::asis_output(text) }
   }

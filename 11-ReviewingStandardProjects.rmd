@@ -26,7 +26,7 @@ Finally, the averages (means) of your test scores and ages are displayed at the 
 
 When calculating these statistics, failed test scores are treated as missing observations and not included. For example, let us say that you included 5 tests, but one of them could not be calculated. In this case, the valid 4 scores will be added and divided by 4 (not 5) to acquire the means. Also, grade range scores–such as “5–6” from [*New Dale-Chall*](#dale-chall-test)–will be converted to its own average (e.g., “5-6” will be 5.5).
 
-To remove any test from this list, select it and press `r keyboardButton("CTRL")`+`r keyboardButton("DELETE")` (`r macOSCmdButton()`+`r keyboardButton("DELETE")` on macOS) on your keyboard. To edit a [custom test](#creating-custom-test), double click on it in this list. To view the help for a standard test, double click on it in this list.
+To remove any test from this list, select it and press `r keys("CTRL")`+`r keys("DELETE")` (`r macOSCmdButton()`+`r keys("DELETE")` on macOS) on your keyboard. To edit a [custom test](#creating-custom-test), double click on it in this list. To view the help for a standard test, double click on it in this list.
 
 There will also be graphs in this section if you had included the [*Fry*](#reviewing-readability-graphs) , [*Gilliam-Peña-Mountain*](#gilliam-pena-mountain-fry-graph), [*Raygor*](#reviewing-readability-graphs), [*Flesch*](#flesch-test), or [*FRASE*](#frase) tests. Refer to \@ref(reviewing-readability-graphs) for further information.
 
@@ -126,7 +126,7 @@ knitr::include_graphics("Images/MultipleFry.png")
 
 Here, we can see that an entire collection of documents are plotted onto a single *Fry* graph. This is useful for visualizing the grade-level layout of a group of documents. In the above example, we can see that the documents are clustering in the high-school region. We can also interpret that complex words are heavily influencing the documents' difficulty.
 
-You can also print or save a blank copy of any of these graphs. This is useful for printing handouts for instructors or students to use. To print a blank graph, go to the **Readability** tab on the ribbon, click the `r keyboardButton("Blank Graphs")` button, and select the graph that you wish to save.
+You can also print or save a blank copy of any of these graphs. This is useful for printing handouts for instructors or students to use. To print a blank graph, go to the **Readability** tab on the ribbon, click the `r keys("Blank Graphs")` button, and select the graph that you wish to save.
 
 ## Reviewing the Goals {#reviewing-goals}
 
@@ -219,7 +219,7 @@ If your test scores are indicating that the document is too difficult for your t
 
 To help find the most difficult words for the *Dale-Chall* list, select the **Dale-Chall (Unfamiliar)** subitem and sort the **Frequency** column. The most frequently occurring words are the ones that should be replaced with more familiar synonyms that most readers would recognize.
 
-To find a specific word in a list, type the word into the **Search** bar at the top of program and hit the `r keyboardButton("ENTER")` button on your keyboard. You can also select the list and begin typing the word. If the word is in the list, then the selection will move to it.
+To find a specific word in a list, type the word into the **Search** bar at the top of program and hit the `r keys("ENTER")` button on your keyboard. You can also select the list and begin typing the word. If the word is in the list, then the selection will move to it.
 
 Double-click on any word in these lists to display the respective highlighted text window with the first instance of that word selected.
 
@@ -402,11 +402,11 @@ Misspelling searching is applied to all sentences. [Incomplete sentences](#how-t
 
 To view any misspelling in its original context, double-click on it. This will take you to the [**Highlighted Report**](#reviewing-standard-grammar) page with that word selected.
 
-To add a word(s) to your dictionary, first select them in this list. Then, click on the **Document** tab, and click the arrow below the `r keyboardButton("Spell Checker")` button. Then, select **Add Selected Words** and the selected words in this list will no longer be reported as misspellings.
+To add a word(s) to your dictionary, first select them in this list. Then, click on the **Document** tab, and click the arrow below the `r keys("Spell Checker")` button. Then, select **Add Selected Words** and the selected words in this list will no longer be reported as misspellings.
 
-To edit your custom dictionary, click on the arrow beneath the `r keyboardButton("Spell Checker")` button and select **Edit...** to show the **Edit Custom Dictionary** dialog. From here, you can add, remove, or edit the words in your custom dictionary.
+To edit your custom dictionary, click on the arrow beneath the `r keys("Spell Checker")` button and select **Edit...** to show the **Edit Custom Dictionary** dialog. From here, you can add, remove, or edit the words in your custom dictionary.
 
-To change your spell-checking options, click on the arrow beneath the `r keyboardButton("Spell Checker")` button and select **Settings...** to edit your [grammar](#options-grammar) settings.
+To change your spell-checking options, click on the arrow beneath the `r keys("Spell Checker")` button and select **Settings...** to edit your [grammar](#options-grammar) settings.
 
 Note that if there are no misspellings in your document, then this window will not be included.
 
@@ -587,11 +587,13 @@ The **Dolch Words** subitem will display the document with the *Dolch* words hig
 
 Each category (e.g., nouns) will be highlighted by a different color.
 
-To customize category highlighting, click the `r keyboardButton("Properties")` button on the **Home** tab to display the **Project Properties** dialog. Then select the **Highlighted Reports** icon and select the [**Dolch Sight Words**](#dolch-options) subitem. Here you can choose which categories to highlight and select their respective highlight colors.
+To customize category highlighting, click the `r keys("Properties")` button on the **Home** tab to display the **Project Properties** dialog. Then select the **Highlighted Reports** icon and select the [**Dolch Sight Words**](#dolch-options) subitem.
 
 `r menu(c('Home', 'Project Properties', 'Highlighted Reports', 'Dolch Sight Words'))`
 
-The **Non-Dolch Words** subitem will display the document with all the non-Dolch words (words that do not appear in any of the *Dolch* lists) highlighted:
+Here you can choose which categories to highlight and select their respective highlight colors.
+
+The **Non-Dolch Words** subitem will display the document with all the non-*Dolch* words (words that do not appear in any of the *Dolch* lists) highlighted:
 
 ![](Images/dolchhighlightednonwords.png)
 

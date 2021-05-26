@@ -8,7 +8,7 @@ Most experts recommend ignoring items such as chapter titles, list items, and ta
 
 These items, by default, are ignored for all newly created projects. That is, any word inside an incomplete sentence is not factored into any of the statistics or tests. Incomplete sentences are not factored into the overall sentence and paragraph counts, which in turn will prevent them from skewing the readability scores.
 
-To toggle this behavior for an existing project, click the `r keyboardButton("Properties")` button the **Home** tab to display the **Project Properties** dialog. Next, click the **Document Indexing** icon. Here you can select either **Do not exclude any text**, **Exclude all incomplete sentences**, or **Exclude all incomplete sentences, except headings**, as illustrated below.
+To toggle this behavior for an existing project, click the `r keys("Properties")` button the **Home** tab to display the **Project Properties** dialog. Next, click the **Document Indexing** icon. Here you can select either **Do not exclude any text**, **Exclude all incomplete sentences**, or **Exclude all incomplete sentences, except headings**, as illustrated below.
 
 ![](Images/excludeincompletesentences.png)
 
@@ -132,15 +132,15 @@ If **Ignore blank lines** is unselected (the default), then the above example is
 
 There are special situations where you would need multi-line sentence fragments to be “[chained](#line-chaining)” together. For example, picture books that wrap sentences around images may cause sentences to be split into fragments with blank lines between them. Let us review an example of this.
 
-From the **Help** tab, click the `r keyboardButton("Example Documents")` button and then select The Tale of Peter Rabbit. From the [project wizard](#creating-standard-project), select **Children's literature** and then choose the defaults after that. Next, click on the **View Document** icon on the project sidebar to view the document. If **Ignore blank lines** was unselected, then note how some sentences have been split into incomplete fragments:
+From the **Help** tab, click the `r keys("Example Documents")` button and then select The Tale of Peter Rabbit. From the [project wizard](#creating-standard-project), select **Children's literature** and then choose the defaults after that. Next, click on the **View Document** icon on the project sidebar to view the document. If **Ignore blank lines** was unselected, then note how some sentences have been split into incomplete fragments:
 
 ![](Images/PeterRabbitSplitSentences.png)
 
-To see what is happening here, we will open the original document. From the **Home** tab, click the `r keyboardButton("Edit Document")` button to open this example in a web browser. As we can see below, the sentence in question is split into multiple lines. Part of it is on top of an image, and the rest of it is split across multiple lines to fit next to the image.
+To see what is happening here, we will open the original document. From the **Home** tab, click the `r keys("Edit Document")` button to open this example in a web browser. As we can see below, the sentence in question is split into multiple lines. Part of it is on top of an image, and the rest of it is split across multiple lines to fit next to the image.
 
 ![](Images/NonGenerated/PeterRabbitBrowser.png)
 
-To correct this, we will change how sentences are deduced for this project. Click the `r keyboardButton("Properties")` button on the **Home** tab and then select **Analysis**. Then select the options **Ignore blank lines** and **Ignore indenting** and click `r keyboardButton("OK")` to accept. Note that we also selected **Ignore indenting** because this file contains some indented text.
+To correct this, we will change how sentences are deduced for this project. Click the `r keys("Properties")` button on the **Home** tab and then select **Analysis**. Then select the options **Ignore blank lines** and **Ignore indenting** and click `r keys("OK")` to accept. Note that we also selected **Ignore indenting** because this file contains some indented text.
 
 ![](Images/IgnoreBlankLines.png)
 
@@ -283,4 +283,4 @@ There are some options that when changed will require a project to reload. These
 
 When any of the aforementioned changes are made, the project will reanalyze the source document(s) and recalculate all its results.
 
-Note that you can always reload a project manually by clicking the `r keyboardButton("Reload")` button on the **Home** tab of the ribbon. This is useful when you are editing the source document from another program and want to refresh the results in **Readability Studio**.
+Note that you can always reload a project manually by clicking the `r keys("Reload")` button on the **Home** tab of the ribbon. This is useful when you are editing the source document from another program and want to refresh the results in **Readability Studio**.
