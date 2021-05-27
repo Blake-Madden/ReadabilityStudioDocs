@@ -13,7 +13,7 @@ $$
 Where:
 
 |     | Description |
-| --- | --- |
+| --- | :-- |
 | G   | Grade level |
 | S   | Number of sentences per 100 words |
 | B   | Number of syllables per 100 words |
@@ -54,8 +54,8 @@ These textbooks “covered a variety of reading topics which dealt with family l
 
 These validation involved correlating the *FRASE* scores against “teacher judgments, Spaulding formula ratings, cloze test scores, and informal multiple choice tests” (144). (The “teacher judgments” validation involved 16 secondary-level Spanish teachers ranking the samples into the levels of beginner, intermediate, advanced intermediate, and advanced.) The comparisons were significantly correlated, with the following results:
 
-- cloze tests: $r = -0.93$
-- Spaulding scores: $r = 0.91$
+- *cloze* tests: $r = -0.93$
+- *Spaulding* scores: $r = 0.91$
 - teacher judgments: $r = 0.95$
 - multiple choice tests: $r = -0.97$
 
@@ -169,7 +169,7 @@ $$
 Where:
 
 |     | Description |
-| --- | --- |
+| --- | :-- |
 | G   | Grade level |
 | C   | Number of complex words (3+ syllables) from 30 sentences |
 

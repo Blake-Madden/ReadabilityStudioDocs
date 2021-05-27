@@ -196,7 +196,7 @@ So, to use MLA footnotes, we have to create psuedo footnotes below the table.
 -->
 
 | Function | Description |
-| --- | --- |
+| :-- | :-- |
 | CharacterCount() | Returns the number of characters (i.e., letters and numbers). This function takes an argument specifying which text exclusion method to use: `Default`, `DaleChall`^1^, or `HarrisJacobson`^2^. | 
 | CharacterPlusPunctuationCount() | Returns the number of characters (i.e., letters and numbers) and punctuation. Note that sentence-ending punctuation is not included in this count. |
 | IndependentClauseCount() | Returns the number of units/independent clauses. A unit is a section of text ending with a period, exclamation, question mark, interrobang, colon, semicolon, or dash. |
@@ -214,7 +214,7 @@ This will be either traditional sentence counting or unit counting.
 ```
 
 | Function | Description |
-| --- | --- |
+| :-- | :-- |
 | FamiliarDaleChallWordCount() | Returns the number of familiar *New Dale-Chall* words. |
 | FamiliarHarrisJacobsonWordCount() | Returns the number of familiar *Harris-Jacobson* words. |
 | FamiliarSpacheWordCount() | Returns the number of familiar *Spache* words. |

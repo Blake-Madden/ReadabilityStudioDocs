@@ -12,7 +12,7 @@ Kincaid et al. (*Evaluating* 3, 6–15) also used this test for evaluating peere
 - 22 graduate students from Southern Georgia College
 - 14 trainees participating in a Public Service Careers project at Southern Georgia College
 
-They noted that for the high school study, the materials with lower **ARI** scores yielded better comprehension rates “as reflected in cloze scores” (Kincaid et al. 3). The graduate students and trainees from the other studies stated that the materials may not be appropriate for remedial high school readers (13, 15), but did agree that the stories were “authentic” and “interesting.”
+They noted that for the high school study, the materials with lower *ARI* scores yielded better comprehension rates “as reflected in cloze scores” (Kincaid et al. 3). The graduate students and trainees from the other studies stated that the materials may not be appropriate for remedial high school readers (13, 15), but did agree that the stories were “authentic” and “interesting.”
 
 ### The ARI Formula {-}
 
@@ -39,13 +39,13 @@ kableExtra::kbl(ariData, booktabs=T, centering=T, align='l',escape=F) %>%
 \newpage
 ## Bormuth Cloze Mean {#bormuth-cloze-mean-machine-passage}
 
-The *Bormuth Cloze Mean (Machine Computation for Passage Readability) Formula* (79-132) calculates a [predicted cloze score](#cloze) for a document.
+The *Bormuth Cloze Mean (Machine Computation for Passage Readability) Formula* (79-132) calculates a [predicted *cloze* score](#cloze) for a document.
 
 This test is influenced by three variables (word length, sentence length, and word familiarity). Because it uses both word familiarity and syntactic complexity for its analysis, it is often recommended for student documents.
 
-For this formula, a study involving 2,600 students ranging from 4^th^-12^th^ grade (*Development* 97) was conducted. The students completed 330 110-word cloze passages, and their scores were correlated against numerous linguistic factors from the passages. After a series of factor analyses and multiple regressions, a series of formulas were created to predict cloze and grade-level scores for a passage. These formulas were then cross validated against 20 250-300 word passages (*Development* 105). These formulas correlated with between $r^2 = 0.81$ to $0.83$ with the original test data and between $r^2 = 0.92$ to $0.93$ with the cross validation data.
+For this formula, a study involving 2,600 students ranging from 4^th^-12^th^ grade (*Development* 97) was conducted. The students completed 330 110-word *cloze* passages, and their scores were correlated against numerous linguistic factors from the passages. After a series of factor analyses and multiple regressions, a series of formulas were created to predict *cloze* and grade-level scores for a passage. These formulas were then cross validated against 20 250-300 word passages (*Development* 105). These formulas correlated with between $r^2 = 0.81$ to $0.83$ with the original test data and between $r^2 = 0.92$ to $0.93$ with the cross validation data.
 
-Of these formulas, the predicted cloze formula is as follows:
+Of these formulas, the predicted *cloze* formula is as follows:
 
 \begin{align*}
   C = & .886593 - .083640*(R/W) + .161911*(D/W)^3 - \\
@@ -55,7 +55,7 @@ Of these formulas, the predicted cloze formula is as follows:
 Where:
 
 |     | Description |
-| --- | --- |
+| --- | :-- |
 | C   | Estimated cloze score |
 | R   | Number of characters |
 | W   | Number of words |
@@ -63,7 +63,7 @@ Where:
 | S   | Number of sentences |
 
 ::: {.notesection data-latex=""}
-The program will display the cloze score returned by this test in percentage format (e.g., 75) rather than fractal format (e.g., .75) to be consistent with other tests.
+The program will display the *cloze* score returned by this test in percentage format (e.g., 75) rather than fractal format (e.g., .75) to be consistent with other tests.
 :::
 
 \newpage
@@ -73,7 +73,7 @@ The *Bormuth Grade Placement (Machine Computation for Passage Readability) Formu
 
 This test is influenced by three variables (word length, sentence length, and word familiarity). Because it uses both word familiarity and syntactic complexity for its analysis, it is often recommended for student documents.
 
-For this formula, a study involving 2,600 students ranging from 4^th^-12^th^ grade (*Development* 97) was conducted. The students completed 330 110-word cloze passages, and their scores were correlated against numerous linguistic factors from the passages. After a series of factor analyses and multiple regressions, a series of formulas were created to predict cloze and grade-level scores for a passage. These formulas were then cross validated against 20 250-300 word passages (*Development* 105). These formulas correlated with between $r^2 = 0.81$ to $0.83$ with the original test data and between $r^2 = 0.92$ to $0.93$ with the cross validation data.
+For this formula, a study involving 2,600 students ranging from 4^th^-12^th^ grade (*Development* 97) was conducted. The students completed 330 110-word *cloze* passages, and their scores were correlated against numerous linguistic factors from the passages. After a series of factor analyses and multiple regressions, a series of formulas were created to predict *cloze* and grade-level scores for a passage. These formulas were then cross validated against 20 250-300 word passages (*Development* 105). These formulas correlated with between $r^2 = 0.81$ to $0.83$ with the original test data and between $r^2 = 0.92$ to $0.93$ with the cross validation data.
 
 Of these formulas, the grade-placement formula is as follows:
 
@@ -85,31 +85,31 @@ Of these formulas, the grade-placement formula is as follows:
 Where:
 
 |     | Description |
-| --- | --- |
+| --- | :-- |
 | G   | Grade level |
 | R   | Number of characters |
 | W   | Number of words |
-| D   | Number of familiar [Dale-Chall](#dale-chall-test) words |
+| D   | Number of familiar [*Dale-Chall*](#dale-chall-test) words |
 | S   | Number of sentences |
 
-Note that this particular grade-placement test uses the regression equation that best fit the passages with cloze scores averaging ~35%. There are also 45% and 55% cloze-score fitting *Bormuth* equations, but as Bormuth noted “35 per cent on a close readability test tentatively seemed to represent a criterion for deciding whether or not students are able to exhibit a maximum of information gain as a consequence of reading the passage” (*Development* 102).
+Note that this particular grade-placement test uses the regression equation that best fit the passages with *cloze* scores averaging ~35%. There are also 45% and 55% *cloze*-score fitting *Bormuth* equations, but as Bormuth noted “35 per cent on a close readability test tentatively seemed to represent a criterion for deciding whether or not students are able to exhibit a maximum of information gain as a consequence of reading the passage” (*Development* 102).
 
 \newpage
 ## Coleman-Liau {#coleman-liau-test}
 
-The *Coleman-Liau* formula calculates the grade level and estimated cloze score of a document based on sentence length and character count.
+The *Coleman-Liau* formula calculates the grade level and estimated *cloze* score of a document based on sentence length and character count.
 
-Coleman and Liau noted the difficulties of using computers to count syllables (283) for readability formulas. As a solution, they presented a new formula that used character counts as an alternative to syllable counting. This formula was derived from a regression equation trained on the 36 150-word passages from the Miller and Coleman cloze study (851). During validation, the factors of sentences and characters per 100 words yielded a strong correlation of $r^2 = .92$ against Miller and Coleman’s cloze scores.
+Coleman and Liau noted the difficulties of using computers to count syllables (283) for readability formulas. As a solution, they presented a new formula that used character counts as an alternative to syllable counting. This formula was derived from a regression equation trained on the 36 150-word passages from the Miller and Coleman *cloze* study (851). During validation, the factors of sentences and characters per 100 words yielded a strong correlation of $r^2 = .92$ against Miller and Coleman’s *cloze* scores.
 
 ### The Coleman-Liau Formula {-}
 
-First, calculate the [predicted cloze](#cloze) percentage with the following formula:
+First, calculate the [predicted *cloze*](#cloze) percentage with the following formula:
 
 $$
 E = (141.8401 - (.214590*R)) + (1.079812*S)
 $$
 
-Then convert the cloze percentage into a grade level with the following formula:
+Then convert the *cloze* percentage into a grade level with the following formula:
 
 $$
 G = (-27.4004*(E/100)) + 23.06395
@@ -118,13 +118,13 @@ $$
 Where:
 
 |     | Description |
-| --- | --- |
-| E   | Estimated cloze % |
+| --- | :-- |
+| E   | Estimated *cloze* % |
 | G   | Grade level |
 | R   | Number of characters (per 100 words) |
 | S   | Number of sentences (per 100 words) |
 
-Though not explicitly mentioned in their article (284), the estimated cloze % from the first equation must be converted to a fraction (i.e., divided by 100) to produce the expected results. For this reason, “$(E/100)$” is shown in the second equation, rather than just “estimated cloze %” as it appears in the source article. As an example, an estimated cloze % of 51.3 should yield a grade level of 9:
+Though not explicitly mentioned in their article (284), the estimated *cloze* % from the first equation must be converted to a fraction (i.e., divided by 100) to produce the expected results. For this reason, “$(E/100)$” is shown in the second equation, rather than just “estimated *cloze* %” as it appears in the source article. As an example, an estimated *cloze* % of 51.3 should yield a grade level of 9:
 
 $$
 9 = (-27.4004*(51.3/100)) + 23.06395
@@ -193,7 +193,7 @@ For this reason, the “number of words” statistic is a more accurate descript
 
 *Danielson-Bryan 2* (206) calculates an index score of a document based on sentence length and character/punctuation count. It is a variant of [*Flesch Reading Ease*](#flesch-test), with the difference being that it uses character and punctuation counts instead of syllable counts. Being a variant of *Flesch*, its scores range from 0-100 (the higher the score, the easier to read), with average documents being within 60-70.
 
-*DB2* was designed to be a faster method (compared to [*Farr-Jenkins-Paterson*](#farr-jenkins-paterson)) of calculating readability scores on UNIVAC 1105 computers. Rather than counting syllables, **DB2** counts characters and punctuation, which was simpler to analyze on computers of that era. This performance benefit is more of a historical reference now; modern computers can calculate syllable counts optimally.
+*DB2* was designed to be a faster method (compared to [*Farr-Jenkins-Paterson*](#farr-jenkins-paterson)) of calculating readability scores on UNIVAC 1105 computers. Rather than counting syllables, *DB2* counts characters and punctuation, which was simpler to analyze on computers of that era. This performance benefit is more of a historical reference now; modern computers can calculate syllable counts optimally.
 
 This test was trained against 376 passages from *McCall-Crabbs Standard Test Lessons in Reading* (1926 ed.). For validation, the derived formula had an $r^2 = 0.575$, similar to *Farr-Jenkins-Paterson*'s $r^2 = 0.553$. This regression equation is as follows:
 
@@ -221,7 +221,7 @@ kableExtra::kbl(db2Data, booktabs=T, centering=T, align='l', escape=F) %>%
 ### Flesch Reading Ease Index Table {-}
 
 | Flesch Score | Description |
-| --- | --- |
+| :-- | :-- |
 | 90-100 | Very easy, third-grade level |
 | 80-89 | Easy, fourth-grade level |
 | 70-79 | Fairly easy, fifth-grade level |
@@ -250,7 +250,7 @@ This test is based on the [*Bormuth Cloze*](#bormuth-cloze-mean-machine-passage)
 Where:
 
 |     | Description |
-| --- | --- |
+| --- | :-- |
 | U   | Units score |
 | R   | Number of characters |
 | W   | Number of words |
@@ -359,7 +359,7 @@ $$
 Where:
 
 |     | Description |
-| --- | --- |
+| :-- | :-- |
 | G   | Grade level |
 | W   | Number of words |
 | B   | Number of syllables |
@@ -390,7 +390,7 @@ $$
 Where:
 
 |     | Description |
-| --- | --- |
+| :-- | :-- |
 | I   | The index score |
 | W   | Number of words |
 | T   | Number of miniwords |
@@ -399,7 +399,7 @@ Where:
 ### McAlpine EFLAW Index Table {-}
 
 | EFLAW Score | Description |
-| --- | --- |
+| :-- | :-- |
 | 1-20 | Very easy to understand |
 | 21-25 | Quite easy to understand |
 | 26-29 | Mildly difficult |
@@ -421,7 +421,7 @@ $$
 Where:
 
 |     | Description |
-| --- | --- |
+| --- | :-- |
 | I   | Flesch index score |
 | W   | Number of words |
 | M   | Number of monosyllabic words |
@@ -449,7 +449,7 @@ $$
 Where:
 
 |     | Description |
-| --- | --- |
+| --- | :-- |
 | G   | Grade level |
 | W   | Number of words |
 | B   | Number of syllables |
@@ -483,7 +483,7 @@ $$
 Where:
 
 |     | Description |
-| --- | --- |
+| :-- | :-- |
 | I   | Flesch index score |
 | W   | Number of words |
 | B   | Number of syllables |
@@ -492,7 +492,7 @@ Where:
 ### Flesch Reading Ease Index Table {-}
 
 | Flesch Score | Description |
-| --- | --- |
+| :-- | :-- |
 | 90-100 | Very easy |
 | 80-89 | Easy |
 | 70-79 | Fairly easy |
@@ -527,7 +527,7 @@ $$
 Where:
 
 |     | Description |
-| --- | --- |
+| --- | :-- |
 | G   | Grade level |
 | M   | Number of monosyllabic words (per 150-words) |
 
@@ -610,7 +610,9 @@ Complex words are words that contain three or more syllables, with the exception
 
 This test can optionally count independent clauses as separate sentences, as *The Technique of Clear Writing* instructs. It should be noted, however, that this can cause misleadingly low scores for documents that contain run-on sentences. Consider the follow:
 
-> “The Meldorf^®^ statistical library is available in C++ source code–a low-level programming language–and in the form of a COM library–a Microsoft^®^ technology for inter-program communication; the COM library can be called from numerous languages, such as: Visual Basic, C#, and Delphi.”
+::: {.fancyquotes data-latex=''}
+The Meldorf^®^ statistical library is available in C++ source code–a low-level programming language–and in the form of a COM library–a Microsoft^®^ technology for inter-program communication; the COM library can be called from numerous languages, such as: Visual Basic, C#, and Delphi.
+:::
 
 If you treat independent clauses as separate sentences, then this will be seen as six small sentences and produce a *Fog* score of 10.2. If you count sentences just by looking for `.?!`, then this will be counted as a single 44-word sentence and produce a *Fog* score of 19. To penalize run-on sentences (which is recommended), then leave the option [count independent clauses as separate sentences](#readability-test-options) unchecked for this test.
 
@@ -623,7 +625,7 @@ $$
 Where:
 
 |     | Description |
-| --- | --- |
+| --- | :-- |
 | G   | Grade level |
 | W   | Number of words |
 | F   | Number of complex words |
@@ -753,7 +755,7 @@ The researchers conjectured these differences had more to do with use of languag
 The index score of *Lix* can be summarized as follows:
 
 | Lix Score | Description |
-| --- | --- |
+| :-- | :-- |
 | 0-29 | Very easy (books for children) |
 | 30-39 | Easy (fiction) |
 | 40-49 | Average (factual prose) |
@@ -775,7 +777,7 @@ $$
 Where:
 
 |     | Description |
-| --- | --- |
+| --- | :-- |
 | I   | Lix index score |
 | W   | Number of words |
 | X   | Number of long words (7+ characters) |
@@ -884,7 +886,7 @@ $$
 Where:
 
 |     | Description |
-| --- | --- |
+| --- | :-- |
 | I   | Grade level |
 | W   | Number of words |
 | M   | Number of monosyllabic words |
@@ -904,7 +906,7 @@ $$
 Where:
 
 |     | Description |
-| --- | --- |
+| --- | :-- |
 | G   | Grade level |
 | F   | Number of complex words |
 | Z   | Number of easy words |
@@ -938,7 +940,7 @@ The recalculated *Dale-Chall* formula is as follows:
 Where:
 
 |     | Description |
-| --- | --- |
+| --- | :-- |
 | G   | Grade level |
 | S   | Number of sentences |
 | UDC | Number of unfamiliar *Dale-Chall* words |
@@ -970,7 +972,7 @@ The recalculated *Farr, Jenkins, Paterson* formula is as follows:
 Where:
 
 |     | Description |
-| --- | --- |
+| --- | :-- |
 | G   | Grade level |
 | W   | Number of words |
 | M   | Number of monosyllabic words |
@@ -1000,7 +1002,7 @@ The recalculated *Gunning Fog* formula is as follows:
 Where:
 
 |     | Description |
-| --- | --- |
+| --- | :-- |
 | G   | Grade level |
 | W   | Number of words |
 | F   | Number of complex words |
@@ -1033,7 +1035,7 @@ $$
 Where:
 
 |     | Description |
-| --- | --- |
+| --- | :-- |
 | G   | Grade level |
 | ASL | Average sentence length |
 | SY  | Number of syllables per 100 words |
@@ -1081,7 +1083,7 @@ As for defining long words, Anderson recommended “excluding hyphens, punctuati
 
 Prior to creating this formula, Anderson conducted a validation study for *Lix*, using a set of 36 prose passages. These 150-word passages were originally scored from a cloze study (Miller and Coleman 851). Later, they were scored in another study involving judged-rankings and word-recollection tests (Aquino 346-356). (Both portions of Aquino’s study used 14 *Southwest Regional Laboratory for Educational Research and Development* employees.) Anderson analyzed the *Lix* scores against these other measurements and found significant correlations, as shown below:
 
-- against the Miller and Coleman’s cloze scores, $r = 0.89$
+- against the Miller and Coleman’s *cloze* scores, $r = 0.89$
 - against word-recall scores, $r = 0.82$
 - against the judges’ rankings, $r = 0.88$
 
@@ -1097,7 +1099,7 @@ $$
 Where:
 
 |     | Description |
-| --- | --- |
+| :-- | :-- |
 | I   | Rix index score |
 | X   | Number of long words (7+ characters) |
 | U   | Number of sentence units |
@@ -1105,7 +1107,7 @@ Where:
 ### Rix Index to Grade Level Table {-#rix-to-grade-level}
 
 | Rix Index Score | Grade Level |
-| --- | --- |
+| :-- | :-- |
 | 7.2 and above | College |
 | 6.2 and above | 12  |
 | 5.3 and above | 11  |
@@ -1136,7 +1138,7 @@ $$
 Where:
 
 |     | Description |
-| --- | --- |
+| --- | :-- |
 | G   | Grade level |
 | C   | Number of complex (3+ syllables) words from 30 sentences |
 
@@ -1190,7 +1192,7 @@ $$
 Where:
 
 |     | Description |
-| --- | --- |
+| --- | :-- |
 | G   | Grade level |
 | S   | Number of sentences |
 | W   | Number of words |
@@ -1220,15 +1222,17 @@ The *Wheeler-Smith* (397-399) test is designed for primary-age materials (Kinder
 
 Although not explicitly stated in the article, the authors' definition of “polysyllabic” as being 2+ syllable can be inferred from the example[^River] that they provided:
 
-> “The Woodsman saw the seven sisters come into their bedroom. He saw them put on the shoes in which they danced. He saw them put on their party dresses.  
-> When they were all dressed, the oldest sister opened a door in the floor near her bed.  
-> “Sisters, we are ready,” she said.  
-> They walked down the secret steps.  
-> The Woodsman put on his magic cap and followed them down the steps.  
-> Thanks to his magic cap, no one was able to see him.  
-> Soon they came to a wonderful wood.  
-> Some of the trees had blue leaves.  
-> Some had glass leaves. Others had leaves of gold.”
+::: {.fancyquotes data-latex=''}
+The Woodsman saw the seven sisters come into their bedroom. He saw them put on the shoes in which they danced. He saw them put on their party dresses.  
+When they were all dressed, the oldest sister opened a door in the floor near her bed.  
+“Sisters, we are ready,” she said.  
+They walked down the secret steps.  
+The Woodsman put on his magic cap and followed them down the steps.  
+Thanks to his magic cap, no one was able to see him.  
+Soon they came to a wonderful wood.  
+Some of the trees had blue leaves.  
+Some had glass leaves. Others had leaves of gold.
+:::
 
 The authors reported 20 polysyllabic words in the above sample. “Wonderful” is the only 3+ syllable word in this sample, whereas there are 18 2+ syllable words. It may be inferred that the authors were considering “their” as 2 syllables, which in that case would yield 20 2+ syllable (i.e., “polysyllabic”) words.
 
@@ -1247,7 +1251,7 @@ $$
 Where:
 
 |     | Description |
-| --- | --- |
+| --- | :-- |
 | I   | Index value |
 | P   | Number of polysyllabic (2+ syllable) words |
 | W   | Number of words |
@@ -1256,7 +1260,7 @@ Where:
 Then, find the index value in the following chart to acquire the final readability score:
 
 | Grade Level | Index Score |
-| --- | --- |
+| :-- | :-- |
 | Primer (Kindergarten) | 4.0 to 8.0 |
 | First grade | 8.1 to 11.5 |
 | Second grade | 11.6 to 19 |

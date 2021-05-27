@@ -1,3 +1,41 @@
+/* adapted from https://www.kirstencassidy.com/css-fancy-quotes/*/
+.fancyquotes {
+  quotes: "\201C""\201D""\2018""\2019";
+  padding: 1em 1em 1em 1em;
+  display: inline-block;
+  position: relative;
+  color: black;
+  background: #ccc;
+  border: 1px solid rgb(215,215,215);
+  width: 100%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.fancyquotes p::before {
+  content: open-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: -10px;
+  position: relative;
+  top: 30px;
+  color: white;
+  font-size: 4em;
+}
+.fancyquotes p::after {
+  content: close-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: 10px;
+  position: relative;
+  top: 35px;
+  color: white;
+  font-size: 4em;
+}
+
 .notesection {
   padding: 1em 1em 1em 1em;
   display: inline-block;

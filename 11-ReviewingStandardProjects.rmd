@@ -10,7 +10,7 @@ The top area of the **Scores** window is the score grid. In here there are four 
 - **Grade Level**: the minimum grade level that the test determined the document is suitable for.
 - **Reader Age**: the minimum reader age that the test determined the document is suitable for. The reader age is determined from the test's score. It can be shown as either a [range](#reading-age) for the entire grade, or be rounded to the semester that the grade score falls into.
 - **Scale Value**: the index value for tests that use special scales.
-- [**Predicted Cloze Score**](#cloze): the estimated score if the document were to be used for a cloze test. Note that cloze scores will be displayed in percentage format (i.e., 0–100) instead of floating-point format (i.e., .0–1.0) for easier reading.
+- [**Predicted Cloze Score**](#cloze): the estimated score if the document were to be used for a *cloze* test. Note that *cloze* scores will be displayed in percentage format (i.e., 0–100) instead of floating-point format (i.e., .0–1.0) for easier reading.
 
 Note that most tests have just one type of result (e.g., grade level), so non-applicable columns are left blank. For example, note below that the [*Gunning Fog*](#gunning-fog-test) result is a grade level of 8.3. This translates to an eighth grade level reader (in his or her third month of class). Because this test only returns a grade level and age, the **Scale Value** and **Predicted Cloze Score** columns are empty. Another example is the result for the [*Flesch Reading Ease*](#flesch-test) test, which has a scale value of 79. This test has its own scale (instead of a grade level) so its age, grade level, and cloze columns are empty.
 
