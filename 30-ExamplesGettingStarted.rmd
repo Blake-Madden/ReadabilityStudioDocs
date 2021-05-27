@@ -40,19 +40,19 @@ Now the words will be sorted by syllable count and then by frequency. As illustr
 
 If you are an educator assigning this book to your students, you can export the more difficult words to a report. You can hand this report out to your students and ask them to define these terms before reading the book. This will help prepare them for the book and make it easier and more enjoyable to read.
 
-To do this, click the `r keys("Save")` button on the **Home** tab and use the **Save As...** dialog to save this list to either an HTML or text file. You can also do this with any of the other difficult word lists, such as the **Spache unfamiliar words** list. Refer to \@ref(vocab-builder-example) for an example.
+To do this, click the `r keys("Save")` button on the **Home** tab and use the **Save As...** dialog to save this list to either an HTML or text file. You can also do this with any of the other difficult word lists, such as the *Spache* unfamiliar words list. Refer to \@ref(vocab-builder-example) for an example.
 
 ## Improving Students' Vocabulary {#vocab-builder-example}
 
 In this example, we will save a list of the more complex words from a book. If you are an educator, you can send this list to your students and ask them to define these words prior to reading the book. This can be a great way to prepare them for future readings, as well as helping them build their overall vocabulary.
 
-Continuing from the [previous example](#book-example)(see \@ref(book-example)), select the top item in the hard word list. Now scroll down to the last word that has five syllables, hold down the `r keys("SHIFT")` key, and select this word. Now you will have all the words with five or more syllables selected. If there are any words that you want to add or remove from your selection, hold down the `r keys("CTRL")` key and click on them. Your word list will look like this:
+Continuing from the [previous example](#book-example) (see \@ref(book-example)), select the top item in the hard word list. Now scroll down to the last word that has five syllables, hold down the `r keys("SHIFT")` key, and select this word. Now you will have all the words with five or more syllables selected. If there are any words that you want to add or remove from your selection, hold down the `r keys("CTRL")` key and click on them. Your word list will look like this:
 
 ![](Images/difficultwords2.png)
 
 Now that you have selected the words that you want to save, click the `r keys("Save")` button on the **Home** tab.
 
-A **Save As** dialog will appear and you will have the option to save as either HTML or text. Select where you want to save the file and click **Save**.
+A **Save As** dialog will appear and you will have the option to save as either HTML or text. Select where you want to save the file and click `r keys("Save")`.
 
 ::: {.wrapfigure data-latex="{r}{0.5\\textwidth}"}
 ![](Images/exportoptions.png){width=48%}
@@ -319,7 +319,7 @@ Note how this label is now lightly written across the graph:
 ![](Images/ExampleWatermarkChanged.png)
 
 ::: {.tipsection data-latex=""}
-Entering “[DATE]” in the watermark will show the current date when the graph is rendered.
+Entering “[DATE]” in the watermark field will show the current date when the graph is rendered.
 :::
 
 Now let's put a company logo on our graph. Click the `r keys("Logo")` button in the **Edit** section. Select an image and click `r keys("OK")`.

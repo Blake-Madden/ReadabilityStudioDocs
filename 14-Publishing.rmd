@@ -14,7 +14,7 @@ Numerous formats are available for each type of window:
 - Word, phrase, and sentence [lists](#export-list): HTML and Text
 - [Graphs](#image-export): PNG, BMP, TIFF, JPEG, GIF, TARGA, and SVG
 
-All windows can also be exported at once by clicking the arrow beneath **Save** and selecting [**Export All...**](#export-all-options).
+All windows can also be exported at once by clicking the arrow beneath `r keys("Save")` and selecting [**Export All...**](#export-all-options).
 
 ## Scores Export Options{#scores-export}
 

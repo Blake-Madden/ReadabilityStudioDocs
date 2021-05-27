@@ -2,7 +2,7 @@
 
 In this chapter, we will step through examples showing how to create different types of custom tests.
 
-With custom tests, you can create enhanced versions of existing tests like *New Dale-Chall* that include your own word list. You can also create entirely new tests with your own formulas, and design them to return either grade-level, predicted cloze, or index scores.
+With custom tests, you can create enhanced versions of existing tests like *New Dale-Chall* that include your own word list. You can also create entirely new tests with your own formulas, and design them to return either grade-level, predicted *cloze*, or index scores.
 
 ## Creating a Modified *Flesch* Test {#creating-custom-flesch-test}
 

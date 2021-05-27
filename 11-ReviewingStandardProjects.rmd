@@ -575,7 +575,7 @@ The **Words Breakdown** graph displays all the raw *Dolch* word counts, broken d
 
 ![](Images/DolchWordBreakdown.png)
 
-As we can see in the above graph, there are 938 total *Dolch* words used in this document. Unfortunately, there are also 489 non-Dolch words. Although there is a strong number of Dolch words, the high number of non-Dolch words may make this document a poor candidate for practicing *Dolch* sight words.
+As we can see in the above graph, there are 938 total *Dolch* words used in this document. Unfortunately, there are also 489 non-*Dolch* words. Although there is a strong number of *Dolch* words, the high number of non-*Dolch* words may make this document a poor candidate for practicing *Dolch* sight words.
 
 ### Reviewing the Dolch Highlighted Text {-#reviewing-dolch-text}
 
