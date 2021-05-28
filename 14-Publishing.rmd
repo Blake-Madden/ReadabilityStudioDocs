@@ -302,11 +302,15 @@ Any extended ASCII character not listed above will be removed from the document.
 
 **Remove trailing periods from abbreviations and acronyms**: Check this option to remove the last period from abbreviations and acronyms. For example:
 
-> “Dr. Jones has requested a copy of the S.W.O.T. report.”
+::: {.fancyquotes data-latex=''}
+Dr. Jones has requested a copy of the S.W.O.T. report.
+:::
 
 will be exported as:
 
-> “Dr Jones has requested a copy of the S.W.O.T report.”
+::: {.fancyquotes data-latex=''}
+Dr Jones has requested a copy of the S.W.O.T report.
+:::
 
 This option is recommended for other programs that may have difficulty deducing sentences properly because of these periods.
 

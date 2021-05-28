@@ -13,7 +13,9 @@
   text-align: justify;
   text-justify: inter-word;
 }
-.fancyquotes p::before {
+/* add smart quotes around the first and last paragraphs
+    inside of a fancyquotes div.*/
+.fancyquotes p:first-of-type:before {
   content: open-quote;
   display: inline;
   height: 0;
@@ -24,7 +26,7 @@
   color: white;
   font-size: 4em;
 }
-.fancyquotes p::after {
+.fancyquotes p:last-of-type:after {
   content: close-quote;
   display: inline;
   height: 0;
@@ -34,6 +36,18 @@
   top: 35px;
   color: white;
   font-size: 4em;
+}
+/* left align subsequent paragraphs to the top one,
+    which is pushed over by the opening smart quote.*/
+.fancyquotes p:not(:first-of-type) {
+  padding-left: 1em;
+}
+.fancyquotes p {
+  margin-bottom: 0 !important;
+}
+
+.FlushLeft {
+  text-align: left;
 }
 
 .notesection {

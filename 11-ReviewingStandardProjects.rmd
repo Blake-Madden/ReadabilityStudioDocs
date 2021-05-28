@@ -355,13 +355,17 @@ After opening a project, click on the **Grammar** icon on the project sidebar an
 
 A repeated word is when the same word appears after itself (which is usually a typo). For example:
 
-> “Gabi gave her report **to to** the manager.”
+::: {.fancyquotes data-latex=''}
+Gabi gave her report **to to** the manager.
+:::
 
 In this case, the word “to” was accidentally typed twice. **Readability Studio** will consider this a repeated word and include it in this list.
 
 Repeated words are bound to the sentence level. If the same word ends one sentence and begins the next, then it will not be considered a repeated word. For example, “Nancy” would not be considered a repeated word here:
 
-> “Gabi gave her sales report to **Nancy. Nancy** really appreciated Gabi's promptness.”
+::: {.fancyquotes data-latex=''}
+Gabi gave her sales report to **Nancy. Nancy** really appreciated Gabi's promptness.
+:::
 
 Repeated word searching is applied to all sentences. [Incomplete sentences](#how-text-is-excluded) will be reviewed for this, even if they are excluded from the analysis.
 
@@ -418,7 +422,9 @@ After opening a project, click on the **Grammar** icon on the project sidebar an
 
 For example:
 
-> “**We is** offering standard benefits (e.g., 401K matching and health insurance), as well as **French benefits** to all new employees.”
+::: {.fancyquotes data-latex=''}
+**We is** offering standard benefits (e.g., 401K matching and health insurance), as well as **French benefits** to all new employees.
+:::
 
 In this case, “We is” is not grammatically correct, and “We are” will be offered as a suggested replacement. Also, “French benefits” is not the correct expression and “fringe benefits” will be offered as a suggested replacement. Both of these items will be considered wording errors and shown in this list.
 
@@ -438,13 +444,17 @@ After opening a project, click on the **Grammar** icon on the project sidebar an
 
 A redundant phrase is when a modifier expresses something that is already implied by the noun it is modifying. For example:
 
-> “Gabi and Nancy **collaborated together** on the report. They should have a **brief summary** ready later today.”
+::: {.fancyquotes data-latex=''}
+Gabi and Nancy **collaborated together** on the report. They should have a **brief summary** ready later today.
+:::
 
 In this case, “collaborated together” and “brief summary” are redundant. Collaboration already implies two or more people working together. The “together” in this phrase adds nothing and just makes this sentence wordy. As for “brief summary,” summaries are always brief; hence, the redundancy in that phrase. **Readability Studio** will consider these as redundant phrases and include them in this list.
 
 Redundant phrases are bound to the sentence level. If part of a phrase ends one sentence and begins the next, then it will not be considered a redundant phrase. For example, “brief. Summaries” would not be considered a redundant phrase here because the words are in different sentences:
 
-> “Gabi and Nancy need to be **brief. Summaries** are very important before presenting a report.”
+::: {.fancyquotes data-latex=''}
+Gabi and Nancy need to be **brief. Summaries** are very important before presenting a report.
+:::
 
 Redundant phrase searching is applied to all sentences. [Incomplete sentences](#how-text-is-excluded) will be reviewed for this, even if they are excluded from the analysis.
 
@@ -460,13 +470,17 @@ After opening a project, click on the **Grammar** icon on the project sidebar an
 
 A phrase is wordy if it contains too many words or contains complex words that could be replaced by simpler ones. For example:
 
-> “**Over the course of** the season, Nancy's batting average improved.”
+::: {.fancyquotes data-latex=''}
+**Over the course of** the season, Nancy's batting average improved.
+:::
 
 In this case, “Over the course of” is wordy. **Readability Studio** will consider this a wordy phrase and offer “during” or “throughout” as replacements.
 
 Wordy phrases are bound to the sentence level. If part of a phrase ends one sentence and begins the next, then it will not be considered a wordy phrase. For example, “a host of” would not be considered a wordy phrase here because its words are in two different sentences:
 
-> “For the party, we need **a host. Of** course he should be very funny.”
+::: {.fancyquotes data-latex=''}
+For the party, we need **a host. Of** course he should be very funny.
+:::
 
 Wordy-item searching does not affect readability calculations, so this analysis is applied to all sentences. [Incomplete sentences](#how-text-is-excluded) will be reviewed for this, even if they are excluded from the analysis.
 
@@ -482,11 +496,15 @@ After opening a project, click on the **Grammar** icon on the project sidebar an
 
 For example, the following would be marked as passive:
 
-> “The show had been given many awards by the academy.”
+::: {.fancyquotes data-latex=''}
+The show had been given many awards by the academy.
+:::
 
 Although not a grammatical error, passive voice can cause confusion as to who is doing what to whom. In the above example, the ordering of words makes it difficult for early readers to understand who was giving the awards. The following would be direct and clear:
 
-> “The academy gave the show many awards.”
+::: {.fancyquotes data-latex=''}
+The academy gave the show many awards.
+:::
 
 This search is applied to all sentences. [Incomplete sentences](#how-text-is-excluded) will be reviewed for this, even if they are excluded from the analysis.
 
@@ -502,7 +520,9 @@ After opening a project, click on the **Grammar** icon on the project sidebar an
 
 A cliché is an overused phrase that should be avoided if you are writing professional documents. In the context of readability, clichés can be unfamiliar to early (young or ESL) readers. For example:
 
-> “He is acting very **off the wall**.”
+::: {.fancyquotes data-latex=''}
+He is acting very **off the wall**.
+:::
 
 In this case, “off the wall” is a cliché and will be listed with “unusual” being offered as a replacement. A phrase such as this is considered “tired” and would not appear professional in a business report or technical document. Also, those new to English may not understand what this expression means. If you are targeting early readers, then you should avoid clichés for clarity.
 
@@ -615,7 +635,7 @@ The **Non-Dolch Words** subitem will display a list of the words from the docume
 
 Next to each word will be a **Frequency** column, which will represent the number of times the word appears in the file.
 
-A high volume of non-Dolch words will adversely affect a document's ability to be a good *Dolch* practice tool. If the non-*Dolch* word count is high, consider replacing or removing words from this list that have high frequency counts.
+A high volume of non-*Dolch* words will adversely affect a document's ability to be a good *Dolch* practice tool. If the non-*Dolch* word count is high, consider replacing or removing words from this list that have high frequency counts.
 
 Double-click on any word in this list to display the [**Non-Dolch Words**](#reviewing-dolch-text) text window with the first instance of that word selected.
 

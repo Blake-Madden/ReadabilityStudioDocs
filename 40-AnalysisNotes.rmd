@@ -37,11 +37,15 @@ Refer to \@ref(document-analysis) for a detailed explanation of these options.
 
 The first exception is periods that are part of an abbreviation, acronym, or initial. For example, the following is seen as only one sentence:
 
-> “Jane B. Doe has worked at A.C.M.E., inc. for seven years.”
+::: {.fancyquotes data-latex=''}
+Jane B. Doe has worked at A.C.M.E., inc. for seven years.
+:::
 
 Another exception is the last sentence inside of a quote. If this sentence is followed by a lowercase word, then it will not end until the next sentence terminating punctuation is encountered. For example, the following is seen as two sentences:
 
-> “Where did it go? I can't find it anywhere!” he said.
+::: {.fancyquotes data-latex=''}
+Where did it go? I can't find it anywhere!” he said.
+:::
 
 Because “he” is lowercase, the '!' will not be considered the end of the sentence and “he said” will be part of the proceeding sentence. However, if “He” is capitalized, then the '!' will be seen as the end of a sentence and the above will be counted as three sentences.
 
@@ -55,30 +59,37 @@ By default, lowercase words can be considered the start of a new sentence (with 
 
 Line chaining (or sentence chaining) is a sentence deduction method where lines of text are joined until a '.', '?', or '!' is found. In other words, multiple lines of text can be joined into a single sentence. This is normally preferred behavior when text is formatted to a specific width, such as the following:
 
-> “WARNING:  
-> Before cleaning the blade (or performing  
-> any general maintenance), be sure to turn  
-> OFF the mower. Failure to comply may  
-> result in injury.”
+:::: {.fancyquotes data-latex=''}
+::: {.FlushLeft data-latex=''}
+WARNING:
+
+Before cleaning the blade (or performing\
+any general maintenance), be sure to turn\
+OFF the mower. Failure to comply may\
+result in injury.
+:::
+::::
 
 Although this is five lines of text, we would expect for this to be seen as three sentences. By chaining lines 2, 3, and part of 4 into one sentence (from “Before” to “mower.”), we properly see the sentences (regardless of the line breaks).
 
 However, this can be a problem if your document contains headers, footers, and list items. Consider this example:
 
-> “**COCOA CAKE**
->  
-> The following ingredients are required:
-> 
-> - 1/2 a cup of butter
-> - 3/4 a cup of milk
-> - 1 cup of sugar
-> - 6 level tablespoonfuls of Baker's Cocoa
-> - 3 eggs
-> - 2 level teaspoonfuls of baking powder
-> - 1 teaspoonful of vanilla
-> - 1-1/2 or 2 cups of sifted pastry flour
-> 
-> Cream the butter, stir in the sugar gradually, add the unbeaten eggs, and beat all together until very creamy.”
+::: {.fancyquotes data-latex=''}
+**COCOA CAKE**
+ 
+The following ingredients are required:
+
+- 1/2 a cup of butter
+- 3/4 a cup of milk
+- 1 cup of sugar
+- 6 level tablespoonfuls of Baker's Cocoa
+- 3 eggs
+- 2 level teaspoonfuls of baking powder
+- 1 teaspoonful of vanilla
+- 1-1/2 or 2 cups of sifted pastry flour
+
+Cream the butter, stir in the sugar gradually, add the unbeaten eggs, and beat all together until very creamy.
+:::
 
 In this situation, the header would be joined with the first sentence. Additionally, all the list items would be combined into one large sentence, and could even be joined with the sentence following them. This can greatly skew your sentence lengths and lead to erroneous results.
 
@@ -92,29 +103,48 @@ In the above example, the program will detect the blank line between the header 
 
 As we can see, the program helps avoid incorrect line chaining. Just as important, it will chain lines correctly when it is actually necessary. Consider the following:
 
-> “WARNING:  
-> Before cleaning the blade (or performing  
-> any general maintenance), be sure to turn  
-> OFF the mower. Failure to comply may  
-> result in injury.”
+:::: {.fancyquotes data-latex=''}
+::: {.FlushLeft data-latex=''}
+WARNING:
+
+Before cleaning the blade (or performing\
+any general maintenance), be sure to turn\
+OFF the mower. Failure to comply may\
+result in injury.
+:::
+::::
 
 The first line, “WARNING:,” will be seen as a single sentence because the line ends with a colon. Although colons are not normally treated as a sentence terminating character, an exception is made when it is encountered at the end of a line. The next line, “Before cleaning the blade (or performing,” does not end with a sentence terminating character. There are no empty lines after this line, and the next line is not bulleted or tabbed; therefore, this line will be chained to the next line. This chaining will continue until an empty line or a sentence terminating character is encountered. In this case, all these lines will be joined into one sentence:
 
-> “Before cleaning the blade (or performing  
-> any general maintenance), be sure to turn  
-> OFF the mower.”
+:::: {.fancyquotes data-latex=''}
+::: {.FlushLeft data-latex=''}
+Before cleaning the blade (or performing\
+any general maintenance), be sure to turn\
+OFF the mower.
+:::
+::::
 
 Note that even if a header does not precede an empty line or end with a sentence terminating character, line chaining will be intelligently avoided if the following sentence is tabbed or spaced over. The first sentence of a new paragraph is normally spaced over, so this is expected behavior. In this example, the following sentence is tabbed over and the program will know not to chain these lines:
 
-> “WARNING  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Before cleaning the blade...”
+:::: {.fancyquotes data-latex=''}
+::: {.FlushLeft data-latex=''}
+WARNING
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Before cleaning the blade...
+:::
+::::
 
 A caveat with line chaining is when a header is not terminated and not followed by an empty line, and the following sentence is not tabbed over. For example:
 
-> “WARNING  
-> Before cleaning the blade...”
+:::: {.fancyquotes data-latex=''}
+::: {.FlushLeft data-latex=''}
+WARNING
 
-In this case, these two lines will be erroneously joined into one sentence. To completely disable all possible line chaining, select the option [Line ends always begin a new paragraph](#options-sentence-deduction). Note that this option is only recommended if all line ends in your document represent new paragraphs. If your document contains line ends to control the width of the text, then selecting this option will cause incorrect sentence deduction.
+Before cleaning the blade...
+:::
+::::
+
+In this case, these two lines will be erroneously joined into one sentence. To completely disable all possible line chaining, select the option [**Line ends always begin a new paragraph**](#options-sentence-deduction). Note that this option is only recommended if all line ends in your document represent new paragraphs. If your document contains line ends to control the width of the text, then selecting this option will cause incorrect sentence deduction.
 
 ## Controlling How Sentences are Deduced
 
@@ -124,9 +154,11 @@ The option **Sentences must begin with capitalized words** controls whether sent
 
 The option **Ignore blank lines** is used for controlling how multi-line sentences with blank lines between them are seen. For example:
 
-> “Chapter 1  
->  
-> It was the best days of our lives.”
+::: {.fancyquotes data-latex=''}
+Chapter 1  
+
+It was the best days of our lives.
+:::
 
 If **Ignore blank lines** is unselected (the default), then the above example is seen as two sentences. “Chapter 1” is seen as an [incomplete sentence](#how-text-is-excluded) because there is a blank line between it and the next sentence. Then “It was the best days of our lives.” is seen as the second sentence. This behavior is recommended for most documents because it helps remove headers and list items from the analysis.
 
@@ -197,7 +229,9 @@ The following symbols are syllabized as follows:
 
 Generally, repeated words are a typo; however, there are a few exceptions. For example:
 
-> “The report is due tomorrow. I'm concerned **that that** report won't be ready in time. The last time that I spoke to our boss, she said that she **had had** it with overdue reports.”
+::: {.fancyquotes data-latex=''}
+The report is due tomorrow. I'm concerned **that that** report won't be ready in time. The last time that I spoke to our boss, she said that she **had had** it with overdue reports.
+:::
 
 ```{block, type='onsamepage'}
 Although awkwardly worded, the duplicate “that” and “had” are grammatically correct. To account for this, **Readability Studio** ignores certain repeated words, such as:
@@ -214,7 +248,9 @@ Although awkwardly worded, the duplicate “that” and “had” are grammatica
 
 Words separated by punctuation are also ignored when deducing repeated words. For example:
 
-> “I need a list of new features. Each new **feature, feature** by feature, is required to be documented.”
+::: {.fancyquotes data-latex=''}
+I need a list of new features. Each new **feature, feature** by feature, is required to be documented.
+:::
 
 This will not be seen as repeated words because of the comma.
 
@@ -222,19 +258,25 @@ This will not be seen as repeated words because of the comma.
 
 There are two special cases for article-mismatch detection: single letters and acronyms. For single letters, **Readability Studio** will sound out the letter when determining whether the article in front of it is correct. For example:
 
-> “All the students did well, except for one that received **a 'F'**.”
+::: {.fancyquotes data-latex=''}
+All the students did well, except for one that received **a 'F'**.
+:::
 
 In this example, “a 'F'” will be considered incorrect because the program will sound out the letter 'F' as “ef.” An “ef” sound requires the article “an” to be grammatically correct, so this will be considered wrong.
 
 Similar logic is applied to acronyms that probably would have each letter sounded out. This deduction is made if an acronym contains no vowels. For example:
 
-> “**A SDLC** meeting should be held after the product is launched.”
+::: {.fancyquotes data-latex=''}
+**A SDLC** meeting should be held after the product is launched.
+:::
 
 The program will sound out the letters in “SDLC” because it has no vowels, resulting in “es dee el see.” Because of the “es” sound, the article “an” is required. Therefore, the program will mark this as an article mismatch.
 
 Note that if an acronym contains a vowel, then the program will assume that it is pronounced as a regular word. For example:
 
-> “Run **a FORCAST** test if your document doesn't have a regular sentence structure.”
+::: {.fancyquotes data-latex=''}
+Run **a FORCAST** test if your document doesn't have a regular sentence structure.
+:::
 
 Rather than treating the word “FORCAST” as if it begins with an “ef” sound, it sounds it out like “forecast.” Therefore, the article “a” is considered correct.
 
@@ -254,12 +296,16 @@ To avoid these issues, it is recommended to include incomplete sentences in the 
 
 Some published documents format each line of text to a specific width to fit on the page. In doing so, longer words at the end of some lines may be split and hyphenated. For example:
 
-> “COBOL is an acronym for COmmon **Bus-  
-> iness** Oriented Language. It is commonly  
-> used for calculating monetary transactions  
-> and generating reports. For example, COBOL  
-> can be found in the backend of many Point-of-  
-> Sale systems.”
+:::: {.fancyquotes data-latex=''}
+::: {.FlushLeft data-latex=''}
+COBOL is an acronym for COmmon **Bus-\
+iness** Oriented Language. It is commonly\
+used for calculating monetary transactions\
+and generating reports. For example, COBOL\
+can be found in the backend of many Point-of-\
+Sale systems.
+:::
+::::
 
 Note how “Business” and “Point-of-Sale” are split across multiple lines.
 

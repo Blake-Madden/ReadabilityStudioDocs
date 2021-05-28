@@ -172,7 +172,9 @@ Certain tests, such as [*Spache Revised*](#spache-test), treat all proper nouns 
 
 Consider the following example:
 
-> “The Daily Examiner reported today that a tax examiner is reviewing the company's records. The examiner will have his full report by the end of the week.”
+::: {.fancyquotes data-latex=''}
+The Daily Examiner reported today that a tax examiner is reviewing the company's records. The examiner will have his full report by the end of the week.
+:::
 
 The list of unfamiliar *HJ* words will report the following:
 

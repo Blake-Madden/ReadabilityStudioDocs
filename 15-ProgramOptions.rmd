@@ -50,7 +50,7 @@ Note that selecting **System** will reset the program colors to the system's def
 - **Prompt about Harris-Jacobson using a different text exclusion method from the system default.** By default, *Harris-Jacobson* uses its own method for excluding text, which may differ from the system default's method. This message will be shown to warn about this.
 - **Warn when a custom test's numeral settings will be adjusted.** Some tests (e.g., [*Harris-Jacobson*](#harris-jacobson)) require numerals to be excluded from the analysis. This warning will be shown if a custom test needs its numeral settings adjusted to take such rules into account.
 - **Warn about German stemming not supporting proper noun detection.** This warning is shown when creating a custom test that uses German stemming and treats proper nouns as familiar.
-- **Warn about unique-value histograms requiring midpoint axis labels.** If you specify **unique values** as your histogram [bin sorting](#options-histograms) method, then midpoint interval display will need to be used. Because each bin (i.e., bar) will represent only one value, the histograms will not have ranges of values for its intervals. Therefore, cutpoints will not be applicable and midpoint axis labels will be used instead. If you have cutpoints as the interval type and choose unique-value bin sorting, then this warning will be shown before adjusting the interval display.
+- **Warn about unique-value histograms requiring midpoint axis labels.** If you specify unique values as your histogram [bin sorting](#options-histograms) method, then midpoint interval display will need to be used. Because each bin (i.e., bar) will represent only one value, the histograms will not have ranges of values for its intervals. Therefore, cutpoints will not be applicable and midpoint axis labels will be used instead. If you have cutpoints as the interval type and choose unique-value bin sorting, then this warning will be shown before adjusting the interval display.
 - **Prompt about auto-searching for missing files.** By default, projects link to the documents that they analyze. When you open a project, the document will be reanalyzed to include any recent changes. If the document cannot be found, then the program will ask if it should search for a document by the same name. This search will be relative to the project file's location. Unchecking this option will suppress this prompt and the program will automatically search for and load the document.
 - **Prompt about re-linking to a document that has been embedded.** By default, a project will link to the document it is analyzing. When you click the `r keys("Edit Document")` button (on the **Home** tab), the document will be opened in its default editor. However, if you have chosen to embed the document into the project, then this prompt will appear. It will ask you whether you want to change this setting to link to the document and then edit it, or it continue embedding the document and then edit the embedded text. Note that if you continue to embed the document and edit the embedded text, then your changes will only be reflected in your project—your changes will not appear in the original document.
 - **Prompt about failing to load a project that is missing its embedded text.** When opening a project which embeds the document's text, then an error message will be shown if the embedded text is not found within the project.
@@ -194,9 +194,11 @@ Note that if you are not excluding any text, this option will still take effect 
 
 **Aggressively exclude**: Select this option to mark any valid sentence as incomplete if a). it is between at least two incomplete sentences and b). is less than 10 words. For example:
 
-> - Products by Industry
-> - Which Product is Right for You?
-> - Products Reviews
+::: {.fancyquotes data-latex=''}
+- Products by Industry
+- Which Product is Right for You?
+- Products Reviews
+:::
 
 By default, the question mark would cause the second sentence to be included in an analysis. Checking this checkbox will instruct the program to consider this sentence as part of the surrounding list items and exclude it.
 
@@ -232,17 +234,23 @@ The program will stop excluding text after a “References” header if it detec
 
 **Also exclude Internet and file addresses**: Select this option to ignore URLs (i.e., Internet addresses) and filepaths. Note that this applies to words inside of complete sentences, not just incomplete. For example:
 
-> “Readability Studio is available from *www.oleandersoftware.com*.”
+::: {.fancyquotes data-latex=''}
+Readability Studio is available from *www.oleandersoftware.com*.
+:::
 
 If this option is selected, then “*www.oleandersoftware.com*” will be excluded from every analysis. This includes sentence-length, word-length, and syllable-count calculations.
 
 **Also exclude numerals**: Select this option to ignore all numbers. For example:
 
-> “Upon arrival at 5:30PM, please be ready to cover the $75 boarding fee.”
+::: {.fancyquotes data-latex=''}
+Upon arrival at 5:30PM, please be ready to cover the $75 boarding fee.
+:::
 
 would be analyzed as this:
 
-> “Upon arrival at _____, please be ready to cover the _____ boarding fee.”
+::: {.fancyquotes data-latex=''}
+Upon arrival at _____, please be ready to cover the _____ boarding fee.
+:::
 
 This option may be recommended for mathematical works which contain equations and numbers that may skew the results.
 
@@ -256,11 +264,15 @@ This option may be recommended for mathematical works which contain equations an
 
 With the above exclusion list, this text:
 
-> “Quantum Fluctuations are fluctuations of particles within the quantum foam that appear ex nihilo and annihilate each other.”
+::: {.fancyquotes data-latex=''}
+Quantum Fluctuations are fluctuations of particles within the quantum foam that appear ex nihilo and annihilate each other.
+:::
 
 would be analyzed as this:
 
-> “_____ are fluctuations of _____ within the quantum foam that appear _____ and annihilate each other.”
+::: {.fancyquotes data-latex=''}
+_____ are fluctuations of _____ within the quantum foam that appear _____ and annihilate each other.
+:::
 
 This would be seen as a 13-word sentence, with all the phrases from the exclusion list removed. Note that the first instance of “fluctuations” is removed from the analysis because it is part of the phrase “Quantum Fluctuations” (which is on the exclusion list). However, the second instance of “fluctuations” will be included because it is not part of the phrase that we requested to ignore. To exclude all instances of “fluctuations,” include in the list on a separate line.
 
@@ -525,11 +537,11 @@ The options on this page customize which results are included in the [**Words Br
 
 **6+ Characters**: Check this to include the 6+ character words in the results.
 
-*Dale-Chall*: Check this to include the *Dale-Chall* unfamiliar words list in the results. (If a *Dale-Chall* test is included in the project).
+**Dale-Chall**: Check this to include the *Dale-Chall* unfamiliar words list in the results. (If a *Dale-Chall* test is included in the project).
 
-*Spache*: Check this to include the *Spache* unfamiliar words list in the results. (If *Spache* is included in the project).
+**Spache**: Check this to include the *Spache* unfamiliar words list in the results. (If *Spache* is included in the project).
 
-*Harris-Jacobson*: Check this to include the *Harris-Jacobson* unfamiliar words list in the results. (If *Harris-Jacobson* is included in the project).
+**Harris-Jacobson**: Check this to include the *Harris-Jacobson* unfamiliar words list in the results. (If *Harris-Jacobson* is included in the project).
 
 **Custom Tests**: Check this to include any custom tests' unfamiliar words lists in the results.
 
@@ -601,17 +613,23 @@ The options in this section select what the spell checker should ignore.
 
 **Ignore programmer code**: Check this to not spell check words with mixed upper and lower case words. This is useful for excluding programming syntax which may appear in computer-related documents. For example:
 
-> “Projects can be exported via Lua like this:  
-> 
-> a = StandardProject(`r verbatim_latex('"')`CrawfordValidation.rsp`r verbatim_latex('"')`)
-> 
-> a:ExportAll(`r verbatim_latex('"')`Results`r verbatim_latex('"')`)”
+:::: {.fancyquotes data-latex=''}
+::: {.FlushLeft data-latex=''}
+Projects can be exported via Lua like this:
+
+a = StandardProject(`r verbatim_latex('"')`CrawfordValidation.rsp`r verbatim_latex('"')`)
+
+a:ExportAll(`r verbatim_latex('"')`Results`r verbatim_latex('"')`)
+:::
+::::
 
 Checking this option will instruct the program to not spell check words such as “StandardProject” and “ExportAll.”
 
 **Allow colloquialisms**: Check this to allow colloquialisms, such as “ing” at the end of a word being replaced with “in'.” For example:
 
-> He's been takin' that test for five hours. He ain't never goin' to finish.
+::: {.fancyquotes data-latex=''}
+He's been takin' that test for five hours. He ain't never goin' to finish.
+:::
 
 Checking this option will instruct the program to not consider words such as “takin`r verbatim_latex('’”')` and “goin`r verbatim_latex('’”')` as misspellings.
 
