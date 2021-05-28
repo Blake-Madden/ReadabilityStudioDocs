@@ -48,9 +48,12 @@ menu <- function(menuKeys)
     }
   else if (knitr::is_html_output())
     {
-    knitr::asis_output(glue(
-      glue_collapse(glue("<div class='key'>{menuKeys[1:length(menuKeys)-1]}</div><div class='arrow right'></div>"), sep=' '),
-      glue("<div class='key'>{menuKeys[length(menuKeys)]}</div>")))
+    knitr::asis_output(
+      glue("<div class='menu'>",
+      glue_collapse(glue("<div class='keys'>{menuKeys[1:length(menuKeys)-1]}
+                          </div><div class='arrow right'></div>"), sep=' '),
+      glue("<div class='keys'>{menuKeys[length(menuKeys)]}</div>"),
+           "</div>"))
     }
   }
 
