@@ -1,6 +1,6 @@
 # Customizing the Results
 
-## Customizing the Scores
+## Scores
 
 When the **Scores** section is selected:
 
@@ -16,7 +16,7 @@ Options for customizing their display are made available on the **Edit** section
 
 Refer to \@ref(grade-scales) for a list of available scales.
 
-## Customizing the Summary Statistics
+## Summary Statistics
 
 When the **Summary Statistics** report is selected:
 
@@ -28,7 +28,7 @@ Options for customizing its display are made available on the **Edit** section o
 
 Click the `r keys("Edit Report")` button to view the [**Properties**](#options-statistics) dialog. Here, you can specify which sections to include in your summary report.
 
-## Customizing the Highlighted Text Windows
+## Highlighted Text Windows
 
 When any highlighted-text window is selected:
 
@@ -66,7 +66,7 @@ To sort a list by multiple columns, click the `r keys("Sort")` button in the **E
 
 On this dialog, you will specify which columns to sort by and their order. Going from top to bottom in this grid, the columns specified here will act as the sorting criteria for the list. The list will be sorted by the first specified column (and its respective sorting order), and in the case of a tie between two or more rows, the next specified column will become the sort criterion between those rows, and so on. To add a column as a sort criterion, double click a row in this grid and select the column name from the drop-down box. Once you have selected the columns to sort by, click the `r keys("OK")` button to sort the list.
 
-## Customizing Graphs
+## Graphs
 
 When any graph is selected:
 
