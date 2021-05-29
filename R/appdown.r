@@ -3,6 +3,11 @@ library(tidyverse)
 library(magrittr)
 library(kableExtra)
 
+knitr::opts_chunk$set(message=F, warning=F)
+# prevent floating
+knitr::opts_chunk$set(fig.pos = 'H', out.extra = '')
+options(knitr.kable.NA = '')
+
 # @brief Displays the macOS CMD button symbol (as a keyboard button).
 macOS_cmd_key <- function()
   {

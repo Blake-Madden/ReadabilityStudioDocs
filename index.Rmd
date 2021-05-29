@@ -17,11 +17,6 @@ cover-image: "images/NonGenerated/cover.png"
 ---
 
 ```{r, include=FALSE}
-knitr::opts_chunk$set(message=F, warning=F)
-# prevent floating
-knitr::opts_chunk$set(fig.pos = 'H', out.extra = '')
-options(knitr.kable.NA = '')
-
 source('R/appdown.r')
 ```
 
