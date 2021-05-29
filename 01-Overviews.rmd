@@ -198,7 +198,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
   - Added `HardFogWordCount()` function.
 - [*Farr-Jenkins-Paterson*](#farr-jenkins-paterson) now includes floating-point precision in its results.
 - Added sentence-lengths histogram (standard projects).
-- Bins in the syllable, sentence-length, grade-level, and predicted cloze score histograms now begin at 1^st^ grade or Kindergarten.
+- Bins in the syllable, sentence-length, grade-level, and predicted *cloze* score histograms now begin at 1^st^ grade or Kindergarten.
 - Improved document indexing performance.
 - Improved detection of Unicode spaces and line separators when indexing sentences.
 - Improved detection of longer internet address.
@@ -364,7 +364,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - Added **text size** statistic to the output.
 - Added ability to choose which sections of statistics appear in the summary reports.
 - **Total Words** column added to the **Words Breakdown** list in batch projects.
-- Excluded text is now shown as stricken out in the text windows.
+- Excluded text is now shown as stricken out in the text reports.
 - New, improved project wizard. All pages are now integrated into a single dialog.
 - Tooltips are now shown on the ribbon.
 - Help button and toggle button added to the ribbon.
@@ -375,7 +375,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - **Tests Explanation** and **Statistics** windows in batch projects now have copy and save buttons.
 - Graph editing options are now available on the ribbon.
 - Added **Long Format** and **Grade Scale** options to the ribbon (when the score window is selected).
-- The font and highlighting of text windows can now be changed from the ribbon.
+- The font and highlighting of text reports can now be changed from the ribbon.
 - Export options are now located under the `r keys("Save")` button (on the ribbon).
 - **Start Page** is now integrated into the main window and can be accessed whenever there aren't any open projects.
 - Added **Review Program Options** to the **Start Page**.
@@ -404,7 +404,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - Added GIF and TGA to **Export All** options.
 - When changing the width or height of a graph when exporting it as an image, the program will now automatically adjust the size to maintain the aspect ratio.
 - Icons are now included when exporting reports as HTML.
-- Underlining and italics are now included when exporting text windows to HTML.
+- Underlining and italics are now included when exporting text reports to HTML.
 - “Export All” folder path will now be remembered by the project.
 - Performance improvements to the Open-Document Text importer.
 - Improvements to the Word 2007 importer.
@@ -519,7 +519,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
     - Added [*Harris-Jacobson*](#harris-jacobson) test.
         - Added *Harris-Jacobson* word list viewer.
         - Added *Harris-Jacobson* hard word list window.
-        - Added *Harris-Jacobson* highlighted text window.
+        - Added *Harris-Jacobson* highlighted text report.
         - Added *Harris-Jacobson* unfamiliar words to the statistics.
         - Added *Harris-Jacobson* bar to the word breakdown bar chart.
 - Added high-precision option to [*SMOG*](#smog-test) test.
@@ -529,7 +529,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - Added ability to specify the result type of custom tests (e.g., index level or grade level).
 - Added ability for custom tests to control how proper nouns are handled (including the ability to count only the first occurrence of a proper noun as unfamiliar).
 - Custom tests no longer require custom word lists (just the standard lists can be selected).
-- Added predicted cloze score to [*Coleman-Liau*](#coleman-liau-test) test.
+- Added predicted *cloze* score to [*Coleman-Liau*](#coleman-liau-test) test.
 - [*New Dale-Chall*](#dale-chall-test) now has custom text exclusion options to use either the recommended instructions or the system defaults.
 - *New Dale-Chall* has the ability to control how proper nouns are handled (including the ability to count only the first occurrence of a proper noun as unfamiliar).
 - [Fry graph](#fry-test) now uses updated instructions for numerals and proper nouns based on the 1977 article *Fry's Readability Graph: Clarifications, Validity, and Extension to Level 17*.
@@ -579,7 +579,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - Improved proper-noun detection (stop list used for ambiguous capitalized words was greatly expanded).
 - Test-specific statistics are now only included if the respective test is included in the project.
 - Word-count bars are now only included on the word breakdown bar chart if the respective test is included in the project.
-- Fixed **Long sentences** text window not appearing on Japanese systems.
+- Fixed **Long sentences** text report not appearing on Japanese systems.
 - Improved handling of smart apostrophes and ellipses.
 
 ### Readability Studio 2.0 (2008) {-}

@@ -221,19 +221,19 @@ To help find the most difficult words for the *Dale-Chall* list, select the **Da
 
 To find a specific word in a list, type the word into the **Search** bar at the top of program and hit the `r keys("ENTER")` button on your keyboard. You can also select the list and begin typing the word. If the word is in the list, then the selection will move to it.
 
-Double-click on any word in these lists to display the respective highlighted text window with the first instance of that word selected.
+Double-click on any word in these lists to display the respective highlighted text report with the first instance of that word selected.
 
-The different types of text windows that may be shown are:
+The different types of text reports that may be shown are:
 
-**3+ Syllables**: This text window contains the document with all the words that are three or more syllables highlighted. This window is only available if the document contains 3+ syllable words.
+**3+ Syllables**: This text report contains the document with all the words that are three or more syllables highlighted. This window is only available if the document contains 3+ syllable words.
 
-**6+ Characters**: This text window contains the document with all the words that are six or more characters long highlighted. This window is only available if the document contains 6+ character words.
+**6+ Characters**: This text report contains the document with all the words that are six or more characters long highlighted. This window is only available if the document contains 6+ character words.
 
-**Dale-Chall (Unfamiliar)**: This text window contains the document with all the [*Dale-Chall*](#dale-chall-test) unfamiliar words highlighted. The *Dale-Chall* word list is a collection of words that are considered to be familiar to most fourth grade readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if a *Dale-Chall* related test is included in the project.
+**Dale-Chall (Unfamiliar)**: This text report contains the document with all the [*Dale-Chall*](#dale-chall-test) unfamiliar words highlighted. The *Dale-Chall* word list is a collection of words that are considered to be familiar to most fourth grade readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if a *Dale-Chall* related test is included in the project.
 
-**Spache (Unfamiliar)**: This text window contains the document with all the [*Spache*](#spache-test) unfamiliar words highlighted. The *Spache* word list is a collection of words that are considered to be familiar to most primary-age readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the *Spache* test is included in the project.
+**Spache (Unfamiliar)**: This text report contains the document with all the [*Spache*](#spache-test) unfamiliar words highlighted. The *Spache* word list is a collection of words that are considered to be familiar to most primary-age readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the *Spache* test is included in the project.
 
-**Harris-Jacobson (Unfamiliar)**: This text window contains the document with all the [*Harris-Jacobson*](#harris-jacobson) unfamiliar words highlighted. The *Harris-Jacobson* word list is a collection of words that are considered to be familiar to most primary-age readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the *Harris-Jacobson* test is included in the project.
+**Harris-Jacobson (Unfamiliar)**: This text report contains the document with all the [*Harris-Jacobson*](#harris-jacobson) unfamiliar words highlighted. The *Harris-Jacobson* word list is a collection of words that are considered to be familiar to most primary-age readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the *Harris-Jacobson* test is included in the project.
 
 You can change both the font and highlighting color by opening the [**Project Properties**](#options-overview) dialog and clicking the [**Highlighted Reports**](#options-highlighted-reports) icon. Note that changing these options from the **Project Properties** dialog will only affect the current project. If you want to make changes to any future projects, then go to the **Options** dialog from the **Tools** tab instead.
 
@@ -307,7 +307,7 @@ To find the location of a sentence, click on the square and its sentence number 
 
 ## Grammar {#reviewing-standard-grammar}
 
-After opening a project, click on the **Grammar** icon on the project sidebar and select the **Highlighted report** subitem. This text window will display the document with its difficult sentences and wordy items highlighted.
+After opening a project, click on the **Grammar** icon on the project sidebar and select the **Highlighted report** subitem. This text report will display the document with its difficult sentences and wordy items highlighted.
 
 ![](Images/featuressentences.png)
 
@@ -599,7 +599,7 @@ As we can see in the above graph, there are 938 total *Dolch* words used in this
 
 ### Reviewing the Dolch Highlighted Text {-#reviewing-dolch-text}
 
-After opening a project, click on the *Dolch Sight Words* icon on the project sidebar. There will be two types of highlighted text windows available: **Dolch Words** and **Non-Dolch Words**.
+After opening a project, click on the *Dolch Sight Words* icon on the project sidebar. There will be two types of highlighted text reports available: **Dolch Words** and **Non-Dolch Words**.
 
 The **Dolch Words** subitem will display the document with the *Dolch* words highlighted:
 
@@ -627,7 +627,7 @@ The **Dolch Words** subitem will display a list of the *Dolch* words from the do
 
 Next to each word will be two columns. The first column is **Frequency**, which will represent the number of times the word appears in the file. The second column is **Category**, which represents the *Dolch* category to which the word belongs.
 
-Double-click on any word in this list to display the [**Dolch Words**](#reviewing-dolch-text) text window with the first instance of that word selected.
+Double-click on any word in this list to display the [**Dolch Words**](#reviewing-dolch-text) text report with the first instance of that word selected.
 
 The **Non-Dolch Words** subitem will display a list of the words from the document that do not appear on any of the *Dolch* lists:
 
@@ -637,7 +637,7 @@ Next to each word will be a **Frequency** column, which will represent the numbe
 
 A high volume of non-*Dolch* words will adversely affect a document's ability to be a good *Dolch* practice tool. If the non-*Dolch* word count is high, consider replacing or removing words from this list that have high frequency counts.
 
-Double-click on any word in this list to display the [**Non-Dolch Words**](#reviewing-dolch-text) text window with the first instance of that word selected.
+Double-click on any word in this list to display the [**Non-Dolch Words**](#reviewing-dolch-text) text report with the first instance of that word selected.
 
 The **Unused Dolch Words** subitem will display a list of the *Dolch* words that do not appear in the document:
 

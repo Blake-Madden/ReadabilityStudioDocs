@@ -675,19 +675,19 @@ The options on this page select which categories of [*Dolch*](#reviewing-dolch) 
 
 #### Highlighting {-}
 
-**Dolch conjunctions color**: Select this checkbox to highlight *Dolch* conjunctions in the text window. Click the adjacent button to select the color to highlight these words.
+**Dolch conjunctions color**: Select this checkbox to highlight *Dolch* conjunctions in the text report. Click the adjacent button to select the color to highlight these words.
 
-**Dolch prepositions color**: Select this checkbox to highlight *Dolch* prepositions in the text window. Click the adjacent button to select the color to highlight these words.
+**Dolch prepositions color**: Select this checkbox to highlight *Dolch* prepositions in the text report. Click the adjacent button to select the color to highlight these words.
 
-**Dolch pronouns color**: Select this checkbox to highlight *Dolch* pronouns in the text window. Click the adjacent button to select the color to highlight these words.
+**Dolch pronouns color**: Select this checkbox to highlight *Dolch* pronouns in the text report. Click the adjacent button to select the color to highlight these words.
 
-**Dolch adverbs color**: Select this checkbox to highlight *Dolch* adverbs in the text window. Click the adjacent button to select the color to highlight these words.
+**Dolch adverbs color**: Select this checkbox to highlight *Dolch* adverbs in the text report. Click the adjacent button to select the color to highlight these words.
 
-**Dolch adjectives color**: Select this checkbox to highlight *Dolch* adjectives in the text window. Click the adjacent button to select the color to highlight these words.
+**Dolch adjectives color**: Select this checkbox to highlight *Dolch* adjectives in the text report. Click the adjacent button to select the color to highlight these words.
 
-**Dolch verbs color**: Select this checkbox to highlight *Dolch* verbs in the text window. Click the adjacent button to select the color to highlight these words.
+**Dolch verbs color**: Select this checkbox to highlight *Dolch* verbs in the text report. Click the adjacent button to select the color to highlight these words.
 
-**Dolch nouns color**: Select this checkbox to highlight *Dolch* nouns in the text window. Click the adjacent button to select the color to highlight these words.
+**Dolch nouns color**: Select this checkbox to highlight *Dolch* nouns in the text report. Click the adjacent button to select the color to highlight these words.
 
 \newpage
 

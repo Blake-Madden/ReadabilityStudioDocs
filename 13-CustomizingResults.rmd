@@ -28,9 +28,9 @@ Options for customizing its display are made available on the **Edit** section o
 
 Click the `r keys("Edit Report")` button to view the [**Properties**](#options-statistics) dialog. Here, you can specify which sections to include in your summary report.
 
-## Highlighted Text Windows
+## Highlighted Text Reports
 
-When any highlighted-text window is selected:
+When any highlighted text report is selected:
 
 ![](Images/dolchhighlightednonwords.png)
 
@@ -87,5 +87,5 @@ After creating or opening a project, you can customize how the program analyzes 
 ![](Images/RibbonEditDocumentOptions.png)
 
 ::: {.tipsection data-latex=""}
-With a standard project, you can review these changes in realtime by selecting any highlighted text window in the [**Words Breakdown**](#reviewing-word-breakdowns) or [**Grammar**](#reviewing-standard-grammar) sections. As you make changes, the program will reanalyze your document and these changes will be visible in this window. For example, changing how words are being excluded or how sentence endings are deduced will become apparent as you make changes from the ribbon.
+With a standard project, you can review these changes in realtime by selecting any highlighted text report in the [**Words Breakdown**](#reviewing-word-breakdowns) or [**Grammar**](#reviewing-standard-grammar) sections. As you make changes, the program will reanalyze your document and these changes will be visible in this window. For example, changing how words are being excluded or how sentence endings are deduced will become apparent as you make changes from the ribbon.
 :::

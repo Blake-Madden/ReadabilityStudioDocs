@@ -2,7 +2,7 @@
 
 ## Exporting {#exporting}
 
-All graphs\index{graphs!saving}, lists\index{lists!saving}, statistical summaries\index{summaries!saving}, and highlighted text windows\index{text windows!saving} can be exported from **Readability Studio**. This is useful for reviewing the results outside the program, as well as publishing and sharing them with colleagues.
+All graphs\index{graphs!saving}, lists\index{lists!saving}, statistical summaries\index{summaries!saving}, and highlighted text reports\index{text reports!saving} can be exported from **Readability Studio**. This is useful for reviewing the results outside the program, as well as publishing and sharing them with colleagues.
 
 To export any window, go to the **Home** tab and click the `r keys("Save")` button, or right click on the window and select **Save**.
 
@@ -32,7 +32,7 @@ When [exporting](#exporting) readability scores from a standard project, the fol
 
 ## Text Window Export Options {#text-window-export}
 
-When [exporting](#exporting) a text window\index{text windows!saving}, the following export formats are available:
+When [exporting](#exporting) a text report\index{text reports!saving}, the following export formats are available:
 
 ::: {.optionssection data-latex=""}
 **HTML**: A format that can be displayed in Internet browsers and most word-processing programs.
@@ -166,17 +166,17 @@ This dialog provides options for [exporting](#exporting) an entire project into 
 
 **Export lists as**: Select the file type that you want to save list windows as from this list. This option only applies when exporting as separate files.
 
-**Export text windows as**: Select the file type that you want to save text windows as from this list. This option only applies to standard projects, and when exporting as separate files.
+**Export text windows as**: Select the file type that you want to save text reports as from this list. This option only applies to standard projects, and when exporting as separate files.
 
 **Export graphs as**: Select the image type that you want to save graphs as from this list.
 
 **Image Options**: Click this button to further customize how to save the graphs as images. This includes options such as color mode and image size. Note that the options available on this dialog will depend on which image type is selected.
 
-**Include lists and text windows**: Select this option to include lists and highlighted text windows in the output. It is recommended to unselect this option for larger documents. This option only applies to standard projects.
+**Include lists and text windows**: Select this option to include lists and highlighted text reports in the output. It is recommended to unselect this option for larger documents. This option only applies to standard projects.
 
 ## Printing {#printing}
 
-All graphs\index{graphs!printing}, lists\index{lists!printing}, statistical summaries\index{summaries!printing}, and highlighted text windows\index{text windows!printing} can be printed from **Readability Studio**. This is useful for reviewing the results outside the program, and for publishing and sharing them with colleagues.
+All graphs\index{graphs!printing}, lists\index{lists!printing}, statistical summaries\index{summaries!printing}, and highlighted text reports\index{text reports!printing} can be printed from **Readability Studio**. This is useful for reviewing the results outside the program, and for publishing and sharing them with colleagues.
 
 To print any window, go to the **Home** tab and click the `r keys("Print")` button, or right click on the window and select **Print**.
 

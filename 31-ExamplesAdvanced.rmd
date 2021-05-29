@@ -98,7 +98,7 @@ All the options discussed here are also available on the **Document** tab of the
 
 Continuing from the [previous example](#excluding-text-from-analysis) (refer to \@ref(excluding-text-from-analysis)), we will now discuss how to exclude specific blocks of text.
 
-The first step is to open the example file **Press Release**. From the **Help** tab, click the `r keys("Example Documents")` button and then select **Press Release** from the menu. (When prompted about how to open the document, select **Create a new project**.) When the **New Project Wizard** appears, leave the defaults and click `r keys("Finish")`.
+The first step is to open the example file **Press Release**. From the **Help** tab, click the `r keys("Example Documents")` button and then select **Press Release** from the menu. (When prompted about how to open the document, select **Create a new project**.) When the **New Project** wizard appears, leave the defaults and click `r keys("Finish")`.
 
 Once the project is loaded, click **Grammar** on the project's sidebar and then click **Highlighted Report**. In this window, any text that is being excluded will be highlighted gray. For example, an indented list is being excluded, as shown below:
 
