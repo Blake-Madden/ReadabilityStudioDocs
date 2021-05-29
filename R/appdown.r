@@ -37,7 +37,7 @@ menu <- function(menuKeys)
 keys <- function(label)
   {
   if (knitr::is_latex_output())
-    { knitr::asis_output(paste0("\\keys{", label, "}")) }
+    { knitr::asis_output(glue("\\keys{<label>}", .open='<', .close='>')) }
   else if (knitr::is_html_output())
     { knitr::asis_output(glue("<span class='keys'>{label}</span>")) }
   else
@@ -68,6 +68,14 @@ split_column_into_table <- function(col, rowCount, columnName)
     { colnames(outData) <- columnName }
 
   outData
+  }
+
+checkmark <- function()
+  {
+  if (knitr::is_latex_output())
+    { knitr::asis_output("\\Checkmark") }
+  else if (knitr::is_html_output())
+    { knitr::asis_output("&#x2713;") }
   }
 
 # @brief Returns an indentation to put in front of a line of text.

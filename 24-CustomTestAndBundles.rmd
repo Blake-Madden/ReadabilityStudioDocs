@@ -24,7 +24,7 @@ To create a new formula based on *Lix* that treats 6+ character words as difficu
 
 `SixCharacterPlusWordCount() / SentenceCount()`
 
-To view the available functions, click the function browser button ![](Images/NonGenerated/FunctionBroswerButton.png)  to display the **Function Browser** dialog:
+To view the available functions, click the function browser button `r keys('ƒx')` to display the **Function Browser** dialog:
 
 ![](Images/FunctionBrowser.png)
 
@@ -42,13 +42,13 @@ If your test is using any of the predefined familiar-word formulas (`CustomNewDa
 
 If you want to include a list of your own familiar words, then check the option **Include custom familiar word list**. Next, enter the path to the familiar-word file in the **File containing familiar words** field. This file must be a text file and each word must be separated by a space, tab, comma, semicolon, or new line. An example file would look like this:
 
-`apple orange pear`
+> `apple orange pear`
 
 or like this:
 
-`apple  
-orange  
-pear`
+> `apple`\
+> `orange`\
+> `pear`
 
 After entering the file path, the words from the file will be shown in the familiar words grid.
 
@@ -287,9 +287,9 @@ From the **Readability** tab, click the `r keys("Custom Test")` button and then 
 
 ### Formula {-}
 
-![](Images/NonGenerated/FunctionBroswerButton.png)  Click this button to display the **Function Browser** dialog. In this dialog, you can browse the available functions and insert them into your formula. Refer to \@ref(custom-test-functions) for a list of available functions.
+`r keys('ƒx')`  Click this button to display the **Function Browser** dialog. In this dialog, you can browse the available functions and insert them into your formula. Refer to \@ref(custom-test-functions) for a list of available functions.
 
-![](Images/NonGenerated/FunctionValidate.png)  Click this button to validate the formula. You will be alerted if your formula contains any syntax errors.
+`r keys(checkmark())`  Click this button to validate the formula. You will be alerted if your formula contains any syntax errors.
 
 **Formula**: Enter the test's formula into this field. As you type, a list of available functions will appear beneath the cursor. To select a function from this list, first use the arrow keys on your keyboard to navigate through the list. Once you have selected the desired function, hit the `r keys("SPACEBAR")` on your keyboard to insert it into your formula. You can also insert functions from the **Function Browser**.
 
@@ -301,24 +301,18 @@ From the **Readability** tab, click the `r keys("Custom Test")` button and then 
 
 **File containing familiar words**: Enter the path to the familiar-word list into this field. This list must be a text file where each word is separated by a space, tab, comma, semicolon, or new line. An example file would look like this:
 
-```{r, eval=F, echo=T}
-computer install program videogame
-```
+> `computer install program videogame`
 
 or like this:
 
-```{r, eval=F, echo=T}
-computer,install,program,videogame
-```
+> `computer,install,program,videogame`
 
 or like this:
 
-```{r, eval=F, echo=T}
-computer
-install
-program
-videogame
-```
+> `computer`\
+> `install`\
+> `program`\
+> `videogame`
 
 **Use stemming to search for similar words**: Select from this list the stemming method (if any) to use when comparing your familiar words with the words in a document.
 
@@ -382,18 +376,18 @@ From the **Readability** tab, click the `r keys("Custom Test")` button and then 
 
 **File containing familiar words**: Enter the path to the familiar-word list into this field. This list must be a text file where each word is separated by a space, tab, comma, semicolon, or new line. An example file would look like this:
 
-`computer install program videogame`
+> `computer install program videogame`
 
 or like this:
 
-`computer,install,program,videogame`
+> `computer,install,program,videogame`
 
 or like this:
 
-`computer  
-install  
-program  
-videogame`
+> `computer`\
+> `install`\
+> `program`\
+> `videogame`
 
 ## Test Bundles {#test-bundles}
 
