@@ -16,7 +16,7 @@ Finally, graphical tests (e.g., [*Fry*](#fry-test)) only return integral grade l
 Grade-level scores are traditional displayed in U.S. (K–12+) format, be can be coverted to other scales. The following grade scales are available to choose from:
 
 ```{r, echo=F}
-usaGradeScale <- splitColumnIntoTable(read_tsv("data/USAGradeScale.txt",
+usaGradeScale <- split_column_into_table(read_tsv("data/USAGradeScale.txt",
                                          col_names=F)[[1]], 15, "Grade Levels")
 
 kableExtra::kbl(usaGradeScale, booktabs=T, centering=T, linesep="",
@@ -25,7 +25,7 @@ kableExtra::kbl(usaGradeScale, booktabs=T, centering=T, linesep="",
 ```
 
 ```{r, echo=F}
-englishKeyStages <- splitColumnIntoTable(read_tsv("data/EnglandWalesGradeScale.txt",
+englishKeyStages <- split_column_into_table(read_tsv("data/EnglandWalesGradeScale.txt",
                                          col_names=F)[[1]], 15, "Key Stages")
 
 kableExtra::kbl(englishKeyStages, booktabs=T, centering=T, linesep="",
@@ -173,12 +173,15 @@ Certain tests, such as [*Spache Revised*](#spache-test), treat all proper nouns 
 Consider the following example:
 
 ::: {.fancyquotes data-latex=''}
-The Daily Examiner reported today that a tax examiner is reviewing the company's records. The examiner will have his full report by the end of the week.
+The *Daily Examiner* reported today that a tax examiner is reviewing the company's records. The examiner will have his full report by the end of the week.
 :::
 
 The list of unfamiliar *HJ* words will report the following:
 
-`Examiner    2 (3 total occurrences, 1 proper and familiar, 2 non-proper and unfamiliar)`
+::: {.FlushRight data-latex=''}
+`Examiner    2 (3 total occurrences, 1 proper and familiar,`\
+`2 non-proper and unfamiliar)`
+:::
 
 This means that “Examiner” in the phrase “Daily Examiner” is proper and *Harris-Jacobson* treated it as familiar. Although the word “examiner” is not a familiar *HJ* word, a reader will recognize that it is proper. From there, he/she can deduct that it is the name of a specific person, place, or thing (e.g., a newspaper). Therefore, it is somewhat familiar to the reader, even if he/she does not know the word.
 

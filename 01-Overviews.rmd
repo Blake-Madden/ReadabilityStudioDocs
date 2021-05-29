@@ -23,7 +23,7 @@ Note that these tests only determine the reading level of material based on how 
 ```{r, echo=F}
 maxTestRows <- 15
 
-englishTests <- splitColumnIntoTable(read_tsv("data/EnglishTests.txt",
+englishTests <- split_column_into_table(read_tsv("data/EnglishTests.txt",
                                      col_names=F)[[1]], maxTestRows, "Tests")
 
 kableExtra::kbl(englishTests, booktabs=T, centering=T, linesep="",
@@ -35,7 +35,7 @@ kableExtra::kbl(englishTests, booktabs=T, centering=T, linesep="",
 ```
 
 ```{r, echo=F}
-spanishTests <- splitColumnIntoTable(read_tsv("data/SpanishTests.txt",
+spanishTests <- split_column_into_table(read_tsv("data/SpanishTests.txt",
                                      col_names=F)[[1]], maxTestRows, "Tests")
 
 kableExtra::kbl(spanishTests, booktabs=T, centering=T, linesep="",
@@ -45,7 +45,7 @@ kableExtra::kbl(spanishTests, booktabs=T, centering=T, linesep="",
 ```
 
 ```{r, echo=F}
-germanTests <- splitColumnIntoTable(read_tsv("data/GermanTests.txt",
+germanTests <- split_column_into_table(read_tsv("data/GermanTests.txt",
                                     col_names=F)[[1]], maxTestRows, "Tests")
 
 kableExtra::kbl(germanTests, booktabs=T, centering=T, linesep="",

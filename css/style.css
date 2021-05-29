@@ -49,6 +49,9 @@
 .FlushLeft {
   text-align: left;
 }
+.FlushRight {
+  text-align: right;
+}
 
 .notesection {
   padding: 1em 1em 1em 1em;
