@@ -19,7 +19,7 @@ Select **Batch Project** and click the `r keys("OK")` button to proceed to the *
 Select **English** as the document language. Next, you can add files from a folder, website, spreadsheet, or archive to the project. We will be reviewing files from a folder, so click the `r keys("Add folder(s)")` button. You will be presented with the [**Select Directory**](#select-directory) dialog:
 
 ::: {.center data-latex=""}
-![](Images/selectdirectory.png){width=50%}
+![](Images/selectdirectory.png){width=75%}
 :::
 
 Enter the path to your document folder in the top field. We will want to search for files inside of this folder and its subfolders, so leave **Search directories recursively** checked. Click the `r keys("OK")` button to accept, and the program will begin its file search. After the program is finished searching for documents, you will return to the **Select Files** dialog. Note how all of the files that were found are now included in the file list:
