@@ -258,9 +258,9 @@ This option may be recommended for mathematical works which contain equations an
 
 **Words & phrases to exclude**: Enter the path to a text file containing words and phrases to ignore into this field. Any words or phrases from this file will be excluded from all calculations. The format for this text file is a single column, where each line is a separate word or phrase. For example:
 
-> `ex nihilo  
-> quantum fluctuations  
-> particles`
+> `ex nihilo`\
+> `quantum fluctuations`\
+> `particles`
 
 With the above exclusion list, this text:
 
