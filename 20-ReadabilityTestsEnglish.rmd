@@ -99,15 +99,13 @@ Where:
 Note that this particular grade-placement test uses the regression equation that best fit the passages with *cloze* scores averaging ~35%. There are also 45% and 55% *cloze*-score fitting *Bormuth* equations, but as Bormuth noted “35 per cent on a close readability test tentatively seemed to represent a criterion for deciding whether or not students are able to exhibit a maximum of information gain as a consequence of reading the passage” (*Development* 102).
 
 \newpage
-## Coleman-Liau {#coleman-liau-test}
+## Coleman-Liau\index{Coleman-Liau|(ii} {#coleman-liau-test}
 
-The *Coleman-Liau* formula calculates the grade level and estimated *cloze* score of a document based on sentence length and character count.
+The Coleman-Liau formula calculates the grade level and estimated *cloze* score of a document based on sentence length and character count.
 
 Coleman and Liau noted the difficulties of using computers to count syllables (283) for readability formulas. As a solution, they presented a new formula that used character counts as an alternative to syllable counting. This formula was derived from a regression equation trained on the 36 150-word passages from the Miller and Coleman *cloze* study (851). During validation, the factors of sentences and characters per 100 words yielded a strong correlation of $r^2 = .92$ against Miller and Coleman’s *cloze* scores.
 
-### The Coleman-Liau Formula {-}
-
-First, calculate the [predicted *cloze*](#cloze) percentage with the following formula:
+Coleman-Liau calculates the [predicted *cloze*](#cloze) percentage with the following formula:
 
 ```{definition, colemanliaucloze, name="Coleman-Liau formula"}
 $$
@@ -137,6 +135,7 @@ Though not explicitly mentioned in their article (284), the estimated *cloze* % 
 $$
 9 = (-27.4004*(51.3/100)) + 23.06395
 $$
+\index{Coleman-Liau|)}
 
 \newpage
 ## New Dale-Chall {#dale-chall-test}
@@ -230,8 +229,6 @@ kableExtra::kbl(db2Data, booktabs=T, centering=T, align='l', escape=F) %>%
            threeparttable=T)
 ```
 
-### Flesch Reading Ease Index Table {-}
-
 | Flesch Score | Description |
 | :-- | :-- |
 | 90-100 | Very easy, third-grade level |
@@ -241,6 +238,8 @@ kableExtra::kbl(db2Data, booktabs=T, centering=T, align='l', escape=F) %>%
 | 50-59 | Fairly difficult, junior high school level |
 | 30-49 | Difficult, high school level |
 | 0-29 | Very difficult, college level |
+
+Table: Flesch Reading Ease Index Table
 
 \newpage
 ## Degrees of Reading Power {#degrees-of-reading-power}
@@ -274,15 +273,13 @@ Where:
 
 The *Degrees of Reading Power (grade equivalent)* (Carver 303-316) test calculates the difficulty level of a document by performing the [*DRP*](#degrees-of-reading-power) test and then converting its units score into a grade level.
 
-This test was trained on the same 330 110-word passages used to build the [*Bormuth*](#bormuth-cloze-mean-machine-passage) test, along with an additional 30 samples. These additional samples were 100-word passages tested by students from the graduate library at the University of Maryland (Carver 305-306). Using these samples (and their *cloze* and *Rauding* scores), Carver built a table to convert between *DRP* units and grade levels (see below). Next, he compared the *DRP-GE* results against *DRP* units, *Rauding Scale* scores, and cloze scores. The *DRP-GE* (grade equivalency) results strongly correlated with these other scores:
+This test was trained on the same 330 110-word passages used to build the [*Bormuth*](#bormuth-cloze-mean-machine-passage) test, along with an additional 30 samples. These additional samples were 100-word passages tested by students from the graduate library at the University of Maryland (Carver 305-306). Using these samples (and their *cloze* and Rauding scores), Carver built a table to convert between *DRP* units and grade levels (see below). Next, he compared the *DRP-GE* results against *DRP* units, *Rauding Scale* scores, and cloze scores. The *DRP-GE* (grade equivalency) results strongly correlated with these other scores:
 
 - *DRP*: $r = 0.98$
-- *Rauding Scale-GE*: $r = 0.84$
+- Rauding Scale-GE\index{Rauding Scale}: $r = 0.84$
 - *cloze*: $r = -0.81$
 
-### Degrees of Reading Power (GE) Instructions {-}
-
-Calculate the *DRP* difficulty of a document. Then, look up the *DRP* score from the following table to find its respective grade level:
+To calculate the grade equivalency, first calculate the *DRP* difficulty of a document. Then, look up the *DRP* score from the following table to find its respective grade level:
 
 ```{r, echo=F}
 library(tidyverse)
@@ -353,8 +350,6 @@ While the newspaper samples yielded the following:
 Note the stark difference between the printed and televised-material scores. This indicates a much higher complex-word density in printed news versus televised news.
 
 To further validate the test, Fang compared [*Flesch Reading Ease*](#flesch-test) scores against *ELF* and found a strong correlation of $r = 0.96$.
-
-### Calculating ELF {-}
 
 The *ELF* score of a sentence is calculated by counting the number of syllables above one for each word. For example:
 
@@ -566,9 +561,9 @@ The name *FORCAST* is a pseudo acronym for its authors: J. Patrick **FOR**d, Joh
 :::
 
 \newpage
-## Fry Graph {#fry-test}
+## Fry\index{Fry|(ii} Graph {#fry-test}
 
-*Fry* (“Clarifications, Validity, and Extension” 242-252) is a graphical test for English documents. It calculates a document's grade level from its average number of sentences and syllables per hundred words. These averages are plotted onto a chart where their intersection determines the reading level of the content.
+Fry (“Clarifications, Validity, and Extension” 242-252) is a graphical test for English documents. It calculates a document's grade level from its average number of sentences and syllables per hundred words. These averages are plotted onto a chart where their intersection determines the reading level of the content.
 
 The original version of this graph included grade levels 1-12 and college (Fry, “Formula That Saves Time” 513-516; *Instruction*, 217). It was trained against samples from the following books:
 
@@ -585,14 +580,14 @@ The original version of this graph included grade levels 1-12 and college (Fry, 
 
 The graph's results were compared to other tests, yielding the following correlations:
 
-- *Dale-Chall*: $r = 0.94$
-- *Flesch Reading Ease*: $r = 0.96$
-- *Botel*: $r = 0.78$
-- *SRA*: $r = 0.98$
+- Dale-Chall: $r = 0.94$
+- Flesch Reading Ease: $r = 0.96$
+- Botel: $r = 0.78$
+- SRA: $r = 0.98$
 
 In 1977, Fry extended the graph to include grades 13-16 by extrapolating the averages from the preceding 3 years on the graph (*Extension* 251).
 
-The *Fry* graph is designed for both primary and secondary-age reading materials. Below is an example of a *Fry* graph:
+The Fry graph is designed for both primary and secondary-age reading materials. Below is an example of a Fry graph:
 
 ```{r fryGraph, echo=F, fig.cap='Fry Graph', fig.align='center'}
 knitr::include_graphics("Images/frygraph.png")
@@ -607,7 +602,7 @@ Note the following aspects of this graph:
 ```
 
 ```{block, type='onsamepage'}
-The *Fry* graph instructions are:
+The Fry graph instructions are:
 
 - Extract a 100-word passage from the selection. If the material is long, take subsamples from the beginning, middle, and end.
 - Count the number of sentences in each passage. Count a half sentence as .5.
@@ -619,7 +614,7 @@ The *Fry* graph instructions are:
 
 This test is designed for 100-word samples, with 3 samples being recommended for best results. ([Normalization](#glossary) can also be used to analyze larger samples or entire documents.)
 
-Note that numerals are fully syllabized for this test. For example, “1945” will be counted as four syllables (“one”-“nine”-“four”-“five”).
+Note that numerals are fully syllabized for this test. For example, “1945” will be counted as four syllables (“one”-“nine”-“four”-“five”).\index{Fry|)}
 
 \newpage
 ## Gunning Fog {#gunning-fog-test}
@@ -756,9 +751,9 @@ Because this formula is based on the usage of familiar words (rather than syllab
 \newpage
 ## Lix\index{Lix|(ii} {#lix-test}
 
-The Läsbarhetsindex (Lix) readability formula (Björnsson 480-497) was designed for documents of any Western European language. It calculates a document’s index score based on sentence length and number of long words (i.e., words containing seven or more characters). Viewing long words as those with seven or more characters is what differentiates it from similar tests (which use six or more characters). This difference is what allows it to be a more balanced “yardstick” that can be applied to numerous languages.
+The Läsbarhetsindex (Lix)\index{Lix!\lastentry@\seealsonocomma{Rix}|nopage} readability formula (Björnsson 480-497) was designed for documents of any Western European language. It calculates a document’s index score based on sentence length and number of long words (i.e., words containing seven or more characters). Viewing long words as those with seven or more characters is what differentiates it from similar tests (which use six or more characters). This difference is what allows it to be a more balanced “yardstick” that can be applied to numerous languages.
 
-The philosophy behind using one formula for multiple languages is that, at their core, most languages are similar in difficulty. This approach argues that a language having various idiosyncrasies and longer words is not why it scores at more difficult levels. The reason languages score higher is because of how they are used (i.e., word choice, writing style) and presented (e.g., longer paragraphs and sentences, less images). This differs from the reasoning behind other tests based on adjusted English formulas. Those tests are designed under the assumption that non-English languages are inherently more difficult (because of comparatively longer words). For example, [*Gilliam-Peña-Mountain*](#gilliam-pena-mountain-fry-graph) and the [German reinterpretation of Lix](#lix-german-technical) follow this logic of adjusting English formulas for non-English text. Lix, however, chooses to use the same formula to gauge multiple languages. It views documents that score higher to be a result of writing style and presentation, not the language itself.
+The philosophy behind using one formula for multiple languages is that, at their core, most languages are similar in difficulty. This approach argues that a language having various idiosyncrasies and longer words is not why it scores at more difficult levels. The reason languages score higher is because of how they are used (i.e., word choice, writing style) and presented (e.g., longer paragraphs and sentences, less images). This differs from the reasoning behind other tests based on adjusted English formulas. Those tests are designed under the assumption that non-English languages are inherently more difficult (because of comparatively longer words). For example, [Gilliam-Peña-Mountain](#gilliam-pena-mountain-fry-graph)\index{Gilliam-Peña-Mountain} and the [German reinterpretation of Lix](#lix-german-technical) follow this logic of adjusting English formulas for non-English text. Lix, however, chooses to use the same formula to gauge multiple languages. It views documents that score higher to be a result of writing style and presentation, not the language itself.
 
 This test was originally designed for Danish, English, French, German, and Finnish and trained on “thousands of books and reading passages” (481) during 1968, 1969, 1974, 1975, and 1979. During the 1974 English study, the formula was tested with:
 
@@ -842,7 +837,7 @@ Modified SMOG differs from [SMOG](#smog-test) in the following ways:
 - It uses a smaller constant in its formula.
 - The score is rounded, rather than floored.
 
-Because of these adjustments, it will generally produce scores closer to other tests than SMOG does—in particular, the *Fry* graph (L. Smith 129).
+Because of these adjustments, it will generally produce scores closer to other tests than SMOG does—in particular, the Fry graph (L. Smith 129).
 
 The author's decision to not count repeated polysyllabic words was a major factor in making this test more appropriate for primary readers. As he explains, in a particular pre-primer book “the word 'kangaroo' appeared 52 times . . . it was the only polysyllabic word in the book. To count the word more than once would have inflated the readability score to an unrealistic level” (130).
 
@@ -1089,9 +1084,9 @@ Note that this test treats numerals as monosyllabic words, in conjunction with t
 
 The *Raygor Estimate Graph* (259-263) is a graphical test for English documents. It calculates a document's grade level from its average number of sentences and long (6+ character) words per hundred words. These averages are plotted onto a chart where their intersection determines the reading level of the content.
 
-Note that this graph is very similar to the [*Fry*](#fry-test) graph. The intent of this test was to provide a quicker and simpler way to plot a readability level, assuming that counting characters is easier than syllables. To confirm this, a secondary study (Baldwin and Kaufman 148-153) conducted an experiment involving 155 students from the University of Tulsa. The students performed *Fry* and *Raygor* tests on 6 100-word passages. Afterwards, an independent *t* test was performed to gauge the difference in time spent manually performing the two readability tests. What the researches found was a significant difference, where *Raygor* took an average of 250.26 seconds to complete versus 323.45 seconds for *Fry*.
+Note that this graph is very similar to the [Fry](#fry-test) graph. The intent of this test was to provide a quicker and simpler way to plot a readability level, assuming that counting characters is easier than syllables. To confirm this, a secondary study (Baldwin and Kaufman 148-153) conducted an experiment involving 155 students from the University of Tulsa. The students performed Fry and *Raygor* tests on 6 100-word passages. Afterwards, an independent *t* test was performed to gauge the difference in time spent manually performing the two readability tests. What the researches found was a significant difference, where *Raygor* took an average of 250.26 seconds to complete versus 323.45 seconds for Fry.
 
-In another experiment, Baldwin and Kaufman compared the correlations between *Fry* and *Raygor* scores. They collected 3 100-word samples from 100 books from the Learning Resource Center at The University of Tulsa. With these books, the “Levels of difficulty in the sample ranged from upper elementary to professional (beyond the college level)” (Baldwin and Kaufman 149). The researchers found a significant Kendall rank order correlation of 0.875 between scores from the two tests.
+In another experiment, Baldwin and Kaufman compared the correlations between Fry\index{Fry!compared to Raygor} and *Raygor* scores. They collected 3 100-word samples from 100 books from the Learning Resource Center at The University of Tulsa. With these books, the “Levels of difficulty in the sample ranged from upper elementary to professional (beyond the college level)” (Baldwin and Kaufman 149). The researchers found a significant Kendall rank order correlation of 0.875 between scores from the two tests.
 
 This graph is primarily used in secondary education to help classify teaching materials and books into their appropriate reading groups. Below is an example of a *Raygor* graph:
 
@@ -1252,11 +1247,11 @@ Spache recommends not counting the same unfamiliar word more than once if it app
 :::
 
 \newpage
-## Stocker's Catholic Supplement {#stocker-catholic-supplement}
+## Stocker's Catholic Supplement\index{Stocker's Catholic Supplement} {#stocker-catholic-supplement}
 
-Stocker's Catholic supplement (87-89) is an extension to the [Dale-Chall](#dale-chall-test) word list designed for Catholic students. Based on a 1971 study of 4^th^-grade Catholic students[^Stocker], this list represents over 200 words (not on the standard *Dale-Chall* list) familiar to 80% of them.
+Stocker's Catholic\index{Catholic|see{Stocker's Catholic Supplement}} supplement (87-89) is an extension to the [Dale-Chall](#dale-chall-test) word list designed for Catholic students. Based on a 1971 study of 4^th^-grade Catholic students[^Stocker], this list represents over 200 words (not on the standard *Dale-Chall* list) familiar to 80% of them.
 
-This list is used along with the *Dale-Chall* list and offers more accurate scoring with materials meant for Catholic schools.
+This list is used along with the Dale-Chall\index{New Dale-Chall} list and offers more accurate scoring with materials meant for Catholic schools.
 
 To view this list, select the **Readability** tab, click the `r keys("Word Lists")` button, and select **Stocker's Catholic Supplement** from the menu.
 
