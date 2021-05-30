@@ -368,7 +368,7 @@ Note that these options are not applicable if [**Also exclude numerals**](#optio
 
 #### Dale-Chall {-#options-dale-chall}
 
-**Include Catholic Supplement**: Check this option to include [Stocker's supplementary word list](#stocker-catholic-supplement) for Catholic students.
+**Include Catholic Supplement**: Check this option to include [Stocker's supplementary word list](#stocker-catholic-supplement)\index{Stocker's Catholic Supplement} for Catholic students.
 
 :::: {.optionssection data-latex=""}
 ::: {.optionssectiontitle data-latex=""}
@@ -442,7 +442,7 @@ The options on this page customize which results to include in the **Readability
 
 - The score explanations shown in the [**Readability Scores**](#reviewing-test-scores) window.
 - The score display shown in the **Readability Scores** window (if **long format** is selected).
-- Selection labels on the *Fry*, *Raygor*, and *GPM* graphs.
+- Selection labels on the Fry\index{Fry}, *Raygor*, and Gilliam-Peña-Mountain\index{Gilliam-Peña-Mountain} graphs.
 - The [raw and aggregated score](#reviewing-batch-scores) display in batch projects (if **long format** is selected).
 - The labels on the grade-level [box plot](#reviewing-batch-box-plots).
 - The bin labels on the grade-level [histograms](#reviewing-batch-histograms).

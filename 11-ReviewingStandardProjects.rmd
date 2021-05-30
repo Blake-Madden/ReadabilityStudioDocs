@@ -28,15 +28,15 @@ When calculating these statistics, failed test scores are treated as missing obs
 
 To remove any test from this list, select it and press `r keys("CTRL")`+`r keys("DELETE")` (`r macOS_cmd_key()`+`r keys("DELETE")` on macOS) on your keyboard. To edit a [custom test](#creating-custom-test), double click on it in this list. To view the help for a standard test, double click on it in this list.
 
-There will also be graphs in this section if you had included the [*Fry*](#reviewing-readability-graphs) , [*Gilliam-Peña-Mountain*](#gilliam-pena-mountain-fry-graph), [*Raygor*](#reviewing-readability-graphs), [*Flesch*](#flesch-test), or [*FRASE*](#frase) tests. Refer to \@ref(reviewing-readability-graphs) for further information.
+There will also be graphs in this section if you had included the [Fry](#reviewing-readability-graphs) , [Gilliam-Peña-Mountain](#gilliam-pena-mountain-fry-graph)\index{Gilliam-Peña-Mountain}, [Raygor](#reviewing-readability-graphs), [*Flesch*](#flesch-test), or [FRASE](#frase)\index{FRASE} tests. Refer to \@ref(reviewing-readability-graphs) for further information.
 
 ## Readability Graphs {#reviewing-readability-graphs}
 
-There are numerous readability tests that are graphically plotted, including [*Fry*](#fry-test), [*Raygor*](#raygor-test), [*Flesch*](#flesch-test), [Lix](#lix-test), [*Gilliam-Peña-Mountain*](#gilliam-pena-mountain-fry-graph), [*FRASE*](#frase), [*Crawford*](#crawford), and [*Schwartz*](#scwartz). These graphs consist of either grade-level or reading-level regions that a document may fall within. They also include indicators for the most influential factor for the document's reported level (i.e., word difficulty vs. sentence difficulty).
+There are numerous readability tests that are graphically plotted, including [Fry](#fry-test), [Raygor](#raygor-test), [*Flesch*](#flesch-test), [Lix](#lix-test), [Gilliam-Peña-Mountain](#gilliam-pena-mountain-fry-graph), [FRASE](#frase), [Crawford](#crawford)\index{Crawford}, and [*Schwartz*](#scwartz). These graphs consist of either grade-level or reading-level regions that a document may fall within. They also include indicators for the most influential factor for the document's reported level (i.e., word difficulty vs. sentence difficulty).
 
 To view these graphs, click on the **Test Graphs & Charts** icon in a [standard project](#creating-standard-project) or the **Readability Graphs** icon in a [batch project](#creating-batch-project).
 
-Let us first review a *Fry* graph:
+Let us first review a Fry\index{Fry} graph:
 
 ```{r fryGraph2, echo=F, fig.cap='Fry Graph', fig.align='center'}
 knitr::include_graphics("Images/frygraph.png")
@@ -46,7 +46,7 @@ To read this graph, search for the red data point–this value represents the do
 
 Running through each slice is a gray line, which is a separator to help show the most predominate cause of the document's difficulty. If the data point is above the gray line, then the strongest influence on the document's difficulty is high-syllable words. If it is below the line, then the strongest influence is long sentences. In the above example, it is above the line, implying that it is slightly more influenced by high-syllable words. However, because it is fairly close to the line, this document is well balanced between difficult words and difficult sentences.
 
-If the data point does not fall inside of a slice then the test will fail. For example, the *Raygor* graph below indicates that the document's overly-long words caused the test to fail:
+If the data point does not fall inside of a slice then the test will fail. For example, the Raygor\index{Raygor} graph below indicates that the document's overly-long words caused the test to fail:
 
 ```{r raygorBadGrade, echo=F, fig.cap='Raygor Graph', fig.align='center'}
 knitr::include_graphics("Images/raygorbadgrade.png")
@@ -54,33 +54,33 @@ knitr::include_graphics("Images/raygorbadgrade.png")
 
 The document was almost classified as 11^th^ grade level material, but its long sentences make it too difficult to be assigned to any grade. At this point, you would want to review the document's lengthy sentences (select [**Highlighted Report**](#reviewing-standard-grammar) under the **Grammar** sidebar item) and try to shorten some of them.
 
-The *Gilliam-Peña-Mountain* graph is a variation of *Fry* designed for Spanish text. It is identical to *Fry*, except that its X axis begins at 175 (instead of 108). This enables this graph to plot Spanish text, which usually has a much higher syllable count than its English counterpart. Below is an example of a *Gilliam-Peña-Mountain* graph:
+The Gilliam-Peña-Mountain\index{Gilliam-Peña-Mountain} graph is a variation of Fry designed for Spanish text. It is identical to Fry, except that its X axis begins at 175 (instead of 108). This enables this graph to plot Spanish text, which usually has a much higher syllable count than its English counterpart. Below is an example of a Gilliam-Peña-Mountain graph:
 
 ```{r gpm2, echo=F, fig.cap='Gilliam-Peña-Mountain Graph', fig.align='center'}
 knitr::include_graphics("Images/GpmFry.png")
 ```
 
-The *Schwartz* graph is another *Fry*-like graph, which is designed for German (primary and secondary-reader) text. Although similar in appearance to *Fry*, this graph uses its own reading-level regions mapped to the German materials it was trained on. This approach differs from *Gilliam-Peña-Mountain*, which uses the original *Fry* template and adjusts its axis ranges to accommodate Spanish text. Below is an example of a *Schwartz* graph:
+The *Schwartz* graph is another Fry-like graph, which is designed for German (primary and secondary-reader) text. Although similar in appearance to Fry, this graph uses its own reading-level regions mapped to the German materials it was trained on. This approach differs from Gilliam-Peña-Mountain, which uses the original Fry template and adjusts its axis ranges to accommodate Spanish text. Below is an example of a *Schwartz* graph:
 
 ```{r schwartz2, echo=F, fig.cap='Schwartz Graph', fig.align='center'}
 knitr::include_graphics("Images/Schwartz.png")
 ```
 
-The *Fry* and *Raygor* graphs are very similar and are both interpreted in the same manner; however, there are a few differences between them. The *Fry* graph classifies documents within the 1^st^ grade to doctorate level. In contrast, *Raygor* concentrates on the range of 3^rd^ grade to the sophomore collegiate level. It is recommended to only use *Raygor* graphs for secondary-age materials.
+The Fry and Raygor graphs are very similar and are both interpreted in the same manner; however, there are a few differences between them. The Fry graph classifies documents within the 1^st^ grade to doctorate level. In contrast, Raygor concentrates on the range of 3^rd^ grade to the sophomore collegiate level. It is recommended to only use Raygor graphs for secondary-age materials.
 
-Another difference is that the *Fry* graph is influenced by high-syllable words, while the *Raygor* graph is influenced by long words. Long sentences remain a key factor for both of these graphs, though.
+Another difference is that the Fry graph is influenced by high-syllable words, while the Raygor graph is influenced by long words. Long sentences remain a key factor for both of these graphs, though.
 
-The other difference between the two graphs is that they are inverted from one another. In a *Fry* graph, the long-sentence region is in the bottom left-hand corner (going downward), whereas in a *Raygor* graph the long-sentence region is in the top left-hand corner (going upward). However, the same rules apply for how to interpret the grade level and influence of difficult words vs. difficult sentences.
+The other difference between the two graphs is that they are inverted from one another. In a Fry graph, the long-sentence region is in the bottom left-hand corner (going downward), whereas in a Raygor graph the long-sentence region is in the top left-hand corner (going upward). However, the same rules apply for how to interpret the grade level and influence of difficult words vs. difficult sentences.
 
-The *FRASE* graph is similar to *Fry* in terms of factors used and axis orientation. Its most influential factor (i.e., word vs. sentence difficulty) is determined in the same manner, and its Y (sentence) axis is descending. Below is an example of a *FRASE* graph:
+The FRASE\index{FRASE} graph is similar to Fry in terms of factors used and axis orientation. Its most influential factor (i.e., word vs. sentence difficulty) is determined in the same manner, and its Y (sentence) axis is descending. Below is an example of a *FRASE* graph:
 
 ```{r frase2, echo=F, fig.cap='Frase Graph', fig.align='center'}
 knitr::include_graphics("Images/FraseGraph.png")
 ```
 
-A key difference with *FRASE* is its use of reading levels (rather than grade levels). In the above example, we can see that the document has been scored at the “Intermediate” level. The other difference is that it is designed for Spanish text—note how its X (syllable-count) axis begins at 182, not 108.
+A key difference with FRASE is its use of reading levels (rather than grade levels). In the above example, we can see that the document has been scored at the “Intermediate” level. The other difference is that it is designed for Spanish text—note how its X (syllable-count) axis begins at 182, not 108.
 
-The *Crawford* graph is also similar to *Fry* in terms of factors used. However, it differs from most other graphs in that it uses the interior of the plot to find its sentence-count factor (instead of an axis). Below is an example of a *Crawford* graph:
+The Crawford\index{Crawford} graph is also similar to Fry in terms of factors used. However, it differs from most other graphs in that it uses the interior of the plot to find its sentence-count factor (instead of an axis). Below is an example of a *Crawford* graph:
 
 ```{r crawford2, echo=F, fig.cap='Crawford Graph', fig.align='center'}
 knitr::include_graphics("Images/CrawfordGraph.png")
@@ -124,7 +124,7 @@ As a final note, [batch projects](#creating-batch-project) include multi-documen
 knitr::include_graphics("Images/MultipleFry.png")
 ```
 
-Here, we can see that an entire collection of documents are plotted onto a single *Fry* graph. This is useful for visualizing the grade-level layout of a group of documents. In the above example, we can see that the documents are clustering in the high-school region. We can also interpret that complex words are heavily influencing the documents' difficulty.
+Here, we can see that an entire collection of documents are plotted onto a single Fry graph. This is useful for visualizing the grade-level layout of a group of documents. In the above example, we can see that the documents are clustering in the high-school region. We can also interpret that complex words are heavily influencing the documents' difficulty.
 
 You can also print or save a blank copy of any of these graphs. This is useful for printing handouts for instructors or students to use. To print a blank graph, go to the **Readability** tab on the ribbon, click the `r keys("Blank Graphs")` button, and select the graph that you wish to save.
 
@@ -140,7 +140,7 @@ If a project contains goals, then a **Goals** section will be available to show 
 
 In the above image, we can see that this project is recommending:
 
-- *Fry* should not be higher than 10
+- Fry should not be higher than 10
 - *Flesch Reading Ease* should be higher than 60
 - *ELF* should not be higher than 12
 

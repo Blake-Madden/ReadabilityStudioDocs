@@ -118,7 +118,7 @@ After selecting a group of documents, you will be presented with this dialog to 
 ::: {.optionssection data-latex=""}
 **Use documents' descriptions (will be loaded during import)**: Select this to use each document's own description as its label. This is useful when document names may not be descriptive enough; this will show the document's description next to its name.
 
-**Use a grouping label**: Select this to use your provided label as a grouping label for the selected documents. This is useful when you want to cluster the documents in you batch into subgroups. (These subgroups are visualized on various graphs, such as *Fry* and the histograms.)
+**Use a grouping label**: Select this to use your provided label as a grouping label for the selected documents. This is useful when you want to cluster the documents in you batch into subgroups. (These subgroups are visualized on various graphs, such as Fry\index{Fry} and the histograms.)
 :::
 
 **Do not show this again (always use document descriptions)**: Check this to no longer prompt for how to label batch documents; document descriptions will always be used instead.

@@ -20,7 +20,7 @@ The second type of formula is a custom-built formula. For example, the formula f
 
 `SevenCharacterPlusWordCount() / SentenceCount()`
 
-To create a new formula based on Lix that treats 6+ character words as difficult, enter this:
+To create a new formula based on Lix\index{Lix} that treats 6+ character words as difficult, enter this:
 
 `SixCharacterPlusWordCount() / SentenceCount()`
 
@@ -328,7 +328,7 @@ If you are not stemming, then it is recommended to enter each inflected form of 
 
 **Include Harris-Jacobson familiar word list**: Check this option to use the [*Harris-Jacobson*](#harris-jacobson) word list (along with any other selected word lists) to determine if a word is familiar.
 
-**Include Stocker's Catholic supplement**: Check this option to include [Stocker's supplementary word list](#stocker-catholic-supplement) for Catholic students (along with any other selected word lists) to determine if a word is familiar.
+**Include Stocker's Catholic supplement**: Check this option to include [Stocker's supplementary word list](#stocker-catholic-supplement)\index{Stocker's Catholic Supplement} for Catholic students (along with any other selected word lists) to determine if a word is familiar.
 
 #### Other {-}
 

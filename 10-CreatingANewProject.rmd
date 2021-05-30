@@ -56,7 +56,7 @@ Your third option is to manually select the tests yourself. To do this, select t
 
 ![](Images/wizardtests.png)
 
-The tests available on this page will depend on the project's language. For example, if you are manually selecting Spanish tests, then tests such as [*Crawford*](#crawford) will be available, but English tests (e.g., [*Spache*](#spache-test)) will not. Also, some industry and document-type options may not have tests associated with them depending on the selected language.
+The tests available on this page will depend on the project's language. For example, if you are manually selecting Spanish tests, then tests such as [Crawford](#crawford)\index{Crawford} will be available, but English tests (e.g., [*Spache*](#spache-test)) will not. Also, some industry and document-type options may not have tests associated with them depending on the selected language.
 
 Your final option is to select a [test bundle](#test-bundles).
 
@@ -142,7 +142,7 @@ Your final option is to manually select the tests yourself. To do this, select t
 
 ![](Images/wizardbatchtests.png)
 
-The tests available on this page will depend on the project's language. For example, if you are manually selecting Spanish tests, then tests such as [*Crawford*](#crawford) will be available, but English tests (e.g., [*Spache*](#spache-test)) will not. Also, some industry and document-type options may not have tests associated with them depending on the selected language.
+The tests available on this page will depend on the project's language. For example, if you are manually selecting Spanish tests, then tests such as [Crawford](#crawford)\index{Crawford} will be available, but English tests (e.g., [*Spache*](#spache-test)) will not. Also, some industry and document-type options may not have tests associated with them depending on the selected language.
 
 Note that you can always add or remove tests from your project at any time. If you select either the document type or industry options, you are not bound to the tests that **Readability Studio** recommends.
 

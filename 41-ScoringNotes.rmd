@@ -8,7 +8,7 @@ For example, [*New Dale-Chall*](#dale-chall-test) looks up your unfamiliar word 
 
 [Lix](#lix-test)\index{Lix} and [Rix](#rix-test)\index{Rix} use a similar method. These tests calculate an index score and then look up the grade level from a table using this value.
 
-Finally, graphical tests (e.g., [*Fry*](#fry-test)) only return integral grade levels because the “slices” on these graphs only represent the grade, not the grade and month.
+Finally, graphical tests (e.g., [Fry](#fry-test)\index{Fry}) only return integral grade levels because the “slices” on these graphs only represent the grade, not the grade and month.
 
 ## Grade Scales {#grade-scales}
 

@@ -115,9 +115,9 @@ Table: Lix (German technical literature) Conversion Table
 :::
 
 \newpage
-## Neue Wiener Sachtextformel 1 {#neue-wiener-sachtextformel1}
+## Neue Wiener Sachtextformel 1\index{Neue Wiener Sachtextformel 1} {#neue-wiener-sachtextformel1}
 
-*Neue Wiener Sachtextformel 1* (1.nWS) (Bamberger-Vanecek 83, 187) is used for evaluating German nonfiction (specifically, 6^th^-10^th^ grade materials). This test returns a grade-level score based on word length/complexity and sentence length.
+Neue Wiener Sachtextformel 1 (1.nWS) (Bamberger-Vanecek 83, 187) is used for evaluating German nonfiction (specifically, 6^th^-10^th^ grade materials). This test returns a grade-level score based on word length/complexity and sentence length.
 
 ```{definition, nws1, name="Neue Wiener Sachtextformel 1 formula"}
 \begin{align*}
@@ -146,9 +146,9 @@ kableExtra::kbl(nws1Data, booktabs=T, centering=T, align='l', escape=F, linesep=
 ```
 
 \newpage
-## Neue Wiener Sachtextformel 2 {#neue-wiener-sachtextformel2}
+## Neue Wiener Sachtextformel 2\index{Neue Wiener Sachtextformel 2} {#neue-wiener-sachtextformel2}
 
-*Neue Wiener Sachtextformel 2* (2.nWS) (Bamberger-Vanecek 84, 187) is used for evaluating German nonfiction (specifically, very light materials up to 5^th^ grade). This test returns a grade-level score based on word length/complexity and sentence length.
+Neue Wiener Sachtextformel 2 (2.nWS) (Bamberger-Vanecek 84, 187) is used for evaluating German nonfiction (specifically, very light materials up to 5^th^ grade). This test returns a grade-level score based on word length/complexity and sentence length.
 
 ```{definition, nws2, name="Neue Wiener Sachtextformel 2 formula"}
 \begin{align*}
@@ -177,9 +177,9 @@ kableExtra::kbl(nws2Data, booktabs=T, centering=T, align='l', escape=F, linesep=
 ```
 
 \newpage
-## Neue Wiener Sachtextformel 3 {#neue-wiener-sachtextformel3}
+## Neue Wiener Sachtextformel 3\index{Neue Wiener Sachtextformel 3} {#neue-wiener-sachtextformel3}
 
-*Neue Wiener Sachtextformel 3* (3.nWS) (Bamberger-Vanecek 84, 187) is used for evaluating German nonfiction (specifically, very light materials up to 5^th^ grade). This test returns a grade-level score based on word length and sentence length.
+Neue Wiener Sachtextformel 3 (3.nWS) (Bamberger-Vanecek 84, 187) is used for evaluating German nonfiction (specifically, very light materials up to 5^th^ grade). This test returns a grade-level score based on word length and sentence length.
 
 ```{definition, nws3, name="Neue Wiener Sachtextformel 3 formula"}
 $$
