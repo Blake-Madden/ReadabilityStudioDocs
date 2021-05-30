@@ -248,7 +248,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 
 #### Graph Enhancements {-}
 
-- Added [beeswarm jittering](#stats-issues) to box, *Danielson-Bryan 2*, *Flesch Reading Ease*, Lix, and *German Lix* plots (in batch projects).
+- Added [beeswarm jittering](#stats-issues) to box, Danielson-Bryan 2, Flesch Reading Ease, Lix, and German Lix plots (in batch projects).
 - Improved graph rendering performance.
 - Added option to not include labels on histograms.
 - Added option to not include labels on barcharts.
@@ -452,11 +452,11 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
     - [Lix (German children's literature)](#lix-german-childrens-literature)
     - [Lix (German technical literature)](#lix-german-technical)
     - [*Neue Wiener Sachtextformel* 1–3](#neue-wiener-sachtextformel1)
-    - [*Quadratwurzelverfahren*](#qu-bamberger-vanecek)
+    - [Quadratwurzelverfahren](#qu-bamberger-vanecek)
     - [Rix (German fiction)](#rix-german-fiction)
     - [Rix (German non-fiction)](#rix-german-nonfiction)
-    - [*SMOG* (Bamberger-Vanecek)](#smog-bamberger-vanecek)
-    - [*Wheeler-Smith* (Bamberger-Vanecek)](#wheeler-smith)
+    - [SMOG (Bamberger-Vanecek)](#smog-bamberger-vanecek)
+    - [Wheeler-Smith (Bamberger-Vanecek)](#wheeler-smith-bamberger-vanecek)
 - New grammar checking features for English projects:
     - spell checker
     - article mismatches
@@ -498,14 +498,14 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
     - The score list (standard project).
     - The raw and aggregated scores list (batch project).
     - The explanations for each test.
-    - Tooltips in *Fry* and *Raygor* graphs.
+    - Tooltips in Fry and Raygor graphs.
     - Bin labels with grade histograms.
     - Y axis of box plots.
 - Added Spanish document analysis features. This includes specialized Spanish syllabizer and tests:
-    - Added [*Gilliam, Peña, Mountain Fry Graph*](#gilliam-pena-mountain-fry-graph).
-    - Added [*Crawford*](#crawford) test.
-    - Added [*FRASE*](#frase) graph.
-    - Added [*SOL*](#sol-spanish) test.
+    - Added [Gilliam, Peña, Mountain Fry Graph](#gilliam-pena-mountain-fry-graph).
+    - Added [Crawford](#crawford) test.
+    - Added [FRASE](#frase) graph.
+    - Added [SOL](#sol-spanish) test.
 - Added new English tests:
     - Added [*Dale-Chall (PSK)*](#psk-dale-chall) test.
     - Added [*Bormuth Cloze Mean*](#bormuth-cloze-mean-machine-passage) test.
@@ -513,7 +513,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
     - Added [*Gunning Fog (PSK)*](#psk-fog) test.
     - Added [*Farr, Jenkins, Paterson*](#farr-jenkins-paterson) test.
     - Added [*Farr, Jenkins, Paterson (PSK)*](#psk-farr-jenkins-paterson) test.
-    - Added [*Wheeler-Smith*](#wheeler-smith) test.
+    - Added [Wheeler-Smith](#wheeler-smith) test.
     - Added [*Degrees of Reading Power*](#degrees-of-reading-power) test.
     - Added [*Degrees of Reading Power*](#degrees-of-reading-power-grade-equivalent) test (grade level).
     - Added [*Harris-Jacobson*](#harris-jacobson) test.
@@ -522,8 +522,8 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
         - Added *Harris-Jacobson* highlighted text report.
         - Added *Harris-Jacobson* unfamiliar words to the statistics.
         - Added *Harris-Jacobson* bar to the word breakdown bar chart.
-- Added high-precision option to [*SMOG*](#smog-test) test.
-- Added **count independent clauses as separate sentences** option to [*Gunning Fog*](#gunning-fog-test).
+- Added high-precision option to [SMOG](#smog-test) test.
+- Added **count independent clauses as separate sentences** option to [Gunning Fog](#gunning-fog-test).
 - *Gunning Fog* now treats words made three syllables by adding “ed” or “es” as easy.
 - Added custom formula functionality to [custom tests](#creating-custom-test).
 - Added ability to specify the result type of custom tests (e.g., index level or grade level).
@@ -532,7 +532,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - Added predicted *cloze* score to [*Coleman-Liau*](#coleman-liau-test) test.
 - [*New Dale-Chall*](#dale-chall-test) now has custom text exclusion options to use either the recommended instructions or the system defaults.
 - *New Dale-Chall* has the ability to control how proper nouns are handled (including the ability to count only the first occurrence of a proper noun as unfamiliar).
-- [Fry graph](#fry-test) now uses updated instructions for numerals and proper nouns based on the 1977 article *Fry's Readability Graph: Clarifications, Validity, and Extension to Level 17*.
+- [Fry](#fry-test) graph now uses updated instructions for numerals and proper nouns based on the 1977 article *Fry's Readability Graph: Clarifications, Validity, and Extension to Level 17*.
 - Added **ignore left alignment/tabbing** option to document analysis.
 - Random sampling percentage default changed to 15 (from 25).
 - Consolidated **end of paragraph** and **sentence deduction** options into one section.
@@ -540,7 +540,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - Added new text exclusion method for including headers and sub-headers (as full sentences), but excluding all other incomplete sentences.
 - **Independent clause count** statistic now included in the statistics report. An independent clause is a section of text which ends with a period, exclamation mark, question mark, [interrobang](#glossary), colon, semicolon, or dash.
 - Mode now included in Standard projects’ test score statistics.
-- Batch project now includes valid N, range, standard error, skewness, and kurtosis in the aggregated statistics.
+- Batch project now includes valid n, range, standard error, skewness, and kurtosis in the aggregated statistics.
 - "+" is now added to maximum level test scores.
 - Text exclusion can now be adjusted to include incomplete sentences containing a specified number of words.
 

@@ -14,7 +14,7 @@ The top area of the **Scores** window is the score grid. In here there are four 
 
 Note that most tests have just one type of result (e.g., grade level), so non-applicable columns are left blank. For example, note below that the [*Gunning Fog*](#gunning-fog-test) result is a grade level of 8.3. This translates to an eighth grade level reader (in his or her third month of class). Because this test only returns a grade level and age, the **Scale Value** and **Predicted Cloze Score** columns are empty. Another example is the result for the [*Flesch Reading Ease*](#flesch-test) test, which has a scale value of 79. This test has its own scale (instead of a grade level) so its age, grade level, and cloze columns are empty.
 
-When a grade-level test scores a document at its maximum value, a “+” will be appended to the score. Although most grade-level tests can score up to 19, some tests which are designed for primary and secondary education materials will have lower maximum scores. For example, [*Wheeler-Smith*](#wheeler-smith) is designed for primary-age materials and its maximum score is the fourth-grade level. If a document's *Wheeler-Smith* score is 4, then it will be displayed as “4+.”
+When a grade-level test scores a document at its maximum value, a “+” will be appended to the score. Although most grade-level tests can score up to 19, some tests which are designed for primary and secondary education materials will have lower maximum scores. For example, [Wheeler-Smith](#wheeler-smith)\index{Wheeler-Smith} is designed for primary-age materials and its maximum score is the fourth-grade level. If a document's Wheeler-Smith score is 4, then it will be displayed as “4+.”
 
 Select any test in the results grid to display an explanation of its score in the window below.
 
@@ -170,7 +170,7 @@ The **Report** and **Tabular Report** windows display the document's statistics 
 - Number and percentage of proper nouns (not available for German projects).
 - Number and percentage of total (and unique) monosyllabic words.
 - Number and percentage of total (and unique) 3+ syllable words.
-- Number and percentage of total (and unique) hard [*SMOG*](#smog-test) words. This statistic is only available if *SMOG* is included in the project.
+- Number and percentage of total (and unique) hard [SMOG](#smog-test)\index{SMOG} words. This statistic is only available if SMOG is included in the project.
 - Number and percentage of total (and unique) hard [*Fog*](#gunning-fog-test) words. This statistic is only available if *Fog* is included in the project.
 - Number and percentage of total (and unique) 6+ letter words.
 - Number and percentage of total (and unique) unfamiliar words. This includes word lists such as [*Dale-Chall*](#dale-chall-test) and [*Spache*](#spache-test). These statistics are only available if the respective tests are included in the project.
@@ -182,7 +182,7 @@ Statistics for any custom familiar-word tests will also be included in this wind
 A **Notes** section may be included at the bottom of the formatted report if there are any items of interest detected (e.g., a high sentence-length average). If your document requires improvement, then this section is usually a good place to begin.
 
 ::: {.notesection data-latex=""}
-3+ syllable words and [*Fog*](#gunning-fog-test) and [*SMOG*](#smog-test) hard words are all the same except for how numerals (e.g., phone numbers and dates) are handled. *SMOG* always sounds out each digit of a numeric word, whereas *Fog* ignores numeric words. You can control how numeric words are handled from the [**Document Indexing**](#document-analysis) section of the [**Options**](#options-overview) dialog (available on the **Tools** tab).
+3+ syllable words and [*Fog*](#gunning-fog-test) and [SMOG](#smog-test) hard words are all the same except for how numerals (e.g., phone numbers and dates) are handled. SMOG always sounds out each digit of a numeric word, whereas *Fog* ignores numeric words. You can control how numeric words are handled from the [**Document Indexing**](#document-analysis) section of the [**Options**](#options-overview) dialog (available on the **Tools** tab).
 :::
 
 ## Words Breakdown {#reviewing-word-breakdowns}

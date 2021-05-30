@@ -756,7 +756,7 @@ Because this formula is based on the usage of familiar words (rather than syllab
 \newpage
 ## Lix\index{Lix|(ii} {#lix-test}
 
-The *Läsbarhetsindex (Lix)* readability formula (Björnsson 480-497) was designed for documents of any Western European language. It calculates a document’s index score based on sentence length and number of long words (i.e., words containing seven or more characters). Viewing long words as those with seven or more characters is what differentiates it from similar tests (which use six or more characters). This difference is what allows it to be a more balanced “yardstick” that can be applied to numerous languages.
+The Läsbarhetsindex (Lix) readability formula (Björnsson 480-497) was designed for documents of any Western European language. It calculates a document’s index score based on sentence length and number of long words (i.e., words containing seven or more characters). Viewing long words as those with seven or more characters is what differentiates it from similar tests (which use six or more characters). This difference is what allows it to be a more balanced “yardstick” that can be applied to numerous languages.
 
 The philosophy behind using one formula for multiple languages is that, at their core, most languages are similar in difficulty. This approach argues that a language having various idiosyncrasies and longer words is not why it scores at more difficult levels. The reason languages score higher is because of how they are used (i.e., word choice, writing style) and presented (e.g., longer paragraphs and sentences, less images). This differs from the reasoning behind other tests based on adjusted English formulas. Those tests are designed under the assumption that non-English languages are inherently more difficult (because of comparatively longer words). For example, [*Gilliam-Peña-Mountain*](#gilliam-pena-mountain-fry-graph) and the [German reinterpretation of Lix](#lix-german-technical) follow this logic of adjusting English formulas for non-English text. Lix, however, chooses to use the same formula to gauge multiple languages. It views documents that score higher to be a result of writing style and presentation, not the language itself.
 
@@ -832,21 +832,21 @@ Table: Lix Grade-level Conversion Table\index{Lix|)}
 ```
 
 \newpage
-## Modified SMOG {#modified-smog}
+## Modified SMOG\index{Modified SMOG|(ii} {#modified-smog}
 
-The *Modified SMOG* test (L. Smith 129-132) calculates the grade level of a document based on sentence length and number of difficult (i.e., 3 or more syllable) words and is designed for primary and secondary-age materials.
+The Modified SMOG\index{SMOG!modified|see{Modified SMOG}} test (L. Smith 129-132) calculates the grade level of a document based on sentence length and number of difficult (i.e., 3 or more syllable) words and is designed for primary and secondary-age materials.
 
-*Modified SMOG* differs from [*SMOG*](#smog-test) in the following ways:
+Modified SMOG differs from [SMOG](#smog-test) in the following ways:
 
 - It uses the unique number of difficult words (rather than the total).
 - It uses a smaller constant in its formula.
 - The score is rounded, rather than floored.
 
-Because of these adjustments, it will generally produce scores closer to other tests than *SMOG* does—in particular, the *Fry* graph (L. Smith 129).
+Because of these adjustments, it will generally produce scores closer to other tests than SMOG does—in particular, the *Fry* graph (L. Smith 129).
 
 The author's decision to not count repeated polysyllabic words was a major factor in making this test more appropriate for primary readers. As he explains, in a particular pre-primer book “the word 'kangaroo' appeared 52 times . . . it was the only polysyllabic word in the book. To count the word more than once would have inflated the readability score to an unrealistic level” (130).
 
-The steps for calculating *Modified SMOG* are:
+The steps for calculating Modified SMOG are:
 
 - Take 3 10-sentence samples.
 - Count the number of unique words containing 3 or more syllables.
@@ -855,7 +855,7 @@ The steps for calculating *Modified SMOG* are:
 
 Note that numerals are fully syllabized (i.e., sounded out) for this test, so the program overrides your [numeral syllabication](#numsyllable) setting when calculating it.
 
-This test requires a 10-sentence sample, with 3 samples being recommended for best results. ([Normalization](#glossary) can also be used to analyze larger samples or entire documents.)
+This test requires a 10-sentence sample, with 3 samples being recommended for best results. ([Normalization](#glossary) can also be used to analyze larger samples or entire documents.)\index{Modified SMOG|)}
 
 \newpage
 ## New Automated Readability Index {#new-ari}
@@ -1117,7 +1117,7 @@ This test is designed for 3 100-word samples, with 3 samples being recommended f
 
 The Rate Index (Rix)\index{Rix!compared to Lix} readability formula (Anderson 490-496) was designed for documents of any Western European language. It calculates a document’s index score based on sentence length and number of long words (i.e., words containing seven or more characters). It is based on the [Lix](#lix-test) readability formula (Björnsson 480-497) and follows the same philosophy of using a unified formula for multiple languages.
 
-“Rate” in this context refers to the rate of long words throughout the document. Comparing against other tests that traditionally recommend fixed sample sizes (e.g., [*SMOG*](#smog-test)), Anderson noted that Rix could be applied to any length of text without normalization. As he explained, “the concept of rate has the advantage of being applied over any number of sentences, for it is a running average” (Anderson 495).
+“Rate” in this context refers to the rate of long words throughout the document. Comparing against other tests that traditionally recommend fixed sample sizes (e.g., [SMOG](#smog-test)), Anderson noted that Rix could be applied to any length of text without normalization. As he explained, “the concept of rate has the advantage of being applied over any number of sentences, for it is a running average” (Anderson 495).
 
 Regarding the factors used for this test, Anderson defined a sentence “as a sequence of words terminated by a full-stop (period), question or exclamation mark, colon, or semicolon” (Anderson 495). In other words, sentences [units](#glossary) should be used for the calculation. (As for Lix, Björnsson did not define how sentences should end, so it is recommended to use the traditional ‘.’, ‘?’, and ‘!’ markers for that test.)
 
@@ -1168,11 +1168,11 @@ Where:
 Table: Rix Grade-level Conversion Table\index{Rix|)}
 
 \newpage
-## SMOG {#smog-test}
+## SMOG\index{SMOG|(ii} {#smog-test}
 
-The *SMOG* readability formula (McLaughlin 639-646) calculates the grade level of a document based on complex (i.e., 3 or more syllable) word density and is designed for secondary-age readers.
+The SMOG readability formula (McLaughlin 639-646) calculates the grade level of a document based on complex (i.e., 3 or more syllable) word density and is designed for secondary-age readers.
 
-*SMOG* attempts to predict “full comprehension” (L. Smith 129), whereas most other formulas predict 50%-75% comprehension. Because of this, *SMOG* will generally produce higher scores comparatively (usually 1-2 grade levels higher).
+SMOG attempts to predict “full comprehension” (L. Smith 129), whereas most other formulas predict 50%-75% comprehension. Because of this, SMOG will generally produce higher scores comparatively (usually 1-2 grade levels higher).
 
 This test was trained on 390 passages from the 1961 edition of *McCall-Crabbs Standard Tests Lessons in Reading*. The following regression equation was derived with a correlation of $r = 0.985$:
 
@@ -1211,7 +1211,7 @@ Note that this test is often referred to as an acronym for “Simple Measure of 
 
 ## SMOG (Simplified) {#smog-test-simplified}
 
-Refer to \@ref(smog-test).
+Refer to \@ref(smog-test).\index{SMOG|)}
 
 \newpage
 ## Spache Revised {#spache-test}
@@ -1265,9 +1265,9 @@ To include this list as part of your *New Dale-Chall* scoring, select the **Tool
 [^Stocker]: The students involved in this study were “6,743 randomly selected Catholic fourth-graders attending 136 parochial schools throughout the country” (Stocker 87-88).
 
 \newpage
-## Wheeler-Smith {#wheeler-smith}
+## Wheeler-Smith\index{Wheeler-Smith|(ii} {#wheeler-smith}
 
-The *Wheeler-Smith* (397-399) test is designed for primary-age materials (Kindergarten to 4^th^ grade). This test calculates the grade level of a document based on [unit](#glossary) length and number of polysyllabic (2+ syllable) words. It should be noted that this differs from most other tests that use 3+ syllable words as a difficulty factor. The researchers selected 2+ syllable words because primary readers will have more difficulty with them than secondary and adult readers.
+The Wheeler-Smith (397-399) test is designed for primary-age materials (Kindergarten to 4^th^ grade). This test calculates the grade level of a document based on [unit](#glossary) length and number of polysyllabic (2+ syllable) words. It should be noted that this differs from most other tests that use 3+ syllable words as a difficulty factor. The researchers selected 2+ syllable words because primary readers will have more difficulty with them than secondary and adult readers.
 
 Although not explicitly stated in the article, the authors' definition of “polysyllabic” as being 2+ syllable can be inferred from the example[^River] that they provided:
 
@@ -1316,6 +1316,6 @@ Then, find the index value in the following chart to acquire the final readabili
 | Third grade | 19.1 to 26.5 |
 | Fourth grade | 26.6 to 34.5 |
 
-Table: *Wheeler-Smith* grade-level conversion table
+Table: Wheeler-Smith grade-level conversion table
 
-[^River]: This sample was taken from *Down Singing River*, Betts-Welch, American Book Company.
+[^River]: This sample was taken from *Down Singing River*, Betts-Welch, American Book Company.\index{Wheeler-Smith|)}

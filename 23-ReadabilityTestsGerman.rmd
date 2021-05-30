@@ -207,9 +207,9 @@ kableExtra::kbl(nws3Data, booktabs=T, centering=T, align='l', escape=F, linesep=
 ```
 
 \newpage
-## Quadratwurzelverfahren {#qu-bamberger-vanecek}
+## Quadratwurzelverfahren\index{Quadratwurzelverfahren} {#qu-bamberger-vanecek}
 
-*Quadratwurzelverfahren* (“Square root method”) (78) is an alternative method for calculating [*SMOG (Bamberger-Vanecek)*](#smog-bamberger-vanecek). Where *SMOG (Bamberger-Vanecek)* uses a 30-sentence sample, *Quadratwurzelverfahren* uses a 100-word sample; otherwise, they produce the same results.
+Quadratwurzelverfahren (“Square root method”) (78) is an alternative method for calculating [SMOG (Bamberger-Vanecek)](#smog-bamberger-vanecek)\index{SMOG!German variation}. Where SMOG (Bamberger-Vanecek) uses a 30-sentence sample, Quadratwurzelverfahren uses a 100-word sample; otherwise, they produce the same results.
 
 ```{definition, qu, name="Quadratwurzelverfahren formula"}
 $$
@@ -241,7 +241,7 @@ Based on the examples from Bamberger-Vanecek (78), the grade-level score should 
 
 Refer to \@ref(rix-test).
 
-## Rix\index{Rix!German fiction} (German fiction) {#rix-german-fiction}
+## Rix\index{Rix!German variation (fiction)} (German fiction) {#rix-german-fiction}
 
 This test is a German variation of [Rix](#rix-test) designed for fiction books. It uses a modified index-score formula from Rix, as well as different logic for assigning a grade-level score. This test was developed by Bamberger & Vanecek (64, 187) for use with German fiction ranging from 1^st^ to 11^th^ grade.
 
@@ -281,7 +281,7 @@ Table: Rix Index Score (German Fiction) to Grade Level Conversion Table
 :::
 
 \newpage
-## Rix\index{Rix!German non-fiction} (German non-fiction) {#rix-german-nonfiction}
+## Rix\index{Rix!German variation (non-fiction)} (German non-fiction) {#rix-german-nonfiction}
 
 This test is a German variation of [Rix](#rix-test) designed for non-fiction books. It uses a modified index-score formula from Rix, as well as different logic for assigning a grade-level score. This test was developed by Bamberger & Vanecek (64, 187) for use with German non-fiction ranging from 4^th^ to 14^th^ grade.
 
@@ -321,9 +321,9 @@ Table: Rix Index Score (German Non-fiction) to Grade Level Conversion Table
 :::
 
 \newpage
-## SMOG (Bamberger-Vanecek) {#smog-bamberger-vanecek}
+## SMOG (Bamberger-Vanecek)\index{SMOG!German variation} {#smog-bamberger-vanecek}
 
-*SMOG (Bamberger-Vanecek)* (78) is a German variation of [*SMOG*](#smog-test) designed for secondary-age readers. This test calculates the grade level of a document based on complex-word density.
+SMOG (Bamberger-Vanecek) (78) is a German variation of [SMOG](#smog-test) designed for secondary-age readers. This test calculates the grade level of a document based on complex-word density.
 
 Note that numerals are fully syllabized (i.e., sounded out) for this test, so the program overrides your [numeral syllabication](#numsyllable) setting when calculating it.
 
@@ -353,9 +353,9 @@ Based on the examples from Bamberger-Vanecek (78), the grade-level score should 
 :::
 
 \newpage
-## Wheeler-Smith (Bamberger-Vanecek) {#wheeler-smith-bamberger-vanecek}
+## Wheeler-Smith (Bamberger-Vanecek)\index{Wheeler-Smith!German variation} {#wheeler-smith-bamberger-vanecek}
 
-*Wheeler-Smith (Bamberger-Vanecek)* (77, 186) is a German variation of [*Wheeler-Smith*](#wheeler-smith) designed for both primary and secondary-age reading material. It calculates the grade level of a document based on [unit](#glossary) length and number of complex words.
+Wheeler-Smith (Bamberger-Vanecek) (77, 186) is a German variation of [Wheeler-Smith](#wheeler-smith) designed for both primary and secondary-age reading material. It calculates the grade level of a document based on [unit](#glossary) length and number of complex words.
 
 ```{definition, wheelersmithde, name="Wheeler-Smith (Bamberger-Vanecek) formula"}
 $$
@@ -394,7 +394,7 @@ Then, find the index value in the following chart to acquire the final readabili
 | Tenth grade | 38.1 to 42 |
 
 ::: {.notesection data-latex=""}
-Although Bamberger and Vanecek (77, 186) do not specify using units instead of sentences, the use of units is assumed to match *Wheeler-Smith*.
+Although Bamberger and Vanecek (77, 186) do not specify using units instead of sentences, the use of units is assumed to match Wheeler-Smith.
 
 Based on the examples from Bamberger and Vanecek (77, 186), index values should be truncated to one-point precision, not rounded.
 :::

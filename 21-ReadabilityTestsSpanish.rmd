@@ -142,11 +142,11 @@ Refer to \@ref(lix-test).
 Refer to \@ref(rix-test).
 
 \newpage
-## SOL {#sol-spanish}
+## SOL\index{SOL|(ii} {#sol-spanish}
 
-The *SOL* readability formula (Contreras 21-29) calculates the grade level of a document based on complex-word density.
+The SOL readability formula (Contreras 21-29) calculates the grade level of a document based on complex-word density.
 
-*SOL* is a modified version of [*SMOG*](#smog-test) (McLaughlin 639-646) that was recalibrated for Spanish text. This test calculates the *SMOG* score of a Spanish document, and then adjusts the score to take into account the comparably higher complex-word counts found in Spanish text. This adjustment is similar to what [*Gilliam, Peña, Mountain*](#gilliam-pena-mountain-fry-graph) (426-430) uses for plotting Spanish text onto the [*Fry* graph](#fry-test).
+SOL is a modified version of [SMOG](#smog-test)\index{SMOG!Spanish variation} (McLaughlin 639-646) that was recalibrated for Spanish text. This test calculates the SMOG score of a Spanish document, and then adjusts the score to take into account the comparably higher complex-word counts found in Spanish text. This adjustment is similar to what [*Gilliam, Peña, Mountain*](#gilliam-pena-mountain-fry-graph) (426-430) uses for plotting Spanish text onto the [*Fry* graph](#fry-test).
 
 This test was trained on multiple blocks of 30-sentence samples from the following English, Spanish, and French materials:
 
@@ -162,7 +162,7 @@ This test was trained on multiple blocks of 30-sentence samples from the followi
 - *The Three Little Pigs* (Spanish, English, and French)
 - Story books (a set of story books) (Spanish, English, and French)
 
-*SMOG* scores for these samples (including available translations) were collected. Next, the scores between each language for every set of material were then correlated. The researchers found significantly higher *SMOG* scores for French compared to English, and higher *SMOG* scores for Spanish compared to French. To adjust for these differences, the following regression equation was built to convert a Spanish *SMOG* calculation to English ($r^2 = 0.60$):
+SMOG scores for these samples (including available translations) were collected. Next, the scores between each language for every set of material were then correlated. The researchers found significantly higher SMOG scores for French compared to English, and higher SMOG scores for Spanish compared to French. To adjust for these differences, the following regression equation was built to convert a Spanish SMOG calculation to English ($r^2 = 0.60$):
 
 ```{definition, sol, name="SOL formula"}
 $$
@@ -177,8 +177,8 @@ Where:
 | G   | Grade level |
 | C   | Number of complex words (3+ syllables) from 30 sentences |
 
-Like *SMOG*, this test fully syllabizes numerals (i.e., sounds them out), so the program overrides your [numeral syllabication](#document-analysis) setting for this test. It also excludes lists and tables, but includes headers and footers (Contreras et al. 23). (*SMOG* does not explicitly follow this rule.)
+Like SMOG, this test fully syllabizes numerals (i.e., sounds them out), so the program overrides your [numeral syllabication](#document-analysis) setting for this test. It also excludes lists and tables, but includes headers and footers (Contreras et al. 23). (SMOG does not explicitly follow this rule.)
 
-Note that this test uses the high-precision version of the *SMOG* formula. This is recommended by the authors to avoid any rounding issues when converting scores between Spanish and English (Contreras et al. 24).
+Note that this test uses the high-precision version of the SMOG formula. This is recommended by the authors to avoid any rounding issues when converting scores between Spanish and English (Contreras et al. 24).
 
-This test requires 3 10-sentence samples, but [normalization](#glossary) can be used to analyze larger samples or entire documents.
+This test requires 3 10-sentence samples, but [normalization](#glossary) can be used to analyze larger samples or entire documents.\index{SOL|)}
