@@ -1,8 +1,8 @@
 book_filename: "ReadabilityStudioManual"
 language:
   label:
-    fig: "FIGURE "
-    tab: "TABLE "
+    fig: "Figure "
+    tab: "Table "
   ui:
     chapter_name: "Chapter "
 delete_merged_file: true

@@ -345,7 +345,7 @@ Select one of the following options to control how numerals are syllabized for *
 
 **System default**: Select this option to use the system default [numeral syllabication](#numsyllable) method.
 
-This option affects the *Flesch*, *PSK Flesch*, and *Amstad* tests.
+This option affects the Flesch, PSK Flesch, and Amstad\index{Amstad} tests.
 
 Note that these options are not applicable if [**Also exclude numerals**](#options-text-exclusion) is checked.
 ::::

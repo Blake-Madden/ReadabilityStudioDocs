@@ -1,13 +1,13 @@
 # German Readability Tests {#german-readability-tests}
 
 \newpage
-## Amstad {#amstad}
+## Amstad\index{Amstad|ii} {#amstad}
 
-The *Amstad* test is a recalculation of [Flesch Reading Ease](#flesch-test) for German text. Its formula is adjusted from the original *Flesch* to take into account German's comparatively longer words. It also uses a lower weighting for the sentence-length factor, placing most of the influence on word length.
+The Amstad test is a recalculation of [Flesch Reading Ease](#flesch-test) for German text. Its formula is adjusted from the original *Flesch* to take into account German's comparatively longer words. It also uses a lower weighting for the sentence-length factor, placing most of the influence on word length.
 
 The factors used for this test are syllables per word (“*Silben pro Wort*”) and words per sentence (“*Wörter pro Satz*”). (The same factors used for *Flesch Reading Ease*).
 
-*Amstad* (78-81) is best suited for school textbooks and technical manuals. Scores range from 0-100 (the higher the score, the easier to read) and average documents should be within the range of 60-70.
+Amstad (78-81) is best suited for school textbooks and technical manuals. Scores range from 0-100 (the higher the score, the easier to read) and average documents should be within the range of 60-70.
 
 ```{definition, amstad, name="Amstad formula"}
 $$I = 180 - (W/S) - (58.5*(B/W))$$
@@ -17,7 +17,7 @@ Where:
 
 |     | Description |
 | --- | :-- |
-| I   | *Amstad* (i.e., *Flesch*) index score |
+| I   | Amstad (i.e., Flesch) index score |
 | W   | Number of words |
 | B   | Number of syllables |
 | S   | Number of sentences |
@@ -34,8 +34,10 @@ Amstad offered these interpretations for scoring:
 | 30-49 | Difficult | academic |
 | 0-29 | Very difficult | scientific |
 
+Table: Amstad Conversion Table
+
 ::: {.notesection data-latex=""}
-Like *Flesch Reading Ease*, this test treats numerals as monosyllabic words by default. This behavior can be changed from the [**Options**](#readability-test-options) dialog.
+Like Flesch Reading Ease, this test treats numerals as monosyllabic words by default. This behavior can be changed from the [**Options**](#readability-test-options) dialog.
 :::
 
 \newpage
@@ -43,13 +45,13 @@ Like *Flesch Reading Ease*, this test treats numerals as monosyllabic words by d
 
 Refer to \@ref(lix-test).
 
-## Lix (German children's literature) {#lix-german-childrens-literature}
+## Lix\index{Lix!German children's literature} (German children's literature) {#lix-german-childrens-literature}
 
-This test is a German variation of [*Läsbarhetsindex (Lix)*](#lix-test) designed for children's literature. It uses the same index-score formula as *Lix*, but uses different scales for assigning the difficulty and grade-level scores. This adjustment was developed by Renström (152-153) and Bamberger & Vanecek (64, 187) for use with German literature ranging from 1^st^ to 8^th^ grade. (Renström developed the adjusted difficulty gauge; Bamberger & Vanecek developed the grade-level conversion.)
+This test is a German variation of [Läsbarhetsindex (Lix)](#lix-test) designed for children's literature. It uses the same index-score formula as Lix, but uses different scales for assigning the difficulty and grade-level scores. This adjustment was developed by Renström (152-153) and Bamberger & Vanecek (64, 187) for use with German literature ranging from 1^st^ to 8^th^ grade. (Renström developed the adjusted difficulty gauge; Bamberger & Vanecek developed the grade-level conversion.)
 
-Note that this test differs from the original *Lix* approach of using the same scoring for any document, regardless of language. Instead, this test is designed specifically for German materials, adjusting the grade-level score and classification of the index value.
+Note that this test differs from the original Lix approach of using the same scoring for any document, regardless of language. Instead, this test is designed specifically for German materials, adjusting the grade-level score and classification of the index value.
 
-Regarding the index score, the following variation of the *Lix* gauge is used classify the difficulty (Renström 153; Bamberger and Vanecek 65; Schulz 53):
+Regarding the index score, the following variation of the Lix gauge is used classify the difficulty (Renström 153; Bamberger and Vanecek 65; Schulz 53):
 
 ```{r germanLix, echo=F, fig.cap='German Lix Gauge', fig.align='center'}
 knitr::include_graphics("Images/GermanLixGauge.png")
@@ -58,7 +60,7 @@ knitr::include_graphics("Images/GermanLixGauge.png")
 This version adjusts the scaling of the score, assuming that German text is inherently more difficult than other languages. It also includes additional levels of difficulty (e.g., “children and young adult”).
 
 ::: {.onsamepage data-latex=""}
-To convert the *Lix* index score to a grade, this test uses the following table:
+To convert the Lix index score to a grade, this test uses the following table:
 
 | Index Score | Grade |
 | :-- | :-- |
@@ -70,17 +72,19 @@ To convert the *Lix* index score to a grade, this test uses the following table:
 | 34-35 | 6^th^ grade |
 | 36-37 | 7^th^ grade |
 | 38+ | 8^th^ grade |
+
+Table: Lix (German children's literature) Conversion Table
 :::
 
 \newpage
 
-## Lix (German technical literature) {#lix-german-technical}
+## Lix\index{Lix!German technical literature} (German technical literature) {#lix-german-technical}
 
-This test is a German variation of [*Läsbarhetsindex (Lix)*](#lix-test) designed for technical literature. It uses the same index-score formula as *Lix*, but uses different scales for assigning the difficulty and grade-level scores. This adjustment was developed by Renström (152-153) and Bamberger & Vanecek (64, 187) for use with German literature ranging from 3^rd^ to 15^th^ grade. (Renström developed the adjusted difficulty gauge; Bamberger & Vanecek developed the grade-level conversion.)
+This test is a German variation of [Läsbarhetsindex (Lix)](#lix-test) designed for technical literature. It uses the same index-score formula as Lix, but uses different scales for assigning the difficulty and grade-level scores. This adjustment was developed by Renström (152-153) and Bamberger & Vanecek (64, 187) for use with German literature ranging from 3^rd^ to 15^th^ grade. (Renström developed the adjusted difficulty gauge; Bamberger & Vanecek developed the grade-level conversion.)
 
-Note that this test differs from the original *Lix* approach of using the same scoring for any document, regardless of language. Instead, this test is designed specifically for German materials, adjusting the grade-level score and classification of the index value.
+Note that this test differs from the original Lix approach of using the same scoring for any document, regardless of language. Instead, this test is designed specifically for German materials, adjusting the grade-level score and classification of the index value.
 
-Regarding the index score, the following variation of the *Lix* gauge is used classify the difficulty (Renström 153; Bamberger and Vanecek 65; Schulz 53):
+Regarding the index score, the following variation of the Lix gauge is used classify the difficulty (Renström 153; Bamberger and Vanecek 65; Schulz 53):
 
 ```{r germanLix2, echo=F, fig.cap='German Lix Gauge', fig.align='center'}
 knitr::include_graphics("Images/GermanLixGauge.png")
@@ -88,7 +92,8 @@ knitr::include_graphics("Images/GermanLixGauge.png")
 
 This version adjusts the scaling of the score, assuming that German text is inherently more difficult than other languages. It also includes additional levels of difficulty (e.g., “children and young adult”).
 
-To convert the *Lix* index score to a grade, this test uses the following table:
+::: {.onsamepage data-latex=""}
+To convert the Lix index score to a grade, this test uses the following table:
 
 | Index Score | Grade |
 | :-- | :-- |
@@ -105,6 +110,9 @@ To convert the *Lix* index score to a grade, this test uses the following table:
 | 60-63 | 13^th^ grade |
 | 64-69 | 14^th^ grade |
 | 70+ | 15^th^ grade |
+
+Table: Lix (German technical literature) Conversion Table
+:::
 
 \newpage
 ## Neue Wiener Sachtextformel 1 {#neue-wiener-sachtextformel1}
@@ -233,9 +241,9 @@ Based on the examples from Bamberger-Vanecek (78), the grade-level score should 
 
 Refer to \@ref(rix-test).
 
-## Rix (German fiction) {#rix-german-fiction}
+## Rix\index{Rix!German fiction} (German fiction) {#rix-german-fiction}
 
-This test is a German variation of [*Rix*](#rix-test) designed for fiction books. It uses a modified index-score formula from *Rix*, as well as different logic for assigning a grade-level score. This test was developed by Bamberger & Vanecek (64, 187) for use with German fiction ranging from 1^st^ to 11^th^ grade.
+This test is a German variation of [Rix](#rix-test) designed for fiction books. It uses a modified index-score formula from Rix, as well as different logic for assigning a grade-level score. This test was developed by Bamberger & Vanecek (64, 187) for use with German fiction ranging from 1^st^ to 11^th^ grade.
 
 ```{definition, rixfictionde, name="Rix (German fiction) formula"}
 $$
@@ -247,12 +255,13 @@ Where:
 
 |     | Description |
 | --- | :-- |
-| I   | *Rix* index score |
+| I   | Rix index score |
 | W   | Number words |
 | X   | Number of long words (7+ characters) |
 | U   | Number of sentence units |
 
-To convert the *Rix* index score to a grade, this test uses the following table:
+::: {.onsamepage data-latex=""}
+To convert the Rix index score to a grade, this test uses the following table:
 
 | Index Score | Grade |
 | :-- | :-- |
@@ -268,10 +277,13 @@ To convert the *Rix* index score to a grade, this test uses the following table:
 | 41.51-45 | 10^th^ grade |
 | 45.1+ | 11^th^ grade |
 
-\newpage
-## Rix (German non-fiction) {#rix-german-nonfiction}
+Table: Rix Index Score (German Fiction) to Grade Level Conversion Table
+:::
 
-This test is a German variation of [*Rix*](#rix-test) designed for non-fiction books. It uses a modified index-score formula from *Rix*, as well as different logic for assigning a grade-level score. This test was developed by Bamberger & Vanecek (64, 187) for use with German non-fiction ranging from 4^th^ to 14^th^ grade.
+\newpage
+## Rix\index{Rix!German non-fiction} (German non-fiction) {#rix-german-nonfiction}
+
+This test is a German variation of [Rix](#rix-test) designed for non-fiction books. It uses a modified index-score formula from Rix, as well as different logic for assigning a grade-level score. This test was developed by Bamberger & Vanecek (64, 187) for use with German non-fiction ranging from 4^th^ to 14^th^ grade.
 
 ```{definition, rixnonfictionde, name="Rix (German non-fiction) formula"}
 $$
@@ -283,12 +295,13 @@ Where:
 
 |     | Description |
 | --- | :-- |
-| I   | *Rix* index score |
+| I   | Rix index score |
 | W   | Number words |
 | X   | Number of long words (7+ characters) |
 | U   | Number of sentence units |
 
-To convert the *Rix* index score to a grade, this test uses the following table:
+::: {.onsamepage data-latex=""}
+To convert the Rix index score to a grade, this test uses the following table:
 
 | Index Score | Grade |
 | :-- | :-- |
@@ -303,6 +316,9 @@ To convert the *Rix* index score to a grade, this test uses the following table:
 | 75.1-84 | 12^th^ grade |
 | 84.1-100 | 13^th^ grade |
 | 100+ | 14^th^ grade |
+
+Table: Rix Index Score (German Non-fiction) to Grade Level Conversion Table
+:::
 
 \newpage
 ## SMOG (Bamberger-Vanecek) {#smog-bamberger-vanecek}

@@ -32,7 +32,7 @@ There will also be graphs in this section if you had included the [*Fry*](#revie
 
 ## Readability Graphs {#reviewing-readability-graphs}
 
-There are numerous readability tests that are graphically plotted, including [*Fry*](#fry-test), [*Raygor*](#raygor-test), [*Flesch*](#flesch-test), [*Lix*](#lix-test), [*Gilliam-Peña-Mountain*](#gilliam-pena-mountain-fry-graph), [*FRASE*](#frase), [*Crawford*](#crawford), and [*Schwartz*](#scwartz). These graphs consist of either grade-level or reading-level regions that a document may fall within. They also include indicators for the most influential factor for the document's reported level (i.e., word difficulty vs. sentence difficulty).
+There are numerous readability tests that are graphically plotted, including [*Fry*](#fry-test), [*Raygor*](#raygor-test), [*Flesch*](#flesch-test), [Lix](#lix-test), [*Gilliam-Peña-Mountain*](#gilliam-pena-mountain-fry-graph), [*FRASE*](#frase), [*Crawford*](#crawford), and [*Schwartz*](#scwartz). These graphs consist of either grade-level or reading-level regions that a document may fall within. They also include indicators for the most influential factor for the document's reported level (i.e., word difficulty vs. sentence difficulty).
 
 To view these graphs, click on the **Test Graphs & Charts** icon in a [standard project](#creating-standard-project) or the **Readability Graphs** icon in a [batch project](#creating-batch-project).
 
@@ -100,17 +100,17 @@ knitr::include_graphics("Images/FleschChart.png")
 knitr::include_graphics("Images/DB2Plot.png")
 ```
 
-Similar to a *Flesch* chart, the *Lix* gauge plots a document's *Lix* index score on a chart showing its difficulty level:
+Similar to a *Flesch* chart, the Lix gauge\index{Lix!gauge plot} plots a document's Lix index score on a chart showing its difficulty level:
 
 ```{r lixGuage2, echo=F, fig.cap='Lix Gauge', fig.align='center'}
 knitr::include_graphics("Images/LixGauge.png")
 ```
 
-In the above chart, we can see that *Lix* scores can range from 0 (“very easy”) to 60+ (“very difficult”).
+In the above chart, we can see that Lix scores can range from 0 (“very easy”) to 60+ (“very difficult”).
 
-There is also a variation of the *Lix* gauge that is adjusted for German materials:
+There is also a variation of the Lix gauge\index{Lix!gauge plot (German)} that is adjusted for German materials:
 
-```{r germanLix3, echo=F, fig.cap='German Lix Gauge', fig.align='center'}
+```{r germanLixGauge, echo=F, fig.cap='German Lix Gauge', fig.align='center'}
 knitr::include_graphics("Images/GermanLixGauge.png")
 ```
 

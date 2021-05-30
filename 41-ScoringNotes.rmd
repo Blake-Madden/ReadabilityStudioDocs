@@ -6,7 +6,7 @@ Most readability tests that return a grade level include a mantissa (i.e., decim
 
 For example, [*New Dale-Chall*](#dale-chall-test) looks up your unfamiliar word and sentence counts from a table and returns a grade range. This will yield results such as “7–8,” meaning that a document falls within the seventh to eighth grade reading level.
 
-[*Lix*](#lix-test) and [*Rix*](#rix-test) use a similar method. These tests calculate an index score and then look up the grade level from a table using this value.
+[Lix](#lix-test)\index{Lix!scoring method} and [Rix](#rix-test)\index{Rix!scoring method} use a similar method. These tests calculate an index score and then look up the grade level from a table using this value.
 
 Finally, graphical tests (e.g., [*Fry*](#fry-test)) only return integral grade levels because the “slices” on these graphs only represent the grade, not the grade and month.
 

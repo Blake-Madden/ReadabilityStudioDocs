@@ -754,11 +754,11 @@ kableExtra::kbl(hjScoreTable, booktabs=T, centering=T, align='r',escape=F) %>%
 Because this formula is based on the usage of familiar words (rather than syllable or letter counts), it is often regarded as a more accurate test for younger readers.
 
 \newpage
-## Lix {#lix-test}
+## Lix\index{Lix|(ii} {#lix-test}
 
 The *Läsbarhetsindex (Lix)* readability formula (Björnsson 480-497) was designed for documents of any Western European language. It calculates a document’s index score based on sentence length and number of long words (i.e., words containing seven or more characters). Viewing long words as those with seven or more characters is what differentiates it from similar tests (which use six or more characters). This difference is what allows it to be a more balanced “yardstick” that can be applied to numerous languages.
 
-The philosophy behind using one formula for multiple languages is that, at their core, most languages are similar in difficulty. This approach argues that a language having various idiosyncrasies and longer words is not why it scores at more difficult levels. The reason languages score higher is because of how they are used (i.e., word choice, writing style) and presented (e.g., longer paragraphs and sentences, less images). This differs from the reasoning behind other tests based on adjusted English formulas. Those tests are designed under the assumption that non-English languages are inherently more difficult (because of comparatively longer words). For example, [*Gilliam-Peña-Mountain*](#gilliam-pena-mountain-fry-graph) and the [German reinterpretation of *Lix*](#lix-german-technical) follow this logic of adjusting English formulas for non-English text. *Lix*, however, chooses to use the same formula to gauge multiple languages. It views documents that score higher to be a result of writing style and presentation, not the language itself.
+The philosophy behind using one formula for multiple languages is that, at their core, most languages are similar in difficulty. This approach argues that a language having various idiosyncrasies and longer words is not why it scores at more difficult levels. The reason languages score higher is because of how they are used (i.e., word choice, writing style) and presented (e.g., longer paragraphs and sentences, less images). This differs from the reasoning behind other tests based on adjusted English formulas. Those tests are designed under the assumption that non-English languages are inherently more difficult (because of comparatively longer words). For example, [*Gilliam-Peña-Mountain*](#gilliam-pena-mountain-fry-graph) and the [German reinterpretation of Lix](#lix-german-technical) follow this logic of adjusting English formulas for non-English text. Lix, however, chooses to use the same formula to gauge multiple languages. It views documents that score higher to be a result of writing style and presentation, not the language itself.
 
 This test was originally designed for Danish, English, French, German, and Finnish and trained on “thousands of books and reading passages” (481) during 1968, 1969, 1974, 1975, and 1979. During the 1974 English study, the formula was tested with:
 
@@ -776,7 +776,7 @@ Other language studies were conducted later using newspaper articles as their tr
 
 The researchers conjectured these differences had more to do with use of language than with the languages themselves (495).
 
-The index score of *Lix* can be summarized as follows:
+The index score of Lix can be summarized as follows:
 
 | Lix Score | Description |
 | :-- | :-- |
@@ -786,9 +786,9 @@ The index score of *Lix* can be summarized as follows:
 | 50-59 | Difficult (technical literature) |
 | 60 and above | Very difficult |
 
-Table: *Lix* index table
+Table: Lix Index Table
 
-Note that *Lix* also includes a chart to visualize the meaning of its index score:
+Note that Lix also includes a chart to visualize the meaning of its index score:
 
 ```{r lixGauge, echo=F, fig.cap='Lix Gauge', fig.align='center'}
 knitr::include_graphics("Images/LixGauge.png")
@@ -810,7 +810,7 @@ Where:
 | S   | Number of sentences |
 
 ```{block, type='onsamepage'}
-As a final note, Anderson contributed a grade-level conversion table for *Lix* index scores (Anderson 494) as follows:
+As a final note, Anderson contributed a grade-level conversion table for Lix index scores (Anderson 494) as follows:
 
 | Lix Score | Equivalent Grade Level |
 | :-- | :-- |
@@ -828,7 +828,7 @@ As a final note, Anderson contributed a grade-level conversion table for *Lix* i
 | 10-14 | 2   |
 | Below 10 | 1   |
 
-Table: *Lix* grade-level conversion table
+Table: Lix Grade-level Conversion Table\index{Lix|)}
 ```
 
 \newpage
@@ -1113,23 +1113,23 @@ The *Raygor Estimate Graph* formula is:
 This test is designed for 3 100-word samples, with 3 samples being recommended for best results. ([Normalization](#glossary) can also be used to analyze larger samples or entire documents.)
 
 \newpage
-## Rix {#rix-test}
+## Rix\index{Rix|(ii} {#rix-test}
 
-The *Rate Index (Rix)* readability formula (Anderson 490-496) was designed for documents of any Western European language. It calculates a document’s index score based on sentence length and number of long words (i.e., words containing seven or more characters). It is based on the [*Lix*](#lix-test) readability formula (Björnsson 480-497) and follows the same philosophy of using a unified formula for multiple languages.
+The Rate Index (Rix)\index{Rix!compared to Lix} readability formula (Anderson 490-496) was designed for documents of any Western European language. It calculates a document’s index score based on sentence length and number of long words (i.e., words containing seven or more characters). It is based on the [Lix](#lix-test) readability formula (Björnsson 480-497) and follows the same philosophy of using a unified formula for multiple languages.
 
-“Rate” in this context refers to the rate of long words throughout the document. Comparing against other tests that traditionally recommend fixed sample sizes (e.g., [*SMOG*](#smog-test)), Anderson noted that *Rix* could be applied to any length of text without normalization. As he explained, “the concept of rate has the advantage of being applied over any number of sentences, for it is a running average” (Anderson 495).
+“Rate” in this context refers to the rate of long words throughout the document. Comparing against other tests that traditionally recommend fixed sample sizes (e.g., [*SMOG*](#smog-test)), Anderson noted that Rix could be applied to any length of text without normalization. As he explained, “the concept of rate has the advantage of being applied over any number of sentences, for it is a running average” (Anderson 495).
 
-Regarding the factors used for this test, Anderson defined a sentence “as a sequence of words terminated by a full-stop (period), question or exclamation mark, colon, or semicolon” (Anderson 495). In other words, sentences [units](#glossary) should be used for the calculation. (As for *Lix*, Björnsson did not define how sentences should end, so it is recommended to use the traditional ‘.’, ‘?’, and ‘!’ markers for that test.)
+Regarding the factors used for this test, Anderson defined a sentence “as a sequence of words terminated by a full-stop (period), question or exclamation mark, colon, or semicolon” (Anderson 495). In other words, sentences [units](#glossary) should be used for the calculation. (As for Lix, Björnsson did not define how sentences should end, so it is recommended to use the traditional ‘.’, ‘?’, and ‘!’ markers for that test.)
 
-As for defining long words, Anderson recommended “excluding hyphens, punctuation marks, and brackets” (495) when determining a word’s length. Although Björnsson did not explicitly state this for *Lix*, it is a reasonable assumption that that was his original intention.
+As for defining long words, Anderson recommended “excluding hyphens, punctuation marks, and brackets” (495) when determining a word’s length. Although Björnsson did not explicitly state this for Lix, it is a reasonable assumption that that was his original intention.
 
-Prior to creating this formula, Anderson conducted a validation study for *Lix*, using a set of 36 prose passages. These 150-word passages were originally scored from a *cloze* study (Miller and Coleman 851). Later, they were scored in another study involving judged-rankings and word-recollection tests (Aquino 346-356). (Both portions of Aquino’s study used 14 *Southwest Regional Laboratory for Educational Research and Development* employees.) Anderson analyzed the *Lix* scores against these other measurements and found significant correlations, as shown below:
+Prior to creating this formula, Anderson conducted a validation study for Lix, using a set of 36 prose passages. These 150-word passages were originally scored from a *cloze* study (Miller and Coleman 851). Later, they were scored in another study involving judged-rankings and word-recollection tests (Aquino 346-356). (Both portions of Aquino’s study used 14 *Southwest Regional Laboratory for Educational Research and Development* employees.) Anderson analyzed the Lix scores against these other measurements and found significant correlations, as shown below:
 
 - against the Miller and Coleman’s *cloze* scores, $r = 0.89$
 - against word-recall scores, $r = 0.82$
 - against the judges’ rankings, $r = 0.88$
 
-After validating *Lix*, Anderson created *Rix* and compared the two tests’ results. He found that they almost perfectly correlated ($r = 0.99$). Afterwards, he validated *Rix* against the aforementioned 36-passage studies and found similarly strong correlations.
+After validating Lix, Anderson created Rix and compared the two tests’ results. He found that they almost perfectly correlated ($r = 0.99$). Afterwards, he validated Rix against the aforementioned 36-passage studies and found similarly strong correlations.
 
 \newpage
 
@@ -1147,6 +1147,7 @@ Where:
 | X   | Number of long words (7+ characters) |
 | U   | Number of sentence units |
 
+::: {.onsamepage data-latex=""}
 | Rix Index Score | Grade Level |
 | :-- | :-- |
 | 7.2 and above | College |
@@ -1162,8 +1163,9 @@ Where:
 | .5 and above | 3   |
 | .2 and above | 2   |
 | Below .2 | 1   |
+:::
 
-Table: *Rix* grade-level conversion table
+Table: Rix Grade-level Conversion Table\index{Rix|)}
 
 \newpage
 ## SMOG {#smog-test}

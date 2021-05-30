@@ -185,11 +185,11 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 
 - Added [goals](#reviewing-goals) feature to warn if a document's scores do not fall within a certain range.
 - Added [*Schwartz* test](#scwartz) (German projects only).
-- Added a graph to visualize *Lix* index scores.
-- Added a graph to visualize German *Lix* index scores.
+- Added a graph to visualize Lix index scores.
+- Added a graph to visualize German Lix index scores.
 - Added a graph to visualize *Danielson-Bryan 2* scores.
-- *Rix* now uses sentence units in its calculation to better match the test's recommendations.
-- Expanded the difficulty-level descriptions for the German *Lix* tests.
+- Rix now uses sentence units in its calculation to better match the test's recommendations.
+- Expanded the difficulty-level descriptions for the German Lix tests.
 - Instruction label now shown on all *Flesch* charts (not just blank ones).
 - Added custom test features:
   - Added feature to create custom tests based on any existing formula-based test. Refer to \@ref(creating-custom-flesch-test) for an example.
@@ -216,7 +216,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - Expanded words ignored by spell checker when **ignore programming words** is selected.
 - [Overused words (x Sentence)](#reviewing-overused-by-sentence) now excludes acronyms.
 - [All Words (Condensed)](#reviewing-word-breakdowns) now excludes common words (e.g., “the”), numerals, and filenames.
-- *Lix* and *Rix* are now available in the **Adult** readability tests menu.
+- Lix and Rix are now available in the **Adult** readability tests menu.
 - Added **Ignore social media hashtags** option to spell-checker.
 - Expanded spell-checker to include government, economics, business, accounting, biology, and psychology terminology.
 - New formula-parsing engine used for custom tests. This includes the following changes:
@@ -248,7 +248,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 
 #### Graph Enhancements {-}
 
-- Added [beeswarm jittering](#stats-issues) to box, *Danielson-Bryan 2*, *Flesch Reading Ease*, *Lix*, and *German Lix* plots (in batch projects).
+- Added [beeswarm jittering](#stats-issues) to box, *Danielson-Bryan 2*, *Flesch Reading Ease*, Lix, and *German Lix* plots (in batch projects).
 - Improved graph rendering performance.
 - Added option to not include labels on histograms.
 - Added option to not include labels on barcharts.
@@ -448,13 +448,13 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - New tests added:
     - [*Danielson-Bryan* 1 & 2](#danielson-bryan-1)
     - [*Easy Listening Formula*](#easy-listening-formula)
-    - [*Amstad*](#amstad)
-    - [*Lix* (German children's literature)](#lix-german-childrens-literature)
-    - [*Lix* (German technical literature)](#lix-german-technical)
+    - [Amstad](#amstad)
+    - [Lix (German children's literature)](#lix-german-childrens-literature)
+    - [Lix (German technical literature)](#lix-german-technical)
     - [*Neue Wiener Sachtextformel* 1–3](#neue-wiener-sachtextformel1)
     - [*Quadratwurzelverfahren*](#qu-bamberger-vanecek)
-    - [*Rix* (German fiction)](#rix-german-fiction)
-    - [*Rix* (German non-fiction)](#rix-german-nonfiction)
+    - [Rix (German fiction)](#rix-german-fiction)
+    - [Rix (German non-fiction)](#rix-german-nonfiction)
     - [*SMOG* (Bamberger-Vanecek)](#smog-bamberger-vanecek)
     - [*Wheeler-Smith* (Bamberger-Vanecek)](#wheeler-smith)
 - New grammar checking features for English projects:

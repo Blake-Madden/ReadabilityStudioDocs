@@ -20,7 +20,7 @@ The second type of formula is a custom-built formula. For example, the formula f
 
 `SevenCharacterPlusWordCount() / SentenceCount()`
 
-To create a new formula based on *Lix* that treats 6+ character words as difficult, enter this:
+To create a new formula based on Lix that treats 6+ character words as difficult, enter this:
 
 `SixCharacterPlusWordCount() / SentenceCount()`
 
