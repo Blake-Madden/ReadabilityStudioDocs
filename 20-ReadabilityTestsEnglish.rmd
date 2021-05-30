@@ -14,11 +14,11 @@ Kincaid et al. (*Evaluating* 3, 6–15) also used this test for evaluating peere
 
 They noted that for the high school study, the materials with lower *ARI* scores yielded better comprehension rates “as reflected in cloze scores” (Kincaid et al. 3). The graduate students and trainees from the other studies stated that the materials may not be appropriate for remedial high school readers (13, 15), but did agree that the stories were “authentic” and “interesting.”
 
-### The ARI Formula {-}
-
+```{definition, ari, name="ARI formula"}
 $$
 G = (4.71 * (RP/W)) + (0.5 * (W/S)) - 21.43
 $$
+```
 
 Where:
 
@@ -47,10 +47,12 @@ For this formula, a study involving 2,600 students ranging from 4^th^-12^th^ gra
 
 Of these formulas, the predicted *cloze* formula is as follows:
 
+```{definition, bormuthcloze, name="Bormuth Cloze Mean formula"}
 \begin{align*}
   C = & .886593 - .083640*(R/W) + .161911*(D/W)^3 - \\
       & .021401*(W/S) + .000577*(W/S)^2 - .000005*(W/S)^3
 \end{align*}
+```
 
 Where:
 
@@ -77,10 +79,12 @@ For this formula, a study involving 2,600 students ranging from 4^th^-12^th^ gra
 
 Of these formulas, the grade-placement formula is as follows:
 
+```{definition, bormuthgp, name="Bormuth Grade Placement formula"}
 \begin{align*}
   G = & 3.761864 + 1.053153*(R/W) - 2.138595*(D/W)^3 + \\
       & .152832*(W/S) - .002077*(W/S)^2
 \end{align*}
+```
 
 Where:
 
@@ -105,15 +109,19 @@ Coleman and Liau noted the difficulties of using computers to count syllables (2
 
 First, calculate the [predicted *cloze*](#cloze) percentage with the following formula:
 
+```{definition, colemanliaucloze, name="Coleman-Liau formula"}
 $$
 E = (141.8401 - (.214590*R)) + (1.079812*S)
 $$
+```
 
 Then convert the *cloze* percentage into a grade level with the following formula:
 
+```{definition, colemanliaugrade, name="Coleman-Liau grade-level conversion formula"}
 $$
 G = (-27.4004*(E/100)) + 23.06395
 $$
+```
 
 Where:
 
@@ -124,7 +132,7 @@ Where:
 | R   | Number of characters (per 100 words) |
 | S   | Number of sentences (per 100 words) |
 
-Though not explicitly mentioned in their article (284), the estimated *cloze* % from the first equation must be converted to a fraction (i.e., divided by 100) to produce the expected results. For this reason, “$(E/100)$” is shown in the second equation, rather than just “estimated *cloze* %” as it appears in the source article. As an example, an estimated *cloze* % of 51.3 should yield a grade level of 9:
+Though not explicitly mentioned in their article (284), the estimated *cloze* % from the first equation must be converted to a fraction (i.e., divided by 100) to produce the expected results. For this reason, “$(E/100)$” is shown in the second equation, rather than just “estimated cloze %” as it appears in the source article. As an example, an estimated *cloze* % of 51.3 should yield a grade level of 9:
 
 $$
 9 = (-27.4004*(51.3/100)) + 23.06395
@@ -160,9 +168,11 @@ Because this test is based on the usage of familiar words (rather than syllable 
 
 This test was trained against 383 selections from the 1950 edition of McCall-Crabbs *Standard Test Lessons in Reading* (McCall 1950). For validation, the derived formula had an $r^2 = 0.575$, similar to *Farr-Jenkins-Paterson*'s $r^2 = 0.553$. This regression equation is as follows:
 
+```{definition, db1, name="Danielson-Bryan 1 formula"}
 $$
 G = 1.0364*(RP/W) + .0194*(RP/S) - .6059
 $$
+```
 
 Where:
 
@@ -197,9 +207,11 @@ For this reason, the “number of words” statistic is a more accurate descript
 
 This test was trained against 376 passages from *McCall-Crabbs Standard Test Lessons in Reading* (1926 ed.). For validation, the derived formula had an $r^2 = 0.575$, similar to *Farr-Jenkins-Paterson*'s $r^2 = 0.553$. This regression equation is as follows:
 
+```{definition, db2, name="Danielson-Bryan 2 formula"}
 $$
 I = 131.059 - 10.364*(RP/W) - .194*(RP/S)
 $$
+```
 
 Where:
 
@@ -239,13 +251,13 @@ The *DRP* difficulty score of document is used to match it to a student based on
 
 This test is based on the [*Bormuth Cloze*](#bormuth-cloze-mean-machine-passage) test and uses the same criteria for its calculation. Basically, this test uses the *Bormuth* formula to calculate a [predicted cloze score](#cloze), converts it to percentage format, and then inverts it to arrive at the units score.
 
-### Degrees of Reading Power Formula {-}
-
+```{definition, drp, name="Degrees of Reading Power formula"}
 \begin{align*}
   U = & 100 - 100*(.886593 - .083640*(R/W) + \\
       & .161911*(D/W)^3 - .021401*(W/S) + \\
       & .000577*(W/S)^2 - .000005*(W/S)^3)
 \end{align*}
+```
 
 Where:
 
@@ -354,9 +366,11 @@ The above sentence contains three polysyllabic words: any (2), sentence (2), abo
 
 This process is repeated for every sentence, and then these scores are averaged. A simpler method is shown below:
 
+```{definition, elf, name="Easy Listening Formula"}
 $$
 G = (B-W) / S
 $$
+```
 
 Where:
 
@@ -383,11 +397,11 @@ To improve a score, McAlpine recommends lowering the use of miniwords and shorte
 - abstract nouns (e.g., “peace,” “tension”)
 - use of pronouns that may be unclear (e.g., “Gabi visited her mother after *she* was released from the hospital.”)
 
-### The McAlpine EFLAW Formula {-}
-
+```{definition, eflaw, name="McAlpine EFLAW formula"}
 $$
 I = (W + T) / S
 $$
+```
 
 Where:
 
@@ -398,14 +412,14 @@ Where:
 | T   | Number of miniwords |
 | S   | Number of sentences |
 
-### McAlpine EFLAW Index Table {-}
-
 | EFLAW Score | Description |
 | :-- | :-- |
 | 1-20 | Very easy to understand |
 | 21-25 | Quite easy to understand |
 | 26-29 | Mildly difficult |
 | 30+ | Very confusing |
+
+Table: *McAlpine EFLAW* index table
 
 \newpage
 ## Farr, Jenkins, Paterson {#farr-jenkins-paterson}
@@ -416,9 +430,11 @@ The *Farr, Jenkins, Paterson* readability formula (333-337) calculates the [*Fle
 
 This test was trained on 360 100-word samples, producing the following equation:
 
+```{definition, fjp, name="Farr, Jenkins, Paterson formula"}
 $$
 I = -31.517 - (1.015*(W/S)) + (1.599*((M/W)*100))
 $$
+```
 
 Where:
 
@@ -438,15 +454,19 @@ The *Flesch-Kincaid*\index{Flesch-Kincaid|ii} (Kincaid et al., *Derivation* 14) 
 
 This test was trained against reading-test results from 531 U.S. Navy personnel from four Naval technical training schools. Using these results, the following multiple regression equation was derived:
 
+```{definition, fleschkincaid, name="Flesch-Kincaid formula"}
 $$
 G = (11.8*(B/W)) + (.39*(W/S)) - 15.59
 $$
+```
 
 A simplified variation was also provided:
 
+```{definition, fleschkincaidsimplified, name="Simplified Flesch-Kincaid formula"}
 $$
 G = (12*(B/W)) + (.4*(W/S)) - 16
 $$
+```
 
 Where:
 
@@ -476,11 +496,11 @@ The *Flesch Reading Ease* readability formula calculates an index score of a doc
 
 *Flesch Reading Ease* (Flesch, *Art of Readable Writing* 213; *How to Write Plain English* 23) is best suited for school textbooks and technical manuals. It is a standard used by many U.S. government agencies, including the U.S. Department of Defense. Scores range from 0-100 (the higher the score, the easier to read) and average documents should be within the range of 60-70.
 
-### The Flesch Reading Ease Formula {-}
-
+```{definition, flesch, name="Flesch Reading Ease formula"}
 $$
 I = 206.835 - (84.6*(B/W)) - (1.015*(W/S))
 $$
+```
 
 Where:
 
@@ -491,8 +511,6 @@ Where:
 | B   | Number of syllables |
 | S   | Number of sentences |
 
-### Flesch Reading Ease Index Table {-}
-
 | Flesch Score | Description |
 | :-- | :-- |
 | 90-100 | Very easy |
@@ -502,6 +520,8 @@ Where:
 | 50-59 | Fairly difficult |
 | 30-49 | Difficult |
 | 0-29 | Very difficult |
+
+Table: *Flesch Reading Ease* index table
 
 Note that this test treats numerals as monosyllabic words by default. This behavior can be changed from the [**Options**](#readability-test-options) dialog.
 
@@ -522,9 +542,11 @@ The *FORCAST* readability formula (Caylor 13-17) was devised for assessing U.S. 
 
 This formula was trained against U.S. Army “job reading material” (Caylor 13), using the criterion of *cloze* passages where readers scored around 35% comprehension. (Most other tests usually use the 50% criterion.) The researchers initially tested regression equations using 15 variables for their new formula, but noted the single factor of monosyllabic words yielded a “sufficiently high” (Caylor 15) correlation of $r = 0.86$ against the mean cloze scores. Based on this, the following formula was derived:
 
+```{definition, forcast, name="FORCAST formula"}
 $$
 G = 20-(M/10)
 $$
+```
 
 Where:
 
@@ -618,11 +640,11 @@ The Meldorf^®^ statistical library is available in C++ source code–a low-leve
 
 If you treat independent clauses as separate sentences, then this will be seen as six small sentences and produce a *Fog* score of 10.2. If you count sentences just by looking for `.?!`, then this will be counted as a single 44-word sentence and produce a *Fog* score of 19. To penalize run-on sentences (which is recommended), then leave the option [count independent clauses as separate sentences](#readability-test-options) unchecked for this test.
 
-### The Gunning Fog Formula {-}
-
+```{definition, gunningfog, name="Gunning Fog formula"}
 $$
 G = .4*(W/S+((F/W)*100))
 $$
+```
 
 Where:
 
@@ -764,17 +786,19 @@ The index score of *Lix* can be summarized as follows:
 | 50-59 | Difficult (technical literature) |
 | 60 and above | Very difficult |
 
+Table: *Lix* index table
+
 Note that *Lix* also includes a chart to visualize the meaning of its index score:
 
 ```{r lixGauge, echo=F, fig.cap='Lix Gauge', fig.align='center'}
 knitr::include_graphics("Images/LixGauge.png")
 ```
 
-### The Lix Formula {-}
-
+```{definition, lix, name="Lix formula"}
 $$
 I = W/S + 100*(X/W)
 $$
+```
 
 Where:
 
@@ -803,6 +827,8 @@ As a final note, Anderson contributed a grade-level conversion table for *Lix* i
 | 15-19 | 3   |
 | 10-14 | 2   |
 | Below 10 | 1   |
+
+Table: *Lix* grade-level conversion table
 ```
 
 \newpage
@@ -838,9 +864,11 @@ The *New Automated Readability Index* (Kincaid et al., *Derivation* 14) is a mod
 
 This test was trained against reading-test results from 531 U.S. Navy personnel from four Naval technical training schools. Using these results, the following multiple regression equation was derived:
 
+```{definition, newari, name="New Automated Readability Index formula"}
 $$
 G = (5.84*(RP/W)) + (.37*(W/S)) - 26.01
 $$
+```
 
 Where:
 
@@ -881,9 +909,11 @@ The *New Farr, Jenkins, Paterson* readability formula (Kincaid et al., *Derivati
 
 This test was trained against reading-test results from 531 U.S. Navy personnel from four Naval technical training schools. Using these results, the following multiple regression equation was derived:
 
+```{definition, newfjp, name="New Farr, Jenkins, Paterson formula"}
 $$
 G = 22.05 + (.387*(W/S)) - (.307*((M/W)*100))
 $$
+```
 
 Where:
 
@@ -901,9 +931,11 @@ The *New Fog Count* (Kincaid et al., *Derivation* 14) readability formula is a m
 
 This test was trained against reading-test results from 531 U.S. Navy personnel from four Naval technical training schools. Using these results, the following multiple regression equation was derived:
 
+```{definition, newfogcount, name="New Fog Count formula"}
 $$
 G = (((Z + (3*F)) / S ) - 3) / 2
 $$
+```
 
 Where:
 
@@ -923,7 +955,7 @@ This test uses the same easy-word and sentence counting methods as the [*Gunning
 
 The *(Powers, Sumner, Kearl) Dale-Chall* readability formula (99-105) calculates the grade level of a document based on sentence length and number of unfamiliar *Dale-Chall* words.
 
-The goal of Powers, Sumner, and Kearl was to develop updated versions of four popular readability formulas: *Dale-Chall*, *Flesch*, *Gunning Fog*, and **Farr-Jenkins-Paterson**. These updated formulas would be based off of the newer (1950) edition of the McCall-Crabbs test criterion. By using this revised test material, Powers, Sumner, and Kearl aimed to “modernize the formulas by taking advantage of the more recently administered tests” and to “establish formulas which are derived from identical materials” (Powers, Sumner, and Kearl 100).
+The goal of Powers, Sumner, and Kearl was to develop updated versions of four popular readability formulas: *Dale-Chall*, *Flesch*, *Gunning Fog*, and *Farr-Jenkins-Paterson*. These updated formulas would be based off of the newer (1950) edition of the McCall-Crabbs test criterion. By using this revised test material, Powers, Sumner, and Kearl aimed to “modernize the formulas by taking advantage of the more recently administered tests” and to “establish formulas which are derived from identical materials” (Powers, Sumner, and Kearl 100).
 
 The training materials used to build the regression formulas were 383 prose passages from the 1950 edition of McCall-Crabbs's *Standard Test Lessons in Reading*. For validation, the formulas were tested against 113 samples from “various publications” (Powers, Sumner, and Kearl 100). Their results (shown below) implied somewhat strong correlations for their *Dale-Chall* and *Flesch* formulas and mild correlations for their *FJP* and *Gunning Fog* formulas:
 
@@ -934,10 +966,12 @@ The training materials used to build the regression formulas were 383 prose pass
 
 The recalculated *Dale-Chall* formula is as follows:
 
+```{definition, pskdalechall, name="(PSK) Dale-Chall formula"}
 \begin{align*}
   G = & 3.2672 + (.0596*(W/S)) + \\
       & (.1155*((UDC/W)*100))
 \end{align*}
+```
 
 Where:
 
@@ -966,10 +1000,12 @@ The training materials used to build the regression formulas were 383 prose pass
 
 The recalculated *Farr, Jenkins, Paterson* formula is as follows:
 
+```{definition, pskfjp, name="(PSK) Farr, Jenkins, Paterson formula"}
 \begin{align*}
   G = & 8.4335 + (.0923*(W/S)) - \\
       & (.0648*((M/W)*100))
 \end{align*}
+```
 
 Where:
 
@@ -996,10 +1032,12 @@ The training materials used to build the regression formulas were 383 prose pass
 
 The recalculated *Gunning Fog* formula is as follows:
 
+```{definition, pskfog, name="(PSK) Gunning Fog formula"}
 \begin{align*}
   G = & 3.0680 + (.0877*(W/S)) + \\
       & (.0984*((F/W)*100))
 \end{align*}
+```
 
 Where:
 
@@ -1030,9 +1068,11 @@ The training materials used to build the regression formulas were 383 prose pass
 
 The recalculated *Flesch* formula is as follows:
 
+```{definition, pskflesch, name="(PSK) Flesch formula"}
 $$
 G = (ASL * .0778) + (SY * .0455) - 2.2029
 $$
+```
 
 Where:
 
@@ -1092,11 +1132,12 @@ Prior to creating this formula, Anderson conducted a validation study for *Lix*,
 After validating *Lix*, Anderson created *Rix* and compared the two tests’ results. He found that they almost perfectly correlated ($r = 0.99$). Afterwards, he validated *Rix* against the aforementioned 36-passage studies and found similarly strong correlations.
 
 \newpage
-### The Rix Formula {-}
 
+```{definition, rix, name="Rix formula"}
 $$
 I = X/U
 $$
+```
 
 Where:
 
@@ -1105,8 +1146,6 @@ Where:
 | I   | Rix index score |
 | X   | Number of long words (7+ characters) |
 | U   | Number of sentence units |
-
-### Rix Index to Grade Level Table {-#rix-to-grade-level}
 
 | Rix Index Score | Grade Level |
 | :-- | :-- |
@@ -1124,6 +1163,8 @@ Where:
 | .2 and above | 2   |
 | Below .2 | 1   |
 
+Table: *Rix* grade-level conversion table
+
 \newpage
 ## SMOG {#smog-test}
 
@@ -1133,9 +1174,11 @@ The *SMOG* readability formula (McLaughlin 639-646) calculates the grade level o
 
 This test was trained on 390 passages from the 1961 edition of *McCall-Crabbs Standard Tests Lessons in Reading*. The following regression equation was derived with a correlation of $r = 0.985$:
 
+```{definition, smog, name="SMOG formula"}
 $$
 G = 1.0430*\sqrt{C} + 3.1291
 $$
+```
 
 Where:
 
@@ -1146,9 +1189,11 @@ Where:
 
 A simplified variation is also available (McLaughlin 643):
 
+```{definition, smogsimple, name="Simplified SMOG formula"}
 $$
 G = FLOOR(\sqrt{C}) + 3
 $$
+```
 
 `FLOOR` refers to rounding the result of $\sqrt{C}$ down to the closest perfect square.
 
@@ -1185,11 +1230,11 @@ Because this formula uses familiar words (rather than syllable or letter counts)
 
 Note that **Readability Studio** uses the revised 1974 version of *Spache*.
 
-### The Spache Revised Formula {-}
-
+```{definition, spacherevised, name="Spache Revised formula"}
 $$
 G = (.121 * (W/S)) + (.082 * UUS) + .659
 $$
+```
 
 Where:
 
@@ -1244,11 +1289,11 @@ For the building and validation of this formula, nine basic reading series were 
 
 Finally, the authors offered recommendations while reviewing a reported score. First, if a score appears to be higher than expected, then you should exclude proper nouns and rerun the test. Second, they recommended that when assigning a book for independent reading, assign it one level below the reported score. In other words, if a book scores at the fourth-grade level, then it should be assigned to third-grade readers if they are reading it independently.
 
-### The Wheeler-Smith Formula {-}
-
+```{definition, wheelersmith, name="Wheeler-Smith formula"}
 $$
 I = (W/U)*(P/W)*10
 $$
+```
 
 Where:
 
@@ -1268,5 +1313,7 @@ Then, find the index value in the following chart to acquire the final readabili
 | Second grade | 11.6 to 19 |
 | Third grade | 19.1 to 26.5 |
 | Fourth grade | 26.6 to 34.5 |
+
+Table: *Wheeler-Smith* grade-level conversion table
 
 [^River]: This sample was taken from *Down Singing River*, Betts-Welch, American Book Company.

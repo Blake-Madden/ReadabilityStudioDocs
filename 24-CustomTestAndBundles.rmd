@@ -131,7 +131,7 @@ You can override it so that the additions happen first (resulting in “15”), 
 | NOT(value) | Returns the logical negation of “value.” |
 | OR(value1,value2,...) | Returns true if any condition is true. |
 
-Table: Logic Functions
+Table: Logic functions
 ```
 
 ```{block, type='onsamepage'}
@@ -159,7 +159,7 @@ Table: Logic Functions
 | TAN(x) | Tangent of x. |
 | TRUNC(x) | Discards the fractional part of a number (e.g., TRUNC(-3.2) is -3, TRUNC(3.2) is 3). |
 
-Table: Math Functions
+Table: Math functions
 ```
 
 ```{block, type='onsamepage'}
@@ -168,7 +168,7 @@ Table: Math Functions
 | AVGERAGE(value1,value2,...) | Returns the average of a specified range of values. |
 | SUM(value1,value2,...) | Returns the sum of a specified range of values. |
 
-Table: Statistical Functions
+Table: Statistical functions
 ```
 
 ```{block, type='onsamepage'}
@@ -178,7 +178,7 @@ Table: Statistical Functions
 | CustomNewDaleChall() | Performs a *New Dale-Chall* test with a custom familiar word list. Note that this test will use the same text exclusion rules as *New Dale-Chall* (overriding your system defaults). |
 | CustomSpache() | Performs a *Spache Revised* test with a custom familiar word list. |
 
-Table: Custom Familiar Word Tests Functions
+Table: Custom familiar word tests functions
 ```
 
 ```{block, type='onsamepage'}
@@ -203,7 +203,7 @@ So, to use MLA footnotes, we have to create psuedo footnotes below the table.
 | SentenceCount() | Returns the number of sentences. This function takes an argument specifying which text exclusion or sentence-counting method to use: `Default`, `DaleChall`, `HarrisJacobson`, or `GunningFog`^3^. |
 | SyllableCount() | Returns the number of syllables. This function takes an argument specifying which numeral syllabizing method to use: `Default`, `NumeralsFullySyllabized`, or `NumeralsAreOneSyllable`. |
 
-Table: Document Statistics Functions
+Table: Document statistics functions
 
 ^1^ Uses the [*Dale-Chall* text-exclusion](#options-dale-chall) method.
 
@@ -241,7 +241,7 @@ This will be either traditional sentence counting or unit counting.
 | UniqueWordCount() | Returns the number of unique words. |
 | WordCount() | Returns the number of words. This function takes an argument specifying which text exclusion method to use: `Default`, `DaleChall`, or `HarrisJacobson`. |
 
-Table: Word Statistics Functions
+Table: Word statistics functions
 
 ::: {.notesection data-latex=""}
 *Dale-Chall* and *Harris-Jacobson* familiar word functions will take their respective test's text exclusion options into account.

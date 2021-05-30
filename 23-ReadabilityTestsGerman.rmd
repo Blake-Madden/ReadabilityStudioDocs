@@ -9,9 +9,9 @@ The factors used for this test are syllables per word (“*Silben pro Wort*”) 
 
 *Amstad* (78-81) is best suited for school textbooks and technical manuals. Scores range from 0-100 (the higher the score, the easier to read) and average documents should be within the range of 60-70.
 
-### Amstad Formula {-}
-
+```{definition, amstad, name="Amstad formula"}
 $$I = 180 - (W/S) - (58.5*(B/W))$$
+```
 
 Where:
 
@@ -111,12 +111,12 @@ To convert the *Lix* index score to a grade, this test uses the following table:
 
 *Neue Wiener Sachtextformel 1* (1.nWS) (Bamberger-Vanecek 83, 187) is used for evaluating German nonfiction (specifically, 6^th^-10^th^ grade materials). This test returns a grade-level score based on word length/complexity and sentence length.
 
-### The Neue Wiener Sachtextformel 1 Formula {-}
-
+```{definition, nws1, name="Neue Wiener Sachtextformel 1 formula"}
 \begin{align*}
   G = & 0.1935*((C/W)*100) + 0.1672*(W/S) + \\
       & 0.1297*((X/W)*100) - 0.0327*((M/W)*100) - 0.875
 \end{align*}
+```
 
 Where:
 
@@ -142,12 +142,12 @@ kableExtra::kbl(nws1Data, booktabs=T, centering=T, align='l', escape=F, linesep=
 
 *Neue Wiener Sachtextformel 2* (2.nWS) (Bamberger-Vanecek 84, 187) is used for evaluating German nonfiction (specifically, very light materials up to 5^th^ grade). This test returns a grade-level score based on word length/complexity and sentence length.
 
-### The Neue Wiener Sachtextformel 2 Formula {-}
-
+```{definition, nws2, name="Neue Wiener Sachtextformel 2 formula"}
 \begin{align*}
   G = & 0.2007*((C/W)*100) + 0.1682*(W/S) + \\
       & 0.1373*((X/W)*100) - 2.779
 \end{align*}
+```
 
 Where:
 
@@ -173,11 +173,11 @@ kableExtra::kbl(nws2Data, booktabs=T, centering=T, align='l', escape=F, linesep=
 
 *Neue Wiener Sachtextformel 3* (3.nWS) (Bamberger-Vanecek 84, 187) is used for evaluating German nonfiction (specifically, very light materials up to 5^th^ grade). This test returns a grade-level score based on word length and sentence length.
 
-### The Neue Wiener Sachtextformel 3 Formula {-}
-
+```{definition, nws3, name="Neue Wiener Sachtextformel 3 formula"}
 $$
 G = 0.2963*((C/W)*100) + 0.1905*(W/S) - 1.1144
 $$
+```
 
 Where:
 
@@ -203,11 +203,11 @@ kableExtra::kbl(nws3Data, booktabs=T, centering=T, align='l', escape=F, linesep=
 
 *Quadratwurzelverfahren* (“Square root method”) (78) is an alternative method for calculating [*SMOG (Bamberger-Vanecek)*](#smog-bamberger-vanecek). Where *SMOG (Bamberger-Vanecek)* uses a 30-sentence sample, *Quadratwurzelverfahren* uses a 100-word sample; otherwise, they produce the same results.
 
-### The Quadratwurzelverfahren Formula {-}
-
+```{definition, qu, name="Quadratwurzelverfahren formula"}
 $$
 G = \sqrt{((C*(100/W))/(S*(100/W))*30)} - 2
 $$
+```
 
 Where:
 
@@ -237,17 +237,17 @@ Refer to \@ref(rix-test).
 
 This test is a German variation of [*Rix*](#rix-test) designed for fiction books. It uses a modified index-score formula from *Rix*, as well as different logic for assigning a grade-level score. This test was developed by Bamberger & Vanecek (64, 187) for use with German fiction ranging from 1^st^ to 11^th^ grade.
 
-### The Rix (German fiction) Formula {-}
-
+```{definition, rixfictionde, name="Rix (German fiction) formula"}
 $$
 I = ((100*(X/W))/(U*(100/W))) * 10
 $$
+```
 
 Where:
 
 |     | Description |
 | --- | :-- |
-| I   | Rix index score |
+| I   | *Rix* index score |
 | W   | Number words |
 | X   | Number of long words (7+ characters) |
 | U   | Number of sentence units |
@@ -273,17 +273,17 @@ To convert the *Rix* index score to a grade, this test uses the following table:
 
 This test is a German variation of [*Rix*](#rix-test) designed for non-fiction books. It uses a modified index-score formula from *Rix*, as well as different logic for assigning a grade-level score. This test was developed by Bamberger & Vanecek (64, 187) for use with German non-fiction ranging from 4^th^ to 14^th^ grade.
 
-### The Rix (German non-fiction) Formula {-}
-
+```{definition, rixnonfictionde, name="Rix (German non-fiction) formula"}
 $$
 I = ((100*(X/W))/(U*(100/W))) * 10
 $$
+```
 
 Where:
 
 |     | Description |
 | --- | :-- |
-| I   | Rix index score |
+| I   | *Rix* index score |
 | W   | Number words |
 | X   | Number of long words (7+ characters) |
 | U   | Number of sentence units |
@@ -311,11 +311,11 @@ To convert the *Rix* index score to a grade, this test uses the following table:
 
 Note that numerals are fully syllabized (i.e., sounded out) for this test, so the program overrides your [numeral syllabication](#numsyllable) setting when calculating it.
 
-### The SMOG (Bamberger-Vanecek) Formula {-}
-
+```{definition, smogde, name="SMOG (Bamberger-Vanecek) formula"}
 $$
 G = \sqrt{C} - 2
 $$
+```
 
 Where:
 
@@ -339,13 +339,13 @@ Based on the examples from Bamberger-Vanecek (78), the grade-level score should 
 \newpage
 ## Wheeler-Smith (Bamberger-Vanecek) {#wheeler-smith-bamberger-vanecek}
 
-*Wheeler-Smith (Bamberger-Vanecek)* (77, 186) is a German variation of [*Wheeler-Smith*](#wheeler-smith) designed for both primary and secondary-age reading material. It calculates the grade level of a document based on [unit](#glossary) length (see below) and number of complex words.
+*Wheeler-Smith (Bamberger-Vanecek)* (77, 186) is a German variation of [*Wheeler-Smith*](#wheeler-smith) designed for both primary and secondary-age reading material. It calculates the grade level of a document based on [unit](#glossary) length and number of complex words.
 
-### The Wheeler-Smith (Bamberger-Vanecek) Formula {-}
-
+```{definition, wheelersmithde, name="Wheeler-Smith (Bamberger-Vanecek) formula"}
 $$
 I = ((W/U)*((C/W)*100)) / 10
 $$
+```
 
 Where:
 
