@@ -75,11 +75,15 @@ The following command line options are available for **Readability Studio**:
 
 The following example would open the document “PatientAgreement.rtf” and use the image “Sunset.png” as the graphs' background:
 
+::: {.darkmode data-latex=''}
 `ReadStudio "C:\Documents\PatientAgreement.rtf" -bg "C:\Images\Sunset.png"`
+:::
 
 This example would tell the program to log the maximum level of information while running:
 
+::: {.darkmode data-latex=''}
 `ReadStudio -loglevel=2`
+:::
 
 Note that verbose logging can also be enabled by holding down the `r keys("SHIFT")` button on your keyboard while the program opens.
 

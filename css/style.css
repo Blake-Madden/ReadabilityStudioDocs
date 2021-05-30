@@ -1,3 +1,27 @@
+.darkmode {
+  background-color: black;
+  color: white;
+}
+
+.darkmode p code {
+  background-color: black !important;
+  color: white !important;;
+}
+
+/* psuedo glossary features*/
+.glsentry {
+  font-weight: bold;
+}
+
+.glsacronym {
+  font-variant: small-caps;
+}
+
+.glsdef {
+  text-indent: 0pt;
+  padding-left: 20pt;
+}
+
 /* adapted from https://www.kirstencassidy.com/css-fancy-quotes/*/
 .fancyquotes {
   quotes: "\201C""\201D""\2018""\2019";

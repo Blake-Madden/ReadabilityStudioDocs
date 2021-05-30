@@ -5,6 +5,8 @@
 \newcommand{\ii}[1]{{\it #1}}
 \newcommand{\nn}[1]{#1n}
 
+\usepackage{changepage}
+\usepackage{mdframed}
 \usepackage{bbding}
 \usepackage{amsthm}
 \usepackage{xeCJK}
@@ -177,3 +179,38 @@
     {
     \end{minipage}
     }
+
+\newenvironment{darkmode}
+  {
+  \begin{mdframed}[backgroundcolor=black]
+  \color{white}
+  }
+  {
+  \end{mdframed}
+  }
+
+% psuedo glossary features
+\newenvironment{glsentry}
+  {
+  \bfseries
+  }
+  {
+  }
+
+\newenvironment{glsacronym}
+  {
+  \bfseries
+  \scshape
+  }
+  {
+  }
+
+\newenvironment{glsdef}
+  {
+  \noindent
+  \flushleft
+  \begin{adjustwidth}{2cm}{}
+  }
+  {
+  \end{adjustwidth}
+  }
