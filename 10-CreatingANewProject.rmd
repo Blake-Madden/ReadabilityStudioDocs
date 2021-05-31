@@ -12,12 +12,12 @@ To begin, click the `r keys("New")` button on the **Home** tab to display the **
 
 ## Standard Project {#creating-standard-project}
 
-To determine a document's readability you will need to create a new project. First, click the `r keys("New")` button on the **Home** tab to open the **New Project** wizard. (If you are using the **Professional** edition, select **Standard Project** and click `r keys("OK")`). On the first page of the wizard, the options for specifying the document and its language will be shown:
+To determine a document's readability you will need to create a new project. First, click the `r keys("New")` button on the **Home** tab to open the **New Project** wizard. (If you are using the *Professional* edition, select **Standard Project** and click `r keys("OK")`). On the first page of the wizard, the options for specifying the document and its language will be shown:
 
 ![](Images/wizard1.png)
 
 ::: {.notesection data-latex=""}
-The language option is only available in the **Language Pack** and **Professional** editions of **Readability Studio**.
+The language option is only available in the *Language Pack* and *Professional* editions of *Readability Studio*.
 :::
 
 The language option will control how the document is analyzed (e.g., syllable counting). This will also affect which tests, word lists, and grammar features will be available. For example, if we select **Spanish**, then only Spanish tests will be included, and features related to English word lists (e.g., New Dale-Chall) will not be available. For this example, select **English**.
@@ -44,15 +44,15 @@ After specifying your document structure, click the `r keys("Forward >")` button
 
 ![](Images/wizardreadabilitymethods.png)
 
-On this page, you will select how you want **Readability Studio** to choose the readability tests to perform. Your first option is to tell the program which type of document you are analyzing and it will select the most appropriate tests based on that. To do this, select the **Recommend tests based on document type** option. You will then be presented with the **Select the type of document...** options, where you can select which type of document best describes your file (e.g., a literary work or technical form), as shown below:
+On this page, you will select how you want *Readability Studio* to choose the readability tests to perform. Your first option is to tell the program which type of document you are analyzing and it will select the most appropriate tests based on that. To do this, select the **Recommend tests based on document type** option. You will then be presented with the **Select the type of document...** options, where you can select which type of document best describes your file (e.g., a literary work or technical form), as shown below:
 
 ![](Images/wizarddoctypetechselected.png)
 
-Your second option is to tell **Readability Studio** which type of industry your document relates to and it will select the most appropriate tests based on that. To do this, select the **Recommend tests based on industry or field** option. You will then be presented with the **Select the type of industry...** options, where you can select which field your file relates to (e.g., magazine publishing or the military), as shown below:
+Your second option is to tell *Readability Studio* which type of industry your document relates to and it will select the most appropriate tests based on that. To do this, select the **Recommend tests based on industry or field** option. You will then be presented with the **Select the type of industry...** options, where you can select which field your file relates to (e.g., magazine publishing or the military), as shown below:
 
 ![](Images/wizardindustry.png)
 
-Your third option is to manually select the tests yourself. To do this, select the **Manually select tests** option. You will then be presented with the **Standard tests** options, where you can select any of the tests that **Readability Studio** has to offer, as shown below:
+Your third option is to manually select the tests yourself. To do this, select the **Manually select tests** option. You will then be presented with the **Standard tests** options, where you can select any of the tests that *Readability Studio* has to offer, as shown below:
 
 ![](Images/wizardtests.png)
 
@@ -64,7 +64,7 @@ Your final option is to select a [test bundle](#test-bundles).
 
 Along with adding tests to a project, test bundles also can include [goals](#reviewing-goals) to help with reviewing your scores.
 
-Note that you can always add or remove tests from your project at any time. If you select either the document type or industry options, you are not bound to the tests that **Readability Studio** recommends.
+Note that you can always add or remove tests from your project at any time. If you select either the document type or industry options, you are not bound to the tests that *Readability Studio* recommends.
 
 Finally, click the `r keys("Finish")` button and the project will be created and will appear like this:
 
@@ -130,21 +130,21 @@ After specifying your documents' structure, click the `r keys("Forward >")` butt
 
 ![](Images/wizardbatchreadabilitymethods.png)
 
-On this page, you will select how you want **Readability Studio** to choose the readability tests to perform. Your first option is to tell the program which type of documents you are analyzing and it will select the most appropriate tests based on that. To do this, select the **Recommend tests based on document type** option. You will then be presented with the **Select the type of document...** options, where you can select which type of document best describes your files (e.g., a literary work or technical form), as shown below:
+On this page, you will select how you want *Readability Studio* to choose the readability tests to perform. Your first option is to tell the program which type of documents you are analyzing and it will select the most appropriate tests based on that. To do this, select the **Recommend tests based on document type** option. You will then be presented with the **Select the type of document...** options, where you can select which type of document best describes your files (e.g., a literary work or technical form), as shown below:
 
 ![](Images/wizardbatchdoctype.png)
 
-Your second option is to tell **Readability Studio** which type of industry your documents relate to and it will select the most appropriate tests based on that. To do this, select the **Recommend tests based on industry or field** option. You will then be presented with the **Select the type of industry...** options, where you can select which field best describes what your files relate to (e.g., magazine publishing or the military), as shown below:
+Your second option is to tell *Readability Studio* which type of industry your documents relate to and it will select the most appropriate tests based on that. To do this, select the **Recommend tests based on industry or field** option. You will then be presented with the **Select the type of industry...** options, where you can select which field best describes what your files relate to (e.g., magazine publishing or the military), as shown below:
 
 ![](Images/wizardbatchindustry.png)
 
-Your final option is to manually select the tests yourself. To do this, select the **Manually select tests** option. You will then be presented with the **Standard Tests** options, where you can select any of the tests that **Readability Studio** has to offer, as shown below:
+Your final option is to manually select the tests yourself. To do this, select the **Manually select tests** option. You will then be presented with the **Standard Tests** options, where you can select any of the tests that *Readability Studio* has to offer, as shown below:
 
 ![](Images/wizardbatchtests.png)
 
 The tests available on this page will depend on the project's language. For example, if you are manually selecting Spanish tests, then tests such as [Crawford](#crawford) will be available, but English tests (e.g., [Spache](#spache-test)) will not. Also, some industry and document-type options may not have tests associated with them depending on the selected language.
 
-Note that you can always add or remove tests from your project at any time. If you select either the document type or industry options, you are not bound to the tests that **Readability Studio** recommends.
+Note that you can always add or remove tests from your project at any time. If you select either the document type or industry options, you are not bound to the tests that *Readability Studio* recommends.
 
 After you have selected the tests to perform, click the `r keys("Finish")` button and the project will be created and will appear like this:
 

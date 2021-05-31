@@ -124,7 +124,7 @@ The Gilliam-Peña-Mountain graph formula is:
 - Extract a 100-word passage from the selection. If the material is long, take subsamples from the beginning, middle, and end.
 - Count the number of sentences in each passage. Count a half sentence as .5.
 - Find the point on the chart.
-- Count the number of syllables in each passage and subtract 67 to adjust for the higher syllabic nature of Spanish text. However, note that **Readability Studio** shifts the syllable-count axis by 67, rather than adjusting the actual syllable count. This approach preserves the syllable count, while still being able to plot the score on the graph.
+- Count the number of syllables in each passage and subtract 67 to adjust for the higher syllabic nature of Spanish text. However, note that *Readability Studio* shifts the syllable-count axis by 67, rather than adjusting the actual syllable count. This approach preserves the syllable count, while still being able to plot the score on the graph.
 - If the sample's syllable or sentence count is too low or high for it to be plotted, then adjust that factor so that it can fit onto the chart. For example, if a sample has 261 syllables per 100 words, then this will need to be adjusted to 249.
 - Repeat this process for each sample, and then average the samples.
 
@@ -146,7 +146,7 @@ Refer to \@ref(rix-test).
 
 The SOL readability formula (Contreras 21-29) calculates the grade level of a document based on complex-word density.
 
-SOL is a modified version of [SMOG](#smog-test)\index{SMOG!variations!SOL (Spanish)} (McLaughlin 639-646) that was recalibrated for Spanish text. This test calculates the SMOG score of a Spanish document, and then adjusts the score to take into account the comparably higher complex-word counts found in Spanish text. This adjustment is similar to what [Gilliam, Peña, Mountain](#gilliam-pena-mountain-fry-graph)\index{Gilliam, Peña, Mountain!compared to SOL} (426-430) uses for plotting Spanish text onto the [Fry graph](#fry-test)\index{Fry}.
+SOL is a modified version of [SMOG](#smog-test)\index{SMOG!variations!SOL (Spanish)} (McLaughlin 639-646) that was recalibrated for Spanish text. This test calculates the SMOG score of a Spanish document, and then adjusts the score to take into account the comparably higher complex-word counts found in Spanish text. This adjustment is similar to what [Gilliam-Peña-Mountain](#gilliam-pena-mountain-fry-graph)\index{Gilliam-Peña-Mountain!compared to SOL} (426-430) uses for plotting Spanish text onto the [Fry graph](#fry-test)\index{Fry}.
 
 This test was trained on multiple blocks of 30-sentence samples from the following English, Spanish, and French materials:
 

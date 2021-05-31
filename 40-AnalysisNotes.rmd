@@ -21,7 +21,7 @@ Although ignoring these items is generally recommended, there is one exception: 
 ### Additional Items {-}
 
 ```{block, type='onsamepage'}
-Although not traditionally mentioned in readability articles, other items may also be excluded within **Readability Studio**. These include:
+Although not traditionally mentioned in readability articles, other items may also be excluded within *Readability Studio*. These include:
 
 - Copyright notices
 - Trailing citations
@@ -33,7 +33,7 @@ Refer to \@ref(document-analysis) for a detailed explanation of these options.
 
 ## How Sentences are Counted {#how-sentences-are-counted}
 
-**Readability Studio** considers periods, question marks, exclamation points, and interabangs as the end of a sentence, although there are a few exceptions.
+*Readability Studio* considers periods, question marks, exclamation points, and interabangs as the end of a sentence, although there are a few exceptions.
 
 The first exception is periods that are part of an abbreviation, acronym, or initial. For example, the following is seen as only one sentence:
 
@@ -93,7 +93,7 @@ Cream the butter, stir in the sugar gradually, add the unbeaten eggs, and beat a
 
 In this situation, the header would be joined with the first sentence. Additionally, all the list items would be combined into one large sentence, and could even be joined with the sentence following them. This can greatly skew your sentence lengths and lead to erroneous results.
 
-**Readability Studio** uses a more intelligent form of line chaining when deducing sentences. By default, the program will only chain lines together if all the following criteria are met:
+*Readability Studio* uses a more intelligent form of line chaining when deducing sentences. By default, the program will only chain lines together if all the following criteria are met:
 
 - A line is not terminated by a '.', '?', '!', or ':'
 - There are no blank lines following the line
@@ -148,9 +148,9 @@ In this case, these two lines will be erroneously joined into one sentence. To c
 
 ## Controlling How Sentences are Deduced
 
-How sentences are structured can vary from document to document. Because of this, **Readability Studio** offers options to control how sentences are parsed and analyzed. These features are available under the **Sentence deduction** section of the [**Document Indexing**](#document-analysis) page. To view these features, select [**Options**](#options-overview) from the **Tools** tab and then click on the **Document Indexing** icon. Under the **Sentence deduction** section, there are two options: **Ignore blank lines when determining the end of a sentence** and **Sentences must begin with capitalized words**.
+How sentences are structured can vary from document to document. Because of this, *Readability Studio* offers options to control how sentences are parsed and analyzed. These features are available under the **Sentence deduction** section of the [**Document Indexing**](#document-analysis) page. To view these features, select [**Options**](#options-overview) from the **Tools** tab and then click on the **Document Indexing** icon. Under the **Sentence deduction** section, there are two options: **Ignore blank lines when determining the end of a sentence** and **Sentences must begin with capitalized words**.
 
-The option **Sentences must begin with capitalized words** controls whether sentences must begin with capitalized words. Selecting this option will make **Readability Studio** more grammatically strict when counting sentences; however, it is recommended to leave this option unselected for “loosely written” documents.
+The option **Sentences must begin with capitalized words** controls whether sentences must begin with capitalized words. Selecting this option will make *Readability Studio* more grammatically strict when counting sentences; however, it is recommended to leave this option unselected for “loosely written” documents.
 
 The option **Ignore blank lines** is used for controlling how multi-line sentences with blank lines between them are seen. For example:
 
@@ -189,9 +189,9 @@ The second syllable-counting method is to use an algorithm. These algorithms gen
 - Situations where vowel blocks split into two syllables. For example, the “ui” in “fruit” is one syllable, but in “intuitive” it splits into two syllables.
 - Situations where special consonant blocks may split into two syllables. For example, in the name “McCoy,” the prefix is really a separate syllable.
 
-**Readability Studio** uses an algorithmic approach which takes these linguistic nuances into account.
+*Readability Studio* uses an algorithmic approach which takes these linguistic nuances into account.
 
-Different algorithms should be used for different languages. The rules for vowel-blocks, silent ‘e’s, and number counting can greatly vary between languages. For example, “85” would be two syllables in English (“eight five”), whereas in Spanish[^spanishSyllabizerFootnote] it would be four syllables (“o-cho cin-co”). To account for this, **Readability Studio** uses the proper syllabizer based on the [language](#project-settings) that you specify for your project.
+Different algorithms should be used for different languages. The rules for vowel-blocks, silent ‘e’s, and number counting can greatly vary between languages. For example, “85” would be two syllables in English (“eight five”), whereas in Spanish[^spanishSyllabizerFootnote] it would be four syllables (“o-cho cin-co”). To account for this, *Readability Studio* uses the proper syllabizer based on the [language](#project-settings) that you specify for your project.
 
 Finally, for readability analysis, syllables should be counted on a word-by-word basis and not use synalepha. Synalepha is the blending of word sounds together often found in poetry. Thus, it is generally not suggested to analyze text which has a poetic meter.
 
@@ -205,7 +205,7 @@ Numbers are generally syllabized using one of two approaches:
 - Sound out each digit of the number. For example, “87” would be three syllables (“eight se-ven”).
 - Count the entire number as one syllable.
 
-By default, **Readability Studio** counts numbers as monosyllabic words; however, this behavior can be toggled from the [**Document Indexing**](#document-analysis) options. Note that some tests may override these settings if they require a specific method. For example, [Fry](#fry-test)\index{Fry} will always sound out each numeric digit when syllabizing.
+By default, *Readability Studio* counts numbers as monosyllabic words; however, this behavior can be toggled from the [**Document Indexing**](#document-analysis) options. Note that some tests may override these settings if they require a specific method. For example, [Fry](#fry-test)\index{Fry} will always sound out each numeric digit when syllabizing.
 
 ### How Symbols are Syllabized {-}
 
@@ -234,7 +234,7 @@ The report is due tomorrow. I'm concerned **that that** report won't be ready in
 :::
 
 ```{block, type='onsamepage'}
-Although awkwardly worded, the duplicate “that” and “had” are grammatically correct. To account for this, **Readability Studio** ignores certain repeated words, such as:
+Although awkwardly worded, the duplicate “that” and “had” are grammatically correct. To account for this, *Readability Studio* ignores certain repeated words, such as:
 
 - “ha ha”
 - “had had”
@@ -256,7 +256,7 @@ This will not be seen as repeated words because of the comma.
 
 ## Article Mismatching {#article-mismatching}
 
-There are two special cases for article-mismatch detection: single letters and acronyms. For single letters, **Readability Studio** will sound out the letter when determining whether the article in front of it is correct. For example:
+There are two special cases for article-mismatch detection: single letters and acronyms. For single letters, *Readability Studio* will sound out the letter when determining whether the article in front of it is correct. For example:
 
 ::: {.fancyquotes data-latex=''}
 All the students did well, except for one that received **a 'F'**.
@@ -286,7 +286,7 @@ Most readability formulas are designed for narrative text, where a work consists
 
 Items such as headers and list items can adversely affect the accuracy of the ASL. If they are [chained](#line-chaining) to the following sentence, then they will inflate the ASL. If they are treated as full sentences, then they will falsely lower the ASL. Because of this, most experts recommend removing these and only analyzing the narrative sections of a document.
 
-By default, **Readability Studio** follows this advice. However, there are situations where this rule does not apply.
+By default, *Readability Studio* follows this advice. However, there are situations where this rule does not apply.
 
 For files consisting mostly of short blocks of text (e.g., quizzes, flyers, or menus) instead of flowing narrative, this presents a problem. Sentence lengths will be abnormally short and skew most test results. Also, if [incomplete sentences](#how-text-is-excluded) are being excluded, then most of the document will not even be analyzed.
 
@@ -309,7 +309,7 @@ Sale systems.
 
 Note how “Business” and “Point-of-Sale” are split across multiple lines.
 
-When **Readability Studio** encounters a hyphenated word at the end of a line, it will perform the following steps:
+When *Readability Studio* encounters a hyphenated word at the end of a line, it will perform the following steps:
 
 - Both parts of the word will be joined.
 - The hyphen(s) will be removed and if what remains is a known word, then that will be used. Otherwise,...
@@ -329,4 +329,4 @@ There are some options that when changed will require a project to reload. These
 
 When any of the aforementioned changes are made, the project will reanalyze the source document(s) and recalculate all its results.
 
-Note that you can always reload a project manually by clicking the `r keys("Reload")` button on the **Home** tab of the ribbon. This is useful when you are editing the source document from another program and want to refresh the results in **Readability Studio**.
+Note that you can always reload a project manually by clicking the `r keys("Reload")` button on the **Home** tab of the ribbon. This is useful when you are editing the source document from another program and want to refresh the results in *Readability Studio*.

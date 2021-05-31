@@ -6,7 +6,7 @@
 cloze test
 :::
 ::: {.glsdef data-latex=''}
-A [cloze](#cloze) procedure is a test given to a student to measure his/her comprehension ability.
+A [cloze](#cloze) procedure is a test given to a student to measure their comprehension ability.
 :::
 
 ::: {.glsentry data-latex=''}

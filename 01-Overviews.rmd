@@ -12,13 +12,13 @@ Note that these tests only determine the reading level of material based on how 
 
 ## What Readability Studio Offers {#program-offering}
 
-**Readability Studio** eases the task of performing these tests. The program quickly imports and analyzes your work using the most popular tests. In addition, it offers insightful explanations and suggestions for improving your documents.
+*Readability Studio* eases the task of performing these tests. The program quickly imports and analyzes your work using the most popular tests. In addition, it offers insightful explanations and suggestions for improving your documents.
 
 ### Readability Studio's Unique Features {-#program-unique-features}
 
 #### Numerous insightful tests {-}
 
-**Readability Studio** offers many popular readability tests, including:
+*Readability Studio* offers many popular readability tests, including:
 
 ```{r, echo=F}
 maxTestRows <- 15
@@ -54,27 +54,27 @@ kableExtra::kbl(germanTests, booktabs=T, centering=T, linesep="",
   kableExtra::column_spec(1, border_right = ncol(germanTests) > 1)
 ```
 
-In addition, **Readability Studio** offers in-depth explanations for these tests. Each test result includes an interpretation of the score and the factors that affect it.
+In addition, *Readability Studio* offers in-depth explanations for these tests. Each test result includes an interpretation of the score and the factors that affect it.
 
 The program also provides many useful features to help review the difficult aspects of your document. This includes lists of various difficult words and views of the document with difficult words and sentences highlighted. These tools can assist you in improving your documents so that they meet their target audiences.
 
 Another important feature is that the program analyzes the entire content of your document (rather than subsamples). This will give you the most accurate results possible.
 
-Finally, the **Professional** edition of **Readability Studio** offers multiple-document analysis. The program can analyze hundreds (or even thousands) of documents at once and aggregate their results. This includes all readability scores, difficult word and sentence statistics, and grammar issues. You can also “drill down” into a specific document to review it in deeper detail.
+Finally, the *Professional* edition of *Readability Studio* offers multiple-document analysis. The program can analyze hundreds (or even thousands) of documents at once and aggregate their results. This includes all readability scores, difficult word and sentence statistics, and grammar issues. You can also “drill down” into a specific document to review it in deeper detail.
 
 ::: {.notesection data-latex=""}
-Spanish and German tests are only available in the **Professional** edition, or if you have the **Language Pack** feature licensed.
+Spanish and German tests are only available in the *Professional* edition, or if you have the *Language Pack* feature licensed.
 :::
 
 #### Helpful assistance for test selection {-}
 
-**Readability Studio** presents an intuitive interface for selecting readability tests. Experts can manually select the tests that they want to perform, while those less familiar with these tests can be guided through a helpful [wizard](#creating-standard-project). This wizard can recommend which tests to include based on the document's type (e.g., text book) or industry (e.g., health care).
+*Readability Studio* presents an intuitive interface for selecting readability tests. Experts can manually select the tests that they want to perform, while those less familiar with these tests can be guided through a helpful [wizard](#creating-standard-project). This wizard can recommend which tests to include based on the document's type (e.g., text book) or industry (e.g., health care).
 
 #### Graphics {-}
 
-**Readability Studio** includes numerous graphs to help visualize your results. Graphical tests such as Fry and Raygor are included, as well as a bar chart showing a breakdown of the difficult word categories. If you are reviewing Dolch Sight Words, then breakdown charts of your category usage and coverage are also included.
+*Readability Studio* includes numerous graphs to help visualize your results. Graphical tests such as Fry and Raygor are included, as well as a bar chart showing a breakdown of the difficult word categories. If you are reviewing Dolch Sight Words, then breakdown charts of your category usage and coverage are also included.
 
-Multiple-document graphs are also provided in the **Professional** edition of **Readability Studio**. Here, [histograms](#reviewing-batch-histograms) and [box plots](#reviewing-batch-box-plots) show the distribution of a document collection's test scores. This is useful for summarizing the general reading level of a batch of documents. It is also useful for finding problematic documents in a batch (i.e., outliers).
+Multiple-document graphs are also provided in the *Professional* edition of *Readability Studio*. Here, [histograms](#reviewing-batch-histograms) and [box plots](#reviewing-batch-box-plots) show the distribution of a document collection's test scores. This is useful for summarizing the general reading level of a batch of documents. It is also useful for finding problematic documents in a batch (i.e., outliers).
 
 #### Detailed statistics {-}
 
@@ -92,7 +92,7 @@ Difficult words and sentences are also shown highlighted in their original conte
 
 #### Grammar tools {-}
 
-Along with readability analysis, **Readability Studio** also offers basic grammar checking. The program can detect the following problems:
+Along with readability analysis, *Readability Studio* also offers basic grammar checking. The program can detect the following problems:
 
 - [Misspellings (English only)](#reviewing-misspellings)
 - [Repeated words](#reviewing-repeated-words)
@@ -110,11 +110,11 @@ These issues are shown highlighted in your document for easy review. They are al
 
 #### Dolch Sight Words {-}
 
-**Readability Studio** also includes a [Dolch](#reviewing-dolch) suite of statistics and graphs, which is useful for educators and writers who work with young readers. The program provides a complete breakdown of Dolch words that you are using (and not using) in your materials. This enables writers to see how they can improve their Dolch practice materials. This also enables educators to determine which materials are appropriate for Dolch practice.
+*Readability Studio* also includes a [Dolch](#reviewing-dolch) suite of statistics and graphs, which is useful for educators and writers who work with young readers. The program provides a complete breakdown of Dolch words that you are using (and not using) in your materials. This enables writers to see how they can improve their Dolch practice materials. This also enables educators to determine which materials are appropriate for Dolch practice.
 
 #### Numerous file formats supported {-}
 
-**Readability Studio** supports importing text from many file formats, including:
+*Readability Studio* supports importing text from many file formats, including:
 
 - ANSI and Unicode text (\*.txt)
 - Microsoft^®^ Word 95–2003 (\*.doc)
@@ -130,11 +130,11 @@ These issues are shown highlighted in your document for easy review. They are al
 - (Doxygen style) C++ source (\*.cpp and \*.h)
 - ZIP (documents within can be batch analyzed)
 
-You do not need the native application for these file formats. **Readability Studio** is capable of importing these files without any additional programs.
+You do not need the native application for these file formats. *Readability Studio* is capable of importing these files without any additional programs.
 
 #### Advanced exporting capabilities {-}
 
-**Readability Studio** provides printing and [exporting](#exporting) capabilities for all test scores, word lists, statistics, graphs, etc. This enables you to easily share and publish your results.
+*Readability Studio* provides printing and [exporting](#exporting) capabilities for all test scores, word lists, statistics, graphs, etc. This enables you to easily share and publish your results.
 
 - Test results, statistics, and difficult word lists can all be exported as HTML or text.
 - Statistics summary report can be exported as HTML.
@@ -143,7 +143,7 @@ You do not need the native application for these file formats. **Readability Stu
 
 #### Flexibility {-}
 
-Finally, **Readability Studio** is highly configurable. Many options, such as how documents are analyzed and how the results are displayed, are customizable. For example, you can specify how numeric words (e.g., “10/31/1974”) are [syllabized](#document-analysis). Other programs either sound out each digit or treat the entire word as one syllable and you cannot change this. With **Readability Studio**, you can toggle this behavior at anytime.
+Finally, *Readability Studio* is highly configurable. Many options, such as how documents are analyzed and how the results are displayed, are customizable. For example, you can specify how numeric words (e.g., “10/31/1974”) are [syllabized](#document-analysis). Other programs either sound out each digit or treat the entire word as one syllable and you cannot change this. With *Readability Studio*, you can toggle this behavior at anytime.
 
 ## New Features and Enhancements {#new-features}
 
@@ -427,7 +427,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 
 #### General Enhancements {-}
 
-- **Readability Studio** now available for Mac OS X^®^ (v10.5 and above).
+- *Readability Studio* now available for Mac OS X^®^ (v10.5 and above).
 - New ribbon interface.
 - Improved project sidebar for easier results navigation.
 - Suggested replacements are now shown in the difficult and unfamiliar word lists.
@@ -444,7 +444,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 
 #### Analysis/Test Enhancements {-}
 
-- German project support added (**Professional** or **Language Pack** edition).
+- German project support added (*Professional* or *Language Pack* edition).
 - New tests added:
     - [Danielson-Bryan 1 & 2](#danielson-bryan-1)
     - [Easy Listening Formula](#easy-listening-formula)
@@ -472,7 +472,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 
 - PowerPoint^®^ 2007 importing added.
 - IDL file importing added.
-- [Filtered document](#filtering-export) exporting added (**Professional** edition).
+- [Filtered document](#filtering-export) exporting added (*Professional* edition).
 
 #### Graph Enhancements {-}
 
@@ -502,7 +502,7 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
     - Bin labels with grade histograms.
     - Y axis of box plots.
 - Added Spanish document analysis features. This includes specialized Spanish syllabizer and tests:
-    - Added [Gilliam, Peña, Mountain Fry Graph](#gilliam-pena-mountain-fry-graph).
+    - Added [Gilliam-Peña-Mountain Fry Graph](#gilliam-pena-mountain-fry-graph).
     - Added [Crawford](#crawford) test.
     - Added [FRASE](#frase) graph.
     - Added [SOL](#sol-spanish) test.

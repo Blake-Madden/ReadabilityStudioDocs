@@ -149,7 +149,7 @@ kableExtra::kbl(canadaTable, booktabs=T, centering=T, escape=F, linesep="", capt
 ## Cloze Scores and Readability Formulas {#cloze}
 
 ```{block, type='onsamepage'}
-A cloze procedure is a test given to a student to measure his/her comprehension ability. This test consists of the following steps:
+A cloze procedure is a test given to a student to measure their comprehension ability. This test consists of the following steps:
 
 - Take a 250 word passage from a document.
 - Delete every fifth word and replace it with a blank of equal length. There should be a total 50 blanks when finished.
@@ -195,4 +195,4 @@ Note that this also applies to any [custom tests](#creating-custom-test) that tr
 
 Although both [Dale-Chall](#dale-chall-test) and [Spache](#spache-test) were updated in recent years, some may find that these tests lack contemporary words known by young readers. For example, some computer terms that 4^th^ graders are fluent in are not considered familiar by these tests. Proper nouns such as “Microsoft” and “Macbook” will be considered familiar, but some non-proper computer words (e.g., megabyte) will not.
 
-**Readability Studio** offers [custom tests](#creating-custom-test) as a solution for extending these tests. You can create a new test with New Dale-Chall\index{New Dale-Chall!adding words}, Spache\index{Spache Revised!adding words}, or Harris-Jacobson\index{Harris-Jacobson Wide Range!adding words} as a template, and append your own word list to it. When you perform this custom test, any word on the standard word list or your word list will be considered familiar. Refer to \@ref(creating-custom-test) for more information.
+*Readability Studio* offers [custom tests](#creating-custom-test) as a solution for extending these tests. You can create a new test with New Dale-Chall\index{New Dale-Chall!adding words}, Spache\index{Spache Revised!adding words}, or Harris-Jacobson\index{Harris-Jacobson Wide Range!adding words} as a template, and append your own word list to it. When you perform this custom test, any word on the standard word list or your word list will be considered familiar. Refer to \@ref(creating-custom-test) for more information.

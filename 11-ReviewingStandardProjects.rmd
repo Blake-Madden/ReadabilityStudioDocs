@@ -207,7 +207,7 @@ The types of difficult-word lists that may be shown are:
 
 **All Words (Condensed)**: This list is the same as **All Words**, except that is excludes common words and combines others. In regards to combining words, words with the same root will be merged into a single row. For example, “report,” “reports,” and “reporting” will be combined into one row, with the frequency counts for all three words also combined. As for excluding words, common words (e.g., “the”), numerals, and filenames are not included in this list. (If no words can be combined and there are no common words to ignore, then this list will not be shown.)
 
-Note that if you are ignoring incomplete sentences, then these lists will only include the words from complete sentences. If you need to review all the words from the document, then select the option [**Do not exclude any text**](#options-text-exclusion). Refer to \@ref(how-text-is-excluded) to learn more about how **Readability Studio** handles incomplete sentences.
+Note that if you are ignoring incomplete sentences, then these lists will only include the words from complete sentences. If you need to review all the words from the document, then select the option [**Do not exclude any text**](#options-text-exclusion). Refer to \@ref(how-text-is-excluded) to learn more about how *Readability Studio* handles incomplete sentences.
 
 To view any of these lists, click on its name under the **Words Breakdown** section on the sidebar. For example, click on the **Words Breakdown** icon on the sidebar, and when it expands click on **3+ Syllables** underneath it.
 
@@ -263,7 +263,7 @@ A list of overly-long sentences:
 
 ![](Images/featuressentencelist.png)
 
-Note that if you are ignoring incomplete sentences, then this list will only include the complete sentences. If you need to review all the sentences from the document, then select the option [**Do not exclude any text**](#options-text-exclusion). Refer to \@ref(how-text-is-excluded) to learn more about how **Readability Studio** handles incomplete sentences.
+Note that if you are ignoring incomplete sentences, then this list will only include the complete sentences. If you need to review all the sentences from the document, then select the option [**Do not exclude any text**](#options-text-exclusion). Refer to \@ref(how-text-is-excluded) to learn more about how *Readability Studio* handles incomplete sentences.
 
 To find the longest sentence, [sort](#column-sorting) the **Word Count** column into descending order. As you can see below, the longest sentence is now shown at the top of the list.
 
@@ -339,7 +339,16 @@ After opening a project, click on the **Grammar** icon on the project sidebar an
 
 Beginning sentences with conjunctions is not an issue for most writing, but should be avoided with professional publications. This feature is provided to grammatically improve professional documents.
 
-The conjunctions that **Readability Studio** searches for are the most common coordinating conjunctions. These are: **and**, **nor**, **but**, **or**, **yet**, and **so**. Generally for technical writing, only separate clauses should begin with these words, not sentences. Any sentence that begins with these words should be combined with the previous sentence. Another option would be to replace the conjunction. For example, “and” could be replaced with “In addition.”
+The conjunctions that *Readability Studio* searches for are the most common coordinating conjunctions. These are:
+
+- and
+- nor
+- but
+- or
+- yet
+- so
+
+Generally for technical writing, only separate clauses should begin with these words, not sentences. Any sentence that begins with these words should be combined with the previous sentence. Another option would be to replace the conjunction. For example, “and” could be replaced with “In addition.”
 
 This search is applied to all sentences. [Incomplete sentences](#how-text-is-excluded) will be reviewed for this, even if they are excluded from the analysis.
 
@@ -359,7 +368,7 @@ A repeated word is when the same word appears after itself (which is usually a t
 Gabi gave her report **to to** the manager.
 :::
 
-In this case, the word “to” was accidentally typed twice. **Readability Studio** will consider this a repeated word and include it in this list.
+In this case, the word “to” was accidentally typed twice. *Readability Studio* will consider this a repeated word and include it in this list.
 
 Repeated words are bound to the sentence level. If the same word ends one sentence and begins the next, then it will not be considered a repeated word. For example, “Nancy” would not be considered a repeated word here:
 
@@ -448,7 +457,7 @@ A redundant phrase is when a modifier expresses something that is already implie
 Gabi and Nancy **collaborated together** on the report. They should have a **brief summary** ready later today.
 :::
 
-In this case, “collaborated together” and “brief summary” are redundant. Collaboration already implies two or more people working together. The “together” in this phrase adds nothing and just makes this sentence wordy. As for “brief summary,” summaries are always brief; hence, the redundancy in that phrase. **Readability Studio** will consider these as redundant phrases and include them in this list.
+In this case, “collaborated together” and “brief summary” are redundant. Collaboration already implies two or more people working together. The “together” in this phrase adds nothing and just makes this sentence wordy. As for “brief summary,” summaries are always brief; hence, the redundancy in that phrase. *Readability Studio* will consider these as redundant phrases and include them in this list.
 
 Redundant phrases are bound to the sentence level. If part of a phrase ends one sentence and begins the next, then it will not be considered a redundant phrase. For example, “brief. Summaries” would not be considered a redundant phrase here because the words are in different sentences:
 
@@ -474,7 +483,7 @@ A phrase is wordy if it contains too many words or contains complex words that c
 **Over the course of** the season, Nancy's batting average improved.
 :::
 
-In this case, “Over the course of” is wordy. **Readability Studio** will consider this a wordy phrase and offer “during” or “throughout” as replacements.
+In this case, “Over the course of” is wordy. *Readability Studio* will consider this a wordy phrase and offer “during” or “throughout” as replacements.
 
 Wordy phrases are bound to the sentence level. If part of a phrase ends one sentence and begins the next, then it will not be considered a wordy phrase. For example, “a host of” would not be considered a wordy phrase here because its words are in two different sentences:
 
@@ -554,7 +563,7 @@ The Dolch Sight Words (456–460) represent the most frequently occurring servic
 
 If you are writing educational materials for early readers, then use as many of these words as possible to help readers practice them. Also, keep the percentage of non-Dolch words low so that readers can better focus on the sight words.
 
-**Readability Studio** offers a suite of Dolch statistics and graphs as a tool for educators and writers targeting early readers. If you are creating material intended to help early readers practice Dolch words, then it is recommended to include this in your project. To add Dolch statistics to your project, go to the **Readability** tab and select either **Primary-age Reading** or **Second Language Reading** and select **Dolch Sight Words**. A **Dolch Sight Words** icon will appear at the bottom of the project sidebar—clicking on that will display all the Dolch information.
+*Readability Studio* offers a suite of Dolch statistics and graphs as a tool for educators and writers targeting early readers. If you are creating material intended to help early readers practice Dolch words, then it is recommended to include this in your project. To add Dolch statistics to your project, go to the **Readability** tab and select either **Primary-age Reading** or **Second Language Reading** and select **Dolch Sight Words**. A **Dolch Sight Words** icon will appear at the bottom of the project sidebar—clicking on that will display all the Dolch information.
 
 [^DolchPronounsFootnote]: Pronouns, adjectives, adverbs, prepositions, conjunctions, and verbs.
 [^DolchNounsListFootnote]: A separate list of nouns commonly found in children's literature is also included with the Dolch collection. However, the sight words are generally the focus of most Dolch activities.

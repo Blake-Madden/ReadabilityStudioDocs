@@ -11,7 +11,7 @@ In this example, we will analyze a literary novel to help determine which age gr
 ![](Images/exampleselectfile.png)
 
 ::: {.notesection data-latex=""}
-The language option is only available in the **Language Pack** and **Professional** editions of **Readability Studio**.
+The language option is only available in the *Language Pack* and *Professional* editions of *Readability Studio*.
 :::
 
 This will open the **Select Document to Analyze** dialog. Choose the file that you want to analyze and click the `r keys("Open")` button to accept.
@@ -64,12 +64,12 @@ Click `r keys("OK")` to export the word list to distribute to your students to h
 
 ## Analyzing a Work in Progress
 
-In this example, we will analyze recipes that we are working on for a middle-school home economics class. Our target audience will be seventh-eighth graders and we will use **Readability Studio** to meet their reading level. The first step is to open the **New Project** wizard and select the recipe file. Click the `r keys("New")` button on the **Home** tab to open the **New Project** wizard. Next, select **English** as the document language (if this option is available). Then, select the option **Read text from a file or webpage**. Click the button next to the file path field to browse for it:
+In this example, we will analyze recipes that we are working on for a middle-school home economics class. Our target audience will be seventh-eighth graders and we will use *Readability Studio* to meet their reading level. The first step is to open the **New Project** wizard and select the recipe file. Click the `r keys("New")` button on the **Home** tab to open the **New Project** wizard. Next, select **English** as the document language (if this option is available). Then, select the option **Read text from a file or webpage**. Click the button next to the file path field to browse for it:
 
 ![](Images/exampleselectfile.png)
 
 ::: {.notesection data-latex=""}
-The language option is only available in the **Language Pack** and **Professional** editions of **Readability Studio**.
+The language option is only available in the *Language Pack* and *Professional* editions of *Readability Studio*.
 :::
 
 This will open the **Select Document to Analyze** dialog. Choose the file that you want to analyze and click the `r keys("Open")` button to accept.
@@ -128,7 +128,7 @@ Not only is it long, but it is a little confusing. It is unclear what was mixed 
 
 Continue this process for as many of the long sentences as you can. Sentences in the 20-word range are normally acceptable, but sentences over 30 words should be revised.
 
-Other useful tools for shortening sentences in **Readability Studio** are the other pages in the **Grammar** section. Click on the **Grammar** icon on the project sidebar. Click on the [**Repeated Words**](#reviewing-repeated-words) page and note how the phrase “and and” is in the file (obviously a typo). Next, click on the [**Redundant Phrases**](#reviewing-redundant-phrases) page. Note how the phrase “mixed together” is redundant and the program is suggesting that it be replaced with “mixed.” A [**Wordy Items**](#reviewing-wordy-items) and [**Clichés**](#reviewing-cliches) page may also appear, but there do not seem to be any of these in this file. By fixing these items, we can shorten sentences and improve the overall document.
+Other useful tools for shortening sentences in *Readability Studio* are the other pages in the **Grammar** section. Click on the **Grammar** icon on the project sidebar. Click on the [**Repeated Words**](#reviewing-repeated-words) page and note how the phrase “and and” is in the file (obviously a typo). Next, click on the [**Redundant Phrases**](#reviewing-redundant-phrases) page. Note how the phrase “mixed together” is redundant and the program is suggesting that it be replaced with “mixed.” A [**Wordy Items**](#reviewing-wordy-items) and [**Clichés**](#reviewing-cliches) page may also appear, but there do not seem to be any of these in this file. By fixing these items, we can shorten sentences and improve the overall document.
 
 Although there are not many difficult words in this file, it may be worthwhile to at least review them. Click on the **Words Breakdown** icon on the project sidebar. This will display various lists of difficult words. Select the **3+ syllable words** page and click on the **Syllable Count** column header twice to [sort](#column-sorting) the words into descending order. As illustrated below, there are a few words containing four syllables, which can be difficult for most readers.
 
@@ -160,7 +160,7 @@ You can click the `r keys("Reload")` button at anytime to reanalyze the source d
 
 ## Analyzing a Webpage
 
-In this example, we will create a project that reads and analyzes a webpage. Although you can save a webpage from your web browser and load the HTML file, **Readability Studio** can also directly connect to a webpage.
+In this example, we will create a project that reads and analyzes a webpage. Although you can save a webpage from your web browser and load the HTML file, *Readability Studio* can also directly connect to a webpage.
 
 First, click on the `r keys("New")` button (on the **Home** tab). The **New Project** wizard dialog will appear, as shown below:
 
@@ -169,7 +169,7 @@ First, click on the `r keys("New")` button (on the **Home** tab). The **New Proj
 First, select **English** as the document language.
 
 ::: {.notesection data-latex=""}
-The language option is only available in the **Language Pack** and **Professional** editions of **Readability Studio**.
+The language option is only available in the *Language Pack* and *Professional* editions of *Readability Studio*.
 :::
 
 Next, open any web browser, go to the webpage, and copy its URL (i.e., address) onto the clipboard.
@@ -188,7 +188,7 @@ Next, accept the rest of the defaults on the **New Project** wizard by clicking 
 
 ![](Images/incompletesentences.png)
 
-Note how some text is highlighted gray. These are [incomplete sentences](#how-text-is-excluded), and because **Readability Studio**, by default, ignores incomplete sentences, nothing highlighted gray is factored into the analysis. That is, nothing highlighted gray here counts towards the overall sentence, paragraph, and word totals and are also not included in any readability test calculation. Aside from non-narrative forms, it is normally recommended to ignore incomplete sentences. This is especially true for webpages, because often HTML tables and lists are used on websites to display menus—items that are not normally part of the page's narrative.
+Note how some text is highlighted gray. These are [incomplete sentences](#how-text-is-excluded), and because *Readability Studio*, by default, ignores incomplete sentences, nothing highlighted gray is factored into the analysis. That is, nothing highlighted gray here counts towards the overall sentence, paragraph, and word totals and are also not included in any readability test calculation. Aside from non-narrative forms, it is normally recommended to ignore incomplete sentences. This is especially true for webpages, because often HTML tables and lists are used on websites to display menus—items that are not normally part of the page's narrative.
 
 If you wish to include incomplete sentences in the analysis, click the `r keys("Properties")` button on the **Home** tab to display the **Project Properties** dialog. Next, click the **Document Indexing** icon, and select the **Do not exclude any text** option.
 
@@ -219,7 +219,7 @@ Select **English** as the document language (if this option is available) and cl
 ![](Images/wizardreadabilitymethods.png)
 
 ::: {.notesection data-latex=""}
-The language option is only available in the **Language Pack** and **Professional** editions of **Readability Studio**.
+The language option is only available in the *Language Pack* and *Professional* editions of *Readability Studio*.
 :::
 
 Select the **Recommend tests based on document type** and select the **Technical document** option, as shown below:

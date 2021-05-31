@@ -231,7 +231,7 @@ Table: Flesch Reading Ease Index Table
 
 The Degrees of Reading Power (Kibby, 416-427; Carver, *Measuring* 303-316) formula calculates the difficulty level of a document in terms of DRP units. These units range from 0 (easy) to 100 (difficult).
 
-The DRP difficulty score of document is used to match it to a student based on his/her DRP ability score. DRP ability tests are manual tests administered to students to gauge their reading levels.
+The DRP difficulty score of document is used to match it to a student based on their DRP ability score. DRP ability tests are manual tests administered to students to gauge their reading levels.
 
 This test is based on the [Bormuth Cloze](#bormuth-cloze-mean-machine-passage) test and uses the same criteria for its calculation. Basically, this test uses the Bormuth formula to calculate a [predicted cloze score](#cloze), converts it to percentage format, and then inverts it to arrive at the units score.
 
@@ -584,7 +584,7 @@ Complex words are words that contain three or more syllables, with the exception
 
 - Proper nouns.
 - Words made three syllables by adding “ed” or “es” (e.g., “created” or “trespasses”).
-- Compound words composed of simpler words. **Readability Studio** considers hyphenated words to be compound words (e.g., “horse-power” or “and/or”). Note that forward slashes (‘/’) are treated like hyphens in this context.
+- Compound words composed of simpler words. *Readability Studio* considers hyphenated words to be compound words (e.g., “horse-power” or “and/or”). Note that forward slashes (‘/’) are treated like hyphens in this context.
 
 This test can optionally count independent clauses as separate sentences, as *The Technique of Clear Writing* instructs. It should be noted, however, that this can cause misleadingly low scores for documents that contain run-on sentences. Consider the follow:
 
@@ -1273,7 +1273,7 @@ Spache Revised is generally used for primary age (i.e., Kindergarten to 7^th^ gr
 
 Because this formula uses familiar words (rather than syllable or letter counts), it is often regarded as a more accurate test for younger readers.
 
-Note that **Readability Studio** uses the revised 1974 version of Spache.
+Note that *Readability Studio* uses the revised 1974 version of Spache.
 
 ```{definition, spacherevised, name="Spache Revised formula"}
 $$

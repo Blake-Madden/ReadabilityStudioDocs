@@ -64,12 +64,12 @@ If you intend to review a website and need to always analyze its latest changes,
 
 ## Command Line Options {#command-line-options}
 
-The following command line options are available for **Readability Studio**:
+The following command line options are available for *Readability Studio*:
 
 | Command | Description |
 | :-- | :-- |
 | `"filename"` | Opens *filename*, which can be the path to a project or document. If the path supplied is a folder, then a [batch project](#creating-batch-project) will be created using all documents found recursively within the folder. |
-| `-bg` | Path to an image file to use as *filename*'s graph background. (This option only applies if a *filename* parameter is supplied.) Also, *filename* must refer to a document or folder (i.e., not a **Readability Studio** project file) that will be used to create a new project. |
+| `-bg` | Path to an image file to use as *filename*'s graph background. (This option only applies if a *filename* parameter is supplied.) Also, *filename* must refer to a document or folder (i.e., not a *Readability Studio* project file) that will be used to create a new project. |
 | `-loglevel=n` | This parameter specifies how much information to [log](#log-report) while the program is running, where *n* is a value between 0-2 (0 = none, 1 = standard, 2 = verbose). |
 | `-help` | Displays the help. |
 
@@ -89,7 +89,7 @@ Note that verbose logging can also be enabled by holding down the `r keys("SHIFT
 
 ## Log Report {#log-report}
 
-While it is running, **Readability Studio** logs various diagnostic information. This information can provide details such as:
+While it is running, *Readability Studio* logs various diagnostic information. This information can provide details such as:
 
 - The location of where the program is loading its license and settings files
 - Parsing errors encountered while reading documents (e.g., malformed HTML files)

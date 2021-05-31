@@ -2,7 +2,7 @@
 
 ## Open-Source Libraries
 
-The 3^rd^ party, open-source libraries included in **Readability Studio** are listed below (along with their respective licenses).
+The 3^rd^ party, open-source libraries included in *Readability Studio* are listed below (along with their respective licenses).
 
 ### CyoEncode {-}
 
@@ -1252,7 +1252,7 @@ A general purpose data compression library.
 
 ## Open-Source Tools & Content
 
-The following open-source software, artwork, and example files were used to create **Readability Studio**.
+The following open-source software, artwork, and example files were used to create *Readability Studio*.
 
 ### Documentation & Project Management Software {-}
 ***

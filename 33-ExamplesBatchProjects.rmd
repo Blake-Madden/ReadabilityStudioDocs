@@ -3,7 +3,7 @@
 In this chapter, we will step through examples showing how to analyse batches of documents.
 
 ::: {.notesection data-latex=""}
-Batch projects are only available in the **Professional** edition of **Readability Studio**.
+Batch projects are only available in the *Professional* edition of *Readability Studio*.
 :::
 
 ## Reviewing a Collection of Documents
@@ -36,7 +36,7 @@ In this dialog, you will specify the format that best describes your documents. 
 
 ![](Images/wizardbatchreadabilitymethods.png)
 
-On this page, you will select how you want **Readability Studio** to choose the readability tests to perform. Select the **Recommend tests based on document type**:
+On this page, you will select how you want *Readability Studio* to choose the readability tests to perform. Select the **Recommend tests based on document type**:
 
 ![](Images/wizardbatchdoctype.png)
 
