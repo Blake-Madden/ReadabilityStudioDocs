@@ -1,12 +1,14 @@
-# Technical Notes
+# (PART) Appendix {-}
 
-## Glossary {#glossary}
+# Glossary {#glossary}
+
+## Readability Glossary {#readability-glossary}
 
 ::: {.glsentry data-latex=''}
 cloze test
 :::
 ::: {.glsdef data-latex=''}
-A [cloze](#cloze) procedure is a test given to a student to measure their comprehension ability.
+A [cloze](#cloze) procedure is a test given to readers to measure their comprehension ability. Refer to \@ref(cloze) for further details.
 :::
 
 ::: {.glsentry data-latex=''}
@@ -14,27 +16,6 @@ interrobang
 :::
 ::: {.glsdef data-latex=''}
 The combination of a question mark and exclamation point at the end of a sentence. Interrobangs are shown as either two separate characters (“?!” or “!?”) or a single character (‽).
-:::
-
-::: {.glsentry data-latex=''}
-normalization
-:::
-::: {.glsdef data-latex=''}
-The adjustment of values from different scales into a common scale.
-
-For example, say that a test requires a 100-word sample, but your document is 200 words and contains 22 sentences. Rather than taking a 100-word sample, the full document's measurements can be normalized and used instead. In this case, we need to normalize 200 words to be 100 words, which we can do by multiplying it by 0.5.
-
-$$
-200 * 0.5 = 100
-$$
-
-Next, we multiply the 22 sentences by the same factor of 0.5 and arrive at a measure of 11 sentences.
-
-$$
-22 * 0.5 = 11
-$$
-
-Now that the document's measurements have been normalized to the required sample's scale, we can use these values (100 words and 11 sentences) with the test.
 :::
 
 ::: {.glsentry data-latex=''}
@@ -49,173 +30,14 @@ unit
 :::
 ::: {.glsdef data-latex=''}
 A section of text ending with a period, exclamation mark, question mark, interrobang, colon, semicolon, or dash. Lengthy, complex sentences generally contain more than one unit.
-
-Refer to \@ref(stat-terms) for information regarding statistics.
 :::
 
 ## Statistical Glossary {#stat-terms}
 
-::: {.glsentry data-latex=''}
-kurtosis
+::: {.glsentry #box-plots data-latex=''}
+box plots
 :::
 ::: {.glsdef data-latex=''}
-The peakedness of a distribution. Zero indicates a normal distribution, a negative value indicates a flat distribution, and a positive value indicates a sharp curve.  
-
-```{r, echo=F, fig.cap='Negative and positive kurtosis', fig.align='center'}
-knitr::include_graphics("Images/NonGenerated/Kurtosis.png")
-```
-:::
-
-::: {.glsentry data-latex=''}
-lower quartile
-:::
-::: {.glsdef data-latex=''}
-The value at the 25% percentile. This is the value separating the lower quarter of the values from the rest of the values.
-:::
-
-::: {.glsentry data-latex=''}
-maximum
-:::
-::: {.glsdef data-latex=''}
-The highest value in a range of data.
-:::
-
-::: {.glsentry data-latex=''}
-mean
-:::
-::: {.glsdef data-latex=''}
-The average value of a range of data. This is calculated by adding all the values and dividing the total by N.
-:::
-
-::: {.glsentry data-latex=''}
-median
-:::
-::: {.glsdef data-latex=''}
-The middle point separating the lower and upper halves of a range of data. This is calculated by sorting the values and taking the value in middle if the number of values is odd. If the number of values is even, then the means of the two middle points is taken.
-:::
-
-::: {.glsentry data-latex=''}
-minimum
-:::
-::: {.glsdef data-latex=''}
-The lowest value in a range of data.
-:::
-
-::: {.glsentry data-latex=''}
-mode
-:::
-::: {.glsdef data-latex=''}
-The most frequently occurring value in a range of data. Note that a range can have multiple modes if two or more unique values appear the same number of times.
-:::
-
-::: {.glsentry data-latex=''}
-outlier
-:::
-::: {.glsdef data-latex=''}
-An extreme (high or low) value that is numerically distant from the rest of the data.
-:::
-
-::: {.glsentry data-latex=''}
-overplotting
-:::
-::: {.glsdef data-latex=''}
-When visualizing points along a single dimension (e.g., the y axis of a box plot), points with the same score will overlap each other. Because of this, it becomes difficult to fully see the distribution of the data. Considering the following box plot:
-
-```{r echo=F, fig.align='center', fig.cap="Box plot with no jittering", out.width='75%'}
-boxplot(len ~ dose, data = ToothGrowth,
-              main = "Guinea Pigs' Tooth Growth",
-              xlab = "Vitamin C dose mg",
-              ylab = "Tooth length")
-stripchart(len ~ dose, data = ToothGrowth, method='overplot', add=T, pch=20, col=2, vertical=T)
-```
-
-Although we can interpret the quartile ranges, it is not obvious how the data “clumps” together overall.
-
-To correct this, a technique called jittering is used to adjust the x axis values of overlapping points. Traditionally, jittering uses randomness to adjust the points’ position around both sides of the axis, as such:
-
-```{r, echo=F, fig.cap="Box plot with random jittering", fig.align='center', out.width='75%'}
-boxplot(len ~ dose, data = ToothGrowth,
-              main = "Guinea Pigs' Tooth Growth",
-              xlab = "Vitamin C dose mg",
-              ylab = "Tooth length")
-stripchart(len ~ dose, data = ToothGrowth, method='jitter', add=T, pch=20, col=2, vertical=T)
-```
-
-Because of this randomness, some points may still overlap. To improve this, a newer technique known as beeswarm jittering instead adjusts points the minimal distance from the axis. This ensures that each point is seen and more tightly packed (offering a more accurate view of how the data are distributed). And example of this is as follows:
-
-```{r, echo=F, fig.cap="Box plot with beeswarm jittering", fig.align='center', out.width='75%'}
-library(beeswarm)
-
-boxplot(len ~ dose, data = ToothGrowth,
-              main = "Guinea Pigs' Tooth Growth",
-              xlab = "Vitamin C dose mg",
-              ylab = "Tooth length")  
-beeswarm(len ~ dose, data = ToothGrowth, col = 2, add = TRUE)
-```
-:::
-
-::: {.glsentry data-latex=''}
-*r*
-:::
-::: {.glsdef data-latex=''}
-The correlation between two factors (e.g., sentence length vs. reading level). *r* values range from -1.0 to 1.0, where -1.0 is a perfect negative correlation and 1.0 is a perfect positive correlation.
-:::
-
-::: {.glsentry data-latex=''}
-*r²*
-:::
-::: {.glsdef data-latex=''}
-The correlation between two factors (e.g., sentence length vs. reading level) when more than one independent factor is tested against the dependent (i.e., a multiple regression). *r²* values range from 0.0 to 1.0, where 0.0 indicates no correlation and 1.0 is a perfect positive correlation.
-:::
-
-::: {.glsentry data-latex=''}
-range
-:::
-::: {.glsdef data-latex=''}
-The distance between the lowest and highest values in a range of data.
-:::
-
-::: {.glsentry data-latex=''}
-skewness
-:::
-::: {.glsdef data-latex=''}
-The asymmetry of the probability distribution. A zero skew indicates a symmetrical balance in the distribution. A negative skew indicates that the left side of the distribution is longer and most of the values are concentrated on the right. A positive skew indicates that the right side of the distribution is longer and most of the values are concentrated on the left.  
-
-```{r, echo=F, fig.cap='Negative and positive skewness', fig.align='center'}
-knitr::include_graphics("Images/NonGenerated/Skewness.png")
-```
-:::
-
-::: {.glsentry data-latex=''}
-standard deviation
-:::
-::: {.glsdef data-latex=''}
-The variability (or spread) of the values. A low standard deviation indicates that most values are close to the data's mean. In contrast, a high standard deviation indicates values that stray far from the mean.
-:::
-
-::: {.glsentry data-latex=''}
-upper quartile
-:::
-::: {.glsdef data-latex=''}
-The value at the 75% percentile. This is the value separating the upper quarter of the values from the rest of the values.
-:::
-
-::: {.glsentry data-latex=''}
-valid n
-:::
-::: {.glsdef data-latex=''}
-The number of valid values in a range of data.
-:::
-
-::: {.glsentry data-latex=''}
-variance
-:::
-::: {.glsdef data-latex=''}
-Another measurement of variability, which is standard deviation squared.
-:::
-
-## Box Plots {#box-plots}
-
 Box plots are used to display the distribution of data, where:
 
 - The middle point is the median.
@@ -225,7 +47,6 @@ Box plots are used to display the distribution of data, where:
 Outlier values that do not fall within these areas are plotted outside of the whiskers.
 
 ```{r, echo=F, fig.cap="Visual representation of a box plot's layout, adapted from DeCicco (“Exploring ggplot2 boxplots”)", fig.align='center'}
-
 # translatable content
 WhiskerLabel1 <- "Largest value within 1.5 times\ninterquartile range above\n75th percentile"
 WhiskerLabel2 <- "Smallest value within 1.5 times\ninterquartile range below\n25th percentile"
@@ -345,3 +166,184 @@ ggplot_box_legend <- function(family = "serif"){
 
 plot(ggplot_box_legend())
 ```
+:::
+
+::: {.glsentry data-latex=''}
+kurtosis
+:::
+::: {.glsdef data-latex=''}
+The peakedness of a distribution. Zero indicates a normal distribution, a negative value indicates a flat distribution, and a positive value indicates a sharp curve.  
+
+```{r, echo=F, fig.cap='Negative and positive kurtosis', fig.align='center'}
+knitr::include_graphics("Images/NonGenerated/Kurtosis.png")
+```
+:::
+
+::: {.glsentry data-latex=''}
+lower quartile
+:::
+::: {.glsdef data-latex=''}
+The value at the 25% percentile. This is the value separating the lower quarter of the values from the rest of the values.
+:::
+
+::: {.glsentry data-latex=''}
+maximum
+:::
+::: {.glsdef data-latex=''}
+The highest value in a range of data.
+:::
+
+::: {.glsentry data-latex=''}
+mean
+:::
+::: {.glsdef data-latex=''}
+The average value of a range of data. This is calculated by adding all the values and dividing the total by N.
+:::
+
+::: {.glsentry data-latex=''}
+median
+:::
+::: {.glsdef data-latex=''}
+The middle point separating the lower and upper halves of a range of data. This is calculated by sorting the values and taking the value in middle if the number of values is odd. If the number of values is even, then the means of the two middle points is taken.
+:::
+
+::: {.glsentry data-latex=''}
+minimum
+:::
+::: {.glsdef data-latex=''}
+The lowest value in a range of data.
+:::
+
+::: {.glsentry data-latex=''}
+mode
+:::
+::: {.glsdef data-latex=''}
+The most frequently occurring value in a range of data. Note that a range can have multiple modes if two or more unique values appear the same number of times.
+:::
+
+::: {.glsentry data-latex=''}
+normalization
+:::
+::: {.glsdef data-latex=''}
+The adjustment of values from different scales into a common scale.
+
+For example, say that a test requires a 100-word sample, but your document is 200 words and contains 22 sentences. Rather than taking a 100-word sample, the full document's measurements can be normalized and used instead. In this case, we need to normalize 200 words to be 100 words, which we can do by multiplying it by 0.5.
+
+$$
+200 * 0.5 = 100
+$$
+
+Next, we multiply the 22 sentences by the same factor of 0.5 and arrive at a measure of 11 sentences.
+
+$$
+22 * 0.5 = 11
+$$
+
+Now that the document's measurements have been normalized to the required sample's scale, we can use these values (100 words and 11 sentences) with the test.
+:::
+
+::: {.glsentry data-latex=''}
+outlier
+:::
+::: {.glsdef data-latex=''}
+An extreme (high or low) value that is numerically distant from the rest of the data.
+:::
+
+::: {.glsentry data-latex=''}
+overplotting
+:::
+::: {.glsdef data-latex=''}
+When visualizing points along a single dimension (e.g., the y axis of a box plot), points with the same score will overlap each other. Because of this, it becomes difficult to fully see the distribution of the data. Considering the following box plot:
+
+```{r echo=F, fig.align='center', fig.cap="Box plot with no jittering", out.width='75%'}
+boxplot(len ~ dose, data = ToothGrowth,
+              main = "Guinea Pigs' Tooth Growth",
+              xlab = "Vitamin C dose mg",
+              ylab = "Tooth length")
+stripchart(len ~ dose, data = ToothGrowth, method='overplot', add=T, pch=20, col=2, vertical=T)
+```
+
+Although we can interpret the quartile ranges, it is not obvious how the data “clumps” together overall.
+
+To correct this, a technique called jittering is used to adjust the x axis values of overlapping points. Traditionally, jittering uses randomness to adjust the points’ position around both sides of the axis, as such:
+
+```{r, echo=F, fig.cap="Box plot with random jittering", fig.align='center', out.width='75%'}
+boxplot(len ~ dose, data = ToothGrowth,
+              main = "Guinea Pigs' Tooth Growth",
+              xlab = "Vitamin C dose mg",
+              ylab = "Tooth length")
+stripchart(len ~ dose, data = ToothGrowth, method='jitter', add=T, pch=20, col=2, vertical=T)
+```
+
+Because of this randomness, some points may still overlap. To improve this, a newer technique known as beeswarm jittering instead adjusts points the minimal distance from the axis. This ensures that each point is seen and more tightly packed (offering a more accurate view of how the data are distributed). And example of this is as follows:
+
+```{r, echo=F, fig.cap="Box plot with beeswarm jittering", fig.align='center', out.width='75%'}
+library(beeswarm)
+
+boxplot(len ~ dose, data = ToothGrowth,
+              main = "Guinea Pigs' Tooth Growth",
+              xlab = "Vitamin C dose mg",
+              ylab = "Tooth length")  
+beeswarm(len ~ dose, data = ToothGrowth, col = 2, add = TRUE)
+```
+:::
+
+::: {.glsentry data-latex=''}
+*r*
+:::
+::: {.glsdef data-latex=''}
+The correlation between two factors (e.g., sentence length vs. reading level). *r* values range from -1.0 to 1.0, where -1.0 is a perfect negative correlation and 1.0 is a perfect positive correlation.
+:::
+
+::: {.glsentry data-latex=''}
+*r²*
+:::
+::: {.glsdef data-latex=''}
+The correlation between two factors (e.g., sentence length vs. reading level) when more than one independent factor is tested against the dependent (i.e., a multiple regression). *r²* values range from 0.0 to 1.0, where 0.0 indicates no correlation and 1.0 is a perfect positive correlation.
+:::
+
+::: {.glsentry data-latex=''}
+range
+:::
+::: {.glsdef data-latex=''}
+The distance between the lowest and highest values in a range of data.
+:::
+
+::: {.glsentry data-latex=''}
+skewness
+:::
+::: {.glsdef data-latex=''}
+The asymmetry of the probability distribution. A zero skew indicates a symmetrical balance in the distribution. A negative skew indicates that the left side of the distribution is longer and most of the values are concentrated on the right. A positive skew indicates that the right side of the distribution is longer and most of the values are concentrated on the left.  
+
+```{r, echo=F, fig.cap='Negative and positive skewness', fig.align='center'}
+knitr::include_graphics("Images/NonGenerated/Skewness.png")
+```
+:::
+
+::: {.glsentry data-latex=''}
+standard deviation
+:::
+::: {.glsdef data-latex=''}
+The variability (or spread) of the values. A low standard deviation indicates that most values are close to the data's mean. In contrast, a high standard deviation indicates values that stray far from the mean.
+:::
+
+::: {.glsentry data-latex=''}
+upper quartile
+:::
+::: {.glsdef data-latex=''}
+The value at the 75% percentile. This is the value separating the upper quarter of the values from the rest of the values.
+:::
+
+::: {.glsentry data-latex=''}
+valid n
+:::
+::: {.glsdef data-latex=''}
+The number of valid values in a range of data.
+:::
+
+::: {.glsentry data-latex=''}
+variance
+:::
+::: {.glsdef data-latex=''}
+Another measurement of variability, which is standard deviation squared.
+:::
