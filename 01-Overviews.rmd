@@ -433,13 +433,13 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - Suggested replacements are now shown in the difficult and unfamiliar word lists.
 - A search bar is now available at the top of the program.
 - A new start page has been added to open and create projects from.
-- Word list windows (e.g., the *New Dale-Chall* window) can now be searched.
+- Word list windows (e.g., the New Dale-Chall window) can now be searched.
 - Test explanations in the results now show the tests' factors in a grid (for easier reading).
 - Multiple-column sorting added to lists in the results.
 - Summation option added for most lists in the results.
 - Improved printing of summary report and test results windows.
 - Test bundles added, which enable you to add a specific set of tests to a project with one button click.
-- Shortcuts for creating custom [*New Dale-Chall*](#dale-chall-test), [Spache](#spache-test), and [Harris-Jacobson](#harris-jacobson) added.
+- Shortcuts for creating custom [New Dale-Chall](#dale-chall-test), [Spache](#spache-test), and [Harris-Jacobson](#harris-jacobson) added.
 - An overview window showing all tests and their respective factors and descriptions is now available.
 
 #### Analysis/Test Enhancements {-}
@@ -511,8 +511,8 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
     - Added [Bormuth Cloze Mean](#bormuth-cloze-mean-machine-passage) test.
     - Added [Bormuth Grade Placement](#bormuth-grade-placement-35-machine-passage) test.
     - Added [Gunning Fog (PSK)](#psk-fog) test.
-    - Added [Farr, Jenkins, Paterson](#farr-jenkins-paterson) test.
-    - Added [Farr, Jenkins, Paterson (PSK)](#psk-farr-jenkins-paterson) test.
+    - Added [Farr-Jenkins-Paterson](#farr-jenkins-paterson) test.
+    - Added [Farr-Jenkins-Paterson (PSK)](#psk-farr-jenkins-paterson) test.
     - Added [Wheeler-Smith](#wheeler-smith) test.
     - Added [Degrees of Reading Power](#degrees-of-reading-power) test.
     - Added [Degrees of Reading Power](#degrees-of-reading-power-grade-equivalent) test (grade level).
