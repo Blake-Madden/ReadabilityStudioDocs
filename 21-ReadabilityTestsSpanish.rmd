@@ -146,7 +146,7 @@ Refer to \@ref(rix-test).
 
 The SOL readability formula (Contreras 21-29) calculates the grade level of a document based on complex-word density.
 
-SOL is a modified version of [SMOG](#smog-test)\index{SMOG!variations!SOL (Spanish)} (McLaughlin 639-646) that was recalibrated for Spanish text. This test calculates the SMOG score of a Spanish document, and then adjusts the score to take into account the comparably higher complex-word counts found in Spanish text. This adjustment is similar to what [*Gilliam, Peña, Mountain*](#gilliam-pena-mountain-fry-graph) (426-430) uses for plotting Spanish text onto the [Fry graph](#fry-test)\index{Fry}.
+SOL is a modified version of [SMOG](#smog-test)\index{SMOG!variations!SOL (Spanish)} (McLaughlin 639-646) that was recalibrated for Spanish text. This test calculates the SMOG score of a Spanish document, and then adjusts the score to take into account the comparably higher complex-word counts found in Spanish text. This adjustment is similar to what [Gilliam, Peña, Mountain](#gilliam-pena-mountain-fry-graph)\index{Gilliam, Peña, Mountain!compared to SOL} (426-430) uses for plotting Spanish text onto the [Fry graph](#fry-test)\index{Fry}.
 
 This test was trained on multiple blocks of 30-sentence samples from the following English, Spanish, and French materials:
 

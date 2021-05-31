@@ -35,7 +35,7 @@ After entering your formula, you will need to specify what type of test this wil
 
 - Grade level
 - Index value
-- [Predicted *cloze* score](#cloze)
+- [Predicted cloze score](#cloze)
 ```
 
 If your test is using any of the predefined familiar-word formulas (`CustomNewDaleChall()`, `CustomSpache()`, `CustomHarrisJacobson()`) or using the functions `UnfamiliarWordCount()` or `UniqueUnfamiliarWordCount()`, then you will need to define how familiar words are detected. Expand **Familiar Words** to view two sections: [**Word Lists**](#custom-word-list) and [**Proper Nouns & Numerals**](#custom-proper-numerals).
@@ -152,7 +152,7 @@ Table: Logic functions
 | POWER(base,exponent) | The Power function raises Base to any power. For fractional exponents, Base must be greater than 0. |
 | RAND() | Generates a random floating point number within the range of 0 and 1. |
 | ROUND(x, n) | Returns the number x rounded to n decimal places. (n is optional and defaults to zero.) ROUND(-11.6, 0) = 12, ROUND(-11.6) = 12, ROUND(1.5, 0) = 2, ROUND(1.55, 1) = 1.6, ROUND(3.1415, 3) = 3.142. |
-| SIGN(x) | Returns the sign of x. x<0 returns -1 , x=0 returns 0, and x>0 returns 1). |
+| SIGN(x) | Returns the sign of x. x<0 returns -1, x=0 returns 0, and x>0 returns 1). |
 | SIN(x) | Sine of x, which returns the sine of the angle X in radians. |
 | SINH(x) | Hyperbolic sine of x. |
 | SQRT(x) | Square root of x. |
@@ -282,7 +282,7 @@ From the **Readability** tab, click the `r keys("Custom Test")` button and then 
 
 - Grade level
 - Index value
-- [Predicted *cloze* score](#cloze)
+- [Predicted cloze score](#cloze)
 ```
 
 ### Formula {-}

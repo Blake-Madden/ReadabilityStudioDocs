@@ -72,7 +72,7 @@ Spanish and German tests are only available in the **Professional** edition, or 
 
 #### Graphics {-}
 
-**Readability Studio** includes numerous graphs to help visualize your results. Graphical tests such as Fry and Raygor are included, as well as a bar chart showing a breakdown of the difficult word categories. If you are reviewing *Dolch Sight Words*, then breakdown charts of your category usage and coverage are also included.
+**Readability Studio** includes numerous graphs to help visualize your results. Graphical tests such as Fry and Raygor are included, as well as a bar chart showing a breakdown of the difficult word categories. If you are reviewing Dolch Sight Words, then breakdown charts of your category usage and coverage are also included.
 
 Multiple-document graphs are also provided in the **Professional** edition of **Readability Studio**. Here, [histograms](#reviewing-batch-histograms) and [box plots](#reviewing-batch-box-plots) show the distribution of a document collection's test scores. This is useful for summarizing the general reading level of a batch of documents. It is also useful for finding problematic documents in a batch (i.e., outliers).
 
@@ -110,7 +110,7 @@ These issues are shown highlighted in your document for easy review. They are al
 
 #### Dolch Sight Words {-}
 
-**Readability Studio** also includes a [Dolch](#reviewing-dolch) suite of statistics and graphs, which is useful for educators and writers who work with young readers. The program provides a complete breakdown of *Dolch* words that you are using (and not using) in your materials. This enables writers to see how they can improve their *Dolch* practice materials. This also enables educators to determine which materials are appropriate for *Dolch* practice.
+**Readability Studio** also includes a [Dolch](#reviewing-dolch) suite of statistics and graphs, which is useful for educators and writers who work with young readers. The program provides a complete breakdown of Dolch words that you are using (and not using) in your materials. This enables writers to see how they can improve their Dolch practice materials. This also enables educators to determine which materials are appropriate for Dolch practice.
 
 #### Numerous file formats supported {-}
 

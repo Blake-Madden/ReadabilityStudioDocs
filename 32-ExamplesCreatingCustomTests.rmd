@@ -2,7 +2,7 @@
 
 In this chapter, we will step through examples showing how to create different types of custom tests.
 
-With custom tests, you can create enhanced versions of existing tests like New Dale-Chall that include your own word list. You can also create entirely new tests with your own formulas, and design them to return either grade-level, predicted *cloze*, or index scores.
+With custom tests, you can create enhanced versions of existing tests like New Dale-Chall that include your own word list. You can also create entirely new tests with your own formulas, and design them to return either grade-level, predicted cloze, or index scores.
 
 ## Creating a Modified Flesch\index{Flesch Reading Ease!custom test!example|(} Test {#creating-custom-flesch-test}
 
@@ -71,7 +71,7 @@ Once finished, the dialog will look like this:
 
 Click the `r keys("OK")` button and our new test will be added to the system.
 
-To add this test to any project, first select the **Readability** tab. Next, click the `r keys("Custom Tests")` button and then select **Flesch (IC)** from the menu. Select the **Readability Scores** icon on the project pane and note that *Flesch (IC)* has now been added to the project's results:
+To add this test to any project, first select the **Readability** tab. Next, click the `r keys("Custom Tests")` button and then select **Flesch (IC)** from the menu. Select the **Readability Scores** icon on the project pane and note that Flesch (IC) has now been added to the project's results:
 
 ![](Images/CustomTestExample1Score.png)
 
@@ -133,9 +133,9 @@ Click the `r keys("OK")` button and our new test will be added to the system. At
 
 ![](Images/NonGenerated/CustomTestDCProperNounWarning.png)
 
-We are intending to treat all proper nouns as familiar and do not wish to use the same settings as New Dale-Chall, so click **Do not adjust**. Our new test, *New Dale-Chall (Baking)*, has now been added to the program.
+We are intending to treat all proper nouns as familiar and do not wish to use the same settings as New Dale-Chall, so click **Do not adjust**. Our new test, New Dale-Chall (Baking), has now been added to the program.
 
-To add this test to any project, first select the **Readability** tab. Next, click the `r keys("Custom Tests")` button and then select **New Dale-Chall (Baking)**. Select the **Readability Scores** icon on the project pane and note that *New Dale-Chall (Baking)* has now been added to the project's results:
+To add this test to any project, first select the **Readability** tab. Next, click the `r keys("Custom Tests")` button and then select **New Dale-Chall (Baking)**. Select the **Readability Scores** icon on the project pane and note that New Dale-Chall (Baking) has now been added to the project's results:
 
 ![](Images/CustomTestExample2Score.png)
 
@@ -151,7 +151,7 @@ However, because our custom test is including some extra words not on the New Da
 
 Note how there are far fewer unfamiliar New Dale-Chall (Baking) words when compared to the standard New Dale-Chall output.
 
-We can also review these words in their original context. Click on the **Highlighted Reports** icon on the project pane, and then select the **New Dale-Chall (Baking)** page. Here we can see exactly where all the unfamiliar *New Dale-Chall (Baking)* words are in our recipe.
+We can also review these words in their original context. Click on the **Highlighted Reports** icon on the project pane, and then select the **New Dale-Chall (Baking)** page. Here we can see exactly where all the unfamiliar New Dale-Chall (Baking) words are in our recipe.
 
 ![](Images/CustomTestExample2CustomText.png)
 
@@ -167,7 +167,7 @@ The recipe used in this example is available from the **Example Documents** menu
 
 ## Creating a Custom Index Test
 
-In this example, we will create a test designed for classifying a document within a custom scale. We will make a list of “buzzwords” that are commonly overused in marketing documents, then create a test to see how much a given document uses them. Also, rather than calculating the conventional grade-level or predicted [*cloze*](#cloze) score, our test will return a value using our own scale.
+In this example, we will create a test designed for classifying a document within a custom scale. We will make a list of “buzzwords” that are commonly overused in marketing documents, then create a test to see how much a given document uses them. Also, rather than calculating the conventional grade-level or predicted [cloze](#cloze) score, our test will return a value using our own scale.
 
 The first step is to create a list of “buzzwords.” This can be any text file where the words are separated by spaces, tabs, commas, or semicolons. For this example, we will use this list:
 
@@ -230,7 +230,7 @@ For this test, we are only looking for words explicitly from our list. This mean
 
 Click the `r keys("OK")` button and our new test will be added to the system.
 
-To add this test to any project, first select the **Readability** tab. Next, click the `r keys("Custom Tests")` button and then select **Buzz Index**. Select the **Readability Scores** icon on the project pane and note that *Buzz Index* has now been added to the project's results:
+To add this test to any project, first select the **Readability** tab. Next, click the `r keys("Custom Tests")` button and then select **Buzz Index**. Select the **Readability Scores** icon on the project pane and note that Buzz Index has now been added to the project's results:
 
 To demonstrate this, click the **Help** tab of the ribbon. Then, click the `r keys("Examples")` button and select **Press Release** from the menu. Choose the defaults in the standard [**New Project**](#creating-standard-project) wizard to create a new project from this document. Once the file is processed, click the **Highlighted Reports** icon on the sidebar to view the document. After doing a quick reading of this press release, there may be some concern about the author's enthusiasm for marketing speak. To confirm this, select the **Readability** tab on the ribbon, click **Custom Tests** and select **Buzz Index**. Next, click the **Readability Scores** icon on the sidebar and select **Scores** underneath that. As we had feared, the document is scoring at the unacceptable level 3:
 

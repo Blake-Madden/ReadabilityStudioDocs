@@ -3,10 +3,10 @@
 ## Glossary {#glossary}
 
 ::: {.glsentry data-latex=''}
-*cloze* test
+cloze test
 :::
 ::: {.glsdef data-latex=''}
-A [*cloze*](#cloze) procedure is a test given to a student to measure his/her comprehension ability.
+A [cloze](#cloze) procedure is a test given to a student to measure his/her comprehension ability.
 :::
 
 ::: {.glsentry data-latex=''}
@@ -41,7 +41,7 @@ Now that the document's measurements have been normalized to the required sample
 polysyllabic
 :::
 ::: {.glsdef data-latex=''}
-Technically speaking, this means any word containing more than 1 syllable. In the case of some tests (e.g., *Wheeler-Smith*), this term is used in this context. Other tests’ sources, however, tend to use this term to describe words of 3 or more syllables. Because of this inconsistency, it is recommended to avoid using this term and instead state explicitly the intention of a given test.
+Technically speaking, this means any word containing more than 1 syllable. In the case of some tests (e.g., Wheeler-Smith\index{Wheeler-Smith!polysyllabic words}), this term is used in this context. Other tests’ sources, however, tend to use this term to describe words of 3 or more syllables. Because of this inconsistency, it is recommended to avoid using this term and instead state explicitly the intention of a given test.
 :::
 
 ::: {.glsentry data-latex=''}

@@ -150,7 +150,7 @@ After you have selected the tests to perform, click the `r keys("Finish")` butto
 
 ![](Images/batchscorestats.png)
 
-From here, you can review the [readability scores](#reviewing-batch-scores), [box plots](#reviewing-batch-box-plots), [histograms](#reviewing-batch-histograms), [readability graphs](#reviewing-readability-graphs), [*Dolch* statistics](#reviewing-batch-dolch), and [difficult words](#reviewing-batch-words). You may also want to review any [warnings](#reviewing-batch-warnings) that were encountered while analyzing the documents.
+From here, you can review the [readability scores](#reviewing-batch-scores), [box plots](#reviewing-batch-box-plots), [histograms](#reviewing-batch-histograms), [readability graphs](#reviewing-readability-graphs), [Dolch statistics](#reviewing-batch-dolch), and [difficult words](#reviewing-batch-words). You may also want to review any [warnings](#reviewing-batch-warnings) that were encountered while analyzing the documents.
 
 ### Select Directory {-#select-directory}
 

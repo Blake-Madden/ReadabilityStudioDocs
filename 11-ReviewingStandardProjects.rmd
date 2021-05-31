@@ -10,7 +10,7 @@ The top area of the **Scores** window is the score grid. In here there are four 
 - **Grade Level**: the minimum grade level that the test determined the document is suitable for.
 - **Reader Age**: the minimum reader age that the test determined the document is suitable for. The reader age is determined from the test's score. It can be shown as either a [range](#reading-age) for the entire grade, or be rounded to the semester that the grade score falls into.
 - **Scale Value**: the index value for tests that use special scales.
-- [**Predicted Cloze Score**](#cloze): the estimated score if the document were to be used for a *cloze* test. Note that *cloze* scores will be displayed in percentage format (i.e., 0–100) instead of floating-point format (i.e., .0–1.0) for easier reading.
+- [**Predicted Cloze Score**](#cloze): the estimated score if the document were to be used for a cloze test. Note that cloze scores will be displayed in percentage format (i.e., 0–100) instead of floating-point format (i.e., .0–1.0) for easier reading.
 
 Note that most tests have just one type of result (e.g., grade level), so non-applicable columns are left blank. For example, note below that the [Gunning Fog](#gunning-fog-test) result is a grade level of 8.3. This translates to an eighth grade level reader (in his or her third month of class). Because this test only returns a grade level and age, the **Scale Value** and **Predicted Cloze Score** columns are empty. Another example is the result for the [Flesch Reading Ease](#flesch-test) test, which has a scale value of 79. This test has its own scale (instead of a grade level) so its age, grade level, and cloze columns are empty.
 
@@ -28,11 +28,11 @@ When calculating these statistics, failed test scores are treated as missing obs
 
 To remove any test from this list, select it and press `r keys("CTRL")`+`r keys("DELETE")` (`r macOS_cmd_key()`+`r keys("DELETE")` on macOS) on your keyboard. To edit a [custom test](#creating-custom-test), double click on it in this list. To view the help for a standard test, double click on it in this list.
 
-There will also be graphs in this section if you had included the [Fry](#reviewing-readability-graphs) , [Gilliam-Peña-Mountain](#gilliam-pena-mountain-fry-graph)\index{Gilliam-Peña-Mountain}, [Raygor](#reviewing-readability-graphs), [Flesch](#flesch-test), or [FRASE](#frase)\index{FRASE} tests. Refer to \@ref(reviewing-readability-graphs) for further information.
+There will also be graphs in this section if you had included the [Fry](#reviewing-readability-graphs), [Gilliam-Peña-Mountain](#gilliam-pena-mountain-fry-graph)\index{Gilliam-Peña-Mountain}, [Raygor](#reviewing-readability-graphs), [Flesch](#flesch-test), or [FRASE](#frase)\index{FRASE} tests. Refer to \@ref(reviewing-readability-graphs) for further information.
 
 ## Readability Graphs {#reviewing-readability-graphs}
 
-There are numerous readability tests that are graphically plotted, including [Fry](#fry-test), [Raygor](#raygor-test), [Flesch](#flesch-test), [Lix](#lix-test), [Gilliam-Peña-Mountain](#gilliam-pena-mountain-fry-graph), [FRASE](#frase), [Crawford](#crawford), and [*Schwartz*](#scwartz). These graphs consist of either grade-level or reading-level regions that a document may fall within. They also include indicators for the most influential factor for the document's reported level (i.e., word difficulty vs. sentence difficulty).
+There are numerous readability tests that are graphically plotted, including [Fry](#fry-test), [Raygor](#raygor-test), [Flesch](#flesch-test), [Lix](#lix-test), [Gilliam-Peña-Mountain](#gilliam-pena-mountain-fry-graph), [FRASE](#frase), [Crawford](#crawford), and [Schwartz](#scwartz). These graphs consist of either grade-level or reading-level regions that a document may fall within. They also include indicators for the most influential factor for the document's reported level (i.e., word difficulty vs. sentence difficulty).
 
 To view these graphs, click on the **Test Graphs & Charts** icon in a [standard project](#creating-standard-project) or the **Readability Graphs** icon in a [batch project](#creating-batch-project).
 
@@ -60,7 +60,7 @@ The Gilliam-Peña-Mountain\index{Gilliam-Peña-Mountain} graph is a variation of
 knitr::include_graphics("Images/GpmFry.png")
 ```
 
-The *Schwartz* graph is another Fry-like graph, which is designed for German (primary and secondary-reader) text. Although similar in appearance to Fry, this graph uses its own reading-level regions mapped to the German materials it was trained on. This approach differs from Gilliam-Peña-Mountain, which uses the original Fry template and adjusts its axis ranges to accommodate Spanish text. Below is an example of a *Schwartz* graph:
+The Schwartz graph is another Fry-like graph, which is designed for German (primary and secondary-reader) text. Although similar in appearance to Fry, this graph uses its own reading-level regions mapped to the German materials it was trained on. This approach differs from Gilliam-Peña-Mountain, which uses the original Fry template and adjusts its axis ranges to accommodate Spanish text. Below is an example of a Schwartz graph:
 
 ```{r schwartz2, echo=F, fig.cap='Schwartz Graph', fig.align='center'}
 knitr::include_graphics("Images/Schwartz.png")
@@ -72,7 +72,7 @@ Another difference is that the Fry graph is influenced by high-syllable words, w
 
 The other difference between the two graphs is that they are inverted from one another. In a Fry graph, the long-sentence region is in the bottom left-hand corner (going downward), whereas in a Raygor graph the long-sentence region is in the top left-hand corner (going upward). However, the same rules apply for how to interpret the grade level and influence of difficult words vs. difficult sentences.
 
-The FRASE\index{FRASE} graph is similar to Fry in terms of factors used and axis orientation. Its most influential factor (i.e., word vs. sentence difficulty) is determined in the same manner, and its Y (sentence) axis is descending. Below is an example of a *FRASE* graph:
+The FRASE\index{FRASE} graph is similar to Fry in terms of factors used and axis orientation. Its most influential factor (i.e., word vs. sentence difficulty) is determined in the same manner, and its Y (sentence) axis is descending. Below is an example of a FRASE graph:
 
 ```{r frase2, echo=F, fig.cap='Frase Graph', fig.align='center'}
 knitr::include_graphics("Images/FraseGraph.png")
@@ -80,7 +80,7 @@ knitr::include_graphics("Images/FraseGraph.png")
 
 A key difference with FRASE\index{FRASE!reading levels} is its use of reading levels (rather than grade levels). In the above example, we can see that the document has been scored at the “Intermediate” level. The other difference is that it is designed for Spanish text—note how its X (syllable-count) axis begins at 182, not 108.
 
-The Crawford\index{Crawford!compared to Fry} graph is also similar to Fry in terms of factors used. However, it differs from most other graphs in that it uses the interior of the plot to find its sentence-count factor (instead of an axis). Below is an example of a *Crawford* graph:
+The Crawford\index{Crawford!compared to Fry} graph is also similar to Fry in terms of factors used. However, it differs from most other graphs in that it uses the interior of the plot to find its sentence-count factor (instead of an axis). Below is an example of a Crawford graph:
 
 ```{r crawford2, echo=F, fig.cap='Crawford Graph', fig.align='center'}
 knitr::include_graphics("Images/CrawfordGraph.png")
@@ -88,7 +88,7 @@ knitr::include_graphics("Images/CrawfordGraph.png")
 
 In the above graph, we can see that the intersection of the factors is 175 and 7. The number of syllables is 175 (Y axis). The number of sentences is approximately 7 (between 8.4 and 5.9 on the plot [corresponding to 175 on the Y axis]). From this intersection, the point's X axis value is 3.7. Hence, 3.7 is the grade-level score for this graph.
 
-The Flesch\index{Flesch Reading Ease!chart} chart plots a document's factors onto a pair of “rulers” and then connects them to determine the Flesch score. This score ranges from 0 (“very difficult”) to 100 (“very easy”). Below is an example of a *Flesch* chart:
+The Flesch\index{Flesch Reading Ease!chart} chart plots a document's factors onto a pair of “rulers” and then connects them to determine the Flesch score. This score ranges from 0 (“very difficult”) to 100 (“very easy”). Below is an example of a Flesch chart:
 
 ```{r fleschChart2, echo=F, fig.cap='Flesch Chart', fig.align='center'}
 knitr::include_graphics("Images/FleschChart.png")
@@ -550,58 +550,58 @@ To view any sentence in its original context, double-click on it. This will take
 
 ## Dolch Sight Words {#reviewing-dolch}
 
-The *Dolch Sight Words* (456–460) represent the most frequently occurring service words[^DolchPronounsFootnote] in most text, especially children's literature. Early readers need to learn and recognize these words to attain reading fluency. Many of these words cannot be sounded out or represented by pictures; therefore, they must be learned by sight[^DolchNounsListFootnote].
+The Dolch Sight Words (456–460) represent the most frequently occurring service words[^DolchPronounsFootnote] in most text, especially children's literature. Early readers need to learn and recognize these words to attain reading fluency. Many of these words cannot be sounded out or represented by pictures; therefore, they must be learned by sight[^DolchNounsListFootnote].
 
 If you are writing educational materials for early readers, then use as many of these words as possible to help readers practice them. Also, keep the percentage of non-Dolch words low so that readers can better focus on the sight words.
 
-**Readability Studio** offers a suite of *Dolch* statistics and graphs as a tool for educators and writers targeting early readers. If you are creating material intended to help early readers practice *Dolch* words, then it is recommended to include this in your project. To add *Dolch* statistics to your project, go to the **Readability** tab and select either **Primary-age Reading** or **Second Language Reading** and select *Dolch Sight Words*. A *Dolch Sight Words* icon will appear at the bottom of the project sidebar—clicking on that will display all the *Dolch* information.
+**Readability Studio** offers a suite of Dolch statistics and graphs as a tool for educators and writers targeting early readers. If you are creating material intended to help early readers practice Dolch words, then it is recommended to include this in your project. To add Dolch statistics to your project, go to the **Readability** tab and select either **Primary-age Reading** or **Second Language Reading** and select **Dolch Sight Words**. A **Dolch Sight Words** icon will appear at the bottom of the project sidebar—clicking on that will display all the Dolch information.
 
 [^DolchPronounsFootnote]: Pronouns, adjectives, adverbs, prepositions, conjunctions, and verbs.
-[^DolchNounsListFootnote]: A separate list of nouns commonly found in children's literature is also included with the *Dolch* collection. However, the sight words are generally the focus of most *Dolch* activities.
+[^DolchNounsListFootnote]: A separate list of nouns commonly found in children's literature is also included with the Dolch collection. However, the sight words are generally the focus of most Dolch activities.
 
 ### Reviewing the Dolch Statistics {-#reviewing-dolch-stats}
 
-After opening a project, click on the *Dolch Sight Words* icon on the project sidebar and select the **Dolch Summary** subitem to view the document's *Dolch* statistics:
+After opening a project, click on the **Dolch Sight Words** icon on the project sidebar and select the **Dolch Summary** subitem to view the document's Dolch statistics:
 
 ![](Images/dolchsummary.png)
 
-There are two types of statistics included: *Dolch* coverage and raw *Dolch* word counts.
+There are two types of statistics included: Dolch coverage and raw Dolch word counts.
 
-The **Dolch Word Coverage** section displays how much of each category is used in the document. For example, if 6 of the conjunction *Dolch* words are used in the document, then 6 will be displayed next to **Conjunctions used**. The percentage will also be included in parentheses after these counts. In this case, it will be 100% because there are 6 words on the *Dolch* conjunction list.
+The **Dolch Word Coverage** section displays how much of each category is used in the document. For example, if 6 of the conjunction Dolch words are used in the document, then 6 will be displayed next to **Conjunctions used**. The percentage will also be included in parentheses after these counts. In this case, it will be 100% because there are 6 words on the Dolch conjunction list.
 
-Notes will be shown at the bottom of the **Dolch Word Coverage** section to indicate which (if any) categories are being used well by your document. This is the best way to see whether or not your document is useful as a *Dolch* practice tool.
+Notes will be shown at the bottom of the **Dolch Word Coverage** section to indicate which (if any) categories are being used well by your document. This is the best way to see whether or not your document is useful as a Dolch practice tool.
 
-If a document does not provide good coverage for any of the categories and/or contains numerous non-Dolch words, then it will not be an appropriate *Dolch* training document. This does not necessarily mean that it is not an appropriate document for younger readers. It simply means that the document does not use enough of the *Dolch* words to help readers learn these words. For example, *The Tale of Peter Rabbit* has decent coverage of the *Dolch* conjunctions and prepositions, but it also contains a large percentage of non-Dolch words. This book's readability levels indicate that it is proper for young readers. However, its high non-Dolch words percentage will make it inappropriate for readers to use it for practicing *Dolch* words.
+If a document does not provide good coverage for any of the categories and/or contains numerous non-Dolch words, then it will not be an appropriate Dolch training document. This does not necessarily mean that it is not an appropriate document for younger readers. It simply means that the document does not use enough of the Dolch words to help readers learn these words. For example, *The Tale of Peter Rabbit* has decent coverage of the Dolch conjunctions and prepositions, but it also contains a large percentage of non-Dolch words. This book's readability levels indicate that it is proper for young readers. However, its high non-Dolch words percentage will make it inappropriate for readers to use it for practicing Dolch words.
 
-To graphically view the *Dolch* coverage, click on the [**Coverage Chart**](#reviewing-dolch-graphs) icon. This will display a bar chart of these statistics, listed by category.
+To graphically view the Dolch coverage, click on the [**Coverage Chart**](#reviewing-dolch-graphs) icon. This will display a bar chart of these statistics, listed by category.
 
-Below this is the **Dolch Words** section, which lists all the raw *Dolch* word counts, broken down by category. Each category includes its total and unique counts of words found in the document. For example, let us say that four unique words from the pronoun list are found in the document, each appearing twice. In this case, **Number of Pronoun Dolch words** will be eight (four words each appearing twice) and **Number of unique Pronoun Dolch words** will be four.
+Below this is the **Dolch Words** section, which lists all the raw Dolch word counts, broken down by category. Each category includes its total and unique counts of words found in the document. For example, let us say that four unique words from the pronoun list are found in the document, each appearing twice. In this case, **Number of Pronoun Dolch words** will be eight (four words each appearing twice) and **Number of unique Pronoun Dolch words** will be four.
 
 Note that there may be a slight discrepancy between a category's coverage value and its unique word count. This will happen if your document contains variations of certain words, such as “ask” and “asked.” The program will treat morphological variations of a word the same as its root word when calculating coverage statistics. However, when calculating unique word statistics, different forms of words will be counted separately. For example, the words “asked” and “asking” will be counted as separate unique words; however, they both will be seen as “ask” when calculating the verb-list coverage.
 
-To graphically view the *Dolch* words breakdown, click on the [**Word Counts**](#reviewing-dolch-graphs) subitem. This will display a bar chart of these statistics, listed by category.
+To graphically view the Dolch words breakdown, click on the [**Word Counts**](#reviewing-dolch-graphs) subitem. This will display a bar chart of these statistics, listed by category.
 
 ### Reviewing the Dolch Graphs {-#reviewing-dolch-graphs}
 
-After opening a project, click on the *Dolch Sight Words* icon on the project sidebar. There are two graphs available for review: **Dolch Coverage** and **Word Counts**.
+After opening a project, click on the **Dolch Sight Words** icon on the project sidebar. There are two graphs available for review: **Dolch Coverage** and **Word Counts**.
 
 The **Dolch Coverage** graph displays how much of each category is used in the document. Refer to \@ref(reviewing-dolch) for more information.
 
 ![](Images/DolchCoverageChart.png)
 
-As we can see in the above graph, 87.5% of the *Dolch* prepositions are used in the document. Pronouns and adverbs are also well covered with 76.9% and 73.5%, respectively. However, less than half of the *Dolch* adjectives and nouns are used in the document. From this, we can see that this document may be useful for some *Dolch* categories, but not others.
+As we can see in the above graph, 87.5% of the Dolch prepositions are used in the document. Pronouns and adverbs are also well covered with 76.9% and 73.5%, respectively. However, less than half of the Dolch adjectives and nouns are used in the document. From this, we can see that this document may be useful for some Dolch categories, but not others.
 
-The **Words Breakdown** graph displays all the raw *Dolch* word counts, broken down by category. Refer to \@ref(reviewing-dolch) for more information.
+The **Words Breakdown** graph displays all the raw Dolch word counts, broken down by category. Refer to \@ref(reviewing-dolch) for more information.
 
 ![](Images/DolchWordBreakdown.png)
 
-As we can see in the above graph, there are 938 total *Dolch* words used in this document. Unfortunately, there are also 489 non-*Dolch* words. Although there is a strong number of *Dolch* words, the high number of non-*Dolch* words may make this document a poor candidate for practicing *Dolch* sight words.
+As we can see in the above graph, there are 938 total Dolch words used in this document. Unfortunately, there are also 489 non-Dolch words. Although there is a strong number of Dolch words, the high number of non-Dolch words may make this document a poor candidate for practicing Dolch sight words.
 
 ### Reviewing the Dolch Highlighted Text {-#reviewing-dolch-text}
 
-After opening a project, click on the *Dolch Sight Words* icon on the project sidebar. There will be two types of highlighted text reports available: **Dolch Words** and **Non-Dolch Words**.
+After opening a project, click on the **Dolch Sight Words** icon on the project sidebar. There will be two types of highlighted text reports available: **Dolch Words** and **Non-Dolch Words**.
 
-The **Dolch Words** subitem will display the document with the *Dolch* words highlighted:
+The **Dolch Words** subitem will display the document with the Dolch words highlighted:
 
 ![](Images/dolchhighlightedwords.png)
 
@@ -613,34 +613,34 @@ To customize category highlighting, click the `r keys("Properties")` button on t
 
 Here you can choose which categories to highlight and select their respective highlight colors.
 
-The **Non-Dolch Words** subitem will display the document with all the non-*Dolch* words (words that do not appear in any of the *Dolch* lists) highlighted:
+The **Non-Dolch Words** subitem will display the document with all the non-Dolch words (words that do not appear in any of the Dolch lists) highlighted:
 
 ![](Images/dolchhighlightednonwords.png)
 
 ### Reviewing the Dolch Word Lists {-#reviewing-dolch-lists}
 
-After opening a project, click on the *Dolch Sight Words* icon on the project sidebar. There will be three types of word lists available: **Dolch Words**, **Non-Dolch Words**, and **Unused Dolch Words**.
+After opening a project, click on the **Dolch Sight Words** icon on the project sidebar. There will be three types of word lists available: **Dolch Words**, **Non-Dolch Words**, and **Unused Dolch Words**.
 
-The **Dolch Words** subitem will display a list of the *Dolch* words from the document:
+The **Dolch Words** subitem will display a list of the Dolch words from the document:
 
 ![](Images/dolchwordslist.png)
 
-Next to each word will be two columns. The first column is **Frequency**, which will represent the number of times the word appears in the file. The second column is **Category**, which represents the *Dolch* category to which the word belongs.
+Next to each word will be two columns. The first column is **Frequency**, which will represent the number of times the word appears in the file. The second column is **Category**, which represents the Dolch category to which the word belongs.
 
 Double-click on any word in this list to display the [**Dolch Words**](#reviewing-dolch-text) text report with the first instance of that word selected.
 
-The **Non-Dolch Words** subitem will display a list of the words from the document that do not appear on any of the *Dolch* lists:
+The **Non-Dolch Words** subitem will display a list of the words from the document that do not appear on any of the Dolch lists:
 
 ![](Images/dolchnonwordslist.png)
 
 Next to each word will be a **Frequency** column, which will represent the number of times the word appears in the file.
 
-A high volume of non-*Dolch* words will adversely affect a document's ability to be a good *Dolch* practice tool. If the non-*Dolch* word count is high, consider replacing or removing words from this list that have high frequency counts.
+A high volume of non-Dolch words will adversely affect a document's ability to be a good Dolch practice tool. If the non-Dolch word count is high, consider replacing or removing words from this list that have high frequency counts.
 
 Double-click on any word in this list to display the [**Non-Dolch Words**](#reviewing-dolch-text) text report with the first instance of that word selected.
 
-The **Unused Dolch Words** subitem will display a list of the *Dolch* words that do not appear in the document:
+The **Unused Dolch Words** subitem will display a list of the Dolch words that do not appear in the document:
 
 ![](Images/dolchunusedwordslist.png)
 
-Next to each word will be a **Category** column, which represents the *Dolch* category that the word belongs to. If your document has low [coverage](#reviewing-dolch) of a category that you are targeting, try adding the words listed here to the document.
+Next to each word will be a **Category** column, which represents the Dolch category that the word belongs to. If your document has low [coverage](#reviewing-dolch) of a category that you are targeting, try adding the words listed here to the document.
