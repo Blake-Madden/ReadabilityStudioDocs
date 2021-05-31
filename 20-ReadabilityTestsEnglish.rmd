@@ -141,29 +141,6 @@ $$
 \index{Coleman-Liau|)}
 
 \newpage
-## New Dale-Chall\index{New Dale-Chall|(ii} {#dale-chall-test}
-
-The New Dale-Chall\index{Dale-Chall!zzzzz@\igobble|seealso{New Dale-Chall}}readability test (Chall *Manual*, 1-7) calculates the grade level of a document based on sentence length and number of unfamiliar words. Words are unfamiliar if they do not appear on a list of 3,000 common words that are known to most 4^th^-grade students. The following are also considered familiar:
-
-- Regular plural and possessive forms of common words (i.e., “s,” “es,” and “ies” endings). Irregular forms (e.g., “oxen”) are not familiar.
-- Adjectival and verb forms of common words with the following endings: “d,” “ed,” “ied,” “ing,” “s,” “es,” “ies,” “r,” “er,” “est,” “ier,” “iest.”
-- Compound and hyphenated words if both parts of the word are common words. For example, “long-haired” and “and/or” would be familiar. Note that forward slashes (‘/’) are also treated as compound-word punctuation.
-- The [first instance of any proper noun](#options-dale-chall)—all subsequent occurrences are considered familiar.
-- All numerals.
-
-::: {.notesection data-latex=""}
-This test treats headers and subheaders as full sentences, but excludes lists and tables. The default [text exclusion](#options-text-exclusion) method will be overridden for this specific test, although this behavior can be customized from the [**Options**](#readability-test-options) dialog.
-:::
-
-The initial version of this test (Dale and Chall, “A Formula for Predicting Readability”) was a multiple regression trained against 376 passages from McCall-Crabbs *Standard Test Lessons in Reading*. After comparing the results of this formula against other tests (such as Flesch and Lorge), it was validated against manually judged reading levels from other materials. These materials included “fifty-passages of health-education materials” (18) with a correlation of $r = 0.92$. Also included were “78 passages on foreign affairs from current-events magazines, government pamphlets, and newspapers” (18) with a correlation of $r = 0.90$.
-
-The New Dale-Chall test replaces this regression equation by looking up the factors' intersection in a table and returning a grade range (e.g., “4” or “7-8”). (This grade range is a notable difference from other tests that use [floating-point precision](#grade-level-results) grade levels.) It also includes an updated version of the 3,000 common words.
-
-Because this test is based on the usage of familiar words (rather than syllable or letter counts), it is often regarded as a more accurate test for younger readers.
-
-\index{New Dale-Chall|)}
-
-\newpage
 
 ## Danielson-Bryan 1\index{Danielson-Bryan 1|(ii} {#danielson-bryan-1}
 
@@ -389,48 +366,6 @@ Where:
 | S   | Number of sentences |
 
 \index{Easy Listening Formula|)}
-
-\newpage
-## McAlpine EFLAW\index{McAlpine EFLAW|(ii} {#eflaw-test}
-
-The McAlpine EFLAW^©^ formula (McAlpine) is used to determine the ease of reading English text for ESL/EFL (English as a Second/Foreign Language) readers. This test calculates the index score of a document based on sentence length and number of miniwords (i.e., words that contain three or less letters).
-
-Where most other formulas penalize longer words, this test does the opposite, penalizing the use of miniwords. This is because it is designed for ESL readers, as McAlpine explains: “Miniwords are confusing because they have many meanings and are often a sign of wordiness or idioms. . . . these flaws bamboozle EFL readers.”
-
-To improve a score, McAlpine recommends lowering the use of miniwords and shortening all sentences to 20 words or less. She also recommends avoiding the following:
-
-- double negatives
-- negative questions (e.g., “Are you *not* currently an Ohio resident?”)
-- idioms/clichés (e.g., “tip of the iceberg”)
-- helper (auxiliary) verbs (e.g., “can,” “may”)
-- abstract nouns (e.g., “peace,” “tension”)
-- use of pronouns that may be unclear (e.g., “Gabi visited her mother after *she* was released from the hospital.”)
-
-```{definition, eflaw, name="McAlpine EFLAW formula"}
-$$
-I = (W + T) / S
-$$
-```
-
-Where:
-
-|     | Description |
-| :-- | :-- |
-| I   | The index score |
-| W   | Number of words |
-| T   | Number of miniwords |
-| S   | Number of sentences |
-
-| EFLAW Score | Description |
-| :-- | :-- |
-| 1-20 | Very easy to understand |
-| 21-25 | Quite easy to understand |
-| 26-29 | Mildly difficult |
-| 30+ | Very confusing |
-
-Table: McAlpine EFLAW index table
-
-\index{McAlpine EFLAW|)}
 
 \newpage
 
@@ -855,6 +790,50 @@ Table: Lix Grade-level Conversion Table\index{Lix|)}
 ```
 
 \newpage
+
+## McAlpine EFLAW\index{McAlpine EFLAW|(ii} {#eflaw-test}
+
+The McAlpine EFLAW^©^ formula (McAlpine) is used to determine the ease of reading English text for ESL/EFL (English as a Second/Foreign Language) readers. This test calculates the index score of a document based on sentence length and number of miniwords (i.e., words that contain three or less letters).
+
+Where most other formulas penalize longer words, this test does the opposite, penalizing the use of miniwords. This is because it is designed for ESL readers, as McAlpine explains: “Miniwords are confusing because they have many meanings and are often a sign of wordiness or idioms. . . . these flaws bamboozle EFL readers.”
+
+To improve a score, McAlpine recommends lowering the use of miniwords and shortening all sentences to 20 words or less. She also recommends avoiding the following:
+
+- double negatives
+- negative questions (e.g., “Are you *not* currently an Ohio resident?”)
+- idioms/clichés (e.g., “tip of the iceberg”)
+- helper (auxiliary) verbs (e.g., “can,” “may”)
+- abstract nouns (e.g., “peace,” “tension”)
+- use of pronouns that may be unclear (e.g., “Gabi visited her mother after *she* was released from the hospital.”)
+
+```{definition, eflaw, name="McAlpine EFLAW formula"}
+$$
+I = (W + T) / S
+$$
+```
+
+Where:
+
+|     | Description |
+| :-- | :-- |
+| I   | The index score |
+| W   | Number of words |
+| T   | Number of miniwords |
+| S   | Number of sentences |
+
+| EFLAW Score | Description |
+| :-- | :-- |
+| 1-20 | Very easy to understand |
+| 21-25 | Quite easy to understand |
+| 26-29 | Mildly difficult |
+| 30+ | Very confusing |
+
+Table: McAlpine EFLAW index table
+
+\index{McAlpine EFLAW|)}
+
+\newpage
+
 ## Modified SMOG\index{Modified SMOG|(ii} {#modified-smog}
 
 The Modified SMOG\index{SMOG!variations!Modified SMOG} test (L. Smith 129-132) calculates the grade level of a document based on sentence length and number of difficult (i.e., 3 or more syllable) words and is designed for primary and secondary-age materials.
@@ -924,6 +903,31 @@ The simplified version of this formula uses lower precision. It was originally o
 Refer to \@ref(new-ari)\index{New Automated Readability Index!variations!New Automated Readability Index (simplified)}}.
 
 \newpage
+
+## New Dale-Chall\index{New Dale-Chall|(ii} {#dale-chall-test}
+
+The New Dale-Chall\index{Dale-Chall!zzzzz@\igobble|seealso{New Dale-Chall}}readability test (Chall *Manual*, 1-7) calculates the grade level of a document based on sentence length and number of unfamiliar words. Words are unfamiliar if they do not appear on a list of 3,000 common words that are known to most 4^th^-grade students. The following are also considered familiar:
+
+- Regular plural and possessive forms of common words (i.e., “s,” “es,” and “ies” endings). Irregular forms (e.g., “oxen”) are not familiar.
+- Adjectival and verb forms of common words with the following endings: “d,” “ed,” “ied,” “ing,” “s,” “es,” “ies,” “r,” “er,” “est,” “ier,” “iest.”
+- Compound and hyphenated words if both parts of the word are common words. For example, “long-haired” and “and/or” would be familiar. Note that forward slashes (‘/’) are also treated as compound-word punctuation.
+- The [first instance of any proper noun](#options-dale-chall)—all subsequent occurrences are considered familiar.
+- All numerals.
+
+::: {.notesection data-latex=""}
+This test treats headers and subheaders as full sentences, but excludes lists and tables. The default [text exclusion](#options-text-exclusion) method will be overridden for this specific test, although this behavior can be customized from the [**Options**](#readability-test-options) dialog.
+:::
+
+The initial version of this test (Dale and Chall, “A Formula for Predicting Readability”) was a multiple regression trained against 376 passages from McCall-Crabbs *Standard Test Lessons in Reading*. After comparing the results of this formula against other tests (such as Flesch and Lorge), it was validated against manually judged reading levels from other materials. These materials included “fifty-passages of health-education materials” (18) with a correlation of $r = 0.92$. Also included were “78 passages on foreign affairs from current-events magazines, government pamphlets, and newspapers” (18) with a correlation of $r = 0.90$.
+
+The New Dale-Chall test replaces this regression equation by looking up the factors' intersection in a table and returning a grade range (e.g., “4” or “7-8”). (This grade range is a notable difference from other tests that use [floating-point precision](#grade-level-results) grade levels.) It also includes an updated version of the 3,000 common words.
+
+Because this test is based on the usage of familiar words (rather than syllable or letter counts), it is often regarded as a more accurate test for younger readers.
+
+\index{New Dale-Chall|)}
+
+\newpage
+
 ## New Farr-Jenkins-Paterson\index{New Farr-Jenkins-Paterson|(ii} {#new-farr-jenkins-paterson}
 
 The New Farr-Jenkins-Paterson readability formula (Kincaid et al., *Derivation* 17) calculates the grade level of a document based on sentence length and number of monosyllabic words.
