@@ -12,7 +12,7 @@ The top area of the **Scores** window is the score grid. In here there are four 
 - **Scale Value**: the index value for tests that use special scales.
 - [**Predicted Cloze Score**](#cloze): the estimated score if the document were to be used for a *cloze* test. Note that *cloze* scores will be displayed in percentage format (i.e., 0–100) instead of floating-point format (i.e., .0–1.0) for easier reading.
 
-Note that most tests have just one type of result (e.g., grade level), so non-applicable columns are left blank. For example, note below that the [*Gunning Fog*](#gunning-fog-test) result is a grade level of 8.3. This translates to an eighth grade level reader (in his or her third month of class). Because this test only returns a grade level and age, the **Scale Value** and **Predicted Cloze Score** columns are empty. Another example is the result for the [*Flesch Reading Ease*](#flesch-test) test, which has a scale value of 79. This test has its own scale (instead of a grade level) so its age, grade level, and cloze columns are empty.
+Note that most tests have just one type of result (e.g., grade level), so non-applicable columns are left blank. For example, note below that the [*Gunning Fog*](#gunning-fog-test) result is a grade level of 8.3. This translates to an eighth grade level reader (in his or her third month of class). Because this test only returns a grade level and age, the **Scale Value** and **Predicted Cloze Score** columns are empty. Another example is the result for the [Flesch Reading Ease](#flesch-test) test, which has a scale value of 79. This test has its own scale (instead of a grade level) so its age, grade level, and cloze columns are empty.
 
 When a grade-level test scores a document at its maximum value, a “+” will be appended to the score. Although most grade-level tests can score up to 19, some tests which are designed for primary and secondary education materials will have lower maximum scores. For example, [Wheeler-Smith](#wheeler-smith)\index{Wheeler-Smith} is designed for primary-age materials and its maximum score is the fourth-grade level. If a document's Wheeler-Smith score is 4, then it will be displayed as “4+.”
 
@@ -28,11 +28,11 @@ When calculating these statistics, failed test scores are treated as missing obs
 
 To remove any test from this list, select it and press `r keys("CTRL")`+`r keys("DELETE")` (`r macOS_cmd_key()`+`r keys("DELETE")` on macOS) on your keyboard. To edit a [custom test](#creating-custom-test), double click on it in this list. To view the help for a standard test, double click on it in this list.
 
-There will also be graphs in this section if you had included the [Fry](#reviewing-readability-graphs) , [Gilliam-Peña-Mountain](#gilliam-pena-mountain-fry-graph)\index{Gilliam-Peña-Mountain}, [Raygor](#reviewing-readability-graphs), [*Flesch*](#flesch-test), or [FRASE](#frase)\index{FRASE} tests. Refer to \@ref(reviewing-readability-graphs) for further information.
+There will also be graphs in this section if you had included the [Fry](#reviewing-readability-graphs) , [Gilliam-Peña-Mountain](#gilliam-pena-mountain-fry-graph)\index{Gilliam-Peña-Mountain}, [Raygor](#reviewing-readability-graphs), [Flesch](#flesch-test), or [FRASE](#frase)\index{FRASE} tests. Refer to \@ref(reviewing-readability-graphs) for further information.
 
 ## Readability Graphs {#reviewing-readability-graphs}
 
-There are numerous readability tests that are graphically plotted, including [Fry](#fry-test), [Raygor](#raygor-test), [*Flesch*](#flesch-test), [Lix](#lix-test), [Gilliam-Peña-Mountain](#gilliam-pena-mountain-fry-graph), [FRASE](#frase), [Crawford](#crawford)\index{Crawford}, and [*Schwartz*](#scwartz). These graphs consist of either grade-level or reading-level regions that a document may fall within. They also include indicators for the most influential factor for the document's reported level (i.e., word difficulty vs. sentence difficulty).
+There are numerous readability tests that are graphically plotted, including [Fry](#fry-test), [Raygor](#raygor-test), [Flesch](#flesch-test), [Lix](#lix-test), [Gilliam-Peña-Mountain](#gilliam-pena-mountain-fry-graph), [FRASE](#frase), [Crawford](#crawford)\index{Crawford}, and [*Schwartz*](#scwartz). These graphs consist of either grade-level or reading-level regions that a document may fall within. They also include indicators for the most influential factor for the document's reported level (i.e., word difficulty vs. sentence difficulty).
 
 To view these graphs, click on the **Test Graphs & Charts** icon in a [standard project](#creating-standard-project) or the **Readability Graphs** icon in a [batch project](#creating-batch-project).
 
@@ -46,7 +46,7 @@ To read this graph, search for the red data point–this value represents the do
 
 Running through each slice is a gray line, which is a separator to help show the most predominate cause of the document's difficulty. If the data point is above the gray line, then the strongest influence on the document's difficulty is high-syllable words. If it is below the line, then the strongest influence is long sentences. In the above example, it is above the line, implying that it is slightly more influenced by high-syllable words. However, because it is fairly close to the line, this document is well balanced between difficult words and difficult sentences.
 
-If the data point does not fall inside of a slice then the test will fail. For example, the Raygor\index{Raygor} graph below indicates that the document's overly-long words caused the test to fail:
+If the data point does not fall inside of a slice then the test will fail. For example, the Raygor\index{Raygor Estimate} graph below indicates that the document's overly-long words caused the test to fail:
 
 ```{r raygorBadGrade, echo=F, fig.cap='Raygor Graph', fig.align='center'}
 knitr::include_graphics("Images/raygorbadgrade.png")
@@ -88,19 +88,19 @@ knitr::include_graphics("Images/CrawfordGraph.png")
 
 In the above graph, we can see that the intersection of the factors is 175 and 7. The number of syllables is 175 (Y axis). The number of sentences is approximately 7 (between 8.4 and 5.9 on the plot [corresponding to 175 on the Y axis]). From this intersection, the point's X axis value is 3.7. Hence, 3.7 is the grade-level score for this graph.
 
-The *Flesch* chart plots a document's factors onto a pair of “rulers” and then connects them to determine the *Flesch* score. This score ranges from 0 (“very difficult”) to 100 (“very easy”). Below is an example of a *Flesch* chart:
+The Flesch\index{Flesch Reading Ease!chart} chart plots a document's factors onto a pair of “rulers” and then connects them to determine the Flesch score. This score ranges from 0 (“very difficult”) to 100 (“very easy”). Below is an example of a *Flesch* chart:
 
 ```{r fleschChart2, echo=F, fig.cap='Flesch Chart', fig.align='center'}
 knitr::include_graphics("Images/FleschChart.png")
 ```
 
-*Danielson-Bryan 2*—a variation of *Flesch Reading Ease*— includes a similar graphic, which also includes grade-level information:
+Danielson-Bryan 2\index{Danielson-Bryan 2!plot}—a variation of Flesch Reading Ease— includes a similar graphic, which also includes grade-level information:
 
 ```{r db2Plot2, echo=F, fig.cap='Danielson-Bryan 2 Plot', fig.align='center'}
 knitr::include_graphics("Images/DB2Plot.png")
 ```
 
-Similar to a *Flesch* chart, the Lix gauge\index{Lix!gauge plot} plots a document's Lix index score on a chart showing its difficulty level:
+Similar to a Flesch chart, the Lix gauge\index{Lix!gauge plot} plots a document's Lix index score on a chart showing its difficulty level:
 
 ```{r lixGuage2, echo=F, fig.cap='Lix Gauge', fig.align='center'}
 knitr::include_graphics("Images/LixGauge.png")
@@ -141,8 +141,8 @@ If a project contains goals, then a **Goals** section will be available to show 
 In the above image, we can see that this project is recommending:
 
 - Fry should not be higher than 10
-- *Flesch Reading Ease* should be higher than 60
-- *ELF* should not be higher than 12
+- Flesch Reading Ease should be higher than 60
+- Easy Listening Formula should not be higher than 12
 
 Also, the warning icons indicate that currently the document is failing to meet all these criteria.
 
@@ -201,7 +201,7 @@ The types of difficult-word lists that may be shown are:
 
 **Spache (Unfamiliar)**: This list displays all the document's words that are not in the *Spache* familiar words list and their respective frequency counts. The [*Spache*](#spache-test) word list is a collection of words that are considered to be familiar to most primary-age readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the *Spache* test is included in the project.
 
-**Harris-Jacobson (Unfamiliar)**: This list displays all the document's words that are not in the *Harris-Jacobson* familiar words list and their respective frequency counts. The [*Harris-Jacobson*](#harris-jacobson) word list is a collection of words that are considered to be familiar to most second-grade readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the *Harris-Jacobson* test is included in the project.
+**Harris-Jacobson (Unfamiliar)**: This list displays all the document's words that are not in the Harris-Jacobson\index{Harris-Jacobson Wide Range} familiar words list and their respective frequency counts. The [*Harris-Jacobson*](#harris-jacobson) word list is a collection of words that are considered to be familiar to most second-grade readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the *Harris-Jacobson* test is included in the project.
 
 **All Words**: This list displays all the words from the document and their respective frequency counts.
 
@@ -233,7 +233,7 @@ The different types of text reports that may be shown are:
 
 **Spache (Unfamiliar)**: This text report contains the document with all the [*Spache*](#spache-test) unfamiliar words highlighted. The *Spache* word list is a collection of words that are considered to be familiar to most primary-age readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the *Spache* test is included in the project.
 
-**Harris-Jacobson (Unfamiliar)**: This text report contains the document with all the [*Harris-Jacobson*](#harris-jacobson) unfamiliar words highlighted. The *Harris-Jacobson* word list is a collection of words that are considered to be familiar to most primary-age readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the *Harris-Jacobson* test is included in the project.
+**Harris-Jacobson (Unfamiliar)**: This text report contains the document with all the [Harris-Jacobson](#harris-jacobson)\index{Harris-Jacobson Wide Range} unfamiliar words highlighted. The *Harris-Jacobson* word list is a collection of words that are considered to be familiar to most primary-age readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the *Harris-Jacobson* test is included in the project.
 
 You can change both the font and highlighting color by opening the [**Project Properties**](#options-overview) dialog and clicking the [**Highlighted Reports**](#options-highlighted-reports) icon. Note that changing these options from the **Project Properties** dialog will only affect the current project. If you want to make changes to any future projects, then go to the **Options** dialog from the **Tools** tab instead.
 

@@ -4,19 +4,19 @@ In this chapter, we will step through examples showing how to create different t
 
 With custom tests, you can create enhanced versions of existing tests like *New Dale-Chall* that include your own word list. You can also create entirely new tests with your own formulas, and design them to return either grade-level, predicted *cloze*, or index scores.
 
-## Creating a Modified *Flesch* Test {#creating-custom-flesch-test}
+## Creating a Modified Flesch Test {#creating-custom-flesch-test}
 
 In this example, we will create a custom test. Custom tests are useful for either creating an entirely new formula or a new one based on an existing formula.
 
-For this example, we will use the [*Flesch*](#flesch-test) formula for our basis. We will take the standard *Flesch* formula and substitute its sentence count factor with independent clause count. This will effectively create a formula which does not penalize documents for containing numerous compound sentences.
+For this example, we will use the [Flesch](#flesch-test)\index{Flesch Reading Ease!creating a custom variant} formula for our basis. We will take the standard Flesch formula and substitute its sentence count factor with independent clause count. This will effectively create a formula which does not penalize documents for containing numerous compound sentences.
 
-The first step to creating a new test is to click the `r keys("Custom Tests")` button on the **Readability** tab and select **Add Test Based on...** from the menu. This will present a dialog containing formula-based tests; select *Flesch Reading Ease* and click `r keys("OK")`.
+The first step to creating a new test is to click the `r keys("Custom Tests")` button on the **Readability** tab and select **Add Test Based on...** from the menu. This will present a dialog containing formula-based tests; select **Flesch Reading Ease** and click `r keys("OK")`.
 
 Because this test will use independent clauses, change the name to “Flesch (IC)”:
 
 ![](Images/CustomTestExample1TestName.png)
 
-Next, we will change the formula. The formula for *Flesch* is defined as:
+Next, we will change the formula. The formula for Flesch is defined as:
 
 $$
 I = 206.835 - (84.6*(B/W)) - (1.015*(W/S))
@@ -50,7 +50,7 @@ By default, all formula results will be returned with floating-point precision. 
 ROUND(206.835 - (84.6*(B/W)) - (1.015*(W/S)), 0)
 ```
 
-This formula will yield the same results as the *Flesch* test. For this example, we will have our new test count independent clauses instead of sentences. To do this, change `SentenceCount()` (or `S`) to `IndependentClauseCount()` (or `U`). For example:
+This formula will yield the same results as the Flesch test. For this example, we will have our new test count independent clauses instead of sentences. To do this, change `SentenceCount()` (or `S`) to `IndependentClauseCount()` (or `U`). For example:
 
 ```{r, eval=F, echo=T}
 ROUND(206.835 - (84.6*(B/W)) - (1.015*(W/U)), 0)
@@ -63,7 +63,7 @@ ROUND(206.835 - (84.6*(SyllableCount()/WordCount())) -
     (1.015*(WordCount()/IndependentClauseCount())), 0)
 ```
 
-The final step is to specify the type of test that this is. *Flesch Reading Ease* is an index test, so verify that the test type is set to **Index**. This will instruct the program to place the result into the **Scale Value** column (see below).
+The final step is to specify the type of test that this is. Flesch Reading Ease is an index test, so verify that the test type is set to **Index**. This will instruct the program to place the result into the **Scale Value** column (see below).
 
 Once finished, the dialog will look like this:
 

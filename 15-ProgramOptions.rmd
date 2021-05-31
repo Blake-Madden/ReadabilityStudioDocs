@@ -45,10 +45,10 @@ Note that selecting **System** will reset the program colors to the system's def
 - **Warn about documents that contain sentences split by paragraph breaks.** This warning is shown when a document being analyzed contains what appears to be sentences with paragraph breaks in them. In this situation, the sentences will not be indexed properly, and it is recommended to fix to the document.
 - **Warn about documents that contain long incomplete sentences that will be included in the analysis.** This warning is shown when a document being analyzed contains sentences that, although missing terminating punctuation, will be included in the analysis because of their length. To change this behavior, adjust the option [Include incomplete sentences containing more than [15] words](#options-text-exclusion).
 - **Prompt if a document should switch to include sentences in the analysis.** If a document is excluding a high volume of incomplete sentences, then you will be prompted about switching to include those sentences in the analysis.
-- **Prompt if a custom NDC test's proper noun settings differ from the standard NDC test.** By default, [*New Dale-Chall*](#dale-chall-test) requires that the first instance of each proper noun be seen as unfamiliar. If you are creating a custom *New Dale-Chall* test which uses different proper-noun logic, then you will be prompted whether this is your intent.
-- **Prompt about New Dale-Chall using a different text exclusion method from the system default.** By default, *New Dale-Chall* uses its own method for excluding text, which may differ from the system default's method. This message will be shown to warn about this.
-- **Prompt about Harris-Jacobson using a different text exclusion method from the system default.** By default, *Harris-Jacobson* uses its own method for excluding text, which may differ from the system default's method. This message will be shown to warn about this.
-- **Warn when a custom test's numeral settings will be adjusted.** Some tests (e.g., [*Harris-Jacobson*](#harris-jacobson)) require numerals to be excluded from the analysis. This warning will be shown if a custom test needs its numeral settings adjusted to take such rules into account.
+- **Prompt if a custom NDC test's proper noun settings differ from the standard NDC test.** By default, [New Dale-Chall](#dale-chall-test) requires that the first instance of each proper noun be seen as unfamiliar. If you are creating a custom New Dale-Chall test which uses different proper-noun logic, then you will be prompted whether this is your intent.
+- **Prompt about New Dale-Chall using a different text exclusion method from the system default.** By default, New Dale-Chall uses its own method for excluding text, which may differ from the system default's method. This message will be shown to warn about this.
+- **Prompt about Harris-Jacobson using a different text exclusion method from the system default.** By default, Harris-Jacobson uses its own method for excluding text, which may differ from the system default's method. This message will be shown to warn about this.
+- **Warn when a custom test's numeral settings will be adjusted.** Some tests (e.g., [Harris-Jacobson](#harris-jacobson)) require numerals to be excluded from the analysis. This warning will be shown if a custom test needs its numeral settings adjusted to take such rules into account.
 - **Warn about German stemming not supporting proper noun detection.** This warning is shown when creating a custom test that uses German stemming and treats proper nouns as familiar.
 - **Warn about unique-value histograms requiring midpoint axis labels.** If you specify unique values as your histogram [bin sorting](#options-histograms) method, then midpoint interval display will need to be used. Because each bin (i.e., bar) will represent only one value, the histograms will not have ranges of values for its intervals. Therefore, cutpoints will not be applicable and midpoint axis labels will be used instead. If you have cutpoints as the interval type and choose unique-value bin sorting, then this warning will be shown before adjusting the interval display.
 - **Prompt about auto-searching for missing files.** By default, projects link to the documents that they analyze. When you open a project, the document will be reanalyzed to include any recent changes. If the document cannot be found, then the program will ask if it should search for a document by the same name. This search will be relative to the project file's location. Unchecking this option will suppress this prompt and the program will automatically search for and load the document.
@@ -190,7 +190,7 @@ These options control how text is excluded from your documents.
 Lines of text that resemble equations will continue to be marked as incomplete. Also, if **Aggressively exclude** is enabled, then list items with more words than this threshold will also continue to be excluded.
 :::
 
-Note that if you are not excluding any text, this option will still take effect for tests which explicitly exclude headers (e.g., *Harris-Jacobson*).
+Note that if you are not excluding any text, this option will still take effect for tests which explicitly exclude headers (e.g., Harris-Jacobson\index{Harris-Jacobson Wide Range!header exclusion}).
 
 **Aggressively exclude**: Select this option to mark any valid sentence as incomplete if a). it is between at least two incomplete sentences and b). is less than 10 words. For example:
 
@@ -339,7 +339,7 @@ This option affects the *Gunning Fog*, *(PSK) Gunning Fog*, and *New Fog Count* 
 Numeral syllabication
 :::
 
-Select one of the following options to control how numerals are syllabized for *Flesch* related tests.
+Select one of the following options to control how numerals are syllabized for Flesch\index{Flesch Reading Ease!customizing} related tests.
 
 **Count numerals as one syllable**: Select this option to consider all numerals as monosyllabic.
 
@@ -412,11 +412,11 @@ These options affect both the *New Dale-Chall* and *PSK Dale-Chall* tests. The *
 Text exclusion
 :::
 
-Select one of the following options to control how text is excluded in *Harris-Jacobson*:
+Select one of the following options to control how text is excluded in Harris-Jacobson:
 
-**Exclude incomplete sentences, except headings**: Select this option to have *Harris-Jacobson* include headers and subheaders in its analysis, but exclude lists and tables.
+**Exclude incomplete sentences, except headings**: Select this option to have Harris-Jacobson\index{Harris-Jacobson Wide Range!header exclusion!customizing} include headers and subheaders in its analysis, but exclude lists and tables.
 
-**Use system default**: Select this option to have *Harris-Jacobson* use the [default text exclusion](#options-text-exclusion) method used by other tests.
+**Use system default**: Select this option to have Harris-Jacobson use the [default text exclusion](#options-text-exclusion) method used by other tests.
 ::::
 
 ::: {.notesection data-latex=""}
@@ -479,7 +479,7 @@ The options on this page customize various readability graph settings.
 
 #### Flesch Chart {-#options-flesch-chart}
 
-**Connect points**: Check this to connect the factor and score points on the [*Flesch*](#flesch-test) chart.
+**Connect points**: Check this to connect the factor and score points on the [Flesch](#flesch-test)\index{Flesch Reading Ease!customizing} chart.
 
 #### Lix Gauge {-#options-lix-gauge}
 
@@ -541,7 +541,7 @@ The options on this page customize which results are included in the [**Words Br
 
 **Spache**: Check this to include the *Spache* unfamiliar words list in the results. (If *Spache* is included in the project).
 
-**Harris-Jacobson**: Check this to include the *Harris-Jacobson* unfamiliar words list in the results. (If *Harris-Jacobson* is included in the project).
+**Harris-Jacobson**: Check this to include the Harris-Jacobson unfamiliar words list in the results. (If Harris-Jacobson\index{Harris-Jacobson Wide Range} is included in the project).
 
 **Custom Tests**: Check this to include any custom tests' unfamiliar words lists in the results.
 

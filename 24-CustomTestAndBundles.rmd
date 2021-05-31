@@ -14,7 +14,7 @@ Next, enter the test's formula in the **Formula** field. Essentially, there are 
 
 - `CustomNewDaleChall()`: this will use the *New Dale-Chall* formula.
 - `CustomSpache()`: this will use the *Spache Revised* formula.
-- `CustomHarrisJacobson()`: this will use the *Harris Jacobson* formula.
+- `CustomHarrisJacobson()`: this will use the Harris Jacobson\index{Harris-Jacobson Wide Range!zzzzz@\igobble|seealso{\texttt{CustomHarrisJacobson()}}} formula.
 
 The second type of formula is a custom-built formula. For example, the formula for Lix is:
 
@@ -56,7 +56,7 @@ Next, you can specify which type of stemming (if any) to use. Stemming compares 
 
 If you are not using stemming, then it is recommended that you enter each inflected form of your words (e.g., possessive, plural) in your familiar-word list. For example, you would need “open,” “opens,” “opening,” etc. explicitly in your list for each form of “open” to be considered familiar.
 
-Along with your own word list, you can also use the *New Dale-Chall*, *Spache*, and *Harris-Jacobson* word lists. This enables you to make your word list an appendage to any of these standard tests, therefore creating your own extended version of these tests. This behavior can be toggled with the options shown below:
+Along with your own word list, you can also use the New Dale-Chall, Spache, and Harris-Jacobson\index{word lists!combining} word lists. This enables you to make your word list an appendage to any of these standard tests, therefore creating your own extended version of these tests. This behavior can be toggled with the options shown below:
 
 ![](Images/CustomTestIncludeLists.png)
 
@@ -174,7 +174,7 @@ Table: Statistical functions
 ```{block, type='onsamepage'}
 | Function | Description |
 | :-- | :-- |
-| CustomHarrisJacobson() | Performs a *Harris-Jacobson* test with a custom familiar word list. Note that this test will use the same text exclusion rules as *Harris-Jacobson* (overriding your system defaults). |
+| CustomHarrisJacobson()\index{CustomHarrisJacobson()@\texttt{CustomHarrisJacobson()}} | Performs a Harris-Jacobson test with a custom familiar word list. Note that this test will use the same text exclusion rules as Harris-Jacobson (overriding your system defaults). |
 | CustomNewDaleChall() | Performs a *New Dale-Chall* test with a custom familiar word list. Note that this test will use the same text exclusion rules as *New Dale-Chall* (overriding your system defaults). |
 | CustomSpache() | Performs a *Spache Revised* test with a custom familiar word list. |
 
@@ -205,21 +205,21 @@ So, to use MLA footnotes, we have to create psuedo footnotes below the table.
 
 Table: Document statistics functions
 
-^1^ Uses the [*Dale-Chall* text-exclusion](#options-dale-chall) method.
+^1^ Uses the [Dale-Chall text-exclusion](#options-dale-chall) method.
 
-^2^ Uses the [*Harris-Jacobson* text-exclusion method](#options-harris-jacobson).
+^2^ Uses the [Harris-Jacobson text-exclusion method](#options-harris-jacobson).
 
-^3^ Uses the [*Gunning Fog*](#options-gunning-fog) sentence-counting method.\
+^3^ Uses the [Gunning Fog](#options-gunning-fog) sentence-counting method.\
 This will be either traditional sentence counting or unit counting.
 ```
 
 | Function | Description |
 | :-- | :-- |
-| FamiliarDaleChallWordCount() | Returns the number of familiar *New Dale-Chall* words. |
-| FamiliarHarrisJacobsonWordCount() | Returns the number of familiar *Harris-Jacobson* words. |
-| FamiliarSpacheWordCount() | Returns the number of familiar *Spache* words. |
+| FamiliarDaleChallWordCount() | Returns the number of familiar New Dale-Chall words. |
+| FamiliarHarrisJacobsonWordCount() | Returns the number of familiar Harris-Jacobson words. |
+| FamiliarSpacheWordCount() | Returns the number of familiar Spache words. |
 | FamiliarWordCount() | Returns the number of familiar words (from a custom list) the document. |
-| HardFogWordCount() | Returns the number of difficult *Gunning Fog* words. |
+| HardFogWordCount() | Returns the number of difficult Gunning Fog words. |
 | MiniWordCount() | Returns the number of miniwords (refer to \@ref(eflaw-test)). |
 | NumeralCount() | Returns the number of numerals. |
 | OneSyllableWordCount() | Returns the number of monosyllabic words. |
@@ -227,15 +227,15 @@ This will be either traditional sentence counting or unit counting.
 | SevenCharacterPlusWordCount() | Returns the number of words consisting of seven or more characters. |
 | SixCharacterPlusWordCount() | Returns the number of words consisting of six or more characters. |
 | ThreeSyllablePlusWordCount() | Returns the number of words consisting of three or more syllables. This function takes an argument specifying which numeral syllabizing method to use: `Default` or `NumeralsFullySyllabized`. |
-| UnfamiliarDaleChallWordCount() | Returns the number of unfamiliar *New Dale-Chall* words. |
-| UnfamiliarHarrisJacobsonWordCount() | Returns the number of unfamiliar *Harris-Jacobson* words. |
-| UnfamiliarSpacheWordCount() | Returns the number of unfamiliar *Spache* words. |
+| UnfamiliarDaleChallWordCount() | Returns the number of unfamiliar New Dale-Chall words. |
+| UnfamiliarHarrisJacobsonWordCount() | Returns the number of unfamiliar Harris-Jacobson words. |
+| UnfamiliarSpacheWordCount() | Returns the number of unfamiliar Spache words. |
 | UnfamiliarWordCount() | Returns the number of unfamiliar words (from a custom list) the document. |
 | UniqueOneSyllableWordCount() | Returns the number of unique monosyllabic words. |
 | UniqueSixCharacterPlusWordCount() | Returns the number of unique words consisting of six or more characters. |
-| UniqueUnfamiliarDaleChallWordCount() | Returns the number of unique unfamiliar *New Dale-Chall* words. |
-| UniqueUnfamiliarHarrisJacobsonWordCount() | Returns the number of unique unfamiliar *Harris-Jacobson* words. |
-| UniqueUnfamiliarSpacheWordCount() | Returns the number of unique unfamiliar *Spache* words. |
+| UniqueUnfamiliarDaleChallWordCount() | Returns the number of unique unfamiliar New Dale-Chall words. |
+| UniqueUnfamiliarHarrisJacobsonWordCount() | Returns the number of unique unfamiliar Harris-Jacobson words. |
+| UniqueUnfamiliarSpacheWordCount() | Returns the number of unique unfamiliar Spache words. |
 | UniqueUnfamiliarWordCount() | Returns the number of unique unfamiliar words (from a custom list). |
 | UniqueThreeSyllablePlusWordCount() | Returns the number of unique words consisting of three or more syllables. This function takes an argument specifying which numeral syllabizing method to use: `Default` or `NumeralsFullySyllabized`. |
 | UniqueWordCount() | Returns the number of unique words. |
@@ -244,7 +244,7 @@ This will be either traditional sentence counting or unit counting.
 Table: Word statistics functions
 
 ::: {.notesection data-latex=""}
-*Dale-Chall* and *Harris-Jacobson* familiar word functions will take their respective test's text exclusion options into account.
+New Dale-Chall and Harris-Jacobson familiar word functions will take their respective test's text exclusion options into account.
 :::
 
 ```{block, type='onsamepage'}
@@ -326,7 +326,7 @@ If you are not stemming, then it is recommended to enter each inflected form of 
 
 **Include Spache Revised familiar word list**: Check this option to use the [*Spache Revised*](#spache-test) word list (along with any other selected word lists) to determine if a word is familiar.
 
-**Include Harris-Jacobson familiar word list**: Check this option to use the [*Harris-Jacobson*](#harris-jacobson) word list (along with any other selected word lists) to determine if a word is familiar.
+**Include Harris-Jacobson familiar word list**: Check this option to use the [Harris-Jacobson](#harris-jacobson) word list (along with any other selected word lists) to determine if a word is familiar.
 
 **Include Stocker's Catholic supplement**: Check this option to include [Stocker's supplementary word list](#stocker-catholic-supplement)\index{Stocker's Catholic Supplement} for Catholic students (along with any other selected word lists) to determine if a word is familiar.
 
@@ -370,7 +370,7 @@ Familiarity
 
 ## Adding a Custom-word Test {#add-custom-word-test}
 
-From the **Readability** tab, click the `r keys("Custom Test")` button and then select **Add Custom [Test]...** to display the **Add Custom [Test]** dialog. The following tests available are: *New Dale-Chall*, *Spache Revised*, and *Harris-Jacobson*. This dialog is used to create a [custom word test](#creating-custom-test) and is a simplified version of the standard [**Custom Test**](#creating-custom-test) dialog.
+From the **Readability** tab, click the `r keys("Custom Test")` button and then select **Add Custom [Test]...** to display the **Add Custom [Test]** dialog. The following tests available are: *New Dale-Chall*, *Spache Revised*, and Harris-Jacobson\index{Harris-Jacobson Wide Range!custom test}. This dialog is used to create a [custom word test](#creating-custom-test) and is a simplified version of the standard [**Custom Test**](#creating-custom-test) dialog.
 
 **Test name**: Enter the name of the new test (e.g., “Harris-Jacobson (Social Studies)”) into this field.
 

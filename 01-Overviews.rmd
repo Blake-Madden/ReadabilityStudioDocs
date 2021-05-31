@@ -187,10 +187,10 @@ Finally, **Readability Studio** is highly configurable. Many options, such as ho
 - Added [Schwartz test](#scwartz) (German projects only).
 - Added a graph to visualize Lix index scores.
 - Added a graph to visualize German Lix index scores.
-- Added a graph to visualize *Danielson-Bryan 2* scores.
+- Added a graph to visualize Danielson-Bryan 2 scores.
 - Rix now uses sentence units in its calculation to better match the test's recommendations.
 - Expanded the difficulty-level descriptions for the German Lix tests.
-- Instruction label now shown on all *Flesch* charts (not just blank ones).
+- Instruction label now shown on all Flesch charts (not just blank ones).
 - Added custom test features:
   - Added feature to create custom tests based on any existing formula-based test. Refer to \@ref(creating-custom-flesch-test) for an example.
   - Added `GunningFog` option to `SentenceCount()` function. This will return the sentence count using the system's [Gunning Fog method](#options-gunning-fog).

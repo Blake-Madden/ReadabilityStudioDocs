@@ -5,12 +5,10 @@
 \newcommand{\ii}[1]{{\it #1}}
 \newcommand{\nn}[1]{#1n}
 
-% to create a "see also" that appears at the bottom of the list
-% of subentries and with no page number, do the following:
-% \index{Main Entry!\lastentry@\seealsonocomma{Other item}|nopage}
-\def\seealsonocomma#1#2{{\em see also\/} #1} % the #2 consumes a comma
-\def\nopage#1{} % consume the page number
-\def\lastentry{zzzzzzz}
+% to create a "see also" that appears at the bottom of the
+% subentries and with no page number, do the following:
+% \index{Main entry!zzzzz@\igobble|seealso{Other item}}
+\def\igobble#1{}
 
 \usepackage{changepage}
 \usepackage{mdframed}
