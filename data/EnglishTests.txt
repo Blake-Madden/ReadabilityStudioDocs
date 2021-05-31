@@ -10,7 +10,8 @@ Degrees of Reading Power
 Degrees of Reading Power (GE)
 Easy Listening Formula
 McAlpine EFLAW©
-Farr, Jenkins, Paterson
+Farr-Jenkins-Paterson
+New Farr-Jenkins-Paterson
 Flesch Reading Ease
 Flesch-Kincaid
 FORCAST
@@ -19,10 +20,10 @@ Gunning Fog
 Harris-Jacobson
 Läsbarhetsindex (Lix)
 New Fog Count
-Dale-Chall (Powers, Sumner, Kearl)
-Farr, Jenkins, Paterson (Powers, Sumner, Kearl)
-Flesch Reading Ease (Powers, Sumner, Kearl)
-Gunning Fog (Powers, Sumner, Kearl)
+Dale-Chall (Powers-Sumner-Kearl)
+Farr-Jenkins-Paterson (Powers-Sumner-Kearl)
+Flesch Reading Ease (Powers-Sumner-Kearl)
+Gunning Fog (Powers-Sumner-Kearl)
 Raygor Estimate Graph
 Rate Index (Rix)
 SMOG
