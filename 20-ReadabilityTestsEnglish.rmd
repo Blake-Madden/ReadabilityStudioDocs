@@ -592,7 +592,7 @@ This test can optionally count independent clauses as separate sentences, as *Th
 The Meldorf^®^ statistical library is available in C++ source code–a low-level programming language–and in the form of a COM library–a Microsoft^®^ technology for inter-program communication; the COM library can be called from numerous languages, such as: Visual Basic, C#, and Delphi.
 :::
 
-If you treat independent clauses as separate sentences, then this will be seen as six small sentences and produce a Fog score of 10.2. If you count sentences just by looking for `.?!`, then this will be counted as a single 44-word sentence and produce a Fog score of 19. To penalize run-on sentences (which is recommended), then leave the option [count independent clauses as separate sentences](#readability-test-options) unchecked for this test.
+If you treat independent clauses as separate sentences, then this will be seen as six small sentences and produce a Fog score of 10.2. If you count sentences by only looking for ‘.,’ ‘?,’ or ‘!’, then this will be counted as a single 44-word sentence and produce a Fog score of 19. To penalize run-on sentences (which is recommended), then leave the option [**Count independent clauses as separate sentences**](#readability-test-options) unchecked for this test.
 
 ```{definition, gunningfog, name="Gunning Fog formula"}
 $$
