@@ -190,7 +190,7 @@ These options control how text is excluded from your documents.
 Lines of text that resemble equations will continue to be marked as incomplete. Also, if **Aggressively exclude** is enabled, then list items with more words than this threshold will also continue to be excluded.
 :::
 
-Note that if you are not excluding any text, this option will still take effect for tests which explicitly exclude headers (e.g., Harris-Jacobson\index{Harris-Jacobson Wide Range!header exclusion}).
+Note that if you are not excluding any text, this option will still take effect for tests which explicitly exclude headers (e.g., Harris-Jacobson\index{Harris-Jacobson Wide Range!customizing!header exclusion}).
 
 **Aggressively exclude**: Select this option to mark any valid sentence as incomplete if a). it is between at least two incomplete sentences and b). is less than 10 words. For example:
 
@@ -326,11 +326,11 @@ The options on this page customize the behavior of certain tests.
 
 #### Gunning Fog {-#options-gunning-fog}
 
-**Count independent clauses**: Check this option to count independent clauses as separate sentences when calculating a [*Gunning Fog*](#gunning-fog-test) score. Independent clauses are detected by dashes, colons, and semicolons within a sentence.
+**Count independent clauses**: Check this option to count independent clauses as separate sentences when calculating a [Gunning Fog](#gunning-fog-test) score. Independent clauses are detected by dashes, colons, and semicolons within a sentence.
 
 Although this behavior is recommended in *The Technique of Clear Writing*, it will produce lower scores than counting sentences with the [traditional method](#how-sentences-are-counted). This is especially true if your document contains run-on sentences. For example, if this option is checked, then an 80-word sentence with four clauses will be counted as four smaller sentences and will not adversely affect the score. If this option is unchecked, then this same sentence will be counted as a single 80-word sentence and will adversely affect the score. If you prefer to penalize run-on sentences, then leave this option unchecked.
 
-This option affects the *Gunning Fog*, *(PSK) Gunning Fog*, and *New Fog Count* tests.
+This option affects the Gunning Fog\index{Gunning Fog!customizing}, (PSK) Gunning Fog, and New Fog Count\index{New Fog Count!customizing} tests.
 
 #### Flesch {-#options-flesch}
 
@@ -368,14 +368,14 @@ Note that these options are not applicable if [**Also exclude numerals**](#optio
 
 #### Dale-Chall {-#options-dale-chall}
 
-**Include Catholic Supplement**: Check this option to include [Stocker's supplementary word list](#stocker-catholic-supplement)\index{Stocker's Catholic Supplement} for Catholic students.
+**Include Catholic Supplement**: Check this option to include [Stocker's supplementary word list](#stocker-catholic-supplement)\index{Stocker's Catholic Supplement!including with New Dale-Chall} for Catholic\index{New Dale-Chall!including Catholic words} students.
 
 :::: {.optionssection data-latex=""}
 ::: {.optionssectiontitle data-latex=""}
 Proper nouns
 :::
 
-Select one of the following options to control how proper nouns are treated by *Dale-Chall* related tests:
+Select one of the following options to control how proper nouns are treated by Dale-Chall\index{New Dale-Chall!customizing!proper noun classification} related tests:
 
 **Count as unfamiliar**: Select this option to consider all proper nouns (that do not appear on the familiar-word list) as unfamiliar.
 
@@ -389,17 +389,17 @@ Select one of the following options to control how proper nouns are treated by *
 Text exclusion
 :::
 
-Select one of the following options to control how text is excluded in *Dale-Chall* related tests:
+Select one of the following options to control how text is excluded in Dale-Chall\index{New Dale-Chall!customizing!text exclusion} related tests:
 
-**Exclude incomplete sentences, except headings**: Select this option to have *New Dale-Chall* include headers and subheaders in its analysis, but exclude lists and tables.
+**Exclude incomplete sentences, except headings**: Select this option to have New Dale-Chall include headers and subheaders in its analysis, but exclude lists and tables.
 
-**Use system default**: Select this option to have *New Dale-Chall* use the [default text exclusion](#options-text-exclusion) method used by other tests.
+**Use system default**: Select this option to have New Dale-Chall use the [default text exclusion](#options-text-exclusion) method used by other tests.
 ::::
 
 ::: {.notesection data-latex=""}
-These options affect both the *New Dale-Chall* and *PSK Dale-Chall* tests. The **Text exclusion** option will also affect any custom test using the following functions:
+These options affect both the New Dale-Chall and PSK Dale-Chall tests. The **Text exclusion** option will also affect any custom test using the following functions:
 
-- `CustomNewDaleChall()`
+- `CustomNewDaleChall()`\index{CustomNewDaleChall()@\texttt{CustomNewDaleChall()}!text exclusion options}
 - `UnfamiliarDaleChallWordCount()`
 - `UniqueUnfamiliarDaleChallWordCount()`
 - `FamiliarDaleChallWordCount()`
@@ -414,7 +414,7 @@ Text exclusion
 
 Select one of the following options to control how text is excluded in Harris-Jacobson:
 
-**Exclude incomplete sentences, except headings**: Select this option to have Harris-Jacobson\index{Harris-Jacobson Wide Range!header exclusion!customizing} include headers and subheaders in its analysis, but exclude lists and tables.
+**Exclude incomplete sentences, except headings**: Select this option to have Harris-Jacobson\index{Harris-Jacobson Wide Range!customizing!text exclusion} include headers and subheaders in its analysis, but exclude lists and tables.
 
 **Use system default**: Select this option to have Harris-Jacobson use the [default text exclusion](#options-text-exclusion) method used by other tests.
 ::::
@@ -422,7 +422,7 @@ Select one of the following options to control how text is excluded in Harris-Ja
 ::: {.notesection data-latex=""}
 The **text exclusion** option will affect any custom test using the following functions:
 
-- `CustomHarrisJacobson()`
+- `CustomHarrisJacobson()`\index{CustomHarrisJacobson()@\texttt{CustomHarrisJacobson()}!text exclusion options}
 - `UnfamiliarHarrisJacobsonWordCount()`
 - `UniqueUnfamiliarHarrisJacobsonWordCount()`
 - `FamiliarHarrisJacobsonWordCount()`
@@ -442,7 +442,7 @@ The options on this page customize which results to include in the **Readability
 
 - The score explanations shown in the [**Readability Scores**](#reviewing-test-scores) window.
 - The score display shown in the **Readability Scores** window (if **long format** is selected).
-- Selection labels on the Fry\index{Fry}, *Raygor*, and Gilliam-Peña-Mountain\index{Gilliam-Peña-Mountain} graphs.
+- Selection labels on the Fry\index{Fry!customizing!grade labels}, Raygor\index{Raygor Estimate!customizing!grade labels}, and Gilliam-Peña-Mountain\index{Gilliam-Peña-Mountain!customizing!grade labels} graphs.
 - The [raw and aggregated score](#reviewing-batch-scores) display in batch projects (if **long format** is selected).
 - The labels on the grade-level [box plot](#reviewing-batch-box-plots).
 - The bin labels on the grade-level [histograms](#reviewing-batch-histograms).
@@ -537,11 +537,11 @@ The options on this page customize which results are included in the [**Words Br
 
 **6+ Characters**: Check this to include the 6+ character words in the results.
 
-**Dale-Chall**: Check this to include the *Dale-Chall* unfamiliar words list in the results. (If a *Dale-Chall* test is included in the project).
+**Dale-Chall**: Check this to include the New Dale-Chall\index{New Dale-Chall!reviewing unfamiliar words} unfamiliar words list in the results. (If a Dale-Chall test is included in the project).
 
-**Spache**: Check this to include the *Spache* unfamiliar words list in the results. (If *Spache* is included in the project).
+**Spache**: Check this to include the Spache\index{Spache Revised!reviewing unfamiliar words} unfamiliar words list in the results. (If Spache is included in the project).
 
-**Harris-Jacobson**: Check this to include the Harris-Jacobson unfamiliar words list in the results. (If Harris-Jacobson\index{Harris-Jacobson Wide Range} is included in the project).
+**Harris-Jacobson**: Check this to include the Harris-Jacobson\index{Harris-Jacobson Wide Range!reviewing unfamiliar words} unfamiliar words list in the results. (If Harris-Jacobson\index{Harris-Jacobson Wide Range} is included in the project).
 
 **Custom Tests**: Check this to include any custom tests' unfamiliar words lists in the results.
 

@@ -37,9 +37,9 @@ This test is designed for 100-word samples and uses the same statistics as the [
 \newpage
 ## FRASE\index{FRASE|(ii} Graph {#frase}
 
-FRASE (Fry Readability Adaptation for Spanish Evaluation) (Vari-Cartier 141-148) is a graphical test for Spanish text. This test calculates a document's language level from its average number of sentences and syllables per hundred words. These averages are plotted onto a chart where their intersection determines the reading level of the content.
+FRASE (Fry Readability Adaptation for Spanish Evaluation)\index{Fry!derivatives!FRASE} (Vari-Cartier 141-148) is a graphical test for Spanish text. This test calculates a document's language level from its average number of sentences and syllables per hundred words. These averages are plotted onto a chart where their intersection determines the reading level of the content.
 
-The test uses methodologies borrowed from the [Fry](#fry-test)\index{Fry} graph, such as using the same factors (sentence length and syllable count). However, it also includes adjustments which differentiate it. One adjustment is that is X axis begins at 182 (Fry begins at 108)—this is used to account for Spanish text having higher syllable counts compared to English. The second adjustment is that it uses reading levels (“Beginning,” “Intermediate,” “Advanced Intermediate,” and “Advanced”), rather than grade levels. By using reading levels, documents can be classified more broadly into reading groups, which makes this test ideal for SSL (Spanish as a second language) readers.
+The test uses methodologies borrowed from the [Fry](#fry-test) graph, such as using the same factors (sentence length and syllable count). However, it also includes adjustments which differentiate it. One adjustment is that is X axis begins at 182 (Fry begins at 108)—this is used to account for Spanish text having higher syllable counts compared to English. The second adjustment is that it uses reading levels (“Beginning,” “Intermediate,” “Advanced Intermediate,” and “Advanced”), rather than grade levels. By using reading levels, documents can be classified more broadly into reading groups, which makes this test ideal for SSL (Spanish as a second language) readers.
 
 The FRASE graph is designed for most text and can be used for both primary and secondary-age reading materials, as well as SSL materials. It was trained on eight textbooks representing the four levels of difficulty:
 
@@ -54,9 +54,9 @@ The FRASE graph is designed for most text and can be used for both primary and s
 
 These textbooks “covered a variety of reading topics which dealt with family life, entertainment, customs, the hispanic people, history, and politics” (Vari-Cartier 143). 300-350 word excerpts were randomly selected from each book, scored on a FRASE graph, and then objectively and subjectively validated.
 
-These validation involved correlating the FRASE scores against “teacher judgments, Spaulding formula ratings, *cloze* test scores, and informal multiple choice tests” (144). (The “teacher judgments” validation involved 16 secondary-level Spanish teachers ranking the samples into the levels of beginner, intermediate, advanced intermediate, and advanced.) The comparisons were significantly correlated, with the following results:
+These validation involved correlating the FRASE scores against “teacher judgments, Spaulding formula ratings, cloze test scores, and informal multiple choice tests” (144). (The “teacher judgments” validation involved 16 secondary-level Spanish teachers ranking the samples into the levels of beginner, intermediate, advanced intermediate, and advanced.) The comparisons were significantly correlated, with the following results:
 
-- *cloze* tests: $r = -0.93$
+- cloze tests: $r = -0.93$
 - Spaulding scores: $r = 0.91$
 - teacher judgments: $r = 0.95$
 - multiple choice tests: $r = -0.97$
@@ -79,7 +79,7 @@ This test is designed for 100-word samples, with 3 samples being recommended for
 \newpage
 ## Gilliam-Peña-Mountain\index{Gilliam-Peña-Mountain|(ii} Graph {#gilliam-pena-mountain-fry-graph}
 
-Gilliam-Peña-Mountain\index{Fry!Spanish variation} (426-430) is a graphical test for Spanish text based on the [Fry](#fry-test)\index{Fry} graph (“Clarifications, Validity, and Extension” 242-252). It is identical to the Fry graph, except that its X (syllable-count) axis begins at 175 (instead of 108). This is necessary to account for Spanish text having a much higher syllable count than its English counterpart. As the authors stated, “Spanish syllable counts, however, were so high that they threw many of the samples outside the bands or off the graph entirely” (427).
+Gilliam-Peña-Mountain\index{Fry!variations!Gilliam-Peña-Mountain} (426-430) is a graphical test for Spanish text based on the [Fry](#fry-test)\index{Fry} graph (“Clarifications, Validity, and Extension” 242-252). It is identical to the Fry graph, except that its X (syllable-count) axis begins at 175 (instead of 108). This is necessary to account for Spanish text having a much higher syllable count than its English counterpart. As the authors stated, “Spanish syllable counts, however, were so high that they threw many of the samples outside the bands or off the graph entirely” (427).
 
 This test calculates the grade level from the average number of sentences and syllables per hundred words. These averages are plotted onto a chart where their intersection determines the reading level of the content.
 
@@ -146,7 +146,7 @@ Refer to \@ref(rix-test).
 
 The SOL readability formula (Contreras 21-29) calculates the grade level of a document based on complex-word density.
 
-SOL is a modified version of [SMOG](#smog-test)\index{SMOG!Spanish variation} (McLaughlin 639-646) that was recalibrated for Spanish text. This test calculates the SMOG score of a Spanish document, and then adjusts the score to take into account the comparably higher complex-word counts found in Spanish text. This adjustment is similar to what [*Gilliam, Peña, Mountain*](#gilliam-pena-mountain-fry-graph) (426-430) uses for plotting Spanish text onto the [Fry graph](#fry-test)\index{Fry}.
+SOL is a modified version of [SMOG](#smog-test)\index{SMOG!variations!SOL (Spanish)} (McLaughlin 639-646) that was recalibrated for Spanish text. This test calculates the SMOG score of a Spanish document, and then adjusts the score to take into account the comparably higher complex-word counts found in Spanish text. This adjustment is similar to what [*Gilliam, Peña, Mountain*](#gilliam-pena-mountain-fry-graph) (426-430) uses for plotting Spanish text onto the [Fry graph](#fry-test)\index{Fry}.
 
 This test was trained on multiple blocks of 30-sentence samples from the following English, Spanish, and French materials:
 

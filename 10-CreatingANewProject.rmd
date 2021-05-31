@@ -20,7 +20,7 @@ To determine a document's readability you will need to create a new project. Fir
 The language option is only available in the **Language Pack** and **Professional** editions of **Readability Studio**.
 :::
 
-The language option will control how the document is analyzed (e.g., syllable counting). This will also affect which tests, word lists, and grammar features will be available. For example, if we select **Spanish**, then only Spanish tests will be included, and features related to English word lists (e.g., *Dale-Chall*) will not be available. For this example, select **English**.
+The language option will control how the document is analyzed (e.g., syllable counting). This will also affect which tests, word lists, and grammar features will be available. For example, if we select **Spanish**, then only Spanish tests will be included, and features related to English word lists (e.g., New Dale-Chall) will not be available. For this example, select **English**.
 
 The next options specify whether you will be analyzing a file or manually-entered text.
 
@@ -56,7 +56,7 @@ Your third option is to manually select the tests yourself. To do this, select t
 
 ![](Images/wizardtests.png)
 
-The tests available on this page will depend on the project's language. For example, if you are manually selecting Spanish tests, then tests such as [Crawford](#crawford)\index{Crawford} will be available, but English tests (e.g., [*Spache*](#spache-test)) will not. Also, some industry and document-type options may not have tests associated with them depending on the selected language.
+The tests available on this page will depend on the project's language. For example, if you are manually selecting Spanish tests, then tests such as [Crawford](#crawford) will be available, but English tests (e.g., [Spache](#spache-test)) will not. Also, some industry and document-type options may not have tests associated with them depending on the selected language.
 
 Your final option is to select a [test bundle](#test-bundles).
 
@@ -82,7 +82,7 @@ Select **Batch Project** and click the `r keys("OK")` button to proceed to the *
 
 ![](Images/wizardbatchselectfiles.png)
 
-On the first page of this dialog, **Documents**, are options for selecting your documents and how to specify their language. The language option will control how the documents are analyzed (e.g., syllable counting). This will also affect which tests, word lists, and grammar features will be available. For example, if we select **Spanish**, then only Spanish tests will be included, and features related to English word lists (e.g., *Dale-Chall*) will not be available. For this example, select **English**.
+On the first page of this dialog, **Documents**, are options for selecting your documents and how to specify their language. The language option will control how the documents are analyzed (e.g., syllable counting). This will also affect which tests, word lists, and grammar features will be available. For example, if we select **Spanish**, then only Spanish tests will be included, and features related to English word lists (e.g., New Dale-Chall) will not be available. For this example, select **English**.
 
 Now you can add files from a folder, archive file, Excel^®^ 2007 file, or website to the project.
 
@@ -142,7 +142,7 @@ Your final option is to manually select the tests yourself. To do this, select t
 
 ![](Images/wizardbatchtests.png)
 
-The tests available on this page will depend on the project's language. For example, if you are manually selecting Spanish tests, then tests such as [Crawford](#crawford)\index{Crawford} will be available, but English tests (e.g., [*Spache*](#spache-test)) will not. Also, some industry and document-type options may not have tests associated with them depending on the selected language.
+The tests available on this page will depend on the project's language. For example, if you are manually selecting Spanish tests, then tests such as [Crawford](#crawford) will be available, but English tests (e.g., [Spache](#spache-test)) will not. Also, some industry and document-type options may not have tests associated with them depending on the selected language.
 
 Note that you can always add or remove tests from your project at any time. If you select either the document type or industry options, you are not bound to the tests that **Readability Studio** recommends.
 

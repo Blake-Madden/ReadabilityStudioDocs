@@ -62,7 +62,7 @@ Where:
 | C   | Estimated *cloze* score |
 | R   | Number of characters |
 | W   | Number of words |
-| D   | Number of familiar [*Dale-Chall*](#dale-chall-test) words |
+| D   | Number of familiar [Dale-Chall](#dale-chall-test) words |
 | S   | Number of sentences |
 
 ::: {.notesection data-latex=""}
@@ -96,7 +96,7 @@ Where:
 | G   | Grade level |
 | R   | Number of characters |
 | W   | Number of words |
-| D   | Number of familiar [*Dale-Chall*](#dale-chall-test) words |
+| D   | Number of familiar [Dale-Chall](#dale-chall-test) words |
 | S   | Number of sentences |
 
 Note that this particular grade-placement test uses the regression equation that best fit the passages with *cloze* scores averaging ~35%. There are also 45% and 55% *cloze*-score fitting *Bormuth* equations, but as Bormuth noted “35 per cent on a close readability test tentatively seemed to represent a criterion for deciding whether or not students are able to exhibit a maximum of information gain as a consequence of reading the passage” (*Development* 102).\index{Bormuth Grade Placement|)}
@@ -141,9 +141,9 @@ $$
 \index{Coleman-Liau|)}
 
 \newpage
-## New Dale-Chall {#dale-chall-test}
+## New Dale-Chall\index{New Dale-Chall|(ii} {#dale-chall-test}
 
-The *New Dale-Chall* readability test (Chall *Manual*, 1-7) calculates the grade level of a document based on sentence length and number of unfamiliar words. Words are unfamiliar if they do not appear on a list of 3,000 common words that are known to most 4^th^-grade students. The following are also considered familiar:
+The New Dale-Chall\index{Dale-Chall!zzzzz@\igobble|seealso{New Dale-Chall}}readability test (Chall *Manual*, 1-7) calculates the grade level of a document based on sentence length and number of unfamiliar words. Words are unfamiliar if they do not appear on a list of 3,000 common words that are known to most 4^th^-grade students. The following are also considered familiar:
 
 - Regular plural and possessive forms of common words (i.e., “s,” “es,” and “ies” endings). Irregular forms (e.g., “oxen”) are not familiar.
 - Adjectival and verb forms of common words with the following endings: “d,” “ed,” “ied,” “ing,” “s,” “es,” “ies,” “r,” “er,” “est,” “ier,” “iest.”
@@ -157,18 +157,21 @@ This test treats headers and subheaders as full sentences, but excludes lists an
 
 The initial version of this test (Dale and Chall, “A Formula for Predicting Readability”) was a multiple regression trained against 376 passages from McCall-Crabbs *Standard Test Lessons in Reading*. After comparing the results of this formula against other tests (such as Flesch and Lorge), it was validated against manually judged reading levels from other materials. These materials included “fifty-passages of health-education materials” (18) with a correlation of $r = 0.92$. Also included were “78 passages on foreign affairs from current-events magazines, government pamphlets, and newspapers” (18) with a correlation of $r = 0.90$.
 
-The *New Dale-Chall* test replaces this regression equation by looking up the factors' intersection in a table and returning a grade range (e.g., “4” or “7-8”). (This grade range is a notable difference from other tests that use [floating-point precision](#grade-level-results) grade levels.) It also includes an updated version of the 3,000 common words.
+The New Dale-Chall test replaces this regression equation by looking up the factors' intersection in a table and returning a grade range (e.g., “4” or “7-8”). (This grade range is a notable difference from other tests that use [floating-point precision](#grade-level-results) grade levels.) It also includes an updated version of the 3,000 common words.
 
 Because this test is based on the usage of familiar words (rather than syllable or letter counts), it is often regarded as a more accurate test for younger readers.
 
+\index{New Dale-Chall|)}
+
 \newpage
+
 ## Danielson-Bryan 1\index{Danielson-Bryan 1|(ii} {#danielson-bryan-1}
 
 Danielson-Bryan 1 (206) is meant for student materials and calculates the grade level of a document based on sentence length and character count.
 
-DB1 was designed to be a faster method (compared to [*Farr-Jenkins-Paterson*](#farr-jenkins-paterson)) of calculating readability scores on UNIVAC 1105 computers. Rather than counting syllables, *DB1* counts characters and punctuation, which was simpler to analyze on computers of that era. This performance benefit is more of a historical reference now; modern computers can calculate syllable counts optimally.
+DB1 was designed to be a faster method (compared to [Farr-Jenkins-Paterson](#farr-jenkins-paterson)\index{Farr-Jenkins-Paterson!compared to Danielson-Bryan}) of calculating readability scores on UNIVAC 1105 computers. Rather than counting syllables, DB1 counts characters and punctuation, which was simpler to analyze on computers of that era. This performance benefit is more of a historical reference now; modern computers can calculate syllable counts optimally.
 
-This test was trained against 383 selections from the 1950 edition of McCall-Crabbs *Standard Test Lessons in Reading* (McCall 1950). For validation, the derived formula had an $r^2 = 0.575$, similar to *Farr-Jenkins-Paterson*'s $r^2 = 0.553$. This regression equation is as follows:
+This test was trained against 383 selections from the 1950 edition of McCall-Crabbs *Standard Test Lessons in Reading* (McCall 1950). For validation, the derived formula had an $r^2 = 0.575$, similar to Farr-Jenkins-Paterson's $r^2 = 0.553$. This regression equation is as follows:
 
 ```{definition, db1, name="Danielson-Bryan 1 formula"}
 $$
@@ -205,9 +208,9 @@ For this reason, the “number of words” statistic is a more accurate descript
 
 Danielson-Bryan 2 (206) calculates an index score of a document based on sentence length and character/punctuation count. It is a variant of [Flesch Reading Ease](#flesch-test)\index{Flesch Reading Ease!variations!Danielson-Bryan 2}, with the difference being that it uses character and punctuation counts instead of syllable counts. Being a variant of Flesch, its scores range from 0-100 (the higher the score, the easier to read), with average documents being within 60-70.
 
-DB2 was designed to be a faster method (compared to [*Farr-Jenkins-Paterson*](#farr-jenkins-paterson)) of calculating readability scores on UNIVAC 1105 computers. Rather than counting syllables, DB2 counts characters and punctuation, which was simpler to analyze on computers of that era. This performance benefit is more of a historical reference now; modern computers can calculate syllable counts optimally.
+DB2 was designed to be a faster method (compared to [Farr-Jenkins-Paterson](#farr-jenkins-paterson)\index{Farr-Jenkins-Paterson!compared to Danielson-Bryan}) of calculating readability scores on UNIVAC 1105 computers. Rather than counting syllables, DB2 counts characters and punctuation, which was simpler to analyze on computers of that era. This performance benefit is more of a historical reference now; modern computers can calculate syllable counts optimally.
 
-This test was trained against 376 passages from *McCall-Crabbs Standard Test Lessons in Reading* (1926 ed.). For validation, the derived formula had an $r^2 = 0.575$, similar to *Farr-Jenkins-Paterson*'s $r^2 = 0.553$. This regression equation is as follows:
+This test was trained against 376 passages from *McCall-Crabbs Standard Test Lessons in Reading* (1926 ed.). For validation, the derived formula had an $r^2 = 0.575$, similar to Farr-Jenkins-Paterson's $r^2 = 0.553$. This regression equation is as follows:
 
 ```{definition, db2, name="Danielson-Bryan 2 formula"}
 $$
@@ -270,7 +273,7 @@ Where:
 | U   | Units score |
 | R   | Number of characters |
 | W   | Number of words |
-| D   | Number of familiar [*Dale-Chall*](#dale-chall-test) words |
+| D   | Number of familiar [Dale-Chall](#dale-chall-test) words |
 | S   | Number of sentences |
 
 \newpage
@@ -281,7 +284,7 @@ The *Degrees of Reading Power (grade equivalent)* (Carver 303-316) test calculat
 This test was trained on the same 330 110-word passages used to build the [*Bormuth*](#bormuth-cloze-mean-machine-passage) test, along with an additional 30 samples. These additional samples were 100-word passages tested by students from the graduate library at the University of Maryland (Carver 305-306). Using these samples (and their *cloze* and Rauding scores), Carver built a table to convert between *DRP* units and grade levels (see below). Next, he compared the *DRP-GE* results against *DRP* units, *Rauding Scale* scores, and cloze scores. The *DRP-GE* (grade equivalency) results strongly correlated with these other scores:
 
 - *DRP*: $r = 0.98$
-- Rauding Scale-GE\index{Rauding Scale}: $r = 0.84$
+- Rauding Scale-GE\index{Rauding scale}: $r = 0.84$
 - *cloze*: $r = -0.81$
 
 To calculate the grade equivalency, first calculate the *DRP* difficulty of a document. Then, look up the *DRP* score from the following table to find its respective grade level:
@@ -427,15 +430,15 @@ Table: McAlpine EFLAW index table
 
 \newpage
 
-## Farr, Jenkins, Paterson\index{Farr, Jenkins, Paterson|ii} {#farr-jenkins-paterson}
+## Farr-Jenkins-Paterson\index{Farr-Jenkins-Paterson|ii} {#farr-jenkins-paterson}
 
-The Farr, Jenkins, Paterson\index{Flesch Reading Ease!variations!Farr, Jenkins, Paterson} readability formula (333-337) calculates the [Flesch](#flesch-test) difficulty level of a document based on sentence length and number of monosyllabic words.
+The Farr-Jenkins-Paterson\index{Flesch Reading Ease!variations!Farr-Jenkins-Paterson} readability formula (333-337) calculates the [Flesch](#flesch-test) difficulty level of a document based on sentence length and number of monosyllabic words.
 
-Farr, Jenkins, Paterson was designed as a simpler way to calculate a Flesch score because it uses monosyllabic word counting instead of counting all syllables.
+Farr-Jenkins-Paterson was designed as a simpler way to calculate a Flesch score because it uses monosyllabic word counting instead of counting all syllables.
 
 This test was trained on 360 100-word samples, producing the following equation:
 
-```{definition, fjp, name="Farr, Jenkins, Paterson formula"}
+```{definition, fjp, name="Farr-Jenkins-Paterson formula"}
 $$
 I = -31.517 - (1.015*(W/S)) + (1.599*((M/W)*100))
 $$
@@ -490,9 +493,9 @@ Note that this test sounds out numerals' digits when syllabizing. For example, �
 The simplified version of this formula uses a lower precision calculation. It was originally offered for making a manual calculation of this test easier. It is recommended to use the higher-precision formula, but the simplified version is also available in the program.
 :::
 
-## Flesch-Kincaid (Simplified) {#flesch-kincaid-test-simplified}
+## Flesch-Kincaid (Simplified)\index{Flesch-Kincaid!variations!Flesch-Kincaid (simplified)} {#flesch-kincaid-test-simplified}
 
-Refer to \@ref(flesch-kincaid-test)\index{Flesch-Kincaid (simplified)|see{Flesch-Kincaid}}.
+Refer to \@ref(flesch-kincaid-test).
 
 \newpage
 ## Flesch Reading Ease\index{Flesch Reading Ease|(ii} {#flesch-test}
@@ -632,9 +635,9 @@ This test is designed for 100-word samples, with 3 samples being recommended for
 Note that numerals are fully syllabized for this test. For example, “1945” will be counted as four syllables (“one”-“nine”-“four”-“five”).\index{Fry|)}
 
 \newpage
-## Gunning Fog {#gunning-fog-test}
+## Gunning Fog\index{Gunning Fog|(ii} {#gunning-fog-test}
 
-The *Gunning Fog* readability formula (39-41) calculates the grade level of a document based on its number of sentences and complex words.
+The Gunning Fog readability formula (39-41) calculates the grade level of a document based on its number of sentences and complex words.
 
 Complex words are words that contain three or more syllables, with the exception of:
 
@@ -648,7 +651,7 @@ This test can optionally count independent clauses as separate sentences, as *Th
 The Meldorf^®^ statistical library is available in C++ source code–a low-level programming language–and in the form of a COM library–a Microsoft^®^ technology for inter-program communication; the COM library can be called from numerous languages, such as: Visual Basic, C#, and Delphi.
 :::
 
-If you treat independent clauses as separate sentences, then this will be seen as six small sentences and produce a *Fog* score of 10.2. If you count sentences just by looking for `.?!`, then this will be counted as a single 44-word sentence and produce a *Fog* score of 19. To penalize run-on sentences (which is recommended), then leave the option [count independent clauses as separate sentences](#readability-test-options) unchecked for this test.
+If you treat independent clauses as separate sentences, then this will be seen as six small sentences and produce a Fog score of 10.2. If you count sentences just by looking for `.?!`, then this will be counted as a single 44-word sentence and produce a Fog score of 19. To penalize run-on sentences (which is recommended), then leave the option [count independent clauses as separate sentences](#readability-test-options) unchecked for this test.
 
 ```{definition, gunningfog, name="Gunning Fog formula"}
 $$
@@ -665,6 +668,8 @@ Where:
 | F   | Number of complex words |
 | S   | Number of sentences |
 
+\index{Gunning Fog|)}
+
 \newpage
 ## Harris-Jacobson Wide Range\index{Harris-Jacobson Wide Range|(ii} {#harris-jacobson}
 
@@ -673,12 +678,12 @@ The Harris-Jacobson Wide Range Readability Formula readability test (19-30; Chap
 - Regular verb forms of any common word (i.e., “ing,” “es,” “s,” “ed,” and “ies” endings). Irregular forms are not familiar.
 - Regular plural and possessive forms of any common word (i.e., “s,” “es,” and “ies” endings). Irregular forms are not familiar.
 - Adjectival or adverbial forms of common words. This includes forms with endings such as “ly,” “est,” “er,” and “ily.”
-- Hyphenated words if both parts of the word are common words. For example, “apple-tree” and “and/or” would be familiar. (Note that forward slashes (‘/’) are treated like hyphens in this context.) Although this rule is not explicitly stated in Basic Reading Vocabularies, it is recommended because both [*Spache*](#spache-test) and [*New Dale-Chall*](#dale-chall-test) apply it.
+- Hyphenated words if both parts of the word are common words. For example, “apple-tree” and “and/or” would be familiar. (Note that forward slashes (‘/’) are treated like hyphens in this context.) Although this rule is not explicitly stated in *Basic Reading Vocabularies*, it is recommended because both [Spache](#spache-test) and [New Dale-Chall](#dale-chall-test) apply it.
 - All proper nouns.
 
 Note that numerals are entirely excluded from this test and are considered neither familiar nor unfamiliar.
 
-The Wide Range Readability Formula is based on previous Harris-Jacobson formulas designed for preprimer through eighth-grade reader-level materials. The **Wide Range** variation was trained on a new series of basal readers (30; Chapter 3). This series included:
+The Wide Range Readability Formula is based on previous Harris-Jacobson formulas designed for preprimer through eighth-grade reader-level materials. The Wide Range variation was trained on a new series of basal readers (30; Chapter 3). This series included:
 
 ```{r, echo=F}
 library(kableExtra)
@@ -846,7 +851,7 @@ Table: Lix Grade-level Conversion Table\index{Lix|)}
 \newpage
 ## Modified SMOG\index{Modified SMOG|(ii} {#modified-smog}
 
-The Modified SMOG\index{SMOG!modified|see{Modified SMOG}} test (L. Smith 129-132) calculates the grade level of a document based on sentence length and number of difficult (i.e., 3 or more syllable) words and is designed for primary and secondary-age materials.
+The Modified SMOG\index{SMOG!variations!Modified SMOG} test (L. Smith 129-132) calculates the grade level of a document based on sentence length and number of difficult (i.e., 3 or more syllable) words and is designed for primary and secondary-age materials.
 
 Modified SMOG differs from [SMOG](#smog-test) in the following ways:
 
@@ -872,7 +877,7 @@ This test requires a 10-sentence sample, with 3 samples being recommended for be
 \newpage
 ## New Automated Readability Index\index{New Automated Readability Index} {#new-ari}
 
-The New Automated Readability Index\index{Automated Readability Index!zzzzz@\igobble|seealso{New Automated Readability Index}} (Kincaid et al., *Derivation* 14) is a modified version of [ARI](#ari-test)\index{Automated Readability Index} that was recalculated “to be more suitable for Navy use” (Kincaid et al., *Derivation* 11); hence, it is designed for technical documents and manuals. This test calculates the grade level of a document based on sentence length and character count.
+The New Automated Readability Index\index{Automated Readability Index!variations!New Automated Readability Index} (Kincaid et al., *Derivation* 14) is a modified version of [ARI](#ari-test)\index{Automated Readability Index} that was recalculated “to be more suitable for Navy use” (Kincaid et al., *Derivation* 11); hence, it is designed for technical documents and manuals. This test calculates the grade level of a document based on sentence length and character count.
 
 This test was trained against reading-test results from 531 U.S. Navy personnel from four Naval technical training schools. Using these results, the following multiple regression equation was derived:
 
@@ -910,18 +915,18 @@ The simplified version of this formula uses lower precision. It was originally o
 
 ## New Automated Readability Index (Simplified) {#new-ari-simplified}
 
-Refer to \@ref(new-ari)\index{New Automated Readability Index (simplified)|see{New Automated Readability Index}}.
+Refer to \@ref(new-ari)\index{New Automated Readability Index!variations!New Automated Readability Index (simplified)}}.
 
 \newpage
-## New Farr, Jenkins, Paterson {#new-farr-jenkins-paterson}
+## New Farr-Jenkins-Paterson {#new-farr-jenkins-paterson}
 
-The *New Farr, Jenkins, Paterson* readability formula (Kincaid et al., *Derivation* 17) calculates the grade level of a document based on sentence length and number of monosyllabic words.
+The New Farr-Jenkins-Paterson readability formula (Kincaid et al., *Derivation* 17) calculates the grade level of a document based on sentence length and number of monosyllabic words.
 
-*New Farr, Jenkins, Paterson* is a recalculated version of the [*FJP*](#farr-jenkins-paterson) test that was recalculated “to be more suitable for Navy use” (Kincaid et al., *Derivation* 11); hence, it is designed for technical documents and manuals. In addition to being a recalculation, this variation of *FJP* (i.e., a Flesch-like test) returns a grade-level result, rather than an index score.
+New Farr-Jenkins-Paterson is a recalculated version of the [FJP](#farr-jenkins-paterson) test that was recalculated “to be more suitable for Navy use” (Kincaid et al., *Derivation* 11); hence, it is designed for technical documents and manuals. In addition to being a recalculation, this variation of FJP (i.e., a Flesch-like test) returns a grade-level result, rather than an index score.
 
 This test was trained against reading-test results from 531 U.S. Navy personnel from four Naval technical training schools. Using these results, the following multiple regression equation was derived:
 
-```{definition, newfjp, name="New Farr, Jenkins, Paterson formula"}
+```{definition, newfjp, name="New Farr-Jenkins-Paterson formula"}
 $$
 G = 22.05 + (.387*(W/S)) - (.307*((M/W)*100))
 $$
@@ -939,7 +944,7 @@ Where:
 \newpage
 ## New Fog Count\index{New Fog Count|ii} {#new-fog-count-test}
 
-The New Fog Count\index{Gunning Fog!zzzzz@\igobble|seealso{New Fog Count}} (Kincaid et al., *Derivation* 14) readability formula is a modified version of the [Gunning Fog](#gunning-fog-test) Index that was recalculated “to be more suitable for Navy use” (Kincaid et al., *Derivation* 11); hence, it is designed for technical documents and manuals. This test calculates the grade level of a document based on sentence length and number of words containing three or more syllables.
+The New Fog Count\index{Gunning Fog!variations!New Fog Count} (Kincaid et al., *Derivation* 14) readability formula is a modified version of the [Gunning Fog](#gunning-fog-test) Index that was recalculated “to be more suitable for Navy use” (Kincaid et al., *Derivation* 11); hence, it is designed for technical documents and manuals. This test calculates the grade level of a document based on sentence length and number of words containing three or more syllables.
 
 This test was trained against reading-test results from 531 U.S. Navy personnel from four Naval technical training schools. Using these results, the following multiple regression equation was derived:
 
@@ -963,13 +968,13 @@ This test uses the same easy-word and sentence counting methods as the [Gunning 
 :::
 
 \newpage
-## (Powers, Sumner, Kearl) Dale-Chall {#psk-dale-chall}
+## (Powers-Sumner-Kearl) Dale-Chall\index{Powers-Sumner-Kearl!recalculated tests!Dale-Chall|(} {#psk-dale-chall}
 
-The *(Powers, Sumner, Kearl) Dale-Chall* readability formula (99-105) calculates the grade level of a document based on sentence length and number of unfamiliar *Dale-Chall* words.
+The (Powers-Sumner-Kearl) Dale-Chall readability formula (99-105) calculates the grade level of a document based on sentence length and number of unfamiliar Dale-Chall words.
 
-The goal of Powers, Sumner, and Kearl was to develop updated versions of four popular readability formulas: *Dale-Chall*, Flesch, *Gunning Fog*, and *Farr-Jenkins-Paterson*. These updated formulas would be based off of the newer (1950) edition of the McCall-Crabbs test criterion. By using this revised test material, Powers, Sumner, and Kearl aimed to “modernize the formulas by taking advantage of the more recently administered tests” and to “establish formulas which are derived from identical materials” (Powers, Sumner, and Kearl 100).
+The goal of Powers, Sumner, and Kearl was to develop updated versions of four popular readability formulas: Dale-Chall\index{Dale-Chall!Powers-Sumner-Kearl recalculation}, Flesch, Gunning Fog, and Farr-Jenkins-Paterson. These updated formulas would be based off of the newer (1950) edition of the McCall-Crabbs test criterion. By using this revised test material, Powers, Sumner, and Kearl aimed to “modernize the formulas by taking advantage of the more recently administered tests” and to “establish formulas which are derived from identical materials” (Powers, Sumner, and Kearl 100).
 
-The training materials used to build the regression formulas were 383 prose passages from the 1950 edition of McCall-Crabbs's *Standard Test Lessons in Reading*. For validation, the formulas were tested against 113 samples from “various publications” (Powers, Sumner, and Kearl 100). Their results (shown below) implied somewhat strong correlations for their *Dale-Chall* and Flesch formulas and mild correlations for their *FJP* and *Gunning Fog* formulas:
+The training materials used to build the regression formulas were 383 prose passages from the 1950 edition of McCall-Crabbs's *Standard Test Lessons in Reading*. For validation, the formulas were tested against 113 samples from “various publications” (Powers, Sumner, and Kearl 100). Their results (shown below) implied somewhat strong correlations for their Dale-Chall and Flesch formulas and mild correlations for their FJP and Gunning Fog formulas:
 
 - recalculated Dale-Chall: $r^2 = 0.5092$
 - recalculated Flesch: $r^2 = 0.4034$
@@ -991,28 +996,30 @@ Where:
 | --- | :-- |
 | G   | Grade level |
 | S   | Number of sentences |
-| UDC | Number of unfamiliar *Dale-Chall* words |
+| UDC | Number of unfamiliar Dale-Chall words |
 | W   | Number of words |
 
-Although this is an update of the 1948 Dale-Chall formula, the 1995 [*New Dale-Chall*](#dale-chall-test) test is recommended instead. This formula does not apply as much weight to the sentence length factor as *New Dale-Chall* does and comparatively yields lower results for difficult (i.e., upper-secondary education) documents. Therefore, this test should only be used for primary and lower-secondary educational documents. It is also only recommended if [floating-point precision](#grade-level-results) for the results is required, as *New Dale-Chall* uses grade ranges instead.
+Although this is an update of the 1948 Dale-Chall formula, the 1995 [New Dale-Chall](#dale-chall-test)\index{New Dale-Chall!recommendation over Dale-Chall} test is recommended instead. This formula does not apply as much weight to the sentence length factor as New Dale-Chall does and comparatively yields lower results for difficult (i.e., upper-secondary education) documents. Therefore, this test should only be used for primary and lower-secondary educational documents. It is also only recommended if [floating-point precision](#grade-level-results) for the results is required, as New Dale-Chall uses grade ranges instead.
+
+\index{Powers-Sumner-Kearl!recalculated tests!Dale-Chall|)}
 
 \newpage
-## (Powers, Sumner, Kearl) Farr, Jenkins, Paterson {#psk-farr-jenkins-paterson}
+## (Powers-Sumner-Kearl) Farr-Jenkins-Paterson\index{Powers-Sumner-Kearl!recalculated tests!Farr-Jenkins-Paterson|(} {#psk-farr-jenkins-paterson}
 
-The *(Powers, Sumner, Kearl) Farr, Jenkins, Paterson* readability formula (99-105) calculates the grade level of a document based on sentence length and number of monosyllabic words.
+The (Powers-Sumner-Kearl) Farr-Jenkins-Paterson readability formula (99-105) calculates the grade level of a document based on sentence length and number of monosyllabic words.
 
-The goal of Powers, Sumner, and Kearl was to develop updated versions of four popular readability formulas: *Dale-Chall*, Flesch, *Gunning Fog*, and *Farr-Jenkins-Paterson*. These updated formulas would be based off of the newer (1950) edition of the McCall-Crabbs test criterion. By using this revised test material, Powers, Sumner, and Kearl aimed to “modernize the formulas by taking advantage of the more recently administered tests” and to “establish formulas which are derived from identical materials” (Powers, Sumner, and Kearl 100).
+The goal of Powers, Sumner, and Kearl was to develop updated versions of four popular readability formulas: Dale-Chall, Flesch, Gunning Fog, and Farr-Jenkins-Paterson\index{Farr-Jenkins-Paterson!Powers-Sumner-Kearl recalculation}. These updated formulas would be based off of the newer (1950) edition of the McCall-Crabbs test criterion. By using this revised test material, Powers, Sumner, and Kearl aimed to “modernize the formulas by taking advantage of the more recently administered tests” and to “establish formulas which are derived from identical materials” (Powers, Sumner, and Kearl 100).
 
-The training materials used to build the regression formulas were 383 prose passages from the 1950 edition of McCall-Crabbs's *Standard Test Lessons in Reading*. For validation, the formulas were tested against 113 samples from “various publications” (Powers, Sumner, and Kearl 100). Their results (shown below) implied somewhat strong correlations for their *Dale-Chall* and Flesch formulas and mild correlations for their *FJP* and *Gunning Fog* formulas:
+The training materials used to build the regression formulas were 383 prose passages from the 1950 edition of McCall-Crabbs's *Standard Test Lessons in Reading*. For validation, the formulas were tested against 113 samples from “various publications” (Powers, Sumner, and Kearl 100). Their results (shown below) implied somewhat strong correlations for their Dale-Chall and Flesch formulas and mild correlations for their FJP and Gunning Fog formulas:
 
 - recalculated Dale-Chall: $r^2 = 0.5092$
 - recalculated Flesch: $r^2 = 0.4034$
 - recalculated Gunning Fog: $r^2 = 0.3440$
 - recalculated Farr-Jenkins-Paterson: $r^2 = 0.3407$
 
-The recalculated *Farr, Jenkins, Paterson* formula is as follows:
+The recalculated Farr-Jenkins-Paterson formula is as follows:
 
-```{definition, pskfjp, name="(PSK) Farr, Jenkins, Paterson formula"}
+```{definition, pskfjp, name="(PSK) Farr-Jenkins-Paterson formula"}
 \begin{align*}
   G = & 8.4335 + (.0923*(W/S)) - \\
       & (.0648*((M/W)*100))
@@ -1028,21 +1035,23 @@ Where:
 | M   | Number of monosyllabic words |
 | S   | Number of sentences |
 
+\index{Powers-Sumner-Kearl!recalculated tests!Farr-Jenkins-Paterson|)}
+
 \newpage
-## (Powers, Sumner, Kearl) Gunning Fog {#psk-fog}
+## (Powers-Sumner-Kearl) Gunning Fog\index{Powers-Sumner-Kearl!recalculated tests!Gunning Fog|(} {#psk-fog}
 
-The *(Powers, Sumner, Kearl) Gunning Fog* readability formula (99-105) calculates the grade level of a document based on sentence length and number of syllables.
+The (Powers-Sumner-Kearl) Gunning Fog readability formula (99-105) calculates the grade level of a document based on sentence length and number of syllables.
 
-The goal of Powers, Sumner, and Kearl was to develop updated versions of four popular readability formulas: *Dale-Chall*, Flesch, *Gunning Fog*, and *Farr-Jenkins-Paterson*. These updated formulas would be based off of the newer (1950) edition of the McCall-Crabbs test criterion. By using this revised test material, Powers, Sumner, and Kearl aimed to “modernize the formulas by taking advantage of the more recently administered tests” and to “establish formulas which are derived from identical materials” (Powers, Sumner, and Kearl 100).
+The goal of Powers, Sumner, and Kearl was to develop updated versions of four popular readability formulas: Dale-Chall, Flesch, Gunning Fog\index{Gunning Fog!Powers-Sumner-Kearl recalculation}, and Farr-Jenkins-Paterson. These updated formulas would be based off of the newer (1950) edition of the McCall-Crabbs test criterion. By using this revised test material, Powers, Sumner, and Kearl aimed to “modernize the formulas by taking advantage of the more recently administered tests” and to “establish formulas which are derived from identical materials” (Powers, Sumner, and Kearl 100).
 
-The training materials used to build the regression formulas were 383 prose passages from the 1950 edition of McCall-Crabbs's *Standard Test Lessons in Reading*. For validation, the formulas were tested against 113 samples from “various publications” (Powers, Sumner, and Kearl 100). Their results (shown below) implied somewhat strong correlations for their *Dale-Chall* and Flesch formulas and mild correlations for their *FJP* and *Gunning Fog* formulas:
+The training materials used to build the regression formulas were 383 prose passages from the 1950 edition of McCall-Crabbs's *Standard Test Lessons in Reading*. For validation, the formulas were tested against 113 samples from “various publications” (Powers, Sumner, and Kearl 100). Their results (shown below) implied somewhat strong correlations for their Dale-Chall and Flesch formulas and mild correlations for their FJP and Gunning Fog formulas:
 
 - recalculated Dale-Chall: $r^2 = 0.5092$
 - recalculated Flesch: $r^2 = 0.4034$
 - recalculated Gunning Fog: $r^2 = 0.3440$
 - recalculated Farr-Jenkins-Paterson: $r^2 = 0.3407$
 
-The recalculated *Gunning Fog* formula is as follows:
+The recalculated Gunning Fog formula is as follows:
 
 ```{definition, pskfog, name="(PSK) Gunning Fog formula"}
 \begin{align*}
@@ -1064,14 +1073,16 @@ Where:
 This test uses the same easy-word and sentence counting methods as the [Gunning Fog](#gunning-fog-test) test.
 :::
 
+\index{Powers-Sumner-Kearl!recalculated tests!Gunning Fog|)}
+
 \newpage
-## (Powers, Sumner, Kearl) Flesch {#psk-test}
+## (Powers-Sumner-Kearl) Flesch\index{Powers-Sumner-Kearl!recalculated tests!Flesch Reading Ease|(} {#psk-test}
 
-The *(Powers, Sumner, Kearl) Flesch* readability formula (99-105) calculates the grade level of a document based on sentence length and number of syllables.
+The (Powers-Sumner-Kearl) Flesch readability formula (99-105) calculates the grade level of a document based on sentence length and number of syllables.
 
-The goal of Powers, Sumner, and Kearl was to develop updated versions of four popular readability formulas: *Dale-Chall*, Flesch, *Gunning Fog*, and *Farr-Jenkins-Paterson*. These updated formulas would be based off of the newer (1950) edition of the McCall-Crabbs test criterion. By using this revised test material, Powers, Sumner, and Kearl aimed to “modernize the formulas by taking advantage of the more recently administered tests” and to “establish formulas which are derived from identical materials” (Powers, Sumner, and Kearl 100).
+The goal of Powers, Sumner, and Kearl was to develop updated versions of four popular readability formulas: Dale-Chall, Flesch\index{Flesch Reading Ease!Powers-Sumner-Kearl recalculation}, Gunning Fog, and Farr-Jenkins-Paterson. These updated formulas would be based off of the newer (1950) edition of the McCall-Crabbs test criterion. By using this revised test material, Powers, Sumner, and Kearl aimed to “modernize the formulas by taking advantage of the more recently administered tests” and to “establish formulas which are derived from identical materials” (Powers, Sumner, and Kearl 100).
 
-The training materials used to build the regression formulas were 383 prose passages from the 1950 edition of McCall-Crabbs's *Standard Test Lessons in Reading*. For validation, the formulas were tested against 113 samples from “various publications” (Powers, Sumner, and Kearl 100). Their results (shown below) implied somewhat strong correlations for their *Dale-Chall* and Flesch formulas and mild correlations for their *FJP* and *Gunning Fog* formulas:
+The training materials used to build the regression formulas were 383 prose passages from the 1950 edition of McCall-Crabbs's *Standard Test Lessons in Reading*. For validation, the formulas were tested against 113 samples from “various publications” (Powers, Sumner, and Kearl 100). Their results (shown below) implied somewhat strong correlations for their Dale-Chall and Flesch formulas and mild correlations for their FJP and Gunning Fog formulas:
 
 - recalculated Dale-Chall: $r^2 = 0.5092$
 - recalculated Flesch: $r^2 = 0.4034$
@@ -1096,23 +1107,25 @@ Where:
 
 Note that this test treats numerals as monosyllabic words, in conjunction with the original Flesch test.
 
+\index{Powers-Sumner-Kearl!recalculated tests!Flesch Reading Ease|)}
+
 \newpage
-## Raygor Estimate Graph {#raygor-test}
+## Raygor Estimate Graph\index{Raygor Estimate|(ii} {#raygor-test}
 
-The *Raygor Estimate Graph* (259-263) is a graphical test for English documents. It calculates a document's grade level from its average number of sentences and long (6+ character) words per hundred words. These averages are plotted onto a chart where their intersection determines the reading level of the content.
+The Raygor Estimate graph\index{Fry!derivatives!Raygor Estimate} (259-263) is a graphical test for English documents. It calculates a document's grade level from its average number of sentences and long (6+ character) words per hundred words. These averages are plotted onto a chart where their intersection determines the reading level of the content.
 
-Note that this graph is very similar to the [Fry](#fry-test) graph. The intent of this test was to provide a quicker and simpler way to plot a readability level, assuming that counting characters is easier than syllables. To confirm this, a secondary study (Baldwin and Kaufman 148-153) conducted an experiment involving 155 students from the University of Tulsa. The students performed Fry and *Raygor* tests on 6 100-word passages. Afterwards, an independent *t* test was performed to gauge the difference in time spent manually performing the two readability tests. What the researches found was a significant difference, where *Raygor* took an average of 250.26 seconds to complete versus 323.45 seconds for Fry.
+Note that this graph is very similar to the [Fry](#fry-test) graph. The intent of this test was to provide a quicker and simpler way to plot a readability level, assuming that counting characters is easier than syllables. To confirm this, a secondary study (Baldwin and Kaufman 148-153) conducted an experiment involving 155 students from the University of Tulsa. The students performed Fry and ELF tests on 6 100-word passages. Afterwards, an independent *t* test was performed to gauge the difference in time spent manually performing the two readability tests. What the researches found was a significant difference, where Raygor took an average of 250.26 seconds to complete versus 323.45 seconds for Fry.
 
-In another experiment, Baldwin and Kaufman compared the correlations between Fry\index{Fry!compared to Raygor} and *Raygor* scores. They collected 3 100-word samples from 100 books from the Learning Resource Center at The University of Tulsa. With these books, the “Levels of difficulty in the sample ranged from upper elementary to professional (beyond the college level)” (Baldwin and Kaufman 149). The researchers found a significant Kendall rank order correlation of 0.875 between scores from the two tests.
+In another experiment, Baldwin and Kaufman compared the correlations between Fry\index{Fry!compared to Raygor} and Raygor scores. They collected 3 100-word samples from 100 books from the Learning Resource Center at The University of Tulsa. With these books, the “Levels of difficulty in the sample ranged from upper elementary to professional (beyond the college level)” (Baldwin and Kaufman 149). The researchers found a significant Kendall rank order correlation of 0.875 between scores from the two tests.
 
-This graph is primarily used in secondary education to help classify teaching materials and books into their appropriate reading groups. Below is an example of a *Raygor* graph:
+This graph is primarily used in secondary education to help classify teaching materials and books into their appropriate reading groups. Below is an example of a Raygor graph:
 
 ```{r raygor, echo=F, fig.cap='Raygor Estimate Graph', fig.align='center'}
 knitr::include_graphics("Images/raygorgraph.png")
 ```
 
 ::: {.onsamepage data-latex=""}
-The *Raygor Estimate Graph* formula is:
+The Raygor Estimate instructions are:
 
 - Extract a 100-word passage from the selection. If the material is long, take subsamples from the beginning, middle, and end. Numerals should be skipped.
 - Count the number of sentences, estimated to the nearest tenth.
@@ -1124,7 +1137,10 @@ The *Raygor Estimate Graph* formula is:
 
 This test is designed for 3 100-word samples, with 3 samples being recommended for best results. ([Normalization](#glossary) can also be used to analyze larger samples or entire documents.)
 
+\index{Raygor Estimate|)}
+
 \newpage
+
 ## Rix\index{Rix|(ii} {#rix-test}
 
 The Rate Index (Rix)\index{Rix!compared to Lix} readability formula (Anderson 490-496) was designed for documents of any Western European language. It calculates a document’s index score based on sentence length and number of long words (i.e., words containing seven or more characters). It is based on the [Lix](#lix-test) readability formula (Björnsson 480-497) and follows the same philosophy of using a unified formula for multiple languages.
@@ -1209,7 +1225,7 @@ G = FLOOR(\sqrt{C}) + 3
 $$
 ```
 
-`FLOOR` refers to rounding the result of $\sqrt{C}$ down to the closest perfect square.
+$FLOOR$ refers to rounding the result of $\sqrt{C}$ down to the closest perfect square.
 
 ::: {.notesection data-latex=""}
 The simplified version of this formula uses lower precision. It was originally offered to make manual calculations of this test easier.
@@ -1219,16 +1235,18 @@ This test requires 3 10-sentence samples, but [normalization](#glossary) can be 
 
 Numerals are fully syllabized (i.e., sounded out) for this test, so the program overrides your [numeral syllabication](#numsyllable) setting when calculating it.
 
-Note that this test is often referred to as an acronym for “Simple Measure of Gobbledygook.” The origin of its name, however, is actually a nod to Robert Gunning's [*Fog*](#gunning-fog-test) index.
+Note that this test is often referred to as an acronym for “Simple Measure of Gobbledygook.” The origin of its name, however, is actually a nod to Robert Gunning's [Fog](#gunning-fog-test) index.
 
-## SMOG (Simplified) {#smog-test-simplified}
+\index{SMOG|)}
 
-Refer to \@ref(smog-test).\index{SMOG|)}
+## SMOG (Simplified)\index{SMOG!variations!SMOG (simplified))} {#smog-test-simplified}
+
+Refer to \@ref(smog-test).
 
 \newpage
-## Spache Revised {#spache-test}
+## Spache Revised\index{Spache Revised|(ii} {#spache-test}
 
-The *Spache Revised* test (Spache, *Good* 195-2003) calculates the grade level of a document based on sentence length and number of unique unfamiliar words. This test uses a list of 1,041 common words that are known to younger readers (4^th^ grade and below). Any word that does not appear on this list is considered unfamiliar. The following are also considered familiar:
+The Spache Revised test (Spache, *Good* 195-2003) calculates the grade level of a document based on sentence length and number of unique unfamiliar words. This test uses a list of 1,041 common words that are known to younger readers (4^th^ grade and below). Any word that does not appear on this list is considered unfamiliar. The following are also considered familiar:
 
 - Regular verb forms of any common word (i.e., “ing,” “es,” “s,” “ed,” and “ies” endings). Irregular forms are not familiar.
 - Regular plural and possessive forms of any common word (i.e., “s,” “es,” and “ies” endings). Irregular forms are not familiar.
@@ -1238,11 +1256,11 @@ The *Spache Revised* test (Spache, *Good* 195-2003) calculates the grade level o
 - All proper nouns.
 - All numerals.
 
-*Spache Revised* is generally used for primary age (i.e., Kindergarten to 7^th^ grade) readers to help classify school textbooks and literature. This differs from [*New Dale-Chall*](#dale-chall-test), which is better meant for secondary age readers.
+Spache Revised is generally used for primary age (i.e., Kindergarten to 7^th^ grade) readers to help classify school textbooks and literature. This differs from [New Dale-Chall](#dale-chall-test)\index{New Dale-Chall!compared to Spache Revised}, which is better meant for secondary age readers.
 
 Because this formula uses familiar words (rather than syllable or letter counts), it is often regarded as a more accurate test for younger readers.
 
-Note that **Readability Studio** uses the revised 1974 version of *Spache*.
+Note that **Readability Studio** uses the revised 1974 version of Spache.
 
 ```{definition, spacherevised, name="Spache Revised formula"}
 $$
@@ -1262,17 +1280,19 @@ Where:
 ::: {.notesection data-latex=""}
 Spache recommends not counting the same unfamiliar word more than once if it appears in subsequent 100-word samples (Spache, *Good* 198). For this reason, it is recommended to follow this practice when analyzing an entire document.
 :::
+\index{Spache Revised|)}
 
 \newpage
+
 ## Stocker's Catholic Supplement\index{Stocker's Catholic Supplement} {#stocker-catholic-supplement}
 
-Stocker's Catholic\index{Catholic|see{Stocker's Catholic Supplement}} supplement (87-89) is an extension to the [Dale-Chall](#dale-chall-test) word list designed for Catholic students. Based on a 1971 study of 4^th^-grade Catholic students[^Stocker], this list represents over 200 words (not on the standard *Dale-Chall* list) familiar to 80% of them.
+Stocker's Catholic\index{Catholic words|see{Stocker's Catholic Supplement}} supplement (87-89) is an extension to the [Dale-Chall](#dale-chall-test) word list designed for Catholic students. Based on a 1971 study of 4^th^-grade Catholic students[^Stocker], this list represents over 200 words (not on the standard Dale-Chall list) familiar to 80% of them.
 
 This list is used along with the Dale-Chall\index{New Dale-Chall} list and offers more accurate scoring with materials meant for Catholic schools.
 
 To view this list, select the **Readability** tab, click the `r keys("Word Lists")` button, and select **Stocker's Catholic Supplement** from the menu.
 
-To include this list as part of your *New Dale-Chall* scoring, select the **Tools** tab and click the `r keys("Options")` button to display the [**Options**](#options-overview) dialog. Next, expand **Readability Scores**, select **Test Options**, and then check **Include Stocker's Catholic supplement**. After selecting this option, all *New Dale-Chall* tests performed in new projects will include this supplement.
+To include this list as part of your New Dale-Chall\index{New Dale-Chall!including Catholic words} scoring, select the **Tools** tab and click the `r keys("Options")` button to display the [**Options**](#options-overview) dialog. Next, expand **Readability Scores**, select **Test Options**, and then check **Include Stocker's Catholic supplement**. After selecting this option, all New Dale-Chall tests performed in new projects will include this supplement.
 
 [^Stocker]: The students involved in this study were “6,743 randomly selected Catholic fourth-graders attending 136 parochial schools throughout the country” (Stocker 87-88).
 

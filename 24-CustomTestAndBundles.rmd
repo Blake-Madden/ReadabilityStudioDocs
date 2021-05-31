@@ -2,7 +2,7 @@
 
 ## Creating a Custom Test {#creating-custom-test}
 
-Along with offering standard tests, such as [*New Dale Chall*](#dale-chall-test) and [*Revised Spache*](#spache-test), **Readability Studio** also includes the ability to create your own tests. Many customizable features are offered for new tests, such as being able to select your own familiar-word list and which formula to use.
+Along with offering standard tests, such as [New Dale-Chall](#dale-chall-test)\index{New Dale-Chall!custom test} and [Spache Revised](#spache-test)\index{Spache Revised!custom test}, **Readability Studio** also includes the ability to create your own tests. Many customizable features are offered for new tests, such as being able to select your own familiar-word list and which formula to use.
 
 To create a custom test, go to the **Readability** tab, click the arrow beneath the `r keys("Custom Tests")` button and select **Add Test...** from the menu. At this point, the **Add Custom Test** dialog will be displayed:
 
@@ -10,10 +10,10 @@ To create a custom test, go to the **Readability** tab, click the arrow beneath 
 
 In the **General Settings** section, enter a name for this test (e.g., “NDC Computer”) in the **Test name** field. This will be the name of the test as it appears in your results and on the menu.
 
-Next, enter the test's formula in the **Formula** field. Essentially, there are two types of formulas: predefined familiar-word formulas and custom-built formulas. A predefined familiar-word formula will use a standard test's formula along with your own familiar-word criteria. This is useful for expanding a standard test (such as *New Dale-Chall*) by including your own word list. The available predefined formulas are:
+Next, enter the test's formula in the **Formula** field. Essentially, there are two types of formulas: predefined familiar-word formulas and custom-built formulas. A predefined familiar-word formula will use a standard test's formula along with your own familiar-word criteria. This is useful for expanding a standard test (such as New Dale-Chall) by including your own word list. The available predefined formulas are:
 
-- `CustomNewDaleChall()`: this will use the *New Dale-Chall* formula.
-- `CustomSpache()`: this will use the *Spache Revised* formula.
+- `CustomNewDaleChall()`: this will use the New Dale-Chall\index{New Dale-Chall!zzzzz@\igobble|seealso{\texttt{CustomNewDaleChall()}}} formula.
+- `CustomSpache()`: this will use the Spache Revised\index{Spache Revised!zzzzz@\igobble|seealso{\texttt{CustomSpache()}}} formula.
 - `CustomHarrisJacobson()`: this will use the Harris Jacobson\index{Harris-Jacobson Wide Range!zzzzz@\igobble|seealso{\texttt{CustomHarrisJacobson()}}} formula.
 
 The second type of formula is a custom-built formula. For example, the formula for Lix is:
@@ -175,8 +175,8 @@ Table: Statistical functions
 | Function | Description |
 | :-- | :-- |
 | CustomHarrisJacobson()\index{CustomHarrisJacobson()@\texttt{CustomHarrisJacobson()}} | Performs a Harris-Jacobson test with a custom familiar word list. Note that this test will use the same text exclusion rules as Harris-Jacobson (overriding your system defaults). |
-| CustomNewDaleChall() | Performs a *New Dale-Chall* test with a custom familiar word list. Note that this test will use the same text exclusion rules as *New Dale-Chall* (overriding your system defaults). |
-| CustomSpache() | Performs a *Spache Revised* test with a custom familiar word list. |
+| CustomNewDaleChall()\index{CustomNewDaleChall()@\texttt{CustomNewDaleChall()}} | Performs a New Dale-Chall test with a custom familiar word list. Note that this test will use the same text exclusion rules as New Dale-Chall (overriding your system defaults). |
+| CustomSpache()\index{CustomSpache()@\texttt{CustomSpache()}} | Performs a Spache Revised test with a custom familiar word list. |
 
 Table: Custom familiar word tests functions
 ```
@@ -322,24 +322,24 @@ If you are not stemming, then it is recommended to enter each inflected form of 
 
 #### Standard familiar word lists {-}
 
-**Include New Dale-Chall familiar word list**: Check this option to use the [*New Dale-Chall*](#dale-chall-test) word list (along with any other selected word lists) to determine if a word is familiar.
+**Include New Dale-Chall familiar word list**: Check this option to use the [New Dale-Chall](#dale-chall-test)\index{New Dale-Chall!custom test!including words with} word list (along with any other selected word lists) to determine if a word is familiar.
 
-**Include Spache Revised familiar word list**: Check this option to use the [*Spache Revised*](#spache-test) word list (along with any other selected word lists) to determine if a word is familiar.
+**Include Spache Revised familiar word list**: Check this option to use the [Spache Revised](#spache-test)\index{Spache Revised!custom test!including words with} word list (along with any other selected word lists) to determine if a word is familiar.
 
-**Include Harris-Jacobson familiar word list**: Check this option to use the [Harris-Jacobson](#harris-jacobson) word list (along with any other selected word lists) to determine if a word is familiar.
+**Include Harris-Jacobson familiar word list**: Check this option to use the [Harris-Jacobson](#harris-jacobson)\index{Harris-Jacobson Wide Range!custom test!including words with} word list (along with any other selected word lists) to determine if a word is familiar.
 
-**Include Stocker's Catholic supplement**: Check this option to include [Stocker's supplementary word list](#stocker-catholic-supplement)\index{Stocker's Catholic Supplement} for Catholic students (along with any other selected word lists) to determine if a word is familiar.
+**Include Stocker's Catholic supplement**: Check this option to include [Stocker's supplementary word list](#stocker-catholic-supplement)\index{Stocker's Catholic Supplement!custom test!including words with} for Catholic students (along with any other selected word lists) to determine if a word is familiar.
 
 #### Other {-}
 
-**Only use words common to all lists**: Check this option to consider words familiar only if they appear on your custom list **and** other selected lists.
+**Only use words common to all lists**: Check this option to consider words familiar only if they appear on your custom list *and* other selected lists.
 
 ::: {.notesection data-latex=""}
 This option is only available if you are including two or more word lists.
 :::
 
 ::: {.warningsection data-latex=""}
-This option is only recommended for when you want to find words that appear within a union of your word list and a standard list(s) (e.g., *Spache*).
+This option is only recommended for when you want to find words that appear within a union of your word list and a standard list(s) (e.g., Spache).
 :::
 
 ### Proper Nouns & Numerals {-#custom-proper-numerals}
@@ -370,7 +370,7 @@ Familiarity
 
 ## Adding a Custom-word Test {#add-custom-word-test}
 
-From the **Readability** tab, click the `r keys("Custom Test")` button and then select **Add Custom [Test]...** to display the **Add Custom [Test]** dialog. The following tests available are: *New Dale-Chall*, *Spache Revised*, and Harris-Jacobson\index{Harris-Jacobson Wide Range!custom test}. This dialog is used to create a [custom word test](#creating-custom-test) and is a simplified version of the standard [**Custom Test**](#creating-custom-test) dialog.
+From the **Readability** tab, click the `r keys("Custom Test")` button and then select **Add Custom [Test]...** to display the **Add Custom [Test]** dialog. The following tests available are: New Dale-Chall\index{New Dale-Chall!custom test}, Spache Revised\index{Spache Revised!custom test}, and Harris-Jacobson\index{Harris-Jacobson Wide Range!custom test}. This dialog is used to create a [custom word test](#creating-custom-test) and is a simplified version of the standard [**Custom Test**](#creating-custom-test) dialog.
 
 **Test name**: Enter the name of the new test (e.g., “Harris-Jacobson (Social Studies)”) into this field.
 

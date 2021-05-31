@@ -12,7 +12,7 @@ The top area of the **Scores** window is the score grid. In here there are four 
 - **Scale Value**: the index value for tests that use special scales.
 - [**Predicted Cloze Score**](#cloze): the estimated score if the document were to be used for a *cloze* test. Note that *cloze* scores will be displayed in percentage format (i.e., 0–100) instead of floating-point format (i.e., .0–1.0) for easier reading.
 
-Note that most tests have just one type of result (e.g., grade level), so non-applicable columns are left blank. For example, note below that the [*Gunning Fog*](#gunning-fog-test) result is a grade level of 8.3. This translates to an eighth grade level reader (in his or her third month of class). Because this test only returns a grade level and age, the **Scale Value** and **Predicted Cloze Score** columns are empty. Another example is the result for the [Flesch Reading Ease](#flesch-test) test, which has a scale value of 79. This test has its own scale (instead of a grade level) so its age, grade level, and cloze columns are empty.
+Note that most tests have just one type of result (e.g., grade level), so non-applicable columns are left blank. For example, note below that the [Gunning Fog](#gunning-fog-test) result is a grade level of 8.3. This translates to an eighth grade level reader (in his or her third month of class). Because this test only returns a grade level and age, the **Scale Value** and **Predicted Cloze Score** columns are empty. Another example is the result for the [Flesch Reading Ease](#flesch-test) test, which has a scale value of 79. This test has its own scale (instead of a grade level) so its age, grade level, and cloze columns are empty.
 
 When a grade-level test scores a document at its maximum value, a “+” will be appended to the score. Although most grade-level tests can score up to 19, some tests which are designed for primary and secondary education materials will have lower maximum scores. For example, [Wheeler-Smith](#wheeler-smith)\index{Wheeler-Smith} is designed for primary-age materials and its maximum score is the fourth-grade level. If a document's Wheeler-Smith score is 4, then it will be displayed as “4+.”
 
@@ -24,7 +24,7 @@ Along with an explanation of the test's results, the factors that it uses to det
 
 Finally, the averages (means) of your test scores and ages are displayed at the bottom of the results window. Their respective [modes](#stat-terms), [medians](#stat-terms), and [standard deviations](#stat-terms) are also included if [**Extended Information**](#options-summary-report) is enabled. Note that scores are truncated when searching for the grade-level mode. For example, “6.7” and “6.2” will both be treated as “6.” Mode generally requires discrete data to produce meaningful results; therefore, grade-level scores are converted to their base grades for this statistic.
 
-When calculating these statistics, failed test scores are treated as missing observations and not included. For example, let us say that you included 5 tests, but one of them could not be calculated. In this case, the valid 4 scores will be added and divided by 4 (not 5) to acquire the means. Also, grade range scores–such as “5–6” from [*New Dale-Chall*](#dale-chall-test)–will be converted to its own average (e.g., “5-6” will be 5.5).
+When calculating these statistics, failed test scores are treated as missing observations and not included. For example, let us say that you included 5 tests, but one of them could not be calculated. In this case, the valid 4 scores will be added and divided by 4 (not 5) to acquire the means. Also, grade range scores–such as “5–6” from [New Dale-Chall](#dale-chall-test)\index{New Dale-Chall!grade-range averaging}–will be converted to its own average (e.g., “5-6” will be 5.5).
 
 To remove any test from this list, select it and press `r keys("CTRL")`+`r keys("DELETE")` (`r macOS_cmd_key()`+`r keys("DELETE")` on macOS) on your keyboard. To edit a [custom test](#creating-custom-test), double click on it in this list. To view the help for a standard test, double click on it in this list.
 
@@ -32,7 +32,7 @@ There will also be graphs in this section if you had included the [Fry](#reviewi
 
 ## Readability Graphs {#reviewing-readability-graphs}
 
-There are numerous readability tests that are graphically plotted, including [Fry](#fry-test), [Raygor](#raygor-test), [Flesch](#flesch-test), [Lix](#lix-test), [Gilliam-Peña-Mountain](#gilliam-pena-mountain-fry-graph), [FRASE](#frase), [Crawford](#crawford)\index{Crawford}, and [*Schwartz*](#scwartz). These graphs consist of either grade-level or reading-level regions that a document may fall within. They also include indicators for the most influential factor for the document's reported level (i.e., word difficulty vs. sentence difficulty).
+There are numerous readability tests that are graphically plotted, including [Fry](#fry-test), [Raygor](#raygor-test), [Flesch](#flesch-test), [Lix](#lix-test), [Gilliam-Peña-Mountain](#gilliam-pena-mountain-fry-graph), [FRASE](#frase), [Crawford](#crawford), and [*Schwartz*](#scwartz). These graphs consist of either grade-level or reading-level regions that a document may fall within. They also include indicators for the most influential factor for the document's reported level (i.e., word difficulty vs. sentence difficulty).
 
 To view these graphs, click on the **Test Graphs & Charts** icon in a [standard project](#creating-standard-project) or the **Readability Graphs** icon in a [batch project](#creating-batch-project).
 
@@ -66,7 +66,7 @@ The *Schwartz* graph is another Fry-like graph, which is designed for German (pr
 knitr::include_graphics("Images/Schwartz.png")
 ```
 
-The Fry and Raygor graphs are very similar and are both interpreted in the same manner; however, there are a few differences between them. The Fry graph classifies documents within the 1^st^ grade to doctorate level. In contrast, Raygor concentrates on the range of 3^rd^ grade to the sophomore collegiate level. It is recommended to only use Raygor graphs for secondary-age materials.
+The Fry\index{Fry!compared to Raygor} and Raygor\index{Raygor Estimate!compared to Fry} graphs are very similar and are both interpreted in the same manner; however, there are a few differences between them. The Fry graph classifies documents within the 1^st^ grade to doctorate level. In contrast, Raygor concentrates on the range of 3^rd^ grade to the sophomore collegiate level. It is recommended to only use Raygor graphs for secondary-age materials.
 
 Another difference is that the Fry graph is influenced by high-syllable words, while the Raygor graph is influenced by long words. Long sentences remain a key factor for both of these graphs, though.
 
@@ -78,9 +78,9 @@ The FRASE\index{FRASE} graph is similar to Fry in terms of factors used and axis
 knitr::include_graphics("Images/FraseGraph.png")
 ```
 
-A key difference with FRASE is its use of reading levels (rather than grade levels). In the above example, we can see that the document has been scored at the “Intermediate” level. The other difference is that it is designed for Spanish text—note how its X (syllable-count) axis begins at 182, not 108.
+A key difference with FRASE\index{FRASE!reading levels} is its use of reading levels (rather than grade levels). In the above example, we can see that the document has been scored at the “Intermediate” level. The other difference is that it is designed for Spanish text—note how its X (syllable-count) axis begins at 182, not 108.
 
-The Crawford\index{Crawford} graph is also similar to Fry in terms of factors used. However, it differs from most other graphs in that it uses the interior of the plot to find its sentence-count factor (instead of an axis). Below is an example of a *Crawford* graph:
+The Crawford\index{Crawford!compared to Fry} graph is also similar to Fry in terms of factors used. However, it differs from most other graphs in that it uses the interior of the plot to find its sentence-count factor (instead of an axis). Below is an example of a *Crawford* graph:
 
 ```{r crawford2, echo=F, fig.cap='Crawford Graph', fig.align='center'}
 knitr::include_graphics("Images/CrawfordGraph.png")
@@ -170,10 +170,10 @@ The **Report** and **Tabular Report** windows display the document's statistics 
 - Number and percentage of proper nouns (not available for German projects).
 - Number and percentage of total (and unique) monosyllabic words.
 - Number and percentage of total (and unique) 3+ syllable words.
-- Number and percentage of total (and unique) hard [SMOG](#smog-test)\index{SMOG} words. This statistic is only available if SMOG is included in the project.
-- Number and percentage of total (and unique) hard [*Fog*](#gunning-fog-test) words. This statistic is only available if *Fog* is included in the project.
+- Number and percentage of total (and unique) hard [SMOG](#smog-test)\index{SMOG!word statistics} words. This statistic is only available if SMOG is included in the project.
+- Number and percentage of total (and unique) hard [Fog](#gunning-fog-test)\index{Gunning Fog!word statistics} words. This statistic is only available if Fog is included in the project.
 - Number and percentage of total (and unique) 6+ letter words.
-- Number and percentage of total (and unique) unfamiliar words. This includes word lists such as [*Dale-Chall*](#dale-chall-test) and [*Spache*](#spache-test). These statistics are only available if the respective tests are included in the project.
+- Number and percentage of total (and unique) unfamiliar words. This includes word lists such as [New Dale-Chall](#dale-chall-test)\index{New Dale-Chall!word statistics} and [Spache](#spache-test)\index{Spache Revised!word statistics}. These statistics are only available if the respective tests are included in the project.
 - Number of grammar errors.
 - Text size (the size of the text in a document, not the actual file size). This statistic is only available if [**Extended Information**](#options-summary-report) is enabled.
 
@@ -182,7 +182,7 @@ Statistics for any custom familiar-word tests will also be included in this wind
 A **Notes** section may be included at the bottom of the formatted report if there are any items of interest detected (e.g., a high sentence-length average). If your document requires improvement, then this section is usually a good place to begin.
 
 ::: {.notesection data-latex=""}
-3+ syllable words and [*Fog*](#gunning-fog-test) and [SMOG](#smog-test) hard words are all the same except for how numerals (e.g., phone numbers and dates) are handled. SMOG always sounds out each digit of a numeric word, whereas *Fog* ignores numeric words. You can control how numeric words are handled from the [**Document Indexing**](#document-analysis) section of the [**Options**](#options-overview) dialog (available on the **Tools** tab).
+3+ syllable words and [Fog](#gunning-fog-test) and [SMOG](#smog-test) hard words are all the same except for how numerals (e.g., phone numbers and dates) are handled. SMOG always sounds out each digit of a numeric word, whereas Fog ignores numeric words. You can control how numeric words are handled from the [**Document Indexing**](#document-analysis) section of the [**Options**](#options-overview) dialog (available on the **Tools** tab).
 :::
 
 ## Words Breakdown {#reviewing-word-breakdowns}
@@ -197,11 +197,11 @@ The types of difficult-word lists that may be shown are:
 
 **6+ Characters**: This list displays all the document's words that are six or more characters. It also displays how many characters each word contains and their respective frequency counts. This window is only available if the document contains 6+ character words.
 
-**Dale-Chall (Unfamiliar)**: This list displays all the document's words that are not in the [*Dale-Chall*](#dale-chall-test) familiar words list and their respective frequency counts. The *Dale-Chall* word list is a collection of words that are considered to be familiar to most fourth grade readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if a *Dale-Chall* related test is included in the project.
+**Dale-Chall (Unfamiliar)**: This list displays all the document's words that are not in the [New Dale-Chall](#dale-chall-test) familiar words list and their respective frequency counts. The New Dale-Chall\index{New Dale-Chall!reviewing unfamiliar words} word list is a collection of words that are considered to be familiar to most fourth grade readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if a Dale-Chall related test is included in the project.
 
-**Spache (Unfamiliar)**: This list displays all the document's words that are not in the *Spache* familiar words list and their respective frequency counts. The [*Spache*](#spache-test) word list is a collection of words that are considered to be familiar to most primary-age readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the *Spache* test is included in the project.
+**Spache (Unfamiliar)**: This list displays all the document's words that are not in the Spache\index{Spache Revised!reviewing unfamiliar words} familiar words list and their respective frequency counts. The [Spache](#spache-test) word list is a collection of words that are considered to be familiar to most primary-age readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the Spache test is included in the project.
 
-**Harris-Jacobson (Unfamiliar)**: This list displays all the document's words that are not in the Harris-Jacobson\index{Harris-Jacobson Wide Range} familiar words list and their respective frequency counts. The [*Harris-Jacobson*](#harris-jacobson) word list is a collection of words that are considered to be familiar to most second-grade readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the *Harris-Jacobson* test is included in the project.
+**Harris-Jacobson (Unfamiliar)**: This list displays all the document's words that are not in the Harris-Jacobson\index{Harris-Jacobson Wide Range!reviewing unfamiliar words} familiar words list and their respective frequency counts. The [Harris-Jacobson](#harris-jacobson) word list is a collection of words that are considered to be familiar to most second-grade readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the Harris-Jacobson test is included in the project.
 
 **All Words**: This list displays all the words from the document and their respective frequency counts.
 
@@ -217,7 +217,7 @@ To find the most complex words, sort the **Syllable Count** column of the **3+ S
 
 If your test scores are indicating that the document is too difficult for your target audience, then you should review overly complex or long words. You may consider seeing if any shorter synonyms could be used in their place. The same type of review can also be performed with the **6+ Characters** list by sorting the **Character Count** column.
 
-To help find the most difficult words for the *Dale-Chall* list, select the **Dale-Chall (Unfamiliar)** subitem and sort the **Frequency** column. The most frequently occurring words are the ones that should be replaced with more familiar synonyms that most readers would recognize.
+To help find the most difficult words for the New Dale-Chall list, select the **Dale-Chall (Unfamiliar)** subitem and sort the **Frequency** column. The most frequently occurring words are the ones that should be replaced with more familiar synonyms that most readers would recognize.
 
 To find a specific word in a list, type the word into the **Search** bar at the top of program and hit the `r keys("ENTER")` button on your keyboard. You can also select the list and begin typing the word. If the word is in the list, then the selection will move to it.
 
@@ -229,11 +229,11 @@ The different types of text reports that may be shown are:
 
 **6+ Characters**: This text report contains the document with all the words that are six or more characters long highlighted. This window is only available if the document contains 6+ character words.
 
-**Dale-Chall (Unfamiliar)**: This text report contains the document with all the [*Dale-Chall*](#dale-chall-test) unfamiliar words highlighted. The *Dale-Chall* word list is a collection of words that are considered to be familiar to most fourth grade readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if a *Dale-Chall* related test is included in the project.
+**Dale-Chall (Unfamiliar)**: This text report contains the document with all the [New Dale-Chall](#dale-chall-test) unfamiliar words highlighted. The New Dale-Chall\index{New Dale-Chall!reviewing unfamiliar words} word list is a collection of words that are considered to be familiar to most fourth grade readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if a Dale-Chall related test is included in the project.
 
-**Spache (Unfamiliar)**: This text report contains the document with all the [*Spache*](#spache-test) unfamiliar words highlighted. The *Spache* word list is a collection of words that are considered to be familiar to most primary-age readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the *Spache* test is included in the project.
+**Spache (Unfamiliar)**: This text report contains the document with all the [Spache](#spache-test) unfamiliar words highlighted. The Spache\index{Spache Revised!reviewing unfamiliar words} word list is a collection of words that are considered to be familiar to most primary-age readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the Spache test is included in the project.
 
-**Harris-Jacobson (Unfamiliar)**: This text report contains the document with all the [Harris-Jacobson](#harris-jacobson)\index{Harris-Jacobson Wide Range} unfamiliar words highlighted. The *Harris-Jacobson* word list is a collection of words that are considered to be familiar to most primary-age readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the *Harris-Jacobson* test is included in the project.
+**Harris-Jacobson (Unfamiliar)**: This text report contains the document with all the [Harris-Jacobson](#harris-jacobson)\index{Harris-Jacobson Wide Range!reviewing unfamiliar words} unfamiliar words highlighted. The Harris-Jacobson word list is a collection of words that are considered to be familiar to most primary-age readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the Harris-Jacobson test is included in the project.
 
 You can change both the font and highlighting color by opening the [**Project Properties**](#options-overview) dialog and clicking the [**Highlighted Reports**](#options-highlighted-reports) icon. Note that changing these options from the **Project Properties** dialog will only affect the current project. If you want to make changes to any future projects, then go to the **Options** dialog from the **Tools** tab instead.
 
@@ -241,7 +241,7 @@ A **Word Counts** [bar chart](#options-bar-charts) is also included in this sect
 
 ![](Images/barchart.png)
 
-In the above example, we can see that there are 70 unfamiliar *Dale-Chall* words, but only 42 3+ syllable words. From this, we could infer that we should first concentrate on replacing these unfamiliar words. Lists of these words can be found by clicking on the [**Difficult Words**](#reviewing-word-breakdowns) icon on the project sidebar.
+In the above example, we can see that there are 70 unfamiliar New Dale-Chall words, but only 42 3+ syllable words. From this, we could infer that we should first concentrate on replacing these unfamiliar words. Lists of these words can be found by clicking on the [**Difficult Words**](#reviewing-word-breakdowns) icon on the project sidebar.
 
 Finally, a histogram of the words (grouped by syllable count) is also available:
 
@@ -250,7 +250,7 @@ Finally, a histogram of the words (grouped by syllable count) is also available:
 In the above histogram, we see that most of the words are either 1 or 2 syllables. There are only 25 3-syllable words and 17 4-syllable words in the document. Note that selecting a bar will display the first 25 words within that syllable group (if [binning](#options-histograms) is set to unique values).
 
 ::: {.notesection data-latex=""}
-The total value of a word count reflects the number of words, including repeats of the same word. The unique value of a word count reflects the number of words, excluding repeats. For example, a document contains the word “liquidation” three times. This word will be tallied three times when factored into the total word count, but only once into the unique word count. Most tests use the total word count variable, although there are some that use unique counts (e.g., *Spache* uses its unique unfamiliar word count).
+The total value of a word count reflects the number of words, including repeats of the same word. The unique value of a word count reflects the number of words, excluding repeats. For example, a document contains the word “liquidation” three times. This word will be tallied three times when factored into the total word count, but only once into the unique word count. Most tests use the total word count variable, although there are some that use unique counts (e.g., Spache uses its unique unfamiliar word count).
 :::
 
 See also \@ref(proper-nouns-in-lists).
