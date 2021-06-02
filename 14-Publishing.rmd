@@ -200,7 +200,7 @@ Custom values can also be entered here.
 To preview a window before printing it, select **Print Preview** from this menu.
 
 ::: {.center data-latex=""}
-![](Images/NonGenerated/printpreview.png){width=75%}
+![](Images/NonGenerated/printpreview.png){width=50%}
 :::
 
 ::: {.notesection data-latex=""}

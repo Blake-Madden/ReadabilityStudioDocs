@@ -89,13 +89,13 @@ Now you can add files from a folder, archive file, Excel^®^ 2007 file, or websi
 To add files from a folder, click the `r keys("Add folder")` button. You will be presented with the [**Select Directory**](#select-directory) dialog:
 
 ::: {.center data-latex=""}
-![](Images/selectdirectory.png){width=75%}
+![](Images/selectdirectory.png){width=50%}
 :::
 
 To add files from an archive (i.e., a \*.zip file), click the `r keys("Add archive")` button. You will be presented with the [**Select Archive File**](#select-archive) dialog:
 
 ::: {.center data-latex=""}
-![](Images/selectarchive.png){width=75%}
+![](Images/selectarchive.png){width=50%}
 :::
 
 To add documents from an Excel 2007 file, click the `r keys("Add spreadsheet")` button. After selecting an Excel file, you will be prompted for which cells to import. After specifying these, the cells will be imported one of two ways. The first way is if a cell's content is a filepath. In this case, the document referenced by this filepath will be loaded into the project. Otherwise, if a cell is not a file path, then its content will be imported as a document itself. In this case, the cell's name (e.g., “B19”) will be used as the document's name.
