@@ -222,7 +222,7 @@
   padding: inherit;
 }
 
-/* center an image inside of "center" div.*/
+/* centers an image.*/
 .center {
   display: block;
   margin-left: auto;
@@ -233,9 +233,6 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  /* Size has to be passed to image via markdown for LaTex,
-     but in here we want the image to the 100% of the parent container.*/
-  width: 100% !important;
 }
 
 /* prevents sections from being split by a page break.*/
