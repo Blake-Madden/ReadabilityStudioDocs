@@ -44,7 +44,7 @@ Options for customizing its display are made available on the **Edit** section o
 
 ## Column Sorting {#column-sorting}
 
-::: {.wrapfigure data-latex="{r}{0.5\\textwidth}"}
+::: {.wrapfigure data-latex="{r}{0.5\\textwidth}" style="width: 48%;"}
 ![](Images/columnheader.png){width=48%}
 :::
 
@@ -58,7 +58,7 @@ Clicking the column a second time will sort that column into descending order. A
 
 To toggle the sorting order, click the column header again.
 
-::: {.wrapfigure data-latex="{r}{0.5\\textwidth}"}
+::: {.wrapfigure data-latex="{r}{0.5\\textwidth}" style="width: 48%;"}
 ![](Images/sortcolumnsdialog.png){width=48%}
 :::
 

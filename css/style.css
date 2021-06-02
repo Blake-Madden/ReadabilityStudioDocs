@@ -15,6 +15,7 @@
 
 .glsacronym {
   font-variant: small-caps;
+  font-weight: bold;
 }
 
 .glsdef {
@@ -207,10 +208,9 @@
   -webkit-transform: rotate(45deg);
 }
 
-/* places an image to the right of the text, consuming half of the page.*/
+/* places an image to the right of the text.*/
 .wrapfigure {
   float: right;
-  width: 48%;
   padding: 0 0 0 2%;
 }
 
@@ -227,7 +227,6 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 75%;
 }
 
 .center img {

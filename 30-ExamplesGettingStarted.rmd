@@ -54,7 +54,7 @@ Now that you have selected the words that you want to save, click the `r keys("S
 
 A **Save As** dialog will appear and you will have the option to save as either HTML or text. Select where you want to save the file and click `r keys("Save")`.
 
-::: {.wrapfigure data-latex="{r}{0.5\\textwidth}"}
+::: {.wrapfigure data-latex="{r}{0.5\\textwidth}" style="width: 48%;"}
 ![](Images/exportoptions.png){width=48%}
 :::
 

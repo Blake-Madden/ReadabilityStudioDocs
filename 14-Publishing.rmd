@@ -180,7 +180,7 @@ All graphs\index{graphs!printing}, lists\index{lists!printing}, statistical summ
 
 To print any window, go to the **Home** tab and click the `r keys("Print")` button, or right click on the window and select **Print**.
 
-:::  {.wrapfigure data-latex="{r}{0.5\\textwidth}"}
+:::  {.wrapfigure data-latex="{r}{0.5\\textwidth}" style="width: 48%;"}
 ![](Images/printerheadersfooters.png){width=48%}
 :::
 
@@ -234,7 +234,7 @@ Refer to \@ref(how-text-is-excluded) to learn how *Readability Studio* automatic
 
 ### Exporting Filtered Documents {-}
 
-::: {.wrapfigure data-latex="{r}{0.5\\textwidth}"}
+::: {.wrapfigure data-latex="{r}{0.5\\textwidth}" style="width: 48%;"}
 ![](Images/FilterTextPreview.png){width=48%}
 :::
 
