@@ -480,7 +480,7 @@ Finally, *Readability Studio* is highly configurable. Many options, such as how 
 - Improved appearance of graphs on larger displays. Graph fonts and lines will now scale as graphs are resized.
 - Blank templates of readability graphs can now be saved, copied, and printed.
 - The color and opacity of graph plot areas can now be customized.
-- A [box plot](#box-plots) showing the document's sentence lengths added to standard projects.
+- A box plot showing the document's sentence lengths added to standard projects.
 
 ### Readability Studio 3.0/3.1/3.2 (2009–2010) {-}
 ***

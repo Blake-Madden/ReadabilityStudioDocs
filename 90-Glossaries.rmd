@@ -2,6 +2,22 @@
 
 # Glossary {#glossary}
 
+## Acronymns
+
+::: {.glsacronym data-latex=''}
+Asl
+:::
+::: {.glsdef data-latex=''}
+Average sentence length.
+:::
+
+::: {.glsacronym data-latex=''}
+Irq
+:::
+::: {.glsdef data-latex=''}
+Interquartile range. Refer to \@ref(fig:boxplot).
+:::
+
 ## Readability Glossary {#readability-glossary}
 
 ::: {.glsentry data-latex=''}
@@ -34,7 +50,7 @@ A section of text ending with a period, exclamation mark, question mark, interro
 
 ## Statistical Glossary {#stat-terms}
 
-::: {.glsentry #box-plots data-latex=''}
+::: {.glsentry data-latex=''}
 box plots
 :::
 ::: {.glsdef data-latex=''}
@@ -46,7 +62,7 @@ Box plots are used to display the distribution of data, where:
 
 Outlier values that do not fall within these areas are plotted outside of the whiskers.
 
-```{r, echo=F, fig.cap="Visual representation of a box plot's layout, adapted from DeCicco (“Exploring ggplot2 boxplots”)", fig.align='center'}
+```{r boxplot, echo=F, fig.cap="Visual representation of a box plot's layout, adapted from DeCicco (“Exploring ggplot2 boxplots”)", fig.align='center'}
 # translatable content
 WhiskerLabel1 <- "Largest value within 1.5 times\ninterquartile range above\n75th percentile"
 WhiskerLabel2 <- "Smallest value within 1.5 times\ninterquartile range below\n25th percentile"

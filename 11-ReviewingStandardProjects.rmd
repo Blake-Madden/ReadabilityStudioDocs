@@ -275,7 +275,7 @@ If the test scores are indicating that the document is too difficult for your ta
 
 Note that if there are no long sentences in your document, then this window will not be included.
 
-A [box plot](#box-plots) of the sentence lengths (measured by word count) is also available:
+A box plot of the sentence lengths (measured by word count) is also available:
 
 ![](Images/SentencesBoxplot.png)
 
