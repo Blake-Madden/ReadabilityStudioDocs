@@ -1,21 +1,41 @@
 # (PART) Appendix {-}
 
+# Keyboard Shortcuts
+
++---------------------------+------------------------------------------------------------------+
+| To do this                | Press                                                            |
++:==========================+:=================================================================+
+| Reload the active project | `r keys('F5')`                                                   |
++---------------------------+------------------------------------------------------------------+
+| Create a new project from | `r keys('CTRL')`+`r keys('V')` `r os_logo('windows')`\           |
+| content on the clipboard  |  or\                                                             |
+|                           | `r macOS_cmd_key()`+`r keys('V')` `r os_logo('apple')`           |
++---------------------------+------------------------------------------------------------------+
+| Save the active project   | `r keys('CTRL')`+`r keys('S')` `r os_logo('windows')`\           |
+|                           |  or\                                                             |
+|                           | `r macOS_cmd_key()`+`r keys('S')` `r os_logo('apple')`           |
++---------------------------+------------------------------------------------------------------+
+| Print the active window   | `r keys('CTRL')`+`r keys('P')` `r os_logo('windows')`\           |
+|                           |  or\                                                             |
+|                           | `r macOS_cmd_key()`+`r keys('P')` `r os_logo('apple')`           |
++---------------------------+------------------------------------------------------------------+
+
 # Glossary {#glossary}
 
 ## Acronymns
 
 ::: {.glsacronym data-latex=''}
-Asl
+ASL
 :::
 ::: {.glsdef data-latex=''}
 Average sentence length.
 :::
 
 ::: {.glsacronym data-latex=''}
-Irq
+IRQ
 :::
 ::: {.glsdef data-latex=''}
-Interquartile range. Refer to \@ref(fig:boxplot).
+Interquartile range. Refer to figure \@ref(fig:boxplot).
 :::
 
 ## Readability Glossary {#readability-glossary}
