@@ -2,11 +2,25 @@ library(glue)
 library(tidyverse)
 library(magrittr)
 library(kableExtra)
+library(fontawesome)
+library(Hmisc)
 
 knitr::opts_chunk$set(message=F, warning=F)
 # prevent floating
 knitr::opts_chunk$set(fig.pos = 'H', out.extra = '')
 options(knitr.kable.NA = '')
+
+# @brief Displays a logo for a given OS.
+# @param os The OS logo to show. "apple," "windows," and "linux," and "freebsd" are supported.
+os_logo <- function(os)
+  {
+  if (knitr::is_latex_output())
+    { knitr::asis_output(sprintf("\\fa%s", Hmisc::capitalize(os))) }
+  else if (knitr::is_html_output())
+    { knitr::asis_output(fontawesome::fa(glue('fab fa-{stringr::str_to_lower(os)}'))) }
+  else
+    { '' }
+  }
 
 # @brief Displays the macOS CMD button symbol (as a keyboard button).
 macOS_cmd_key <- function()
