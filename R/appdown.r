@@ -12,9 +12,9 @@ options(knitr.kable.NA = '')
 macOS_cmd_key <- function()
   {
   if (knitr::is_latex_output())
-    { knitr::asis_output("\\keys{\\cmd}") }
+    { knitr::asis_output(keys("\\keys{\\cmd}")) }
   else if (knitr::is_html_output())
-    { knitr::asis_output("<span class='key'>&#8984;</span>") }
+    { knitr::asis_output(keys("<span class='key'>&#8984;</span>")) }
   else
     { knitr::asis_output(text) }
   }
