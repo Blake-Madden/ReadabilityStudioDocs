@@ -14,7 +14,7 @@
 }
 
 .glsacronym {
-  font-variant: small-caps;
+  text-transform: uppercase;
   font-weight: bold;
 }
 
@@ -249,7 +249,7 @@
 .caption {
   color: #777;
   margin-top: 10px;
-  text-align: center;
+  text-align: left;
 }
 p code {
   white-space: inherit;
