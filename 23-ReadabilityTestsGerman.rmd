@@ -15,12 +15,15 @@ $$I = 180 - (W/S) - (58.5*(B/W))$$
 
 Where:
 
-|     | Description |
-| --- | :-- |
++:----+:----------------------------------+
 | I   | Amstad (i.e., Flesch) index score |
-| W   | Number of words |
-| B   | Number of syllables |
-| S   | Number of sentences |
++-----+-----------------------------------+
+| W   | Number of words                   |
++-----+-----------------------------------+
+| B   | Number of syllables               |
++-----+-----------------------------------+
+| S   | Number of sentences               |
++-----+-----------------------------------+
 
 Amstad offered these interpretations for scoring:
 
