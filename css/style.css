@@ -248,6 +248,11 @@
 }
 .caption {
   color: #777;
+  margin-bottom: 10px;
+  text-align: left;
+}
+caption {
+  color: #777;
   margin-top: 10px;
   text-align: left;
 }
