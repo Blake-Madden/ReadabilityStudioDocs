@@ -1,0 +1,8 @@
+Reading Ease Score	Description of Style	Typical Magazine
+90-100	Very easy	comics
+80-89	Easy	pulp-fiction
+70-79	Fairly easy	slick-fiction
+60-69	Standard	digest
+50-59	Fairly difficult	quality
+30-49	Difficult	academic
+0-29	Very difficult	scientific

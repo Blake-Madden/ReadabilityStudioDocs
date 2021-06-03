@@ -28,11 +28,11 @@ Where:
 Amstad offered these interpretations for scoring:
 
 ```{r, echo=F}
-amstadConversionTable <- read_delim("data/AmstadConversionTable.txt", 
-    "\t", escape_double = F, trim_ws = T)
-
-kableExtra::kbl(amstadConversionTable, booktabs=T, centering=T, linesep="",
-                caption="Amstad Conversion Table", align='l', escape=F)
+kableExtra::kbl(read_delim("data/AmstadConversionTable.txt", "\t", escape_double=F, trim_ws=T),
+                booktabs=T, centering=T, linesep="",
+                caption="Amstad Conversion Table",
+                align='l', escape=F) %>%
+  kableExtra::kable_classic(full_width=F)
 ```
 
 ::: {.notesection data-latex=""}
@@ -391,18 +391,12 @@ kableExtra::kbl(wheelersmithBVData, booktabs=T, centering=T, align='l', escape=F
 
 Then, find the index value in the following chart to acquire the final readability score:
 
-| Grade | Score |
-| :-- | :-- |
-| First grade | 2.5 to 6 |
-| Second grade | 6.1 to 9 |
-| Third grade | 9.1 to 12 |
-| Fourth grade | 12.1 to 16 |
-| Fifth grade | 16.1 to 20 |
-| Sixth grade | 20.1 to 24 |
-| Seventh grade | 24.1 to 29 |
-| Eighth grade | 29.1 to 34 |
-| Ninth grade | 34.1 to 38 |
-| Tenth grade | 38.1 to 42 |
+```{r, echo=F}
+kableExtra::kbl(read_delim("data/WheelerSmithBV.txt", "\t", escape_double=F, trim_ws=T),
+                booktabs=T, centering=T, linesep="",
+                caption="Wheeler-Smith (Bamberger-Vanecek) Conversion Table",
+                align='l', escape=F)
+```
 
 ::: {.notesection data-latex=""}
 Although Bamberger and Vanecek (77, 186) do not specify using units instead of sentences, the use of units is assumed to match Wheeler-Smith.
