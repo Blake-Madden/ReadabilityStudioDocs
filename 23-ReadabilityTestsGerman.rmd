@@ -27,17 +27,13 @@ Where:
 
 Amstad offered these interpretations for scoring:
 
-| Reading Ease Score | Description of Style | Typical Magazine |
-| :-- | :-- | :-- |
-| 90-100 | Very easy | comics |
-| 80-89 | Easy | pulp-fiction |
-| 70-79 | Fairly easy | slick-fiction |
-| 60-69 | Standard | digest |
-| 50-59 | Fairly difficult | quality |
-| 30-49 | Difficult | academic |
-| 0-29 | Very difficult | scientific |
+```{r, echo=F}
+amstadConversionTable <- read_delim("data/AmstadConversionTable.txt", 
+    "\t", escape_double = F, trim_ws = T)
 
-Table: Amstad Conversion Table
+kableExtra::kbl(amstadConversionTable, booktabs=T, centering=T, linesep="",
+                caption="Amstad Conversion Table", align='l', escape=F)
+```
 
 ::: {.notesection data-latex=""}
 Like Flesch Reading Ease, this test treats numerals as monosyllabic words by default. This behavior can be changed from the [**Options**](#readability-test-options) dialog.

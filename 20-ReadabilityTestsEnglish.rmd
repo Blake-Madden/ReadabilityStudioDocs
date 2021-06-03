@@ -74,7 +74,7 @@ Where:
 The program will display the cloze score returned by this test in percentage format (e.g., 75) rather than fractal format (e.g., .75) to be consistent with other tests.
 :::
 
-index{Bormuth Cloze Mean|)}
+\index{Bormuth Cloze Mean|)}
 
 \newpage
 ## Bormuth Grade Placement (GP35)\index{Bormuth Grade Placement|(ii} {#bormuth-grade-placement-35-machine-passage}
