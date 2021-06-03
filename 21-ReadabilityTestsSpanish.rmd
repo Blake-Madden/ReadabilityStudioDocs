@@ -14,11 +14,13 @@ $$
 
 Where:
 
-|     | Description |
-| --- | :-- |
-| G   | Grade level |
++:----+:----------------------------------+
+| G   | Grade level                       |
++-----+-----------------------------------+
 | S   | Number of sentences per 100 words |
++-----+-----------------------------------+
 | B   | Number of syllables per 100 words |
++-----+-----------------------------------+
 
 A chart visualizing this test's score is also available:
 
@@ -172,10 +174,11 @@ $$
 
 Where:
 
-|     | Description |
-| --- | :-- |
-| G   | Grade level |
++:----+:---------------------------------------------------------+
+| G   | Grade level                                              |
++-----+----------------------------------------------------------+
 | C   | Number of complex words (3+ syllables) from 30 sentences |
++-----+----------------------------------------------------------+
 
 Like SMOG, this test fully syllabizes numerals (i.e., sounds them out), so the program overrides your [numeral syllabication](#document-analysis) setting for this test. It also excludes lists and tables, but includes headers and footers (Contreras et al. 23). (SMOG does not explicitly follow this rule.)
 

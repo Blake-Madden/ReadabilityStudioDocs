@@ -24,12 +24,15 @@ $$
 
 Where:
 
-|     | Description |
-| --- | :-- |
-| I   | Flesch index score |
-| W   | Number of words |
-| B   | Number of syllables |
-| S   | Number of sentences |
++:----+:----------------------------------+
+| I   | Flesch index score                |
++-----+-----------------------------------+
+| W   | Number of words                   |
++-----+-----------------------------------+
+| B   | Number of syllables               |
++-----+-----------------------------------+
+| S   | Number of sentences               |
++-----+-----------------------------------+
 
 Formulas can either be typed into the **Formula** field, or you can use the [**Function Browser**](#creating-custom-test). For example:
 

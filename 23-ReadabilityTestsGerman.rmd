@@ -132,14 +132,15 @@ Neue Wiener Sachtextformel 1 (1.nWS) (Bamberger-Vanecek 83, 187) is used for eva
 Where:
 
 ```{r, echo=F}
-nws1Data <- tibble(" " = c("G", "C", "X", "M", "S", "W"),
-                     "Description" = c("Grade level",
+nws1Data <- tibble(col1 = c("G", "C", "X", "M", "S", "W"),
+                   col2 = c("Grade level",
                                       "Number of 3+ syllable¹ words",
                                       "Number of 7+ character² words",
                                       "Number of monosyllabic³ words",
                                       "Number of sentences",
                                       "Number of words"))
 
+names(nws1Data) <- c(NULL)
 kableExtra::kbl(nws1Data, booktabs=T, centering=T, align='l', escape=F, linesep="") %>%
   kableExtra::kable_classic(full_width=F) %>%
   footnote(number = c(markdown_to_kable_footnote('“*drei- und mehrsilbigen*”'),
@@ -163,14 +164,15 @@ Neue Wiener Sachtextformel 2 (2.nWS) (Bamberger-Vanecek 84, 187) is used for eva
 Where:
 
 ```{r, echo=F}
-nws2Data <- tibble(" " = c("G", "C", "X", "M", "S", "W"),
-                   "Description" = c("Grade level",
+nws2Data <- tibble(col1 = c("G", "C", "X", "M", "S", "W"),
+                   col2 = c("Grade level",
                                      "Number of 3+ syllable¹ words",
                                      "Number of 7+ character² words",
                                      "Number of monosyllabic³ words",
                                      "Number of sentences",
                                      "Number of words"))
 
+names(nws2Data) <- c(NULL)
 kableExtra::kbl(nws2Data, booktabs=T, centering=T, align='l', escape=F, linesep="") %>%
   kableExtra::kable_classic(full_width=F) %>%
   footnote(number = c(markdown_to_kable_footnote('“*drei- und mehrsilbigen*”'),
@@ -193,14 +195,15 @@ $$
 Where:
 
 ```{r, echo=F}
-nws3Data <- tibble(" " = c("G", "C", "X", "M", "S", "W"),
-                   "Description" = c("Grade level",
+nws3Data <- tibble(col1 = c("G", "C", "X", "M", "S", "W"),
+                   col2 = c("Grade level",
                                      "Number of 3+ syllable¹ words",
                                      "Number of 7+ character² words",
                                      "Number of monosyllabic³ words",
                                      "Number of sentences",
                                      "Number of words"))
 
+names(nws3Data) <- c(NULL)
 kableExtra::kbl(nws3Data, booktabs=T, centering=T, align='l', escape=F, linesep="") %>%
   kableExtra::kable_classic(full_width=F) %>%
   footnote(number = c(markdown_to_kable_footnote('“*drei- und mehrsilbigen*”'),
@@ -223,12 +226,13 @@ $$
 Where:
 
 ```{r, echo=F}
-quadData <- tibble(" " = c("G", "C", "S", "W"),
-                   "Description" = c("Grade level",
+quadData <- tibble(col1 = c("G", "C", "S", "W"),
+                   col2 = c("Grade level",
                                       "Number of 3+ syllable¹ words",
                                       "Number of sentences",
                                       "Number of words"))
 
+names(quadData) <- c(NULL)
 kableExtra::kbl(quadData, booktabs=T, centering=T, align='l', escape=F) %>%
   kableExtra::kable_classic(full_width=F) %>%
   footnote(number = c(markdown_to_kable_footnote('“*drei- und mehrsilbigen*”')),
@@ -256,12 +260,15 @@ $$
 
 Where:
 
-|     | Description |
-| --- | :-- |
-| I   | Rix index score |
-| W   | Number words |
++:----+:-------------------------------------+
+| I   | Rix index score                      |
++-----+--------------------------------------+
+| W   | Number words                         |
++-----+--------------------------------------+
 | X   | Number of long words (7+ characters) |
-| U   | Number of sentence units |
++-----+--------------------------------------+
+| U   | Number of sentence units             |
++-----+--------------------------------------+
 
 ::: {.onsamepage data-latex=""}
 To convert the Rix index score to a grade, this test uses the following table:
@@ -296,12 +303,15 @@ $$
 
 Where:
 
-|     | Description |
-| --- | :-- |
-| I   | Rix index score |
-| W   | Number words |
++:----+:-------------------------------------+
+| I   | Rix index score                      |
++-----+--------------------------------------+
+| W   | Number words                         |
++-----+--------------------------------------+
 | X   | Number of long words (7+ characters) |
-| U   | Number of sentence units |
++-----+--------------------------------------+
+| U   | Number of sentence units             |
++-----+--------------------------------------+
 
 ::: {.onsamepage data-latex=""}
 To convert the Rix index score to a grade, this test uses the following table:
@@ -339,10 +349,11 @@ $$
 Where:
 
 ```{r, echo=F}
-smogBVData <- tibble(" " = c("G", "C"),
-                     "Description" = c("Grade level",
+smogBVData <- tibble(col1 = c("G", "C"),
+                     col2 = c("Grade level",
                                       "Number of 3+ syllable¹ words from 30 sentences"))
 
+names(smogBVData) <- c(NULL)
 kableExtra::kbl(smogBVData, booktabs=T, centering=T, align='l', escape=F) %>%
   kableExtra::kable_classic(full_width=F) %>%
   footnote(number = c(markdown_to_kable_footnote('“*drei- und mehrsilbigen*”')),
@@ -369,12 +380,13 @@ $$
 Where:
 
 ```{r, echo=F}
-wheelersmithBVData <- tibble(" " = c("I", "C", "W", "U"),
-                             "Description" = c("Index value",
+wheelersmithBVData <- tibble(col1 = c("I", "C", "W", "U"),
+                             col2 = c("Index value",
                                       "Number of 3+ syllable¹ words",
                                       "Number of words",
                                       "Number of units"))
 
+names(wheelersmithBVData) <- c(NULL)
 kableExtra::kbl(wheelersmithBVData, booktabs=T, centering=T, align='l', escape=F) %>%
   kableExtra::kable_classic(full_width=F) %>%
   footnote(number = c(markdown_to_kable_footnote('“*drei- und mehrsilbigen*”')),
