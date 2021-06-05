@@ -22,9 +22,8 @@ Note that these tests only determine the reading level of material based on how 
 
 ```{r, echo=F}
 maxTestRows <- 15
-
 englishTests <- split_column_into_table(read_tsv("data/EnglishTests.txt",
-                                     col_names=F)[[1]], maxTestRows, "Tests")
+                                     col_names=F)[[1]], maxTestRows)
 
 kableExtra::kbl(englishTests, booktabs=T, centering=T, linesep="",
                 caption="English Tests", align='l', escape=F) %>%
@@ -32,26 +31,53 @@ kableExtra::kbl(englishTests, booktabs=T, centering=T, linesep="",
   kableExtra::kable_styling(latex_options=c("scale_down")) %>%
   kableExtra::column_spec(1, border_right = ncol(englishTests) > 1) %>%
   kableExtra::column_spec(2, border_right = ncol(englishTests) > 1)
+
+# other languages
+germanTests <- split_column_into_table(read_tsv("data/GermanTests.txt",
+                                    col_names=F)[[1]], maxTestRows)
+
+spanishTests <- split_column_into_table(read_tsv("data/SpanishTests.txt",
+                                     col_names=F)[[1]], maxTestRows)
 ```
 
-```{r, echo=F}
-spanishTests <- split_column_into_table(read_tsv("data/SpanishTests.txt",
-                                     col_names=F)[[1]], maxTestRows, "Tests")
-
+```{r, echo=F, eval=knitr::is_html_output()}
 kableExtra::kbl(spanishTests, booktabs=T, centering=T, linesep="",
                 caption="Spanish Tests", align='l', escape=F) %>%
   kableExtra::kable_classic(full_width=F) %>%
-  kableExtra::column_spec(1, border_right = ncol(spanishTests) > 1)
+  kableExtra::column_spec(1, border_right = ncol(spanishTests) > 1) %>%
+  kableExtra::kable_styling(position = "float_left")
 ```
 
-```{r, echo=F}
-germanTests <- split_column_into_table(read_tsv("data/GermanTests.txt",
-                                    col_names=F)[[1]], maxTestRows, "Tests")
-
+```{r, echo=F, eval=knitr::is_html_output()}
 kableExtra::kbl(germanTests, booktabs=T, centering=T, linesep="",
                 caption="German Tests", align='l', escape=F) %>%
   kableExtra::kable_classic(full_width=F) %>%
+  kableExtra::column_spec(1, border_right = ncol(germanTests) > 1) %>%
+  kableExtra::kable_styling(position = "left")
+```
+
+```{r, echo=F, eval=knitr::is_latex_output()}
+sKable <- kableExtra::kbl(spanishTests, booktabs=T, centering=T, linesep="",
+                align='l', escape=F) %>%
+  kableExtra::column_spec(1, border_right = ncol(spanishTests) > 1)
+
+gKAble <- kableExtra::kbl(germanTests, booktabs=T, centering=T, linesep="",
+                align='l', escape=F) %>%
   kableExtra::column_spec(1, border_right = ncol(germanTests) > 1)
+
+knitr::asis_output(glue_collapse(
+  c("\\begin{table}[!htb]
+    \\begin{minipage}{.5\\linewidth}
+      \\caption{Spanish Tests}",
+        sKable,
+    "\\hspace{1cm}
+    \\end{minipage}%
+    \\hspace{.1cm}
+    \\begin{minipage}{.5\\linewidth}
+      \\caption{German Tests}",
+        gKAble,
+    "\\end{minipage}
+    \\end{table}")))
 ```
 
 In addition, *Readability Studio* offers in-depth explanations for these tests. Each test result includes an interpretation of the score and the factors that affect it.
