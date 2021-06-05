@@ -15,7 +15,7 @@ options(knitr.kable.NA = '')
 os_logo <- function(os)
   {
   if (knitr::is_latex_output())
-    { knitr::asis_output(sprintf("\\fa%s", Hmisc::capitalize(os))) }
+    { knitr::asis_output(glue("\\fa{Hmisc::capitalize(os)}")) }
   else if (knitr::is_html_output())
     { knitr::asis_output(fontawesome::fa(glue('fab fa-{stringr::str_to_lower(os)}'))) }
   else
@@ -67,7 +67,8 @@ keys <- function(label)
 # @param col The vector to split.
 # @param rowCount The maximum number of rows for the table.
 # @param columnName The name to assign to the column(s) in the output.
-split_column_into_table <- function(col, rowCount, columnName)
+#        Leave empty to not include column names in the results.
+split_column_into_table <- function(col, rowCount, columnName = NULL)
   {
   colVals <- col %>%
     sort()
@@ -75,16 +76,18 @@ split_column_into_table <- function(col, rowCount, columnName)
     {
     length(colVals) <- length(colVals)+
       (rowCount-length(colVals) %% rowCount)
-
     }
   else
     { rowCount = length(colVals) }
 
   outData <- dplyr::as_tibble(colVals %>% matrix(nrow=rowCount, byrow=F), .name_repair="minimal")
-  if (ncol(outData) > 1)
+  # set the column names
+  if (ncol(outData) > 1 && length(columnName) > 0)
     { colnames(outData) <- rep(columnName, ncol(outData)) }
-  else
+  else if (length(columnName) > 0)
     { colnames(outData) <- columnName }
+  else
+    { colnames(outData) <- c(NULL) }
 
   outData
   }
