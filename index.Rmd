@@ -9,6 +9,8 @@ output:
       in_header: "latex/preamble.tex"
       after_body: "latex/after_body.tex"
 documentclass: book
+lot: yes
+lof: yes
 links-as-notes: true
 linestretch: 1.15
 biblio-style: mlalike
