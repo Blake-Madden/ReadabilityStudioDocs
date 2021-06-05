@@ -166,13 +166,13 @@ This dialog provides options for [exporting](#exporting) an entire project into 
 
 **Export lists as**: Select the file type that you want to save list windows as from this list. This option only applies when exporting as separate files.
 
-**Export text windows as**: Select the file type that you want to save text reports as from this list. This option only applies to standard projects, and when exporting as separate files.
+**Export text reports as**: Select the file type that you want to save text reports as from this list. This option only applies to standard projects, and when exporting as separate files.
 
 **Export graphs as**: Select the image type that you want to save graphs as from this list.
 
 **Image Options**: Click this button to further customize how to save the graphs as images. This includes options such as color mode and image size. Note that the options available on this dialog will depend on which image type is selected.
 
-**Include lists and text windows**: Select this option to include lists and highlighted text reports in the output. It is recommended to unselect this option for larger documents. This option only applies to standard projects.
+**Include lists and text reports**: Select this option to include lists and highlighted text reports in the output. It is recommended to unselect this option for larger documents. This option only applies to standard projects.
 
 ## Printing {#printing}
 
