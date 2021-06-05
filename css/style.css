@@ -14,7 +14,7 @@
 }
 
 .glsacronym {
-  text-transform: uppercase;
+  font-varint: small-caps;
   font-weight: bold;
 }
 
@@ -247,12 +247,12 @@
   text-align: center;
 }
 .caption {
-  color: #777;
+  color: #777 !important;
   margin-bottom: 10px;
   text-align: left;
 }
 caption {
-  color: #777;
+  color: #777 !important; /* kable tries to override this*/
   margin-top: 10px;
   text-align: left;
 }

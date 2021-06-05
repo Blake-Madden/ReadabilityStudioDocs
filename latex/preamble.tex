@@ -23,6 +23,7 @@
 \usepackage{xcolor}
 \usepackage{tcolorbox}
 \usepackage{fontawesome5}
+\usepackage{Alegreya}
 \usepackage{wrapfig}
 % table packages
 \usepackage{booktabs}
@@ -96,6 +97,10 @@
 \setCJKmonofont{SimSun}
 \setCJKmainfont{SimSun}
 \setCJKsansfont{SimSun}
+
+\setmainfont[
+  UprightFeatures={SmallCapsFont=AlegreyaSC-Regular}
+]{Alegreya}
 
 % Float features
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -204,6 +209,7 @@
 
 \newenvironment{glsacronym}
   {
+  \scshape
   \bfseries
   }
   {
