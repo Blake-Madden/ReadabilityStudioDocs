@@ -135,7 +135,7 @@ Goals are recommended score ranges that a document should fall within.
 If a project contains goals, then a **Goals** section will be available to show whether they were met. For example:
 
 ```{r echo=F, fig.align='center', out.width='75%'}
-knitr::include_graphics("Images/StandardProjectGoals.png"")
+knitr::include_graphics("Images/StandardProjectGoals.png")
 ```
 
 In the above image, we can see that this project is recommending:
