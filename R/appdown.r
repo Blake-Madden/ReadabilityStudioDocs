@@ -26,7 +26,7 @@ os_logo <- function(os)
 macOS_cmd_key <- function()
   {
   if (knitr::is_latex_output())
-    { knitr::asis_output(keys("\\keys{\\cmd}")) }
+    { knitr::asis_output(keys("\\cmd")) }
   else if (knitr::is_html_output())
     { knitr::asis_output(keys("<span class='key'>&#8984;</span>")) }
   else
