@@ -38,7 +38,7 @@ To view these graphs, click on the **Test Graphs & Charts** icon in a [standard 
 
 Let us first review a Fry\index{Fry} graph:
 
-```{r fryGraph2, echo=F, fig.cap='Fry Graph', fig.align='center'}
+```{r fryGraph2, echo=F, fig.cap='Fry Graph', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/frygraph.png")
 ```
 
@@ -48,7 +48,7 @@ Running through each slice is a gray line, which is a separator to help show the
 
 If the data point does not fall inside of a slice then the test will fail. For example, the Raygor\index{Raygor Estimate} graph below indicates that the document's overly-long words caused the test to fail:
 
-```{r raygorBadGrade, echo=F, fig.cap='Raygor Graph', fig.align='center'}
+```{r raygorBadGrade, echo=F, fig.cap='Raygor Graph', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/raygorbadgrade.png")
 ```
 
@@ -56,13 +56,13 @@ The document was almost classified as 11^th^ grade level material, but its long 
 
 The Gilliam-Peña-Mountain\index{Gilliam-Peña-Mountain} graph is a variation of Fry designed for Spanish text. It is identical to Fry, except that its X axis begins at 175 (instead of 108). This enables this graph to plot Spanish text, which usually has a much higher syllable count than its English counterpart. Below is an example of a Gilliam-Peña-Mountain graph:
 
-```{r gpm2, echo=F, fig.cap='Gilliam-Peña-Mountain Graph', fig.align='center'}
+```{r gpm2, echo=F, fig.cap='Gilliam-Peña-Mountain Graph', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/GpmFry.png")
 ```
 
 The Schwartz graph is another Fry-like graph, which is designed for German (primary and secondary-reader) text. Although similar in appearance to Fry, this graph uses its own reading-level regions mapped to the German materials it was trained on. This approach differs from Gilliam-Peña-Mountain, which uses the original Fry template and adjusts its axis ranges to accommodate Spanish text. Below is an example of a Schwartz graph:
 
-```{r schwartz2, echo=F, fig.cap='Schwartz Graph', fig.align='center'}
+```{r schwartz2, echo=F, fig.cap='Schwartz Graph', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/Schwartz.png")
 ```
 
@@ -74,7 +74,7 @@ The other difference between the two graphs is that they are inverted from one a
 
 The FRASE\index{FRASE} graph is similar to Fry in terms of factors used and axis orientation. Its most influential factor (i.e., word vs. sentence difficulty) is determined in the same manner, and its Y (sentence) axis is descending. Below is an example of a FRASE graph:
 
-```{r frase2, echo=F, fig.cap='Frase Graph', fig.align='center'}
+```{r frase2, echo=F, fig.cap='Frase Graph', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/FraseGraph.png")
 ```
 
@@ -82,7 +82,7 @@ A key difference with FRASE\index{FRASE!reading levels} is its use of reading le
 
 The Crawford\index{Crawford!compared to Fry} graph is also similar to Fry in terms of factors used. However, it differs from most other graphs in that it uses the interior of the plot to find its sentence-count factor (instead of an axis). Below is an example of a Crawford graph:
 
-```{r crawford2, echo=F, fig.cap='Crawford Graph', fig.align='center'}
+```{r crawford2, echo=F, fig.cap='Crawford Graph', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/CrawfordGraph.png")
 ```
 
@@ -90,19 +90,19 @@ In the above graph, we can see that the intersection of the factors is 175 and 7
 
 The Flesch\index{Flesch Reading Ease!chart} chart plots a document's factors onto a pair of “rulers” and then connects them to determine the Flesch score. This score ranges from 0 (“very difficult”) to 100 (“very easy”). Below is an example of a Flesch chart:
 
-```{r fleschChart2, echo=F, fig.cap='Flesch Chart', fig.align='center'}
+```{r fleschChart2, echo=F, fig.cap='Flesch Chart', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/FleschChart.png")
 ```
 
 Danielson-Bryan 2\index{Danielson-Bryan 2!plot}—a variation of Flesch Reading Ease— includes a similar graphic, which also includes grade-level information:
 
-```{r db2Plot2, echo=F, fig.cap='Danielson-Bryan 2 Plot', fig.align='center'}
+```{r db2Plot2, echo=F, fig.cap='Danielson-Bryan 2 Plot', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/DB2Plot.png")
 ```
 
 Similar to a Flesch chart, the Lix gauge\index{Lix!gauge plot} plots a document's Lix index score on a chart showing its difficulty level:
 
-```{r lixGuage2, echo=F, fig.cap='Lix Gauge', fig.align='center'}
+```{r lixGuage2, echo=F, fig.cap='Lix Gauge', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/LixGauge.png")
 ```
 
@@ -110,7 +110,7 @@ In the above chart, we can see that Lix scores can range from 0 (“very easy”
 
 There is also a variation of the Lix gauge\index{Lix!gauge plot (German)} that is adjusted for German materials:
 
-```{r germanLixGauge, echo=F, fig.cap='German Lix Gauge', fig.align='center'}
+```{r germanLixGauge, echo=F, fig.cap='German Lix Gauge', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/GermanLixGauge.png")
 ```
 
@@ -120,7 +120,7 @@ Note that if you plot any of these graphs, its score can also be viewed in the [
 
 As a final note, [batch projects](#creating-batch-project) include multi-document versions of all these graphs:
 
-```{r multifry, echo=F, fig.cap='Multiple documents on a Fry Graph', fig.align='center'}
+```{r multifry, echo=F, fig.cap='Multiple documents on a Fry Graph', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/MultipleFry.png")
 ```
 

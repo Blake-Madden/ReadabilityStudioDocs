@@ -24,7 +24,7 @@ Where:
 
 A chart visualizing this test's score is also available:
 
-```{r crawfordgraph, echo=F, fig.cap='Crawford Chart', fig.align='center'}
+```{r crawfordgraph, echo=F, fig.cap='Crawford Chart', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/CrawfordGraph.png")
 ```
 
@@ -65,7 +65,7 @@ These validation involved correlating the FRASE scores against “teacher judgme
 
 Below is an example of a FRASE graph:
 
-```{r frase, echo=F, fig.cap='Frase Graph', fig.align='center'}
+```{r frase, echo=F, fig.cap='Frase Graph', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/FraseGraph.png")
 ```
 
@@ -117,7 +117,7 @@ Syllable and sentence statistics where calculated from these samples. Initially,
 
 The Gilliam-Peña-Mountain graph is designed for both primary and secondary-age reading materials. Below is an example of a Gilliam-Peña-Mountain graph:
 
-```{r gpm, echo=F, fig.cap='Gilliam-Peña-Mountain Graph', fig.align='center'}
+```{r gpm, echo=F, fig.cap='Gilliam-Peña-Mountain Graph', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/GpmFry.png")
 ```
 

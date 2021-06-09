@@ -52,13 +52,13 @@ Note that this test differs from the original Lix approach of using the same sco
 
 Regarding the index score, the following variation of the Lix gauge is used classify the difficulty (Renström 153; Bamberger and Vanecek 65; Schulz 53):
 
-```{r germanLix, echo=F, fig.cap='German Lix Gauge', fig.align='center'}
+```{r germanLix, echo=F, fig.cap='German Lix Gauge', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/GermanLixGauge.png")
 ```
 
 This version adjusts the scaling of the score, assuming that German text is inherently more difficult than other languages. It also includes additional levels of difficulty (e.g., “children and young adult”).
 
-::: {.onsamepage data-latex=""}
+::: {.minipage data-latex="{\textwidth}"}
 To convert the Lix index score to a grade, this test uses the following table:
 
 | Index Score | Grade |
@@ -85,13 +85,13 @@ Note that this test differs from the original Lix approach of using the same sco
 
 Regarding the index score, the following variation of the Lix gauge is used classify the difficulty (Renström 153; Bamberger and Vanecek 65; Schulz 53):
 
-```{r germanLix2, echo=F, fig.cap='German Lix Gauge', fig.align='center'}
+```{r germanLix2, echo=F, fig.cap='German Lix Gauge', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/GermanLixGauge.png")
 ```
 
 This version adjusts the scaling of the score, assuming that German text is inherently more difficult than other languages. It also includes additional levels of difficulty (e.g., “children and young adult”).
 
-::: {.onsamepage data-latex=""}
+::: {.minipage data-latex="{\textwidth}"}
 To convert the Lix index score to a grade, this test uses the following table:
 
 | Index Score | Grade |
@@ -266,7 +266,7 @@ Where:
 | U   | Number of sentence units             |
 +-----+--------------------------------------+
 
-::: {.onsamepage data-latex=""}
+::: {.minipage data-latex="{\textwidth}"}
 To convert the Rix index score to a grade, this test uses the following table:
 
 | Index Score | Grade |
@@ -309,7 +309,7 @@ Where:
 | U   | Number of sentence units             |
 +-----+--------------------------------------+
 
-::: {.onsamepage data-latex=""}
+::: {.minipage data-latex="{\textwidth}"}
 To convert the Rix index score to a grade, this test uses the following table:
 
 | Index Score | Grade |

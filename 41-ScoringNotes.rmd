@@ -12,7 +12,7 @@ Finally, graphical tests (e.g., [Fry](#fry-test)\index{Fry!calculation method}) 
 
 ## Grade Scales {#grade-scales}
 
-::: {.onsamepage}
+::: {.minipage data-latex="{\textwidth}"}
 Grade-level scores are traditional displayed in U.S. (K–12+) format, be can be coverted to other scales. The following grade scales are available to choose from:
 
 ```{r, echo=F}
@@ -148,7 +148,7 @@ kableExtra::kbl(canadaTable, booktabs=T, centering=T, escape=F, linesep="", capt
 
 ## Cloze Scores and Readability Formulas {#cloze}
 
-```{block, type='onsamepage'}
+::: {.minipage data-latex="{\textwidth}"}
 A cloze procedure is a test given to a student to measure their comprehension ability. This test consists of the following steps:
 
 - Take a 250 word passage from a document.
@@ -156,7 +156,7 @@ A cloze procedure is a test given to a student to measure their comprehension ab
 - Have the student fill in as many of the blanks as he/she can.
 - Count the number of blank words that he/she filled in correctly. Traditionally, synonyms are not accepted, but this can be at the discretion of the administrator. Misspellings are acceptable.
 - Multiply the number of correct answers by two. This is the percentage of correct answers and will range from 0 (zero comprehension) to 100 (total comprehension).
-```
+:::
 
 Cloze procedures can also be used to gage how easily a passage of text can be comprehended. In this context, a cloze procedure is given to a group of students, and the mean (average) of their scores is the level of comprehensibility for the passage. 60% and higher is considered to be an acceptable level of comprehensibility. Scores lower than 60% indicate that the passage may be too difficult to be comprehensible and should be rewritten.
 

@@ -506,7 +506,7 @@ Note that this test treats numerals as monosyllabic words by default. This behav
 
 Along with the raw score, a chart is also available to visualize the score's meaning:
 
-```{r fleschChart, echo=F, fig.cap='Flesch Chart', fig.align='center'}
+```{r fleschChart, echo=F, fig.cap='Flesch Chart', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/FleschChart.png")
 ```
 
@@ -579,19 +579,19 @@ In 1977, Fry extended the graph to include grades 13-16 by extrapolating the ave
 
 The Fry graph is designed for both primary and secondary-age reading materials. Below is an example of a Fry graph:
 
-```{r fryGraph, echo=F, fig.cap='Fry Graph', fig.align='center'}
+```{r fryGraph, echo=F, fig.cap='Fry Graph', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/frygraph.png")
 ```
 
-```{block, type='onsamepage'}
+::: {.minipage data-latex="{\textwidth}"}
 Note the following aspects of this graph:
 
 - Grade levels from 1 to 17+ are represented by bands along the middle. If a score falls within one of these bands, then that will be the document's grade level.
 - A curved line running through the middle of the grade-level bands. This represents the “smoothed mean of the sample passages. If you plot a large number of passages with a wide range, they will tend to fall somewhere near the line” (“Clarifications, Validity, and Extension” 243).
 - Shaded areas in the bottom-left and top-right corners. These represent the long-sentences and long-words regions, respectively. If a document's score falls into either of these regions, then one of these factors is making the document too difficult to fit into a grade level.
-```
+:::
 
-```{block, type='onsamepage'}
+::: {.minipage data-latex="{\textwidth}"}
 The Fry graph instructions are:
 
 - Extract a 100-word passage from the selection. If the material is long, take subsamples from the beginning, middle, and end.
@@ -600,7 +600,7 @@ The Fry graph instructions are:
 - Find the point on the chart.
 - If the sample's syllable or sentence count is too low or high for it to be plotted, then adjust that factor so that it can fit onto the chart. For example, if a sample has 187 syllables per 100 words, then this will need to be adjusted to 182.
 - Repeat this process for each sample, and then average the samples.
-```
+:::
 
 This test is designed for 100-word samples, with 3 samples being recommended for best results. ([Normalization](#glossary) can also be used to analyze larger samples or entire documents.)
 
@@ -684,7 +684,7 @@ Using these new basal readers as the test's criterion, a new regression equation
 This test treats headers and subheaders as full sentences, but excludes lists and tables. The default [text exclusion](#options-text-exclusion) method will be overridden for this specific test.
 :::
 
-::: {.onsamepage data-latex=""}
+::: {.minipage data-latex="{\textwidth}"}
 Harris-Jacobson is calculated from the following steps:
 
 - Obtain the V1 score: (Number of unique hard words / Number of words) \* 100.
@@ -782,7 +782,7 @@ Table: Lix Index Table
 
 Note that Lix also includes a chart to visualize the meaning of its index score:
 
-```{r lixGauge, echo=F, fig.cap='Lix Gauge', fig.align='center'}
+```{r lixGauge, echo=F, fig.cap='Lix Gauge', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/LixGauge.png")
 ```
 
@@ -804,7 +804,7 @@ Where:
 | S   | Number of sentences                  |
 +-----+--------------------------------------+
 
-```{block, type='onsamepage'}
+::: {.minipage data-latex="{\textwidth}"}
 As a final note, Anderson contributed a grade-level conversion table for Lix index scores (Anderson 494) as follows:
 
 | Lix Score | Equivalent Grade Level |
@@ -824,7 +824,7 @@ As a final note, Anderson contributed a grade-level conversion table for Lix ind
 | Below 10 | 1   |
 
 Table: Lix Grade-level Conversion Table\index{Lix|)}
-```
+:::
 
 \newpage
 
@@ -1191,11 +1191,11 @@ In another experiment, Baldwin and Kaufman compared the correlations between Fry
 
 This graph is primarily used in secondary education to help classify teaching materials and books into their appropriate reading groups. Below is an example of a Raygor graph:
 
-```{r raygor, echo=F, fig.cap='Raygor Estimate Graph', fig.align='center'}
+```{r raygor, echo=F, fig.cap='Raygor Estimate Graph', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/raygorgraph.png")
 ```
 
-::: {.onsamepage data-latex=""}
+::: {.minipage data-latex="{\textwidth}"}
 The Raygor Estimate instructions are:
 
 - Extract a 100-word passage from the selection. If the material is long, take subsamples from the beginning, middle, and end. Numerals should be skipped.
@@ -1248,7 +1248,7 @@ Where:
 | U   | Number of sentence units             |
 +-----+--------------------------------------+
 
-::: {.onsamepage data-latex=""}
+::: {.minipage data-latex="{\textwidth}"}
 | Rix Index Score | Grade Level |
 | :-- | :-- |
 | 7.2 and above | College |
@@ -1406,7 +1406,7 @@ I = (W/U)*(P/W)*10
 $$
 ```
 
-::: {.onsamepage data-latex=""}
+::: {.minipage data-latex="{\textwidth}"}
 Where:
 
 +:----+:-------------------------------------------+

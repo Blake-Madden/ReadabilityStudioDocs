@@ -20,14 +20,14 @@ Although ignoring these items is generally recommended, there is one exception: 
 
 ### Additional Items {-}
 
-```{block, type='onsamepage'}
+::: {.minipage data-latex="{\textwidth}"}
 Although not traditionally mentioned in readability articles, other items may also be excluded within *Readability Studio*. These include:
 
 - Copyright notices
 - Trailing citations
 - Internet and file addresses
 - Specific words or phrases
-```
+:::
 
 Refer to \@ref(document-analysis) for a detailed explanation of these options.
 
@@ -209,7 +209,7 @@ By default, *Readability Studio* counts numbers as monosyllabic words; however, 
 
 ### How Symbols are Syllabized {-}
 
-```{block, type='onsamepage'}
+::: {.minipage data-latex="{\textwidth}"}
 The following symbols are syllabized as follows:
 
    ‘#’ = 1 syllable (“pound”)  
@@ -223,7 +223,7 @@ The following symbols are syllabized as follows:
    ‘¼’ = 2 syllables (“one fourth”) if at the end of the word  
    ‘½’ = 2 syllables (“one half”) if at the end of the word  
    ‘¾’ = 2 syllables (“three fourths”) if at the end of the word
-```
+:::
 
 ## Repeated Word Exceptions {#repeated-word-exceptions}
 
@@ -233,7 +233,7 @@ Generally, repeated words are a typo; however, there are a few exceptions. For e
 The report is due tomorrow. I'm concerned **that that** report won't be ready in time. The last time that I spoke to our boss, she said that she **had had** it with overdue reports.
 :::
 
-```{block, type='onsamepage'}
+::: {.minipage data-latex="{\textwidth}"}
 Although awkwardly worded, the duplicate “that” and “had” are grammatically correct. To account for this, *Readability Studio* ignores certain repeated words, such as:
 
 - “ha ha”
@@ -244,7 +244,7 @@ Although awkwardly worded, the duplicate “that” and “had” are grammatica
 - “der der” (German article)
 - “das das” (German article)
 - “sie sie” (German pronoun)
-```
+:::
 
 Words separated by punctuation are also ignored when deducing repeated words. For example:
 

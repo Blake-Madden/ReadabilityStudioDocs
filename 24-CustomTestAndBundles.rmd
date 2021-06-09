@@ -30,13 +30,13 @@ To view the available functions, click the function browser button `r keys('ƒx'
 
 Refer to \@ref(custom-test-functions) for a list of available functions.
 
-```{block, type='onsamepage'}
+::: {.minipage data-latex="{\textwidth}"}
 After entering your formula, you will need to specify what type of test this will be from the **Test type** combobox. This will determine which column the test's score will appear in the [**Readability Scores**](#reviewing-test-scores) window. The following types of tests are available:
 
 - Grade level
 - Index value
 - [Predicted cloze score](#cloze)
-```
+:::
 
 If your test is using any of the predefined familiar-word formulas (`CustomNewDaleChall()`, `CustomSpache()`, `CustomHarrisJacobson()`) or using the functions `UnfamiliarWordCount()` or `UniqueUnfamiliarWordCount()`, then you will need to define how familiar words are detected. Expand **Familiar Words** to view two sections: [**Word Lists**](#custom-word-list) and [**Proper Nouns & Numerals**](#custom-proper-numerals).
 
@@ -76,7 +76,7 @@ Now create a new project and select **Children's healthcare** as the industry ty
 
 The following functions and operators are available for use in [custom test](#creating-custom-test) formulas.
 
-```{block, type='onsamepage'}
+::: {.minipage data-latex="{\textwidth}"}
 | Operator | Description |
 | :-- | :-- |
 | \* | Multiplication. |
@@ -96,9 +96,9 @@ The following functions and operators are available for use in [custom test](#cr
 | ( ) | Overrides the order of operations. |
 
 Table: Operators
-```
+:::
 
-```{block, type='onsamepage'}
+::: {.minipage data-latex="{\textwidth}"}
 For operators, the order of precedence is:
 
 | Operator | Description |
@@ -107,7 +107,7 @@ For operators, the order of precedence is:
 | ^   | Exponentiation. |
 | \* and / | Multiplication and division. |
 | \+ and - | Addition and subtraction. |
-```
+:::
 
 For example, the following:
 
@@ -123,7 +123,7 @@ $$
 
 You can override it so that the additions happen first (resulting in “15”), followed by the division (finally yielding “7.5”). Likewise, “(2+5)^2” will yield “49” (“7” squared), while “2+5^2” will yield “27” (“5” squared, plus “2”).
 
-```{block, type='onsamepage'}
+::: {.minipage data-latex="{\textwidth}"}
 | Function | Description |
 | :-- | :-- |
 | AND(value1,value2,...) | Returns true if all conditions are true. |
@@ -132,9 +132,9 @@ You can override it so that the additions happen first (resulting in “15”), 
 | OR(value1,value2,...) | Returns true if any condition is true. |
 
 Table: Logic functions
-```
+:::
 
-```{block, type='onsamepage'}
+::: {.minipage data-latex="{\textwidth}"}
 | Function | Description |
 | :-- | :-- |
 | ABS(x) | Absolute value of x. |
@@ -160,18 +160,18 @@ Table: Logic functions
 | TRUNC(x) | Discards the fractional part of a number (e.g., TRUNC(-3.2) is -3, TRUNC(3.2) is 3). |
 
 Table: Math functions
-```
+:::
 
-```{block, type='onsamepage'}
+::: {.minipage data-latex="{\textwidth}"}
 | Function | Description |
 | :-- | :-- |
 | AVGERAGE(value1,value2,...) | Returns the average of a specified range of values. |
 | SUM(value1,value2,...) | Returns the sum of a specified range of values. |
 
 Table: Statistical functions
-```
+:::
 
-```{block, type='onsamepage'}
+::: {.minipage data-latex="{\textwidth}"}
 | Function | Description |
 | :-- | :-- |
 | CustomHarrisJacobson()\index{CustomHarrisJacobson()@\texttt{CustomHarrisJacobson()}} | Performs a Harris-Jacobson test with a custom familiar word list. Note that this test will use the same text exclusion rules as Harris-Jacobson (overriding your system defaults). |
@@ -179,9 +179,9 @@ Table: Statistical functions
 | CustomSpache()\index{CustomSpache()@\texttt{CustomSpache()}} | Performs a Spache Revised test with a custom familiar word list. |
 
 Table: Custom familiar word tests functions
-```
+:::
 
-```{block, type='onsamepage'}
+::: {.minipage data-latex="{\textwidth}"}
 <!--
 Have to manually format the footnotes in here for numerous reasons, this is the best way to get this to format
 properly in LaTex.
@@ -211,7 +211,7 @@ Table: Document statistics functions
 
 ^3^ Uses the [Gunning Fog](#options-gunning-fog) sentence-counting method.\
 This will be either traditional sentence counting or unit counting.
-```
+:::
 
 | Function | Description |
 | :-- | :-- |
@@ -247,7 +247,7 @@ Table: Word statistics functions
 New Dale-Chall and Harris-Jacobson familiar word functions will take their respective test's text exclusion options into account.
 :::
 
-```{block, type='onsamepage'}
+::: {.minipage data-latex="{\textwidth}"}
 | Shortcut | Description |
 | :-- | :-- |
 | B | Shortcut for SyllableCount(Default). |
@@ -267,7 +267,7 @@ New Dale-Chall and Harris-Jacobson familiar word functions will take their respe
 | X | Shortcut for SevenCharacterPlusWordCount(). |
 
 Table: Shortcuts
-```
+:::
 
 ## Custom Test Dialog {#custom-test-dialog}
 
@@ -277,13 +277,13 @@ From the **Readability** tab, click the `r keys("Custom Test")` button and then 
 
 **Test name**: If creating a new test, enter its name into this field.
 
-```{block, type='onsamepage'}
+::: {.minipage data-latex="{\textwidth}"}
 **Test type**: Select from this list the type of result this test returns. This will determine which column the test's score will appear in the [**Readability Scores**](#reviewing-test-scores) window. The following types of tests are available:
 
 - Grade level
 - Index value
 - [Predicted cloze score](#cloze)
-```
+:::
 
 ### Formula {-}
 
@@ -395,7 +395,7 @@ Test bundles enable you to organize tests into collections that you can quickly 
 
 To access the test bundles, select the **Readability** tab and click the `r keys("Bundles")` button. A menu will appear which contains all the available bundles, as well as options to add, edit, and remove them.
 
-```{block, type='onsamepage'}
+::: {.minipage data-latex="{\textwidth}"}
 By default, the industry and document-type bundles used in the [**New Project**](#creating-standard-project) wizard will be available. This includes:
 
 - General document
@@ -410,7 +410,7 @@ By default, the industry and document-type bundles used in the [**New Project**]
 - Military and government
 - Second language education
 - Broadcasting
-```
+:::
 
 More specific bundles based on research articles are also included, such as "Patient Consent Forms" and "Kincaid's Tests for Navy-Personnel Materials." (Some of these bundles may include goals, if recommended in the original article.)
 
