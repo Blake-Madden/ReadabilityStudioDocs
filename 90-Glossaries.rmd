@@ -10,6 +10,7 @@
 | Create a new project from | `r keys('CTRL')`+`r keys('V')` `r os_logo('windows')`\           |
 | content on the clipboard  |  or\                                                             |
 |                           | `r macOS_cmd_key()`+`r keys('V')` `r os_logo('apple')`           |
+|                           |                                                                  |
 +---------------------------+------------------------------------------------------------------+
 | Save the active project   | `r keys('CTRL')`+`r keys('S')` `r os_logo('windows')`\           |
 |                           |  or\                                                             |
@@ -22,55 +23,56 @@
 
 # Glossary {#glossary}
 
-## Acronymns
+## Readability Glossary {#readability-glossary}
 
+:::: {.glsentry data-latex=''}
 ::: {.glsacronym data-latex=''}
-ASL
+Asl
 :::
 ::: {.glsdef data-latex=''}
 Average sentence length.
 :::
+::::
 
-::: {.glsacronym data-latex=''}
-IRQ
-:::
-::: {.glsdef data-latex=''}
-Interquartile range. Refer to figure \@ref(fig:boxplot).
-:::
-
-## Readability Glossary {#readability-glossary}
-
-::: {.glsentry data-latex=''}
+:::: {.glsentry data-latex=''}
+::: {.glsterm data-latex=''}
 cloze test
 :::
 ::: {.glsdef data-latex=''}
 A [cloze](#cloze) procedure is a test given to readers to measure their comprehension ability. Refer to \@ref(cloze) for further details.
 :::
+::::
 
-::: {.glsentry data-latex=''}
+:::: {.glsentry data-latex=''}
+::: {.glsterm data-latex=''}
 interrobang
 :::
 ::: {.glsdef data-latex=''}
 The combination of a question mark and exclamation point at the end of a sentence. Interrobangs are shown as either two separate characters (“?!” or “!?”) or a single character (‽).
 :::
+::::
 
-::: {.glsentry data-latex=''}
+:::: {.glsentry data-latex=''}
+::: {.glsterm data-latex=''}
 polysyllabic
 :::
 ::: {.glsdef data-latex=''}
 Technically speaking, this means any word containing more than 1 syllable. In the case of some tests (e.g., Wheeler-Smith\index{Wheeler-Smith!polysyllabic words}), this term is used in this context. Other tests’ sources, however, tend to use this term to describe words of 3 or more syllables. Because of this inconsistency, it is recommended to avoid using this term and instead state explicitly the intention of a given test.
 :::
+::::
 
-::: {.glsentry data-latex=''}
+:::: {.glsentry data-latex=''}
+::: {.glsterm data-latex=''}
 unit
 :::
 ::: {.glsdef data-latex=''}
 A section of text ending with a period, exclamation mark, question mark, interrobang, colon, semicolon, or dash. Lengthy, complex sentences generally contain more than one unit.
 :::
+::::
 
 ## Statistical Glossary {#stat-terms}
 
-::: {.glsentry data-latex=''}
+::: {.glsterm data-latex=''}
 box plots
 :::
 ::: {.glsdef data-latex=''}
@@ -204,7 +206,17 @@ plot(ggplot_box_legend())
 ```
 :::
 
-::: {.glsentry data-latex=''}
+:::: {.glsentry data-latex=''}
+::: {.glsacronym data-latex=''}
+Irq
+:::
+::: {.glsdef data-latex=''}
+Interquartile range. Refer to figure \@ref(fig:boxplot).
+:::
+::::
+
+:::: {.glsentry data-latex=''}
+::: {.glsterm data-latex=''}
 kurtosis
 :::
 ::: {.glsdef data-latex=''}
@@ -214,50 +226,64 @@ The peakedness of a distribution. Zero indicates a normal distribution, a negati
 knitr::include_graphics("Images/NonGenerated/Kurtosis.png")
 ```
 :::
+::::
 
-::: {.glsentry data-latex=''}
+:::: {.glsentry data-latex=''}
+::: {.glsterm data-latex=''}
 lower quartile
 :::
 ::: {.glsdef data-latex=''}
 The value at the 25% percentile. This is the value separating the lower quarter of the values from the rest of the values.
 :::
+::::
 
-::: {.glsentry data-latex=''}
+:::: {.glsentry data-latex=''}
+::: {.glsterm data-latex=''}
 maximum
 :::
 ::: {.glsdef data-latex=''}
 The highest value in a range of data.
 :::
+::::
 
-::: {.glsentry data-latex=''}
+:::: {.glsentry data-latex=''}
+::: {.glsterm data-latex=''}
 mean
 :::
 ::: {.glsdef data-latex=''}
 The average value of a range of data. This is calculated by adding all the values and dividing the total by N.
 :::
+::::
 
-::: {.glsentry data-latex=''}
+:::: {.glsentry data-latex=''}
+::: {.glsterm data-latex=''}
 median
 :::
 ::: {.glsdef data-latex=''}
 The middle point separating the lower and upper halves of a range of data. This is calculated by sorting the values and taking the value in middle if the number of values is odd. If the number of values is even, then the means of the two middle points is taken.
 :::
+::::
 
-::: {.glsentry data-latex=''}
+:::: {.glsentry data-latex=''}
+::: {.glsterm data-latex=''}
 minimum
 :::
 ::: {.glsdef data-latex=''}
 The lowest value in a range of data.
 :::
+::::
 
-::: {.glsentry data-latex=''}
+:::: {.glsentry data-latex=''}
+::: {.glsterm data-latex=''}
 mode
 :::
 ::: {.glsdef data-latex=''}
 The most frequently occurring value in a range of data. Note that a range can have multiple modes if two or more unique values appear the same number of times.
 :::
+::::
 
-::: {.glsentry data-latex=''}
+:::: {.glsentry data-latex=''}
+::: {.glsterm data-latex=''}
 normalization
 :::
 ::: {.glsdef data-latex=''}
@@ -277,15 +303,18 @@ $$
 
 Now that the document's measurements have been normalized to the required sample's scale, we can use these values (100 words and 11 sentences) with the test.
 :::
+::::
 
-::: {.glsentry data-latex=''}
+:::: {.glsentry data-latex=''}
+::: {.glsterm data-latex=''}
 outlier
 :::
 ::: {.glsdef data-latex=''}
 An extreme (high or low) value that is numerically distant from the rest of the data.
 :::
+::::
 
-::: {.glsentry data-latex=''}
+::: {.glsterm data-latex=''}
 overplotting
 :::
 ::: {.glsdef data-latex=''}
@@ -324,28 +353,34 @@ beeswarm(len ~ dose, data = ToothGrowth, col = 2, add = TRUE)
 ```
 :::
 
-::: {.glsentry data-latex=''}
+::: {.glsterm data-latex=''}
 *r*
 :::
 ::: {.glsdef data-latex=''}
 The correlation between two factors (e.g., sentence length vs. reading level). *r* values range from -1.0 to 1.0, where -1.0 is a perfect negative correlation and 1.0 is a perfect positive correlation.
 :::
 
-::: {.glsentry data-latex=''}
+
+:::: {.glsentry data-latex=''}
+::: {.glsterm data-latex=''}
 *r²*
 :::
 ::: {.glsdef data-latex=''}
 The correlation between two factors (e.g., sentence length vs. reading level) when more than one independent factor is tested against the dependent (i.e., a multiple regression). *r²* values range from 0.0 to 1.0, where 0.0 indicates no correlation and 1.0 is a perfect positive correlation.
 :::
+::::
 
-::: {.glsentry data-latex=''}
+:::: {.glsentry data-latex=''}
+::: {.glsterm data-latex=''}
 range
 :::
 ::: {.glsdef data-latex=''}
 The distance between the lowest and highest values in a range of data.
 :::
+::::
 
-::: {.glsentry data-latex=''}
+:::: {.glsentry data-latex=''}
+::: {.glsterm data-latex=''}
 skewness
 :::
 ::: {.glsdef data-latex=''}
@@ -355,31 +390,40 @@ The asymmetry of the probability distribution. A zero skew indicates a symmetric
 knitr::include_graphics("Images/NonGenerated/Skewness.png")
 ```
 :::
+::::
 
-::: {.glsentry data-latex=''}
+:::: {.glsentry data-latex=''}
+::: {.glsterm data-latex=''}
 standard deviation
 :::
 ::: {.glsdef data-latex=''}
 The variability (or spread) of the values. A low standard deviation indicates that most values are close to the data's mean. In contrast, a high standard deviation indicates values that stray far from the mean.
 :::
+::::
 
-::: {.glsentry data-latex=''}
+:::: {.glsentry data-latex=''}
+::: {.glsterm data-latex=''}
 upper quartile
 :::
 ::: {.glsdef data-latex=''}
 The value at the 75% percentile. This is the value separating the upper quarter of the values from the rest of the values.
 :::
+::::
 
-::: {.glsentry data-latex=''}
+:::: {.glsentry data-latex=''}
+::: {.glsterm data-latex=''}
 valid n
 :::
 ::: {.glsdef data-latex=''}
 The number of valid values in a range of data.
 :::
+::::
 
-::: {.glsentry data-latex=''}
+:::: {.glsentry data-latex=''}
+::: {.glsterm data-latex=''}
 variance
 :::
 ::: {.glsdef data-latex=''}
 Another measurement of variability, which is standard deviation squared.
 :::
+::::
