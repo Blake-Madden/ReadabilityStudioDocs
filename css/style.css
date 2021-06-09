@@ -10,11 +10,16 @@
 
 /* psuedo glossary features*/
 .glsentry {
+  break-inside: avoid-page;
+  page-break-inside: avoid;
+}
+
+.glsterm {
   font-weight: bold;
 }
 
 .glsacronym {
-  font-varint: small-caps;
+  font-variant: small-caps;
   font-weight: bold;
 }
 
