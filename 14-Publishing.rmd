@@ -199,9 +199,9 @@ Custom values can also be entered here.
 
 To preview a window before printing it, select **Print Preview** from this menu.
 
-::: {.center data-latex=""}
-![](Images/NonGenerated/printpreview.png){width=50%}
-:::
+```{r echo=F, fig.align='center', out.width='50%'}
+knitr::include_graphics("Images/NonGenerated/printpreview.png")
+```
 
 ::: {.notesection data-latex=""}
 The preview option is only available on Windows. On macOS, the preview option on the print dialog can be used for previewing.

@@ -96,9 +96,9 @@ Because this is an instructional document containing small narrative blocks, we 
 
 If you are excluding [incomplete sentences](#how-text-is-excluded) (the default) then this warning message will be displayed.
 
-::: {.center data-latex=""}
-![](Images/NonGenerated/sentencewarning.png){width=75%}
-:::
+```{r echo=F, fig.align='center', out.width='75%'}
+knitr::include_graphics("Images/NonGenerated/sentencewarning.png")
+```
 
 Because this file contains numerous incomplete sentences, the program will ask you if excluding them is what you truly intend. In this case, these sentences are just list items that we should ignore, so select **Continue excluding incomplete sentences**.
 
@@ -230,9 +230,9 @@ Click the `r keys("Finish")` button to begin analyzing the project.
 
 If you are excluding [incomplete sentences](#how-text-is-excluded) (the default) then this warning message will be displayed.
 
-::: {.center data-latex=""}
-![](Images/NonGenerated/sentencewarning.png){width=75%}
-:::
+```{r echo=F, fig.align='center', out.width='75%'}
+knitr::include_graphics("Images/NonGenerated/sentencewarning.png")
+```
 
 Because this file contains numerous incomplete sentences, the program will ask you if excluding them is what you truly intend. In this case, these sentences are just list items that we should ignore, so select **Continue excluding incomplete sentences**.
 

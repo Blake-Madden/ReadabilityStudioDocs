@@ -227,19 +227,6 @@
   padding: inherit;
 }
 
-/* centers an image.*/
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.center img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* prevents sections from being split by a page break.*/
 @media print {
 .notesection, .tipsection, .warningsection, .optionssection .keys .menu{
