@@ -149,7 +149,7 @@
 }
 
 /* prevents a section from being split by a page break.*/
-.onsamepage {
+.minipage {
   break-inside: avoid-page;
   page-break-inside: avoid;
 }
