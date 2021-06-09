@@ -7,18 +7,17 @@
 +:==========================+:=================================================================+
 | Reload the active project | `r keys('F5')`                                                   |
 +---------------------------+------------------------------------------------------------------+
-| Create a new project from | `r keys('CTRL')`+`r keys('V')` `r os_logo('windows')`\           |
+| Create a new project from | `r keys(c('Ctrl','V'))` `r os_logo('windows')`\                  |
 | content on the clipboard  |  or\                                                             |
-|                           | `r macOS_cmd_key()`+`r keys('V')` `r os_logo('apple')`           |
-|                           |                                                                  |
+|                           | `r keys(c('CMD','V'))` `r os_logo('apple')`                      |
 +---------------------------+------------------------------------------------------------------+
-| Save the active project   | `r keys('CTRL')`+`r keys('S')` `r os_logo('windows')`\           |
+| Save the active project   | `r keys(c('Ctrl','S'))` `r os_logo('windows')`\           |
 |                           |  or\                                                             |
-|                           | `r macOS_cmd_key()`+`r keys('S')` `r os_logo('apple')`           |
+|                           | `r keys(c('CMD','S'))` `r os_logo('apple')`           |
 +---------------------------+------------------------------------------------------------------+
-| Print the active window   | `r keys('CTRL')`+`r keys('P')` `r os_logo('windows')`\           |
+| Print the active window   | `r keys(c('Ctrl','P'))` `r os_logo('windows')`\           |
 |                           |  or\                                                             |
-|                           | `r macOS_cmd_key()`+`r keys('P')` `r os_logo('apple')`           |
+|                           | `r keys(c('CMD','P'))` `r os_logo('apple')`           |
 +---------------------------+------------------------------------------------------------------+
 
 # Glossary {#glossary}

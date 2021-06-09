@@ -182,6 +182,6 @@ This dialog enables you to import a worksheet (from a spreadsheet) for [batch](#
 
 **All text cells**: Select this option to import the entire worksheet.
 
-**Only highlighted cells**: Select this option to only import the selected cells (which will be highlighted blue). A block of cells can be selected by holding down the left mouse button and dragging the cursor around the block. Individual cells can be selected by holding down the `r keys("CTRL")` (`r macOS_cmd_key()` on macOS) button on the keyboard and clicking the cells. Also, entire columns and rows can be selected by clicking the column header or row label, respectively.
+**Only highlighted cells**: Select this option to only import the selected cells (which will be highlighted blue). A block of cells can be selected by holding down the left mouse button and dragging the cursor around the block. Individual cells can be selected by holding down the `r keys("Ctrl")` (`r os_logo('windows')`) or `r keys("Cmd")` (`r os_logo('apple')`) button on the keyboard and clicking the cells. Also, entire columns and rows can be selected by clicking the column header or row label, respectively.
 
 Note that selections can also be discontiguous. For example, if you hold down the `r keys("CTRL")` button and click the column headers “A” and then “D,” then these two columns will be imported.

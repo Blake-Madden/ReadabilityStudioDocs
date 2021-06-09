@@ -53,12 +53,20 @@ menu <- function(menuKeys)
   }
 
 # @brief Displays a label as a keyboard button.
-keys <- function(label)
+keys <- function(buttonKeys)
   {
   if (knitr::is_latex_output())
-    { knitr::asis_output(glue("\\keys{<label>}", .open='<', .close='>')) }
+    {
+    buttonKeys <- stringr::str_replace_all(buttonKeys, regex("^cmd$", ignore_case=T), "\\\\cmd")
+
+    knitr::asis_output(
+      glue_collapse(glue("\\keys{<buttonKeys>}", .open='<', .close='>'), sep='+')) }
   else if (knitr::is_html_output())
-    { knitr::asis_output(glue("<span class='keys'>{label}</span>")) }
+    {
+    buttonKeys <- stringr::str_replace_all(buttonKeys, regex("^cmd$", ignore_case=T), "&#8984;")
+
+    knitr::asis_output(
+      glue_collapse(glue("<span class='keys'>{buttonKeys}</span>", .open='{', .close='}'), sep='+')) }
   else
     { knitr::asis_output(text) }
   }
