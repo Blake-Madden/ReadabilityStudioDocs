@@ -22,17 +22,6 @@ os_logo <- function(os)
     { '' }
   }
 
-# @brief Displays the macOS CMD button symbol (as a keyboard button).
-macOS_cmd_key <- function()
-  {
-  if (knitr::is_latex_output())
-    { knitr::asis_output(keys("\\cmd")) }
-  else if (knitr::is_html_output())
-    { knitr::asis_output(keys("<span class='key'>&#8984;</span>")) }
-  else
-    { knitr::asis_output(text) }
-  }
-
 menu <- function(menuKeys)
   {
   if (knitr::is_latex_output())
@@ -53,17 +42,20 @@ menu <- function(menuKeys)
   }
 
 # @brief Displays a label as a keyboard button.
+# @param buttonKeys The  button (or button combo).
+#        This can be an array of strings that will be separated by '+'.
+#        This strings can be the button labels or a command to menukeys (e.g., '\cmd' yields the Clover symbol)
+#        All of menukeys command will work in LaTeX and "\cmd" and "\backdel" are supported in HTML.
 keys <- function(buttonKeys)
   {
   if (knitr::is_latex_output())
     {
-    buttonKeys <- stringr::str_replace_all(buttonKeys, regex("^cmd$", ignore_case=T), "\\\\cmd")
-
     knitr::asis_output(
       glue_collapse(glue("\\keys{<buttonKeys>}", .open='<', .close='>'), sep='+')) }
   else if (knitr::is_html_output())
     {
-    buttonKeys <- stringr::str_replace_all(buttonKeys, regex("^cmd$", ignore_case=T), "&#8984;")
+    buttonKeys <- stringr::str_replace_all(buttonKeys, regex("^\\\\cmd$", ignore_case=T), "&#8984;")
+    buttonKeys <- stringr::str_replace_all(buttonKeys, regex("^\\\\backdel$", ignore_case=T), "&#9003;")
 
     knitr::asis_output(
       glue_collapse(glue("<span class='keys'>{buttonKeys}</span>", .open='{', .close='}'), sep='+')) }
