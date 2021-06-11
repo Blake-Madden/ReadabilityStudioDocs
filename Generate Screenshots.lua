@@ -292,6 +292,7 @@ a:ExportGraph(SideBarSection.Histograms, Application.GetTestId("flesch-test"), I
 a:ExportGraph(SideBarSection.BoxPlots, Application.GetTestId("flesch-test"), ImagePath .. "boxindex." .. FileExtension)
 a:ExportGraph(SideBarSection.BoxPlots, GraphType.BatchGradeLevelBoxPlot, ImagePath .. "boxgrades." .. FileExtension)
 
+a:ShowSidebar(false)
 a:SelectWindow(SideBarSection.ReadabilityScores, BatchScoreResultType.AggregatedGradeScoresByDocument)
 ScreenshotLib.SnapScreenshot(ImagePath .. "BatchGradeScoresByDocument." .. FileExtension)
 
@@ -301,6 +302,7 @@ ScreenshotLib.SnapScreenshot(ImagePath .. "BatchClozeScoresByDocument." .. FileE
 a:SelectWindow(SideBarSection.WordsBreakdown)
 ScreenshotLib.SnapScreenshot(ImagePath .. "batchdifficultwords." .. FileExtension)
 a:Close()
+
 Application.RemoveAllCustomTests()
 
 a = BatchProject(ValidationFolder .. "Screenshot Projects/Topics2008(Improved).rsbp")
@@ -926,7 +928,7 @@ bitmaps = Application.FindFiles(ImagePath, "*." .. FileExtension)
 for i,v in ipairs(bitmaps)
 do
     command = "\"\"" .. ImageMagickPath .. "\" convert \"" ..
-              v .. "\" -resize 500^> \"" .. string.gsub(v,"." .. FileExtension,".png") .. "\"\""
+              v .. "\" -resize 1000^> \"" .. string.gsub(v,"." .. FileExtension,".png") .. "\"\""
     os.execute(command)
     os.remove(v)
 end
