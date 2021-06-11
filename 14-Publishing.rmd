@@ -204,7 +204,7 @@ knitr::include_graphics("Images/NonGenerated/printpreview.png")
 ```
 
 ::: {.notesection data-latex=""}
-The preview option is only available on Windows. On macOS, the preview option on the print dialog can be used for previewing.
+The preview option is only available on Windows. On macOS, the system print dialog has its own native preview option.
 :::
 
 ## Exporting Filtered Documents {#filtering-export}

@@ -82,7 +82,7 @@ knitr::include_graphics("Images/selectprojecttype.png")
 
 Select **Batch Project** and click the `r keys("OK")` button to proceed to the **New Project** wizard dialog, as shown below:
 
-```{r echo=F, fig.align='center', out.width='75%'}
+```{r echo=F, fig.align='center'}
 knitr::include_graphics("Images/wizardbatchselectfiles.png")
 ```
 
@@ -98,7 +98,7 @@ knitr::include_graphics("Images/selectdirectory.png")
 
 To add files from an archive (i.e., a \*.zip file), click the `r keys("Add archive")` button. You will be presented with the [**Select Archive File**](#select-archive) dialog:
 
-```{r echo=F, fig.align='center', out.width='50%'}
+```{r echo=F, fig.align='center', out.width='30%'}
 knitr::include_graphics("Images/selectarchive.png")
 ```
 
@@ -106,7 +106,9 @@ To add documents from an Excel 2007 file, click the `r keys("Add spreadsheet")` 
 
 To search for files from a website and include them in the project, click the `r keys("Add web pages")` button. This will display the [**Web Harvester**](#web-harvester) dialog, as shown below:
 
-![](Images/webharvester.png)
+```{r echo=F, fig.align='center', out.width='75%'}
+knitr::include_graphics("Images/webharvester.png")
+```
 
 To add an individual web page to the project, click the `r keys("Add web page")` button. This will display a text box where you can enter the web page's path.
 
@@ -184,4 +186,4 @@ This dialog enables you to import a worksheet (from a spreadsheet) for [batch](#
 
 **Only highlighted cells**: Select this option to only import the selected cells (which will be highlighted blue). A block of cells can be selected by holding down the left mouse button and dragging the cursor around the block. Individual cells can be selected by holding down the `r keys("Ctrl")` (`r os_logo('windows')`) or `r keys("\\cmd")` (`r os_logo('apple')`) button on the keyboard and clicking the cells. Also, entire columns and rows can be selected by clicking the column header or row label, respectively.
 
-Note that selections can also be discontiguous. For example, if you hold down the `r keys("CTRL")` button and click the column headers “A” and then “D,” then these two columns will be imported.
+Note that selections can also be discontiguous. For example, if you hold down the `r keys("Ctrl")` (`r os_logo('windows')`) or `r keys("\\cmd")` (`r os_logo('apple')`) button and click the column headers “A” and then “D,” then these two columns will be imported.

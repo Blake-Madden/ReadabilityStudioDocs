@@ -308,13 +308,15 @@ This dialog can edit either a word or phrase list.
 
 **File containing list**: Enter the path to the list into this field.
 
+::: {.minipage data-latex="{\textwidth}"}
 After selecting your list file, its words/phrases will be displayed in the grid below the file-path field. In this grid, you can edit your list with the following keyboard commands:
 
-- `r keys('Del')` `r os_logo('windows')` or `r keys('\\backdel')` `r os_logo('apple')`—removes the selected item(s) from the list.
+- `r keys('Del')` (`r os_logo('windows')`) or `r keys('\\backdel')` (`r os_logo('apple')`)—removes the selected item(s) from the list.
 - `r keys("Ins")`—edits the selected item in the list. Double-clicking an item with the mouse will also edit it.
 - `r keys(c('Ctrl','Ins'))` (`r os_logo('windows')`) or `r keys(c('\\cmd','Ins'))` (`r os_logo('apple')`)—adds a new item to the list.
 
 Buttons to add, edit, and remove items are also available above the grid.
+:::
 
 \newpage
 

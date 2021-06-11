@@ -26,13 +26,13 @@ Finally, the averages (means) of your test scores and ages are displayed at the 
 
 When calculating these statistics, failed test scores are treated as missing observations and not included. For example, let us say that you included 5 tests, but one of them could not be calculated. In this case, the valid 4 scores will be added and divided by 4 (not 5) to acquire the means. Also, grade range scores–such as “5–6” from [New Dale-Chall](#dale-chall-test)\index{New Dale-Chall!grade-range averaging}–will be converted to its own average (e.g., “5-6” will be 5.5).
 
-To remove any test from this list, select it and press `r keys(c('Ctrl', 'Del'))` `r os_logo('windows')` or `r keys(c('Ctrl', '\\backdel'))` `r os_logo('apple')` on your keyboard. To edit a [custom test](#creating-custom-test), double click on it in this list. To view the help for a standard test, double click on it in this list.
+To remove any test from this list, select it and press `r keys(c('Ctrl', 'Del'))` (`r os_logo('windows')`) or `r keys(c('Ctrl', '\\backdel'))` (`r os_logo('apple')`) on your keyboard. To edit a [custom test](#creating-custom-test), double click on it in this list. To view the help for a standard test, double click on it in this list.
 
-There will also be graphs in this section if you had included the [Fry](#reviewing-readability-graphs), [Gilliam-Peña-Mountain](#gilliam-pena-mountain-fry-graph)\index{Gilliam-Peña-Mountain}, [Raygor](#reviewing-readability-graphs), [Flesch](#flesch-test), or [FRASE](#frase)\index{FRASE} tests. Refer to \@ref(reviewing-readability-graphs) for further information.
+There will also be readability graphs in this section if you included their respective tests. Refer to \@ref(reviewing-readability-graphs) for further information.
 
 ## Readability Graphs {#reviewing-readability-graphs}
 
-There are numerous readability tests that are graphically plotted, including [Fry](#fry-test), [Raygor](#raygor-test), [Flesch](#flesch-test), [Lix](#lix-test), [Gilliam-Peña-Mountain](#gilliam-pena-mountain-fry-graph), [FRASE](#frase), [Crawford](#crawford), and [Schwartz](#scwartz). These graphs consist of either grade-level or reading-level regions that a document may fall within. They also include indicators for the most influential factor for the document's reported level (i.e., word difficulty vs. sentence difficulty).
+There are numerous readability tests that are graphically plotted, including [Fry](#fry-test), [Raygor](#raygor-test), [Flesch](#flesch-test), [Lix](#lix-test), [Gilliam-Peña-Mountain](#gilliam-pena-mountain-fry-graph)\index{Gilliam-Peña-Mountain}, [FRASE](#frase)\index{FRASE}, [Crawford](#crawford), and [Schwartz](#scwartz). These graphs consist of either grade-level or reading-level regions that a document may fall within. They also include indicators for the most influential factor for the document's reported level (i.e., word difficulty vs. sentence difficulty).
 
 To view these graphs, click on the **Test Graphs & Charts** icon in a [standard project](#creating-standard-project) or the **Readability Graphs** icon in a [batch project](#creating-batch-project).
 
@@ -219,7 +219,7 @@ If your test scores are indicating that the document is too difficult for your t
 
 To help find the most difficult words for the New Dale-Chall list, select the **Dale-Chall (Unfamiliar)** subitem and sort the **Frequency** column. The most frequently occurring words are the ones that should be replaced with more familiar synonyms that most readers would recognize.
 
-To find a specific word in a list, type the word into the **Search** bar at the top of program and hit the `r keys("ENTER")` button on your keyboard. You can also select the list and begin typing the word. If the word is in the list, then the selection will move to it.
+To find a specific word in a list, type the word into the **Search** bar at the top of program and hit the `r keys("Enter")` (`r os_logo('windows')`) or `r keys("\\enter")` (`r os_logo('apple')`)  button on your keyboard. You can also select the list and begin typing the word. If the word is in the list, then the selection will move to it.
 
 Double-click on any word in these lists to display the respective highlighted text report with the first instance of that word selected.
 

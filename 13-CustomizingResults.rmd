@@ -68,9 +68,11 @@ On this dialog, you will specify which columns to sort by and their order. Going
 
 ## Graphs
 
+::: {.minipage data-latex="{\textwidth}"}
 When any graph is selected:
 
 ![](Images/SentenceBoxPlotSelected.png)
+:::
 
 Options for customizing it are made available on the **Edit** section of the ribbon:
 

@@ -16,13 +16,11 @@ knitr::include_graphics("Images/selectprojecttype.png")
 
 Select **Batch Project** and click the `r keys("OK")` button to proceed to the **New Project** wizard dialog:
 
-```{r echo=F, fig.align='center', out.width='75%'}
-knitr::include_graphics("Images/wizardbatchselectfiles.png")
-```
+![](Images/wizardbatchselectfiles.png)
 
 Select **English** as the document language. Next, you can add files from a folder, website, spreadsheet, or archive to the project. We will be reviewing files from a folder, so click the `r keys("Add folder(s)")` button. You will be presented with the [**Select Directory**](#select-directory) dialog:
 
-```{r echo=F, fig.align='center', out.width='74%'}
+```{r echo=F, fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/selectdirectory.png")
 ```
 

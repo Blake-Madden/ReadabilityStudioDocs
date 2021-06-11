@@ -24,7 +24,7 @@ To create a new formula based on Lix\index{Lix} that treats 6+ character words a
 
 `SixCharacterPlusWordCount() / SentenceCount()`
 
-To view the available functions, click the function browser button `r keys('ƒx')` to display the **Function Browser** dialog:
+To view the available functions, click the `r keys('ƒx')` button to display the **Function Browser** dialog:
 
 ![](Images/FunctionBrowser.png)
 
@@ -54,7 +54,7 @@ After entering the file path, the words from the file will be shown in the famil
 
 Next, you can specify which type of stemming (if any) to use. Stemming compares words based on their roots and is useful for finding words that appear in different forms. This comparison is performed when words from a document are being matched against your familiar-word list. For example, let us say that you have the word “open” in your list and have English stemming selected. When you analyze a document, words such as “opened” and “opening” will be considered familiar, even if they are not explicitly in your word list.
 
-If you are not using stemming, then it is recommended that you enter each inflected form of your words (e.g., possessive, plural) in your familiar-word list. For example, you would need “open,” “opens,” “opening,” etc. explicitly in your list for each form of “open” to be considered familiar.
+If you are not using stemming, then it is recommended that you enter each inflected form of your words (e.g., possessive, plural) in your familiar-word list. For example, you would need “open,” “opens,” “opening,” etc. explicitly in your list to cover each form of “open.”
 
 Along with your own word list, you can also use the New Dale-Chall, Spache, and Harris-Jacobson\index{word lists!combining} word lists. This enables you to make your word list an appendage to any of these standard tests, therefore creating your own extended version of these tests. This behavior can be toggled with the options shown below:
 

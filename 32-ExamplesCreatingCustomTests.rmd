@@ -98,9 +98,11 @@ Because this will be a New Dale-Chall test meant for baking, we will enter the n
 
 ![](Images/CustomTestExample2Name.png)
 
-Next, we will enter the formula. The formula for a custom New Dale-Chall test is:
+Next, we will enter the formula. The formula for a custom New Dale-Chall test\index{CustomNewDaleChall()@\texttt{CustomNewDaleChall()}!example} is:
 
-`CustomNewDaleChall()`\index{CustomNewDaleChall()@\texttt{CustomNewDaleChall()}!example}
+```{r, eval=F, echo=T}
+CustomNewDaleChall()
+```
 
 This formula will instruct the program to use the standard New Dale-Chall formula with our familiar-word criteria, which we will define later.
 
@@ -134,7 +136,9 @@ For this example, we will treat all proper nouns and numerals as familiar. This 
 
 Click the `r keys("OK")` button and our new test will be added to the system. At this point, the formula and all our settings will be validated. Because our [proper-noun options](#readability-test-options) differ from the standard New Dale-Chall test, the following prompt will appear:
 
-![](Images/NonGenerated/CustomTestDCProperNounWarning.png)
+```{r echo=F, fig.align='center', out.width='50%'}
+knitr::include_graphics("Images/NonGenerated/CustomTestDCProperNounWarning.png")
+```
 
 We are intending to treat all proper nouns as familiar and do not wish to use the same settings as New Dale-Chall, so click **Do not adjust**. Our new test, New Dale-Chall (Baking), has now been added to the program.
 
