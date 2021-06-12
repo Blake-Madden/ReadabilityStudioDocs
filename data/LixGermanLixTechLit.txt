@@ -1,0 +1,14 @@
+Index Score	Grade
+0-30 	3^rd^ grade
+31-33 	4^th^ grade
+34-37 	5^th^ grade
+38-40 	6^th^ grade
+41-43 	7^th^ grade
+44-47 	8^th^ grade
+48-50 	9^th^ grade
+51-53 	10^th^ grade
+54-56 	11^th^ grade
+57-59 	12^th^ grade
+60-63 	13^th^ grade
+64-69 	14^th^ grade
+70+ 	15^th^ grade

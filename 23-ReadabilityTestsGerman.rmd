@@ -61,18 +61,13 @@ This version adjusts the scaling of the score, assuming that German text is inhe
 ::: {.minipage data-latex="{\textwidth}"}
 To convert the Lix index score to a grade, this test uses the following table:
 
-| Index Score | Grade |
-| :-- | :-- |
-| 0-23 | 1^st^ grade |
-| 24-26 | 2^nd^ grade |
-| 27-29 | 3^rd^ grade |
-| 30-31 | 4^th^ grade |
-| 32-33 | 5^th^ grade |
-| 34-35 | 6^th^ grade |
-| 36-37 | 7^th^ grade |
-| 38+ | 8^th^ grade |
-
-Table: Lix (German children's literature) Conversion Table
+```{r, echo=F}
+kableExtra::kbl(dplyr::as_tibble(read_delim("data/LixGermanLixChildrensLit.txt", "\t", escape_double=F, trim_ws=T)) %>%
+                  dplyr::mutate_all(markdown_to_kable_cell),
+                booktabs=T, centering=T, linesep="",
+                caption="Lix (German children's literature) Conversion Table",
+                align='l', escape=F)
+```
 :::
 
 \newpage
@@ -94,23 +89,13 @@ This version adjusts the scaling of the score, assuming that German text is inhe
 ::: {.minipage data-latex="{\textwidth}"}
 To convert the Lix index score to a grade, this test uses the following table:
 
-| Index Score | Grade |
-| :-- | :-- |
-| 0-30 | 3^rd^ grade |
-| 31-33 | 4^th^ grade |
-| 34-37 | 5^t^h grade |
-| 38-40 | 6^th^ grade |
-| 41-43 | 7^th^ grade |
-| 44-47 | 8^th^ grade |
-| 48-50 | 9^th^ grade |
-| 51-53 | 10^th^ grade |
-| 54-56 | 11^th^ grade |
-| 57-59 | 12^th^ grade |
-| 60-63 | 13^th^ grade |
-| 64-69 | 14^th^ grade |
-| 70+ | 15^th^ grade |
-
-Table: Lix (German technical literature) Conversion Table
+```{r, echo=F}
+kableExtra::kbl(dplyr::as_tibble(read_delim("data/LixGermanLixTechLit.txt", "\t", escape_double=F, trim_ws=T)) %>%
+                  dplyr::mutate_all(markdown_to_kable_cell),
+                booktabs=T, centering=T, linesep="",
+                caption="Lix (German technical literature) Conversion Table",
+                align='l', escape=F)
+```
 :::
 
 \newpage
@@ -269,21 +254,13 @@ Where:
 ::: {.minipage data-latex="{\textwidth}"}
 To convert the Rix index score to a grade, this test uses the following table:
 
-| Index Score | Grade |
-| :-- | :-- |
-| 0-13.5 | 1^st^ grade |
-| 13.51-17 | 2^nd^ grade |
-| 17.1-20.5 | 3^rd^ grade |
-| 20.51-24 | 4^th^ grade |
-| 24.1-27.5 | 5^th^ grade |
-| 27.51-31 | 6^th^ grade |
-| 31.1-34.5 | 7^th^ grade |
-| 34.51-38 | 8^th^ grade |
-| 38.1-41.5 | 9^th^ grade |
-| 41.51-45 | 10^th^ grade |
-| 45.1+ | 11^th^ grade |
-
-Table: Rix Index Score (German Fiction) to Grade Level Conversion Table
+```{r, echo=F}
+kableExtra::kbl(dplyr::as_tibble(read_delim("data/RixGermanFiction.txt", "\t", escape_double=F, trim_ws=T)) %>%
+                  dplyr::mutate_all(markdown_to_kable_cell),
+                booktabs=T, centering=T, linesep="",
+                caption="Rix Index Score (German Fiction) to Grade Level Conversion Table",
+                align='l', escape=F)
+```
 :::
 
 \newpage

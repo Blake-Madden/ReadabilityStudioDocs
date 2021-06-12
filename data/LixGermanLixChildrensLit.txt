@@ -1,0 +1,9 @@
+Index Score	Grade
+0-23	1^st^ grade
+24-26	2^nd^ grade
+27-29	3^rd^ grade
+30-31	4^th^ grade
+32-33	5^th^ grade
+34-35 	6^th^ grade
+36-37	7^th^ grade
+38+	8^th^ grade

@@ -1,0 +1,12 @@
+Index Score	Grade
+0-13.5 	1^st^ grade
+13.51-17 	2^nd^ grade
+17.1-20.5 	3^rd^ grade
+20.51-24 	4^th^ grade
+24.1-27.5 	5^th^ grade
+27.51-31 	6^th^ grade
+31.1-34.5 	7^th^ grade
+34.51-38 	8^th^ grade
+38.1-41.5 	9^th^ grade
+41.51-45 	10^th^ grade
+45.1+ 	11^th^ grade
