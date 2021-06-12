@@ -253,7 +253,7 @@ In the above histogram, we see that most of the words are either 1 or 2 syllable
 The total value of a word count reflects the number of words, including repeats of the same word. The unique value of a word count reflects the number of words, excluding repeats. For example, a document contains the word “liquidation” three times. This word will be tallied three times when factored into the total word count, but only once into the unique word count. Most tests use the total word count variable, although there are some that use unique counts (e.g., Spache uses its unique unfamiliar word count).
 :::
 
-See also \@ref(proper-nouns-in-lists).
+See also \@ref(proper-nouns-in-lists) for more information about proper-noun handling.
 
 ## Sentences Breakdown {#reviewing-sentences-breakdown}
 

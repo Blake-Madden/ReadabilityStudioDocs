@@ -85,7 +85,7 @@ This example would tell the program to log the maximum level of information whil
 `ReadStudio -loglevel=2`
 :::
 
-Note that verbose logging can also be enabled by holding down the `r keys("SHIFT")` button on your keyboard while the program opens.
+Note that verbose logging can also be enabled by holding down the `r keys("Shift")` (`r os_logo('windows')`) or `r keys("\\shift")` (`r os_logo('apple')`) button on your keyboard while the program opens.
 
 ## Log Report {#log-report}
 
@@ -97,7 +97,7 @@ While it is running, *Readability Studio* logs various diagnostic information. T
 - The paths of documents being analyzed (verbose mode only)
 - Information about the operating system (e.g., OS version, default font, etc.)
 
-The log's level of detail is controlled by either the [command line](#command-line-options) or by holding down the `r keys("SHIFT")` button on your keyword while the program starts. (Holding `r keys("SHIFT")` instructs the program to use maximum, verbose logging.)
+The log's level of detail is controlled by either the [command line](#command-line-options) or by holding down the `r keys("Shift")` (`r os_logo('windows')`) or `r keys("\\shift")` (`r os_logo('apple')`) button on your keyword while the program starts. (Holding `r keys("Shift")` (`r os_logo('windows')`) or `r keys("\\shift")` (`r os_logo('apple')`) instructs the program to use maximum, verbose logging.)
 
 To view this diagnostic information, go to the **Tools** tab on the ribbon, then click **Log Report** under the **Tools & Settings** section. From the **Log Report** dialog, you can review, save, and print any of this information.
 

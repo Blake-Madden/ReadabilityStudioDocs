@@ -45,7 +45,7 @@ menu <- function(menuKeys)
 # @param buttonKeys The  button (or button combo).
 #        This can be an array of strings that will be separated by '+'.
 #        This strings can be the button labels or a command to menukeys (e.g., '\cmd' yields the Clover symbol)
-#        All menukeys command will work in LaTeX and "\cmd", "\backdel", and "\enter" are supported in HTML.
+#        All menukeys command will work in LaTeX and "\cmd", "\backdel", "\enter", and "\shift" are supported in HTML.
 keys <- function(buttonKeys)
   {
   if (knitr::is_latex_output())
@@ -57,6 +57,7 @@ keys <- function(buttonKeys)
     buttonKeys <- stringr::str_replace_all(buttonKeys, regex("^\\\\cmd$", ignore_case=T), "&#8984;")
     buttonKeys <- stringr::str_replace_all(buttonKeys, regex("^\\\\backdel$", ignore_case=T), "&#9003;")
     buttonKeys <- stringr::str_replace_all(buttonKeys, regex("^\\\\enter$", ignore_case=T), "&#8996;")
+    buttonKeys <- stringr::str_replace_all(buttonKeys, regex("^\\\\shift$", ignore_case=T), "&#8679;")
 
     knitr::asis_output(
       glue_collapse(glue("<span class='keys'>{buttonKeys}</span>", .open='{', .close='}'), sep='+')) }
