@@ -12,27 +12,50 @@ Finally, graphical tests (e.g., [Fry](#fry-test)\index{Fry!calculation method}) 
 
 ## Grade Scales {#grade-scales}
 
-::: {.minipage data-latex="{\textwidth}"}
 Grade-level scores are traditional displayed in U.S. (K–12+) format, be can be coverted to other scales. The following grade scales are available to choose from:
 
 ```{r, echo=F}
 usaGradeScale <- split_column_into_table(read_tsv("data/USAGradeScale.txt",
                                          col_names=F)[[1]], 15, "Grade Levels")
-
-kableExtra::kbl(usaGradeScale, booktabs=T, centering=T, linesep="",
-                caption="United States of America", align='l', escape=F) %>%
-  kableExtra::kable_classic(full_width=F)
-```
-
-```{r, echo=F}
 englishKeyStages <- split_column_into_table(read_tsv("data/EnglandWalesGradeScale.txt",
                                          col_names=F)[[1]], 15, "Key Stages")
+```
 
+```{r, echo=F, eval=knitr::is_html_output()}
+kableExtra::kbl(usaGradeScale, booktabs=T, centering=T, linesep="",
+                caption="United States of America", align='l', escape=F) %>%
+  kableExtra::kable_classic(full_width=F) %>%
+  kableExtra::kable_styling(position = "float_left")
+```
+
+```{r, echo=F, eval=knitr::is_html_output()}
 kableExtra::kbl(englishKeyStages, booktabs=T, centering=T, linesep="",
                 caption="England and Wales", align='l', escape=F) %>%
-  kableExtra::kable_classic(full_width=F)
+  kableExtra::kable_classic(full_width=F) %>%
+  kableExtra::kable_styling(position = "left")
 ```
-:::
+
+```{r, echo=F, eval=knitr::is_latex_output()}
+usaKable <- kableExtra::kbl(usaGradeScale, booktabs=T, centering=T, linesep="",
+                align='l', escape=F)
+
+ukKable <- kableExtra::kbl(englishKeyStages, booktabs=T, centering=T, linesep="",
+                align='l', escape=F)
+
+knitr::asis_output(glue_collapse(
+  c("\\begin{table}[!htb]
+    \\begin{minipage}{.5\\linewidth}
+      \\caption{United States of America}",
+        usaKable,
+    "\\hspace{1cm}
+    \\end{minipage}%
+    \\hspace{.1cm}
+    \\begin{minipage}{.5\\linewidth}
+      \\caption{England and Wales}",
+        ukKable,
+    "\\end{minipage}
+    \\end{table}")))
+```
 
 \newpage
 
