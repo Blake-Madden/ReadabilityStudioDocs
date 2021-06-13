@@ -5,7 +5,8 @@
 +-----------------------------------------+------------------------------------------------------+
 | To do this                              | Press                                                |
 +:========================================+:=====================================================+
-| Enable verbose logging                  | Hold the `r keys("Shift")` `r os_logo('windows')`\   |
+| Enable verbose logging                  | Hold down\                                           |
+|                                         | `r keys("Shift")` `r os_logo('windows')`\            |
 |                                         | or\                                                  |
 |                                         | `r keys("\\shift")` `r os_logo('apple')`\            |
 |                                         | while the program is loading                         |
@@ -53,7 +54,7 @@ Average sentence length.
 cloze test
 :::
 ::: {.glsdef data-latex=''}
-A [cloze](#cloze) procedure is a test given to readers to measure their comprehension ability. Refer to \@ref(cloze) for further details.
+A [cloze](#cloze) procedure is a test given to readers to measure their comprehension ability. Refer to \@ref(cloze) for an extended explanation.
 :::
 ::::
 
