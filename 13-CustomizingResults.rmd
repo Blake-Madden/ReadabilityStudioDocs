@@ -10,7 +10,7 @@ Options for customizing their display are made available on the **Edit** section
 
 ![](Images/RibbonEditScores.png)
 
-**Long format**: Click this button to toggle readability scores in long (e.g., “2^nd^ grade”) or short (e.g., “2”) format within the score grid.
+**Long format**: Click this button to toggle readability scores in long (e.g., *2^nd^ grade*) or short (e.g., *2*) format within the score grid.
 
 **Grade scale**: Click this button to choose from a list of grade scales to display your scores in.
 
