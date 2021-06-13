@@ -72,17 +72,15 @@ keys <- function(buttonKeys)
 #        Leave empty to not include column names in the results.
 split_column_into_table <- function(col, rowCount, columnName = NULL)
   {
-  colVals <- col %>%
-    sort()
-  if (length(colVals) > rowCount)
+  if (length(col) > rowCount)
     {
-    length(colVals) <- length(colVals)+
-      (rowCount-length(colVals) %% rowCount)
+    length(col) <- length(col)+
+      (rowCount-length(col) %% rowCount)
     }
   else
-    { rowCount = length(colVals) }
+    { rowCount = length(col) }
 
-  outData <- dplyr::as_tibble(colVals %>% matrix(nrow=rowCount, byrow=F), .name_repair="minimal")
+  outData <- dplyr::as_tibble(col %>% matrix(nrow=rowCount, byrow=FALSE), .name_repair="minimal")
   # set the column names
   if (ncol(outData) > 1 && length(columnName) > 0)
     { colnames(outData) <- rep(columnName, ncol(outData)) }
