@@ -98,6 +98,8 @@ checkmark <- function()
     { knitr::asis_output("\\Checkmark") }
   else if (knitr::is_html_output())
     { knitr::asis_output("&#x2713;") }
+  else
+    { knitr::asis_output("") }
   }
 
 # @brief Returns an indentation to put in front of a line of text.
