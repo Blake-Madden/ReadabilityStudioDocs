@@ -82,27 +82,25 @@ knitr::include_graphics("Images/selectprojecttype.png")
 
 Select **Batch Project** and click the `r keys("OK")` button to proceed to the **New Project** wizard dialog, as shown below:
 
-```{r echo=F, fig.align='center'}
 knitr::include_graphics("Images/wizardbatchselectfiles.png")
-```
 
 On the first page of this dialog, **Documents**, are options for selecting your documents and how to specify their language. The language option will control how the documents are analyzed (e.g., syllable counting). This will also affect which tests, word lists, and grammar features will be available. For example, if we select **Spanish**, then only Spanish tests will be included, and features related to English word lists (e.g., New Dale-Chall) will not be available. For this example, select **English**.
 
 Now you can add files from a folder, archive file, Excel^®^ 2007 file, or website to the project.
 
-To add files from a folder, click the `r keys("Add folder")` button. You will be presented with the [**Select Directory**](#select-directory) dialog:
+::: {.wrapfigure data-latex="{r}{0.5\\textwidth}" style="width: 48%;"}
+![](Images/selectdirectory.png){width=48%}
+:::
 
-```{r echo=F, fig.align='center', out.width='50%'}
-knitr::include_graphics("Images/selectdirectory.png")
-```
+To add files from a folder, click the `r keys("Add folder")` button. You will be presented with the [**Select Directory**](#select-directory) dialog. On this dialog, you can select the document types to search for, as well as whether to search recurvisely within the folders.
 
-To add files from an archive (i.e., a \*.zip file), click the `r keys("Add archive")` button. You will be presented with the [**Select Archive File**](#select-archive) dialog:
+::: {.wrapfigure data-latex="{r}{0.5\\textwidth}" style="width: 48%;"}
+![](Images/selectarchive.png){width=48%}
+:::
 
-```{r echo=F, fig.align='center', out.width='30%'}
-knitr::include_graphics("Images/selectarchive.png")
-```
+To add files from an archive (i.e., a \*.zip file), click the `r keys("Add archive")` button. You will be presented with the [**Select Archive File**](#select-archive) dialog. Like the **Select Directory** dialog, you can specify which documents to search for within the archive. (Note that the entire archive will be searched recursively for documents.)
 
-To add documents from an Excel 2007 file, click the `r keys("Add spreadsheet")` button. After selecting an Excel file, you will be prompted for which cells to import. After specifying these, the cells will be imported one of two ways. The first way is if a cell's content is a filepath. In this case, the document referenced by this filepath will be loaded into the project. Otherwise, if a cell is not a file path, then its content will be imported as a document itself. In this case, the cell's name (e.g., “B19”) will be used as the document's name.
+To add documents from an Excel 2007 file, click the `r keys("Add spreadsheet")` button. After selecting an Excel file, you will be prompted for which cells to import. After specifying these, the cells will be imported one of two ways. The first way is if a cell's content is a filepath. In this case, the document referenced by this filepath will be loaded into the project. Otherwise, if a cell is not a file path, then its content will be imported as a document itself. In this case, the cell's name (e.g., *B19*) will be used as the document's name.
 
 To search for files from a website and include them in the project, click the `r keys("Add web pages")` button. This will display the [**Web Harvester**](#web-harvester) dialog, as shown below:
 
@@ -186,4 +184,4 @@ This dialog enables you to import a worksheet (from a spreadsheet) for [batch](#
 
 **Only highlighted cells**: Select this option to only import the selected cells (which will be highlighted blue). A block of cells can be selected by holding down the left mouse button and dragging the cursor around the block. Individual cells can be selected by holding down the `r keys("Ctrl")` (`r os_logo('windows')`) or `r keys("\\cmd")` (`r os_logo('apple')`) button on the keyboard and clicking the cells. Also, entire columns and rows can be selected by clicking the column header or row label, respectively.
 
-Note that selections can also be discontiguous. For example, if you hold down the `r keys("Ctrl")` (`r os_logo('windows')`) or `r keys("\\cmd")` (`r os_logo('apple')`) button and click the column headers “A” and then “D,” then these two columns will be imported.
+Note that selections can also be discontiguous. For example, if you hold down the `r keys("Ctrl")` (`r os_logo('windows')`) or `r keys("\\cmd")` (`r os_logo('apple')`) button and click the column headers *A* and then *D*, then these two columns will be imported.
