@@ -26,7 +26,7 @@ Finally, the averages (means) of your test scores and ages are displayed at the 
 
 When calculating these statistics, failed test scores are treated as missing observations and not included. For example, let us say that you included 5 tests, but one of them could not be calculated. In this case, the valid 4 scores will be added and divided by 4 (not 5) to acquire the means. Also, grade range scores–such as “5–6” from [New Dale-Chall](#dale-chall-test)\index{New Dale-Chall!grade-range averaging}–will be converted to its own average (e.g., “5-6” will be 5.5).
 
-To remove any test from this list, select it and press `r keys(c('Ctrl', 'Del'))` (`r os_logo('windows')`) or `r keys(c('Ctrl', '\\backdel'))` (`r os_logo('apple')`) on your keyboard. To edit a [custom test](#creating-custom-test), double click on it in this list. To view the help for a standard test, double click on it in this list.
+To remove any test from this list, select it and press `r keys(c('Ctrl', 'Del'))` (`r os_logo('windows')`) or `r keys(c('\\cmd', '\\backdel'))` (`r os_logo('apple')`) on your keyboard. To edit a [custom test](#creating-custom-test), double click on it in this list. To view the help for a standard test, double click on it in this list.
 
 There will also be readability graphs in this section if you included their respective tests. Refer to \@ref(reviewing-readability-graphs) for further information.
 
