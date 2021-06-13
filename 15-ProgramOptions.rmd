@@ -74,7 +74,7 @@ The options on this page customize your general project settings.
 
 **Reviewer**: Enter in this field your name as it should appear in exported reports.
 
-**Status**: Enter in this field the status of the document(s) that this project is reviewing (e.g., “DRAFT”). This information will appear in reports when you [export all](#export-all-options).
+**Status**: Enter in this field the status of the document(s) that this project is reviewing (e.g., *DRAFT*). This information will appear in reports when you [export all](#export-all-options).
 
 **Batch options**
 
@@ -103,7 +103,7 @@ Linking and embedding
 
 **Embed the document's text into the project**: Select this option to save the source document's text directly into the project. When you open this project, it will not reanalyze your document. If your document has been edited, then those changes will not be reflected in this project.
 
-This is useful for analyzing a “snapshot” of your work. For example, you could analyze an early draft of your work and have it embedded in the project. As you edit your work, opening this project will still show the results from the original draft. From here, you can create a new project for your revised work and compare its results against your early draft.
+This is useful for analyzing a snapshot of your work. For example, you could analyze an early draft of your work and have it embedded in the project. As you edit your work, opening this project will still show the results from the original draft. From here, you can create a new project for your revised work and compare its results against your early draft.
 
 **Reload the document when opening project**: Select this option to reload and reanalyze the source document the next time you open the project. Note that the source document's content will not be stored in the project. If the document cannot be found, then only the results from the previous analysis will be shown.
 ::::
@@ -116,7 +116,7 @@ Enter into this field an additional document to append to the regular document. 
 
 Note that for batch projects, this document will be appended to each document in the batch.
 
-Also note that your original document is not affected by this process. The original and additional document are only combined within *Readability Studio* while it analyzes them.
+Also note that your original document is not affected by this process. The original and additional documents are only combined within *Readability Studio* while it analyzes them.
 
 \newpage
 
@@ -206,44 +206,44 @@ If **Also exclude trailing citations** is enabled, then checking this option wil
 
 **Also exclude copyright notices**: Select this option to ignore copyright and trademark notices when calculating statistics. Throughout the document, any paragraph consisting of one or two sentences which has a ‘©’ symbol near the beginning is considered a copyright notice.
 
-Near the end of the document, the final paragraphs will be more aggressively reviewed. If the last two paragraphs contain one or two sentences and contain phrases such as “All rights reserved” or “copyright” or symbols such as ‘©’ or ‘®’, then they will be considered copyright notices.
+Near the end of the document, the final paragraphs will be more aggressively reviewed. If the last two paragraphs contain one or two sentences and contain phrases such as *All rights reserved* or *copyright* or symbols such as ‘©’ or ‘®’, then they will be considered copyright notices.
 
 **Also exclude trailing citations**: Select this option to ignore a citation section at the end of the document when calculating statistics. If this option is selected, then the program will search for a citation header near the end of the document and exclude any paragraphs after it. A citation header will be any header which contains 5 (or less) words and any of the following labels:
 
-- “Anmerkungen”
-- “Bibliographie”
-- “Bibliography”
-- “Bibliografía”
-- “Citations”
-- “Einzelnachweise”
-- “For More Information”
-- “Literatur”
-- “Literaturverzeichnis”
-- “Para Mas Informacion”
-- “Reference”
-- “References”
-- “Referencias”
-- “Related Publications”
-- “Relación de los Trabajos Publicados”
-- “Textbooks and Cirricula”
-- “Works Cited”
+- *Anmerkungen*
+- *Bibliographie*
+- Bibliography
+- *Bibliografía*
+- Citations
+- *Einzelnachweise*
+- For More Information
+- *Literatur*
+- *Literaturverzeichnis*
+- *Para Mas Informacion*
+- Reference
+- *References*
+- *Referencias*
+- Related Publications
+- *Relación de los Trabajos Publicados*
+- Textbooks and Cirricula
+- Works Cited
 
 ::: {.notesection data-latex=""}
-The program will stop excluding text after a “References” header if it detects a paragraph that does not appear to be a citation. This is useful for when a references section is in the middle of a document, followed by other content.
+The program will stop excluding text after a *References* header if it detects a paragraph that does not appear to be a citation. This is useful for when a references section is in the middle of a document, followed by other content.
 :::
 
 **Also exclude Internet and file addresses**: Select this option to ignore URLs (i.e., Internet addresses) and filepaths. Note that this applies to words inside of complete sentences, not just incomplete. For example:
 
 ::: {.fancyquotes data-latex=''}
-Readability Studio is available from **www.oleandersoftware.com**.
+Readability Studio is available from *www.oleandersoftware.com*.
 :::
 
-If this option is selected, then “*www.oleandersoftware.com*” will be excluded from every analysis. This includes sentence-length, word-length, and syllable-count calculations.
+If this option is selected, then *www.oleandersoftware.com* will be excluded from every analysis. This includes sentence-length, word-length, and syllable-count calculations.
 
 **Also exclude numerals**: Select this option to ignore all numbers. For example:
 
 ::: {.fancyquotes data-latex=''}
-Upon arrival at 5:30PM, please be ready to cover the $75 boarding fee.
+Upon arrival at *5:30PM*, please be ready to cover the *$75* boarding fee.
 :::
 
 would be analyzed as this:
@@ -265,7 +265,7 @@ This option may be recommended for mathematical works which contain equations an
 With the above exclusion list, this text:
 
 ::: {.fancyquotes data-latex=''}
-Quantum Fluctuations are fluctuations of particles within the quantum foam that appear ex nihilo and annihilate each other.
+*Quantum Fluctuations* are fluctuations of *particles* within the quantum foam that appear *ex nihilo* and annihilate each other.
 :::
 
 would be analyzed as this:
@@ -274,13 +274,13 @@ would be analyzed as this:
 _____ are fluctuations of _____ within the quantum foam that appear _____ and annihilate each other.
 :::
 
-This would be seen as a 13-word sentence, with all the phrases from the exclusion list removed. Note that the first instance of “fluctuations” is removed from the analysis because it is part of the phrase “Quantum Fluctuations” (which is on the exclusion list). However, the second instance of “fluctuations” will be included because it is not part of the phrase that we requested to ignore. To exclude all instances of “fluctuations,” include in the list on a separate line.
+This would be seen as a 13-word sentence, with all the phrases from the exclusion list removed. Note that the first instance of *fluctuations* is removed from the analysis because it is part of the phrase *Quantum Fluctuations* (which is on the exclusion list). However, the second instance of *fluctuations* will be included because it is not part of the phrase that we requested to ignore. To exclude all instances of *fluctuations*, include in the list on a separate line.
 
 This phrase list can be edited by clicking the button next to this field, which will open the [**Edit Word/Phrase List**](#edit-word-list-dialog) dialog.
 
 **Include first occurrence**: Select this option to not exclude the first occurrence of any word or phrase from your exclusion list. All remaining occurrences of these words in the document will be excluded. This is useful if you wish to only analyze the first instance of certain difficult words.
 
-**Exclude text between**: Selects whether to exclude all text in between a certain pair of tags. For example, select “[ and ]” and any text inside of '[' and ']' will be ignored in the analysis. Along with excluding the bracketed words, any full paragraphs and sentences wrapped inside of these tags will also be excluded (which will be reflected in the statistics). Refer to \@ref(excluding-placeholders) for an example.
+**Exclude text between**: Selects whether to exclude all text in between a certain pair of tags. For example, select **[ and ]** and any text inside of '[' and ']' will be ignored in the analysis. Along with excluding the bracketed words, any full paragraphs and sentences wrapped inside of these tags will also be excluded (which will be reflected in the statistics). Refer to \@ref(excluding-placeholders) for an example.
 
 Note that these options are not available if **Do not exclude any text** is selected.
 
@@ -295,7 +295,7 @@ The following options control how numeric words are syllabized.
 
 **Numerals are one syllable**: Select this option to have the program consider numeric words (e.g., numbers, dates, phone numbers) as monosyllabic.
 
-**Sound out each digit**: Select this option to have the program sound out each digit when counting the syllables of numeric words. For example, the word “555-4778” will be considered nine syllables–read as “five-five-five-four-sev-en-sev-en-eight.” As another example, “$52” will be considered four syllables (read as “five-two-doll-ars”).
+**Sound out each digit**: Select this option to have the program sound out each digit when counting the syllables of numeric words. For example, the word *555-4778* will be considered nine syllables–read as *five-five-five-four-sev-en-sev-en-eight*. As another example, *$52* will be considered four syllables (read as *five-two-doll-ars*).
 ::::
 
 ::: {.notesection data-latex=""}
@@ -361,7 +361,7 @@ Numeral syllabication
 
 Select from the following options to control how numerals are syllabized for Flesch-Kincaid\index{Flesch-Kincaid!customizing!syllabication}.
 
-**Sound out each digit**: Select this option to have the program sound out each digit when counting the syllables of numeric words. For example, the word “555-4778” will be considered nine syllables–read as “five-five-five-four-seven-seven-eight.”
+**Sound out each digit**: Select this option to have the program sound out each digit when counting the syllables of numeric words. For example, the word *555-4778* will be considered nine syllables–read as *five-five-five-four-seven-seven-eight*.
 
 **System default**: Select this option to use the system default [numeral syllabication](#numsyllable) method.
 
@@ -432,7 +432,7 @@ The **text exclusion** option will affect any custom test using the following fu
 
 ### Scores {-#options-scores}
 
-The options on this page customize which results to include in the **Readability Scores** section and how grade-level scores and reading ages are displayed. Most readability tests use U.S. K-12 (+college) grade levels to represent their scores; however, *Readability Studio* can display these scores in other formats as well. For example, a score of 4 could be shown as “Key stage 2 (year 5)” if using the Key Stages grade scale.
+The options on this page customize which results to include in the **Readability Scores** section and how grade-level scores and reading ages are displayed. Most readability tests use U.S. K-12 (+college) grade levels to represent their scores; however, *Readability Studio* can display these scores in other formats as well. For example, a score of 4 could be shown as *Key stage 2 (year 5)* if using the Key Stages grade scale.
 
 #### Results {-#options-results-options}
 
@@ -451,7 +451,7 @@ The options on this page customize which results to include in the **Readability
 
 Refer to \@ref(grade-scales) for a list of available scales.
 
-**Display scores in long format**: Check this to display readability scores in long format (e.g., “2^nd^ grade”) within the score grid.
+**Display scores in long format**: Check this to display readability scores in long format (e.g., *2^nd^ grade*) within the score grid.
 
 #### Reading Age Display {-#reading-age}
 
@@ -462,11 +462,11 @@ Calculation
 
 Reading ages are included in the [**Readability Scores**](#reviewing-test-scores) section within **Standard** projects next to each grade level score. Although most tests do not include reading ages, the program can calculate them from the grade-level scores. The following options are available for customizing how these ages are calculated from their respective grade-level score:
 
-**School-year range**: Select this option to display the full age range from a given grade level. For example, if a test scores at “5.3” (fifth grade), then the age range for fifth graders (i.e., “10–11”) will be used.
+**School-year range**: Select this option to display the full age range from a given grade level. For example, if a test scores at *5.3* (fifth grade), then the age range for fifth graders (i.e., *10–11*) will be used.
 
-Note that when calculating the reading-age aggregate statistics (e.g., the average reading age), the middle point of each range is used. For example, the average for two ranges such as “10–11” and “11–12” would be 11. The middle point of “10-11” is 10.5, the middle point of “11-12” is 11.5; therefore, (10.5+11.5)/2 = 11.
+Note that when calculating the reading-age aggregate statistics (e.g., the average reading age), the middle point of each range is used. For example, the average for two ranges such as *10–11* and *11–12* would be 11. The middle point of *10-11* is 10.5, the middle point of *11-12* is 11.5; therefore, (10.5+11.5)/2 = 11.
 
-**Round to semester**: Select this option to calculate a reading age from a grade level by rounding the grade level. For example, a grade level score of “5.3” will be seen as the first semester of fifth grade and the starting age of most fifth graders (i.e., “10”) will be used as the reading age. As another example, a grade level score of “5.6” will be seen as the second semester of fifth grade and the graduating age of most fifth graders (i.e., “11”) will be used as the reading age.
+**Round to semester**: Select this option to calculate a reading age from a grade level by rounding the grade level. For example, a grade level score of *5.3* will be seen as the first semester of fifth grade and the starting age of most fifth graders (i.e., *10*) will be used as the reading age. As another example, a grade level score of *5.6* will be seen as the second semester of fifth grade and the graduating age of most fifth graders (i.e., *11*) will be used as the reading age.
 
 Note that reading ages do not contain floating-point precision, even if their respective grade-level scores do. This is because students' ages within the same grade can widely vary; therefore, a grade-level score's [mantissa](#grade-level-results) cannot accurately be carried over to a group's reading age. A grade-level score can homogeneously represent a group of students in the same grade; however, a reading age must be more generalized to accurately apply to the same group (whose ages differ).
 ::::
@@ -539,7 +539,7 @@ The options on this page customize which results are included in the [**Words Br
 
 **6+ Characters**: Check this to include the 6+ character words in the results.
 
-**Dale-Chall**: Check this to include the New Dale-Chall\index{New Dale-Chall!reviewing unfamiliar words} unfamiliar words list in the results. (If a Dale-Chall test is included in the project).
+**Dale-Chall**: Check this to include the New Dale-Chall\index{New Dale-Chall!reviewing unfamiliar words} unfamiliar words list in the results. (If a Dale-Chall-based test is included in the project).
 
 **Spache**: Check this to include the Spache\index{Spache Revised!reviewing unfamiliar words} unfamiliar words list in the results. (If Spache is included in the project).
 
@@ -549,7 +549,7 @@ The options on this page customize which results are included in the [**Words Br
 
 **All Words**: Check this to include a list of all words in the results.
 
-**All Words (Condensed)**: Check this to include a list of all words (in condensed form) in the results. Words with the same root (e.g., “run” and “running”) will be combined into one row.
+**All Words (Condensed)**: Check this to include a list of all words (in condensed form) in the results. Words with the same root (e.g., *run* and *running*) will be combined into one row.
 
 \newpage
 
@@ -607,7 +607,7 @@ The options in this section select what the spell checker should ignore.
 
 **Ignore proper nouns**: Check this to not spell check proper nouns. This is useful for excluding names and places that the spell checker may not recognize.
 
-**Ignore UPPERCASED words**: Check this to not spell check uppercased words (e.g., “FORTRAN” or “S.C.U.B.A.”).
+**Ignore UPPERCASED words**: Check this to not spell check uppercased words (e.g., *FORTRAN* or *S.C.U.B.A.*).
 
 **Ignore numerals**: Check this to not spell check numerals. Numerals are words that consist of 50% (or more) numbers.
 
@@ -625,17 +625,17 @@ a:ExportAll(`r verbatim_latex('"')`Results`r verbatim_latex('"')`)
 :::
 ::::
 
-Checking this option will instruct the program to not spell check words such as “StandardProject” and “ExportAll.”
+Checking this option will instruct the program to not spell check words such as *StandardProject* and *ExportAll*.
 
-**Allow colloquialisms**: Check this to allow colloquialisms, such as “ing” at the end of a word being replaced with “in'.” For example:
+**Allow colloquialisms**: Check this to allow colloquialisms, such as *ing* at the end of a word being replaced with *in'*. For example:
 
 ::: {.fancyquotes data-latex=''}
 He's been takin' that test for five hours. He ain't never goin' to finish.
 :::
 
-Checking this option will instruct the program to not consider words such as “takin`r verbatim_latex('’”')` and “goin`r verbatim_latex('’”')` as misspellings.
+Checking this option will instruct the program to not consider words such as *takin’* and *goin’* as misspellings.
 
-**Ignore social media hashtags**: Check this to ignore hashtags, such as “#ReadabilityFormulasRock”.
+**Ignore social media hashtags**: Check this to ignore hashtags, such as *#ReadabilityFormulasRock*.
 
 \newpage
 
@@ -719,7 +719,7 @@ The options on this page customize your graphs.
 
 **Watermark**: Enter a label to be stamped across your graphs into this field. This label will be stamped diagonally across each graph, top left-hand corner to bottom right-hand corner.
 
-This option is useful for stamping labels such as “CONFIDENTIAL” or your company name onto your graphs.
+This option is useful for stamping labels such as *CONFIDENTIAL* or your company name onto your graphs.
 
 The tags `[DATETIME]`, `[DATE]`, and `[TIME]` can also be included in these labels. These tags expand to their literal values at the time of rendering the graphs.
 
@@ -735,7 +735,7 @@ Note that watermarks and logos will also appear when you [print](#printing) or [
 
 **Custom image brush**: Enter into this field the file path to the image used for custom brushing. A custom-image brush can be used to draw stacked images across [bars](#options-bar-charts) and [boxes](#options-box-plots).
 
-**Display drop shadows**: Check this to include shadows underneath items such as boxes, bars, and labels. Unchecking this option will give your graphs a more “flat” look.
+**Display drop shadows**: Check this to include shadows underneath items such as boxes, bars, and labels. Unchecking this option will give your graphs a flat look.
 
 ### Axes {-}
 
@@ -776,7 +776,7 @@ Effect
 
 **Solid**: Select this option to use a solid color for your bars.
 
-**Glass effect**: Select this option to add a “glassy” look to your bars.
+**Glass effect**: Select this option to add a glassy look to your bars.
 
 **Color fade, bottom to top**: Select this option to apply a color fade across your bars (starting from the bottom).
 
@@ -814,7 +814,7 @@ Effect
 
 **Solid**: Select this option to use a solid color for your bars.
 
-**Glass effect**: Select this option to add a “glassy” look to your bars.
+**Glass effect**: Select this option to add a glassy look to your bars.
 
 **Color fade, bottom to top**: Select this option to apply a color fade across your bars (starting from the bottom).
 
@@ -904,7 +904,7 @@ Effect
 
 **Solid**: Select this option to use a solid color for your boxes.
 
-**Glass effect**: Select this option to add a “glassy” look to your boxes.
+**Glass effect**: Select this option to add a glassy look to your boxes.
 
 **Color fade, left to right**: Select this option to apply a color fade across your boxes (starting from the left).
 

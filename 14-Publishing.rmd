@@ -316,8 +316,8 @@ This option is recommended for other programs that may have difficulty deducing 
 
 **Narrow full-width characters**: Check this option to convert full-width characters to their narrow counterparts. For example:
 
-> “Ｈｅｌｌｏ”
+> *Ｈｅｌｌｏ*
 
 will be exported as:
 
-> “Hello”
+> *Hello*

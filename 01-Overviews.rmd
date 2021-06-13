@@ -87,7 +87,7 @@ The program also provides many useful features to help review the difficult aspe
 
 Another important feature is that the program analyzes the entire content of your document (rather than subsamples). This will give you the most accurate results possible.
 
-Finally, the *Professional* edition of *Readability Studio* offers multiple-document analysis. The program can analyze hundreds (or even thousands) of documents at once and aggregate their results. This includes all readability scores, difficult word and sentence statistics, and grammar issues. You can also “drill down” into a specific document to review it in deeper detail.
+Finally, the *Professional* edition of *Readability Studio* offers multiple-document analysis. The program can analyze hundreds (or even thousands) of documents at once and aggregate their results. This includes all readability scores, difficult word and sentence statistics, and grammar issues. You can also drill down into a specific document to review it in deeper detail.
 
 ::: {.notesection data-latex=""}
 Spanish and German tests are only available in the *Professional* edition, or if you have the *Language Pack* feature licensed.
@@ -170,7 +170,7 @@ You do not need the native application for these file formats. *Readability Stud
 
 #### Flexibility {-}
 
-Finally, *Readability Studio* is highly configurable. Many options, such as how documents are analyzed and how the results are displayed, are customizable. For example, you can specify how numeric words (e.g., “10/31/1974”) are [syllabized](#document-analysis). Other programs either sound out each digit or treat the entire word as one syllable and you cannot change this. With *Readability Studio*, you can toggle this behavior at anytime.
+Finally, *Readability Studio* is highly configurable. Many options, such as how documents are analyzed and how the results are displayed, are customizable. For example, you can specify how numeric words (e.g., *10/31/1974*) are [syllabized](#document-analysis). Other programs either sound out each digit or treat the entire word as one syllable and you cannot change this. With *Readability Studio*, you can toggle this behavior at anytime.
 
 ## New Features and Enhancements {#new-features}
 
@@ -231,7 +231,7 @@ Finally, *Readability Studio* is highly configurable. Many options, such as how 
 - Improved detection of longer internet address.
 - Triangle bullet points are now detected.
 - '@' can now be seen as a full word (or prefix/suffix of a word).
-- Improved detection of sentence endings when followed by a citation (e.g., “End of sentence.^17^ A new sentence.”).
+- Improved detection of sentence endings when followed by a citation (e.g., *End of sentence.^17^ A new sentence.*).
 - Improved article-mismatch detection.
 - Improved English syllabizer.
 - [Trailing citation](#options-text-exclusion) exclusion is now less aggressive when a references section may be in the middle of a document.
@@ -242,7 +242,7 @@ Finally, *Readability Studio* is highly configurable. Many options, such as how 
 - Full-width (Ｆｕｌｌ－ｗｉｄｔｈ) English letters, numbers, and punctuation are now recognized.
 - Expanded words ignored by spell checker when **ignore programming words** is selected.
 - [Overused words (x Sentence)](#reviewing-overused-by-sentence) now excludes acronyms.
-- [All Words (Condensed)](#reviewing-word-breakdowns) now excludes common words (e.g., “the”), numerals, and filenames.
+- [All Words (Condensed)](#reviewing-word-breakdowns) now excludes common words (e.g., *the*), numerals, and filenames.
 - Lix and Rix are now available in the **Adult** readability tests menu.
 - Added **Ignore social media hashtags** option to spell-checker.
 - Expanded spell-checker to include government, economics, business, accounting, biology, and psychology terminology.
@@ -295,7 +295,7 @@ Finally, *Readability Studio* is highly configurable. Many options, such as how 
 - Labels on histogram (when bars are selected) now combine and sort words case insensitively.
 - Fixed font scaling when zooming in on graphs with stacked labels.
 - Fixed batch project **Export All** where graphs would appear duplicated in the report.
-- Office 2007 filepaths (e.g., “documents\\import.xlsx”) mentioned in a document are now seen as file names.
+- Office 2007 filepaths (e.g., *documents\\import.xlsx*) mentioned in a document are now seen as file names.
 - Fixed crash when trying to analyze a document that is on OneDrive but not properly synced on the local file system.
 - Fixed outdated menubar options on macOS.
 - **New Project from Clipboard** option will more intelligently determine whether the clipboard content is a file path or plain text.
@@ -375,7 +375,7 @@ Finally, *Readability Studio* is highly configurable. Many options, such as how 
 - Fixed error messages being blocked by the splash screen when opening certain projects.
 - Fixed unnecessary warning message on Windows 10 when the custom dictionary file is blank.
 - Fixed intermittent crash with large list-control data.
-- Fixed times (e.g., “5:30”) at the start of a line from being seen as a bullet point.
+- Fixed times (e.g., *5:30*) at the start of a line from being seen as a bullet point.
 - Fixed issue with certain JPEG images being drawn with an incorrect orientation.
 - If trying to import a PDF file, an error message is now shown that PDF files are not supported.
 - PowerPoint, PHP, and macro-enabled Word files are now shown in the **File Open** dialog when **All Documents** is selected.
@@ -432,7 +432,7 @@ Finally, *Readability Studio* is highly configurable. Many options, such as how 
 - When changing the width or height of a graph when exporting it as an image, the program will now automatically adjust the size to maintain the aspect ratio.
 - Icons are now included when exporting reports as HTML.
 - Underlining and italics are now included when exporting text reports to HTML.
-- “Export All” folder path will now be remembered by the project.
+- **Export All** folder path will now be remembered by the project.
 - Performance improvements to the Open-Document Text importer.
 - Improvements to the Word 2007 importer.
 
@@ -551,7 +551,7 @@ Finally, *Readability Studio* is highly configurable. Many options, such as how 
         - Added Harris-Jacobson bar to the word breakdown bar chart.
 - Added high-precision option to [SMOG](#smog-test) test.
 - Added **count independent clauses as separate sentences** option to [Gunning Fog](#gunning-fog-test).
-- Gunning Fog now treats words made three syllables by adding “ed” or “es” as easy.
+- Gunning Fog now treats words made three syllables by adding *ed* or *es* as easy.
 - Added custom formula functionality to [custom tests](#creating-custom-test).
 - Added ability to specify the result type of custom tests (e.g., index level or grade level).
 - Added ability for custom tests to control how proper nouns are handled (including the ability to count only the first occurrence of a proper noun as unfamiliar).
@@ -594,12 +594,12 @@ Finally, *Readability Studio* is highly configurable. Many options, such as how 
 
 #### Graph Enhancements {-}
 
-- [Raygor](#raygor-test) graph now shows “College” and “Professor” as the labels for the last two slices.
+- [Raygor](#raygor-test) graph now shows *College* and *Professor* as the labels for the last two slices.
 - Added image stippling option (i.e., custom brush) for bar charts, histograms, and box plots.
 
 #### Bug Fixes {-}
 
-- License file is now written to “users/application data” folder for Windows XP SP3 and Vista SP1 compliance.
+- License file is now written to *users/application data* folder for Windows XP SP3 and Vista SP1 compliance.
 - Score statistics are now only included if you have more than one test score.
 - Euro symbol (€) is now seen as two syllables.
 - Removed restrictions where tests would fail to be calculated if the number of difficult words was zero.
@@ -618,7 +618,7 @@ Finally, *Readability Studio* is highly configurable. Many options, such as how 
 - Norwegian aspect of custom test wasn’t working (word list would be empty).
 - Smart apostrophes were not being recognized by word indexer.
 - Different apostrophes were not being seen as the same character by familiar-word tests.
-- “It’ll” and “dino” added to Dale-Chall word list.
+- *It’ll* and *dino* added to New Dale-Chall word list.
 - Word 2007 importer was bringing in paragraph offset values as part of the text.
 - Incorrect warning about document version number on non-English locales.
 - Printing large lists would truncate excess columns.
