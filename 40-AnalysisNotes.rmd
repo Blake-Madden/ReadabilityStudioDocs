@@ -216,17 +216,17 @@ By default, *Readability Studio* counts numbers as monosyllabic words; however, 
 ::: {.minipage data-latex="{\textwidth}"}
 The following symbols are syllabized as follows:
 
-   ‘#’ = 1 syllable (“pound”)  
-   ‘£’ = 1 syllable (“pound” or “quid”) if at the beginning of the word  
-   ‘±’ = 3 syllables (“plus mi-nus”) if at the beginning of the word  
-   ‘$’ = 2 syllables (“do-llar”) if at the beginning of the word  
-   ‘€’ = 2 syllables (“eu-ro”) if at the beginning of the word  
-   ‘¢’ = 1 syllable (“cent”) if at the end of the word  
-   ‘%’ = 2 syllables (“per-cent”) if at the end of the word  
-   ‘°’ = 2 syllables (“de-grees”) if at the end of the word  
-   ‘¼’ = 2 syllables (“one fourth”) if at the end of the word  
-   ‘½’ = 2 syllables (“one half”) if at the end of the word  
-   ‘¾’ = 2 syllables (“three fourths”) if at the end of the word
+   # = 1 syllable (“pound”)  
+   £ = 1 syllable (“pound” or “quid”) if at the beginning of the word  
+   ± = 3 syllables (“plus mi-nus”) if at the beginning of the word  
+   $ = 2 syllables (“do-llar”) if at the beginning of the word  
+   € = 2 syllables (“eu-ro”) if at the beginning of the word  
+   ¢ = 1 syllable (“cent”) if at the end of the word  
+   % = 2 syllables (“per-cent”) if at the end of the word  
+   ° = 2 syllables (“de-grees”) if at the end of the word  
+   ¼ = 2 syllables (“one fourth”) if at the end of the word  
+   ½ = 2 syllables (“one half”) if at the end of the word  
+   ¾ = 2 syllables (“three fourths”) if at the end of the word
 :::
 
 ## Repeated Word Exceptions {#repeated-word-exceptions}
@@ -234,20 +234,20 @@ The following symbols are syllabized as follows:
 Generally, repeated words are a typo; however, there are a few exceptions. For example:
 
 ::: {.fancyquotes data-latex=''}
-The report is due tomorrow. I'm concerned **that that** report won't be ready in time. The last time that I spoke to our boss, she said that she **had had** it with overdue reports.
+The report is due tomorrow. I'm concerned *that that* report won't be ready in time. The last time that I spoke to our boss, she said that she *had had* it with overdue reports.
 :::
 
 ::: {.minipage data-latex="{\textwidth}"}
-Although awkwardly worded, the duplicate “that” and “had” are grammatically correct. To account for this, *Readability Studio* ignores certain repeated words, such as:
+Although awkwardly worded, the duplicate *that* and *had* are grammatically correct. To account for this, *Readability Studio* ignores certain repeated words, such as:
 
-- “ha ha”
-- “had had”
-- “no no”
-- “that that”
-- “die die” (German article)
-- “der der” (German article)
-- “das das” (German article)
-- “sie sie” (German pronoun)
+- ha ha
+- had had
+- no no
+- that that
+- *die die* (German article)
+- *der der* (German article)
+- *das das* (German article)
+- *sie sie* (German pronoun)
 :::
 
 Words separated by punctuation are also ignored when deducing repeated words. For example:
