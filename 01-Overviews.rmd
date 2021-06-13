@@ -23,7 +23,8 @@ Note that these tests only determine the reading level of material based on how 
 ```{r, echo=F}
 maxTestRows <- 15
 englishTests <- split_column_into_table(read_tsv("data/EnglishTests.txt",
-                                     col_names=F)[[1]], maxTestRows)
+                                        col_names=F)[[1]] %>% sort(),
+                                        maxTestRows)
 
 kableExtra::kbl(englishTests, booktabs=T, centering=T, linesep="",
                 caption="English Tests", align='l', escape=F) %>%
@@ -34,10 +35,10 @@ kableExtra::kbl(englishTests, booktabs=T, centering=T, linesep="",
 
 # other languages
 germanTests <- split_column_into_table(read_tsv("data/GermanTests.txt",
-                                    col_names=F)[[1]], maxTestRows)
+                                    col_names=F)[[1]] %>% sort(), maxTestRows)
 
 spanishTests <- split_column_into_table(read_tsv("data/SpanishTests.txt",
-                                     col_names=F)[[1]], maxTestRows)
+                                     col_names=F)[[1]] %>% sort(), maxTestRows)
 ```
 
 ```{r, echo=F, eval=knitr::is_html_output()}
