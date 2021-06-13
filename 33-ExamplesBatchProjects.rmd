@@ -56,7 +56,7 @@ To view any document's scores in a vertical layout, double-click on its row in t
 
 ![](Images/viewitemrawscores.png)
 
-The distribution of these raw scores can also be graphically viewed. Click on the **Score Box Plots** icon on the project sidebar to view the box plots, and click on the **Histograms** icon to view the histograms. Box plots show the “spread” of each test's scores, whereas histograms show a test's scores divided into groups. For example, below is a histogram showing the Flesch-Kincaid scores:
+The distribution of these raw scores can also be graphically viewed. Click on the **Score Box Plots** icon on the project sidebar to view the box plots, and click on the **Histograms** icon to view the histograms. Box plots show the spread of each test's scores, whereas histograms show a test's scores divided into groups. For example, below is a histogram showing the Flesch-Kincaid scores:
 
 ![](Images/histogrades.png)
 
