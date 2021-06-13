@@ -180,7 +180,9 @@ To correct this, we will change how sentences are deduced for this project. Clic
 
 At this point, the project will be reanalyzed and these sentence fragments will be chained together:
 
-![](Images/PeterRabbitChainedSentences.png)
+```{r echo=F, fig.align='center', out.width='75%'}
+knitr::include_graphics("Images/PeterRabbitChainedSentences.png")
+```
 
 ## How Syllables are Counted
 
