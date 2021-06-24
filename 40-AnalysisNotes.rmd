@@ -16,7 +16,7 @@ If you are excluding incomplete sentences, note that any non-terminated sentence
 
 Note that these options are also available on the [**Options**](#options-overview) dialog (on the **Tools** tab) to change this behavior for all future projects.
 
-Although ignoring these items is generally recommended, there is one exception: [non-narrative](#framented-text) (i.e., structured) forms. Files such as résumés and application forms often contain many terse and incomplete sentences and very little narrative text. In these situations, you should include incomplete sentences and use tests that do not emphasize sentence length, such as [FORCAST](#forcast-test)\index{FORCAST}. When creating a [new project](#creating-standard-project), there are two ways to implicitly set these options. The first way is to select “non-narrative, fragmented text” when specifying the document structure. The other way is to select “non-narrative form” when specifying the document type. By selecting either of these, the program will use the appropriate options and tests for these types of files.
+Although ignoring these items is generally recommended, there is one exception: [non-narrative](#framented-text) (i.e., structured) forms. Files such as résumés and application forms often contain many terse and incomplete sentences and very little narrative text. In these situations, you should include incomplete sentences and use tests that do not emphasize sentence length, such as [FORCAST](#forcast-test)\index{FORCAST}. When creating a [new project](#creating-standard-project), there are two ways to implicitly set these options. The first way is to select **non-narrative, fragmented text** when specifying the document structure. The other way is to select **non-narrative form** when specifying the document type. By selecting either of these, the program will use the appropriate options and tests for these types of files.
 
 ### Additional Items {-}
 
@@ -47,7 +47,7 @@ Another exception is the last sentence inside of a quote. If this sentence is fo
 Where did it go? I can't find it anywhere!” he said.
 :::
 
-Because “he” is lowercase, the '!' will not be considered the end of the sentence and “he said” will be part of the proceeding sentence. However, if “He” is capitalized, then the '!' will be seen as the end of a sentence and the above will be counted as three sentences.
+Because *he* is lowercase, the '!' will not be considered the end of the sentence and *he said* will be part of the proceeding sentence. However, if “He” is capitalized, then the '!' will be seen as the end of a sentence and the above will be counted as three sentences.
 
 There is also a special rule for ellipses. If ellipses are followed by a capitalized word, then it will be considered the end of the sentence. Otherwise, it is simply seen as punctuation and does not terminate the sentence. The ellipses symbol (‘…’) and dot sequences (“\.\.\.”) are both recognized.
 
@@ -70,7 +70,7 @@ result in injury.
 :::
 ::::
 
-Although this is five lines of text, we would expect for this to be seen as three sentences. By chaining lines 2, 3, and part of 4 into one sentence (from “Before” to “mower.”), we properly see the sentences (regardless of the line breaks).
+Although this is five lines of text, we would expect for this to be seen as three sentences. By chaining lines 2, 3, and part of 4 into one sentence (from *Before* to *mower.*), we properly see the sentences (regardless of the line breaks).
 
 However, this can be a problem if your document contains headers, footers, and list items. Consider this example:
 
@@ -114,7 +114,7 @@ result in injury.
 :::
 ::::
 
-The first line, “WARNING:,” will be seen as a single sentence because the line ends with a colon. Although colons are not normally treated as a sentence terminating character, an exception is made when it is encountered at the end of a line. The next line, “Before cleaning the blade (or performing,” does not end with a sentence terminating character. There are no empty lines after this line, and the next line is not bulleted or tabbed; therefore, this line will be chained to the next line. This chaining will continue until an empty line or a sentence terminating character is encountered. In this case, all these lines will be joined into one sentence:
+The first line, *WARNING:*, will be seen as a single sentence because the line ends with a colon. Although colons are not normally treated as a sentence terminating character, an exception is made when it is encountered at the end of a line. The next line, “Before cleaning the blade (or performing,” does not end with a sentence terminating character. There are no empty lines after this line, and the next line is not bulleted or tabbed; therefore, this line will be chained to the next line. This chaining will continue until an empty line or a sentence terminating character is encountered. In this case, all these lines will be joined into one sentence:
 
 :::: {.fancyquotes data-latex=''}
 ::: {.FlushLeft data-latex=''}
@@ -160,9 +160,9 @@ Chapter 1
 It was the best days of our lives.
 :::
 
-If **Ignore blank lines** is unselected (the default), then the above example is seen as two sentences. “Chapter 1” is seen as an [incomplete sentence](#how-text-is-excluded) because there is a blank line between it and the next sentence. Then “It was the best days of our lives.” is seen as the second sentence. This behavior is recommended for most documents because it helps remove headers and list items from the analysis.
+If **Ignore blank lines** is unselected (the default), then the above example is seen as two sentences. *Chapter 1* is seen as an [incomplete sentence](#how-text-is-excluded) because there is a blank line between it and the next sentence. Then “It was the best days of our lives.” is seen as the second sentence. This behavior is recommended for most documents because it helps remove headers and list items from the analysis.
 
-There are special situations where you would need multi-line sentence fragments to be “[chained](#line-chaining)” together. For example, picture books that wrap sentences around images may cause sentences to be split into fragments with blank lines between them. Let us review an example of this.
+There are special situations where you would need multi-line sentence fragments to be [chained](#line-chaining) together. For example, picture books that wrap sentences around images may cause sentences to be split into fragments with blank lines between them. Let us review an example of this.
 
 From the **Help** tab, click the `r keys("Example Documents")` button and then select The Tale of Peter Rabbit. From the [project wizard](#creating-standard-project), select **Children's literature** and then choose the defaults after that. Next, click on the **View Document** icon on the project sidebar to view the document. If **Ignore blank lines** was unselected, then note how some sentences have been split into incomplete fragments:
 
@@ -190,12 +190,12 @@ Most software that counts syllables employs one of two methods. The first is a d
 
 The second syllable-counting method is to use an algorithm. These algorithms generally consist of counting vowel blocks[^silentEFootnote] in a word to determine the syllable count. The advantage of this is that it will work with any word, without user interaction. The disadvantage is that these algorithms are traditionally less accurate than a dictionary approach. To be truly effective, these algorithms must consider special cases, such as:
 
-- Situations where vowel blocks split into two syllables. For example, the “ui” in “fruit” is one syllable, but in “intuitive” it splits into two syllables.
-- Situations where special consonant blocks may split into two syllables. For example, in the name “McCoy,” the prefix is really a separate syllable.
+- Situations where vowel blocks split into two syllables. For example, the *ui* in *fruit* is one syllable, but in *intuitive* it splits into two syllables.
+- Situations where special consonant blocks may split into two syllables. For example, in the name *McCoy*, the prefix is really a separate syllable.
 
 *Readability Studio* uses an algorithmic approach which takes these linguistic nuances into account.
 
-Different algorithms should be used for different languages. The rules for vowel-blocks, silent ‘e’s, and number counting can greatly vary between languages. For example, “85” would be two syllables in English (“eight five”), whereas in Spanish[^spanishSyllabizerFootnote] it would be four syllables (“o-cho cin-co”). To account for this, *Readability Studio* uses the proper syllabizer based on the [language](#project-settings) that you specify for your project.
+Different algorithms should be used for different languages. The rules for vowel-blocks, silent *e*’s, and number counting can greatly vary between languages. For example, *85* would be two syllables in English (*eight five*), whereas in Spanish[^spanishSyllabizerFootnote] it would be four syllables (*o-cho cin-co*). To account for this, *Readability Studio* uses the proper syllabizer based on the [language](#project-settings) that you specify for your project.
 
 Finally, for readability analysis, syllables should be counted on a word-by-word basis and not use synalepha. Synalepha is the blending of word sounds together often found in poetry. Thus, it is generally not suggested to analyze text which has a poetic meter.
 
@@ -206,7 +206,7 @@ Finally, for readability analysis, syllables should be counted on a word-by-word
 
 Numbers are generally syllabized using one of two approaches:
 
-- Sound out each digit of the number. For example, “87” would be three syllables (“eight se-ven”).
+- Sound out each digit of the number. For example, *87* would be three syllables (*eight se-ven*).
 - Count the entire number as one syllable.
 
 By default, *Readability Studio* counts numbers as monosyllabic words; however, this behavior can be toggled from the [**Document Indexing**](#document-analysis) options. Note that some tests may override these settings if they require a specific method. For example, [Fry](#fry-test)\index{Fry} will always sound out each numeric digit when syllabizing.
@@ -253,7 +253,7 @@ Although awkwardly worded, the duplicate *that* and *had* are grammatically corr
 Words separated by punctuation are also ignored when deducing repeated words. For example:
 
 ::: {.fancyquotes data-latex=''}
-I need a list of new features. Each new **feature, feature** by feature, is required to be documented.
+I need a list of new features. Each new *feature, feature* by feature, is required to be documented.
 :::
 
 This will not be seen as repeated words because of the comma.
@@ -263,26 +263,26 @@ This will not be seen as repeated words because of the comma.
 There are two special cases for article-mismatch detection: single letters and acronyms. For single letters, *Readability Studio* will sound out the letter when determining whether the article in front of it is correct. For example:
 
 ::: {.fancyquotes data-latex=''}
-All the students did well, except for one that received **a 'F'**.
+All the students did well, except for one that received *a 'F'*.
 :::
 
-In this example, “a 'F'” will be considered incorrect because the program will sound out the letter 'F' as “ef.” An “ef” sound requires the article “an” to be grammatically correct, so this will be considered wrong.
+In this example, *a 'F'* will be considered incorrect because the program will sound out the letter *F* as *ef*. An *ef* sound requires the article *an* to be grammatically correct, so this will be considered wrong.
 
 Similar logic is applied to acronyms that probably would have each letter sounded out. This deduction is made if an acronym contains no vowels. For example:
 
 ::: {.fancyquotes data-latex=''}
-**A SDLC** meeting should be held after the product is launched.
+*A SDLC* meeting should be held after the product is launched.
 :::
 
-The program will sound out the letters in “SDLC” because it has no vowels, resulting in “es dee el see.” Because of the “es” sound, the article “an” is required. Therefore, the program will mark this as an article mismatch.
+The program will sound out the letters in *SDLC* because it has no vowels, resulting in *es dee el see*. Because of the *es* sound, the article *an* is required. Therefore, the program will mark this as an article mismatch.
 
 Note that if an acronym contains a vowel, then the program will assume that it is pronounced as a regular word. For example:
 
 ::: {.fancyquotes data-latex=''}
-Run **a FORCAST** test if your document doesn't have a regular sentence structure.
+Run *a FORCAST* test if your document doesn't have a regular sentence structure.
 :::
 
-Rather than treating the word “FORCAST” as if it begins with an “ef” sound, it sounds it out like “forecast.” Therefore, the article “a” is considered correct.
+Rather than treating the word *FORCAST* as if it begins with an *ef* sound, it sounds it out like *forecast*. Therefore, the article *a* is considered correct.
 
 ## Non-narrative/Fragmented Text {#framented-text}
 
@@ -294,7 +294,7 @@ By default, *Readability Studio* follows this advice. However, there are situati
 
 For files consisting mostly of short blocks of text (e.g., quizzes, flyers, or menus) instead of flowing narrative, this presents a problem. Sentence lengths will be abnormally short and skew most test results. Also, if [incomplete sentences](#how-text-is-excluded) are being excluded, then most of the document will not even be analyzed.
 
-To avoid these issues, it is recommended to include incomplete sentences in the analysis and to only use the [FORCAST](#forcast-test)\index{FORCAST} test. When creating a [new project](#creating-standard-project), there are two ways to implicitly set these options. The first way is to select “non-narrative, fragmented text” when specifying the document structure. The other way is to select “non-narrative form” when specifying the document type.
+To avoid these issues, it is recommended to include incomplete sentences in the analysis and to only use the [FORCAST](#forcast-test)\index{FORCAST} test. When creating a [new project](#creating-standard-project), there are two ways to implicitly set these options. The first way is to select **non-narrative, fragmented text** when specifying the document structure. The other way is to select **non-narrative form** when specifying the document type.
 
 ## Joining Hyphenated Words
 
@@ -302,8 +302,8 @@ Some published documents format each line of text to a specific width to fit on 
 
 :::: {.fancyquotes data-latex=''}
 ::: {.FlushLeft data-latex=''}
-COBOL is an acronym for COmmon **Bus-\
-iness** Oriented Language. It is commonly\
+COBOL is an acronym for COmmon *Bus-\
+iness* Oriented Language. It is commonly\
 used for calculating monetary transactions\
 and generating reports. For example, COBOL\
 can be found in the backend of many Point-of-\
@@ -311,7 +311,7 @@ Sale systems.
 :::
 ::::
 
-Note how “Business” and “Point-of-Sale” are split across multiple lines.
+Note how *Business* and *Point-of-Sale* are split across multiple lines.
 
 When *Readability Studio* encounters a hyphenated word at the end of a line, it will perform the following steps:
 
@@ -319,7 +319,7 @@ When *Readability Studio* encounters a hyphenated word at the end of a line, it 
 - The hyphen(s) will be removed and if what remains is a known word, then that will be used. Otherwise,...
 - The hyphen(s) will be kept as part of the word.
 
-With the above example, “Bus-iness” will be recognized as “Business.” In contrast, “Point-of-Sale” will remain as a hyphenated compound word because “PointofSale” is not a known word.
+With the above example, *Bus-iness* will be recognized as *Business*. In contrast, *Point-of-Sale* will remain as a hyphenated compound word because *PointofSale* is not a known word.
 
 ## Option Changes that Require Reanalyzing the Document
 

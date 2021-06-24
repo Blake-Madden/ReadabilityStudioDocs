@@ -115,7 +115,7 @@ These lists are also interactive. You can double-click on a word (or sentence) i
 
 #### Document highlighting {-}
 
-Difficult words and sentences are also shown highlighted in their original context. This is useful in finding “trouble spots” in your document.
+Difficult words and sentences are also shown highlighted in their original context. This is useful in finding trouble spots in your document.
 
 #### Grammar tools {-}
 

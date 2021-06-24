@@ -59,8 +59,8 @@ Table: Editing Lists
 ## Readability Glossary {#readability-glossary}
 
 :::: {.glsentry data-latex=''}
-::: {.glsacronym data-latex=''}
-Asl
+::: {.glsterm data-latex=''}
+ASL
 :::
 ::: {.glsdef data-latex=''}
 Average sentence length.
@@ -81,7 +81,7 @@ A [cloze](#cloze) procedure is a test given to readers to measure their comprehe
 interrobang
 :::
 ::: {.glsdef data-latex=''}
-The combination of a question mark and exclamation point at the end of a sentence. Interrobangs are shown as either two separate characters (“?!” or “!?”) or a single character (‽).
+The combination of a question mark and exclamation point at the end of a sentence. Interrobangs are shown as either two separate characters (*?!* or *!?*) or a single character (*‽*).
 :::
 ::::
 
@@ -240,8 +240,8 @@ plot(ggplot_box_legend())
 :::
 
 :::: {.glsentry data-latex=''}
-::: {.glsacronym data-latex=''}
-Irq
+::: {.glsterm data-latex=''}
+IRQ
 :::
 ::: {.glsdef data-latex=''}
 Interquartile range. Refer to figure \@ref(fig:boxplot).
@@ -361,7 +361,7 @@ boxplot(len ~ dose, data = ToothGrowth,
 stripchart(len ~ dose, data = ToothGrowth, method='overplot', add=T, pch=20, col=2, vertical=T)
 ```
 
-Although we can interpret the quartile ranges, it is not obvious how the data “clumps” together overall.
+Although we can interpret the quartile ranges, it is not obvious how the data clumps together overall.
 
 To correct this, a technique called jittering is used to adjust the x axis values of overlapping points. Traditionally, jittering uses randomness to adjust the points’ position around both sides of the axis, as such:
 

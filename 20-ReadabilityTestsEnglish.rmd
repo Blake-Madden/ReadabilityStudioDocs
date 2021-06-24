@@ -191,7 +191,7 @@ In the original article, the statistic of “number of spaces between words” i
 - Treat dashes connecting words as spaces.
 - Add 1, considering how there would be one less space than words.
 
-For this reason, the “number of words” statistic is a more accurate description of what the authors intended.\index{Danielson-Bryan 1|)}
+For this reason, the *number of words* statistic is a more accurate description of what the authors intended.\index{Danielson-Bryan 1|)}
 
 \newpage
 ## Danielson-Bryan 2\index{Danielson-Bryan 2|(ii} {#danielson-bryan-2}

@@ -19,7 +19,7 @@ os_logo <- function(os)
   else if (knitr::is_html_output())
     { knitr::asis_output(fontawesome::fa(glue('fab fa-{stringr::str_to_lower(os)}'))) }
   else
-    { '' }
+    { knitr::asis_output(text) }
   }
 
 menu <- function(menuKeys)
@@ -39,10 +39,12 @@ menu <- function(menuKeys)
       glue("<div class='keys'>{menuKeys[length(menuKeys)]}</div>"),
            "</div>"))
     }
+  else
+    { knitr::asis_output(text) }
   }
 
 # @brief Displays a label as a keyboard button.
-# @param buttonKeys The  button (or button combo).
+# @param buttonKeys The  button (or button combination).
 #        This can be an array of strings that will be separated by '+'.
 #        This strings can be the button labels or a command to menukeys (e.g., '\cmd' yields the Clover symbol)
 #        All menukeys command will work in LaTeX and "\cmd", "\backdel", "\enter", and "\shift" are supported in HTML.
@@ -60,7 +62,8 @@ keys <- function(buttonKeys)
     buttonKeys <- stringr::str_replace_all(buttonKeys, regex("^\\\\shift$", ignore_case=T), "&#8679;")
 
     knitr::asis_output(
-      glue_collapse(glue("<span class='keys'>{buttonKeys}</span>", .open='{', .close='}'), sep='+')) }
+      glue_collapse(glue("<span class='keys'>{buttonKeys}</span>", .open='{', .close='}'), sep='+'))
+    }
   else
     { knitr::asis_output(text) }
   }

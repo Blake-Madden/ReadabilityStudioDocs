@@ -110,7 +110,7 @@ To help understand why this recipe may be difficult for younger readers, click o
 
 ![](Images/examplestats.png)
 
-Click on the “difficult sentences” link in this section to go to the [**Long Sentences**](#reviewing-sentences-breakdown) subitem of the **Sentences Breakdown** section. This window will display a list of all the overly-long sentences in our recipes. As we can see, there are a few rather long sentences that are adversely affecting our scores.
+Click on the **difficult sentences** link in this section to go to the [**Long Sentences**](#reviewing-sentences-breakdown) subitem of the **Sentences Breakdown** section. This window will display a list of all the overly-long sentences in our recipes. As we can see, there are a few rather long sentences that are adversely affecting our scores.
 
 ![](Images/examplelongsentences.png)
 
@@ -128,7 +128,7 @@ Not only is it long, but it is a little confusing. It is unclear what was mixed 
 
 Continue this process for as many of the long sentences as you can. Sentences in the 20-word range are normally acceptable, but sentences over 30 words should be revised.
 
-Other useful tools for shortening sentences in *Readability Studio* are the other pages in the **Grammar** section. Click on the **Grammar** icon on the project sidebar. Click on the [**Repeated Words**](#reviewing-repeated-words) page and note how the phrase “and and” is in the file (obviously a typo). Next, click on the [**Redundant Phrases**](#reviewing-redundant-phrases) page. Note how the phrase “mixed together” is redundant and the program is suggesting that it be replaced with “mixed.” A [**Wordy Items**](#reviewing-wordy-items) and [**Clichés**](#reviewing-cliches) page may also appear, but there do not seem to be any of these in this file. By fixing these items, we can shorten sentences and improve the overall document.
+Other useful tools for shortening sentences in *Readability Studio* are the other pages in the **Grammar** section. Click on the **Grammar** icon on the project sidebar. Click on the [**Repeated Words**](#reviewing-repeated-words) page and note how the phrase *and and* is in the file (obviously a typo). Next, click on the [**Redundant Phrases**](#reviewing-redundant-phrases) page. Note how the phrase “mixed together” is redundant and the program is suggesting that it be replaced with “mixed.” A [**Wordy Items**](#reviewing-wordy-items) and [**Clichés**](#reviewing-cliches) page may also appear, but there do not seem to be any of these in this file. By fixing these items, we can shorten sentences and improve the overall document.
 
 Although there are not many difficult words in this file, it may be worthwhile to at least review them. Click on the **Words Breakdown** icon on the project sidebar. This will display various lists of difficult words. Select the **3+ syllable words** page and click on the **Syllable Count** column header twice to [sort](#column-sorting) the words into descending order. As illustrated below, there are a few words containing four syllables, which can be difficult for most readers.
 
@@ -140,7 +140,7 @@ To view these words in their original context, double-click on any word in this 
 
 You can click on any of the other pages to view other difficult words in their original context, such as 6+ character words or unfamiliar [New Dale-Chall](#dale-chall-test) words.
 
-To continue simplifying this recipe, we will replace some of these difficult words. Words such as “incorporate,” “consequently,” and “gradually” could also be replaced with shorter, simpler synonyms. As illustrated below, we have replaced a few words, such as substituting “incorporate” with “add” and “gradually” with “slowly.”
+To continue simplifying this recipe, we will replace some of these difficult words. Words such as *incorporate*, *consequently*, and *gradually* could also be replaced with shorter, simpler synonyms. As illustrated below, we have replaced a few words, such as substituting “incorporate” with “add” and “gradually” with “slowly.”
 
 ![](Images/NonGenerated/improvedwords.png)
 
@@ -198,7 +198,7 @@ If you wish to include incomplete sentences in the analysis, click the `r keys("
 
 Note that this option is also available on the [**Options**](#options-overview) dialog (from the **Tools** tab) if you wish to change this behavior for all future projects.
 
-One last item to discuss about loading a webpage is whether you want to reanalyze it later as it changes. By default, the project will directly link to the webpage, although you can change this to embed a “snapshot” of the page into the project. To toggle this behavior, click the `r keys("Properties")` button on the **Home** tab to display the **Project Properties** dialog. Then click the **Project Settings** icon. Here, we can see that **Reload the source document when opening project** is selected.
+One last item to discuss about loading a webpage is whether you want to reanalyze it later as it changes. By default, the project will directly link to the webpage, although you can change this to embed a snapshot of the page into the project. To toggle this behavior, click the `r keys("Properties")` button on the **Home** tab to display the **Project Properties** dialog. Then click the **Project Settings** icon. Here, we can see that **Reload the source document when opening project** is selected.
 
 ![](Images/reloadwebpage.png)
 
@@ -258,7 +258,7 @@ By default, the program considers sentences overly long if they contain more tha
 
 ![](Images/featuressentoptions.png)
 
-The first option is to define a specific word count as the long sentence boundary. Enter “25” where it says **Longer than [22] words** and click the `r keys("OK")` button. The program will now reanalyze the file, classifying any sentences longer than 25 (instead of 22) as overly long. As shown below, sentences that are between 23-25 words are no longer being considered overly long:
+The first option is to define a specific word count as the long sentence boundary. Enter *25* where it says **Longer than [22] words** and click the `r keys("OK")` button. The program will now reanalyze the file, classifying any sentences longer than 25 (instead of 22) as overly long. As shown below, sentences that are between 23-25 words are no longer being considered overly long:
 
 ![](Images/featuressentences25.png)
 
@@ -321,7 +321,7 @@ Note how this label is now lightly written across the graph:
 ![](Images/ExampleWatermarkChanged.png)
 
 ::: {.tipsection data-latex=""}
-Entering “[DATE]” in the watermark field will show the current date when the graph is rendered.
+Entering `[DATE]` in the watermark field will show the current date when the graph is rendered.
 :::
 
 Now let's put a company logo on our graph. Click the `r keys("Logo")` button in the **Edit** section. Select an image and click `r keys("OK")`.

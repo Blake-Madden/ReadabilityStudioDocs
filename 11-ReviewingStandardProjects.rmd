@@ -14,17 +14,17 @@ The top area of the **Scores** window is the score grid. In here there are four 
 
 Note that most tests have just one type of result (e.g., grade level), so non-applicable columns are left blank. For example, note below that the [Gunning Fog](#gunning-fog-test) result is a grade level of 8.3. This translates to an eighth grade level reader (in his or her third month of class). Because this test only returns a grade level and age, the **Scale Value** and **Predicted Cloze Score** columns are empty. Another example is the result for the [Flesch Reading Ease](#flesch-test) test, which has a scale value of 79. This test has its own scale (instead of a grade level) so its age, grade level, and cloze columns are empty.
 
-When a grade-level test scores a document at its maximum value, a “+” will be appended to the score. Although most grade-level tests can score up to 19, some tests which are designed for primary and secondary education materials will have lower maximum scores. For example, [Wheeler-Smith](#wheeler-smith)\index{Wheeler-Smith} is designed for primary-age materials and its maximum score is the fourth-grade level. If a document's Wheeler-Smith score is 4, then it will be displayed as “4+.”
+When a grade-level test scores a document at its maximum value, a *+* will be appended to the score. Although most grade-level tests can score up to 19, some tests which are designed for primary and secondary education materials will have lower maximum scores. For example, [Wheeler-Smith](#wheeler-smith)\index{Wheeler-Smith} is designed for primary-age materials and its maximum score is the fourth-grade level. If a document's Wheeler-Smith score is 4, then it will be displayed as *4+*.
 
 Select any test in the results grid to display an explanation of its score in the window below.
 
 ![](Images/scores.png)
 
-Along with an explanation of the test's results, the factors that it uses to determine difficulty are also shown. For example, if **Sentence Length** and **Word Length** have an “X” next to them, then these variables are used in the test's equation. To lower the score for a given test, try to improve its factors (e.g., lower the document's average sentence length).
+Along with an explanation of the test's results, the factors that it uses to determine difficulty are also shown. For example, if **Sentence Length** and **Word Length** have an *X* next to them, then these variables are used in the test's equation. To lower the score for a given test, try to improve its factors (e.g., lower the document's average sentence length).
 
-Finally, the averages (means) of your test scores and ages are displayed at the bottom of the results window. Their respective [modes](#stat-terms), [medians](#stat-terms), and [standard deviations](#stat-terms) are also included if [**Extended Information**](#options-summary-report) is enabled. Note that scores are truncated when searching for the grade-level mode. For example, “6.7” and “6.2” will both be treated as “6.” Mode generally requires discrete data to produce meaningful results; therefore, grade-level scores are converted to their base grades for this statistic.
+Finally, the averages (means) of your test scores and ages are displayed at the bottom of the results window. Their respective [modes](#stat-terms), [medians](#stat-terms), and [standard deviations](#stat-terms) are also included if [**Extended Information**](#options-summary-report) is enabled. Note that scores are truncated when searching for the grade-level mode. For example, *6.7* and *6.2* will both be treated as *6*. Mode generally requires discrete data to produce meaningful results; therefore, grade-level scores are converted to their base grades for this statistic.
 
-When calculating these statistics, failed test scores are treated as missing observations and not included. For example, let us say that you included 5 tests, but one of them could not be calculated. In this case, the valid 4 scores will be added and divided by 4 (not 5) to acquire the means. Also, grade range scores–such as “5–6” from [New Dale-Chall](#dale-chall-test)\index{New Dale-Chall!grade-range averaging}–will be converted to its own average (e.g., “5-6” will be 5.5).
+When calculating these statistics, failed test scores are treated as missing observations and not included. For example, let us say that you included 5 tests, but one of them could not be calculated. In this case, the valid 4 scores will be added and divided by 4 (not 5) to acquire the means. Also, grade range scores–such as *5–6* from [New Dale-Chall](#dale-chall-test)\index{New Dale-Chall!grade-range averaging}–will be converted to its own average (e.g., *5-6* will be 5.5).
 
 To remove any test from this list, select it and press `r keys(c('Ctrl', 'Del'))` (`r os_logo('windows')`) or `r keys(c('\\cmd', '\\backdel'))` (`r os_logo('apple')`) on your keyboard. To edit a [custom test](#creating-custom-test), double click on it in this list. To view the help for a standard test, double click on it in this list.
 
@@ -42,7 +42,7 @@ Let us first review a Fry\index{Fry} graph:
 knitr::include_graphics("Images/frygraph.png")
 ```
 
-To read this graph, search for the red data point–this value represents the document's score. Note that there are numbers 1 through 17+ on this chart, each partitioned into small slices. The “slice” that the data point falls into is the grade level of this document. In the example above, the data point is inside of the 8^th^ grade slice (notice that the 8 is marked in red).
+To read this graph, search for the red data point–this value represents the document's score. Note that there are numbers 1 through 17+ on this chart, each partitioned into small slices. The band that the data point falls into is the grade level of this document. In the example above, the data point is inside of the 8^th^ grade slice (notice that the 8 is marked in red).
 
 Running through each slice is a gray line, which is a separator to help show the most predominate cause of the document's difficulty. If the data point is above the gray line, then the strongest influence on the document's difficulty is high-syllable words. If it is below the line, then the strongest influence is long sentences. In the above example, it is above the line, implying that it is slightly more influenced by high-syllable words. However, because it is fairly close to the line, this document is well balanced between difficult words and difficult sentences.
 
@@ -78,7 +78,7 @@ The FRASE\index{FRASE} graph is similar to Fry in terms of factors used and axis
 knitr::include_graphics("Images/FraseGraph.png")
 ```
 
-A key difference with FRASE\index{FRASE!reading levels} is its use of reading levels (rather than grade levels). In the above example, we can see that the document has been scored at the “Intermediate” level. The other difference is that it is designed for Spanish text—note how its X (syllable-count) axis begins at 182, not 108.
+A key difference with FRASE\index{FRASE!reading levels} is its use of reading levels (rather than grade levels). In the above example, we can see that the document has been scored at the *Intermediate* level. The other difference is that it is designed for Spanish text—note how its X (syllable-count) axis begins at 182, not 108.
 
 The Crawford\index{Crawford!compared to Fry} graph is also similar to Fry in terms of factors used. However, it differs from most other graphs in that it uses the interior of the plot to find its sentence-count factor (instead of an axis). Below is an example of a Crawford graph:
 
@@ -205,7 +205,7 @@ The types of difficult-word lists that may be shown are:
 
 **All Words**: This list displays all the words from the document and their respective frequency counts.
 
-**All Words (Condensed)**: This list is the same as **All Words**, except that is excludes common words and combines others. In regards to combining words, words with the same root will be merged into a single row. For example, “report,” “reports,” and “reporting” will be combined into one row, with the frequency counts for all three words also combined. As for excluding words, common words (e.g., “the”), numerals, and filenames are not included in this list. (If no words can be combined and there are no common words to ignore, then this list will not be shown.)
+**All Words (Condensed)**: This list is the same as **All Words**, except that is excludes common words and combines others. In regards to combining words, words with the same root will be merged into a single row. For example, *report*, *reports*, and *reporting* will be combined into one row, with the frequency counts for all three words also combined. As for excluding words, common words (e.g., *the*), numerals, and filenames are not included in this list. (If no words can be combined and there are no common words to ignore, then this list will not be shown.)
 
 Note that if you are ignoring incomplete sentences, then these lists will only include the words from complete sentences. If you need to review all the words from the document, then select the option [**Do not exclude any text**](#options-text-exclusion). Refer to \@ref(how-text-is-excluded) to learn more about how *Readability Studio* handles incomplete sentences.
 
@@ -250,7 +250,7 @@ Finally, a histogram of the words (grouped by syllable count) is also available:
 In the above histogram, we see that most of the words are either 1 or 2 syllables. There are only 25 3-syllable words and 17 4-syllable words in the document. Note that selecting a bar will display the first 25 words within that syllable group (if [binning](#options-histograms) is set to unique values).
 
 ::: {.notesection data-latex=""}
-The total value of a word count reflects the number of words, including repeats of the same word. The unique value of a word count reflects the number of words, excluding repeats. For example, a document contains the word “liquidation” three times. This word will be tallied three times when factored into the total word count, but only once into the unique word count. Most tests use the total word count variable, although there are some that use unique counts (e.g., Spache uses its unique unfamiliar word count).
+The total value of a word count reflects the number of words, including repeats of the same word. The unique value of a word count reflects the number of words, excluding repeats. For example, a document contains the word *liquidation* three times. This word will be tallied three times when factored into the total word count, but only once into the unique word count. Most tests use the total word count variable, although there are some that use unique counts (e.g., Spache uses its unique unfamiliar word count).
 :::
 
 See also \@ref(proper-nouns-in-lists) for more information about proper-noun handling.
@@ -348,7 +348,7 @@ The conjunctions that *Readability Studio* searches for are the most common coor
 - yet
 - so
 
-Generally for technical writing, only separate clauses should begin with these words, not sentences. Any sentence that begins with these words should be combined with the previous sentence. Another option would be to replace the conjunction. For example, “and” could be replaced with “In addition.”
+Generally for technical writing, only separate clauses should begin with these words, not sentences. Any sentence that begins with these words should be combined with the previous sentence. Another option would be to replace the conjunction. For example, *and* could be replaced with *In addition*.
 
 This search is applied to all sentences. [Incomplete sentences](#how-text-is-excluded) will be reviewed for this, even if they are excluded from the analysis.
 
@@ -365,15 +365,15 @@ After opening a project, click on the **Grammar** icon on the project sidebar an
 A repeated word is when the same word appears after itself (which is usually a typo). For example:
 
 ::: {.fancyquotes data-latex=''}
-Gabi gave her report **to to** the manager.
+Gabi gave her report *to to* the manager.
 :::
 
-In this case, the word “to” was accidentally typed twice. *Readability Studio* will consider this a repeated word and include it in this list.
+In this case, the word *to* was accidentally typed twice. *Readability Studio* will consider this a repeated word and include it in this list.
 
-Repeated words are bound to the sentence level. If the same word ends one sentence and begins the next, then it will not be considered a repeated word. For example, “Nancy” would not be considered a repeated word here:
+Repeated words are bound to the sentence level. If the same word ends one sentence and begins the next, then it will not be considered a repeated word. For example, *Nancy* would not be considered a repeated word here:
 
 ::: {.fancyquotes data-latex=''}
-Gabi gave her sales report to **Nancy. Nancy** really appreciated Gabi's promptness.
+Gabi gave her sales report to *Nancy. Nancy* really appreciated Gabi's promptness.
 :::
 
 Repeated word searching is applied to all sentences. [Incomplete sentences](#how-text-is-excluded) will be reviewed for this, even if they are excluded from the analysis.
@@ -386,7 +386,7 @@ Refer to \@ref(repeated-word-exceptions) for more information on how repeated wo
 
 ### Reviewing Article Mismatches {-#reviewing-article-mismatches}
 
-After opening a project, click on the **Grammar** icon on the project sidebar and select the **Article Mismatches** subitem. This window will display a list of articles (i.e., “a” and “an”) that do not match their following noun.
+After opening a project, click on the **Grammar** icon on the project sidebar and select the **Article Mismatches** subitem. This window will display a list of articles (i.e., *a* and *an*) that do not match their following noun.
 
 ![](Images/articlemismatches.png)
 
@@ -432,10 +432,10 @@ After opening a project, click on the **Grammar** icon on the project sidebar an
 For example:
 
 ::: {.fancyquotes data-latex=''}
-**We is** offering standard benefits (e.g., 401K matching and health insurance), as well as **French benefits** to all new employees.
+*We is* offering standard benefits (e.g., 401K matching and health insurance), as well as *French benefits* to all new employees.
 :::
 
-In this case, “We is” is not grammatically correct, and “We are” will be offered as a suggested replacement. Also, “French benefits” is not the correct expression and “fringe benefits” will be offered as a suggested replacement. Both of these items will be considered wording errors and shown in this list.
+In this case, *We is* is not grammatically correct, and *We are* will be offered as a suggested replacement. Also, *French benefits* is not the correct expression and *fringe benefits* will be offered as a suggested replacement. Both of these items will be considered wording errors and shown in this list.
 
 Wording errors are bound to the sentence level. If part of a phrase ends one sentence and begins the next, then it will not be considered an error.
 
@@ -454,12 +454,12 @@ After opening a project, click on the **Grammar** icon on the project sidebar an
 A redundant phrase is when a modifier expresses something that is already implied by the noun it is modifying. For example:
 
 ::: {.fancyquotes data-latex=''}
-Gabi and Nancy **collaborated together** on the report. They should have a **brief summary** ready later today.
+Gabi and Nancy *collaborated together* on the report. They should have a *brief summary* ready later today.
 :::
 
-In this case, “collaborated together” and “brief summary” are redundant. Collaboration already implies two or more people working together. The “together” in this phrase adds nothing and just makes this sentence wordy. As for “brief summary,” summaries are always brief; hence, the redundancy in that phrase. *Readability Studio* will consider these as redundant phrases and include them in this list.
+In this case, *collaborated together* and *brief summary* are redundant. Collaboration already implies two or more people working together. The *together* in this phrase adds nothing and just makes this sentence wordy. As for *brief summary*, summaries are always brief; hence, the redundancy in that phrase. *Readability Studio* will consider these as redundant phrases and include them in this list.
 
-Redundant phrases are bound to the sentence level. If part of a phrase ends one sentence and begins the next, then it will not be considered a redundant phrase. For example, “brief. Summaries” would not be considered a redundant phrase here because the words are in different sentences:
+Redundant phrases are bound to the sentence level. If part of a phrase ends one sentence and begins the next, then it will not be considered a redundant phrase. For example, *brief. Summaries* would not be considered a redundant phrase here because the words are in different sentences:
 
 ::: {.fancyquotes data-latex=''}
 Gabi and Nancy need to be **brief. Summaries** are very important before presenting a report.
@@ -480,12 +480,12 @@ After opening a project, click on the **Grammar** icon on the project sidebar an
 A phrase is wordy if it contains too many words or contains complex words that could be replaced by simpler ones. For example:
 
 ::: {.fancyquotes data-latex=''}
-**Over the course of** the season, Nancy's batting average improved.
+*Over the course of* the season, Nancy's batting average improved.
 :::
 
-In this case, “Over the course of” is wordy. *Readability Studio* will consider this a wordy phrase and offer “during” or “throughout” as replacements.
+In this case, *Over the course of* is wordy. *Readability Studio* will consider this a wordy phrase and offer *during* or *throughout* as replacements.
 
-Wordy phrases are bound to the sentence level. If part of a phrase ends one sentence and begins the next, then it will not be considered a wordy phrase. For example, “a host of” would not be considered a wordy phrase here because its words are in two different sentences:
+Wordy phrases are bound to the sentence level. If part of a phrase ends one sentence and begins the next, then it will not be considered a wordy phrase. For example, *a host of* would not be considered a wordy phrase here because its words are in two different sentences:
 
 ::: {.fancyquotes data-latex=''}
 For the party, we need **a host. Of** course he should be very funny.
@@ -530,10 +530,10 @@ After opening a project, click on the **Grammar** icon on the project sidebar an
 A cliché is an overused phrase that should be avoided if you are writing professional documents. In the context of readability, clichés can be unfamiliar to early (young or ESL) readers. For example:
 
 ::: {.fancyquotes data-latex=''}
-He is acting very **off the wall**.
+He is acting very *off the wall*.
 :::
 
-In this case, “off the wall” is a cliché and will be listed with “unusual” being offered as a replacement. A phrase such as this is considered “tired” and would not appear professional in a business report or technical document. Also, those new to English may not understand what this expression means. If you are targeting early readers, then you should avoid clichés for clarity.
+In this case, *off the wall* is a cliché and will be listed with *unusual* being offered as a replacement. A phrase such as this is considered *tired* and would not appear professional in a business report or technical document. Also, those new to English may not understand what this expression means. If you are targeting early readers, then you should avoid clichés for clarity.
 
 Clichés are bound to the sentence level. If part of a phrase ends one sentence and begins the next, then it will not be considered a cliché.
 
@@ -551,7 +551,7 @@ After opening a project, click on the **Grammar** icon on the project sidebar an
 
 This check is applied to all sentences. [Incomplete sentences](#how-text-is-excluded) will be reviewed for this, even if they are excluded from the analysis.
 
-Numeric words, proper nouns, single-letter words, and common words (e.g., “the”) are excluded from this review.
+Numeric words, proper nouns, single-letter words, and common words (e.g., *the*) are excluded from this review.
 
 Note that if there are no sentences with overused words in your document, then this window will not be included.
 
@@ -586,7 +586,7 @@ To graphically view the Dolch coverage, click on the [**Coverage Chart**](#revie
 
 Below this is the **Dolch Words** section, which lists all the raw Dolch word counts, broken down by category. Each category includes its total and unique counts of words found in the document. For example, let us say that four unique words from the pronoun list are found in the document, each appearing twice. In this case, **Number of Pronoun Dolch words** will be eight (four words each appearing twice) and **Number of unique Pronoun Dolch words** will be four.
 
-Note that there may be a slight discrepancy between a category's coverage value and its unique word count. This will happen if your document contains variations of certain words, such as “ask” and “asked.” The program will treat morphological variations of a word the same as its root word when calculating coverage statistics. However, when calculating unique word statistics, different forms of words will be counted separately. For example, the words “asked” and “asking” will be counted as separate unique words; however, they both will be seen as “ask” when calculating the verb-list coverage.
+Note that there may be a slight discrepancy between a category's coverage value and its unique word count. This will happen if your document contains variations of certain words, such as *ask* and *asked*. The program will treat morphological variations of a word the same as its root word when calculating coverage statistics. However, when calculating unique word statistics, different forms of words will be counted separately. For example, the words “asked” and “asking” will be counted as separate unique words; however, they both will be seen as “ask” when calculating the verb-list coverage.
 
 To graphically view the Dolch words breakdown, click on the [**Word Counts**](#reviewing-dolch-graphs) subitem. This will display a bar chart of these statistics, listed by category.
 
