@@ -190,12 +190,14 @@ To add headers or footers to your printouts, select **Headers & Footers** from t
 
 The following predefined values can be selected for any header or footer:
 
-- Page number
+- Page #
+- Page # of #
 - Title
 - Date
 - Time
+- None
 
-Custom values can also be entered here.
+Custom values can also be entered here (e.g., the editor's name).
 
 To preview a window before printing it, select **Print Preview** from this menu.
 
@@ -209,7 +211,7 @@ The preview option is only available on Windows. On macOS, the system print dial
 
 ## Exporting Filtered Documents {#filtering-export}
 
-“Document filtering” (or “cleaning”) is the removal of items from a document to assist a textual analysis. This includes items that are not meant to be analyzed, such as:
+Document filtering (or “cleaning”) is the removal or conversion of items from a document to assist a textual analysis. This includes items that are not meant to be analyzed, such as:
 
 - Headers
 - Footers
@@ -218,17 +220,17 @@ The preview option is only available on Windows. On macOS, the system print dial
 - Citations
 - (Short) list items
 
-Also, items that may cause issues with legacy programs:
+Also, the romanization of items that may cause issues with legacy programs:
 
-- Non-English letters (e.g., ‘é’)
-- Advanced punctuation (e.g., ‘—’)
+- Non-English letters (e.g., *é*)
+- Advanced punctuation (e.g., *—*)
 - Non-sentence-ending periods (e.g., ellipses and abbreviations)
 
 The first set of items are normally excluded from analysis because they a.) are not part of the narrative text and b.) skew the average sentence length.
 
 By default, *Readability Studio* will automatically ignore these items, rather than requiring you to manually remove them from your document. This is helpful by saving time and by not having to maintain two copies of your document: the original and the “cleansed” version used for analysis.
 
-The second set of items do not cause issue with *Readability Studio*. It can recognize extended characters (e.g., ‘é’, ‘—’, etc.) and can properly deduce sentence endings. For these reasons, document cleaning is generally not necessary within *Readability Studio*.
+The second set of items do not cause issue with *Readability Studio*. It can recognize extended characters (e.g., *é*, *—*, etc.) and can properly deduce sentence endings. For these reasons, document cleaning is generally not necessary within *Readability Studio*.
 
 Refer to \@ref(how-text-is-excluded) to learn how *Readability Studio* automatically filters documents.
 
@@ -294,7 +296,7 @@ kableExtra::kbl(asciiData, booktabs=T, centering=T, align='r', escape=F) %>%
 
 Any extended ASCII character not listed above will be removed from the document.
 
-**Remove ellipses**: Check this option to remove ellipses (if in the middle of a sentence) or replace with a ‘.’ (if at the end of a sentence).
+**Remove ellipses**: Check this option to remove ellipses (if in the middle of a sentence) or replace with a *.* (if at the end of a sentence).
 
 **Remove bullets and list-item numbering**: Check this option to remove bullet symbols and numbers that appear in front of list items.
 
