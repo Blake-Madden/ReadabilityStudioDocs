@@ -184,7 +184,7 @@ These options control how text is excluded from your documents.
 **Exclude all incomplete sentences, except headings**: Select this option to ignore all tables and list items, but include headers and subheaders as full sentences.
 ::::
 
-**Include incomplete sentences containing more than [15] words**: If a sentence is missing terminating punctuation (e.g., ‘.’ or ‘?’) then it will be considered [incomplete](#how-text-is-excluded). Lines of text missing this punctuation are generally headers or list items that should be excluded from the analysis. However, there are times when a legitimate sentence is simply missing this punctuation (due to writer or formatting error) and should be included in the analysis. To override this, enter into this field the maximum words that an incomplete sentence can have. Any sentence containing more than this number of words will be considered complete, even if its terminating punctuation is absent.
+**Include incomplete sentences containing more than [15] words**: If a sentence is missing terminating punctuation (e.g., *.* or *?*) then it will be considered [incomplete](#how-text-is-excluded). Lines of text missing this punctuation are generally headers or list items that should be excluded from the analysis. However, there are times when a legitimate sentence is simply missing this punctuation (due to writer or formatting error) and should be included in the analysis. To override this, enter into this field the maximum words that an incomplete sentence can have. Any sentence containing more than this number of words will be considered complete, even if its terminating punctuation is absent.
 
 ::: {.notesection data-latex=""}
 Lines of text that resemble equations will continue to be marked as incomplete. Also, if **Aggressively exclude** is enabled, then list items with more words than this threshold will also continue to be excluded.
@@ -204,9 +204,9 @@ By default, the question mark would cause the second sentence to be included in 
 
 If **Also exclude trailing citations** is enabled, then checking this option will also cause citation deduction to be more aggressive. By default, only citation blocks in the lower half of the document are excluded. Enabling this option will tell the program to search for citations in the lower three-fourth of the document.
 
-**Also exclude copyright notices**: Select this option to ignore copyright and trademark notices when calculating statistics. Throughout the document, any paragraph consisting of one or two sentences which has a ‘©’ symbol near the beginning is considered a copyright notice.
+**Also exclude copyright notices**: Select this option to ignore copyright and trademark notices when calculating statistics. Throughout the document, any paragraph consisting of one or two sentences which has a *©* symbol near the beginning is considered a copyright notice.
 
-Near the end of the document, the final paragraphs will be more aggressively reviewed. If the last two paragraphs contain one or two sentences and contain phrases such as *All rights reserved* or *copyright* or symbols such as ‘©’ or ‘®’, then they will be considered copyright notices.
+Near the end of the document, the final paragraphs will be more aggressively reviewed. If the last two paragraphs contain one or two sentences and contain phrases such as *All rights reserved* or *copyright* or symbols such as *©* or *®*, then they will be considered copyright notices.
 
 **Also exclude trailing citations**: Select this option to ignore a citation section at the end of the document when calculating statistics. If this option is selected, then the program will search for a citation header near the end of the document and exclude any paragraphs after it. A citation header will be any header which contains 5 (or less) words and any of the following labels:
 
@@ -280,9 +280,11 @@ This phrase list can be edited by clicking the button next to this field, which 
 
 **Include first occurrence**: Select this option to not exclude the first occurrence of any word or phrase from your exclusion list. All remaining occurrences of these words in the document will be excluded. This is useful if you wish to only analyze the first instance of certain difficult words.
 
-**Exclude text between**: Selects whether to exclude all text in between a certain pair of tags. For example, select **[ and ]** and any text inside of '[' and ']' will be ignored in the analysis. Along with excluding the bracketed words, any full paragraphs and sentences wrapped inside of these tags will also be excluded (which will be reflected in the statistics). Refer to \@ref(excluding-placeholders) for an example.
+**Exclude text between**: Selects whether to exclude all text in between a certain pair of tags. For example, select **[ and ]** and any text inside of *[* and *]* will be ignored in the analysis. Along with excluding the bracketed words, any full paragraphs and sentences wrapped inside of these tags will also be excluded (which will be reflected in the statistics). Refer to \@ref(excluding-placeholders) for an example.
 
-Note that these options are not available if **Do not exclude any text** is selected.
+::: {.warningsection data-latex=""}
+These options are not available if **Do not exclude any text** is selected.
+:::
 
 ### Numerals {-#numsyllable}
 

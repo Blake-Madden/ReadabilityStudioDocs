@@ -102,7 +102,7 @@ knitr::include_graphics("Images/DB2Plot.png")
 
 Similar to a Flesch chart, the Lix gauge\index{Lix!gauge plot} plots a document's Lix index score on a chart showing its difficulty level:
 
-```{r lixGuage2, echo=F, fig.cap='Lix Gauge', fig.align='center', out.width='75%'}
+```{r lixGuage2, echo=F, fig.cap='Lix gauge', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/LixGauge.png")
 ```
 
@@ -110,7 +110,7 @@ In the above chart, we can see that Lix scores can range from 0 (“very easy”
 
 There is also a variation of the Lix gauge\index{Lix!gauge plot (German)} that is adjusted for German materials:
 
-```{r germanLixGauge, echo=F, fig.cap='German Lix Gauge', fig.align='center', out.width='75%'}
+```{r germanLixGauge, echo=F, fig.cap='German Lix gauge', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/GermanLixGauge.png")
 ```
 

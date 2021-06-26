@@ -604,7 +604,7 @@ The Fry graph instructions are:
 
 This test is designed for 100-word samples, with 3 samples being recommended for best results. ([Normalization](#glossary) can also be used to analyze larger samples or entire documents.)
 
-Note that numerals are fully syllabized for this test. For example, “1945” will be counted as four syllables (“one”-“nine”-“four”-“five”).\index{Fry|)}
+Note that numerals are fully syllabized for this test. For example, *1945* will be counted as four syllables (*one*-*nine*-*four*-*five*).\index{Fry|)}
 
 \newpage
 ## Gunning Fog\index{Gunning Fog|(ii} {#gunning-fog-test}
@@ -614,8 +614,8 @@ The Gunning Fog readability formula (39-41) calculates the grade level of a docu
 Complex words are words that contain three or more syllables, with the exception of:
 
 - Proper nouns.
-- Words made three syllables by adding “ed” or “es” (e.g., “created” or “trespasses”).
-- Compound words composed of simpler words. *Readability Studio* considers hyphenated words to be compound words (e.g., “horse-power” or “and/or”). Note that forward slashes (‘/’) are treated like hyphens in this context.
+- Words made three syllables by adding *ed* or *es* (e.g., *created* or *trespasses*).
+- Compound words composed of simpler words. *Readability Studio* considers hyphenated words to be compound words (e.g., *horse-power* or *and/or*). Note that forward slashes (*/*) are treated like hyphens in this context.
 
 This test can optionally count independent clauses as separate sentences, as *The Technique of Clear Writing* instructs. It should be noted, however, that this can cause misleadingly low scores for documents that contain run-on sentences. Consider the follow:
 
@@ -623,7 +623,7 @@ This test can optionally count independent clauses as separate sentences, as *Th
 The Meldorf^®^ statistical library is available in C++ source code–a low-level programming language–and in the form of a COM library–a Microsoft^®^ technology for inter-program communication; the COM library can be called from numerous languages, such as: Visual Basic, C#, and Delphi.
 :::
 
-If you treat independent clauses as separate sentences, then this will be seen as six small sentences and produce a Fog score of 10.2. If you count sentences by only looking for ‘.,’ ‘?,’ or ‘!’, then this will be counted as a single 44-word sentence and produce a Fog score of 19. To penalize run-on sentences (which is recommended), then leave the option [**Count independent clauses as separate sentences**](#readability-test-options) unchecked for this test.
+If you treat independent clauses as separate sentences, then this will be seen as six small sentences and produce a Fog score of 10.2. If you count sentences by only looking for *.*, *?*, or *!*, then this will be counted as a single 44-word sentence and produce a Fog score of 19. To penalize run-on sentences (which is recommended), then leave the option [**Count independent clauses as separate sentences**](#readability-test-options) unchecked for this test.
 
 ```{definition, gunningfog, name="Gunning Fog formula"}
 $$
@@ -650,10 +650,10 @@ Where:
 
 The Harris-Jacobson Wide Range Readability Formula readability test (19-30; Chapter 3) calculates the grade level of a document based on sentence length and number of unique unfamiliar words. Words are unfamiliar if they do not appear on a list of common words that are known to most second-grade students. The following are also considered familiar:
 
-- Regular verb forms of any common word (i.e., “ing,” “es,” “s,” “ed,” and “ies” endings). Irregular forms are not familiar.
-- Regular plural and possessive forms of any common word (i.e., “s,” “es,” and “ies” endings). Irregular forms are not familiar.
-- Adjectival or adverbial forms of common words. This includes forms with endings such as “ly,” “est,” “er,” and “ily.”
-- Hyphenated words if both parts of the word are common words. For example, “apple-tree” and “and/or” would be familiar. (Note that forward slashes (‘/’) are treated like hyphens in this context.) Although this rule is not explicitly stated in *Basic Reading Vocabularies*, it is recommended because both [Spache](#spache-test) and [New Dale-Chall](#dale-chall-test) apply it.
+- Regular verb forms of any common word (i.e., *ing*, *es*, *s*, *ed*, and *ies* endings). Irregular forms are not familiar.
+- Regular plural and possessive forms of any common word (i.e., *s*, *es*, and *ies* endings). Irregular forms are not familiar.
+- Adjectival or adverbial forms of common words. This includes forms with endings such as *ly*, *est*, *er*, and *ily*.
+- Hyphenated words if both parts of the word are common words. For example, *apple-tree* and *and/or* would be familiar. (Note that forward slashes (*/*) are treated like hyphens in this context.) Although this rule is not explicitly stated in *Basic Reading Vocabularies*, it is recommended because both [Spache](#spache-test) and [New Dale-Chall](#dale-chall-test) apply it.
 - All proper nouns.
 
 Note that numerals are entirely excluded from this test and are considered neither familiar nor unfamiliar.
@@ -782,7 +782,7 @@ Table: Lix Index Table
 
 Note that Lix also includes a chart to visualize the meaning of its index score:
 
-```{r lixGauge, echo=F, fig.cap='Lix Gauge', fig.align='center', out.width='75%'}
+```{r lixGauge, echo=F, fig.cap='Lix gauge', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/LixGauge.png")
 ```
 
@@ -947,11 +947,11 @@ Refer to \@ref(new-ari)\index{New Automated Readability Index!variations!New Aut
 
 ## New Dale-Chall\index{New Dale-Chall|(ii} {#dale-chall-test}
 
-The New Dale-Chall\index{Dale-Chall!zzzzz@\igobble|seealso{New Dale-Chall}}readability test (Chall *Manual*, 1-7) calculates the grade level of a document based on sentence length and number of unfamiliar words. Words are unfamiliar if they do not appear on a list of 3,000 common words that are known to most 4^th^-grade students. The following are also considered familiar:
+The New Dale-Chall\index{Dale-Chall!zzzzz@\igobble|seealso{New Dale-Chall}}readability test (Chall *Manual*, 1-7) calculates the grade level of a document based on sentence length and number of unfamiliar words. Words are unfamiliar if they do not appear on a list of 3,000 common words that are known to most 4^th^ grade students. The following are also considered familiar:
 
-- Regular plural and possessive forms of common words (i.e., “s,” “es,” and “ies” endings). Irregular forms (e.g., “oxen”) are not familiar.
-- Adjectival and verb forms of common words with the following endings: “d,” “ed,” “ied,” “ing,” “s,” “es,” “ies,” “r,” “er,” “est,” “ier,” “iest.”
-- Compound and hyphenated words if both parts of the word are common words. For example, “long-haired” and “and/or” would be familiar. Note that forward slashes (‘/’) are also treated as compound-word punctuation.
+- Regular plural and possessive forms of common words (i.e., *s*, *es*, and *ies* endings). Irregular forms (e.g., *oxen*) are not familiar.
+- Adjectival and verb forms of common words with the following endings: *d*, *ed*, *ied*, *ing*, *s*, *es*, *ies*, *r*, *er*, *est*, *ier*, *iest*.
+- Compound and hyphenated words if both parts of the word are common words. For example, *long-haired* and *and/or* would be familiar. Note that forward slashes (*/*) are also treated as compound-word punctuation.
 - The [first instance of any proper noun](#options-dale-chall)—all subsequent occurrences are considered familiar.
 - All numerals.
 
@@ -961,7 +961,7 @@ This test treats headers and subheaders as full sentences, but excludes lists an
 
 The initial version of this test (Dale and Chall, “A Formula for Predicting Readability”) was a multiple regression trained against 376 passages from McCall-Crabbs *Standard Test Lessons in Reading*. After comparing the results of this formula against other tests (such as Flesch and Lorge), it was validated against manually judged reading levels from other materials. These materials included “fifty-passages of health-education materials” (18) with a correlation of $r = 0.92$. Also included were “78 passages on foreign affairs from current-events magazines, government pamphlets, and newspapers” (18) with a correlation of $r = 0.90$.
 
-The New Dale-Chall test replaces this regression equation by looking up the factors' intersection in a table and returning a grade range (e.g., “4” or “7-8”). (This grade range is a notable difference from other tests that use [floating-point precision](#grade-level-results) grade levels.) It also includes an updated version of the 3,000 common words.
+The New Dale-Chall test replaces this regression equation by looking up the factors' intersection in a table and returning a grade range (e.g., *4* or *7-8*). (This grade range is a notable difference from other tests that use [floating-point precision](#grade-level-results) grade levels.) It also includes an updated version of the 3,000 common words.
 
 Because this test is based on the usage of familiar words (rather than syllable or letter counts), it is often regarded as a more accurate test for younger readers.
 
@@ -1218,7 +1218,7 @@ The Rate Index (Rix)\index{Rix!compared to Lix} readability formula (Anderson 49
 
 “Rate” in this context refers to the rate of long words throughout the document. Comparing against other tests that traditionally recommend fixed sample sizes (e.g., [SMOG](#smog-test)), Anderson noted that Rix could be applied to any length of text without normalization. As he explained, “the concept of rate has the advantage of being applied over any number of sentences, for it is a running average” (Anderson 495).
 
-Regarding the factors used for this test, Anderson defined a sentence “as a sequence of words terminated by a full-stop (period), question or exclamation mark, colon, or semicolon” (Anderson 495). In other words, sentences [units](#glossary) should be used for the calculation. (As for Lix, Björnsson did not define how sentences should end, so it is recommended to use the traditional ‘.’, ‘?’, and ‘!’ markers for that test.)
+Regarding the factors used for this test, Anderson defined a sentence “as a sequence of words terminated by a full-stop (period), question or exclamation mark, colon, or semicolon” (Anderson 495). In other words, sentences [units](#glossary) should be used for the calculation. (As for Lix, Björnsson did not define how sentences should end, so it is recommended to use the traditional *.*, *?*, and *!* markers for that test.)
 
 As for defining long words, Anderson recommended “excluding hyphens, punctuation marks, and brackets” (495) when determining a word’s length. Although Björnsson did not explicitly state this for Lix, it is a reasonable assumption that that was his original intention.
 
@@ -1322,11 +1322,11 @@ Refer to \@ref(smog-test).
 
 The Spache Revised test (Spache, *Good* 195-2003) calculates the grade level of a document based on sentence length and number of unique unfamiliar words. This test uses a list of 1,041 common words that are known to younger readers (4^th^ grade and below). Any word that does not appear on this list is considered unfamiliar. The following are also considered familiar:
 
-- Regular verb forms of any common word (i.e., “ing,” “es,” “s,” “ed,” and “ies” endings). Irregular forms are not familiar.
-- Regular plural and possessive forms of any common word (i.e., “s,” “es,” and “ies” endings). Irregular forms are not familiar.
-- Adjectival or adverbial forms of common words. This includes forms with endings such as “ly,” “est,” “er,” and “ily.”
-- Derivatives of common words where the function changes (e.g., an adjective changed to function as a noun) are not familiar unless explicitly on the common word list. For example, “brave” is a common word, but “bravery” would not be considered familiar.
-- Hyphenated words if both parts of the word are common words. For example, “apple-tree” and “and/or” would be familiar. Note that forward slashes (‘/’) are treated like hyphens in this context.
+- Regular verb forms of any common word (i.e., *ing*, *es*, *s*, *ed*, and *ies* endings). Irregular forms are not familiar.
+- Regular plural and possessive forms of any common word (i.e., *s*, *es*, and *ies* endings). Irregular forms are not familiar.
+- Adjectival or adverbial forms of common words. This includes forms with endings such as *ly*, *est*, *er*, and *ily*.
+- Derivatives of common words where the function changes (e.g., an adjective changed to function as a noun) are not familiar unless explicitly on the common word list. For example, *brave* is a common word, but *bravery* would not be considered familiar.
+- Hyphenated words if both parts of the word are common words. For example, *apple-tree* and *and/or* would be familiar. Note that forward slashes (*/*) are treated like hyphens in this context.
 - All proper nouns.
 - All numerals.
 

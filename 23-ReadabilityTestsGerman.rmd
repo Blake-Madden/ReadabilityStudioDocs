@@ -52,7 +52,7 @@ Note that this test differs from the original Lix approach of using the same sco
 
 Regarding the index score, the following variation of the Lix gauge is used classify the difficulty (Renström 153; Bamberger and Vanecek 65; Schulz 53):
 
-```{r germanLix, echo=F, fig.cap="German Lix Gauge (children's literature)", fig.align='center', out.width='75%'}
+```{r germanLix, echo=F, fig.cap="German Lix gauge (children's literature)", fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/GermanLixGauge.png")
 ```
 
@@ -80,7 +80,7 @@ Note that this test differs from the original Lix approach of using the same sco
 
 Regarding the index score, the following variation of the Lix gauge is used classify the difficulty (Renström 153; Bamberger and Vanecek 65; Schulz 53):
 
-```{r germanLix2, echo=F, fig.cap='German Lix Gauge (technical literature)', fig.align='center', out.width='75%'}
+```{r germanLix2, echo=F, fig.cap='German Lix gauge (technical literature)', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/GermanLixGauge.png")
 ```
 
