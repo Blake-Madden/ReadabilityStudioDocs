@@ -52,9 +52,9 @@ or like this:
 
 After entering the file path, the words from the file will be shown in the familiar words grid.
 
-Next, you can specify which type of stemming (if any) to use. Stemming compares words based on their roots and is useful for finding words that appear in different forms. This comparison is performed when words from a document are being matched against your familiar-word list. For example, let us say that you have the word “open” in your list and have English stemming selected. When you analyze a document, words such as “opened” and “opening” will be considered familiar, even if they are not explicitly in your word list.
+Next, you can specify which type of stemming (if any) to use. Stemming compares words based on their roots and is useful for finding words that appear in different forms. This comparison is performed when words from a document are being matched against your familiar-word list. For example, let us say that you have the word *open* in your list and have English stemming selected. When you analyze a document, words such as *opened* and *opening* will be considered familiar, even if they are not explicitly in your word list.
 
-If you are not using stemming, then it is recommended that you enter each inflected form of your words (e.g., possessive, plural) in your familiar-word list. For example, you would need “open,” “opens,” “opening,” etc. explicitly in your list to cover each form of “open.”
+If you are not using stemming, then it is recommended that you enter each inflected form of your words (e.g., possessive, plural) in your familiar-word list. For example, you would need *open*, *opens*, *opening*, etc. explicitly in your list to cover each form of *open*.
 
 Along with your own word list, you can also use the New Dale-Chall, Spache, and Harris-Jacobson\index{word lists!combining} word lists. This enables you to make your word list an appendage to any of these standard tests, therefore creating your own extended version of these tests. This behavior can be toggled with the options shown below:
 
@@ -115,20 +115,20 @@ $$
 5+5+5/2
 $$
 
-Will yield “12.5.” “5/2” is executed first, then added to the other fives. However, by using parentheses:
+Will yield `12.5`. `5/2` is executed first, then added to the other fives. However, by using parentheses:
 
 $$
 (5+5+5)/2
 $$
 
-You can override it so that the additions happen first (resulting in “15”), followed by the division (finally yielding “7.5”). Likewise, “(2+5)^2” will yield “49” (“7” squared), while “2+5^2” will yield “27” (“5” squared, plus “2”).
+You can override it so that the additions happen first (resulting in `15`), followed by the division (finally yielding `7.5`). Likewise, `(2+5)^2` will yield `49` (`7` squared), while `2+5^2` will yield `27` (`5` squared, plus `2`).
 
 ::: {.minipage data-latex="{\textwidth}"}
 | Function | Description |
 | :-- | :-- |
 | AND(value1,value2,...) | Returns true if all conditions are true. |
-| IF(condition,value_if_true,value_if_false) | If “condition” is true (non-zero), then “value\_if\_true” is returned; otherwise, “value\_if\_false” is returned. |
-| NOT(value) | Returns the logical negation of “value.” |
+| IF(condition,value_if_true,value_if_false) | If *condition* is true (non-zero), then *value\_if\_true* is returned; otherwise, *value\_if\_false* is returned. |
+| NOT(value) | Returns the logical negation of *value.* |
 | OR(value1,value2,...) | Returns true if any condition is true. |
 
 Table: Logic functions
@@ -183,7 +183,7 @@ Table: Custom familiar word tests functions
 
 ::: {.minipage data-latex="{\textwidth}"}
 <!--
-Have to manually format the footnotes in here for numerous reasons, this is the best way to get this to format
+Have to manually format the footnotes in here for numerous reasons; this is the best way to get this to format
 properly in LaTex.
 
 kable has compile issues with threeparttable and full-width tables, and using kable also means
@@ -192,7 +192,7 @@ the tables above and below it.
 
 As for markdown, using the proper footnote method causes the footnotes to be letters instead of numbers because
 we are in a minipage. (The minipage is to keep the footnotes under the table, and not the end of the page.)
-So, to use MLA footnotes, we have to create psuedo footnotes below the table.
+So, to create MLA footnotes, we have to create psuedo footnotes below the table.
 -->
 
 | Function | Description |
@@ -316,7 +316,7 @@ or like this:
 
 **Use stemming to search for similar words**: Select from this list the stemming method (if any) to use when comparing your familiar words with the words in a document.
 
-Stemming compares words based on their root. This is useful for finding words that appear in different forms from how they are entered in your word list. For example, let us say that you enter the word “installation” in your familiar word file. If you select English as your stemming type, then occurrences of the words “installation,” “install,” “installed,” “installs,” etc. found in your document will be considered familiar. This is because each of these words shares the same root, “install.” The benefit of this is that you do not need to enter every form of every word into your familiar word file.
+Stemming compares words based on their root. This is useful for finding words that appear in different forms from how they are entered in your word list. For example, let us say that you enter the word *installation* in your familiar word file. If you select English as your stemming type, then occurrences of the words *installation*, *install*, *installed*, *installs*, etc. found in your document will be considered familiar. This is because each of these words shares the same root, *install*. The benefit of this is that you do not need to enter every form of every word into your familiar word file.
 
 If you are not stemming, then it is recommended to enter each inflected form of your words (e.g., possessive, plural) in your word list.
 

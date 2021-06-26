@@ -16,7 +16,7 @@ Once the project is loaded, on the **Home** tab click the `r keys("Properties")`
 
 ![](Images/ExclusionExampleAllExcluded.png)
 
-Next, click **Grammar** on the project's sidebar and then click **Highlighted Report**. In this window, any text that is being excluded will be highlighted gray. For example, note that the header “Danielson-Bryan 1 Test” is excluded, as shown below:
+Next, click **Grammar** on the project's sidebar and then click **Highlighted Report**. In this window, any text that is being excluded will be highlighted gray. For example, note that the header *Danielson-Bryan 1 Test* is excluded, as shown below:
 
 ![](Images/ExclusionExampleHeaderExcluded.png)
 
@@ -24,19 +24,19 @@ Scroll midway down the document and note how another header, an equation, and a 
 
 ![](Images/ExclusionExamplePartialExcluded.png)
 
-The first is the sentence “Where:.” Sentences that end with a semicolon and are followed by a list will normally be considered valid. In this case though, we will want to exclude this sentence too. Open the **Properties** dialog again, click **Analysis** and select **Document Indexing**. Check the option **Aggressively deduce lists**, as shown below:
+The first is the sentence *Where:.* Sentences that end with a semicolon and are followed by a list will normally be considered valid. In this case though, we will want to exclude this sentence too. Open the **Properties** dialog again, click **Analysis** and select **Document Indexing**. Check the option **Aggressively deduce lists**, as shown below:
 
 ![](Images/ExclusionExampleAggressiveList.png)
 
-Checking this option will exclude any valid sentence (containing less than 10 words) that is inside of a block of incomplete sentences. Click `r keys("OK")` and note how “Where:” is now excluded:
+Checking this option will exclude any valid sentence (containing less than 10 words) that is inside of a block of incomplete sentences. Click `r keys("OK")` and note how *Where:* is now excluded:
 
 ![](Images/ExclusionExampleWhereExcluded.png)
 
-The next item to note is the sentence “Number of characters...”. This is really an item in a table that is missing a period, so we should be excluding it. However, currently it is being included because it contains more than 15 words. To adjust this, go back to the **Document Indexing** options for this project. Change the value for **Include incomplete sentences containing more than [15] words** to a higher value (e.g., “20”) and click `r keys("OK")`:
+The next item to note is the sentence *Number of characters\.\.\.*. This is really an item in a table that is missing a period, so we should be excluding it. However, currently it is being included because it contains more than 15 words. To adjust this, go back to the **Document Indexing** options for this project. Change the value for **Include incomplete sentences containing more than [15] words** to a higher value (e.g., “20”) and click `r keys("OK")`:
 
 ![](Images/ExclusionExampleIncompLengthValue.png)
 
-Note how the “Number of characters...” sentence is now excluded:
+Note how the *Number of characters\.\.\.* sentence is now excluded:
 
 ![](Images/ExclusionExampleLongSentenceExcluded.png)
 
@@ -52,11 +52,11 @@ Now this copyright notice will be excluded from the analysis:
 
 ![](Images/ExclusionExampleCopyrightExcludedNow.png)
 
-Along with incomplete sentences, specific types of words can also be excluded. For example, at the bottom of this window note the hyperlink “http://www.jstor.org/.” To exclude this, go to the **Document Indexing** options, check **Also exclude Internet and file addresses**, and click `r keys("OK")`:
+Along with incomplete sentences, specific types of words can also be excluded. For example, at the bottom of this window note the hyperlink *http://www.jstor.org/*. To exclude this, go to the **Document Indexing** options, check **Also exclude Internet and file addresses**, and click `r keys("OK")`:
 
 ![](Images/ExclusionExampleUrlExcluded.png)
 
-Note how “http://www.jstor.org/” is now excluded:
+Note how *http://www.jstor.org/* is now excluded:
 
 ![](Images/ExclusionExampleUrlExcludedNow.png)
 
@@ -64,7 +64,7 @@ Other items, such as proper nouns and numbers can also be excluded. Go to the **
 
 ![](Images/ExclusionExampleNumbersExcludedNow.png)
 
-Also note how proper nouns, such as “Danielson-Bryan” and “UNIVAC,” are now excluded:
+Also note how proper nouns, such as *Danielson-Bryan* and *UNIVAC*, are now excluded:
 
 ![](Images/ExclusionExampleProperExcludedNow.png)
 
@@ -72,15 +72,15 @@ You can also exclude specific words and phrases. From the **Document Indexing** 
 
 ![](Images/ExclusionExampleEditListButton.png)
 
-In the **Edit Phrase List** dialog, either double click the grid or click the add item button to begin adding words or phrases to exclude. In one line enter “punctuation,” and in another line enter “sentence length”:
+In the **Edit Phrase List** dialog, either double click the grid or click the add item button to begin adding words or phrases to exclude. In one line enter *punctuation*, and in another line enter *sentence length*:
 
 ![](Images/ExclusionExampleCustomWords.png)
 
-Click `r keys("OK")` and all instances of “punctuation” and “sentence length” are now excluded:
+Click `r keys("OK")` and all instances of *punctuation* and *sentence length* are now excluded:
 
 ![](Images/ExclusionExampleCustomWordsExcludedNow.png)
 
-Separate instances of “sentence” and “length” will still be included, they will only be excluded if they appear together to form the phrase “sentence length.” Refer to \@ref(document-analysis) for more on how custom word/phrase exclusion works.
+Separate instances of *sentence* and *length* will still be included, they will only be excluded if they appear together to form the phrase “sentence length.” Refer to \@ref(document-analysis) for more on how custom word/phrase exclusion works.
 
 Note that when excluding individual words, these words are treated as if they are not in the document at all. This means that excluding words will affect the sentences that they appear in. For example, by excluding “Danielson-Bryan,” “1,” and “206”, the first sentence will have a word count of 20 instead of 23.
 

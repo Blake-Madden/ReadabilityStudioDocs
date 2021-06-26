@@ -47,9 +47,9 @@ Another exception is the last sentence inside of a quote. If this sentence is fo
 Where did it go? I can't find it anywhere!” he said.
 :::
 
-Because *he* is lowercase, the '!' will not be considered the end of the sentence and *he said* will be part of the proceeding sentence. However, if “He” is capitalized, then the '!' will be seen as the end of a sentence and the above will be counted as three sentences.
+Because *he* is lowercase, the *!* will not be considered the end of the sentence and *he said* will be part of the proceeding sentence. However, if *He* is capitalized, then the *!* will be seen as the end of a sentence and the above will be counted as three sentences.
 
-There is also a special rule for ellipses. If ellipses are followed by a capitalized word, then it will be considered the end of the sentence. Otherwise, it is simply seen as punctuation and does not terminate the sentence. The ellipses symbol (‘…’) and dot sequences (“\.\.\.”) are both recognized.
+There is also a special rule for ellipses. If ellipses are followed by a capitalized word, then it will be considered the end of the sentence. Otherwise, it is simply seen as punctuation and does not terminate the sentence. The ellipses symbol (*…*) and dot sequences (*\.\.\.*) are both recognized.
 
 One last special case is when a colon or semicolon is found at the end of a line. In the case of a colon, it will be seen as the end of a sentence because it is assumed that this sentence is leading into a list. For a semicolon, it will be seen as the end of a lengthy list item that should be considered a valid sentence. If a colon or semicolon is found in the middle of a sentence, then it will not end that sentence.
 
@@ -57,7 +57,7 @@ By default, lowercase words can be considered the start of a new sentence (with 
 
 ## Line (Sentence) Chaining {#line-chaining}
 
-Line chaining (or sentence chaining) is a sentence deduction method where lines of text are joined until a '.', '?', or '!' is found. In other words, multiple lines of text can be joined into a single sentence. This is normally preferred behavior when text is formatted to a specific width, such as the following:
+Line chaining (or sentence chaining) is a sentence deduction method where lines of text are joined until a *.*, *?*, or *!* is found. In other words, multiple lines of text can be joined into a single sentence. This is normally preferred behavior when text is formatted to a specific width, such as the following:
 
 :::: {.fancyquotes data-latex=''}
 ::: {.FlushLeft data-latex=''}
@@ -114,7 +114,7 @@ result in injury.
 :::
 ::::
 
-The first line, *WARNING:*, will be seen as a single sentence because the line ends with a colon. Although colons are not normally treated as a sentence terminating character, an exception is made when it is encountered at the end of a line. The next line, “Before cleaning the blade (or performing,” does not end with a sentence terminating character. There are no empty lines after this line, and the next line is not bulleted or tabbed; therefore, this line will be chained to the next line. This chaining will continue until an empty line or a sentence terminating character is encountered. In this case, all these lines will be joined into one sentence:
+The first line, *WARNING:*, will be seen as a single sentence because the line ends with a colon. Although colons are not normally treated as a sentence terminating character, an exception is made when it is encountered at the end of a line. The next line, *Before cleaning the blade (or performing,* does not end with a sentence terminating character. There are no empty lines after this line, and the next line is not bulleted or tabbed; therefore, this line will be chained to the next line. This chaining will continue until an empty line or a sentence terminating character is encountered. In this case, all these lines will be joined into one sentence:
 
 :::: {.fancyquotes data-latex=''}
 ::: {.FlushLeft data-latex=''}
@@ -160,7 +160,7 @@ Chapter 1
 It was the best days of our lives.
 :::
 
-If **Ignore blank lines** is unselected (the default), then the above example is seen as two sentences. *Chapter 1* is seen as an [incomplete sentence](#how-text-is-excluded) because there is a blank line between it and the next sentence. Then “It was the best days of our lives.” is seen as the second sentence. This behavior is recommended for most documents because it helps remove headers and list items from the analysis.
+If **Ignore blank lines** is unselected (the default), then the above example is seen as two sentences. *Chapter 1* is seen as an [incomplete sentence](#how-text-is-excluded) because there is a blank line between it and the next sentence. Then *It was the best days of our lives.* is seen as the second sentence. This behavior is recommended for most documents because it helps remove headers and list items from the analysis.
 
 There are special situations where you would need multi-line sentence fragments to be [chained](#line-chaining) together. For example, picture books that wrap sentences around images may cause sentences to be split into fragments with blank lines between them. Let us review an example of this.
 

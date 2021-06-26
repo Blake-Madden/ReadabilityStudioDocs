@@ -33,15 +33,15 @@ Select from this list the domain restriction that you want to use.
 
 **Not restricted to any domain**: Select this option to harvest all links from the website, regardless of domain.
 
-**Domain restricted**: Select this option to only harvest links with the same domain as the webpage you specify (e.g., “company.com”).
+**Domain restricted**: Select this option to only harvest links with the same domain as the webpage you specify (e.g., *company.com*).
 
-**Subdomain restricted**: Select this option to only harvest links with the same subdomain as the base webpage (e.g., “sales.company.com”).
+**Subdomain restricted**: Select this option to only harvest links with the same subdomain as the base webpage (e.g., *sales.company.com*).
 
-**Restricted to user-defined domain(s)**: Select this option to only harvest links from a provided list of domains. If folders are included in a specified domain, then the harvesting will be restricted to that folder. For example, if “www.news.mybusiness.com/articles” is specified, then only files from the folder “articles” in the subdomain “www.news.mybusiness.com” will be harvested.
+**Restricted to user-defined domain(s)**: Select this option to only harvest links from a provided list of domains. If folders are included in a specified domain, then the harvesting will be restricted to that folder. For example, if *www.news.mybusiness.com/articles* is specified, then only files from the folder “articles” in the subdomain “www.news.mybusiness.com” will be harvested.
 
 **Restricted to external domains**: Select this option to only harvest links from domains other than the webpage that you specify.
 
-**Restricted to same folder**: Select this option to only harvest links from the same web folder as the base URL. For example, if your base webpage is “www.mybusiness.com/history/aboutus.html,” then links will only be harvested from “www.mybusiness.com/history/.”
+**Restricted to same folder**: Select this option to only harvest links from the same web folder as the base URL. For example, if your base webpage is *www.mybusiness.com/history/aboutus.html*, then links will only be harvested from “www.mybusiness.com/history/.”
 ::::
 
 **User-defined Domain(s)**: Enter all user-defined domains in this list. This option is only applicable if domain restriction is set to user-defined domains.
@@ -73,7 +73,7 @@ The following command line options are available for *Readability Studio*:
 | `-loglevel=n` | This parameter specifies how much information to [log](#log-report) while the program is running, where *n* is a value between 0-2 (0 = none, 1 = standard, 2 = verbose). |
 | `-help` | Displays the help. |
 
-The following example would open the document “PatientAgreement.rtf” and use the image “Sunset.png” as the graphs' background:
+The following example would open the document *PatientAgreement.rtf* and use the image *Sunset.png* as the graphs' background:
 
 ::: {.darkmode data-latex=''}
 `ReadStudio "C:\Documents\PatientAgreement.rtf" -bg "C:\Images\Sunset.png"`
