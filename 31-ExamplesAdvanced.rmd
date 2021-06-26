@@ -104,13 +104,13 @@ Once the project is loaded, click **Grammar** on the project's sidebar and then 
 
 ![](Images/ExclusionTagsExampleListExcluded.png)
 
-However, note that are a few placeholders in this file, such as “\<Product\>”:
+However, note that are a few placeholders in this file, such as *\<Product\>*:
 
 ![](Images/ExclusionTagsExampleNotExcluding.png)
 
-We will want to exclude these items because they will not be in the final draft. However, because these are valid words and sentences (i.e., they are not headers, list items, etc.), then the [standard exclusion features](#options-text-exclusion) will not remove them. Also, using a list of exclusion words may be too aggressive. For example, adding “product” to an exclusion list will remove the “\<Product\>,” but it will also exclude any other instance of “product.” Also, the last paragraph is valid, but because it is just a comment we will want to exclude this also. For these situations, will we need to use tagged-block exclusion.
+We will want to exclude these items because they will not be in the final draft. However, because these are valid words and sentences (i.e., they are not headers, list items, etc.), then the [standard exclusion features](#options-text-exclusion) will not remove them. Also, using a list of exclusion words may be too aggressive. For example, adding *product* to an exclusion list will remove the *\<Product\>*, but it will also exclude any other instance of *product*. Also, the last paragraph is valid, but because it is just a comment we will want to exclude this also. For these situations, will we need to use tagged-block exclusion.
 
-Open the **Properties** dialog and select **Document Indexing** (`r menu(c("Home", "Properties", "Document Indexing"))`). Set the option **Exclude text between** to **< and >**, as shown below:
+Open the **Properties** dialog and select **Document Indexing** (`r menu(c("Home", "Properties", "Document Indexing"))`). Set the option **Exclude text between** to **\< and \>**, as shown below:
 
 ![](Images/ExclusionTagsExampleOptions.png)
 
