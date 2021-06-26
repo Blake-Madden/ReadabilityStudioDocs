@@ -117,7 +117,7 @@ indentation <- function()
   }
 
 # @brief Returns a trademark symbol.
-# @note The '™' symbol isn't available in fonts when building LaTeX sometimes,
+# @note The trademark symbol isn't available in fonts when building LaTeX sometimes,
 #       so this will construct our own version.
 trademark <- function()
   {
@@ -126,11 +126,11 @@ trademark <- function()
   else if (knitr::is_html_output())
     { knitr::asis_output("<sup><small>TM</small></sup>") }
   else
-    { knitr::asis_output("™") }
+    { knitr::asis_output("\U2122") }
   }
 
 # @brief Returns a less than or equal to symbol.
-# @note The '≤' symbol isn't available in fonts when building LaTeX sometimes,
+# @note The <= symbol isn't available in fonts when building LaTeX sometimes,
 #       and epub struggles with Unicode characters like this as well,
 #       so this will use math (LaTeX) or "<=" (epub) to avoid this.
 less_than_or_equal_to <- function()
@@ -138,7 +138,7 @@ less_than_or_equal_to <- function()
   if (knitr::is_latex_output())
     { knitr::asis_output("$\\leq$") }
   else if (knitr::is_html_output(excludes = c("epub")))
-    { knitr::asis_output("≤") }
+    { knitr::asis_output("&le;") }
   else
     { knitr::asis_output("<=") }
   }
