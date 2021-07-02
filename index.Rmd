@@ -28,7 +28,7 @@ source('R/appdown.r')
 This is preliminary documentation for an upcoming release of Readability Studio. If you have any feedback, please feel free to file an issue on [Github](https://github.com/Blake-Madden/ReadabilityStudioDocs). Thank you.
 ```
 
-:::{.wrapfigure data-latex="{r}{0.5\\textwidth}"}
+:::{.wrapfigure data-latex="{r}{0.5\\textwidth}" style="width: 48%;"}
 ![](images/NonGenerated/cover.png){width=48%}
 :::
 
