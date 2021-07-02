@@ -217,6 +217,7 @@ Finally, *Readability Studio* is highly configurable. Many options, such as how 
 - Added a graph to visualize Danielson-Bryan 2 scores.
 - Rix now uses sentence units in its calculation to better match the test's recommendations.
 - Expanded the difficulty-level descriptions for the German Lix tests.
+- Redesigned Flesch chart to look more like the version from *The Art of Readable Writing*.
 - Instruction label now shown on all Flesch charts (not just blank ones).
 - Added custom test features:
   - Added feature to create custom tests based on any existing formula-based test. Refer to \@ref(creating-custom-flesch-test) for an example.
