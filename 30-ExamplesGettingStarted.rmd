@@ -118,7 +118,7 @@ Long sentences can seem unfocused and difficult to read, and it is recommended t
 
 ![](Images/longsentenceselected.png)
 
-Now that we have found the difficult sentences, let us begin splitting them up so that they are easier to read. From the **Home** tab, click the `r keys("Edit Document")` button to open the recipes file for editing. Find one of the long sentences and review it. For example, consider this sentence:
+Now that we have found the difficult sentences, let us begin splitting them up so that they are easier to read. From the **Document** tab, click the `r keys("Edit Document")` button to open the recipes file for editing. Find one of the long sentences and review it. For example, consider this sentence:
 
 ![](Images/NonGenerated/sentencetoimprove.png)
 
@@ -260,11 +260,15 @@ By default, the program considers sentences overly long if they contain more tha
 
 The first option is to define a specific word count as the long sentence boundary. Enter *25* where it says **Longer than [22] words** and click the `r keys("OK")` button. The program will now reanalyze the file, classifying any sentences longer than 25 (instead of 22) as overly long. As shown below, sentences that are between 23-25 words are no longer being considered overly long:
 
-![](Images/featuressentences25.png)
+```{r echo=F, fig.align='center', out.width='75%'}
+knitr::include_graphics("Images/featuressentences25.png")
+```
 
 The second option is to consider sentences overly long if they are comparatively longer than the other sentences in the document. From the **Home** tab, click the `r keys("Properties")` button and then select **Analysis**. Select the option **Outside sentence-length outlier range** and click the `r keys("OK")` button. At this point, the boundary for overly-long sentences will be calculated based on the outlier range of the sentence lengths. After reanalyzing the file, note how there are only two highlighted sentences. One sentence contains 45 words and the other 48 words. These are the two “worst offenders” and should be either reworded or split into small sentences.
 
-![](Images/featuressentencesoutliers.png)
+```{r echo=F, fig.align='center', out.width='75%'}
+knitr::include_graphics("Images/featuressentencesoutliers.png")
+```
 
 To see what the outlier range is, click on the **Summary Statistics** icon in the project sidebar. Here we can see that any sentence more than 43 words is considered overly long.
 

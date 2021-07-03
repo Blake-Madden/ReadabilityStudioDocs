@@ -95,7 +95,7 @@ In this situation, the header would be joined with the first sentence. Additiona
 
 *Readability Studio* uses a more intelligent form of line chaining when deducing sentences. By default, the program will only chain lines together if all the following criteria are met:
 
-- A line is not terminated by a '.', '?', '!', or ':'
+- A line is not terminated by a *.*, *?*, *!*, or *:*
 - There are no blank lines following the line
 - The next line of text is not tabbed over or bulleted
 
@@ -150,6 +150,8 @@ In this case, these two lines will be erroneously joined into one sentence. To c
 
 How sentences are structured can vary from document to document. Because of this, *Readability Studio* offers options to control how sentences are parsed and analyzed. These features are available under the **Sentence deduction** section of the [**Document Indexing**](#document-analysis) page. To view these features, select [**Options**](#options-overview) from the **Tools** tab and then click on the **Document Indexing** icon. Under the **Sentence deduction** section, there are two options: **Ignore blank lines when determining the end of a sentence** and **Sentences must begin with capitalized words**.
 
+`r menu(c('Tools','Options','Document Indexing','Sentence deduction'))`
+
 The option **Sentences must begin with capitalized words** controls whether sentences must begin with capitalized words. Selecting this option will make *Readability Studio* more grammatically strict when counting sentences; however, it is recommended to leave this option unselected for “loosely written” documents.
 
 The option **Ignore blank lines** is used for controlling how multi-line sentences with blank lines between them are seen. For example:
@@ -168,7 +170,7 @@ From the **Help** tab, click the `r keys("Example Documents")` button and then s
 
 ![](Images/PeterRabbitSplitSentences.png)
 
-To see what is happening here, we will open the original document. From the **Home** tab, click the `r keys("Edit Document")` button to open this example in a web browser. As we can see below, the sentence in question is split into multiple lines. Part of it is on top of an image, and the rest of it is split across multiple lines to fit next to the image.
+To see what is happening here, we will open the original document. From the **Document** tab, click the `r keys("Edit Document")` button to open this example in a web browser. As we can see below, the sentence in question is split into multiple lines. Part of it is on top of an image, and the rest of it is split across multiple lines to fit next to the image.
 
 ```{r echo=F, fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/NonGenerated/PeterRabbitBrowser.png")
@@ -256,7 +258,7 @@ Words separated by punctuation are also ignored when deducing repeated words. Fo
 I need a list of new features. Each new *feature, feature* by feature, is required to be documented.
 :::
 
-This will not be seen as repeated words because of the comma.
+These will not be seen as repeated words because of the comma.
 
 ## Article Mismatching {#article-mismatching}
 
