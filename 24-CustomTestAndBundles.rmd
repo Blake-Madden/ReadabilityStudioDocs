@@ -26,7 +26,9 @@ To create a new formula based on Lix\index{Lix} that treats 6+ character words a
 
 To view the available functions, click the `r keys('ƒx')` button to display the **Function Browser** dialog:
 
-![](Images/FunctionBrowser.png)
+```{r echo=F, fig.align='center', out.width='50%'}
+knitr::include_graphics("Images/FunctionBrowser.png")
+```
 
 Refer to \@ref(custom-test-functions) for a list of available functions.
 
