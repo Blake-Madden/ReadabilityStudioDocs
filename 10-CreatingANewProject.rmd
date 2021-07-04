@@ -34,7 +34,7 @@ After you have selected your file, click the `r keys("Forward >")` button to con
 
 ![](Images/wizarddocstructure.png)
 
-On this page, you will specify the format that best describes your document. The compositions that you can select are either narrative text or [non-narrative/fragmented text](#framented-text). These options describe the content of your document and will help the program select the appropriate [text exclusion](#options-text-exclusion) method. The layout options are used to describe the format of the document and will help the program select the appropriate [sentence deduction](#options-sentence-deduction) method. For example, if your document is formatted to fit a page and also wraps its text around illustrations, then it is recommended to check both of the **Layout** options.
+On this page, you will specify the format that best describes your document. The compositions that you can select are either narrative text or [non-narrative/fragmented text](#framented-text). These options describe the content of your document and will help the program select the appropriate [text exclusion](#options-text-exclusion) method. The layout options are used to describe the format of the document and will help the program select the appropriate [sentence deduction](#options-sentence-deduction) method. For example, if your document is formatted to fit a page and also wraps its text around illustrations, then it is recommended to check the first two **Layout** options.
 
 ::: {.tipsection data-latex=""}
 Previews of these document formats are shown next to each option. To view the full-size image of any preview, click on it with your mouse.
@@ -82,7 +82,7 @@ knitr::include_graphics("Images/selectprojecttype.png")
 
 Select **Batch Project** and click the `r keys("OK")` button to proceed to the **New Project** wizard dialog, as shown below:
 
-knitr::include_graphics("Images/wizardbatchselectfiles.png")
+![](Images/wizardbatchselectfiles.png)
 
 On the first page of this dialog, **Documents**, are options for selecting your documents and how to specify their language. The language option will control how the documents are analyzed (e.g., syllable counting). This will also affect which tests, word lists, and grammar features will be available. For example, if we select **Spanish**, then only Spanish tests will be included, and features related to English word lists (e.g., New Dale-Chall) will not be available. For this example, select **English**.
 
@@ -120,37 +120,9 @@ After you have selected your files, you can randomly sample a subset of these do
 
 Note that when the project is first analyzed, the documents that were not included in the sample will be removed from the project.
 
-Click the `r keys("Forward >")` button to continue to the **Document Structure** page, as shown below:
+Clicking the `r keys("Forward >")` button will move to the **Document Structure** and **Test Selection** pages. Refer to \@ref(creating-standard-project) for an explanation of these pages.
 
-![](Images/wizarddocstructure.png)
-
-On this page, you will specify the format that best describes your document. The compositions that you can select are either narrative text or [non-narrative/fragmented text](#framented-text). These options describe the content of your document and will help the program select the appropriate [text exclusion](#options-text-exclusion) method. The layout options are used to describe the format of the document and will help the program select the appropriate [sentence deduction](#options-sentence-deduction) method. For example, if your document is formatted to fit a page and also wraps its text around illustrations, then it is recommended to check both of the **Layout** options.
-
-::: {.tipsection data-latex=""}
-Previews of these document formats are shown next to each option. To view the full-size image of any preview, click on it with your mouse.
-:::
-
-After specifying your documents' structure, click the `r keys("Forward >")` button to continue to the **Test Selection** page, as shown below:
-
-![](Images/wizardbatchreadabilitymethods.png)
-
-On this page, you will select how you want *Readability Studio* to choose the readability tests to perform. Your first option is to tell the program which type of documents you are analyzing and it will select the most appropriate tests based on that. To do this, select the **Recommend tests based on document type** option. You will then be presented with the **Select the type of document...** options, where you can select which type of document best describes your files (e.g., a literary work or technical form), as shown below:
-
-![](Images/wizardbatchdoctype.png)
-
-Your second option is to tell *Readability Studio* which type of industry your documents relate to and it will select the most appropriate tests based on that. To do this, select the **Recommend tests based on industry or field** option. You will then be presented with the **Select the type of industry...** options, where you can select which field best describes what your files relate to (e.g., magazine publishing or the military), as shown below:
-
-![](Images/wizardbatchindustry.png)
-
-Your final option is to manually select the tests yourself. To do this, select the **Manually select tests** option. You will then be presented with the **Standard Tests** options, where you can select any of the tests that *Readability Studio* has to offer, as shown below:
-
-![](Images/wizardbatchtests.png)
-
-The tests available on this page will depend on the project's language. For example, if you are manually selecting Spanish tests, then tests such as [Crawford](#crawford) will be available, but English tests (e.g., [Spache](#spache-test)) will not. Also, some industry and document-type options may not have tests associated with them depending on the selected language.
-
-Note that you can always add or remove tests from your project at any time. If you select either the document type or industry options, you are not bound to the tests that *Readability Studio* recommends.
-
-After you have selected the tests to perform, click the `r keys("Finish")` button and the project will be created and will appear like this:
+After you have specified your document structure and tests, click the `r keys("Finish")` button to create the project, as shown below:
 
 ![](Images/batchscorestats.png)
 
