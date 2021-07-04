@@ -1,12 +1,36 @@
 # Advanced Examples
 
-In this chapter, we will step through how to exclude text from an analysis. After that, we will continue with examples showing how to customize graphs and create test bundles.
+In this chapter, we will discuss import options and text exclusion. After that, we will continue with examples showing how to customize graphs and create test bundles.
+
+## Preserving Hard Returns in a Document
+
+In this example, we will import a document which contains short lines of text that are separated by hard returns. These lines of text are not separated by blank lines, and are neither indented nor start with bullet points (the way list items often appear). The default for the program is to chain text lines such as this into a single sentence. In the case of this document, however, we will want to treat each line as a separate paragraph.
+
+First, let us view the document. From the **Help** tab on the ribbon, click the `r keys('Example Documents')` button, and select *Job Posting*. Next, you will be prompted to either create a new project or view the document; select **View document**. Once the document is opened, note the text in the upper left corner. Here we have short descriptions about a job posting that we will want to preserve as separate lines when we import:
+
+```{r echo=F, fig.align='center', out.width='75%'}
+knitr::include_graphics("Images/NonGenerated/JostPostingViewDocument.png")
+```
+
+Close this document and return to *Readability Studio*. Click the `r keys('Example Documents')` button and again select *Job Posting*. Next, select **Create a new project**. When the **New Project Wizard** appears, select the **Document Structure** page and check **Line ends (i.e., hard returns) mark the start of a new paragraph**:
+
+![](Images/wizarddocstructurehardreturns.png)
+
+Finally, click the `r keys('Finish')` button to create the project. When the project appears, select **Grammar** on the sidebar and select **Highlighted Report**. Note how the job descriptors at the top have been preserved as separate lines:
+
+```{r echo=F, fig.align='center', out.width='75%'}
+knitr::include_graphics("Images/JobPostingHighlightedText.png")
+```
+
+Because these are terse, unterminated lines of text, they will also be excluded from our analyses.
+
+At this point, we can add tests and begin reviewing this (rather suspect) job posting.
 
 ## Excluding Text from an Analysis {#excluding-text-from-analysis}
 
 When reviewing a document, it is usually preferable to ignore certain items, such as headers and citations (refer to \@ref(how-text-is-excluded) for more information). In this example, we will discuss the various methods for excluding these items.
 
-The first step is to open the example file **Danielson-Bryan**. From the **Help** tab, click the `r keys("Example Documents")` button and then select **Danielson-Bryan** from the menu. (When prompted about how to open the document, select **Create a new project**.) When the **New Project** wizard appears, leave the defaults and click `r keys("Finish")`. A warning about an incomplete sentence being included because of its length will appear:
+The first step is to open the example file *Danielson-Bryan*. From the **Help** tab, click the `r keys("Example Documents")` button and then select *Danielson-Bryan* from the menu. (When prompted about how to open the document, select **Create a new project**.) When the **New Project** wizard appears, leave the defaults and click `r keys("Finish")`. A warning about an incomplete sentence being included because of its length will appear:
 
 ![](Images/NonGenerated/ExclusionExampleIncompleteSentWarning.png)
 
@@ -102,9 +126,9 @@ knitr::include_graphics("Images/ExclusionExampleCustomWordsExcludedNow.png")
 
 Separate instances of *sentence* and *length* will still be included, they will only be excluded if they appear together to form the phrase “sentence length.” Refer to \@ref(document-analysis) for more on how custom word/phrase exclusion works.
 
-Note that when excluding individual words, these words are treated as if they are not in the document at all. This means that excluding words will affect the sentences that they appear in. For example, by excluding “Danielson-Bryan,” “1,” and “206”, the first sentence will have a word count of 20 instead of 23.
+Note that when excluding individual words, these words are treated as if they are not in the document at all. This means that excluding words will affect the sentences that they appear in. For example, by excluding *Danielson-Bryan*, *1*, and *206*, the first sentence will have a word count of 20 instead of 23.
 
-Another section of text that could be excluded is the citation at the bottom. Go to the **Document Indexing** options, check **Also exclude trailing citations** and click `r keys("OK")`. Scroll to the bottom of the document and note how everything below the header “Citations” is now excluded:
+Another section of text that could be excluded is the citation at the bottom. Go to the **Document Indexing** options, check **Also exclude trailing citations** and click `r keys("OK")`. Scroll to the bottom of the document and note how everything below the header *Citations* is now excluded:
 
 ```{r echo=F, fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/ExclusionExampleCitationExcluded.png")
@@ -120,7 +144,7 @@ All the options discussed here are also available on the **Document** tab of the
 
 Continuing from the [previous example](#excluding-text-from-analysis) (refer to \@ref(excluding-text-from-analysis)), we will now discuss how to exclude specific blocks of text.
 
-The first step is to open the example file **Press Release**. From the **Help** tab, click the `r keys("Example Documents")` button and then select **Press Release** from the menu. (When prompted about how to open the document, select **Create a new project**.) When the **New Project** wizard appears, leave the defaults and click `r keys("Finish")`.
+The first step is to open the example file *Press Release*. From the **Help** tab, click the `r keys("Example Documents")` button and then select *Press Release* from the menu. (When prompted about how to open the document, select **Create a new project**.) When the **New Project** wizard appears, leave the defaults and click `r keys("Finish")`.
 
 Once the project is loaded, click **Grammar** on the project's sidebar and then click **Highlighted Report**. In this window, any text that is being excluded will be highlighted gray. For example, an indented list is being excluded, as shown below:
 

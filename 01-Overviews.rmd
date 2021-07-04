@@ -286,9 +286,11 @@ Finally, *Readability Studio* is highly configurable. Many options, such as how 
 
 - Upgraded the documentation to [bookdown](https://www.bookdown.org/) format.
 - Expanded documentation for all tests.
+- Added new examples:
+  - *Preserving Hard Returns in a Document*
 - Expanded the glossary.
-- Updated citations to MLA 8^th^ edition format.
 - Added option to either open example documents as new projects or view them in your default editor.
+- Updated citations to MLA 8^th^ edition format.
 
 #### Bug Fixes {-}
 
@@ -399,7 +401,7 @@ Finally, *Readability Studio* is highly configurable. Many options, such as how 
 - Added hide/show button to project sidebar.
 - Ribbon and sidebar now have a flat appearance.
 - Added ribbon and multi-column sorting to **Test Overview** dialog.
-- Word lists (e.g., **Dale-Chall familiar words**) are now in a single, tabbed window.
+- Word lists (e.g., **Dale-Chall familiar words**) are now in a single window.
 - **Tests Explanation** and **Statistics** windows in batch projects now have copy and save buttons.
 - Graph editing options are now available on the ribbon.
 - Added **Long Format** and **Grade Scale** options to the ribbon (when the score window is selected).

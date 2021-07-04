@@ -75,7 +75,7 @@ The language option is only available in the *Language Pack* and *Professional* 
 This will open the **Select Document to Analyze** dialog. Choose the file that you want to analyze and click the `r keys("Open")` button to accept.
 
 ::: {.notesection data-latex=""}
-The original and revised versions of this recipe are available from the **Example Documents** menu. From the **Help** tab, click the `r keys("Example Documents")` button and then select either **Cocoa Desserts** or **Cocoa Desserts (Revised)** from the menu. When prompted about how to open the document, select **Create a new project**.
+The original and revised versions of this recipe are available from the **Example Documents** menu. From the **Help** tab, click the `r keys("Example Documents")` button and then select either *Cocoa Desserts* or *Cocoa Desserts (Revised)* from the menu. When prompted about how to open the document, select **Create a new project**.
 :::
 
 You will then return to the **Document** page. Click the `r keys("Forward >")` button to proceed to the **Document Structure** page, as shown below:
@@ -210,7 +210,7 @@ Note that webpages requiring authentication (i.e., requiring a user name and pas
 
 In this example, we will review a document for overly-long sentences. This example will demonstrate the available methods for defining an overly-long sentence. In addition, it will also demonstrate how to search for and review these sentences.
 
-The first step is to open the example file **Features**. From the **Help** tab, click the `r keys("Example Documents")` button and then select **Features** from the menu. Next, when prompted about how to open the document, select **Create a new project**.
+The first step is to open the example file **Features**. From the **Help** tab, click the `r keys("Example Documents")` button and then select *Features* from the menu. Next, when prompted about how to open the document, select **Create a new project**.
 
 You will then be presented with the **New Project** wizard dialog, as shown below:
 
@@ -280,7 +280,7 @@ This option is only recommended for situations where most of the sentences are a
 
 In this example, we will discuss the various ways to change the appearance of a graph.
 
-The first step is to open the example file **Chocolate Eclairs**. From the **Help** tab on the ribbon, click the `r keys("Example Documents")` button and then select **Chocolate Eclairs** from the menu. (When prompted about how to open the document, select **Create a new project**.) When the **New Project** wizard appears, leave the defaults and click `r keys("Finish")`.
+The first step is to open the example file *Chocolate Eclairs*. From the **Help** tab on the ribbon, click the `r keys("Example Documents")` button and then select *Chocolate Eclairs* from the menu. (When prompted about how to open the document, select **Create a new project**.) When the **New Project** wizard appears, leave the defaults and click `r keys("Finish")`.
 
 Once the project has finished loading, select **Words Breakdown** on the sidebar, then click **Word Counts** beneath that. A bar chart showing a breakdown of word categories will be displayed:
 
