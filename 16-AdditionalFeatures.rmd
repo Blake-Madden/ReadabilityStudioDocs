@@ -4,7 +4,7 @@ This chapter discusses additional features not directly related to readability. 
 
 ## Web Harvester {#web-harvester}
 
-The **Web Harvester** dialog enables you to gather (and optionally download) links from a website.
+The **Web Harvester** dialog enables you to gather (and optionally download) links from a website. To access this dialog, select the **Tools** tab on the ribbon and click the `r keys('Web Harvest')` button under **Tools & Settings**.
 
 #### Harvesting {-}
 
