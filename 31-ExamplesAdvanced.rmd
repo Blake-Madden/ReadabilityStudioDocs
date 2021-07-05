@@ -1,6 +1,6 @@
 # Advanced Examples
 
-In this chapter, we will discuss import options and text exclusion. After that, we will continue with examples showing how to customize graphs and create test bundles.
+In this chapter, we will discuss import options, text exclusion, and including addendums. After that, we will continue with examples showing how to customize graphs and create test bundles.
 
 ## Preserving Hard Returns in a Document
 
@@ -173,6 +173,65 @@ knitr::include_graphics("Images/ExclusionTagsExampleExcluding.png")
 ::: {.tipsection data-latex=""}
 All the options discussed here are also offered on the **Document** tab of the ribbon.
 :::
+
+## Including an Addendum
+
+In this example, we will analyze an updated flyer from a previous example (refer to \@ref(reviewing-a-flyer)), as well append another document to it. Continuing from the *Reviewing a Flyer* example, our fictitious software company has been purchased by a private equity firm who wishes to make some changes to the *Summer Code Camp* program.
+
+Along with policy changes to the program, they have redesigned the program’s flyer to appear more professional. Let’s first take a look at the updated flyer. From the **Help** tab on the ribbon, click the `r keys('Example Documents')` button, and select *YA Enterprise Software Symposium*. Next, you will be prompted to either create a new project or view the document; select **View document**. Once the document is opened, note how the flyer’s short text boxes have been replaced by full sentences:
+
+```{r echo=F, fig.align='center', out.width='75%'}
+knitr::include_graphics("Images/NonGenerated/YAEnterpriseSoftwareSymposium.png")
+```
+
+This means that when we import this document, we will specify that it is a narrative document and apply text exclusion. (This is in contrast to the earlier flyer, where we specified it as non-narrative, fragmented text.)
+
+Close this document and return to **Readability Studio**. Click the `r keys('Example Documents')` button and again select *YA Enterprise Software Symposium*. Next, select **Create a new project**. When the **New Project Wizard** appears, select the **Document Structure** page and select **Narrative text**:
+
+![](Images/wizarddocstructure.png)
+
+Next, select the **Test Selection** page and select **Manually select tests**. In the grid below, check **Flesch Reading Ease**:
+
+![](Images/AddendumWizardManualTests.png)
+
+Finally, click the `r keys('Finish')` button to create the project. When the project appears, select **Flesch Reading Ease** under the **Scores** section in the sidebar.
+
+![](Images/AddendumFlesch1.png)
+
+Note that this new flyer is difficult, so let’s review it. Click **Words Breakdown** on the sidebar and then select **3+ Syllables Report**. As we scroll through this window, note the highlighted, difficult words:
+
+```{r echo=F, fig.show = 'hold', out.width='50%'}
+knitr::include_graphics("Images/AddendumHighlightedText1.png")
+knitr::include_graphics("Images/AddendumHighlightedText2.png")
+```
+
+As we can see, this document could use some improving. Before we can do that, though, the new owners of our software company have also requested that a disclaimer be appended to all sign-up forms such as this. Rather than running a separate analysis on this disclaimer, we would like to append this document to our flyer and analyze them together. To do this, go to the **Home** tab of the ribbon and select **Properties**. On the **Properties** dialog, select **Project Settings** on the sidebar. Next, under the **Append Additional Document** section, click the folder button and navigate to the *examples* folder from where *Readability Studio* is installed. Select the file *Instructional Disclaimer.odt*:
+
+```{r echo=F, fig.align='center', out.width='75%'}
+knitr::include_graphics("Images/AddendumProperties.png")
+```
+
+::: {.tipsection data-latex=""}
+You can also enter *[:EXAMPLESDIR:]/Instructional Disclaimer.odt* into the **Append Additional Document** field and the program will find the file in the examples folder for you.
+:::
+
+Click `r keys('OK')` to accept. When the project finishes reloading, select **Flesch Reading Ease** under the **Scores** section again.
+
+![](Images/AddendumFlesch2.png)
+
+Note how the document is now very difficult. Click **Words Breakdown** on the sidebar and then select **3+ Syllables Report**. As we scroll to where our disclaimer was appended, note the numerous difficult words:
+
+```{r echo=F, fig.align='center', out.width='75%'}
+knitr::include_graphics("Images/AddendumHighlightedText3.png")
+```
+
+Next, click **Grammar** on the sidebar and then select **Highlighted Report**. Scrolling to the disclaimer portion of the document, note the numerous, meandering sentences:
+
+```{r echo=F, fig.align='center', out.width='75%'}
+knitr::include_graphics("Images/AddendumHighlightedText4.png")
+```
+
+At this point, we will have quite of a bit of improvements to make to both the flyer and disclaimer. (And parents may want to start looking for a different summer camp.)
 
 ## Creating a Test Bundle
 
