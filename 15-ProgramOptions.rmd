@@ -110,7 +110,7 @@ This is useful for analyzing a snapshot of your work. For example, you could ana
 
 **Document description**: Enter into this field a description of the document. Note that for some file formats, the program will pre-fill this field with the document's subject or title information.
 
-### Additional Document (e.g., policies, license agreements) {-#additional-document}
+### Append Additional Document (e.g., policies, license agreements, addendums) {-#additional-document}
 
 Enter into this field an additional document to append to the regular document. This document will be appended to the original document's text (or embedded text) during the project's analysis. This is useful if your project is analyzing a document, but also needs to include a generic template (e.g., license agreement). For example, you could specify a generic insurance policy in this field, and a customized entitlement as the main document. When the project analyzes the entitlement, the policy will be appended to the entitlement (in memory) and both will be analyzed as one document.
 
