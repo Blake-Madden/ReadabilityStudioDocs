@@ -24,6 +24,7 @@ Application.RemoveAllCustomTestBundles()
 Application.ResetSettings()
 Application.DisableAllWarnings()
 Application.SetWindowSize(700, 700)
+Application.SetReviewer("Isabelle")
 
 Application.SetCenterPrintHeader("@TITLE@")
 Application.SetRightPrintHeader("Gabi M.")
@@ -102,7 +103,7 @@ ScreenshotLib.ShowListViewItemDlg("Document", "C:\\Topics2008\\Overviews\\BatchP
 ScreenshotLib.SnapScreenshot(ImagePath .. "batchwordingerrorsviewitem." .. FileExtension)
 ScreenshotLib.CloseListViewItemDlg()
 
-ScreenshotLib.OpenProperties(OptionsPageType.AnalysisDocumentIndexing)
+ScreenshotLib.OpenOptions(OptionsPageType.AnalysisDocumentIndexing)
 ScreenshotLib.SnapScreenshot(ImagePath .. "OptionsDlg." .. FileExtension)
 ScreenshotLib.CloseOptions()
 
@@ -114,7 +115,7 @@ ScreenshotLib.ShowPrinterHeaderFooterOptions()
 ScreenshotLib.SnapScreenshot(ImagePath .. "printerheadersfooters." .. FileExtension)
 ScreenshotLib.ClosePrinterHeaderFooterOptions()
 
---List export
+-- List export
 ScreenshotLib.ShowListExpordDlg(1031,1,false,true)
 ScreenshotLib.SnapScreenshot(ImagePath .. "exportoptions." .. FileExtension)
 ScreenshotLib.CloseListExpordDlg()
@@ -137,7 +138,7 @@ ScreenshotLib.SnapScreenshot(ImagePath .. "CustomTestWizardSettings." .. FileExt
 
 ScreenshotLib.CloseCustomTestDialog()
 
---Standard project wizard
+-- Standard project wizard
 ScreenshotLib.ShowStandardProjectWizardTextSourcePage(1)
 ScreenshotLib.SnapScreenshot(ImagePath .. "wizard1." .. FileExtension)
 
@@ -149,8 +150,14 @@ ScreenshotLib.SnapScreenshot(ImagePath .. "webpath." .. FileExtension)
 ScreenshotLib.ShowStandardProjectWizardTestByDocumentTypePage(4)
 ScreenshotLib.SnapScreenshot(ImagePath .. "wizarddoctypelitselected." .. FileExtension)
 
-ScreenshotLib.ShowStandardProjectWizardDocumentStructurePage(1, false, false)
+ScreenshotLib.ShowStandardProjectWizardDocumentStructurePage(1, false, false, true)
+ScreenshotLib.SnapScreenshot(ImagePath .. "wizarddocstructurehardreturns." .. FileExtension)
+
+ScreenshotLib.ShowStandardProjectWizardDocumentStructurePage(1, false, false, false)
 ScreenshotLib.SnapScreenshot(ImagePath .. "wizarddocstructure." .. FileExtension)
+
+ScreenshotLib.ShowStandardProjectWizardDocumentStructurePage(2, false, false, false)
+ScreenshotLib.SnapScreenshot(ImagePath .. "wizarddocstructurenonnarrative." .. FileExtension)
 
 ScreenshotLib.ShowStandardProjectWizardTestByIndustryPage(2)
 ScreenshotLib.SnapScreenshot(ImagePath .. "wizardindustry." .. FileExtension)
@@ -169,14 +176,14 @@ ScreenshotLib.SnapScreenshot(ImagePath .. "wizardreadabilitymethods." .. FileExt
 
 ScreenshotLib.CloseStandardProjectWizard()
 
---DDX is really weird with this page for some reason on Vista, so we need to get this separately
+-- DDX is really weird with this page for some reason on Vista, so we need to get this separately
 ScreenshotLib.ShowStandardProjectWizardLanguagePage()
 ScreenshotLib.ShowStandardProjectWizardTestByDocumentTypePage(2)
 ScreenshotLib.SnapScreenshot(ImagePath .. "wizarddoctypetechselected." .. FileExtension)
 ScreenshotLib.CloseStandardProjectWizard()
 
---Batch project wizard
-ScreenshotLib.ShowBatchProjectWizardTextSourcePage("Z:\\Docs\\ReadabilityStudio\\Topics")
+-- Batch project wizard
+ScreenshotLib.ShowBatchProjectWizardTextSourcePage("Z:\\Testing\\Comparisons\\RS Validation\\Topics2008")
 ScreenshotLib.SnapScreenshot(ImagePath .. "wizardbatchselectfilesloaded." .. FileExtension)
 ScreenshotLib.BatchProjectWizardTextSourcePageSetFiles()
 ScreenshotLib.SnapScreenshot(ImagePath .. "wizardbatchselectfiles." .. FileExtension)
@@ -830,7 +837,70 @@ sp:CloseProperties()
 
 sp:Close(false)
 
---Graph editing example
+-- hard returns example
+sp = StandardProject(
+         Application.GetAbsoluteFilePath(
+            Debug.GetScriptFolderPath(),
+            "../../Examples/ReadabilityStudio/Job Posting.odt"))
+sp:SetParagraphsParsingMethod(ParagraphParse.EachNewLineIsAParagraph)
+sp:SelectWindow(SideBarSection.Grammar, HighlightedReportType.GrammarHighlightedIssues)
+ScreenshotLib.SnapScreenshotOfTextWindow(ImagePath .. "JobPostingHighlightedText." .. FileExtension,
+    HighlightedReportType.GrammarHighlightedIssues,257,399)
+sp:Close(false)
+
+-- Flyer example
+sp = StandardProject(
+         Application.GetAbsoluteFilePath(
+            Debug.GetScriptFolderPath(),
+            "../../Examples/ReadabilityStudio/Summer Code Camp.odt"))
+sp:SetTextExclusion(TextExclusionType.DoNotExcludeAnyText)
+sp:AddTest(Tests.Forcast)
+sp:SelectWindow(SideBarSection.WordsBreakdown, HighlightedReportType.ThreePlusSyllableHighlightedWords)
+ScreenshotLib.SnapScreenshotOfTextWindow(ImagePath .. "SummerCodeCampUpperHalf1." .. FileExtension,
+    HighlightedReportType.ThreePlusSyllableHighlightedWords,111,149)
+ScreenshotLib.SnapScreenshotOfTextWindow(ImagePath .. "SummerCodeCampUpperHalf2." .. FileExtension,
+    HighlightedReportType.ThreePlusSyllableHighlightedWords,452,505)
+ScreenshotLib.SnapScreenshotOfTextWindow(ImagePath .. "SummerCodeCampLowerHalf." .. FileExtension,
+    HighlightedReportType.ThreePlusSyllableHighlightedWords,620,873)
+sp:Close(false)
+
+-- addendum example
+ScreenshotLib.ShowStandardProjectWizardManualTestSelectionPage("Flesch Reading Ease")
+ScreenshotLib.SnapScreenshot(ImagePath .. "AddendumWizardManualTests." .. FileExtension)
+ScreenshotLib.CloseStandardProjectWizard()
+
+sp = StandardProject(
+         Application.GetAbsoluteFilePath(
+            Debug.GetScriptFolderPath(),
+            "../../Examples/ReadabilityStudio/YA Enterprise Software Symposium.odt"))
+sp:SetTextExclusion(TextExclusionType.ExcludeIncompleteSentences)
+sp:AddTest(Tests.Flesch)
+sp:ExportGraph(GraphType.Flesch, ImagePath .. "AddendumFlesch1." .. FileExtension)
+sp:SelectWindow(SideBarSection.WordsBreakdown, HighlightedReportType.ThreePlusSyllableHighlightedWords)
+ScreenshotLib.SnapScreenshotOfTextWindow(ImagePath .. "AddendumHighlightedText1." .. FileExtension,
+    HighlightedReportType.ThreePlusSyllableHighlightedWords,330,432)
+ScreenshotLib.SnapScreenshotOfTextWindow(ImagePath .. "AddendumHighlightedText2." .. FileExtension,
+    HighlightedReportType.ThreePlusSyllableHighlightedWords,770,1102)
+
+sp:SetAppendedDocumentFilePath(
+         Application.GetAbsoluteFilePath(
+            Debug.GetScriptFolderPath(),
+            "../../Examples/ReadabilityStudio/Instructional Disclaimer.odt"))
+
+sp:OpenProperties(OptionsPageType.ProjectSettings)
+ScreenshotLib.SnapScreenshot(ImagePath .. "AddendumProperties." .. FileExtension, 1083, 1080)
+sp:CloseProperties()
+
+sp:ExportGraph(GraphType.Flesch, ImagePath .. "AddendumFlesch2." .. FileExtension)
+sp:SelectWindow(SideBarSection.WordsBreakdown, HighlightedReportType.ThreePlusSyllableHighlightedWords)
+ScreenshotLib.SnapScreenshotOfTextWindow(ImagePath .. "AddendumHighlightedText3." .. FileExtension,
+    HighlightedReportType.ThreePlusSyllableHighlightedWords,3341,4299)
+sp:SelectWindow(SideBarSection.Grammar, HighlightedReportType.GrammarHighlightedIssues)
+ScreenshotLib.SnapScreenshotOfTextWindow(ImagePath .. "AddendumHighlightedText4." .. FileExtension,
+    HighlightedReportType.GrammarHighlightedIssues,4374,5158)
+sp:Close()
+
+-- Graph editing example
 sp = StandardProject(ValidationFolder .. "Chocolate Eclairs.txt")
 
 sp:SelectWindow(SideBarSection.Statistics, GraphType.WordBarChart)
