@@ -276,6 +276,56 @@ To see what the outlier range is, click on the **Summary Statistics** icon in th
 
 This option is only recommended for situations where most of the sentences are an acceptable length, but a few (very) long sentences skew the average. This option is useful for finding these extreme sentences.
 
+## Reviewing a Flyer
+
+In this example, we will analyze a flyer for a summer program being offered by a local software company. This flyer consists of short text boxes designed to grab the attention of young adults interested in learning computer programming. Of interest is that this document contains a few sentences, but the bulk of its content are simple text boxes.
+
+Almost all readability formulas use sentence length as a factor. Because of this, short text blocks like these are traditionally excluded and only the full sentences are analyzed. For this document, however, we prefer to analyze everything since so much of its content are disjointed text boxes.
+
+First, let's view the document. From the **Help** tab on the ribbon, click the `r keys('Example Documents')` button, and select *Summer Code Camp*. Next, you will be prompted to either create a new project or view the document; select **View document**. Once the document is opened, note how the flyer mostly contains simple text boxes:
+
+```{r echo=F, fig.align='center', out.width='75%'}
+knitr::include_graphics("Images/NonGenerated/SummerCodeCampFlyer.png")
+```
+
+Rather than excluding these and only analyzing the few remaining sentences, we will analyze everything. Also, we will only use a test that is designed to not rely on sentence lengths.
+
+Close this document and return to *Readability Studio*. Click the `r keys('Example Documents')` button and again select *Summer Code Camp*. Next, select **Create a new project**. When the **New Project Wizard** appears, select the **Document Structure** page and check **Non-narrative, fragmented text**:
+
+![](Images/wizarddocstructurenonnarrative.png)
+
+::: {.notesection data-latex=""}
+Going to the **Test Selection** page, selecting **Recommended test selection based on document type**, and selecting **Non-narrative form** will have the same effect.
+:::
+
+Finally, click the `r keys('Finish')` button to create the project. When the project appears, note that only the [FORCAST](#forcast-test) test was performed because it does not use sentence lengths. Also, viewing any highlighted report will show that all text was included in the analysis.
+
+We will have a somewhat high FORCAST score, so we will want to review the lengthy words and see if we can make any improvements.
+
+An interesting aspect of this flyer is that it has two audiences: children and their parents. The eye-catching text boxes in the upper half of the flyer is targeted for children, while the lower half requires parental involvement. With this in mind, we will review both halves of the flyer from these perspectives.
+
+Select **Words Breakdown** on the sidebar and then select **3+ Syllables Report**. Here we can see some phrases that could be simplified:
+
+```{r echo=F, fig.align='center', out.width='75%'}
+knitr::include_graphics("Images/SummerCodeCampUpperHalf1.png")
+```
+
+For example, we could remove *Proudly presented* or replace it with *Offered*. Scrolling down further:
+
+```{r echo=F, fig.align='center', out.width='75%'}
+knitr::include_graphics("Images/SummerCodeCampUpperHalf2.png")
+```
+
+The highlighted line above could be rewritten to something like *New to programming? No Problem!*.
+
+Scrolling to the bottom, we can review the second half of this flyer. The content here is meant for parents and their children to fill out together.
+
+```{r echo=F, fig.align='center', out.width='75%'}
+knitr::include_graphics("Images/SummerCodeCampLowerHalf.png")
+```
+
+Although there are some longer words here, the responsible adult intended to sign this should be able to understand the content.
+
 ## Customizing a Graph {#customizing-a-graph}
 
 In this example, we will discuss the various ways to change the appearance of a graph.

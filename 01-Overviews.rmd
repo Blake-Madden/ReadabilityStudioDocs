@@ -287,6 +287,7 @@ Finally, *Readability Studio* is highly configurable. Many options, such as how 
 - Upgraded the documentation to [bookdown](https://www.bookdown.org/) format.
 - Expanded documentation for all tests.
 - Added new examples:
+  - *Reviewing a Flyer*
   - *Preserving Hard Returns in a Document*
 - Expanded the glossary.
 - Added option to either open example documents as new projects or view them in your default editor.
