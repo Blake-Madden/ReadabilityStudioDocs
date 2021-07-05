@@ -276,7 +276,7 @@ To see what the outlier range is, click on the **Summary Statistics** icon in th
 
 This option is only recommended for situations where most of the sentences are an acceptable length, but a few (very) long sentences skew the average. This option is useful for finding these extreme sentences.
 
-## Reviewing a Flyer
+## Reviewing a Flyer {#reviewing-a-flyer}
 
 In this example, we will analyze a flyer for a summer program being offered by a local software company. This flyer consists of short text boxes designed to grab the attention of young adults interested in learning computer programming. Of interest is that this document contains a few sentences, but the bulk of its content are simple text boxes.
 
@@ -290,7 +290,7 @@ knitr::include_graphics("Images/NonGenerated/SummerCodeCampFlyer.png")
 
 Rather than excluding these and only analyzing the few remaining sentences, we will analyze everything. Also, we will only use a test that is designed to not rely on sentence lengths.
 
-Close this document and return to *Readability Studio*. Click the `r keys('Example Documents')` button and again select *Summer Code Camp*. Next, select **Create a new project**. When the **New Project Wizard** appears, select the **Document Structure** page and check **Non-narrative, fragmented text**:
+Close this document and return to *Readability Studio*. Click the `r keys('Example Documents')` button and again select *Summer Code Camp*. Next, select **Create a new project**. When the **New Project Wizard** appears, select the **Document Structure** page and select **Non-narrative, fragmented text**:
 
 ![](Images/wizarddocstructurenonnarrative.png)
 
