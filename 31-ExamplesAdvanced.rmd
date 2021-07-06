@@ -26,13 +26,17 @@ Because these are terse, unterminated lines of text, they will also be excluded 
 
 At this point, we can add tests and begin reviewing this (rather suspect) job posting.
 
+\newpage
+
 ## Excluding Text from an Analysis {#excluding-text-from-analysis}
 
 When reviewing a document, it is usually preferable to ignore certain items, such as headers and citations (refer to \@ref(how-text-is-excluded) for more information). In this example, we will discuss the various methods for excluding these items.
 
 The first step is to open the example file *Danielson-Bryan*. From the **Help** tab, click the `r keys("Example Documents")` button and then select *Danielson-Bryan* from the menu. (When prompted about how to open the document, select **Create a new project**.) When the **New Project** wizard appears, leave the defaults and click `r keys("Finish")`. A warning about an incomplete sentence being included because of its length will appear:
 
-![](Images/NonGenerated/ExclusionExampleIncompleteSentWarning.png)
+```{r echo=F, fig.align='center', out.width='75%'}
+knitr::include_graphics("Images/NonGenerated/ExclusionExampleIncompleteSentWarning.png")
+```
 
 For now click `r keys("OK")`, we will review this sentence later in this example.
 
@@ -140,6 +144,8 @@ At this point, all that remains in the analysis is the actual prose—all “noi
 All the options discussed here are also available on the **Document** tab of the ribbon.
 :::
 
+\newpage
+
 ## Excluding Placeholders and Blocks of Text {#excluding-placeholders}
 
 Continuing from the [previous example](#excluding-text-from-analysis) (refer to \@ref(excluding-text-from-analysis)), we will now discuss how to exclude specific blocks of text.
@@ -174,6 +180,8 @@ knitr::include_graphics("Images/ExclusionTagsExampleExcluding.png")
 All the options discussed here are also offered on the **Document** tab of the ribbon.
 :::
 
+\newpage
+
 ## Including an Addendum
 
 In this example, we will analyze an updated flyer from a previous example (refer to \@ref(reviewing-a-flyer)), as well append another document to it. Continuing from the *Reviewing a Flyer* example, our fictitious software company has been purchased by a private equity firm who wishes to make some changes to the *Summer Code Camp* program.
@@ -196,7 +204,9 @@ Next, select the **Test Selection** page and select **Manually select tests**. I
 
 Finally, click the `r keys('Finish')` button to create the project. When the project appears, select **Flesch Reading Ease** under the **Scores** section in the sidebar.
 
-![](Images/AddendumFlesch1.png)
+```{r echo=F, fig.align='center', out.width='75%'}
+knitr::include_graphics("Images/AddendumFlesch1.png")
+```
 
 Note that this new flyer is difficult, so let’s review it. Click **Words Breakdown** on the sidebar and then select **3+ Syllables Report**. As we scroll through this window, note the highlighted, difficult words:
 
@@ -217,7 +227,9 @@ You can also enter *[:EXAMPLESDIR:]/Instructional Disclaimer.odt* into the **App
 
 Click `r keys('OK')` to accept. When the project finishes reloading, select **Flesch Reading Ease** under the **Scores** section again.
 
-![](Images/AddendumFlesch2.png)
+```{r echo=F, fig.align='center', out.width='75%'}
+knitr::include_graphics("Images/AddendumFlesch2.png")
+```
 
 Note how the document is now very difficult. Click **Words Breakdown** on the sidebar and then select **3+ Syllables Report**. As we scroll to where our disclaimer was appended, note the numerous difficult words:
 
@@ -232,6 +244,8 @@ knitr::include_graphics("Images/AddendumHighlightedText4.png")
 ```
 
 At this point, we will have quite of a bit of improvements to make to both the flyer and disclaimer. (And parents may want to start looking for a different summer camp.)
+
+\newpage
 
 ## Creating a Test Bundle
 

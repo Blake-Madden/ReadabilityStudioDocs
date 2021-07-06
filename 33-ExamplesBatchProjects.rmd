@@ -55,12 +55,14 @@ To view a breakdown of all the documents and their respective test scores, click
 To view any document's scores in a vertical layout, double-click on its row in this list to display the **View Item** dialog:
 
 ```{r echo=F, fig.align='center', out.width='75%'}
-knitr::include_graphics("Images/viewitemrawscores.png)
+knitr::include_graphics("Images/viewitemrawscores.png")
 ```
 
 The distribution of these raw scores can also be graphically viewed. Click on the **Score Box Plots** icon on the project sidebar to view the box plots, and click on the **Histograms** icon to view the histograms. Box plots show the spread of each test's scores, whereas histograms show a test's scores divided into groups. For example, below is a histogram showing the Flesch-Kincaid scores:
 
-![](Images/histogrades.png)
+```{r echo=F, fig.align='center', out.width='75%'}
+knitr::include_graphics("Images/histogrades.png")
+```
 
 Judging from this graph, we have quite a few difficult documents in this batch. There are 11 files in the 12–13 range, which is not a comfortable reading level. Refer to \@ref(reviewing-batch-histograms) and \@ref(reviewing-batch-box-plots) for further information.
 
@@ -74,7 +76,9 @@ Other tabs in the **Grammar** section are also available to help improve your do
 
 Once some of the documents have been revised, you can reload the batch project with the `r keys("F5")` button on your keyboard. As we can see in this updated Flesch-Kincaid histogram, there is already some improvement in this batch. There are no longer any documents scoring above the 12^th^ grade, and only 10 documents remain in the 10–12 grade range.
 
-![](Images/histoimproved.png)
+```{r echo=F, fig.align='center', out.width='75%'}
+knitr::include_graphics("Images/histoimproved.png")
+```
 
 \newpage
 
@@ -132,6 +136,8 @@ Here, we can sort by group or scores and see how the groups compare. In the abov
 
 Grouping is also shown in the readability graphs. For example, if we included a Fry graph, then it may appear as such:
 
-![](Images/FryGrouped.png)
+```{r echo=F, fig.align='center', out.width='75%'}
+knitr::include_graphics("Images/FryGrouped.png")
+```
 
 Here, we can see the *Tests* group again scoring rather high, as much of this group’s documents are clustering in the higher grade ranges.
