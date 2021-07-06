@@ -109,11 +109,11 @@ The messages in this report are displayed such that:
 
 This information can be useful if you are experiencing issues with loading a document.
 
-## Select Labelling {#select-labelling}
+## Select Labeling {#select-labeling}
 
-When adding documents to a batch project, you will be prompted about how to label them. Labelling is a useful way of either grouping your documents or applying a description to them.
+When adding documents to a batch project, you will be prompted about how to label them. Labeling is a useful way of either grouping your documents or applying a description to them.
 
-After selecting a group of documents, you will be presented with this dialog to specify how labelling should be done. On this dialog, you can select whether to use your documents' descriptions as their labels, or to use a single label to group them by.
+After selecting a group of documents, you will be presented with this dialog to specify how labeling should be done. On this dialog, you can select whether to use your documents' descriptions as their labels, or to use a single label to group them by.
 
 ::: {.optionssection data-latex=""}
 **Use documents' descriptions (will be loaded during import)**: Select this to use each document's own description as its label. This is useful when document names may not be descriptive enough; this will show the document's description next to its name.
