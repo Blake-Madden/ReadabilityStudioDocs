@@ -18,13 +18,13 @@ Select **Batch Project** and click the `r keys("OK")` button to proceed to the *
 
 ![](Images/wizardbatchselectfiles.png)
 
-Select **English** as the document language. Next, you can add files from a folder, website, spreadsheet, or archive to the project. We will be reviewing files from a folder, so click the `r keys("Add folder(s)")` button. You will be presented with the [**Select Directory**](#select-directory) dialog:
+Select **English** as the document language. Next, you can add files from a folder, website, spreadsheet, or archive to the project. We will be reviewing files from a folder, so click the `r keys("Add folder...")` button. You will be presented with the [**Select Directory**](#select-directory) dialog:
 
 ```{r echo=F, fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/selectdirectory.png")
 ```
 
-Enter the path to your document folder in the top field. We will want to search for files inside of this folder and its subfolders, so leave **Search directories recursively** checked. Click the `r keys("OK")` button to accept, and the program will begin its file search. After the program is finished searching for documents, you will return to the **Select Files** dialog. Note how all of the files that were found are now included in the file list:
+Enter the path to your document folder in the top field. We will want to search for files inside of this folder and its subfolders, so leave **Search directories recursively** checked. Click the `r keys("OK")` button to accept, and you will then be prompted about how to label the documents. Leave the defaults and click `r keys("OK")` and the program will begin its file search. After the program is finished searching for documents, you will return to the **New Project Wizard**. Note how all the files that were found are now included in the file list:
 
 ![](Images/wizardbatchselectfilesloaded.png)
 
@@ -54,7 +54,9 @@ To view a breakdown of all the documents and their respective test scores, click
 
 To view any document's scores in a vertical layout, double-click on its row in this list to display the **View Item** dialog:
 
-![](Images/viewitemrawscores.png)
+```{r echo=F, fig.align='center', out.width='75%'}
+knitr::include_graphics("Images/viewitemrawscores.png)
+```
 
 The distribution of these raw scores can also be graphically viewed. Click on the **Score Box Plots** icon on the project sidebar to view the box plots, and click on the **Histograms** icon to view the histograms. Box plots show the spread of each test's scores, whereas histograms show a test's scores divided into groups. For example, below is a histogram showing the Flesch-Kincaid scores:
 
@@ -73,3 +75,63 @@ Other tabs in the **Grammar** section are also available to help improve your do
 Once some of the documents have been revised, you can reload the batch project with the `r keys("F5")` button on your keyboard. As we can see in this updated Flesch-Kincaid histogram, there is already some improvement in this batch. There are no longer any documents scoring above the 12^th^ grade, and only 10 documents remain in the 10–12 grade range.
 
 ![](Images/histoimproved.png)
+
+\newpage
+
+## Adding Descriptive Labels to Documents
+
+Sometimes documents that we receive do not have descriptive names that are easily recognizable. An example of this are downloaded webpages that may have names such as *index.html* or *2A67B2H.html*. In this example, we will show how to include descriptive labels next to our documents in a batch so that we can distinguish between them.
+
+On the **Home** tab of the ribbon, click the `r keys('New')` button. When prompted for which type of project to create, select **Batch Project**. Once the **New Project Wizard** appears, click the `r keys('Add folder...')` button. On the **Select Directory** dialog, enter the folder path containing your documents and then click `r keys('OK')`. Now we will be shown the **Select Labeling** dialog:
+
+```{r echo=F, fig.align='center', out.width='50%'}
+knitr::include_graphics("Images/GroupLabelDescSelected.png")
+```
+
+On this dialog, we can either specify a single label for all documents or use the documents’ metadata to create unique descriptions for each one. For this example, we are wanting to include unique, descriptive labels for each document, so leave **Use documents’ descriptions** selected and click `r keys('OK')`.
+
+Now, the program will load the files from the folder that we had selected. For example, below is a list of files where each one has the same name:
+
+![](Images/wizardbatchselectfilessamenames.png)
+
+Because we had selected **Use documents’ descriptions** for our labeling, then the titles from the documents will be extracted when the analysis begins. From there, these titles will be shown as descriptive labels next to each document in the results. Click `r keys('Finish')` to begin the analysis, and once the project appears, select **Raw Scores** under **Readability Scores**:
+
+```{r echo=F, fig.align='center', out.width='50%'}
+knitr::include_graphics("Images/BatchDescLabelsScores.png")
+```
+
+Note how there is a **Label** column next to the **Document** column. Despite the documents all having the same name, we can use this column will help us differentiate between them.
+
+\newpage
+
+## Grouping Documents in a Batch
+
+Sometimes when creating a batch, we may want to group the documents within it. For example, clusters of documents within the batch may be from different websites, authors, or studies. By adding group labels to these clusters, we can compare them in the results. In this example, we will show how to add group labels to a batch of documents and how to view them in the results.
+
+On the **Home** tab of the ribbon, click the `r keys('New')` button. When prompted for which type of project to create, select **Batch Project**. When the **New Project Wizard** appears, click the `r keys('Add folder...')` button. On the **Select Directory** dialog, enter the folder path containing your documents and then click `r keys('OK')`. Now we will be shown the **Select Labeling** dialog.
+
+On this dialog, we can either specify a single label for all documents or use the documents’ metadata to create unique descriptions for each one. For this example, we are wanting to group this folders’ documents together, so select **Use a grouping label**, enter a label (e.g., *Notes*) and click `r keys('OK')`.
+
+```{r echo=F, fig.align='center', out.width='50%'}
+knitr::include_graphics("Images/GroupLabelNotes.png")
+```
+
+Repeat this process with another folder, but enter a different grouping label. For example, we could select a folder of help examples and apply the label *Examples* to it:
+
+```{r echo=F, fig.align='center', out.width='50%'}
+knitr::include_graphics("Images/GroupLabelExamples.png")
+```
+
+After adding your documents, click `r keys('Finish')`. When the project appears, select **Raw Scores** under **Readability Scores**. Here we can see a list of documents, along with their group labels next to them:
+
+```{r echo=F, fig.align='center', out.width='75%'}
+knitr::include_graphics("Images/BatchGroupLabelsScores.png")
+```
+
+Here, we can sort by group or scores and see how the groups compare. In the above example, we can see that the *Tests* group is scoring poorly.
+
+Grouping is also shown in the readability graphs. For example, if we included a Fry graph, then it may appear as such:
+
+![](Images/FryGrouped.png)
+
+Here, we can see the *Tests* group again scoring rather high, as much of this group’s documents are clustering in the higher grade ranges.

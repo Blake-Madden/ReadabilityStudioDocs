@@ -290,6 +290,8 @@ Finally, *Readability Studio* is highly configurable. Many options, such as how 
   - *Reviewing a Flyer*
   - *Preserving Hard Returns in a Document*
   - *Including an Addendum*
+  - *Adding Descriptive Labels to Documents*
+  - *Grouping Documents in a Batch*
 - Expanded the glossary.
 - Added option to either open example documents as new projects or view them in your default editor.
 - Updated citations to MLA 8^th^ edition format.
