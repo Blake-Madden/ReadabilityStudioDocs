@@ -139,26 +139,26 @@ Table: Logic functions
 ::: {.minipage data-latex="{\textwidth}"}
 | Function | Description |
 | :-- | :-- |
-| ABS(x) | Absolute value of x. |
-| ATAN(x) | Arc tangent of x. |
-| CEIL(x) | Returns the smallest integer not less than x. CEIL(-3.2) = -3, CEIL(3.2) = 4. |
-| COS(x) | Cosine of x, returns the cosine of the angle X in radians. |
-| COSH(x) | Hyperbolic cosine of x. |
-| COT(x) | Cotangent of x. |
-| EXP(x) | Exponential function (Euler to the power of x). |
-| FLOOR(x) | Returns the largest integer not greater than x. FLOOR(-3.2) = -4, FLOOR(3.2) = 3. |
-| LN(x) | Natural logarithm of x (base Euler). |
-| LOG(x) | Common logarithm of x (base 10). |
+| ABS(x) | Absolute value of *x*. |
+| ATAN(x) | Arc tangent of *x*. |
+| CEIL(x) | Smallest integer not less than *x*. CEIL(-3.2) = -3, CEIL(3.2) = 4. |
+| COS(x) | Cosine of the angle *x* in radians. |
+| COSH(x) | Hyperbolic cosine of *x*. |
+| COT(x) | Cotangent of *x*. |
+| EXP(x) | Euler to the power of *x*. |
+| FLOOR(x) | Returns the largest integer not greater than *x*. FLOOR(-3.2) = -4, FLOOR(3.2) = 3. |
+| LN(x) | Natural logarithm of *x* (base Euler). |
+| LOG(x) | Common logarithm of *x* (base 10). |
 | MAX(value,value2,...) | Returns the highest value from a specified range of values. |
 | MIN(value,value2,...) | Returns the lowest value from a specified range of values. |
-| POWER(base,exponent) | The Power function raises Base to any power. For fractional exponents, Base must be greater than 0. |
+| POWER(base,exponent) | Raises *base* to any power. For fractional exponents, *base* must be greater than 0. |
 | RAND() | Generates a random floating point number within the range of 0 and 1. |
-| ROUND(x, n) | Returns the number x rounded to n decimal places. (n is optional and defaults to zero.) ROUND(-11.6, 0) = 12, ROUND(-11.6) = 12, ROUND(1.5, 0) = 2, ROUND(1.55, 1) = 1.6, ROUND(3.1415, 3) = 3.142. |
-| SIGN(x) | Returns the sign of x. x<0 returns -1, x=0 returns 0, and x>0 returns 1). |
-| SIN(x) | Sine of x, which returns the sine of the angle X in radians. |
-| SINH(x) | Hyperbolic sine of x. |
-| SQRT(x) | Square root of x. |
-| TAN(x) | Tangent of x. |
+| ROUND(x,n) | Number *x* rounded to *n* decimal places. (*n* is optional and defaults to zero.) ROUND(-11.6, 0) = 12, ROUND(-11.6) = 12, ROUND(1.5, 0) = 2, ROUND(1.55, 1) = 1.6, ROUND(3.1415, 3) = 3.142. |
+| SIGN(x) | Sign of *x*. *x*<0 returns -1, *x*=0 returns 0, and *x*>0 returns 1). |
+| SIN(x) | Sine of the angle *x* in radians. |
+| SINH(x) | Hyperbolic sine of *x*. |
+| SQRT(x) | Square root of *x*. |
+| TAN(x) | Tangent of *x*. |
 | TRUNC(x) | Discards the fractional part of a number (e.g., TRUNC(-3.2) is -3, TRUNC(3.2) is 3). |
 
 Table: Math functions
@@ -185,14 +185,7 @@ Table: Custom familiar word tests functions
 
 ::: {.minipage data-latex="{\textwidth}"}
 <!--
-Have to manually format the footnotes in here for numerous reasons; this is the best way to get this to format
-properly in LaTex.
-
-kable has compile issues with threeparttable and full-width tables, and using kable also means
-that we have to use column_spec with a hard coded column width. This means the table won't wrap precisely like
-the tables above and below it.
-
-As for markdown, using the proper footnote method causes the footnotes to be letters instead of numbers because
+Using the proper footnote method causes the footnotes to be letters instead of numbers because
 we are in a minipage. (The minipage is to keep the footnotes under the table, and not the end of the page.)
 So, to create MLA footnotes, we have to create psuedo footnotes below the table.
 -->
