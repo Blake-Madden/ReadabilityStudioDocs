@@ -100,7 +100,7 @@ Note how *http://www.jstor.org/* is now excluded:
 knitr::include_graphics("Images/ExclusionExampleUrlExcludedNow.png")
 ```
 
-Other items, such as proper nouns and numbers can also be excluded. Go to the **Document Indexing** options, check **Also exclude numerals** and **Also exclude proper nouns**, and click `r keys("OK")`. Then scroll to the top of the report window. First note how numbers, such as the page citation and computer series, are now excluded:
+Other items, such as proper nouns\index{proper nouns!excluding} and numbers\index{numerals!excluding} can also be excluded. Go to the **Document Indexing** options, check **Also exclude numerals** and **Also exclude proper nouns**, and click `r keys("OK")`. Then scroll to the top of the report window. First note how numbers, such as the page citation and computer series, are now excluded:
 
 ```{r echo=F, fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/ExclusionExampleNumbersExcludedNow.png")

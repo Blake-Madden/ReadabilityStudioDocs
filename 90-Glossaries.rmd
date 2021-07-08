@@ -64,7 +64,7 @@ A [cloze](#cloze) procedure is a test given to readers to measure their comprehe
 
 :::: {.glsentry data-latex=''}
 ::: {.glsterm data-latex=''}
-interrobang
+interrobang\index{interrobangs}
 :::
 ::: {.glsdef data-latex=''}
 The combination of a question mark and exclamation point at the end of a sentence. Interrobangs are shown as either two separate characters (*?!* or *!?*) or a single character (*‽*).
@@ -73,7 +73,7 @@ The combination of a question mark and exclamation point at the end of a sentenc
 
 :::: {.glsentry data-latex=''}
 ::: {.glsterm data-latex=''}
-polysyllabic
+polysyllabic\index{polysyllabic}
 :::
 ::: {.glsdef data-latex=''}
 Technically speaking, this means any word containing more than 1 syllable. In the case of some tests (e.g., Wheeler-Smith\index{Wheeler-Smith!polysyllabic words}), this term is used in this context. Other tests’ sources, however, tend to use this term to describe words of 3 or more syllables. Because of this inconsistency, it is recommended to avoid using this term and instead state explicitly the intention of a given test.
@@ -82,7 +82,16 @@ Technically speaking, this means any word containing more than 1 syllable. In th
 
 :::: {.glsentry data-latex=''}
 ::: {.glsterm data-latex=''}
-unit
+synalepha\index{synalepha}
+:::
+::: {.glsdef data-latex=''}
+The blending of word sounds together often found in poetry.
+:::
+::::
+
+:::: {.glsentry data-latex=''}
+::: {.glsterm data-latex=''}
+unit\index{sentences!units}
 :::
 ::: {.glsdef data-latex=''}
 A section of text ending with a period, exclamation mark, question mark, interrobang, colon, semicolon, or dash. Lengthy, complex sentences generally contain more than one unit.

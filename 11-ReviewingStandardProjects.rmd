@@ -159,15 +159,15 @@ The **Report** and **Tabular Report** windows display the document's statistics 
 - Number of paragraphs and average number of sentences per paragraph.
 - Number of sentences and average number of words per sentence.
 - Number and percentage of difficult sentences.
-- Number of [units](#glossary)/independent clauses. This statistic is only available if [**Extended Information**](#options-summary-report) is enabled.
+- Number of [units](#glossary)\index{sentences!units}/independent clauses\index{independent clauses|see{sentences units}}. This statistic is only available if [**Extended Information**](#options-summary-report) is enabled.
 - Number of interrogative sentences (questions).
 - Number of exclamatory sentences.
 - Number of words.
 - Number of unique words.
 - Number of syllables and average number of syllables per word.
 - Number of characters (with and without punctuation) and average number of characters per word.
-- Number and percentage of numerals.
-- Number and percentage of proper nouns (not available for German projects).
+- Number and percentage of numerals\index{numerals}.
+- Number and percentage of proper nouns\index{proper nouns} (not available for German projects).
 - Number and percentage of total (and unique) monosyllabic words.
 - Number and percentage of total (and unique) 3+ syllable words.
 - Number and percentage of total (and unique) hard [SMOG](#smog-test)\index{SMOG!word statistics} words. This statistic is only available if SMOG is included in the project.

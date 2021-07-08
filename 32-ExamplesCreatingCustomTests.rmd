@@ -128,7 +128,7 @@ Next, we will define which other word lists will be included in our test. Becaus
 
 ![](Images/CustomTestExample2WordSettingsFinished.png)
 
-The remaining logic that we must define is how to count proper nouns and numerals. Select the **Proper Nouns & Numerals** page:
+The remaining logic that we must define is how to count proper\index{proper nouns!custom tests} nouns and numerals\index{numerals!custom tests}. Select the **Proper Nouns & Numerals** page:
 
 ![](Images/CustomTestTreat.png)
 
@@ -227,7 +227,7 @@ We will not be using any other words for our test, so leave the other word lists
 
 ![](Images/CustomIndexTestExampleWordSettingsFinished.png)
 
-The remaining logic that we must define is how to handle proper nouns and numerals. Select the **Proper Nouns & Numerals** page:
+The remaining logic that we must define is how to handle proper nouns\index{proper nouns!custom tests} and numerals. Select the **Proper Nouns & Numerals** page:
 
 ![](Images/CustomTestTreat.png)
 

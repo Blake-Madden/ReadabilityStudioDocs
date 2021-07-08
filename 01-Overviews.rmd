@@ -215,7 +215,7 @@ Finally, *Readability Studio* is highly configurable. Many options, such as how 
 - Added a graph to visualize Lix index scores.
 - Added a graph to visualize German Lix index scores.
 - Added a graph to visualize Danielson-Bryan 2 scores.
-- Rix now uses sentence units in its calculation to better match the test's recommendations.
+- Rix now uses sentence units\index{sentences!units} in its calculation to better match the test's recommendations.
 - Expanded the difficulty-level descriptions for the German Lix tests.
 - Redesigned Flesch chart to look more like the version from *The Art of Readable Writing*.
 - Instruction label now shown on all Flesch charts (not just blank ones).
@@ -572,7 +572,7 @@ Finally, *Readability Studio* is highly configurable. Many options, such as how 
 - Consolidated **end of paragraph** and **sentence deduction** options into one section.
 - Reworded **incomplete sentences** section in the options to **text exclusion**.
 - Added new text exclusion method for including headers and sub-headers (as full sentences), but excluding all other incomplete sentences.
-- **Independent clause count** statistic now included in the statistics report. An independent clause is a section of text which ends with a period, exclamation mark, question mark, [interrobang](#glossary), colon, semicolon, or dash.
+- **Independent clause count** statistic now included in the statistics report. An independent clause is a section of text which ends with a period, exclamation mark, question mark, [interrobang](#glossary)\index{interrobangs}, colon, semicolon, or dash.
 - Mode now included in Standard projects’ test score statistics.
 - Batch project now includes valid n, range, standard error, skewness, and kurtosis in the aggregated statistics.
 - "+" is now added to maximum level test scores.

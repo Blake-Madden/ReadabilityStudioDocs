@@ -205,7 +205,7 @@ Cloze scores such as these are the criteria used to validate most readability fo
 
 Some readability formulas produce predicted cloze scores (rather than grade levels). A predicted cloze score represents an estimation of a passage's mean score if it were made into a cloze test and given to a group of students. This can be useful when selecting passages to use for cloze tests.
 
-## Proper Nouns in the Difficult Word Lists {#proper-nouns-in-lists}
+## Proper Nouns\index{proper nouns!in difficult word lists} in the Difficult Word Lists {#proper-nouns-in-lists}
 
 When reviewing your difficult word lists, you may notice that some proper nouns are displayed with additional information. This is to help discern how many times the given word is considered unfamiliar in the document (for certain tests).
 

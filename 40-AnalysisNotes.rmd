@@ -199,7 +199,7 @@ The second syllable-counting method is to use an algorithm. These algorithms gen
 
 Different algorithms should be used for different languages. The rules for vowel-blocks, silent *e*’s, and number counting can greatly vary between languages. For example, *85* would be two syllables in English (*eight five*), whereas in Spanish[^spanishSyllabizerFootnote] it would be four syllables (*o-cho cin-co*). To account for this, *Readability Studio* uses the proper syllabizer based on the [language](#project-settings) that you specify for your project.
 
-Finally, for readability analysis, syllables should be counted on a word-by-word basis and not use synalepha. Synalepha is the blending of word sounds together often found in poetry. Thus, it is generally not suggested to analyze text which has a poetic meter.
+Finally, for readability analysis, syllables should be counted on a word-by-word basis and not use synalepha\index{synalepha}. Synalepha is the blending of word sounds together often found in poetry. Thus, it is generally not suggested to analyze text which has a poetic meter.
 
 [^silentEFootnote]: An exception for silent *e* is made for English syllabizing.
 [^spanishSyllabizerFootnote]: For Spanish text, a specialized version of the Cuayáhuitl (412–415) algorithm is used.

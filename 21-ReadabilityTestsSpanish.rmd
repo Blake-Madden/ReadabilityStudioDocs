@@ -132,7 +132,7 @@ The Gilliam-Peña-Mountain graph formula is:
 
 This test is designed for 100-word samples, with 3 samples being recommended for best results. ([Normalization](#glossary) can also be used to analyze larger samples or entire documents.)
 
-Note that numerals are fully syllabized for this test. For example, “1945” will be counted as nine syllables (“u-no”-“nu-e-ve”-“cua-tro”-“cin-co”).\index{Gilliam-Peña-Mountain|)}
+Note that numerals\index{numerals!Gilliam-Peña-Mountain} are fully syllabized for this test. For example, “1945” will be counted as nine syllables (“u-no”-“nu-e-ve”-“cua-tro”-“cin-co”).\index{Gilliam-Peña-Mountain|)}
 
 \newpage
 ## Lix {#lix-spanish}
@@ -181,7 +181,7 @@ Where:
 |     | from 30 sentences                       |
 +-----+-----------------------------------------+
 
-Like SMOG, this test fully syllabizes numerals (i.e., sounds them out), so the program overrides your [numeral syllabication](#document-analysis) setting for this test. It also excludes lists and tables, but includes headers and footers (Contreras et al. 23). (SMOG does not explicitly follow this rule.)
+Like SMOG, this test fully syllabizes numerals\index{numerals!SOL} (i.e., sounds them out), so the program overrides your [numeral syllabication](#document-analysis) setting for this test. It also excludes lists and tables, but includes headers and footers (Contreras et al. 23). (SMOG does not explicitly follow this rule.)
 
 Note that this test uses the high-precision version of the SMOG formula. This is recommended by the authors to avoid any rounding issues when converting scores between Spanish and English (Contreras et al. 24).
 

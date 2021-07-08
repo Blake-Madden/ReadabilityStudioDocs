@@ -364,7 +364,7 @@ The ELF score of a sentence is calculated by counting the number of syllables ab
 In any sentence, count each syllable above one per word.
 :::
 
-The above sentence contains three polysyllabic words: any (2), sentence (2), above (2), and syllable (3). In this case, “any,” “sentence,” and “above” each have 1 syllable above 1, and “syllable” has 2 syllables above one. Adding these values will yield a score of 5 (1+1+1+2 = 5).
+The above sentence contains three polysyllabic\index{polysyllabic} words: any (2), sentence (2), above (2), and syllable (3). In this case, “any,” “sentence,” and “above” each have 1 syllable above 1, and “syllable” has 2 syllables above one. Adding these values will yield a score of 5 (1+1+1+2 = 5).
 
 This process is repeated for every sentence, and then these scores are averaged. A simpler method is shown below:
 
@@ -453,7 +453,7 @@ Where:
 
 Initially, this test was named New Reading Ease Formula (Kincaid et al., *Derivation* 14), but was later referred to as Flesch-Kincaid (Kincaid et al., *Development* 19).
 
-Note that this test sounds out numerals' digits when syllabizing. For example, “1918” will be counted as four syllables (“one”-“nine”-“one”-“eight”). This behavior can be adjusted from the [**Options**](#readability-test-options) dialog if you prefer a different numeral syllabizing method.
+Note that this test sounds out numerals'\index{numerals!Flesch-Kincaid} digits when syllabizing. For example, “1918” will be counted as four syllables (“one”-“nine”-“one”-“eight”). This behavior can be adjusted from the [**Options**](#readability-test-options) dialog if you prefer a different numeral syllabizing method.
 
 ::: {.notesection data-latex=""}
 The simplified version of this formula uses a lower precision calculation. It was originally offered for making a manual calculation of this test easier. It is recommended to use the higher-precision formula, but the simplified version is also available in the program.
@@ -502,7 +502,7 @@ Where:
 
 Table: Flesch Reading Ease index table
 
-Note that this test treats numerals as monosyllabic words by default. This behavior can be changed from the [**Options**](#readability-test-options) dialog.
+Note that this test treats numerals\index{numerals!Flesch Reading Ease} as monosyllabic words by default. This behavior can be changed from the [**Options**](#readability-test-options) dialog.
 
 Along with the raw score, a chart is also available to visualize the score's meaning:
 
@@ -604,7 +604,7 @@ The Fry graph instructions are:
 
 This test is designed for 100-word samples, with 3 samples being recommended for best results. ([Normalization](#glossary) can also be used to analyze larger samples or entire documents.)
 
-Note that numerals are fully syllabized for this test. For example, *1945* will be counted as four syllables (*one*-*nine*-*four*-*five*).\index{Fry|)}
+Note that numerals\index{numerals!Fry} are fully syllabized for this test. For example, *1945* will be counted as four syllables (*one*-*nine*-*four*-*five*).\index{Fry|)}
 
 \newpage
 ## Gunning Fog\index{Gunning Fog|(ii} {#gunning-fog-test}
@@ -613,7 +613,7 @@ The Gunning Fog readability formula (39-41) calculates the grade level of a docu
 
 Complex words are words that contain three or more syllables, with the exception of:
 
-- Proper nouns.
+- Proper nouns.\index{proper nouns!Gunning Fog}
 - Words made three syllables by adding *ed* or *es* (e.g., *created* or *trespasses*).
 - Compound words composed of simpler words. *Readability Studio* considers hyphenated words to be compound words (e.g., *horse-power* or *and/or*). Note that forward slashes (*/*) are treated like hyphens in this context.
 
@@ -646,6 +646,7 @@ Where:
 \index{Gunning Fog|)}
 
 \newpage
+
 ## Harris-Jacobson Wide Range\index{Harris-Jacobson Wide Range|(ii} {#harris-jacobson}
 
 The Harris-Jacobson Wide Range Readability Formula readability test (19-30; Chapter 3) calculates the grade level of a document based on sentence length and number of unique unfamiliar words. Words are unfamiliar if they do not appear on a list of common words that are known to most second-grade students. The following are also considered familiar:
@@ -654,9 +655,9 @@ The Harris-Jacobson Wide Range Readability Formula readability test (19-30; Chap
 - Regular plural and possessive forms of any common word (i.e., *s*, *es*, and *ies* endings). Irregular forms are not familiar.
 - Adjectival or adverbial forms of common words. This includes forms with endings such as *ly*, *est*, *er*, and *ily*.
 - Hyphenated words if both parts of the word are common words. For example, *apple-tree* and *and/or* would be familiar. (Note that forward slashes (*/*) are treated like hyphens in this context.) Although this rule is not explicitly stated in *Basic Reading Vocabularies*, it is recommended because both [Spache](#spache-test) and [New Dale-Chall](#dale-chall-test) apply it.
-- All proper nouns.
+- All proper nouns.\index{proper nouns!Harris-Jacobson}
 
-Note that numerals are entirely excluded from this test and are considered neither familiar nor unfamiliar.
+Note that numerals\index{numerals!Harris-Jacobson} are entirely excluded from this test and are considered neither familiar nor unfamiliar.
 
 The Wide Range Readability Formula is based on previous Harris-Jacobson formulas designed for preprimer through eighth-grade reader-level materials. The Wide Range variation was trained on a new series of basal readers (30; Chapter 3). This series included:
 
@@ -886,7 +887,7 @@ Modified SMOG differs from [SMOG](#smog-test) in the following ways:
 
 Because of these adjustments, it will generally produce scores closer to other tests than SMOG does—in particular, the Fry graph (L. Smith 129).
 
-The author's decision to not count repeated polysyllabic words was a major factor in making this test more appropriate for primary readers. As he explains, in a particular pre-primer book “the word 'kangaroo' appeared 52 times . . . it was the only polysyllabic word in the book. To count the word more than once would have inflated the readability score to an unrealistic level” (130).
+The author's decision to not count repeated difficult words was a major factor in making this test more appropriate for primary readers. As he explains, in a particular pre-primer book “the word 'kangaroo' appeared 52 times . . . it was the only polysyllabic word in the book. To count the word more than once would have inflated the readability score to an unrealistic level” (130).
 
 The steps for calculating Modified SMOG are:
 
@@ -895,7 +896,7 @@ The steps for calculating Modified SMOG are:
 - Calculate the square root of this count and round it.
 - If this square root is 4 or more, then add 1. Otherwise, the square root should remain the same. This will be the grade level score.
 
-Note that numerals are fully syllabized (i.e., sounded out) for this test, so the program overrides your [numeral syllabication](#numsyllable) setting when calculating it.
+Note that numerals\index{numerals!Modified SMOG} are fully syllabized (i.e., sounded out) for this test, so the program overrides your [numeral syllabication](#numsyllable) setting when calculating it.
 
 This test requires a 10-sentence sample, with 3 samples being recommended for best results. ([Normalization](#glossary) can also be used to analyze larger samples or entire documents.)\index{Modified SMOG|)}
 
@@ -953,7 +954,7 @@ The New Dale-Chall\index{Dale-Chall!zzzzz@\igobble|seealso{New Dale-Chall}}reada
 - Adjectival and verb forms of common words with the following endings: *d*, *ed*, *ied*, *ing*, *s*, *es*, *ies*, *r*, *er*, *est*, *ier*, *iest*.
 - Compound and hyphenated words if both parts of the word are common words. For example, *long-haired* and *and/or* would be familiar. Note that forward slashes (*/*) are also treated as compound-word punctuation.
 - The [first instance of any proper noun](#options-dale-chall)—all subsequent occurrences are considered familiar.
-- All numerals.
+- All numerals.\index{numerals!New Dale-Chall}
 
 ::: {.notesection data-latex=""}
 This test treats headers and subheaders as full sentences, but excludes lists and tables. The default [text exclusion](#options-text-exclusion) method will be overridden for this specific test, although this behavior can be customized from the [**Options**](#readability-test-options) dialog.
@@ -1176,7 +1177,7 @@ Where:
 | SY  | Number of syllables per 100 words |
 +-----+-----------------------------------+
 
-Note that this test treats numerals as monosyllabic words, in conjunction with the original Flesch test.
+Note that this test treats numerals\index{numerals!(Powers-Sumner-Kearl) Flesch} as monosyllabic words, in conjunction with the original Flesch test.
 
 \index{Powers-Sumner-Kearl!recalculated tests!Flesch Reading Ease|)}
 
@@ -1198,7 +1199,7 @@ knitr::include_graphics("Images/raygorgraph.png")
 ::: {.minipage data-latex="{\textwidth}"}
 The Raygor Estimate instructions are:
 
-- Extract a 100-word passage from the selection. If the material is long, take subsamples from the beginning, middle, and end. Numerals should be skipped.
+- Extract a 100-word passage from the selection. If the material is long, take subsamples from the beginning, middle, and end. Numerals\index{numerals!Raygor Estimate} should be skipped.
 - Count the number of sentences, estimated to the nearest tenth.
 - Count the number of words that are six or more letters.
 - Find the point on the chart.
@@ -1245,7 +1246,7 @@ Where:
 +-----+--------------------------------------+
 | X   | Number of long words (7+ characters) |
 +-----+--------------------------------------+
-| U   | Number of sentence units             |
+| U   | Number of sentence units\index{sentences!units} |
 +-----+--------------------------------------+
 
 ::: {.minipage data-latex="{\textwidth}"}
@@ -1307,7 +1308,7 @@ The simplified version of this formula uses lower precision. It was originally o
 
 This test requires 3 10-sentence samples, but [normalization](#glossary) can be used to analyze entire documents.
 
-Numerals are fully syllabized (i.e., sounded out) for this test, so the program overrides your [numeral syllabication](#numsyllable) setting when calculating it.
+Numerals\index{numerals!SMOG} are fully syllabized (i.e., sounded out) for this test, so the program overrides your [numeral syllabication](#numsyllable) setting when calculating it.
 
 Note that this test is often referred to as an acronym for “Simple Measure of Gobbledygook.” The origin of its name, however, is actually a nod to Robert Gunning's [Fog](#gunning-fog-test) index.
 
@@ -1327,8 +1328,8 @@ The Spache Revised test (Spache, *Good* 195-2003) calculates the grade level of 
 - Adjectival or adverbial forms of common words. This includes forms with endings such as *ly*, *est*, *er*, and *ily*.
 - Derivatives of common words where the function changes (e.g., an adjective changed to function as a noun) are not familiar unless explicitly on the common word list. For example, *brave* is a common word, but *bravery* would not be considered familiar.
 - Hyphenated words if both parts of the word are common words. For example, *apple-tree* and *and/or* would be familiar. Note that forward slashes (*/*) are treated like hyphens in this context.
-- All proper nouns.
-- All numerals.
+- All proper nouns.\index{proper nouns!Spache Revised}
+- All numerals\index{numerals!Spache Revised}.
 
 Spache Revised is generally used for primary age (i.e., Kindergarten to 7^th^ grade) readers to help classify school textbooks and literature. This differs from [New Dale-Chall](#dale-chall-test)\index{New Dale-Chall!compared to Spache Revised}, which is better meant for secondary age readers.
 
@@ -1376,7 +1377,7 @@ To include this list as part of your New Dale-Chall\index{New Dale-Chall!includi
 \newpage
 ## Wheeler-Smith\index{Wheeler-Smith|(ii} {#wheeler-smith}
 
-The Wheeler-Smith (397-399) test is designed for primary-age materials (Kindergarten to 4^th^ grade). This test calculates the grade level of a document based on [unit](#glossary) length and number of polysyllabic (2+ syllable) words. It should be noted that this differs from most other tests that use 3+ syllable words as a difficulty factor. The researchers selected 2+ syllable words because primary readers will have more difficulty with them than secondary and adult readers.
+The Wheeler-Smith (397-399) test is designed for primary-age materials (Kindergarten to 4^th^ grade). This test calculates the grade level of a document based on [unit](#glossary)\index{sentences!units} length and number of polysyllabic\index{polysyllabic} (2+ syllable) words. It should be noted that this differs from most other tests that use 3+ syllable words as a difficulty factor. The researchers selected 2+ syllable words because primary readers will have more difficulty with them than secondary and adult readers.
 
 Although not explicitly stated in the article, the authors' definition of “polysyllabic” as being 2+ syllable can be inferred from the example[^River] that they provided:
 
@@ -1394,11 +1395,11 @@ Some had glass leaves. Others had leaves of gold.
 
 The authors reported 20 polysyllabic words in the above sample. “Wonderful” is the only 3+ syllable word in this sample, whereas there are 18 2+ syllable words. It may be inferred that the authors were considering “their” as 2 syllables, which in that case would yield 20 2+ syllable (i.e., “polysyllabic”) words.
 
-In regards to unit (i.e., sentence) length, the researchers noted that sentence lengths strongly correlated with the manually-rated grade levels. Because of this, sentence length was given a stronger weight in the formula (compared to previous formulas).
+In regards to unit\index{sentences!units} (i.e., sentence) length, the researchers noted that sentence lengths strongly correlated with the manually-rated grade levels. Because of this, sentence length was given a stronger weight in the formula (compared to previous formulas).
 
 For the building and validation of this formula, nine basic reading series were used.
 
-Finally, the authors offered recommendations while reviewing a reported score. First, if a score appears to be higher than expected, then you should exclude proper nouns and rerun the test. Second, they recommended that when assigning a book for independent reading, assign it one level below the reported score. In other words, if a book scores at the fourth-grade level, then it should be assigned to third-grade readers if they are reading it independently.
+Finally, the authors offered recommendations while reviewing a reported score. First, if a score appears to be higher than expected, then you should exclude proper nouns\index{proper nouns!Wheeler-Smith} and rerun the test. Second, they recommended that when assigning a book for independent reading, assign it one level below the reported score. In other words, if a book scores at the fourth-grade level, then it should be assigned to third-grade readers if they are reading it independently.
 
 ```{definition, wheelersmith, name="Wheeler-Smith formula"}
 $$
@@ -1416,7 +1417,7 @@ Where:
 +-----+--------------------------------------------+
 | W   | Number of words                            |
 +-----+--------------------------------------------+
-| U   | Number of units                            |
+| U   | Number of units\index{sentences!units}     |
 +-----+--------------------------------------------+
 
 :::

@@ -36,7 +36,7 @@ kableExtra::kbl(read_delim("data/AmstadConversionTable.txt", "\t", escape_double
 ```
 
 ::: {.notesection data-latex=""}
-Like Flesch Reading Ease, this test treats numerals as monosyllabic words by default. This behavior can be changed from the [**Options**](#readability-test-options) dialog.
+Like Flesch Reading Ease, this test treats numerals\index{numerals!Amstad} as monosyllabic words by default. This behavior can be changed from the [**Options**](#readability-test-options) dialog.
 :::
 
 \newpage
@@ -248,7 +248,7 @@ Where:
 +-----+--------------------------------------+
 | X   | Number of long words (7+ characters) |
 +-----+--------------------------------------+
-| U   | Number of sentence units             |
+| U   | Number of sentence units\index{sentences!units} |
 +-----+--------------------------------------+
 
 ::: {.minipage data-latex="{\textwidth}"}
@@ -283,7 +283,7 @@ Where:
 +-----+--------------------------------------+
 | X   | Number of long words (7+ characters) |
 +-----+--------------------------------------+
-| U   | Number of sentence units             |
+| U   | Number of sentence units\index{sentences!units} |
 +-----+--------------------------------------+
 
 ::: {.minipage data-latex="{\textwidth}"}
@@ -303,7 +303,7 @@ kableExtra::kbl(dplyr::as_tibble(read_delim("data/RixGermanNonFiction.txt", "\t"
 
 SMOG (Bamberger-Vanecek) (78) is a German variation of [SMOG](#smog-test) designed for secondary-age readers. This test calculates the grade level of a document based on complex-word density.
 
-Note that numerals are fully syllabized (i.e., sounded out) for this test, so the program overrides your [numeral syllabication](#numsyllable) setting when calculating it.
+Note that numerals\index{numerals!SMOG (Bamberger-Vanecek)} are fully syllabized (i.e., sounded out) for this test, so the program overrides your [numeral syllabication](#numsyllable) setting when calculating it.
 
 ```{definition, smogde, name="SMOG (Bamberger-Vanecek) formula"}
 $$
@@ -334,7 +334,7 @@ Based on the examples from Bamberger-Vanecek (78), the grade-level score should 
 \newpage
 ## Wheeler-Smith (Bamberger-Vanecek)\index{Wheeler-Smith!variations!Bamberger-Vanecek (German)} {#wheeler-smith-bamberger-vanecek}
 
-Wheeler-Smith (Bamberger-Vanecek) (77, 186) is a German variation of [Wheeler-Smith](#wheeler-smith) designed for both primary and secondary-age reading material. It calculates the grade level of a document based on [unit](#glossary) length and number of complex words.
+Wheeler-Smith (Bamberger-Vanecek) (77, 186) is a German variation of [Wheeler-Smith](#wheeler-smith) designed for both primary and secondary-age reading material. It calculates the grade level of a document based on [unit](#glossary)\index{sentences!units} length and number of complex words.
 
 ```{definition, wheelersmithde, name="Wheeler-Smith (Bamberger-Vanecek) formula"}
 $$
@@ -368,7 +368,7 @@ kableExtra::kbl(read_delim("data/WheelerSmithBV.txt", "\t", escape_double=F, tri
 ```
 
 ::: {.notesection data-latex=""}
-Although Bamberger and Vanecek (77, 186) do not specify using units instead of sentences, the use of units is assumed to match Wheeler-Smith.
+Although Bamberger and Vanecek (77, 186) do not specify using units\index{sentences!units} instead of sentences, the use of units is assumed to match Wheeler-Smith.
 
 Based on the examples from Bamberger and Vanecek (77, 186), index values should be truncated to one-point precision, not rounded.
 :::

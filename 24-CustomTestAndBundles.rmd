@@ -194,7 +194,7 @@ So, to create MLA footnotes, we have to create psuedo footnotes below the table.
 | :-- | :-- |
 | CharacterCount() | Returns the number of characters (i.e., letters and numbers). This function takes an argument specifying which text exclusion method to use: `Default`, `DaleChall`^1^, or `HarrisJacobson`^2^. | 
 | CharacterPlusPunctuationCount() | Returns the number of characters (i.e., letters and numbers) and punctuation. Note that sentence-ending punctuation is not included in this count. |
-| IndependentClauseCount() | Returns the number of units/independent clauses. A unit is a section of text ending with a period, exclamation, question mark, interrobang, colon, semicolon, or dash. |
+| IndependentClauseCount() | Returns the number of units/independent clauses\index{sentences!units}. A unit is a section of text ending with a period, exclamation, question mark, interrobang\index{interrobangs}, colon, semicolon, or dash. |
 | SentenceCount() | Returns the number of sentences. This function takes an argument specifying which text exclusion or sentence-counting method to use: `Default`, `DaleChall`, `HarrisJacobson`, or `GunningFog`^3^. |
 | SyllableCount() | Returns the number of syllables. This function takes an argument specifying which numeral syllabizing method to use: `Default`, `NumeralsFullySyllabized`, or `NumeralsAreOneSyllable`. |
 
@@ -216,9 +216,9 @@ This will be either traditional sentence counting or unit counting.
 | FamiliarWordCount() | Returns the number of familiar words (from a custom list) the document. |
 | HardFogWordCount() | Returns the number of difficult Gunning Fog words. |
 | MiniWordCount() | Returns the number of miniwords (refer to \@ref(eflaw-test)). |
-| NumeralCount() | Returns the number of numerals. |
+| NumeralCount() | Returns the number of numerals\index{numerals}. |
 | OneSyllableWordCount() | Returns the number of monosyllabic words. |
-| ProperNounCount() | Returns the number of proper nouns. |
+| ProperNounCount() | Returns the number of proper nouns.\index{proper nouns} |
 | SevenCharacterPlusWordCount() | Returns the number of words consisting of seven or more characters. |
 | SixCharacterPlusWordCount() | Returns the number of words consisting of six or more characters. |
 | ThreeSyllablePlusWordCount() | Returns the number of words consisting of three or more syllables. This function takes an argument specifying which numeral syllabizing method to use: `Default` or `NumeralsFullySyllabized`. |
@@ -339,7 +339,7 @@ This option is only recommended for when you want to find words that appear with
 
 ### Proper Nouns & Numerals {-#custom-proper-numerals}
 
-#### Proper Nouns {-}
+#### Proper Nouns\index{proper nouns!custom tests} {-}
 
 :::: {.optionssection data-latex=""}
 ::: {.optionssectiontitle data-latex=""}
@@ -353,7 +353,7 @@ Familiarity
 **Count only first occurrence of each as unfamiliar**: Select this option to consider only the first occurrence of each proper noun (that does not appear on any familiar-word list) as unfamiliar.
 ::::
 
-#### Numerals {-}
+#### Numerals\index{numerals!custom tests} {-}
 
 **Treat numerals as familiar**: Check this to also consider numeric words as familiar.
 

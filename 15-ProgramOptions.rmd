@@ -240,7 +240,7 @@ Readability Studio is available from *www.oleandersoftware.com*.
 
 If this option is selected, then *www.oleandersoftware.com* will be excluded from every analysis. This includes sentence-length, word-length, and syllable-count calculations.
 
-**Also exclude numerals**: Select this option to ignore all numbers. For example:
+**Also exclude numerals**\index{numerals!excluding}: Select this option to ignore all numbers. For example:
 
 ::: {.fancyquotes data-latex=''}
 Upon arrival at *5:30PM*, please be ready to cover the *$75* boarding fee.
@@ -254,7 +254,7 @@ Upon arrival at _____, please be ready to cover the _____ boarding fee.
 
 This option may be recommended for mathematical works which contain equations and numbers that may skew the results.
 
-**Also exclude proper nouns**: Select this option to ignore all proper names of people, places, and things. A useful example would be medical documents that contain drug names that the readers will be familiar with. Rather than penalizing the document for containing these complex product names (that cannot be substituted with simpler words), this option will entirely remove them from the analysis.
+**Also exclude proper nouns**\index{proper nouns!excluding}: Select this option to ignore all proper names of people, places, and things. A useful example would be medical documents that contain drug names that the readers will be familiar with. Rather than penalizing the document for containing these complex product names (that cannot be substituted with simpler words), this option will entirely remove them from the analysis.
 
 **Words & phrases to exclude**: Enter the path to a text file containing words and phrases to ignore into this field. Any words or phrases from this file will be excluded from all calculations. The format for this text file is a single column, where each line is a separate word or phrase. For example:
 
@@ -286,7 +286,7 @@ This phrase list can be edited by clicking the button next to this field, which 
 These options are not available if **Do not exclude any text** is selected.
 :::
 
-### Numerals {-#numsyllable}
+### Numerals\index{numerals!syllable counting} {-#numsyllable}
 
 :::: {.optionssection data-latex=""}
 ::: {.optionssectiontitle data-latex=""}
@@ -343,7 +343,7 @@ This option affects the Gunning Fog\index{Gunning Fog!customizing}, (PSK) Gunnin
 Numeral syllabication
 :::
 
-Select one of the following options to control how numerals are syllabized for Flesch\index{Flesch Reading Ease!customizing} related tests.
+Select one of the following options to control how numerals\index{numerals!Flesch Reading Ease} are syllabized for Flesch\index{Flesch Reading Ease!customizing} related tests.
 
 **Count numerals as one syllable**: Select this option to consider all numerals as monosyllabic.
 
@@ -361,7 +361,7 @@ Note that these options are not applicable if [**Also exclude numerals**](#optio
 Numeral syllabication
 :::
 
-Select from the following options to control how numerals are syllabized for Flesch-Kincaid\index{Flesch-Kincaid!customizing!syllabication}.
+Select from the following options to control how numerals\index{numerals!Flesch-Kincaid} are syllabized for Flesch-Kincaid\index{Flesch-Kincaid!customizing!syllabication}.
 
 **Sound out each digit**: Select this option to have the program sound out each digit when counting the syllables of numeric words. For example, the word *555-4778* will be considered nine syllables–read as *five-five-five-four-seven-seven-eight*.
 
@@ -376,7 +376,7 @@ Note that these options are not applicable if [**Also exclude numerals**](#optio
 
 :::: {.optionssection data-latex=""}
 ::: {.optionssectiontitle data-latex=""}
-Proper nouns
+Proper nouns\index{proper nouns!New Dale-Chall}
 :::
 
 Select one of the following options to control how proper nouns are treated by Dale-Chall\index{New Dale-Chall!customizing!proper noun classification} related tests:
@@ -607,11 +607,11 @@ The options in this section customize which features are included in the grammar
 
 The options in this section select what the spell checker should ignore.
 
-**Ignore proper nouns**: Check this to not spell check proper nouns. This is useful for excluding names and places that the spell checker may not recognize.
+**Ignore proper nouns**\index{proper nouns!ignoring in spell checker}: Check this to not spell check proper nouns. This is useful for excluding names and places that the spell checker may not recognize.
 
 **Ignore UPPERCASED words**: Check this to not spell check uppercased words (e.g., *FORTRAN* or *S.C.U.B.A.*).
 
-**Ignore numerals**: Check this to not spell check numerals. Numerals are words that consist of 50% (or more) numbers.
+**Ignore numerals**\index{numerals!ignoring in spell checker}: Check this to not spell check numerals. Numerals are words that consist of 50% (or more) numbers.
 
 **Ignore Internet and file addresses**: Check this to not spell check file paths and website addresses.
 
