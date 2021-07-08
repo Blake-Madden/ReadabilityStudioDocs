@@ -18,7 +18,7 @@ Grade-level scores are traditional displayed in U.S. (K–12+) format, be can be
 usaGradeScale <- split_column_into_table(read_tsv("data/USAGradeScale.txt",
                                          col_names=F)[[1]], 15, "Grade Levels")
 englishKeyStages <- split_column_into_table(read_tsv("data/EnglandWalesGradeScale.txt",
-                                         col_names=F)[[1]], 15, "Key Stages")
+                                         col_names=F)[[1]], 15, str_glue("Key Stages{superscript(1)}"))
 ```
 
 ```{r, echo=F, eval=knitr::is_html_output()}
@@ -32,7 +32,9 @@ kableExtra::kbl(usaGradeScale, booktabs=T, centering=T, linesep="",
 kableExtra::kbl(englishKeyStages, booktabs=T, centering=T, linesep="",
                 caption="England and Wales", align='l', escape=F) %>%
   kableExtra::kable_classic(full_width=F) %>%
-  kableExtra::kable_styling(position = "left")
+  kableExtra::kable_styling(position = "left") %>%
+  footnote(number = c(url('www.curriculum.qca.org.uk/index.aspx, www.old.accac.org.uk/index.php')),
+           escape=F, threeparttable=T)
 ```
 
 ```{r, echo=F, eval=knitr::is_latex_output()}
@@ -53,7 +55,8 @@ knitr::asis_output(glue_collapse(
     \\begin{minipage}{.5\\linewidth}
       \\caption{England and Wales}",
         ukKable,
-    "\\end{minipage}
+    "  \\footnotetext{\\textsuperscript{1} www.curriculum.qca.org.uk/index.aspx\ www.old.accac.org.uk/index.php}
+    \\end{minipage}
     \\end{table}")))
 ```
 
@@ -64,17 +67,17 @@ library(tidyverse)
 
 col1Indices <- c(1,8,15,22,29,38)
 col2Indices <- c(1,8,14,20,28,36)
-canadaTable <- tibble(V1 = c("K–12+ (Alberta)",
+canadaTable <- tibble(V1 = c(str_glue("K–12+ (Alberta){superscript(1)}"),
                              "Elementary (Kindergarten–grade 6)", "Junior High (grades 7–9)",
                              "Senior High (grades 10–12)", "College (grades 13–16)",
                              "Graduate School (grades 17–18)", "Doctorate (grade 19+)",
 
-                             "K–12+ (British Columbia)",
+                             str_glue("K–12+ (British Columbia){superscript(2)}/Yukon{superscript(3)}"),
                              "Elementary (Kindergarten–grade 7)", "Junior Secondary (grades 8–10)",
                              "Senior Secondary (grades 11–12)", "College (grades 13–16)",
                              "Graduate School (grades 17–18)", "Doctorate (grade 19+)",
 
-                             "K–12+ (Manitoba)",
+                             str_glue("K–12+ (Manitoba){superscript(4)}"),
                              "Early (Kindergarten–grade 4)",
                              "Middle (grades 5–8)",
                              "Senior (grades 9–12)",
@@ -82,7 +85,7 @@ canadaTable <- tibble(V1 = c("K–12+ (Alberta)",
                              "Graduate School (grades 17–18)",
                              "Doctorate (grade 19+)",
 
-                             "K–12+ (New Brunswick)",
+                             str_glue("K–12+ (New Brunswick){superscript(5)}"),
                              "Elementary (Kindergarten–grade 5)",
                              "Middle School (grades 6–8)",
                              "High School (grades 9–12)",
@@ -90,7 +93,7 @@ canadaTable <- tibble(V1 = c("K–12+ (Alberta)",
                              "Graduate School (grades 17–18)",
                              "Doctorate (grade 19+)",
 
-                             "K–12+ (Newfoundland & Labrador)",
+                             str_glue("K–12+ (Newfoundland {ampersand()} Labrador){superscript(6)}"),
                              "Kindergarten",
                              "Primary (grades 1–3)",
                              "Elementary (grades 4–6)",
@@ -100,7 +103,7 @@ canadaTable <- tibble(V1 = c("K–12+ (Alberta)",
                              "Graduate School (grades 17–18)",
                              "Doctorate (grade 19+)",
 
-                             "K–12+ (Northwest Territories)",
+                             str_glue("K–12+ (Northwest Territories){superscript(7)}"),
                              "Primary (Kindergarten–grade 3)",
                              "Intermediate (grades 4–6)",
                              "Junior Secondary (grades 7–9)",
@@ -109,7 +112,7 @@ canadaTable <- tibble(V1 = c("K–12+ (Alberta)",
                              "Graduate School (grades 17–18)",
                              "Doctorate (grade 19+)"),
 
-                     V2 = c("K–12+ (Nova Scotia)",
+                     V2 = c(str_glue("K–12+ (Nova Scotia){superscript(8)}"),
                             "Elementary (Primary–grade 6)",
                             "Junior High (grades 7–9)",
                             "Senior High (grades 10–12)",
@@ -117,21 +120,21 @@ canadaTable <- tibble(V1 = c("K–12+ (Alberta)",
                             "Graduate School (grades 17–18)",
                             "Doctorate (grade 19+)",
 
-                            "K–12+ (Nunavut)",
+                            str_glue("K–12+ (Nunavut){superscript(9)}"),
                             "Kindergarten (grade 0)",
                             "Grades 1–12",
                             "College (grades 13–16)",
                             "Graduate School (grades 17–18)",
                             "Doctorate (grade 19+)",
 
-                            "K–12+ (Ontario)",
+                            str_glue("K–12+ (Ontario){superscript(10)}"),
                             "Elementary (grades 1–8)",
                             "Grades 9–12",
                             "College (grades 13–16)",
                             "Graduate School (grades 17–18)",
                             "Doctorate (grade 19+)",
 
-                            "K–12+ (Prince Edward Island)",
+                            str_glue("K–12+ (Prince Edward Island){superscript(11)}"),
                             "Kindergarten",
                             "Elementary (grades 1–6)",
                             "Intermediate School (grades 7–9)",
@@ -140,7 +143,7 @@ canadaTable <- tibble(V1 = c("K–12+ (Alberta)",
                             "Graduate School (grades 17–18)",
                             "Doctorate (grade 19+)",
 
-                            "K–12+ (Saskatchewan)",
+                            str_glue("K–12+ (Saskatchewan){superscript(12)}"),
                             "Kindergarten",
                             "Elementary Level (grades 1–5)",
                             "Middle Level (grades 6–9)",
@@ -149,7 +152,7 @@ canadaTable <- tibble(V1 = c("K–12+ (Alberta)",
                             "Graduate School (grades 17–18)",
                             "Doctorate (grade 19+)",
 
-                            "Quebec",
+                            str_glue("Quebec{superscript(13)}"),
                             "Maternelle (Kindergarten)",
                             "École Primaire (grades 1–6)",
                             "École Secondaire (grades 7–11)",
@@ -157,16 +160,31 @@ canadaTable <- tibble(V1 = c("K–12+ (Alberta)",
                             "University (3 years for Bachelors Degree)",
                             "Graduate degree (2 years)",
                             "Doctoral degree", "", "")) %>%
-  mutate("V1" = kableExtra::cell_spec(V1, bold = (row_number() %in% col1Indices))) %>%
+  mutate("V1" = kableExtra::cell_spec(V1, bold = (row_number() %in% col1Indices), escape=F)) %>%
   mutate("V1" = ifelse(!(row_number() %in% col1Indices), paste0(indentation(), V1), V1)) %>%
   dplyr::rename("Grade Levels" = V1) %>%
-  mutate("V2" = kableExtra::cell_spec(V2, bold = (row_number() %in% col2Indices))) %>%
+  mutate("V2" = kableExtra::cell_spec(V2, bold = (row_number() %in% col2Indices), escape=F)) %>%
   mutate("V2" = ifelse(!(row_number() %in% col2Indices), paste0(indentation(), V2), V2)) %>%
   dplyr::rename("Grade Levels " = V2)
 
-kableExtra::kbl(canadaTable, booktabs=T, centering=T, escape=F, linesep="", caption="Canadian Provences") %>%
+kableExtra::kbl(canadaTable, longtable=T, booktabs=T, centering=T, escape=F, linesep="",
+                caption=str_glue("Canadian Provinces {ampersand()} Territories")) %>%
   kableExtra::kable_classic(full_width=F) %>%
-  kableExtra::column_spec(1, border_right=T)
+  kableExtra::column_spec(1, border_right=T) %>%
+  footnote(number = c(url('www.education.alberta.ca/media/832568/guidetoed.pdf'),
+                      url('www.bced.gov.bc.ca/reporting/glossary.php'),
+                      url('www.education.gov.yk.ca/psb/curriculum.html'),
+                      url('www.edu.gov.mb.ca/ks4/schools/gts.html'),
+                      url('www.gnb.ca/0000/anglophone-e.asp'),
+                      url('www.ed.gov.nl.ca/edu/sp/pcdbgl.htm'),
+                      url('www.ece.gov.nt.ca/Divisions/kindergarten_g12/curriculum/Elementary_Junior_Secondary_School_Handbook/Elementary_Junior_Secondary_School_Handbook.htm'),
+                      url('www.ednet.ns.ca/pdfdocs/psp/psp_03_04_full.pdf'),
+                      url('www.ntanu.ca/assets/docs/Handout-Nunavut%20Approved%20Teaching%20Resources%20Version%20(5).pdf'),
+                      url('www.edu.gov.on.ca/eng/educationFacts.html'),
+                      url('www.edu.pe.ca/curriculum/default.asp'),
+                      url('www.sasked.gov.sk.ca/branches/curr/index.shtml'),
+                      url('www.ibe.unesco.org/en/access-by-country/europe-and-north-america/canada/curricular-resources.html')),
+           escape=F, threeparttable=T)
 ```
 
 ## Cloze Scores and Readability Formulas {#cloze}
