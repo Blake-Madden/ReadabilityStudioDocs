@@ -2,56 +2,42 @@
 
 # Keyboard Shortcuts
 
-Table: Application Level
+Table: Application Level Shortcuts
 
 +-----------------------------------------+------------------------------------------------------+
 | To do this                              | Press                                                |
 +:========================================+:=====================================================+
 | Enable verbose logging                  | Hold down\                                           |
-|                                         | `r keys("Shift")` `r os_logo('windows')`\            |
-|                                         | or\                                                  |
-|                                         | `r keys("\\shift")` `r os_logo('apple')`\            |
+|                                         | `r keys("Shift")` `r os_logo('windows')`\ or `r keys("\\shift")` `r os_logo('apple')`\ |
 |                                         | while the program is loading                         |
 +-----------------------------------------+------------------------------------------------------+
 
-Table: Project Operations
+Table: Project Operations Shortcuts
 
 +-----------------------------------------+------------------------------------------------------+
 | To do this                              | Press                                                |
 +:========================================+:=====================================================+
 | Reload the active project               | `r keys('F5')`                                       |
 +-----------------------------------------+------------------------------------------------------+
-| Create a new project from the clipboard | `r keys(c('Ctrl','V'))` `r os_logo('windows')`\      | 
-|                                         |  or\                                                 |
-|                                         | `r keys(c('\\cmd','V'))` `r os_logo('apple')`        |
+| Create a new project from the clipboard | `r keys(c('Ctrl','V'))` `r os_logo('windows')`\ or `r keys(c('\\cmd','V'))` `r os_logo('apple')` | 
 +-----------------------------------------+------------------------------------------------------+
-| Save the active project                 | `r keys(c('Ctrl','S'))` `r os_logo('windows')`\      |
-|                                         |  or\                                                 |
-|                                         | `r keys(c('\\cmd','S'))` `r os_logo('apple')`        |
+| Save the active project                 | `r keys(c('Ctrl','S'))` `r os_logo('windows')`\ or `r keys(c('\\cmd','S'))` `r os_logo('apple')` |
 +-----------------------------------------+------------------------------------------------------+
-| Print the active window                 | `r keys(c('Ctrl','P'))` `r os_logo('windows')`\      |
-|                                         |  or\                                                 |
-|                                         | `r keys(c('\\cmd','P'))` `r os_logo('apple')`        |
+| Print the active window                 | `r keys(c('Ctrl','P'))` `r os_logo('windows')`\ or `r keys(c('\\cmd','P'))` `r os_logo('apple')` |
 +-----------------------------------------+------------------------------------------------------+
-| Remove the selected test                | `r keys(c('Ctrl', 'Del'))` `r os_logo('windows')`\   |
-|                                         |  or\                                                 |
-|                                         | `r keys(c('\\cmd','\\backdel'))` `r os_logo('apple')`|
+| Remove the selected test                | `r keys(c('Ctrl', 'Del'))` `r os_logo('windows')`\ or `r keys(c('\\cmd','\\backdel'))` `r os_logo('apple')` |
 +-----------------------------------------+------------------------------------------------------+
 
-Table: Editing Lists
+Table: Editing Lists Shortcuts
 
 +-----------------------------------------+------------------------------------------------------+
 | To do this                              | Press                                                |
 +:========================================+:=====================================================+
-| Removes selected item(s) from a list    | `r keys('Del')` `r os_logo('windows')`\              |
-|                                         |  or\                                                 |
-|                                         | `r keys('\\backdel')` `r os_logo('apple')`           |
+| Removes selected item(s) from a list    | `r keys('Del')` `r os_logo('windows')`\ or `r keys('\\backdel')` `r os_logo('apple')` |
 +-----------------------------------------+------------------------------------------------------+
 | Edits selected item in a list           | `r keys('Ins')`                                      |
 +-----------------------------------------+------------------------------------------------------+
-| Add a new item to a list                | `r keys(c('Ctrl','Ins'))` `r os_logo('windows')`\    |
-|                                         |  or\                                                 |
-|                                         | `r keys(c('\\cmd','Ins'))` `r os_logo('apple')`      |
+| Add a new item to a list                | `r keys(c('Ctrl','Ins'))` `r os_logo('windows')`\ or `r keys(c('\\cmd','Ins'))` `r os_logo('apple')` |
 +-----------------------------------------+------------------------------------------------------+
 
 # Glossary {#glossary}
