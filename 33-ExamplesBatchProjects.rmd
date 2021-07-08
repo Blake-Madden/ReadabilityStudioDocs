@@ -86,11 +86,11 @@ knitr::include_graphics("Images/histoimproved.png")
 
 Sometimes documents that we receive do not have descriptive names that are easily recognizable. An example of this are downloaded webpages that may have names such as *index.html* or *2A67B2H.html*. In this example, we will show how to include descriptive labels next to our documents in a batch so that we can distinguish between them.
 
-On the **Home** tab of the ribbon, click the `r keys('New')` button. When prompted for which type of project to create, select **Batch Project**. Once the **New Project Wizard** appears, click the `r keys('Add folder...')` button. On the **Select Directory** dialog, enter the folder path containing your documents and then click `r keys('OK')`. Now we will be shown the **Select Labeling** dialog:
+:::{.wrapfigure data-latex="{r}{0.5\\textwidth}" style="width: 48%;"}
+![](Images/GroupLabelDescSelected.png){width=48%}
+:::
 
-```{r echo=F, fig.align='center', out.width='50%'}
-knitr::include_graphics("Images/GroupLabelDescSelected.png")
-```
+On the **Home** tab of the ribbon, click the `r keys('New')` button. When prompted for which type of project to create, select **Batch Project**. Once the **New Project Wizard** appears, click the `r keys('Add folder...')` button. On the **Select Directory** dialog, enter the folder path containing your documents and then click `r keys('OK')`. Now we will be shown the **Select Labeling** dialog.
 
 On this dialog, we can either specify a single label for all documents or use the documents’ metadata to create unique descriptions for each one. For this example, we are wanting to include unique, descriptive labels for each document, so leave **Use documents’ descriptions** selected and click `r keys('OK')`.
 
