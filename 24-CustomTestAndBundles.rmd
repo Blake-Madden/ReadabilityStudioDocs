@@ -417,7 +417,7 @@ You can also create your own bundles. To do this, select **Add...** from the **B
 
 On the **General** page of this dialog, you will first enter a name for the bundle. (This name is how it will appear in the **Bundles** menu.) Next, you will select all the tests that you wish to include in this bundle. (Tests are available on the **Standard Tests**, **Custom Tests**, and **Vocabulary Tools** pages.)
 
-Along with selecting tests, you can also specify the range of values that a document should score within for any given test. First, on the **Goals** page, click the ![](Images/NonGenerated/add.png) button to include a new goal. Next, double click in the **Test** column to select the test. Finally, click in either the **Recommended minimum score** or **Recommended maximum score** column and enter the acceptable score range. Now, when this bundle is applied to a project, the document’s pass/fail status will be displayed in the [**Goals**](#reviewing-goals) section.
+Along with selecting tests, you can also specify the range of values that a document should score within for any given test. First, on the **Goals** page, click the add button to include a new goal. Next, double click in the **Test** column to select the test. Finally, click in either the **Recommended minimum score** or **Recommended maximum score** column and enter the acceptable score range. Now, when this bundle is applied to a project, the document’s pass/fail status will be displayed in the [**Goals**](#reviewing-goals) section.
 
 Beneath the test goals grid is another grid for creating statistics goals as well. For example, you can add a goal such as specifying the maximum average sentence length for the document.
 
