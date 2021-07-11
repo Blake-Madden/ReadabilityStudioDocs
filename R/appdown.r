@@ -143,6 +143,38 @@ less_than_or_equal_to <- function()
     { knitr::asis_output("<=") }
   }
 
+ampersand <- function()
+  {
+  if (knitr::is_latex_output())
+    { knitr::asis_output("\\&") }
+  else if (knitr::is_html_output())
+    { knitr::asis_output("&amp;") }
+  }
+
+superscript <- function(number)
+  {
+  if (knitr::is_latex_output())
+    { knitr::asis_output(sprintf("\\textsuperscript{%d}", number)) }
+  else if (knitr::is_html_output())
+    { knitr::asis_output(sprintf("<sup>%d</sup>", number)) }
+  }
+
+url <- function(text)
+  {
+  if (knitr::is_latex_output())
+    { knitr::asis_output(sprintf("\\\\url{%s}", str_replace_all(text, '\\%', '\\\\\\\\%'))) }
+  else if (knitr::is_html_output())
+    {
+    # if too long, cut it in half
+    if (stringr::str_length(text) > 100)
+      {
+      text <- paste0(stringr::str_sub(text, 1, (stringr::str_length(text)/2)-1),
+                     stringr::str_replace(stringr::str_sub(text, stringr::str_length(text)/2), '[/]', '<br />/'))
+      }
+    knitr::asis_output(text)
+    }
+  }
+
 # Instructs the LaTeX system to write a string exactly as it appears.
 # This is useful for writing something like straight quotes without them
 # being converted to smart quotes.
@@ -186,19 +218,17 @@ markdown_to_kable_cell <- function(text)
   if (knitr::is_latex_output())
     {
                # convert markdown bold tags
-    text %<>% stringr::str_replace_all("\\*\\*([\\w ()-]{1,})\\*\\*",
+    text %<>% stringr::str_replace_all("\\*\\*([\\w (),-[.]]{1,})\\*\\*",
                                         "\\\\textbf{\\1}") %>%
                # italics
-               stringr::str_replace_all("\\*([\\w ()-]{1,})\\*",
+               stringr::str_replace_all("\\*([\\w (),-[.]]{1,})\\*",
                                         "\\\\textit{\\1}") %>%
                # superscript
-               stringr::str_replace_all("\\^([\\w ()-]{1,})\\^",
+               stringr::str_replace_all("\\^([\\w (),-[.]]{1,})\\^",
                                         "\\\\textsuperscript{\\1}") %>%
                # inline code
-               stringr::str_replace_all("`([\\w ()-]{1,})`",
-                                        "\\\\texttt{\\1}") %>%
-               # newlines
-               stringr::str_replace_all("\n", "\\\\newline ")
+               stringr::str_replace_all("`([\\w (),-[.]]{1,})`",
+                                        "\\\\texttt{\\1}")
     knitr::asis_output(text)
     }
   else
@@ -212,16 +242,16 @@ markdown_to_kable_footnote <- function(text)
   if (knitr::is_latex_output())
     {
                # convert markdown bold tags
-    text %<>% stringr::str_replace_all("\\*\\*([\\w ()-]{1,})\\*\\*",
+    text %<>% stringr::str_replace_all("\\*\\*([\\w (),-[.]]{1,})\\*\\*",
                                         "\\\\\\\\textbf{\\1}") %>%
                # italics
-               stringr::str_replace_all("\\*([\\w ()-]{1,})\\*",
+               stringr::str_replace_all("\\*([\\w (),-[.]]{1,})\\*",
                                         "\\\\\\\\textit{\\1}") %>%
                # superscript
-               stringr::str_replace_all("\\^([\\w ()-]{1,})\\^",
+               stringr::str_replace_all("\\^([\\w (),-[.]]{1,})\\^",
                                         "\\\\\\\\textsuperscript{\\1}") %>%
                # inline code
-               stringr::str_replace_all("`([\\w ()-]{1,})`",
+               stringr::str_replace_all("`([\\w (),-[.]]{1,})`",
                                         "\\\\\\\\texttt{\\1}") %>%
                # newlines
                stringr::str_replace_all("\n", "\\\\\\\\newline ")
