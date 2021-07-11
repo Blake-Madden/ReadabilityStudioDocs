@@ -128,7 +128,7 @@ Click `r keys("OK")` and all instances of *punctuation* and *sentence length* ar
 knitr::include_graphics("Images/ExclusionExampleCustomWordsExcludedNow.png")
 ```
 
-Separate instances of *sentence* and *length* will still be included, they will only be excluded if they appear together to form the phrase “sentence length.” Refer to \@ref(document-analysis) for more on how custom word/phrase exclusion works.
+Separate instances of *sentence* and *length* will still be included, they will only be excluded if they appear together to form the phrase *sentence length*. Refer to \@ref(document-analysis) for more on how custom word/phrase exclusion works.
 
 Note that when excluding individual words, these words are treated as if they are not in the document at all. This means that excluding words will affect the sentences that they appear in. For example, by excluding *Danielson-Bryan*, *1*, and *206*, the first sentence will have a word count of 20 instead of 23.
 
@@ -182,7 +182,7 @@ All the options discussed here are also offered on the **Document** tab of the r
 
 \newpage
 
-## Including an Addendum
+## Including an Addendum {#addendum-example}
 
 In this example, we will analyze an updated flyer from a previous example (refer to \@ref(reviewing-a-flyer)), as well append another document to it. Continuing from the *Reviewing a Flyer* example, our fictitious software company has been purchased by a private equity firm who wishes to make some changes to the *Summer Code Camp* program.
 

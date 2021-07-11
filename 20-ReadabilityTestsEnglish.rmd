@@ -236,7 +236,7 @@ kableExtra::kbl(db2Data, booktabs=T, centering=T, align='l', escape=F) %>%
 | 30–49 | Difficult, high school level |
 | 0–29 | Very difficult, college level |
 
-Table: Flesch Reading Ease Index Table
+Table: Danielson-Bryan 2 (Flesch Reading Ease) Index Table
 
 \index{Danielson-Bryan 2|)}
 
@@ -500,13 +500,13 @@ Where:
 | 30–49 | Difficult |
 | 0–29 | Very difficult |
 
-Table: Flesch Reading Ease index table
+Table: Flesch Reading Ease index Table
 
 Note that this test treats numerals\index{numerals!Flesch Reading Ease} as monosyllabic words by default. This behavior can be changed from the [**Options**](#readability-test-options) dialog.
 
 Along with the raw score, a chart is also available to visualize the score's meaning:
 
-```{r fleschChart, echo=F, fig.cap='Flesch Chart', fig.align='center', out.width='75%'}
+```{r fleschChart, echo=F, fig.cap='Flesch chart', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/FleschChart.png")
 ```
 
@@ -579,7 +579,7 @@ In 1977, Fry extended the graph to include grades 13–16 by extrapolating the a
 
 The Fry graph is designed for both primary and secondary-age reading materials. Below is an example of a Fry graph:
 
-```{r fryGraph, echo=F, fig.cap='Fry Graph', fig.align='center', out.width='75%'}
+```{r fryGraph, echo=F, fig.cap='Fry graph', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/frygraph.png")
 ```
 
@@ -869,7 +869,7 @@ Where:
 | 26–29 | Mildly difficult |
 | 30+ | Very confusing |
 
-Table: McAlpine EFLAW index table
+Table: McAlpine EFLAW Index Table
 
 \index{McAlpine EFLAW|)}
 
@@ -1192,7 +1192,7 @@ In another experiment, Baldwin and Kaufman compared the correlations between Fry
 
 This graph is primarily used in secondary education to help classify teaching materials and books into their appropriate reading groups. Below is an example of a Raygor graph:
 
-```{r raygor, echo=F, fig.cap='Raygor Estimate Graph', fig.align='center', out.width='75%'}
+```{r raygor, echo=F, fig.cap='Raygor Estimate graph', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/raygorgraph.png")
 ```
 
@@ -1372,7 +1372,7 @@ To view this list, select the **Readability** tab, click the `r keys("Word Lists
 
 To include this list as part of your New Dale-Chall\index{New Dale-Chall!including Catholic words} scoring, select the **Tools** tab and click the `r keys("Options")` button to display the [**Options**](#options-overview) dialog. Next, expand **Readability Scores**, select **Test Options**, and then check **Include Stocker's Catholic supplement**. After selecting this option, all New Dale-Chall tests performed in new projects will include this supplement.
 
-[^Stocker]: The students involved in this study were “6,743 randomly selected Catholic fourth-graders attending 136 parochial schools throughout the country” (Stocker 87-88).
+[^Stocker]: The students involved in this study were “6,743 randomly selected Catholic fourth-graders attending 136 parochial schools throughout the country” (87-88).
 
 \newpage
 ## Wheeler-Smith\index{Wheeler-Smith|(ii} {#wheeler-smith}
@@ -1432,6 +1432,6 @@ Then, find the index value in the following chart to acquire the final readabili
 | Third grade | 19.1–26.5 |
 | Fourth grade | 26.6–34.5 |
 
-Table: Wheeler-Smith grade-level conversion table
+Table: Wheeler-Smith Grade-level Conversion Table
 
 [^River]: This sample was taken from *Down Singing River*, Betts-Welch, American Book Company.\index{Wheeler-Smith|)}

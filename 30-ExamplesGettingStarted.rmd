@@ -342,6 +342,8 @@ knitr::include_graphics("Images/SummerCodeCampLowerHalf.png")
 
 Although there are some longer words here, the responsible adult intended to sign this should be able to understand the content.
 
+Refer to \ref(addendum-example) for a continuation of this example where the flyer is revised and has an addendum added to it.
+
 \newpage
 
 ## Customizing a Graph {#customizing-a-graph}

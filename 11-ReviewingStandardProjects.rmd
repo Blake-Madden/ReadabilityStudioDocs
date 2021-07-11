@@ -38,7 +38,7 @@ To view these graphs, click on the **Test Graphs & Charts** icon in a [standard 
 
 Let us first review a Fry\index{Fry} graph:
 
-```{r fryGraph2, echo=F, fig.cap='Fry Graph', fig.align='center', out.width='75%'}
+```{r fryGraph2, echo=F, fig.cap='Fry graph', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/frygraph.png")
 ```
 
@@ -48,7 +48,7 @@ Running through each slice is a gray line, which is a separator to help show the
 
 If the data point does not fall inside of a slice then the test will fail. For example, the Raygor\index{Raygor Estimate} graph below indicates that the document's overly-long words caused the test to fail:
 
-```{r raygorBadGrade, echo=F, fig.cap='Raygor Graph', fig.align='center', out.width='75%'}
+```{r raygorBadGrade, echo=F, fig.cap='Raygor Estimate graph', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/raygorbadgrade.png")
 ```
 
@@ -74,7 +74,7 @@ The other difference between the two graphs is that they are inverted from one a
 
 The FRASE\index{FRASE} graph is similar to Fry in terms of factors used and axis orientation. Its most influential factor (i.e., word vs. sentence difficulty) is determined in the same manner, and its Y (sentence) axis is descending. Below is an example of a FRASE graph:
 
-```{r frase2, echo=F, fig.cap='Frase Graph', fig.align='center', out.width='75%'}
+```{r frase2, echo=F, fig.cap='FRASE graph', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/FraseGraph.png")
 ```
 
@@ -90,13 +90,13 @@ In the above graph, we can see that the intersection of the factors is 175 and 7
 
 The Flesch\index{Flesch Reading Ease!chart} chart plots a document's factors onto a pair of “rulers” and then connects them to determine the Flesch score. This score ranges from 0 (“very difficult”) to 100 (“very easy”). Below is an example of a Flesch chart:
 
-```{r fleschChart2, echo=F, fig.cap='Flesch Chart', fig.align='center', out.width='75%'}
+```{r fleschChart2, echo=F, fig.cap='Flesch chart', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/FleschChart.png")
 ```
 
 Danielson-Bryan 2\index{Danielson-Bryan 2!plot}—a variation of Flesch Reading Ease— includes a similar graphic, which also includes grade-level information:
 
-```{r db2Plot2, echo=F, fig.cap='Danielson-Bryan 2 Plot', fig.align='center', out.width='75%'}
+```{r db2Plot2, echo=F, fig.cap='Danielson-Bryan 2 plot', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/DB2Plot.png")
 ```
 
@@ -120,7 +120,7 @@ Note that if you plot any of these graphs, its score can also be viewed in the [
 
 As a final note, [batch projects](#creating-batch-project) include multi-document versions of all these graphs:
 
-```{r multifry, echo=F, fig.cap='Multiple documents on a Fry Graph', fig.align='center', out.width='75%'}
+```{r multifry, echo=F, fig.cap='Multiple documents on a Fry graph', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/MultipleFry.png")
 ```
 
@@ -235,7 +235,7 @@ The different types of text reports that may be shown are:
 
 **Harris-Jacobson (Unfamiliar)**: This text report contains the document with all the [Harris-Jacobson](#harris-jacobson)\index{Harris-Jacobson Wide Range!reviewing unfamiliar words} unfamiliar words highlighted. The Harris-Jacobson word list is a collection of words that are considered to be familiar to most primary-age readers. Words in the document that are not found on this list may be less familiar to younger readers and hence more difficult. This window is only available if the Harris-Jacobson test is included in the project.
 
-You can change both the font and highlighting color by opening the [**Project Properties**](#options-overview) dialog and clicking the [**Highlighted Reports**](#options-highlighted-reports) icon. Note that changing these options from the **Project Properties** dialog will only affect the current project. If you want to make changes to any future projects, then go to the **Options** dialog from the **Tools** tab instead.
+You can change both the font and highlighting color by opening the [**Project Properties**](#options-overview) dialog and selecting [**Highlighted Reports**](#options-highlighted-reports). Note that changing these options from the **Project Properties** dialog will only affect the current project. If you want to make changes to any future projects, then go to the **Options** dialog from the **Tools** tab instead.
 
 A **Word Counts** [bar chart](#options-bar-charts) is also included in this section. This graph shows the total counts of each type of word (e.g., 3+ syllable words) and how each category compares to one another. This bar chart will appear like this:
 
@@ -323,9 +323,9 @@ After opening a project, click on the **Grammar** icon on the project sidebar an
 
 Note that each sentence is followed by its respective word count (in parentheses).
 
-You can change both the font and highlighting color by opening the [**Project Properties**](#options-overview) dialog and clicking the [Highlighted Reports](#options-highlighted-reports) icon. Note that changing these options from the **Project Properties** dialog will only affect the current project. If you want to make configuration changes for future projects, then go to the **Options** dialog from the **Tools** tab instead.
+You can change both the font and highlighting color by opening the [**Project Properties**](#options-overview) dialog and selecting [**Highlighted Reports**](#options-highlighted-reports). Note that changing these options from the **Project Properties** dialog will only affect the current project. If you want to make configuration changes for future projects, then go to the **Options** dialog from the **Tools** tab instead.
 
-For documents with numerous sentences over twenty words, it is recommended to use outlier searching. Open the **Project Properties** dialog, click the [**Document Indexing**](#document-analysis) icon, and select the option **Outside sentence-length outlier range**. This will make it so that only the extremely long sentences (compared to the other sentences in the document) are highlighted. This helps pinpoint the most troublesome sentences that need to be shortened.
+For documents with numerous sentences over twenty words, it is recommended to use outlier searching. Open the **Project Properties** dialog, select [**Document Indexing**](#document-analysis), and select the option **Outside sentence-length outlier range**. This will make it so that only the extremely long sentences (compared to the other sentences in the document) are highlighted. This helps pinpoint the most troublesome sentences that need to be shortened.
 
 ### Reviewing Lowercased Sentences\index{sentences!lowercased} {-#reviewing-lowercased-sentences}
 
@@ -425,11 +425,11 @@ Misspelling searching is applied to all sentences. [Incomplete sentences](#how-t
 
 To view any misspelling in its original context, double-click on it. This will take you to the [**Highlighted Report**](#reviewing-standard-grammar) page with that word selected.
 
-To add a word(s) to your dictionary, first select them in this list. Then, click on the **Document** tab, and click the arrow below the `r keys("Spell Checker")` button. Then, select **Add Selected Words** and the selected words in this list will no longer be reported as misspellings.
+To add words to your dictionary, first select them in this list. Then, click on the **Document** tab, and click the arrow next to the `r keys("Spell Checker")` button. Then, select **Add Selected Words** and the selected words in this list will no longer be reported as misspellings.
 
-To edit your custom dictionary, click on the arrow beneath the `r keys("Spell Checker")` button and select **Edit...** to show the **Edit Custom Dictionary** dialog. From here, you can add, remove, or edit the words in your custom dictionary.
+To edit your custom dictionary, click on the arrow next to the `r keys("Spell Checker")` button and select **Edit...** to show the **Edit Custom Dictionary** dialog. From here, you can add, remove, or edit the words in your custom dictionary.
 
-To change your spell-checking options, click on the arrow beneath the `r keys("Spell Checker")` button and select **Settings...** to edit your [grammar](#options-grammar) settings.
+To change your spell-checking options, click on the arrow next to the `r keys("Spell Checker")` button and select **Settings...** to edit your [grammar](#options-grammar) settings.
 
 Note that if there are no misspellings in your document, then this window will not be included.
 
