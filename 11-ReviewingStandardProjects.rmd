@@ -10,7 +10,7 @@ The top area of the **Scores** window is the score grid. In here there are four 
 - **Grade Level**: the minimum grade level that the test determined the document is suitable for.
 - **Reader Age**: the minimum reader age that the test determined the document is suitable for. The reader age is determined from the test's score. It can be shown as either a [range](#reading-age) for the entire grade, or be rounded to the semester that the grade score falls into.
 - **Scale Value**: the index value for tests that use special scales.
-- [**Predicted Cloze Score**](#cloze): the estimated score if the document were to be used for a cloze test. Note that cloze scores will be displayed in percentage format (i.e., 0–100) instead of floating-point format (i.e., .0–1.0) for easier reading.
+- [**Predicted Cloze Score**](#cloze)\index{cloze}: the estimated score if the document were to be used for a cloze test. Note that cloze scores will be displayed in percentage format (i.e., 0–100) instead of floating-point format (i.e., .0–1.0) for easier reading.
 
 Note that most tests have just one type of result (e.g., grade level), so non-applicable columns are left blank. For example, note below that the [Gunning Fog](#gunning-fog-test) result is a grade level of 8.3. This translates to an eighth grade level reader (in his or her third month of class). Because this test only returns a grade level and age, the **Scale Value** and **Predicted Cloze Score** columns are empty. Another example is the result for the [Flesch Reading Ease](#flesch-test) test, which has a scale value of 79. This test has its own scale (instead of a grade level) so its age, grade level, and cloze columns are empty.
 
@@ -22,7 +22,7 @@ Select any test in the results grid to display an explanation of its score in th
 
 Along with an explanation of the test's results, the factors that it uses to determine difficulty are also shown. For example, if **Sentence Length** and **Word Length** have an *X* next to them, then these variables are used in the test's equation. To lower the score for a given test, try to improve its factors (e.g., lower the document's average sentence length).
 
-Finally, the averages (means) of your test scores and ages are displayed at the bottom of the results window. Their respective [modes](#stat-terms), [medians](#stat-terms), and [standard deviations](#stat-terms) are also included if [**Extended Information**](#options-summary-report) is enabled. Note that scores are truncated when searching for the grade-level mode. For example, *6.7* and *6.2* will both be treated as *6*. Mode generally requires discrete data to produce meaningful results; therefore, grade-level scores are converted to their base grades for this statistic.
+Finally, the averages (means)\index{mean} of your test scores and ages are displayed at the bottom of the results window. Their respective [modes](#stat-terms)\index{mode}, [medians](#stat-terms)\index{median}, and [standard deviations](#stat-terms)\index{standard deviation} are also included if [**Extended Information**](#options-summary-report) is enabled. Note that scores are truncated when searching for the grade-level mode. For example, *6.7* and *6.2* will both be treated as *6*. Mode generally requires discrete data to produce meaningful results; therefore, grade-level scores are converted to their base grades for this statistic.
 
 When calculating these statistics, failed test scores are treated as missing observations and not included. For example, let us say that you included 5 tests, but one of them could not be calculated. In this case, the valid 4 scores will be added and divided by 4 (not 5) to acquire the means. Also, grade range scores–such as *5–6* from [New Dale-Chall](#dale-chall-test)\index{New Dale-Chall!grade-range averaging}–will be converted to its own average (e.g., *5–6* will be 5.5).
 
@@ -193,7 +193,7 @@ After opening a project, click on the **Words Breakdown** icon on the project si
 
 The types of difficult-word lists that may be shown are:
 
-**3+ Syllables**: This list displays all the document's words that are three or more syllables. It also displays how many syllables each word contains and their respective frequency counts. This window is only available if the document contains 3+ syllable words.
+**3+ Syllables**: This list displays all the document's words that are three or more syllables\index{syllables!reviewing in the results}. It also displays how many syllables each word contains and their respective frequency counts. This window is only available if the document contains 3+ syllable words.
 
 **6+ Characters**: This list displays all the document's words that are six or more characters. It also displays how many characters each word contains and their respective frequency counts. This window is only available if the document contains 6+ character words.
 
@@ -243,7 +243,7 @@ A **Word Counts** [bar chart](#options-bar-charts) is also included in this sect
 
 In the above example, we can see that there are 70 unfamiliar New Dale-Chall words, but only 42 3+ syllable words. From this, we could infer that we should first concentrate on replacing these unfamiliar words. Lists of these words can be found by clicking on the [**Difficult Words**](#reviewing-word-breakdowns) icon on the project sidebar.
 
-Finally, a histogram of the words (grouped by syllable count) is also available:
+Finally, a histogram of the words (grouped by syllable count)\index{syllables!reviewing in the results} is also available:
 
 ```{r echo=F, fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/SyllableCountHistogram.png")
@@ -257,7 +257,7 @@ The total value of a word count reflects the number of words, including repeats 
 
 See also \@ref(proper-nouns-in-lists) for more information about proper-noun handling.
 
-## Sentences Breakdown {#reviewing-sentences-breakdown}
+## Sentences Breakdown\index{sentences!reviewing in the results|(ii} {#reviewing-sentences-breakdown}
 
 After opening a project, click on the **Sentences Breakdown** icon on the project sidebar to view a breakdown of the document's sentences. This includes the following:
 
@@ -277,7 +277,7 @@ If the test scores are indicating that the document is too difficult for your ta
 
 Note that if there are no long sentences in your document, then this window will not be included.
 
-A box plot of the sentence lengths (measured by word count) is also available:
+A box plot\index{box plots|sentence length} of the sentence lengths (measured by word count) is also available:
 
 ```{r echo=F, fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/SentencesBoxplot.png")
@@ -313,6 +313,8 @@ Although black squares refer to the longer sentences, this may not imply that th
 
 To find the location of a sentence, click on the square and its sentence number will be shown. Also, if the sentence's length is an outlier (compared to the other sentences), then a preview of it will also be shown.
 
+\index{sentences!reviewing in the results|)}
+
 ## Grammar {#reviewing-standard-grammar}
 
 After opening a project, click on the **Grammar** icon on the project sidebar and select the **Highlighted report** subitem. This text report will display the document with its difficult sentences and wordy items highlighted.
@@ -325,7 +327,7 @@ You can change both the font and highlighting color by opening the [**Project Pr
 
 For documents with numerous sentences over twenty words, it is recommended to use outlier searching. Open the **Project Properties** dialog, click the [**Document Indexing**](#document-analysis) icon, and select the option **Outside sentence-length outlier range**. This will make it so that only the extremely long sentences (compared to the other sentences in the document) are highlighted. This helps pinpoint the most troublesome sentences that need to be shortened.
 
-### Reviewing Lowercased Sentences {-#reviewing-lowercased-sentences}
+### Reviewing Lowercased Sentences\index{sentences!lowercased} {-#reviewing-lowercased-sentences}
 
 After opening a project, click on the **Grammar** icon on the project sidebar and select the **Lowercased Sentences** subitem. This window will display a list of all sentences that begin with lowercased words (which is usually a typo).
 

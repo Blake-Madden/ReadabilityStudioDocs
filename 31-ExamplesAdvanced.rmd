@@ -28,7 +28,7 @@ At this point, we can add tests and begin reviewing this (rather suspect) job po
 
 \newpage
 
-## Excluding Text from an Analysis {#excluding-text-from-analysis}
+## Excluding Text\index{text exclusion!example} from an Analysis {#excluding-text-from-analysis}
 
 When reviewing a document, it is usually preferable to ignore certain items, such as headers and citations (refer to \@ref(how-text-is-excluded) for more information). In this example, we will discuss the various methods for excluding these items.
 
@@ -60,7 +60,7 @@ The first is the sentence *Where:.* Sentences that end with a semicolon and are 
 
 ![](Images/ExclusionExampleAggressiveList.png)
 
-Checking this option will exclude any valid sentence (containing less than 10 words) that is inside of a block of incomplete sentences. Click `r keys("OK")` and note how *Where:* is now excluded:
+Checking this option will exclude\index{sentences!aggressively excluding} any valid sentence (containing less than 10 words) that is inside of a block of incomplete sentences. Click `r keys("OK")` and note how *Where:* is now excluded:
 
 ```{r echo=F, fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/ExclusionExampleWhereExcluded.png")
@@ -146,7 +146,7 @@ All the options discussed here are also available on the **Document** tab of the
 
 \newpage
 
-## Excluding Placeholders and Blocks of Text {#excluding-placeholders}
+## Excluding Placeholders\index{text exclusion!blocks within placeholders} and Blocks of Text {#excluding-placeholders}
 
 Continuing from the [previous example](#excluding-text-from-analysis) (refer to \@ref(excluding-text-from-analysis)), we will now discuss how to exclude specific blocks of text.
 

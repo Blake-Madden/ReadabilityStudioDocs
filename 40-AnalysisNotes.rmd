@@ -2,7 +2,7 @@
 
 # Analysis Notes
 
-## How Text is Excluded {#how-text-is-excluded}
+## How Text\index{text exclusion} is Excluded\index{exclusion|see{text exclusion}} {#how-text-is-excluded}
 
 Most experts recommend ignoring items such as chapter titles, list items, and table of contents when calculating reading levels. One reason that these items should be ignored is because they falsely lower the average sentence length (ASL). For example, chapter titles are usually just a couple of words. If you treat every section and chapter title as a regular sentence, then these short “sentences” will dramatically lower the ASL. In turn, this will falsely lower most of your test scores. The other reason to ignore these items is because they are not usually part of the main content, but rather dividers or sectional markers. These items are read, but it is the narrative content that readers may struggle with. Therefore, it is the content that should be our main focus, and titles and list items should just be considered “noise.”
 
@@ -12,7 +12,7 @@ To toggle this behavior for an existing project, click the `r keys("Properties")
 
 ![](Images/excludeincompletesentences.png)
 
-If you are excluding incomplete sentences, note that any non-terminated sentence longer than 15 words will still be counted as a regular sentence. If a sentence is longer than a certain length and is missing its terminating punctuation, then the missing period is likely just a mistake. To accommodate for these errors, the program will consider these sentences valid. To customize this behavior, enter a different minimum sentence length in the **Include incomplete sentences containing more than [15] words** option (pictured above).
+If you are excluding incomplete sentences\index{sentences!excluding incomplete sentences}, note that any non-terminated sentence longer than 15 words will still be counted as a regular sentence. If a sentence is longer than a certain length and is missing its terminating punctuation, then the missing period is likely just a mistake. To accommodate for these errors, the program will consider these sentences valid. To customize this behavior, enter a different minimum sentence length in the **Include incomplete sentences containing more than [15] words** option (pictured above).
 
 Note that these options are also available on the [**Options**](#options-overview) dialog (on the **Tools** tab) to change this behavior for all future projects.
 
@@ -31,7 +31,7 @@ Although not traditionally mentioned in readability articles, other items may al
 
 Refer to \@ref(document-analysis) for a detailed explanation of these options.
 
-## How Sentences are Counted {#how-sentences-are-counted}
+## How Sentences\index{sentences!counting} are Counted {#how-sentences-are-counted}
 
 *Readability Studio* considers periods, question marks, exclamation points, and interabangs as the end of a sentence, although there are a few exceptions.
 
@@ -55,7 +55,7 @@ One last special case is when a colon or semicolon is found at the end of a line
 
 By default, lowercase words can be considered the start of a new sentence (with the exception mentioned above). Although it is poor grammar to not capitalize the first word of a sentence, this writing style is often found in some literature. This behavior can be toggled using the option [**Sentences must begin with capitalized words**](#options-sentence-deduction).
 
-## Line (Sentence) Chaining {#line-chaining}
+## Line (Sentence) Chaining\index{sentences!chaining} {#line-chaining}
 
 Line chaining (or sentence chaining) is a sentence deduction method where lines of text are joined until a *.*, *?*, or *!* is found. In other words, multiple lines of text can be joined into a single sentence. This is normally preferred behavior when text is formatted to a specific width, such as the following:
 
@@ -146,7 +146,7 @@ Before cleaning the blade...
 
 In this case, these two lines will be erroneously joined into one sentence. To completely disable all possible line chaining, select the option [**Line ends always begin a new paragraph**](#options-sentence-deduction). Note that this option is only recommended if all line ends in your document represent new paragraphs. If your document contains line ends to control the width of the text, then selecting this option will cause incorrect sentence deduction.
 
-## Controlling How Sentences are Deduced
+## Controlling How Sentences are Deduced\index{sentences!controlling deduction}
 
 How sentences are structured can vary from document to document. Because of this, *Readability Studio* offers options to control how sentences are parsed and analyzed. These features are available under the **Sentence deduction** section of the [**Document Indexing**](#document-analysis) page. To view these features, select [**Options**](#options-overview) from the **Tools** tab and then click on the **Document Indexing** icon. Under the **Sentence deduction** section, there are two options: **Ignore blank lines when determining the end of a sentence** and **Sentences must begin with capitalized words**.
 
@@ -186,7 +186,7 @@ At this point, the project will be reanalyzed and these sentence fragments will 
 knitr::include_graphics("Images/PeterRabbitChainedSentences.png")
 ```
 
-## How Syllables are Counted
+## How Syllables are Counted\index{syllables!counting}
 
 Most software that counts syllables employs one of two methods. The first is a dictionary-based system that includes a list of common words and their respective syllable counts. As the software counts a document's syllables, each word is looked up in a dictionary to retrieve its syllable count. The disadvantage of this method is that if a word is not found, then the program must prompt you to enter the syllable count.
 
@@ -204,7 +204,7 @@ Finally, for readability analysis, syllables should be counted on a word-by-word
 [^silentEFootnote]: An exception for silent *e* is made for English syllabizing.
 [^spanishSyllabizerFootnote]: For Spanish text, a specialized version of the Cuayáhuitl (412–415) algorithm is used.
 
-### How Numbers are Syllabized {-}
+### How Numbers are Syllabized\index{syllables!numerals} {-}
 
 Numbers are generally syllabized using one of two approaches:
 
@@ -213,7 +213,7 @@ Numbers are generally syllabized using one of two approaches:
 
 By default, *Readability Studio* counts numbers as monosyllabic words; however, this behavior can be toggled from the [**Document Indexing**](#document-analysis) options. Note that some tests may override these settings if they require a specific method. For example, [Fry](#fry-test)\index{Fry} will always sound out each numeric digit when syllabizing.
 
-### How Symbols are Syllabized {-}
+### How Symbols are Syllabized\index{syllables!symbols} {-}
 
 ::: {.minipage data-latex="{\textwidth}"}
 The following symbols are syllabized as follows:
@@ -290,7 +290,7 @@ Rather than treating the word *FORCAST* as if it begins with an *ef* sound, it s
 
 Most readability formulas are designed for narrative text, where a work consists of flowing sentences and paragraphs. For these formulas, the average sentence length (ASL) is an important factor.
 
-Items such as headers and list items can adversely affect the accuracy of the ASL. If they are [chained](#line-chaining) to the following sentence, then they will inflate the ASL. If they are treated as full sentences, then they will falsely lower the ASL. Because of this, most experts recommend removing these and only analyzing the narrative sections of a document.
+Items\index{sentences!excluding incomplete sentences} such as headers and list items can adversely affect the accuracy of the ASL. If they are [chained](#line-chaining) to the following sentence, then they will inflate the ASL. If they are treated as full sentences, then they will falsely lower the ASL. Because of this, most experts recommend removing these and only analyzing the narrative sections of a document.
 
 By default, *Readability Studio* follows this advice. However, there are situations where this rule does not apply.
 

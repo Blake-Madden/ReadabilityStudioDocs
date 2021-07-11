@@ -41,7 +41,7 @@ kableExtra::kbl(ariData, booktabs=T, centering=T, align='l',escape=F) %>%
 \newpage
 ## Bormuth Cloze Mean\index{Bormuth Cloze Mean|(ii} {#bormuth-cloze-mean-machine-passage}
 
-The Bormuth Cloze Mean (Machine Computation for Passage Readability) Formula (79–132) calculates a [predicted cloze score](#cloze) for a document.
+The Bormuth Cloze\index{cloze} Mean (Machine Computation for Passage Readability) Formula (79–132) calculates a [predicted cloze score](#cloze) for a document.
 
 This test is influenced by three variables (word length, sentence length, and word familiarity). Because it uses both word familiarity and syntactic complexity for its analysis, it is often recommended for student documents.
 
@@ -113,7 +113,7 @@ Note that this particular grade-placement test uses the regression equation that
 \newpage
 ## Coleman-Liau\index{Coleman-Liau|(ii} {#coleman-liau-test}
 
-The Coleman-Liau formula calculates the grade level and estimated cloze score of a document based on sentence length and character count.
+The Coleman-Liau formula calculates the grade level and estimated cloze\index{cloze} score of a document based on sentence length and character count.
 
 Coleman and Liau noted the difficulties of using computers to count syllables (283) for readability formulas. As a solution, they presented a new formula that used character counts as an alternative to syllable counting. This formula was derived from a regression equation trained on the 36 150-word passages from the Miller and Coleman cloze study (851). During validation, the factors of sentences and characters per 100 words yielded a strong correlation of $r^2 = .92$ against Miller and Coleman’s cloze scores.
 
@@ -521,7 +521,7 @@ In the above chart, we can see that the document's average words per sentence is
 
 The FORCAST readability formula (Caylor 13–17) was devised for assessing U.S. army technical manuals and forms. It is the only test not designed for running narrative, so it is best suited for multiple-choice quizzes, applications, entrance forms, etc. This test calculates the grade level of a document based on its number of monosyllabic words.
 
-This formula was trained against U.S. Army “job reading material” (Caylor 13), using the criterion of cloze passages where readers scored around 35% comprehension. (Most other tests usually use the 50% criterion.) The researchers initially tested regression equations using 15 variables for their new formula, but noted the single factor of monosyllabic words yielded a “sufficiently high” (Caylor 15) correlation of $r = 0.86$ against the mean cloze scores. Based on this, the following formula was derived:
+This formula was trained against U.S. Army “job reading material” (Caylor 13), using the criterion of cloze\index{cloze} passages where readers scored around 35% comprehension. (Most other tests usually use the 50% criterion.) The researchers initially tested regression equations using 15 variables for their new formula, but noted the single factor of monosyllabic words yielded a “sufficiently high” (Caylor 15) correlation of $r = 0.86$ against the mean cloze scores. Based on this, the following formula was derived:
 
 ```{definition, forcast, name="FORCAST formula"}
 $$
@@ -682,7 +682,7 @@ kableExtra::kbl(list(primaryTable, secondaryTable),
 Using these new basal readers as the test's criterion, a new regression equation and expanded word list were built for the Wide Range formula. This new formula could significantly correlate samples from these books to their reported reading levels. Further, to predict readability scores for materials beyond the eighth-grade level, the look-up table used by the test (see below) was extrapolated to include secondary and adult-level materials.
 
 ::: {.notesection data-latex=""}
-This test treats headers and subheaders as full sentences, but excludes lists and tables. The default [text exclusion](#options-text-exclusion) method will be overridden for this specific test.
+This test treats headers and subheaders as full sentences, but excludes lists and tables. The default [text exclusion](#options-text-exclusion) method\index{text exclusion!Harris-Jacobson Wide Range} will be overridden for this specific test.
 :::
 
 ::: {.minipage data-latex="{\textwidth}"}
@@ -957,7 +957,7 @@ The New Dale-Chall\index{Dale-Chall!zzzzz@\igobble|seealso{New Dale-Chall}}reada
 - All numerals.\index{numerals!New Dale-Chall}
 
 ::: {.notesection data-latex=""}
-This test treats headers and subheaders as full sentences, but excludes lists and tables. The default [text exclusion](#options-text-exclusion) method will be overridden for this specific test, although this behavior can be customized from the [**Options**](#readability-test-options) dialog.
+This test treats headers and subheaders as full sentences, but excludes lists and tables. The default [text exclusion](#options-text-exclusion) method\index{text exclusion!New Dale-Chall} will be overridden for this specific test, although this behavior can be customized from the [**Options**](#readability-test-options) dialog.
 :::
 
 The initial version of this test (Dale and Chall, “A Formula for Predicting Readability”) was a multiple regression trained against 376 passages from McCall-Crabbs *Standard Test Lessons in Reading*. After comparing the results of this formula against other tests (such as Flesch and Lorge), it was validated against manually judged reading levels from other materials. These materials included “fifty-passages of health-education materials” (18) with a correlation of $r = 0.92$. Also included were “78 passages on foreign affairs from current-events magazines, government pamphlets, and newspapers” (18) with a correlation of $r = 0.90$.
@@ -1223,7 +1223,7 @@ Regarding the factors used for this test, Anderson defined a sentence “as a se
 
 As for defining long words, Anderson recommended “excluding hyphens, punctuation marks, and brackets” (495) when determining a word’s length. Although Björnsson did not explicitly state this for Lix, it is a reasonable assumption that that was his original intention.
 
-Prior to creating this formula, Anderson conducted a validation study for Lix, using a set of 36 prose passages. These 150-word passages were originally scored from a cloze study (Miller and Coleman 851). Later, they were scored in another study involving judged-rankings and word-recollection tests (Aquino 346–356). (Both portions of Aquino’s study used 14 *Southwest Regional Laboratory for Educational Research and Development* employees.) Anderson analyzed the Lix scores against these other measurements and found significant correlations, as shown below:
+Prior to creating this formula, Anderson conducted a validation study for Lix, using a set of 36 prose passages. These 150-word passages were originally scored from a cloze\index{cloze} study (Miller and Coleman 851). Later, they were scored in another study involving judged-rankings and word-recollection tests (Aquino 346–356). (Both portions of Aquino’s study used 14 *Southwest Regional Laboratory for Educational Research and Development* employees.) Anderson analyzed the Lix scores against these other measurements and found significant correlations, as shown below:
 
 - against the Miller and Coleman’s cloze scores, $r = 0.89$
 - against word-recall scores, $r = 0.82$

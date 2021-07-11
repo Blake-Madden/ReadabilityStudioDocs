@@ -2,11 +2,16 @@
 
 # Keyboard Shortcuts
 
+`r os_logo('windows')`: shortcut on Windows
+`r os_logo('apple')`: shortcut on macOS
+
 Table: Application Level Shortcuts
 
 +-----------------------------------------+------------------------------------------------------+
 | To do this                              | Press                                                |
 +:========================================+:=====================================================+
+| Open the help                           | `r keys("F1")`                                       |
++-----------------------------------------+------------------------------------------------------+
 | Enable verbose logging                  | Hold down\                                           |
 |                                         | `r keys("Shift")` `r os_logo('windows')`\ or `r keys("\\shift")` `r os_logo('apple')`\ |
 |                                         | while the program is loading                         |
@@ -26,6 +31,16 @@ Table: Project Operations Shortcuts
 | Print the active window                 | `r keys(c('Ctrl','P'))` `r os_logo('windows')`\ or `r keys(c('\\cmd','P'))` `r os_logo('apple')` |
 +-----------------------------------------+------------------------------------------------------+
 | Remove the selected test                | `r keys(c('Ctrl', 'Del'))` `r os_logo('windows')`\ or `r keys(c('\\cmd','\\backdel'))` `r os_logo('apple')` |
++-----------------------------------------+------------------------------------------------------+
+
+Table: Graph Shortcuts
+
++-----------------------------------------+------------------------------------------------------+
+| To do this                              | Press                                                |
++:========================================+:=====================================================+
+| Zoom in                                 | `r keys('+')`                                        |
++-----------------------------------------+------------------------------------------------------+
+| Zoom out                                | `r keys('-')`                                        |
 +-----------------------------------------+------------------------------------------------------+
 
 Table: Editing Lists Shortcuts
@@ -55,7 +70,7 @@ Average sentence length.
 
 :::: {.glsentry data-latex=''}
 ::: {.glsterm data-latex=''}
-cloze test
+cloze\index{cloze} test
 :::
 ::: {.glsdef data-latex=''}
 A [cloze](#cloze) procedure is a test given to readers to measure their comprehension ability. Refer to \@ref(cloze) for an extended explanation.
@@ -101,7 +116,7 @@ A section of text ending with a period, exclamation mark, question mark, interro
 ## Statistical Glossary {#stat-terms}
 
 ::: {.glsterm data-latex=''}
-box plots
+box plots\index{box plots}
 :::
 ::: {.glsdef data-latex=''}
 Box plots are used to display the distribution of data, where:
@@ -245,7 +260,7 @@ Interquartile range. Refer to figure \@ref(fig:boxplot).
 
 :::: {.glsentry data-latex=''}
 ::: {.glsterm data-latex=''}
-kurtosis
+kurtosis\index{kurtosis}
 :::
 ::: {.glsdef data-latex=''}
 The peakedness of a distribution. Zero indicates a normal distribution, a negative value indicates a flat distribution, and a positive value indicates a sharp curve.  
@@ -276,7 +291,7 @@ The highest value in a range of data.
 
 :::: {.glsentry data-latex=''}
 ::: {.glsterm data-latex=''}
-mean
+mean\index{mean}
 :::
 ::: {.glsdef data-latex=''}
 The average value of a range of data. This is calculated by adding all the values and dividing the total by N.
@@ -285,7 +300,7 @@ The average value of a range of data. This is calculated by adding all the value
 
 :::: {.glsentry data-latex=''}
 ::: {.glsterm data-latex=''}
-median
+median\index{median}
 :::
 ::: {.glsdef data-latex=''}
 The middle point separating the lower and upper halves of a range of data. This is calculated by sorting the values and taking the value in middle if the number of values is odd. If the number of values is even, then the means of the two middle points is taken.
@@ -303,7 +318,7 @@ The lowest value in a range of data.
 
 :::: {.glsentry data-latex=''}
 ::: {.glsterm data-latex=''}
-mode
+mode\index{mode}
 :::
 ::: {.glsdef data-latex=''}
 The most frequently occurring value in a range of data. Note that a range can have multiple modes if two or more unique values appear the same number of times.
@@ -312,7 +327,7 @@ The most frequently occurring value in a range of data. Note that a range can ha
 
 :::: {.glsentry data-latex=''}
 ::: {.glsterm data-latex=''}
-normalization
+normalization\index{normalization}
 :::
 ::: {.glsdef data-latex=''}
 The adjustment of values from different scales into a common scale.
@@ -409,7 +424,7 @@ The distance between the lowest and highest values in a range of data.
 
 :::: {.glsentry data-latex=''}
 ::: {.glsterm data-latex=''}
-skewness
+skewness\index{skewness}
 :::
 ::: {.glsdef data-latex=''}
 The asymmetry of the probability distribution. A zero skew indicates a symmetrical balance in the distribution. A negative skew indicates that the left side of the distribution is longer and most of the values are concentrated on the right. A positive skew indicates that the right side of the distribution is longer and most of the values are concentrated on the left.  
@@ -422,7 +437,7 @@ knitr::include_graphics("Images/NonGenerated/Skewness.png")
 
 :::: {.glsentry data-latex=''}
 ::: {.glsterm data-latex=''}
-standard deviation
+standard deviation\index{standard deviation}
 :::
 ::: {.glsdef data-latex=''}
 The variability (or spread) of the values. A low standard deviation indicates that most values are close to the data's mean. In contrast, a high standard deviation indicates values that stray far from the mean.
@@ -449,7 +464,7 @@ The number of valid values in a range of data.
 
 :::: {.glsentry data-latex=''}
 ::: {.glsterm data-latex=''}
-variance
+variance\index{variance}
 :::
 ::: {.glsdef data-latex=''}
 Another measurement of variability, which is standard deviation squared.

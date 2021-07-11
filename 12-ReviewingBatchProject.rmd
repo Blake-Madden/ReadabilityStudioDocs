@@ -36,16 +36,16 @@ By default, the following statistics for each test are included:
 - [Minimum](#stat-terms): the lowest test score.
 - [Maximum](#stat-terms): the highest test score.
 - [Range](#stat-terms): the distance between the lowest and highest test scores.
-- [Mode(s)](#stat-terms): the most frequently occurring score. In the case of a tie, all modes will be listed. Note that grade scores are rounded down when searching for the mode.
-- [Means](#stat-terms): the average test score. This is calculated by adding all the scores and dividing the total by the number of scores.
+- [Mode(s)](#stat-terms)\index{mode}: the most frequently occurring score. In the case of a tie, all modes will be listed. Note that grade scores are rounded down when searching for the mode.
+- [Means](#stat-terms)\index{mean}: the average test score. This is calculated by adding all the scores and dividing the total by the number of scores.
 
 If [**Extended Information**](#options-summary-report) is enabled, then these additional statistics will be included:
 
-- [Median](#stat-terms): the middle test score. This represents the middle point separating the lower and upper halves of the scores. This is calculated by sorting the scores and taking the score in middle if the number of scores is odd. If the number of scores is even, then the means of the two middle points is taken.
-- [Skewness](#stat-terms): the asymmetry of the scores' distribution.
-- [Kurtosis](#stat-terms): the peakedness of the scores' distribution.
-- [Standard Deviation](#stat-terms): the variability (or spread) of the scores. Note that sample std. dev. is used here because it is assumed that the batch contains a sampling of a larger document collection.
-- [Variance](#stat-terms): another measurement of the scores' variability, which is std. dev. squared.
+- [Median](#stat-terms)\index{median}: the middle test score. This represents the middle point separating the lower and upper halves of the scores. This is calculated by sorting the scores and taking the score in middle if the number of scores is odd. If the number of scores is even, then the means of the two middle points is taken.
+- [Skewness](#stat-terms)\index{skewness}: the asymmetry of the scores' distribution.
+- [Kurtosis](#stat-terms)\index{kurtosis}: the peakedness of the scores' distribution.
+- [Standard Deviation](#stat-terms)\index{standard deviation}: the variability (or spread) of the scores. Note that sample std. dev. is used here because it is assumed that the batch contains a sampling of a larger document collection.
+- [Variance](#stat-terms)\index{variance}: another measurement of the scores' variability, which is std. dev. squared.
 - [Lower quartile](#stat-terms): the test score at the 25% percentile. This is the score separating the lower quarter of the scores from the rest of the scores.
 - [Upper quartile](#stat-terms): the test score at the 75% percentile. This is the score separating the upper quarter of the scores from the rest of the scores.
 
@@ -107,7 +107,7 @@ knitr::include_graphics("Images/histoimproved.png")
 
 The binning method, label display, and general appearance of these histograms can be customized from the [**Histogram**](#options-histograms) page of either the [**Options**](#options-overview) or [**Project Properties**](#options-overview) dialog.
 
-## Box Plots {#reviewing-batch-box-plots}
+## Box Plots\index{box plots!reviewing in batch projects} {#reviewing-batch-box-plots}
 
 After opening a project, click on the **Score Box Plots** icon on the project sidebar to view the documents' test scores graphically shown as [box plots](#boxplot).
 

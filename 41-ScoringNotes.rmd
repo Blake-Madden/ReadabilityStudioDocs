@@ -187,7 +187,7 @@ kableExtra::kbl(canadaTable, longtable=T, booktabs=T, centering=T, escape=F, lin
            escape=F, threeparttable=T)
 ```
 
-## Cloze Scores and Readability Formulas {#cloze}
+## Cloze\index{cloze|(ii} Scores and Readability Formulas {#cloze}
 
 ::: {.minipage data-latex="{\textwidth}"}
 A cloze procedure is a test given to a student to measure their comprehension ability. This test consists of the following steps:
@@ -204,6 +204,8 @@ Cloze procedures can also be used to gage how easily a passage of text can be co
 Cloze scores such as these are the criteria used to validate most readability formulas. Generally, researchers use the passages and results from published cloze procedures as their test data when creating a formula. This process usually involves a Multiple Regression analysis with the cloze scores of the passages as the dependent variable and factors such as sentence lengths and syllable counts as the independent variables. This analysis will determine which factors most strongly affect the cloze scores. After finding the most effective factors, these factors are then incorporated into a formula. Through experimentation, the formula is adjusted to produce results that strongly correlate to the original cloze scores. The stronger this correlation, the more accurate the formula will be in predicting the readability of new text samples.
 
 Some readability formulas produce predicted cloze scores (rather than grade levels). A predicted cloze score represents an estimation of a passage's mean score if it were made into a cloze test and given to a group of students. This can be useful when selecting passages to use for cloze tests.
+
+\index{cloze|)}
 
 ## Proper Nouns\index{proper nouns!in difficult word lists} in the Difficult Word Lists {#proper-nouns-in-lists}
 

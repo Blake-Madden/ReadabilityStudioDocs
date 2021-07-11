@@ -124,7 +124,7 @@ Also note that your original document is not affected by this process. The origi
 
 The options here specify how your documents should be parsed and analyzed.
 
-### Consider Sentences Overly Long If {-}
+### Consider Sentences Overly Long If\index{sentences!customizing!overly long detection} {-}
 
 **Longer than [22] words**: Select this option to consider sentences overly long if they exceed the word count specified in this field. The default word count is 22, but can be changed as needed.
 
@@ -134,7 +134,7 @@ Considering sentences with more than 22 words to be overly long is based on rese
 
 These sentences can be viewed in the [**Grammar**](#reviewing-standard-grammar) and [**Long Sentences**](#reviewing-sentences-breakdown) windows in the **Grammar** section.
 
-### Sentence/Paragraph Deduction {-#options-sentence-deduction}
+### Sentence/Paragraph Deduction\index{sentences!customizing!deduction} {-#options-sentence-deduction}
 
 :::: {.optionssection data-latex=""}
 ::: {.optionssectiontitle data-latex=""}
@@ -168,7 +168,7 @@ The options **Ignore blank lines** and **Ignore indenting** are disabled if **Li
 
 **Sentences must begin with capitalized words**: Select this option to have sentence deduction assume that all sentences begin with capitalized words. By default, *Readability Studio* takes into consideration writing that does not capitalize the first word of every sentence. To change this behavior, select this option and the program will be more grammatically strict when deducing sentences.
 
-### Text Exclusion {-#options-text-exclusion}
+### Text Exclusion\index{text exclusion!options} {-#options-text-exclusion}
 
 :::: {.optionssection data-latex=""}
 ::: {.optionssectiontitle data-latex=""}
@@ -294,7 +294,7 @@ These options are not available if **Do not exclude any text** is selected.
 Syllabication
 :::
 
-The following options control how numeric words are syllabized.
+The following options control how numeric words are syllabized\index{syllables!numerals}.
 
 **Numerals are one syllable**: Select this option to have the program consider numeric words (e.g., numbers, dates, phone numbers) as monosyllabic.
 
@@ -892,7 +892,7 @@ Labels
 **No labels**: Select this option to not display bin labels.
 ::::
 
-### Box Plots {-#options-box-plots}
+### Box Plots\index{box plots!customizing} {-#options-box-plots}
 
 The options on this page customize the test-score box plots included in [batch projects](#creating-batch-project) and the **Sentence Lengths** box plot in [standard projects](#creating-standard-project).
 

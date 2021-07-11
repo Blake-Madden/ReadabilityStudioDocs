@@ -220,7 +220,7 @@ Note that webpages requiring authentication (i.e., requiring a user name and pas
 
 \newpage
 
-## Searching for Overly Long Sentences
+## Searching for Overly Long Sentences\index{sentences!example of reviewing overly long}
 
 In this example, we will review a document for overly-long sentences. This example will demonstrate the available methods for defining an overly-long sentence. In addition, it will also demonstrate how to search for and review these sentences.
 
