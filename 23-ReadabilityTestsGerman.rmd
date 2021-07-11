@@ -194,7 +194,7 @@ kableExtra::kbl(nws3Data, booktabs=T, centering=T, align='l', escape=F, linesep=
 ```
 
 \newpage
-## Quadratwurzelverfahren\index{Quadratwurzelverfahren} {#qu-bamberger-vanecek}
+## Quadratwurzelverfahren\index{Quadratwurzelverfahren|(ii} {#qu-bamberger-vanecek}
 
 Quadratwurzelverfahren (“Square root method”) (78) is an alternative method for calculating [SMOG (Bamberger-Vanecek)](#smog-bamberger-vanecek)\index{SMOG!variations!Quadratwurzelverfahren (German)}. Where SMOG (Bamberger-Vanecek) uses a 30-sentence sample, Quadratwurzelverfahren uses a 100-word sample; otherwise, they produce the same results.
 
@@ -222,6 +222,7 @@ kableExtra::kbl(quadData, booktabs=T, centering=T, align='l', escape=F) %>%
 
 ::: {.notesection data-latex=""}
 Based on the examples from Bamberger-Vanecek (78), the grade-level score should be truncated to one-point precision, not rounded.
+\index{Quadratwurzelverfahren|)}
 :::
 
 \newpage
