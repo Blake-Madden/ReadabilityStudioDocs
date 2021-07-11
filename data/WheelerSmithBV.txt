@@ -1,11 +1,11 @@
 Grade 	Score
-First grade 	2.5 to 6
-Second grade 	6.1 to 9
-Third grade 	9.1 to 12
-Fourth grade 	12.1 to 16
-Fifth grade 	16.1 to 20
-Sixth grade 	20.1 to 24
-Seventh grade 	24.1 to 29
-Eighth grade 	29.1 to 34
-Ninth grade 	34.1 to 38
-Tenth grade 	38.1 to 42
+First grade 	2.5–6
+Second grade 	6.1–9
+Third grade 	9.1–12
+Fourth grade 	12.1–16
+Fifth grade 	16.1–20
+Sixth grade 	20.1–24
+Seventh grade 	24.1–29
+Eighth grade 	29.1–34
+Ninth grade 	34.1–38
+Tenth grade 	38.1–42
