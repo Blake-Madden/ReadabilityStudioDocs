@@ -41,11 +41,11 @@ kableExtra::kbl(ariData, booktabs=T, centering=T, align='l',escape=F) %>%
 \newpage
 ## Bormuth Cloze Mean\index{Bormuth Cloze Mean|(ii} {#bormuth-cloze-mean-machine-passage}
 
-The Bormuth Cloze Mean (Machine Computation for Passage Readability) Formula (79-132) calculates a [predicted cloze score](#cloze) for a document.
+The Bormuth Cloze Mean (Machine Computation for Passage Readability) Formula (79–132) calculates a [predicted cloze score](#cloze) for a document.
 
 This test is influenced by three variables (word length, sentence length, and word familiarity). Because it uses both word familiarity and syntactic complexity for its analysis, it is often recommended for student documents.
 
-For this formula, a study involving 2,600 students ranging from 4^th^-12^th^ grade (*Development* 97) was conducted. The students completed 330 110-word cloze passages, and their scores were correlated against numerous linguistic factors from the passages. After a series of factor analyses and multiple regressions, a series of formulas were created to predict cloze and grade-level scores for a passage. These formulas were then cross validated against 20 250-300 word passages (*Development* 105). These formulas correlated with between $r^2 = 0.81$ to $0.83$ with the original test data and between $r^2 = 0.92$ to $0.93$ with the cross validation data.
+For this formula, a study involving 2,600 students ranging from 4^th^-12^th^ grade (*Development* 97) was conducted. The students completed 330 110-word cloze passages, and their scores were correlated against numerous linguistic factors from the passages. After a series of factor analyses and multiple regressions, a series of formulas were created to predict cloze and grade-level scores for a passage. These formulas were then cross validated against 20 250–300 word passages (*Development* 105). These formulas correlated with between $r^2 = 0.81$ to $0.83$ with the original test data and between $r^2 = 0.92$ to $0.93$ with the cross validation data.
 
 Of these formulas, the predicted cloze formula is as follows:
 
@@ -79,11 +79,11 @@ The program will display the cloze score returned by this test in percentage for
 \newpage
 ## Bormuth Grade Placement (GP35)\index{Bormuth Grade Placement|(ii} {#bormuth-grade-placement-35-machine-passage}
 
-The Bormuth Grade Placement (Machine Computation for Passage Readability) Formula (79-132) calculates a grade level for a document.
+The Bormuth Grade Placement (Machine Computation for Passage Readability) Formula (79–132) calculates a grade level for a document.
 
 This test is influenced by three variables (word length, sentence length, and word familiarity). Because it uses both word familiarity and syntactic complexity for its analysis, it is often recommended for student documents.
 
-For this formula, a study involving 2,600 students ranging from 4^th^-12^th^ grade (*Development* 97) was conducted. The students completed 330 110-word cloze passages, and their scores were correlated against numerous linguistic factors from the passages. After a series of factor analyses and multiple regressions, a series of formulas were created to predict cloze and grade-level scores for a passage. These formulas were then cross validated against 20 250-300 word passages (*Development* 105). These formulas correlated with between $r^2 = 0.81$ to $0.83$ with the original test data and between $r^2 = 0.92$ to $0.93$ with the cross validation data.
+For this formula, a study involving 2,600 students ranging from 4^th^-12^th^ grade (*Development* 97) was conducted. The students completed 330 110-word cloze passages, and their scores were correlated against numerous linguistic factors from the passages. After a series of factor analyses and multiple regressions, a series of formulas were created to predict cloze and grade-level scores for a passage. These formulas were then cross validated against 20 250–300 word passages (*Development* 105). These formulas correlated with between $r^2 = 0.81$ to $0.83$ with the original test data and between $r^2 = 0.92$ to $0.93$ with the cross validation data.
 
 Of these formulas, the grade-placement formula is as follows:
 
@@ -196,7 +196,7 @@ For this reason, the *number of words* statistic is a more accurate description 
 \newpage
 ## Danielson-Bryan 2\index{Danielson-Bryan 2|(ii} {#danielson-bryan-2}
 
-Danielson-Bryan 2 (206) calculates an index score of a document based on sentence length and character/punctuation count. It is a variant of [Flesch Reading Ease](#flesch-test)\index{Flesch Reading Ease!variations!Danielson-Bryan 2}, with the difference being that it uses character and punctuation counts instead of syllable counts. Being a variant of Flesch, its scores range from 0-100 (the higher the score, the easier to read), with average documents being within 60-70.
+Danielson-Bryan 2 (206) calculates an index score of a document based on sentence length and character/punctuation count. It is a variant of [Flesch Reading Ease](#flesch-test)\index{Flesch Reading Ease!variations!Danielson-Bryan 2}, with the difference being that it uses character and punctuation counts instead of syllable counts. Being a variant of Flesch, its scores range from 0–100 (the higher the score, the easier to read), with average documents being within 60–70.
 
 DB2 was designed to be a faster method (compared to [Farr-Jenkins-Paterson](#farr-jenkins-paterson)\index{Farr-Jenkins-Paterson!compared to Danielson-Bryan}) of calculating readability scores on UNIVAC 1105 computers. Rather than counting syllables, DB2 counts characters and punctuation, which was simpler to analyze on computers of that era. This performance benefit is more of a historical reference now; modern computers can calculate syllable counts optimally.
 
@@ -227,14 +227,14 @@ kableExtra::kbl(db2Data, booktabs=T, centering=T, align='l', escape=F) %>%
 ```
 
 | Flesch Score | Description |
-| :-- | :-- |
-| 90-100 | Very easy, third-grade level |
-| 80-89 | Easy, fourth-grade level |
-| 70-79 | Fairly easy, fifth-grade level |
-| 60-69 | Standard, sixth-grade level |
-| 50-59 | Fairly difficult, junior high school level |
-| 30-49 | Difficult, high school level |
-| 0-29 | Very difficult, college level |
+| --: | :-- |
+| 90–100 | Very easy, third-grade level |
+| 80–89 | Easy, fourth-grade level |
+| 70–79 | Fairly easy, fifth-grade level |
+| 60–69 | Standard, sixth-grade level |
+| 50–59 | Fairly difficult, junior high school level |
+| 30–49 | Difficult, high school level |
+| 0–29 | Very difficult, college level |
 
 Table: Flesch Reading Ease Index Table
 
@@ -243,7 +243,7 @@ Table: Flesch Reading Ease Index Table
 \newpage
 ## Degrees of Reading Power\index{Degrees of Reading Power|(ii} {#degrees-of-reading-power}
 
-The Degrees of Reading Power (Kibby, 416-427; Carver, *Measuring* 303-316) formula calculates the difficulty level of a document in terms of DRP units. These units range from 0 (easy) to 100 (difficult).
+The Degrees of Reading Power (Kibby, 416–427; Carver, *Measuring* 303-316) formula calculates the difficulty level of a document in terms of DRP units. These units range from 0 (easy) to 100 (difficult).
 
 The DRP difficulty score of document is used to match it to a student based on their DRP ability score. DRP ability tests are manual tests administered to students to gauge their reading levels.
 
@@ -276,9 +276,9 @@ Where:
 \newpage
 ## Degrees of Reading Power (GE)\index{Degrees of Reading Power (GE)|(ii} {#degrees-of-reading-power-grade-equivalent}
 
-The Degrees of Reading Power (grade equivalent) (Carver 303-316) test calculates the difficulty level of a document by performing the [DRP](#degrees-of-reading-power) test and then converting its units score into a grade level.
+The Degrees of Reading Power (grade equivalent) (Carver 303–316) test calculates the difficulty level of a document by performing the [DRP](#degrees-of-reading-power) test and then converting its units score into a grade level.
 
-This test was trained on the same 330 110-word passages used to build the [Bormuth](#bormuth-cloze-mean-machine-passage) test, along with an additional 30 samples. These additional samples were 100-word passages tested by students from the graduate library at the University of Maryland (Carver 305-306). Using these samples (and their cloze and Rauding scores), Carver built a table to convert between DRP units and grade levels (see below). Next, he compared the DRP-GE results against DRP units, Rauding scale scores, and cloze scores. The DRP-GE (grade equivalency) results strongly correlated with these other scores:
+This test was trained on the same 330 110-word passages used to build the [Bormuth](#bormuth-cloze-mean-machine-passage) test, along with an additional 30 samples. These additional samples were 100-word passages tested by students from the graduate library at the University of Maryland (Carver 305–306). Using these samples (and their cloze and Rauding scores), Carver built a table to convert between DRP units and grade levels (see below). Next, he compared the DRP-GE results against DRP units, Rauding scale scores, and cloze scores. The DRP-GE (grade equivalency) results strongly correlated with these other scores:
 
 - DRP: $r = 0.98$
 - Rauding Scale-GE\index{Rauding scale}: $r = 0.84$
@@ -290,7 +290,7 @@ To calculate the grade equivalency, first calculate the DRP difficulty of a docu
 library(tidyverse)
 
 # needs to be strings because of "0-39"
-drpTable <- tibble("DRP-Difficulty" = c("0-39", "40", "41", "42", "43",
+drpTable <- tibble("DRP-Difficulty" = c("0–39", "40", "41", "42", "43",
                                         "44", "45", "46", "47", "48",
                                         "49", "50", "51", "52", "53",
                                         "54", "55", "56", "57", "58"),
@@ -301,7 +301,7 @@ drpTable <- tibble("DRP-Difficulty" = c("0-39", "40", "41", "42", "43",
                        "DRP-Difficulty " = c("59", "60", "61", "62", "63",
                                              "64", "65", "66", "67", "68",
                                              "69", "70", "71", "72", "73",
-                                             "74", "75", "76", "77", "78-100"),
+                                             "74", "75", "76", "77", "78–100"),
                        "DRP-GE " = c("6.8", "7.3", "7.8", "8.3", "8.8",
                                     "9.4", "10.0", "10.6", "11.2", "11.8",
                                     "12.5", "13.1", "13.7", "14.4", "15.0",
@@ -338,21 +338,21 @@ To compare listenability to readability, the study was also trained on 36 newspa
 
 The newscasts yielded the following ELF ranges:
 
-- ABC: 9.9 to 12.0
-- CBS: 9.6 to 11.9
-- NBC: 8.7 to 10.7
-- KNXT: 11.5 to 13.1
-- KNBC: 10.2 to 12.3
-- KABC-TV: 6.4 to 9.0
+- ABC: 9.9–12.0
+- CBS: 9.6–11.9
+- NBC: 8.7–10.7
+- KNXT: 11.5–13.1
+- KNBC: 10.2–12.3
+- KABC-TV: 6.4–9.0
 
 While the newspaper samples yielded the following:
 
-- *The New York Times*: 16.8 to 18.2
-- *The Wall Street Journal*: 13.8 to 15.1
-- *The Christian Science Monitor*: 10.3 to 13.1
-- *The Los Angeles Times*: 14.7 to 18.0
-- *The Chicago Tribune*: 14.2 to 18.6
-- *The St. Louis Post-Dispatch*: 11.3 to 17.1
+- *The New York Times*: 16.8–18.2
+- *The Wall Street Journal*: 13.8–15.1
+- *The Christian Science Monitor*: 10.3–13.1
+- *The Los Angeles Times*: 14.7–18.0
+- *The Chicago Tribune*: 14.2–18.6
+- *The St. Louis Post-Dispatch*: 11.3–17.1
 
 Note the stark difference between the printed and televised-material scores. This indicates a much higher complex-word density in printed news versus televised news.
 
@@ -364,7 +364,7 @@ The ELF score of a sentence is calculated by counting the number of syllables ab
 In any sentence, count each syllable above one per word.
 :::
 
-The above sentence contains three polysyllabic\index{polysyllabic} words: any (2), sentence (2), above (2), and syllable (3). In this case, “any,” “sentence,” and “above” each have 1 syllable above 1, and “syllable” has 2 syllables above one. Adding these values will yield a score of 5 (1+1+1+2 = 5).
+The above sentence contains three polysyllabic\index{polysyllabic} words: any (2), sentence (2), above (2), and syllable (3). In this case, *any*, *sentence*, and *above* each have 1 syllable above 1, and *syllable* has 2 syllables above one. Adding these values will yield a score of 5.
 
 This process is repeated for every sentence, and then these scores are averaged. A simpler method is shown below:
 
@@ -392,7 +392,7 @@ Where:
 
 ## Farr-Jenkins-Paterson\index{Farr-Jenkins-Paterson|ii} {#farr-jenkins-paterson}
 
-The Farr-Jenkins-Paterson\index{Flesch Reading Ease!variations!Farr-Jenkins-Paterson} readability formula (333-337) calculates the [Flesch](#flesch-test) difficulty level of a document based on sentence length and number of monosyllabic words.
+The Farr-Jenkins-Paterson\index{Flesch Reading Ease!variations!Farr-Jenkins-Paterson} readability formula (333–337) calculates the [Flesch](#flesch-test) difficulty level of a document based on sentence length and number of monosyllabic words.
 
 Farr-Jenkins-Paterson was designed as a simpler way to calculate a Flesch score because it uses monosyllabic word counting instead of counting all syllables.
 
@@ -470,7 +470,7 @@ Refer to \@ref(flesch-kincaid-test).
 
 The Flesch Reading Ease readability formula calculates an index score of a document based on sentence length and number of syllables.
 
-Flesch Reading Ease (Flesch, *Art of Readable Writing* 213; *How to Write Plain English* 23) is best suited for school textbooks and technical manuals. It is a standard used by many U.S. government agencies, including the U.S. Department of Defense. Scores range from 0-100 (the higher the score, the easier to read) and average documents should be within the range of 60-70.
+Flesch Reading Ease (Flesch, *Art of Readable Writing* 213; *How to Write Plain English* 23) is best suited for school textbooks and technical manuals. It is a standard used by many U.S. government agencies, including the U.S. Department of Defense. Scores range from 0–100 (the higher the score, the easier to read) and average documents should be within the range of 60-70.
 
 ```{definition, flesch, name="Flesch Reading Ease formula"}
 $$
@@ -491,14 +491,14 @@ Where:
 +-----+---------------------+
 
 | Flesch Score | Description |
-| :-- | :-- |
-| 90-100 | Very easy |
-| 80-89 | Easy |
-| 70-79 | Fairly easy |
-| 60-69 | Standard (plain English) |
-| 50-59 | Fairly difficult |
-| 30-49 | Difficult |
-| 0-29 | Very difficult |
+| --: | :-- |
+| 90–100 | Very easy |
+| 80–89 | Easy |
+| 70–79 | Fairly easy |
+| 60–69 | Standard (plain English) |
+| 50–59 | Fairly difficult |
+| 30–49 | Difficult |
+| 0–29 | Very difficult |
 
 Table: Flesch Reading Ease index table
 
@@ -519,7 +519,7 @@ In the above chart, we can see that the document's average words per sentence is
 
 ## FORCAST\index{FORCAST|(ii} {#forcast-test}
 
-The FORCAST readability formula (Caylor 13-17) was devised for assessing U.S. army technical manuals and forms. It is the only test not designed for running narrative, so it is best suited for multiple-choice quizzes, applications, entrance forms, etc. This test calculates the grade level of a document based on its number of monosyllabic words.
+The FORCAST readability formula (Caylor 13–17) was devised for assessing U.S. army technical manuals and forms. It is the only test not designed for running narrative, so it is best suited for multiple-choice quizzes, applications, entrance forms, etc. This test calculates the grade level of a document based on its number of monosyllabic words.
 
 This formula was trained against U.S. Army “job reading material” (Caylor 13), using the criterion of cloze passages where readers scored around 35% comprehension. (Most other tests usually use the 50% criterion.) The researchers initially tested regression equations using 15 variables for their new formula, but noted the single factor of monosyllabic words yielded a “sufficiently high” (Caylor 15) correlation of $r = 0.86$ against the mean cloze scores. Based on this, the following formula was derived:
 
@@ -537,7 +537,7 @@ Where:
 | M   | Number of monosyllabic words (per 150-words) |
 +-----+----------------------------------------------+
 
-A follow-up study for U.S. Air Force regulation materials was later administered (Hooke 13-21). This study included 900 Air Force personnel across 13 bases and used the 40% cloze criterion. The researchers noted during the study that reviewers' estimated grade levels for regulation documents were generally higher than actual FORCAST scores. Based on this, the authors recommended more extensive use of this test for Air Force materials.
+A follow-up study for U.S. Air Force regulation materials was later administered (Hooke 13–21). This study included 900 Air Force personnel across 13 bases and used the 40% cloze criterion. The researchers noted during the study that reviewers' estimated grade levels for regulation documents were generally higher than actual FORCAST scores. Based on this, the authors recommended more extensive use of this test for Air Force materials.
 
 Note that FORCAST results may be slightly different from other tests because it does not take sentence length into account. If your document is structured mostly with tables and lists, then expect some variance between the FORCAST grade level and other tests' grade levels.
 
@@ -553,9 +553,9 @@ The name FORCAST is a pseudo acronym for its authors: J. Patrick **FOR**d, John 
 
 ## Fry\index{Fry|(ii} Graph {#fry-test}
 
-Fry (“Clarifications, Validity, and Extension” 242-252) is a graphical test for English documents. It calculates a document's grade level from its average number of sentences and syllables per hundred words. These averages are plotted onto a chart where their intersection determines the reading level of the content.
+Fry (“Clarifications, Validity, and Extension” 242–252) is a graphical test for English documents. It calculates a document's grade level from its average number of sentences and syllables per hundred words. These averages are plotted onto a chart where their intersection determines the reading level of the content.
 
-The original version of this graph included grade levels 1-12 and college (Fry, “Formula That Saves Time” 513-516; *Instruction*, 217). It was trained against samples from the following books:
+The original version of this graph included grade levels 1–12 and college (Fry, “Formula That Saves Time” 513–516; *Instruction*, 217). It was trained against samples from the following books:
 
 - *Light in the Forest*
 - *Of Mice and Men*
@@ -575,7 +575,7 @@ The graph's results were compared to other tests, yielding the following correla
 - Botel: $r = 0.78$
 - SRA: $r = 0.98$
 
-In 1977, Fry extended the graph to include grades 13-16 by extrapolating the averages from the preceding 3 years on the graph (*Extension* 251).
+In 1977, Fry extended the graph to include grades 13–16 by extrapolating the averages from the preceding 3 years on the graph (*Extension* 251).
 
 The Fry graph is designed for both primary and secondary-age reading materials. Below is an example of a Fry graph:
 
@@ -609,7 +609,7 @@ Note that numerals\index{numerals!Fry} are fully syllabized for this test. For e
 \newpage
 ## Gunning Fog\index{Gunning Fog|(ii} {#gunning-fog-test}
 
-The Gunning Fog readability formula (39-41) calculates the grade level of a document based on its number of sentences and complex words.
+The Gunning Fog readability formula (39–41) calculates the grade level of a document based on its number of sentences and complex words.
 
 Complex words are words that contain three or more syllables, with the exception of:
 
@@ -649,7 +649,7 @@ Where:
 
 ## Harris-Jacobson Wide Range\index{Harris-Jacobson Wide Range|(ii} {#harris-jacobson}
 
-The Harris-Jacobson Wide Range Readability Formula readability test (19-30; Chapter 3) calculates the grade level of a document based on sentence length and number of unique unfamiliar words. Words are unfamiliar if they do not appear on a list of common words that are known to most second-grade students. The following are also considered familiar:
+The Harris-Jacobson Wide Range Readability Formula readability test (19–30; Chapter 3) calculates the grade level of a document based on sentence length and number of unique unfamiliar words. Words are unfamiliar if they do not appear on a list of common words that are known to most second-grade students. The following are also considered familiar:
 
 - Regular verb forms of any common word (i.e., *ing*, *es*, *s*, *ed*, and *ies* endings). Irregular forms are not familiar.
 - Regular plural and possessive forms of any common word (i.e., *s*, *es*, and *ies* endings). Irregular forms are not familiar.
@@ -749,7 +749,7 @@ Because this formula is based on the usage of familiar words (rather than syllab
 \newpage
 ## Lix\index{Lix|(ii} {#lix-test}
 
-The Läsbarhetsindex (Lix)\index{Lix!zzzzz@\igobble|seealso{Rix}} readability formula (Björnsson 480-497) was designed for documents of any Western European language. It calculates a document’s index score based on sentence length and number of long words (i.e., words containing seven or more characters). Viewing long words as those with seven or more characters is what differentiates it from similar tests (which use six or more characters). This difference is what allows it to be a more balanced “yardstick” that can be applied to numerous languages.
+The Läsbarhetsindex (Lix)\index{Lix!zzzzz@\igobble|seealso{Rix}} readability formula (Björnsson 480–497) was designed for documents of any Western European language. It calculates a document’s index score based on sentence length and number of long words (i.e., words containing seven or more characters). Viewing long words as those with seven or more characters is what differentiates it from similar tests (which use six or more characters). This difference is what allows it to be a more balanced “yardstick” that can be applied to numerous languages.
 
 The philosophy behind using one formula for multiple languages is that, at their core, most languages are similar in difficulty. This approach argues that a language having various idiosyncrasies and longer words is not why it scores at more difficult levels. The reason languages score higher is because of how they are used (i.e., word choice, writing style) and presented (e.g., longer paragraphs and sentences, less images). This differs from the reasoning behind other tests based on adjusted English formulas. Those tests are designed under the assumption that non-English languages are inherently more difficult (because of comparatively longer words). For example, [Gilliam-Peña-Mountain](#gilliam-pena-mountain-fry-graph)\index{Gilliam-Peña-Mountain} and the [German reinterpretation of Lix](#lix-german-technical) follow this logic of adjusting English formulas for non-English text. Lix, however, chooses to use the same formula to gauge multiple languages. It views documents that score higher to be a result of writing style and presentation, not the language itself.
 
@@ -772,11 +772,11 @@ The researchers conjectured these differences had more to do with use of languag
 The index score of Lix can be summarized as follows:
 
 | Lix Score | Description |
-| :-- | :-- |
-| 0-29 | Very easy (books for children) |
-| 30-39 | Easy (fiction) |
-| 40-49 | Average (factual prose) |
-| 50-59 | Difficult (technical literature) |
+| --: | :-- |
+| 0–29 | Very easy (books for children) |
+| 30–39 | Easy (fiction) |
+| 40–49 | Average (factual prose) |
+| 50–59 | Difficult (technical literature) |
 | 60 and above | Very difficult |
 
 Table: Lix Index Table
@@ -809,19 +809,19 @@ Where:
 As a final note, Anderson contributed a grade-level conversion table for Lix index scores (Anderson 494) as follows:
 
 | Lix Score | Equivalent Grade Level |
-| :-- | :-- |
+| --: | :-- |
 | 56+ | College |
-| 52-55 | 12  |
-| 48-51 | 11  |
-| 44-47 | 10  |
-| 40-43 | 9   |
-| 36-39 | 8   |
-| 32-35 | 7   |
-| 28-31 | 6   |
-| 24-27 | 5   |
-| 20-23 | 4   |
-| 15-19 | 3   |
-| 10-14 | 2   |
+| 52–55 | 12  |
+| 48–51 | 11  |
+| 44–47 | 10  |
+| 40–43 | 9   |
+| 36–39 | 8   |
+| 32–35 | 7   |
+| 28–31 | 6   |
+| 24–27 | 5   |
+| 20–23 | 4   |
+| 15–19 | 3   |
+| 10–14 | 2   |
 | Below 10 | 1   |
 
 Table: Lix Grade-level Conversion Table\index{Lix|)}
@@ -863,10 +863,10 @@ Where:
 +-----+---------------------+
 
 | EFLAW Score | Description |
-| :-- | :-- |
-| 1-20 | Very easy to understand |
-| 21-25 | Quite easy to understand |
-| 26-29 | Mildly difficult |
+| --: | :-- |
+| 1–20 | Very easy to understand |
+| 21–25 | Quite easy to understand |
+| 26–29 | Mildly difficult |
 | 30+ | Very confusing |
 
 Table: McAlpine EFLAW index table
@@ -877,7 +877,7 @@ Table: McAlpine EFLAW index table
 
 ## Modified SMOG\index{Modified SMOG|(ii} {#modified-smog}
 
-The Modified SMOG\index{SMOG!variations!Modified SMOG} test (L. Smith 129-132) calculates the grade level of a document based on sentence length and number of difficult (i.e., 3 or more syllable) words and is designed for primary and secondary-age materials.
+The Modified SMOG\index{SMOG!variations!Modified SMOG} test (L. Smith 129–132) calculates the grade level of a document based on sentence length and number of difficult (i.e., 3 or more syllable) words and is designed for primary and secondary-age materials.
 
 Modified SMOG differs from [SMOG](#smog-test) in the following ways:
 
@@ -1107,7 +1107,7 @@ Where:
 \newpage
 ## (Powers-Sumner-Kearl) Gunning Fog\index{Powers-Sumner-Kearl!recalculated tests!Gunning Fog|(} {#psk-fog}
 
-The (Powers-Sumner-Kearl) Gunning Fog readability formula (99-105) calculates the grade level of a document based on sentence length and number of syllables.
+The (Powers-Sumner-Kearl) Gunning Fog readability formula (99–105) calculates the grade level of a document based on sentence length and number of syllables.
 
 The goal of Powers, Sumner, and Kearl was to develop updated versions of four popular readability formulas: Dale-Chall, Flesch, Gunning Fog\index{Gunning Fog!Powers-Sumner-Kearl recalculation}, and Farr-Jenkins-Paterson. These updated formulas would be based off of the newer (1950) edition of the McCall-Crabbs test criterion. By using this revised test material, Powers, Sumner, and Kearl aimed to “modernize the formulas by taking advantage of the more recently administered tests” and to “establish formulas which are derived from identical materials” (Powers, Sumner, and Kearl 100).
 
@@ -1148,7 +1148,7 @@ This test uses the same easy-word and sentence counting methods as the [Gunning 
 \newpage
 ## (Powers-Sumner-Kearl) Flesch\index{Powers-Sumner-Kearl!recalculated tests!Flesch Reading Ease|(} {#psk-test}
 
-The (Powers-Sumner-Kearl) Flesch readability formula (99-105) calculates the grade level of a document based on sentence length and number of syllables.
+The (Powers-Sumner-Kearl) Flesch readability formula (99–105) calculates the grade level of a document based on sentence length and number of syllables.
 
 The goal of Powers, Sumner, and Kearl was to develop updated versions of four popular readability formulas: Dale-Chall, Flesch\index{Flesch Reading Ease!Powers-Sumner-Kearl recalculation}, Gunning Fog, and Farr-Jenkins-Paterson. These updated formulas would be based off of the newer (1950) edition of the McCall-Crabbs test criterion. By using this revised test material, Powers, Sumner, and Kearl aimed to “modernize the formulas by taking advantage of the more recently administered tests” and to “establish formulas which are derived from identical materials” (Powers, Sumner, and Kearl 100).
 
@@ -1184,7 +1184,7 @@ Note that this test treats numerals\index{numerals!(Powers-Sumner-Kearl) Flesch}
 \newpage
 ## Raygor Estimate Graph\index{Raygor Estimate|(ii} {#raygor-test}
 
-The Raygor Estimate graph\index{Fry!derivatives!Raygor Estimate} (259-263) is a graphical test for English documents. It calculates a document's grade level from its average number of sentences and long (6+ character) words per hundred words. These averages are plotted onto a chart where their intersection determines the reading level of the content.
+The Raygor Estimate graph\index{Fry!derivatives!Raygor Estimate} (259–263) is a graphical test for English documents. It calculates a document's grade level from its average number of sentences and long (6+ character) words per hundred words. These averages are plotted onto a chart where their intersection determines the reading level of the content.
 
 Note that this graph is very similar to the [Fry](#fry-test) graph. The intent of this test was to provide a quicker and simpler way to plot a readability level, assuming that counting characters is easier than syllables. To confirm this, a secondary study (Baldwin and Kaufman 148-153) conducted an experiment involving 155 students from the University of Tulsa. The students performed Fry and ELF tests on 6 100-word passages. Afterwards, an independent *t* test was performed to gauge the difference in time spent manually performing the two readability tests. What the researches found was a significant difference, where Raygor took an average of 250.26 seconds to complete versus 323.45 seconds for Fry.
 
@@ -1215,7 +1215,7 @@ This test is designed for 3 100-word samples, with 3 samples being recommended f
 
 ## Rix\index{Rix|(ii} {#rix-test}
 
-The Rate Index (Rix)\index{Rix!compared to Lix} readability formula (Anderson 490-496) was designed for documents of any Western European language. It calculates a document’s index score based on sentence length and number of long words (i.e., words containing seven or more characters). It is based on the [Lix](#lix-test) readability formula (Björnsson 480-497) and follows the same philosophy of using a unified formula for multiple languages.
+The Rate Index (Rix)\index{Rix!compared to Lix} readability formula (Anderson 490–496) was designed for documents of any Western European language. It calculates a document’s index score based on sentence length and number of long words (i.e., words containing seven or more characters). It is based on the [Lix](#lix-test) readability formula (Björnsson 480-497) and follows the same philosophy of using a unified formula for multiple languages.
 
 “Rate” in this context refers to the rate of long words throughout the document. Comparing against other tests that traditionally recommend fixed sample sizes (e.g., [SMOG](#smog-test)), Anderson noted that Rix could be applied to any length of text without normalization. As he explained, “the concept of rate has the advantage of being applied over any number of sentences, for it is a running average” (Anderson 495).
 
@@ -1223,7 +1223,7 @@ Regarding the factors used for this test, Anderson defined a sentence “as a se
 
 As for defining long words, Anderson recommended “excluding hyphens, punctuation marks, and brackets” (495) when determining a word’s length. Although Björnsson did not explicitly state this for Lix, it is a reasonable assumption that that was his original intention.
 
-Prior to creating this formula, Anderson conducted a validation study for Lix, using a set of 36 prose passages. These 150-word passages were originally scored from a cloze study (Miller and Coleman 851). Later, they were scored in another study involving judged-rankings and word-recollection tests (Aquino 346-356). (Both portions of Aquino’s study used 14 *Southwest Regional Laboratory for Educational Research and Development* employees.) Anderson analyzed the Lix scores against these other measurements and found significant correlations, as shown below:
+Prior to creating this formula, Anderson conducted a validation study for Lix, using a set of 36 prose passages. These 150-word passages were originally scored from a cloze study (Miller and Coleman 851). Later, they were scored in another study involving judged-rankings and word-recollection tests (Aquino 346–356). (Both portions of Aquino’s study used 14 *Southwest Regional Laboratory for Educational Research and Development* employees.) Anderson analyzed the Lix scores against these other measurements and found significant correlations, as shown below:
 
 - against the Miller and Coleman’s cloze scores, $r = 0.89$
 - against word-recall scores, $r = 0.82$
@@ -1251,7 +1251,7 @@ Where:
 
 ::: {.minipage data-latex="{\textwidth}"}
 | Rix Index Score | Grade Level |
-| :-- | :-- |
+| --: | :-- |
 | 7.2 and above | College |
 | 6.2 and above | 12  |
 | 5.3 and above | 11  |
@@ -1272,9 +1272,9 @@ Table: Rix Grade-level Conversion Table\index{Rix|)}
 \newpage
 ## SMOG\index{SMOG|(ii} {#smog-test}
 
-The SMOG readability formula (McLaughlin 639-646) calculates the grade level of a document based on complex (i.e., 3 or more syllable) word density and is designed for secondary-age readers.
+The SMOG readability formula (McLaughlin 639–646) calculates the grade level of a document based on complex (i.e., 3 or more syllable) word density and is designed for secondary-age readers.
 
-SMOG attempts to predict “full comprehension” (L. Smith 129), whereas most other formulas predict 50%-75% comprehension. Because of this, SMOG will generally produce higher scores comparatively (usually 1-2 grade levels higher).
+SMOG attempts to predict “full comprehension” (L. Smith 129), whereas most other formulas predict 50%–75% comprehension. Because of this, SMOG will generally produce higher scores comparatively (usually 1–2 grade levels higher).
 
 This test was trained on 390 passages from the 1961 edition of *McCall-Crabbs Standard Tests Lessons in Reading*. The following regression equation was derived with a correlation of $r = 0.985$:
 
@@ -1321,7 +1321,7 @@ Refer to \@ref(smog-test).
 \newpage
 ## Spache Revised\index{Spache Revised|(ii} {#spache-test}
 
-The Spache Revised test (Spache, *Good* 195-2003) calculates the grade level of a document based on sentence length and number of unique unfamiliar words. This test uses a list of 1,041 common words that are known to younger readers (4^th^ grade and below). Any word that does not appear on this list is considered unfamiliar. The following are also considered familiar:
+The Spache Revised test (Spache, *Good* 195–2003) calculates the grade level of a document based on sentence length and number of unique unfamiliar words. This test uses a list of 1,041 common words that are known to younger readers (4^th^ grade and below). Any word that does not appear on this list is considered unfamiliar. The following are also considered familiar:
 
 - Regular verb forms of any common word (i.e., *ing*, *es*, *s*, *ed*, and *ies* endings). Irregular forms are not familiar.
 - Regular plural and possessive forms of any common word (i.e., *s*, *es*, and *ies* endings). Irregular forms are not familiar.
@@ -1364,7 +1364,7 @@ Spache recommends not counting the same unfamiliar word more than once if it app
 
 ## Stocker's Catholic Supplement\index{Stocker's Catholic Supplement} {#stocker-catholic-supplement}
 
-Stocker's Catholic\index{Catholic words|see{Stocker's Catholic Supplement}} supplement (87-89) is an extension to the [Dale-Chall](#dale-chall-test) word list designed for Catholic students. Based on a 1971 study of 4^th^-grade Catholic students[^Stocker], this list represents over 200 words (not on the standard Dale-Chall list) familiar to 80% of them.
+Stocker's Catholic\index{Catholic words|see{Stocker's Catholic Supplement}} supplement (87–89) is an extension to the [Dale-Chall](#dale-chall-test) word list designed for Catholic students. Based on a 1971 study of 4^th^-grade Catholic students[^Stocker], this list represents over 200 words (not on the standard Dale-Chall list) familiar to 80% of them.
 
 This list is used along with the Dale-Chall\index{New Dale-Chall} list and offers more accurate scoring with materials meant for Catholic schools.
 
@@ -1377,7 +1377,7 @@ To include this list as part of your New Dale-Chall\index{New Dale-Chall!includi
 \newpage
 ## Wheeler-Smith\index{Wheeler-Smith|(ii} {#wheeler-smith}
 
-The Wheeler-Smith (397-399) test is designed for primary-age materials (Kindergarten to 4^th^ grade). This test calculates the grade level of a document based on [unit](#glossary)\index{sentences!units} length and number of polysyllabic\index{polysyllabic} (2+ syllable) words. It should be noted that this differs from most other tests that use 3+ syllable words as a difficulty factor. The researchers selected 2+ syllable words because primary readers will have more difficulty with them than secondary and adult readers.
+The Wheeler-Smith (397–399) test is designed for primary-age materials (Kindergarten to 4^th^ grade). This test calculates the grade level of a document based on [unit](#glossary)\index{sentences!units} length and number of polysyllabic\index{polysyllabic} (2+ syllable) words. It should be noted that this differs from most other tests that use 3+ syllable words as a difficulty factor. The researchers selected 2+ syllable words because primary readers will have more difficulty with them than secondary and adult readers.
 
 Although not explicitly stated in the article, the authors' definition of “polysyllabic” as being 2+ syllable can be inferred from the example[^River] that they provided:
 
@@ -1425,12 +1425,12 @@ Where:
 Then, find the index value in the following chart to acquire the final readability score:
 
 | Grade Level | Index Score |
-| :-- | :-- |
-| Primer (Kindergarten) | 4.0 to 8.0 |
-| First grade | 8.1 to 11.5 |
-| Second grade | 11.6 to 19 |
-| Third grade | 19.1 to 26.5 |
-| Fourth grade | 26.6 to 34.5 |
+| :-- | --: |
+| Primer (Kindergarten) | 4.0–8.0 |
+| First grade | 8.1–11.5 |
+| Second grade | 11.6–19 |
+| Third grade | 19.1–26.5 |
+| Fourth grade | 26.6–34.5 |
 
 Table: Wheeler-Smith grade-level conversion table
 

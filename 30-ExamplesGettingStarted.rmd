@@ -26,7 +26,7 @@ Because this is a literary work, select the **Recommend tests based on document 
 
 Finally, click the `r keys("Finish")` button to begin analyzing the project.
 
-At this point we can review the test scores of the book (by clicking on the **Readability Scores** icon on the project sidebar) to help determine its reading level. As we can see below, Charles Dickens's *A Christmas Carol* appears to be readable for at least readers in the 10-13 age (or above) range. This implies that it may be too difficult for younger readers due to longer sentences and/or difficult words.
+At this point we can review the test scores of the book (by clicking on the **Readability Scores** icon on the project sidebar) to help determine its reading level. As we can see below, Charles Dickens's *A Christmas Carol* appears to be readable for at least readers in the 10–13 age (or above) range. This implies that it may be too difficult for younger readers due to longer sentences and/or difficult words.
 
 ![](Images/scores.png)
 
@@ -272,7 +272,7 @@ By default, the program considers sentences overly long if they contain more tha
 
 ![](Images/featuressentoptions.png)
 
-The first option is to define a specific word count as the long sentence boundary. Enter *25* where it says **Longer than [22] words** and click the `r keys("OK")` button. The program will now reanalyze the file, classifying any sentences longer than 25 (instead of 22) as overly long. As shown below, sentences that are between 23-25 words are no longer being considered overly long:
+The first option is to define a specific word count as the long sentence boundary. Enter *25* where it says **Longer than [22] words** and click the `r keys("OK")` button. The program will now reanalyze the file, classifying any sentences longer than 25 (instead of 22) as overly long. As shown below, sentences that are between 23–25 words are no longer being considered overly long:
 
 ```{r echo=F, fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/featuressentences25.png")

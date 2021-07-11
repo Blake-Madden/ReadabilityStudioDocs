@@ -2,7 +2,7 @@
 
 ## Grade Level Results {#grade-level-results}
 
-Most readability tests that return a grade level include a mantissa (i.e., decimal value), which represents the month of the grade. For example, *1.6* would be the sixth month of first grade (Carver, “Measuring Readability Using DPR Units” 306-307). However, this only applies to tests that are computed from a mathematical formula (generally, a regression equation). Tests that use different methods—such as look-up tables or graphs—usually only return a grade level as an integer.
+Most readability tests that return a grade level include a mantissa (i.e., decimal value), which represents the month of the grade. For example, *1.6* would be the sixth month of first grade (Carver, “Measuring Readability Using DPR Units” 306–307). However, this only applies to tests that are computed from a mathematical formula (generally, a regression equation). Tests that use different methods—such as look-up tables or graphs—usually only return a grade level as an integer.
 
 For example, [New Dale-Chall](#dale-chall-test)\index{New Dale-Chall!calculation method} looks up your unfamiliar word and sentence counts from a table and returns a grade range. This will yield results such as *7–8*, meaning that a document falls within the seventh to eighth grade reading level.
 
