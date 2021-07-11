@@ -96,6 +96,8 @@ Renström, Jan. “Texte und Textbehandlung im Deutschunterricht.” *Die Unterr
 
 Schulz, Renate A. “Literature and Readability: Bridging the Gap in Foreign Language Reading.” *The Modern Language Journal*, vol. 65, no. 1, Spring 1981, pp. 43-53.
 
+Schwartz, Roswitha E. W. “An Exploratory Effort to Design a Readability Graph for German Material.” 1975. State University of New York at Albany, Reading Department. Unpublished study.
+
 Smith, E. A., and R. J. Senter. United States. Air Force. *Automated Readability Index*. Wright-Patterson AFB, Aerospace Medical Division, 1967.
 
 Smith, Lawrence L. “Using a Modified SMOG in Primary and Intermediate Grades.” *Reading Horizons*, vol. 24, no. 2, 1984, pp. 129-32.
