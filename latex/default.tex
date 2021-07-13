@@ -453,9 +453,9 @@ $endif$
 $endif$
 
 \begin{document}
-$if(has-frontmatter)$
+
 \frontmatter
-$endif$
+
 $if(title)$
 $if(beamer)$
 \frame{\titlepage}
@@ -503,14 +503,14 @@ $endif$
 $if(linestretch)$
 \setstretch{$linestretch$}
 $endif$
-$if(has-frontmatter)$
+
 \mainmatter
-$endif$
+
 $body$
 
-$if(has-frontmatter)$
+
 \backmatter
-$endif$
+
 $if(natbib)$
 $if(bibliography)$
 $if(biblio-title)$
