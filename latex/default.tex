@@ -455,6 +455,7 @@ $endif$
 \def\theauthor{$for(author)$$author$$endfor$}
 \def\thedate{$for(date)$$date$$endfor$}
 \def\thetitle{$for(title)$$title$$endfor$}
+\def\thesubtitle{$for(subtitle)$$subtitle$$endfor$}
 \def\authorbio{$for(authorbio)$$authorbio$$endfor$}
 
 \begin{document}
@@ -467,18 +468,7 @@ $endif$
 
 \frontmatter
 
-$if(title)$
-$if(beamer)$
-\frame{\titlepage}
-$else$
-\maketitle
-$endif$
-$if(abstract)$
-\begin{abstract}
-$abstract$
-\end{abstract}
-$endif$
-$endif$
+\input{latex/titlepage.tex}
 
 \clearpage
 

@@ -1,5 +1,6 @@
 --- 
-title: "Readability Studio 2021 Manual"
+title: "Readability Studio 2021"
+subtitle: "User Manual"
 description: "Readability Studio 2021 Manual"
 author: "Blake Madden"
 site: bookdown::bookdown_site
