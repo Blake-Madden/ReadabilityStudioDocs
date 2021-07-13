@@ -1,7 +1,6 @@
-```{asis, echo=knitr::is_html_output()}
-# About the Author {.unnumbered}
-
 <!-- PDF will include its own author page after the index-->
 
-Blake Madden is a data analyst and software developer. He earned his Bachelor of Arts in English from the University of Dayton and has researched readability analysis for almost twenty years. Along with readability formulas, his areas of interest include text processing and data visualization development (generally in **C++** and **R**).
+```{r, eval=knitr::is_html_output(), results = 'asis', echo=F}
+cat('\n\n# About the Author {.unnumbered}\n\n')
+cat(rmarkdown::metadata$authorbio)
 ```
