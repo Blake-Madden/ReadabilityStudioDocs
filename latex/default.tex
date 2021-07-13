@@ -459,6 +459,12 @@ $endif$
 
 \begin{document}
 
+$if(pdf-cover)$
+\thispagestyle{empty}
+\includepdf{$pdf-cover$}
+\clearpage{\thispagestyle{empty}\cleardoublepage}
+$endif$
+
 \frontmatter
 
 $if(title)$
