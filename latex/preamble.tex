@@ -39,6 +39,14 @@
 \usepackage[a4paper]{geometry}
 \geometry{left=4cm, right=3cm, top=2.5cm, bottom=2.5cm}
 
+% make the page headers fancy
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RE,LO]{\nouppercase{\leftmark}}
+\fancyhead[LE,RO]{\thepage}
+
 % https://tex.stackexchange.com/questions/16964/block-quote-with-big-quotation-marks
 \usetikzlibrary{backgrounds}
 \makeatletter
