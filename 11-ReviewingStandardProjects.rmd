@@ -277,7 +277,7 @@ If the test scores are indicating that the document is too difficult for your ta
 
 Note that if there are no long sentences in your document, then this window will not be included.
 
-A box plot\index{box plots|sentence length} of the sentence lengths (measured by word count) is also available:
+A box plot\index{box plots!sentence length} of the sentence lengths (measured by word count) is also available:
 
 ```{r echo=F, fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/SentencesBoxplot.png")
