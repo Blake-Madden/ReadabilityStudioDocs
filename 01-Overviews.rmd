@@ -212,7 +212,7 @@ Finally, *Readability Studio* is highly configurable. Many options, such as how 
 #### Analysis/Test Enhancements {-}
 
 - Added [goals](#reviewing-goals) feature to warn if a document's scores do not fall within a certain range.
-- Added [Schwartz test](#scwartz) (German projects only).
+- Added [Schwartz test](#schwartz) (German projects only).
 - Added a graph to visualize Lix index scores.
 - Added a graph to visualize German Lix index scores.
 - Added a graph to visualize Danielson-Bryan 2 scores.
@@ -277,7 +277,7 @@ Finally, *Readability Studio* is highly configurable. Many options, such as how 
 
 #### Graph Enhancements {-}
 
-- Added [beeswarm jittering](#stats-issues) to box, Danielson-Bryan 2, Flesch Reading Ease, Lix, and German Lix plots (in batch projects).
+- Added beeswarm jittering to box, Danielson-Bryan 2, Flesch Reading Ease, Lix, and German Lix plots (in batch projects).
 - Improved graph rendering performance.
 - Added option to not include labels on histograms.
 - Added option to not include labels on barcharts.
