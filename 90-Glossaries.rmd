@@ -13,8 +13,7 @@ Table: Application Level Shortcuts
 +:========================================+:=====================================================+
 | Open the help                           | `r keys("F1")`                                       |
 +-----------------------------------------+------------------------------------------------------+
-| Enable verbose logging                  | Hold down\                                           |
-|                                         | `r keys("Shift")` `r os_logo('windows')`\ or `r keys("\\shift")` `r os_logo('apple')`\ |
+| Enable verbose logging                  | Hold down `r keys("Shift")` `r os_logo('windows')`\ or `r keys("\\shift")` `r os_logo('apple')`\ |
 |                                         | while the program is loading                         |
 +-----------------------------------------+------------------------------------------------------+
 
@@ -44,6 +43,7 @@ Table: Graph Shortcuts
 | Zoom out                                | `r keys('-')`                                        |
 +-----------------------------------------+------------------------------------------------------+
 
+::: {.minipage data-latex="{\textwidth}"}
 Table: Editing Lists Shortcuts
 
 +-----------------------------------------+------------------------------------------------------+
@@ -55,6 +55,7 @@ Table: Editing Lists Shortcuts
 +-----------------------------------------+------------------------------------------------------+
 | Add a new item to a list                | `r keys(c('Ctrl','Ins'))` `r os_logo('windows')`\ or `r keys(c('\\cmd','Ins'))` `r os_logo('apple')` |
 +-----------------------------------------+------------------------------------------------------+
+:::
 
 # Glossary {#glossary}
 
