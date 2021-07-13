@@ -12,6 +12,7 @@ output:
 documentclass: book
 lot: yes
 lof: yes
+date: 2021
 links-as-notes: true
 linestretch: 1.15
 biblio-style: mlalike
@@ -24,9 +25,9 @@ source('R/appdown.r')
 ```
 
 ```{asis, echo=knitr::is_html_output()}
-<!-- Just want this preface in the gitbook. PDF output will have its own copyright page after the title.-->
-
 # Preface {#cover .unnumbered}
+
+<!-- Just want this preface in the gitbook. PDF output will have its own copyright page after the title.-->
 
 :::{.notesection data-latex=""}
 This is preliminary documentation for an upcoming release of Readability Studio. If you have any feedback, please feel free to file an issue on [Github](https://github.com/Blake-Madden/ReadabilityStudioDocs). Thank you.
