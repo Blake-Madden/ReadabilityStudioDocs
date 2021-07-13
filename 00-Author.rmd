@@ -1,3 +1,0 @@
-# About the Author {.unnumbered}
-
-Blake Madden is a data analyst and software developer. He earned his Bachelor of Arts in English from the University of Dayton and has researched readability analysis for almost twenty years. Along with readability formulas, his areas of interest include text processing and data visualization development (generally in **C++** and **R**).
