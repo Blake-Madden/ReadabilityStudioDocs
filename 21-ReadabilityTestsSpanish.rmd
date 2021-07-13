@@ -117,7 +117,7 @@ Syllable and sentence statistics where calculated from these samples. Initially,
 
 The Gilliam-Peña-Mountain graph is designed for both primary and secondary-age reading materials. Below is an example of a Gilliam-Peña-Mountain graph:
 
-```{r gpm, echo=F, fig.cap='Gilliam-Peña-Mountain Graph', fig.align='center', out.width='75%'}
+```{r gpm, echo=F, fig.cap='Gilliam-Peña-Mountain graph', fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/GpmFry.png")
 ```
 

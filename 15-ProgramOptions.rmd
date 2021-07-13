@@ -724,7 +724,7 @@ The options on this page customize your graphs.
 
 This option is useful for stamping labels such as *CONFIDENTIAL* or your company name onto your graphs.
 
-The tags `[DATETIME]`, `[DATE]`, and `[TIME]` can also be included in these labels. These tags expand to their literal values at the time of rendering the graphs.
+The tags `[DATETIME]`, `[DATE]`, and `[TIME]` can also be included in these labels. These tags expand to their literal values at the time of rendering the graph.
 
 **Logo image**: Enter the path to the image file used as your graphs' logo into this field. The logo will be displayed in the lower right-hand corner of each graph.
 

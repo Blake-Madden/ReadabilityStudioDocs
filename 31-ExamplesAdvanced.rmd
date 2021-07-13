@@ -24,7 +24,7 @@ knitr::include_graphics("Images/JobPostingHighlightedText.png")
 
 Because these are terse, unterminated lines of text, they will also be excluded from our analyses.
 
-At this point, we can add tests and begin reviewing this (rather suspect) job posting.
+At this point, we can add tests and begin reviewing this (rather dubious) job posting.
 
 \newpage
 

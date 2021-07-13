@@ -195,8 +195,8 @@ So, to create MLA footnotes, we have to create psuedo footnotes below the table.
 | CharacterCount() | Returns the number of characters (i.e., letters and numbers). This function takes an argument specifying which text exclusion method to use: `Default`, `DaleChall`^1^, or `HarrisJacobson`^2^. | 
 | CharacterPlusPunctuationCount() | Returns the number of characters (i.e., letters and numbers) and punctuation. Note that sentence-ending punctuation is not included in this count. |
 | IndependentClauseCount() | Returns the number of units/independent clauses\index{sentences!units}. A unit is a section of text ending with a period, exclamation, question mark, interrobang\index{interrobangs}, colon, semicolon, or dash. |
-| SentenceCount()\index{sentences!custom tests} | Returns the number of sentences. This function takes an argument specifying which text exclusion or sentence-counting method to use: `Default`, `DaleChall`, `HarrisJacobson`, or `GunningFog`^3^. |
-| SyllableCount()\index{syllables!custom tests} | Returns the number of syllables. This function takes an argument specifying which numeral syllabizing method to use: `Default`, `NumeralsFullySyllabized`, or `NumeralsAreOneSyllable`. |
+| SentenceCount()\index{sentences!in custom tests} | Returns the number of sentences. This function takes an argument specifying which text exclusion or sentence-counting method to use: `Default`, `DaleChall`, `HarrisJacobson`, or `GunningFog`^3^. |
+| SyllableCount()\index{syllables!in custom tests} | Returns the number of syllables. This function takes an argument specifying which numeral syllabizing method to use: `Default`, `NumeralsFullySyllabized`, or `NumeralsAreOneSyllable`. |
 
 Table: Document Statistics Functions
 

@@ -144,7 +144,7 @@ These issues are shown highlighted in your document for easy review. They are al
 *Readability Studio* supports importing text from many file formats, including:
 
 - ANSI and Unicode text (\*.txt)
-- Microsoft^®^ Word 95–2003 (\*.doc)
+- Microsoft^®^ Word 97–2003 (\*.doc)
 - Microsoft^®^ Word 2007 (\*.docx)
 - Microsoft^®^ PowerPoint 2007 (\*.pptx)
 - Microsoft^®^ Excel 2007 (cells can be batch analyzed as documents or filepaths to other documents)
@@ -182,6 +182,7 @@ Finally, *Readability Studio* is highly configurable. Many options, such as how 
 - Added **Line ends mark the start of a new paragraph** layout option to the [project wizard](#creating-standard-project).
 - Added test bundles option to the project wizard.
 - Added ability to include descriptions for any document included in a batch project. (The program will fill in these descriptions automatically, based on the document's title.)
+- Added ability to apply group labels to documents in a batch project.
 - Added option to include a document description in standard projects.
 - Added dark theme support (macOS).
 - Added theming (Windows).
@@ -246,7 +247,7 @@ Finally, *Readability Studio* is highly configurable. Many options, such as how 
 - [All Words (Condensed)](#reviewing-word-breakdowns) now excludes common words (e.g., *the*), numerals, and filenames.
 - Lix and Rix are now available in the **Adult** readability tests menu.
 - Added **Ignore social media hashtags** option to spell-checker.
-- Expanded spell-checker to include government, economics, business, accounting, biology, and psychology terminology.
+- Expanded spell-checker to include government, economics, business, accounting, chemistry, biology, and psychology terminology.
 - New formula-parsing engine used for custom tests. This includes the following changes:
   - `AVG` function has been renamed `AVERAGE`.
   - `COTAN` function has been renamed `COT`.
@@ -280,11 +281,12 @@ Finally, *Readability Studio* is highly configurable. Many options, such as how 
 - Improved graph rendering performance.
 - Added option to not include labels on histograms.
 - Added option to not include labels on barcharts.
-- Graph [watermarks](#watermark-and-logo) now support the tags `[DATETIME]`, `[DATE]`, and `[TIME]`. These are expanded to their literal values at the time of rendering the graphs.
+- Graph [watermarks](#watermark-and-logo) now support the tags `[DATETIME]`, `[DATE]`, and `[TIME]`. These are expanded to their literal values at the time of rendering the graph.
 
 #### Documentation Enhancements {-}
 
 - Upgraded the documentation to [bookdown](https://www.bookdown.org/) format.
+- Documentation now also available as a printable PDF.
 - Expanded documentation for all tests.
 - Added new examples:
   - *Reviewing a Flyer*
@@ -292,20 +294,22 @@ Finally, *Readability Studio* is highly configurable. Many options, such as how 
   - *Including an Addendum*
   - *Adding Descriptive Labels to Documents*
   - *Grouping Documents in a Batch*
-- Expanded the glossary.
+- Added new example documents.
 - Added option to either open example documents as new projects or view them in your default editor.
+- Expanded the glossary.
 - Updated citations to MLA 8^th^ edition format.
 
 #### Bug Fixes {-}
 
 - If an appended document is not found when loading a project, the program will now search for it in the subfolders around the project file.
-- Labels on histogram (when bars are selected) now combine and sort words case insensitively.
+- Labels on histogram (when bars are selected) now combine and are sorted case insensitively.
 - Fixed font scaling when zooming in on graphs with stacked labels.
 - Fixed batch project **Export All** where graphs would appear duplicated in the report.
 - Office 2007 filepaths (e.g., *documents\\import.xlsx*) mentioned in a document are now seen as file names.
 - Fixed crash when trying to analyze a document that is on OneDrive but not properly synced on the local file system.
 - Fixed outdated menubar options on macOS.
 - **New Project from Clipboard** option will more intelligently determine whether the clipboard content is a file path or plain text.
+- Fixed crash in Word 97-2003 (\*.doc) importer.
 
 ### Readability Studio 2019 {-}
 ***
@@ -356,7 +360,7 @@ Finally, *Readability Studio* is highly configurable. Many options, such as how 
 - Added support for OpenDocument Presentation files.
 - Added support for HTTPS website links (password-protected pages not supported).
 - Improvements to OpenDocument Text importer.
-- Added SVG exporting for graphs. (Bar and Box color fade is not currently supported.)
+- Added SVG exporting for graphs. (Bar and box color fade is not currently supported.)
 - Improvements to workaround bad formatting when importing HTML documents.
 - Improved Symbol font correction in HTML files.
 - Added log messages for importing/formatting issues encountered while loading documents.
@@ -378,7 +382,7 @@ Finally, *Readability Studio* is highly configurable. Many options, such as how 
 
 #### Bug Fixes {-}
 
-- Fixed crash in Word 2003 (\*.doc) importer.
+- Fixed crash in Word 97-2003 (\*.doc) importer.
 - Fixed error messages being blocked by the splash screen when opening certain projects.
 - Fixed unnecessary warning message on Windows 10 when the custom dictionary file is blank.
 - Fixed intermittent crash with large list-control data.
