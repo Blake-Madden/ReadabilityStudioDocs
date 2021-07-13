@@ -109,7 +109,9 @@ The messages in this report are displayed such that:
 
 This information can be useful if you are experiencing issues with loading a document.
 
-## Select Labeling {#select-labeling}
+## Batch Project Import Features {#batch-project-import-features}
+
+### Select Labeling
 
 When adding documents to a batch project, you will be prompted about how to label them. Labeling is a useful way of either grouping your documents or applying a description to them.
 
@@ -122,3 +124,35 @@ After selecting a group of documents, you will be presented with this dialog to 
 :::
 
 **Do not show this again (always use document descriptions)**: Check this to no longer prompt for how to label batch documents; document descriptions will always be used instead.
+
+Refer to \@ref(adding-labels-to-batch) and \@ref(grouping-docs-in-batch) for examples of this feature.
+
+### Select Directory
+
+This dialog enables you to select a folder of documents for [batch](#creating-batch-project) analysis.
+
+**Folder path**: Enter the path to the folder of documents that you want to include.
+
+**File types to include**: Select from this list the types of documents to include from the folder.
+
+**Search directories recursively**: Check this option to include files from all subfolders inside of the selected folder.
+
+### Select Archive File
+
+This dialog enables you to select an archive file (e.g., a compressed \*.zip file) that contains your documents for [batch](#creating-batch-project) analysis.
+
+**Folder path**: Enter the path to the archive file that you want to include.
+
+**File types to include**: Select from this list the types of documents to include from the archive. All files in the archive matching these document types will be included in the analysis.
+
+### Worksheet Preview
+
+When importing a spreadsheet into a batch, this dialog enables you to specify which worksheets and cells to import. Note that only text cells can be imported as documents, so numeric cells will be blank here.
+
+**Import**:
+
+**All text cells**: Select this option to import the entire worksheet.
+
+**Only highlighted cells**: Select this option to only import the selected cells (which will be highlighted blue). A block of cells can be selected by holding down the left mouse button and dragging the cursor around the block. Individual cells can be selected by holding down the `r keys("Ctrl")` (`r os_logo('windows')`) or `r keys("\\cmd")` (`r os_logo('apple')`) button on the keyboard and clicking the cells. Also, entire columns and rows can be selected by clicking the column header or row label, respectively.
+
+Note that selections can also be discontiguous. For example, if you hold down the `r keys("Ctrl")` (`r os_logo('windows')`) or `r keys("\\cmd")` (`r os_logo('apple')`) button and click the column headers *A* and then *D*, then these two columns will be imported.

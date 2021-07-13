@@ -18,7 +18,7 @@ Select **Batch Project** and click the `r keys("OK")` button to proceed to the *
 
 ![](Images/wizardbatchselectfiles.png)
 
-Select **English** as the document language. Next, you can add files from a folder, website, spreadsheet, or archive to the project. We will be reviewing files from a folder, so click the `r keys("Add folder...")` button. You will be presented with the [**Select Directory**](#select-directory) dialog:
+Select **English** as the document language. Next, you can add files from a folder, website, spreadsheet, or archive to the project. We will be reviewing files from a folder, so click the `r keys("Add folder...")` button. You will be presented with the [**Select Directory**](#batch-project-import-features) dialog:
 
 ```{r echo=F, fig.align='center', out.width='75%'}
 knitr::include_graphics("Images/selectdirectory.png")
@@ -82,7 +82,7 @@ knitr::include_graphics("Images/histoimproved.png")
 
 \newpage
 
-## Adding Descriptive Labels to Documents
+## Adding Descriptive Labels to Documents {#adding-labels-to-batch}
 
 Sometimes documents that we receive do not have descriptive names that are easily recognizable. An example of this are downloaded webpages that may have names such as *index.html* or *2A67B2H.html*. In this example, we will show how to include descriptive labels next to our documents in a batch so that we can distinguish between them.
 
@@ -108,7 +108,7 @@ Note how there is a **Label** column next to the **Document** column. Despite th
 
 \newpage
 
-## Grouping Documents in a Batch
+## Grouping Documents in a Batch {#grouping-docs-in-batch}
 
 Sometimes when creating a batch, we may want to group the documents within it. For example, clusters of documents within the batch may be from different websites, authors, or studies. By adding group labels to these clusters, we can compare them in the results. In this example, we will show how to add group labels to a batch of documents and how to view them in the results.
 
