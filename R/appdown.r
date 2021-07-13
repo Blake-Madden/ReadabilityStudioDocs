@@ -53,7 +53,8 @@ keys <- function(buttonKeys)
   if (knitr::is_latex_output())
     {
     knitr::asis_output(
-      glue_collapse(glue("\\keys{<buttonKeys>}", .open='<', .close='>'), sep='+')) }
+      glue_collapse(glue("\\keys{<buttonKeys>}", .open='<', .close='>'), sep='+'))
+    }
   else if (knitr::is_html_output())
     {
     buttonKeys <- stringr::str_replace_all(buttonKeys, regex("^\\\\cmd$", ignore_case=T), "&#8984;")
