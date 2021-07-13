@@ -452,6 +452,10 @@ $if(logo)$
 $endif$
 $endif$
 
+\def\theauthor{$for(author)$$author$$endfor$}
+\def\thedate{$for(date)$$date$$endfor$}
+\def\thetitle{$for(title)$$title$$endfor$}
+
 \begin{document}
 
 \frontmatter
@@ -468,6 +472,18 @@ $abstract$
 \end{abstract}
 $endif$
 $endif$
+
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Create a copyright page
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{latex/creative-commons.tex}
+
+\clearpage
 
 $for(include-before)$
 $include-before$
@@ -507,7 +523,6 @@ $endif$
 \mainmatter
 
 $body$
-
 
 \backmatter
 
